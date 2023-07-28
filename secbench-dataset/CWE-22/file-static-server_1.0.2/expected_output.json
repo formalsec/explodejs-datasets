@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "sink_file": "lib/file.js",
+        "sink_lineno": "88"
+    }
+]

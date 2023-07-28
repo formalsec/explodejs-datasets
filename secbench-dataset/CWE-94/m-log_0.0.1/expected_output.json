@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "sink_file": "libs/log.js",
+        "sink_lineno": "24"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "sink_file": "lib/routes/static.js",
+        "sink_lineno": "56"
+    }
+]

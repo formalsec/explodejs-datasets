@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "sink_file": "lib/server-accessible.js",
+        "sink_lineno": "14"
+    }
+]

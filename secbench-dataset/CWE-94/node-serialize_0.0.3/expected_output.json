@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "sink_file": "lib/serialize.js",
+        "sink_lineno": "75"
+    }
+]

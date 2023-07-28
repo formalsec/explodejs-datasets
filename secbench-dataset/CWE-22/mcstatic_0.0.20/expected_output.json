@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "sink_file": "lib/responseHandlers.js",
+        "sink_lineno": "23"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "sink_file": "scanners/wifiscanner.js",
+        "sink_lineno": "12"
+    }
+]

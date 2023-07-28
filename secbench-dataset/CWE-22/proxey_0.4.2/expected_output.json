@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "sink_file": "proxey.js",
+        "sink_lineno": "191"
+    }
+]

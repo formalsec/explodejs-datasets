@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "sink_file": "lib/hangersteak.js",
+        "sink_lineno": "61"
+    }
+]

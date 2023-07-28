@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "sink_file": "cityserver.js",
+        "sink_lineno": "57"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "sink_file": "lib/proto_function.js",
+        "sink_lineno": "70"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "sink_file": "lib/utils/sea.js",
+        "sink_lineno": "284"
+    }
+]

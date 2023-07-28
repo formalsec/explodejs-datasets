@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "sink_file": "modules/template.js",
+        "sink_lineno": "71"
+    }
+]

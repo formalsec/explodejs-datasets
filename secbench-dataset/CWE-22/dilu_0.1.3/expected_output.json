@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "sink_file": "dilu/get.js",
+        "sink_lineno": "57"
+    }
+]

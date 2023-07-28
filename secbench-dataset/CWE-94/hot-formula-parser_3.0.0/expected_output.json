@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "sink_file": "lib/grammar-parser/grammar-parser.js",
+        "sink_lineno": "258"
+    }
+]
