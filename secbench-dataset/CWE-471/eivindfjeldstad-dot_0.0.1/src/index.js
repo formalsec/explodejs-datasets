@@ -7,7 +7,7 @@
  * @api public
  */
 
-exports.set = function (obj, path, val) {
+/*exports.set = function (obj, path, val) {
   var segs = path.split('.');
   var attr = segs.pop();
   
@@ -18,26 +18,14 @@ exports.set = function (obj, path, val) {
   }
   
   obj[attr] = val;
-};
+};*/
 
-/**
- * Get given `path`
- *
- * @param {Object} obj
- * @param {String} path
- * @return {Mixed}
- * @api public
- */
-
-exports.get = function (obj, path) {
-  var segs = path.split('.');
-  var attr = segs.pop();
-  
-  for (var i = 0; i < segs.length; i++) {
-    var seg = segs[i];
-    if (!obj[seg]) return;
-    obj = obj[seg];
+function setValue(obj, path, value) {
+  var dotPath = path.split(".")
+  for (let i = 0; i < dotPath; i++) {
+    if (i === dotPath.length -1) {
+      obj[key] = value
+    }
+    obj = obj[key]
   }
-  
-  return obj[attr];
-};
+}
