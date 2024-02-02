@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink_file": "src/index.js",
-        "sink_lineno": "114"
-    }
-]
