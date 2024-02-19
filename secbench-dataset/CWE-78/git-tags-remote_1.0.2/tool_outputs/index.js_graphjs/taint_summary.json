@@ -1,0 +1,23 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "lsRemoteTags",
+        "source_lineno": 4,
+        "sink": "exec",
+        "sink_lineno": 18
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "get",
+        "source_lineno": 58,
+        "sink": "exec",
+        "sink_lineno": 18
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "latest",
+        "source_lineno": 73,
+        "sink": "exec",
+        "sink_lineno": 18
+    }
+]

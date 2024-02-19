@@ -1,0 +1,58 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "source_lineno": 22,
+        "sink": "a[p] = v7;",
+        "sink_lineno": 36
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "Paypal",
+        "source_lineno": 109,
+        "sink": "a[p] = v7;",
+        "sink_lineno": 36
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v114",
+        "source_lineno": 267,
+        "sink": "a[p] = v7;",
+        "sink_lineno": 36
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v153",
+        "source_lineno": 349,
+        "sink": "a[p] = v7;",
+        "sink_lineno": 36
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "source_lineno": 22,
+        "sink": "a[p] = v6;",
+        "sink_lineno": 33
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "Paypal",
+        "source_lineno": 109,
+        "sink": "a[p] = v6;",
+        "sink_lineno": 33
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v114",
+        "source_lineno": 267,
+        "sink": "a[p] = v6;",
+        "sink_lineno": 33
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v153",
+        "source_lineno": 349,
+        "sink": "a[p] = v6;",
+        "sink_lineno": 33
+    }
+]

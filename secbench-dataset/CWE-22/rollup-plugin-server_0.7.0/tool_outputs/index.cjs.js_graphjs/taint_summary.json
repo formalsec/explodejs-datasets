@@ -1,0 +1,30 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "v75",
+        "source_lineno": 96,
+        "sink": "readFile",
+        "sink_lineno": 136
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "readFileFromContentBase",
+        "source_lineno": 226,
+        "sink": "readFile",
+        "sink_lineno": 248
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "server",
+        "source_lineno": 30,
+        "sink": "readFile",
+        "sink_lineno": 248
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "handler",
+        "source_lineno": 80,
+        "sink": "readFile",
+        "sink_lineno": 248
+    }
+]

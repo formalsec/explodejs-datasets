@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "v29",
+        "source_lineno": 2,
+        "sink": "createReadStream",
+        "sink_lineno": 43
+    }
+]

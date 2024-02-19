@@ -1,0 +1,30 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "source_lineno": 246,
+        "sink": "result[key] = v125;",
+        "sink_lineno": 279
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v117",
+        "source_lineno": 251,
+        "sink": "result[key] = v125;",
+        "sink_lineno": 279
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v126",
+        "source_lineno": 270,
+        "sink": "result[key] = v125;",
+        "sink_lineno": 279
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v126",
+        "source_lineno": 270,
+        "sink": "result[key] = value;",
+        "sink_lineno": 274
+    }
+]

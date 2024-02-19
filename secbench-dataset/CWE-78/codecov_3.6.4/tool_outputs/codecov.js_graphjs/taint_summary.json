@@ -1,0 +1,37 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "upload",
+        "source_lineno": 245,
+        "sink": "readFileSync",
+        "sink_lineno": 354
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "upload",
+        "source_lineno": 245,
+        "sink": "execSync",
+        "sink_lineno": 543
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "upload",
+        "source_lineno": 245,
+        "sink": "readFileSync",
+        "sink_lineno": 607
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "upload",
+        "source_lineno": 245,
+        "sink": "execSync",
+        "sink_lineno": 644
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "upload",
+        "source_lineno": 245,
+        "sink": "readFileSync",
+        "sink_lineno": 665
+    }
+]

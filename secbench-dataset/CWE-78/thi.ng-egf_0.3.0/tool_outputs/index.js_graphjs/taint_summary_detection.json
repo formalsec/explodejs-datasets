@@ -1,0 +1,23 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "v162",
+        "source_lineno": 369,
+        "sink": "readFileSync",
+        "sink_lineno": 381
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v170",
+        "source_lineno": 391,
+        "sink": "execSync",
+        "sink_lineno": 395
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "$parseFile",
+        "source_lineno": 876,
+        "sink": "readFileSync",
+        "sink_lineno": 895
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "v170",
+        "source_lineno": 241,
+        "sink": "readFileSync",
+        "sink_lineno": 272
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v163",
+        "source_lineno": 245,
+        "sink": "readFileSync",
+        "sink_lineno": 272
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v170",
+        "source_lineno": 241,
+        "sink": "readFileSync",
+        "sink_lineno": 345
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v163",
+        "source_lineno": 245,
+        "sink": "readFileSync",
+        "sink_lineno": 345
+    }
+]

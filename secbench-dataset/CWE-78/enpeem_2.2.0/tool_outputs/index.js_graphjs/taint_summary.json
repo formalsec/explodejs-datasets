@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "doNpmCommand",
+        "source_lineno": 66,
+        "sink": "exec",
+        "sink_lineno": 126
+    }
+]

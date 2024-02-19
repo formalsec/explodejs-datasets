@@ -1,0 +1,51 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "v5897",
+        "source_lineno": 12857,
+        "sink": "Function",
+        "sink_lineno": 12892
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "internalData",
+        "source_lineno": 5379,
+        "sink": "thisCache[v2480] = data;",
+        "sink_lineno": 5480
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "internalData",
+        "source_lineno": 5379,
+        "sink": "const internalData = function (elem, name, data, pvt) {",
+        "sink_lineno": 5379
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2542",
+        "source_lineno": 5636,
+        "sink": "thisCache[v2480] = data;",
+        "sink_lineno": 5480
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2542",
+        "source_lineno": 5636,
+        "sink": "const internalData = function (elem, name, data, pvt) {",
+        "sink_lineno": 5379
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2546",
+        "source_lineno": 5644,
+        "sink": "thisCache[v2480] = data;",
+        "sink_lineno": 5480
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2546",
+        "source_lineno": 5644,
+        "sink": "const internalData = function (elem, name, data, pvt) {",
+        "sink_lineno": 5379
+    }
+]

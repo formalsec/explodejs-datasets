@@ -1,0 +1,23 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "parseQueryString",
+        "source_lineno": 2880,
+        "sink": "cursor[level] = v1418;",
+        "sink_lineno": 2977
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "parsePath",
+        "source_lineno": 3030,
+        "sink": "cursor[level] = v1418;",
+        "sink_lineno": 2977
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v1495",
+        "source_lineno": 3119,
+        "sink": "cursor[level] = v1418;",
+        "sink_lineno": 2977
+    }
+]

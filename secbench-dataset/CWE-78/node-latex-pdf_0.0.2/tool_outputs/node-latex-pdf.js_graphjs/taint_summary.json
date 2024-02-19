@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "selflatex",
+        "source_lineno": 6,
+        "sink": "exec",
+        "sink_lineno": 40
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "selflatex",
+        "source_lineno": 6,
+        "sink": "exec",
+        "sink_lineno": 36
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v85",
+        "source_lineno": 127,
+        "sink": "ret[v84] = value;",
+        "sink_lineno": 151
+    }
+]

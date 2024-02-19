@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "v155",
+        "source_lineno": 247,
+        "sink": "readFileSync",
+        "sink_lineno": 266
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v155",
+        "source_lineno": 247,
+        "sink": "eval",
+        "sink_lineno": 278
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "handleRange",
+        "source_lineno": 3,
+        "sink": "createReadStream",
+        "sink_lineno": 24
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "streamResponse",
+        "source_lineno": 48,
+        "sink": "createReadStream",
+        "sink_lineno": 49
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "execADBCommand",
+        "source_lineno": 26,
+        "sink": "exec",
+        "sink_lineno": 48
+    }
+]

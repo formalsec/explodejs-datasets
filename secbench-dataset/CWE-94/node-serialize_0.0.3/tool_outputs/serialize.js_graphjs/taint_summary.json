@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "v69",
+        "source_lineno": 93,
+        "sink": "eval",
+        "sink_lineno": 128
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "source_lineno": 4,
+        "sink": "target[key] = v17;",
+        "sink_lineno": 43
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "mergeObjects",
+        "source_lineno": 19,
+        "sink": "target[key] = v17;",
+        "sink_lineno": 43
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "source_lineno": 4,
+        "sink": "target[key] = v15;",
+        "sink_lineno": 39
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "mergeObjects",
+        "source_lineno": 19,
+        "sink": "target[key] = v15;",
+        "sink_lineno": 39
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "source_lineno": 4,
+        "sink": "target[key] = value;",
+        "sink_lineno": 30
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "mergeObjects",
+        "source_lineno": 19,
+        "sink": "target[key] = value;",
+        "sink_lineno": 30
+    }
+]

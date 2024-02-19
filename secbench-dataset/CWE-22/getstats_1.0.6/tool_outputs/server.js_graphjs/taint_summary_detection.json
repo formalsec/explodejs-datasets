@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "serverHandler",
+        "source_lineno": 8,
+        "sink": "readFile",
+        "sink_lineno": 93
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "deploy",
+        "source_lineno": 45,
+        "sink": "readFileSync",
+        "sink_lineno": 85
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "deploy",
+        "source_lineno": 45,
+        "sink": "readFileSync",
+        "sink_lineno": 89
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "deploy",
+        "source_lineno": 45,
+        "sink": "readFileSync",
+        "sink_lineno": 105
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "serveFile",
+        "source_lineno": 210,
+        "sink": "readFile",
+        "sink_lineno": 354
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "killport",
+        "source_lineno": 8,
+        "sink": "exec",
+        "sink_lineno": 68
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v24",
+        "source_lineno": 41,
+        "sink": "exec",
+        "sink_lineno": 58
+    }
+]

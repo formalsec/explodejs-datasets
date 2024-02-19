@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "nativeZip",
+        "source_lineno": 15,
+        "sink": "exec",
+        "sink_lineno": 35
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "zip",
+        "source_lineno": 181,
+        "sink": "exec",
+        "sink_lineno": 35
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "getLines",
+        "source_lineno": 8,
+        "sink": "readFile",
+        "sink_lineno": 56
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "load",
+        "source_lineno": 156,
+        "sink": "readFile",
+        "sink_lineno": 56
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "getLines",
+        "source_lineno": 8,
+        "sink": "readFileSync",
+        "sink_lineno": 59
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "load",
+        "source_lineno": 156,
+        "sink": "readFileSync",
+        "sink_lineno": 59
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v195",
+        "source_lineno": 448,
+        "sink": "writeFile",
+        "sink_lineno": 481
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v195",
+        "source_lineno": 448,
+        "sink": "writeFileSync",
+        "sink_lineno": 484
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "deepCopy",
+        "source_lineno": 88,
+        "sink": "out[key] = v52;",
+        "sink_lineno": 115
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v231",
+        "source_lineno": 492,
+        "sink": "out[key] = v52;",
+        "sink_lineno": 115
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v53",
+        "source_lineno": 92,
+        "sink": "out[key] = v52;",
+        "sink_lineno": 115
+    }
+]

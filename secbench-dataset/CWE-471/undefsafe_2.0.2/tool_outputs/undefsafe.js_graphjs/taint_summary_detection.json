@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "undefsafe",
+        "source_lineno": 2,
+        "sink": "parent[key] = value;",
+        "sink_lineno": 145
+    }
+]

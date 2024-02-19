@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "set",
+        "source_lineno": 2,
+        "sink": "obj[lastProp] = value;",
+        "sink_lineno": 23
+    }
+]

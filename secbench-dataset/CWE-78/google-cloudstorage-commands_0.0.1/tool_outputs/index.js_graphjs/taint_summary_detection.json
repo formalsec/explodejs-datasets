@@ -1,0 +1,23 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "upload",
+        "source_lineno": 6,
+        "sink": "exec",
+        "sink_lineno": 16
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "cors",
+        "source_lineno": 27,
+        "sink": "exec",
+        "sink_lineno": 37
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "publicRead",
+        "source_lineno": 42,
+        "sink": "exec",
+        "sink_lineno": 56
+    }
+]

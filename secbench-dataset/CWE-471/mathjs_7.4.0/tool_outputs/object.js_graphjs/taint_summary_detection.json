@@ -1,0 +1,30 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "set",
+        "source_lineno": 402,
+        "sink": "child[lastKey] = value;",
+        "sink_lineno": 439
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "pick",
+        "source_lineno": 443,
+        "sink": "child[lastKey] = value;",
+        "sink_lineno": 439
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "deepExtend",
+        "source_lineno": 135,
+        "sink": "a[prop] = v76;",
+        "sink_lineno": 179
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "deepExtend",
+        "source_lineno": 135,
+        "sink": "a[prop] = v72;",
+        "sink_lineno": 169
+    }
+]

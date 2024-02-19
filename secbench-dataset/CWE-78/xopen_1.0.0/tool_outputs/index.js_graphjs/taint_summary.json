@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "xopen",
+        "source_lineno": 10,
+        "sink": "exec",
+        "sink_lineno": 22
+    }
+]

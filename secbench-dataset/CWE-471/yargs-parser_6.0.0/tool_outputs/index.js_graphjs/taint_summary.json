@@ -1,0 +1,37 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "v498",
+        "source_lineno": 863,
+        "sink": "require",
+        "sink_lineno": 889
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "parse",
+        "source_lineno": 5,
+        "sink": "require",
+        "sink_lineno": 889
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "Parser",
+        "source_lineno": 1475,
+        "sink": "require",
+        "sink_lineno": 889
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v789",
+        "source_lineno": 1481,
+        "sink": "require",
+        "sink_lineno": 889
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v109",
+        "source_lineno": 184,
+        "sink": "require",
+        "sink_lineno": 889
+    }
+]

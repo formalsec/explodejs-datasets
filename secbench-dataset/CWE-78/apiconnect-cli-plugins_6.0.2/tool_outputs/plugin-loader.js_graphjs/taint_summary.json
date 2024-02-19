@@ -1,0 +1,149 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "validatePlugin",
+        "source_lineno": 32,
+        "sink": "require",
+        "sink_lineno": 39
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v140",
+        "source_lineno": 231,
+        "sink": "require",
+        "sink_lineno": 39
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "loadPluginFromDir",
+        "source_lineno": 337,
+        "sink": "require",
+        "sink_lineno": 39
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "processDir",
+        "source_lineno": 425,
+        "sink": "require",
+        "sink_lineno": 39
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "validatePlugin",
+        "source_lineno": 32,
+        "sink": "require",
+        "sink_lineno": 66
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v140",
+        "source_lineno": 231,
+        "sink": "require",
+        "sink_lineno": 66
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "loadPluginFromDir",
+        "source_lineno": 337,
+        "sink": "require",
+        "sink_lineno": 66
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "processDir",
+        "source_lineno": 425,
+        "sink": "require",
+        "sink_lineno": 66
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "installPluginInDir",
+        "source_lineno": 253,
+        "sink": "exec",
+        "sink_lineno": 322
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "installPlugin",
+        "source_lineno": 211,
+        "sink": "exec",
+        "sink_lineno": 322
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "installPluginInDir",
+        "source_lineno": 253,
+        "sink": "require",
+        "sink_lineno": 298
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "loadPluginFromDir",
+        "source_lineno": 337,
+        "sink": "require",
+        "sink_lineno": 358
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "processDir",
+        "source_lineno": 425,
+        "sink": "require",
+        "sink_lineno": 358
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "loadPluginFromDir",
+        "source_lineno": 337,
+        "sink": "require",
+        "sink_lineno": 361
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "processDir",
+        "source_lineno": 425,
+        "sink": "require",
+        "sink_lineno": 361
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "loadPluginFromDir",
+        "source_lineno": 337,
+        "sink": "require",
+        "sink_lineno": 368
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "processDir",
+        "source_lineno": 425,
+        "sink": "require",
+        "sink_lineno": 368
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "loadPluginFromDir",
+        "source_lineno": 337,
+        "sink": "require",
+        "sink_lineno": 369
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "processDir",
+        "source_lineno": 425,
+        "sink": "require",
+        "sink_lineno": 369
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "loadPluginFromDir",
+        "source_lineno": 337,
+        "sink": "require",
+        "sink_lineno": 400
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "processDir",
+        "source_lineno": 425,
+        "sink": "require",
+        "sink_lineno": 400
+    }
+]

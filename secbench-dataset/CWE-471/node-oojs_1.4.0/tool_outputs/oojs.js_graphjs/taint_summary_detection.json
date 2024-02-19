@@ -1,0 +1,86 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "v265",
+        "source_lineno": 1,
+        "sink": "require",
+        "sink_lineno": 212
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v105",
+        "source_lineno": 165,
+        "sink": "require",
+        "sink_lineno": 212
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v265",
+        "source_lineno": 1,
+        "sink": "require",
+        "sink_lineno": 361
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v149",
+        "source_lineno": 348,
+        "sink": "require",
+        "sink_lineno": 361
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v265",
+        "source_lineno": 1,
+        "sink": "require",
+        "sink_lineno": 387
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "v158",
+        "source_lineno": 379,
+        "sink": "require",
+        "sink_lineno": 387
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v265",
+        "source_lineno": 1,
+        "sink": "currentClassObj[name] = v213 || v214;",
+        "sink_lineno": 510
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v142",
+        "source_lineno": 323,
+        "sink": "currentClassObj[name] = v213 || v214;",
+        "sink_lineno": 510
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v263",
+        "source_lineno": 394,
+        "sink": "currentClassObj[name] = v213 || v214;",
+        "sink_lineno": 510
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v265",
+        "source_lineno": 1,
+        "sink": "currentClassObj[tempName] = v211 || v212;",
+        "sink_lineno": 502
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v142",
+        "source_lineno": 323,
+        "sink": "currentClassObj[tempName] = v211 || v212;",
+        "sink_lineno": 502
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v263",
+        "source_lineno": 394,
+        "sink": "currentClassObj[tempName] = v211 || v212;",
+        "sink_lineno": 502
+    }
+]

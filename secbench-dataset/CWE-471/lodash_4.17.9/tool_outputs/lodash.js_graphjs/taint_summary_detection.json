@@ -1,0 +1,856 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "template",
+        "source_lineno": 11364,
+        "sink": "Function",
+        "sink_lineno": 11494
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "runInContext",
+        "source_lineno": 1442,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "hashSet",
+        "source_lineno": 1911,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setCacheAdd",
+        "source_lineno": 2148,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "stackSet",
+        "source_lineno": 2192,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "wrapperToIterator",
+        "source_lineno": 8683,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "noConflict",
+        "source_lineno": 11965,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "assignMergeValue",
+        "source_lineno": 2317,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "assignValue",
+        "source_lineno": 2333,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseAssign",
+        "source_lineno": 2374,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseAssignIn",
+        "source_lineno": 2380,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseAssignValue",
+        "source_lineno": 2386,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseClone",
+        "source_lineno": 2448,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseDifference",
+        "source_lineno": 2652,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseExtremum",
+        "source_lineno": 2743,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseIntersection",
+        "source_lineno": 2973,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseMerge",
+        "source_lineno": 3532,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseMergeDeep",
+        "source_lineno": 3565,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "basePick",
+        "source_lineno": 3711,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "basePickBy",
+        "source_lineno": 3719,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseRange",
+        "source_lineno": 3832,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseSet",
+        "source_lineno": 3898,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseSortedIndex",
+        "source_lineno": 4048,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseSortedIndexBy",
+        "source_lineno": 4095,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseSortedUniq",
+        "source_lineno": 4168,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseUniq",
+        "source_lineno": 4255,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseUpdate",
+        "source_lineno": 4359,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "baseXor",
+        "source_lineno": 4443,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "composeArgs",
+        "source_lineno": 4754,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "composeArgsRight",
+        "source_lineno": 4797,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "copyObject",
+        "source_lineno": 4860,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "copySymbols",
+        "source_lineno": 4896,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "copySymbolsIn",
+        "source_lineno": 4901,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "createHybrid",
+        "source_lineno": 5412,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "createWrap",
+        "source_lineno": 5854,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "customDefaultsMerge",
+        "source_lineno": 6013,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "mergeData",
+        "source_lineno": 6984,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2638",
+        "source_lineno": 7466,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2646",
+        "source_lineno": 7480,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2653",
+        "source_lineno": 7500,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "fromPairs",
+        "source_lineno": 7764,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2769",
+        "source_lineno": 7849,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2782",
+        "source_lineno": 7867,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2794",
+        "source_lineno": 7895,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "sortedIndex",
+        "source_lineno": 8165,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "sortedIndexBy",
+        "source_lineno": 8169,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "sortedIndexOf",
+        "source_lineno": 8174,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "sortedLastIndex",
+        "source_lineno": 8196,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "sortedLastIndexBy",
+        "source_lineno": 8200,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "sortedLastIndexOf",
+        "source_lineno": 8205,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "sortedUniq",
+        "source_lineno": 8226,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "sortedUniqBy",
+        "source_lineno": 8239,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2950",
+        "source_lineno": 8359,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2955",
+        "source_lineno": 8365,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v2960",
+        "source_lineno": 8377,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "uniq",
+        "source_lineno": 8391,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "uniqBy",
+        "source_lineno": 8404,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "uniqWith",
+        "source_lineno": 8418,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3002",
+        "source_lineno": 8484,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3005",
+        "source_lineno": 8497,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3010",
+        "source_lineno": 8503,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3015",
+        "source_lineno": 8515,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3127",
+        "source_lineno": 8828,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3162",
+        "source_lineno": 8915,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "ary",
+        "source_lineno": 9181,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3267",
+        "source_lineno": 9221,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3271",
+        "source_lineno": 9233,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "curry",
+        "source_lineno": 9245,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "curryRight",
+        "source_lineno": 9256,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "flip",
+        "source_lineno": 9445,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3393",
+        "source_lineno": 9573,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3396",
+        "source_lineno": 9580,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3398",
+        "source_lineno": 9587,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "unary",
+        "source_lineno": 9675,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "clone",
+        "source_lineno": 9702,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "cloneWith",
+        "source_lineno": 9706,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "cloneDeep",
+        "source_lineno": 9717,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "cloneDeepWith",
+        "source_lineno": 9722,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "toPlainObject",
+        "source_lineno": 10340,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3742",
+        "source_lineno": 10375,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3745",
+        "source_lineno": 10396,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3748",
+        "source_lineno": 10402,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3751",
+        "source_lineno": 10408,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "create",
+        "source_lineno": 10415,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3822",
+        "source_lineno": 10587,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3832",
+        "source_lineno": 10600,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "mapValues",
+        "source_lineno": 10656,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3850",
+        "source_lineno": 10668,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3852",
+        "source_lineno": 10673,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3864",
+        "source_lineno": 10678,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "omitBy",
+        "source_lineno": 10712,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3872",
+        "source_lineno": 10718,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "pickBy",
+        "source_lineno": 10731,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "set",
+        "source_lineno": 10791,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setWith",
+        "source_lineno": 10802,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "transform",
+        "source_lineno": 10822,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "update",
+        "source_lineno": 10883,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "updateWith",
+        "source_lineno": 10895,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v4261",
+        "source_lineno": 11764,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "conforms",
+        "source_lineno": 11832,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "iteratee",
+        "source_lineno": 11860,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "matches",
+        "source_lineno": 11873,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "matchesProperty",
+        "source_lineno": 11878,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "max",
+        "source_lineno": 12094,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "maxBy",
+        "source_lineno": 12106,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "min",
+        "source_lineno": 12128,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "minBy",
+        "source_lineno": 12140,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v759",
+        "source_lineno": 2365,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v817",
+        "source_lineno": 2544,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v822",
+        "source_lineno": 2555,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v830",
+        "source_lineno": 2590,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v999",
+        "source_lineno": 3083,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v1155",
+        "source_lineno": 3474,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v1193",
+        "source_lineno": 3537,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v1236",
+        "source_lineno": 3689,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v1701",
+        "source_lineno": 4992,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v1709",
+        "source_lineno": 5034,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v1804",
+        "source_lineno": 5256,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v1951",
+        "source_lineno": 5650,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3843",
+        "source_lineno": 10647,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v3847",
+        "source_lineno": 10659,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v4259",
+        "source_lineno": 11765,
+        "sink": "object[key] = value;",
+        "sink_lineno": 2399
+    }
+]

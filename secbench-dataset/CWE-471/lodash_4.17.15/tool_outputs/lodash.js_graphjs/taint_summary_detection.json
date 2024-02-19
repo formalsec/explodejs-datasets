@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "template",
+        "source_lineno": 11371,
+        "sink": "Function",
+        "sink_lineno": 11505
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "runInContext",
+        "source_lineno": 1431,
+        "sink": "Function",
+        "sink_lineno": 11505
+    }
+]

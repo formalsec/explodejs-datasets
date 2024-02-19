@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setPath",
+        "source_lineno": 2,
+        "sink": "obj[key] = value;",
+        "sink_lineno": 34
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setPath",
+        "source_lineno": 2,
+        "sink": "obj[key] = v16;",
+        "sink_lineno": 32
+    }
+]

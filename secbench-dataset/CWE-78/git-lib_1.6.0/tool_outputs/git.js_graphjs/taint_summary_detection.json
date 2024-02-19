@@ -1,0 +1,51 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "add",
+        "source_lineno": 13,
+        "sink": "exec",
+        "sink_lineno": 25
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "commit",
+        "source_lineno": 31,
+        "sink": "exec",
+        "sink_lineno": 47
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v75",
+        "source_lineno": 182,
+        "sink": "exec",
+        "sink_lineno": 193
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "checkout",
+        "source_lineno": 331,
+        "sink": "exec",
+        "sink_lineno": 343
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "newBranch",
+        "source_lineno": 349,
+        "sink": "exec",
+        "sink_lineno": 361
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "deleteBranch",
+        "source_lineno": 367,
+        "sink": "exec",
+        "sink_lineno": 379
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v165",
+        "source_lineno": 392,
+        "sink": "exec",
+        "sink_lineno": 379
+    }
+]

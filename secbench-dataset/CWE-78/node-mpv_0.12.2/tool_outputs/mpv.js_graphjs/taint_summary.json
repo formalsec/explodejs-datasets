@@ -1,0 +1,37 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "mpv",
+        "source_lineno": 15,
+        "sink": "execSync",
+        "sink_lineno": 43
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "mpv",
+        "source_lineno": 15,
+        "sink": "spawn",
+        "sink_lineno": 129
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "mpv",
+        "source_lineno": 15,
+        "sink": "spawn",
+        "sink_lineno": 132
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "mpv",
+        "source_lineno": 15,
+        "sink": "spawn",
+        "sink_lineno": 197
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "mpv",
+        "source_lineno": 15,
+        "sink": "spawn",
+        "sink_lineno": 200
+    }
+]

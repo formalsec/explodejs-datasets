@@ -1,0 +1,44 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "v39",
+        "source_lineno": 44,
+        "sink": "exec",
+        "sink_lineno": 101
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v37",
+        "source_lineno": 48,
+        "sink": "exec",
+        "sink_lineno": 101
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v118",
+        "source_lineno": 108,
+        "sink": "exec",
+        "sink_lineno": 223
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v232",
+        "source_lineno": 263,
+        "sink": "exec",
+        "sink_lineno": 433
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "getImageInfos",
+        "source_lineno": 316,
+        "sink": "exec",
+        "sink_lineno": 340
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v232",
+        "source_lineno": 263,
+        "sink": "exec",
+        "sink_lineno": 340
+    }
+]

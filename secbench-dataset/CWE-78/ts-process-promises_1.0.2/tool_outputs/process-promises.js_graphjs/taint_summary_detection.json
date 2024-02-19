@@ -1,0 +1,30 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "exec",
+        "source_lineno": 46,
+        "sink": "exec",
+        "sink_lineno": 63
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "execFile",
+        "source_lineno": 75,
+        "sink": "execFile",
+        "sink_lineno": 94
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "spawn",
+        "source_lineno": 106,
+        "sink": "spawn",
+        "sink_lineno": 110
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "fork",
+        "source_lineno": 141,
+        "sink": "spawn",
+        "sink_lineno": 110
+    }
+]

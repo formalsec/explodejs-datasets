@@ -1,0 +1,65 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "getProcessIdOnPort",
+        "source_lineno": 18,
+        "sink": "execSync",
+        "sink_lineno": 21
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "getProcessForPort",
+        "source_lineno": 64,
+        "sink": "execSync",
+        "sink_lineno": 21
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "getPackageNameInDirectory",
+        "source_lineno": 27,
+        "sink": "require",
+        "sink_lineno": 31
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "getProcessCommand",
+        "source_lineno": 38,
+        "sink": "require",
+        "sink_lineno": 31
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "getProcessForPort",
+        "source_lineno": 64,
+        "sink": "require",
+        "sink_lineno": 31
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "getProcessCommand",
+        "source_lineno": 38,
+        "sink": "execSync",
+        "sink_lineno": 41
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "getProcessForPort",
+        "source_lineno": 64,
+        "sink": "execSync",
+        "sink_lineno": 41
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "getDirectoryOfProcessById",
+        "source_lineno": 57,
+        "sink": "execSync",
+        "sink_lineno": 60
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "getProcessForPort",
+        "source_lineno": 64,
+        "sink": "execSync",
+        "sink_lineno": 60
+    }
+]

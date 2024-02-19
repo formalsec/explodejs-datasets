@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "insertHelper",
+        "source_lineno": 3,
+        "sink": "nestedObject[key] = value;",
+        "sink_lineno": 22
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v21",
+        "source_lineno": 51,
+        "sink": "nestedObject[key] = value;",
+        "sink_lineno": 22
+    }
+]

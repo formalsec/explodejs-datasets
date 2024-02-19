@@ -1,0 +1,128 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "doPublish",
+        "source_lineno": 61,
+        "sink": "writeFile",
+        "sink_lineno": 89
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v19",
+        "source_lineno": 43,
+        "sink": "writeFile",
+        "sink_lineno": 89
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "publish",
+        "source_lineno": 13,
+        "sink": "writeFile",
+        "sink_lineno": 89
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "doPublish",
+        "source_lineno": 61,
+        "sink": "writeFile",
+        "sink_lineno": 101
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v19",
+        "source_lineno": 43,
+        "sink": "writeFile",
+        "sink_lineno": 101
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "publish",
+        "source_lineno": 13,
+        "sink": "writeFile",
+        "sink_lineno": 101
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "doPublish",
+        "source_lineno": 61,
+        "sink": "execSync",
+        "sink_lineno": 217
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "publish",
+        "source_lineno": 13,
+        "sink": "execSync",
+        "sink_lineno": 217
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v19",
+        "source_lineno": 43,
+        "sink": "execSync",
+        "sink_lineno": 217
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "doPublish",
+        "source_lineno": 61,
+        "sink": "execSync",
+        "sink_lineno": 326
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v19",
+        "source_lineno": 43,
+        "sink": "execSync",
+        "sink_lineno": 326
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "publish",
+        "source_lineno": 13,
+        "sink": "execSync",
+        "sink_lineno": 326
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "exec",
+        "source_lineno": 441,
+        "sink": "exec",
+        "sink_lineno": 460
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "doPublish",
+        "source_lineno": 61,
+        "sink": "exec",
+        "sink_lineno": 460
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "publish",
+        "source_lineno": 13,
+        "sink": "exec",
+        "sink_lineno": 460
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v19",
+        "source_lineno": 43,
+        "sink": "exec",
+        "sink_lineno": 460
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v158",
+        "source_lineno": 282,
+        "sink": "exec",
+        "sink_lineno": 460
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v153",
+        "source_lineno": 295,
+        "sink": "exec",
+        "sink_lineno": 460
+    }
+]

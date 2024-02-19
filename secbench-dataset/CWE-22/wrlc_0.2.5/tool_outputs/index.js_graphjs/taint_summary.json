@@ -1,0 +1,37 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "serve",
+        "source_lineno": 7,
+        "sink": "createReadStream",
+        "sink_lineno": 33
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v17",
+        "source_lineno": 8,
+        "sink": "createReadStream",
+        "sink_lineno": 33
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "bundle",
+        "source_lineno": 54,
+        "sink": "spawn",
+        "sink_lineno": 57
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "options.argv",
+        "source_lineno": 56,
+        "sink": "spawn",
+        "sink_lineno": 57
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "browse",
+        "source_lineno": 83,
+        "sink": "spawn",
+        "sink_lineno": 92
+    }
+]

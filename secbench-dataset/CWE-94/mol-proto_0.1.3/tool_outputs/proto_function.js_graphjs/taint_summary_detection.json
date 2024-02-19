@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "makeFunction",
+        "source_lineno": 27,
+        "sink": "eval",
+        "sink_lineno": 53
+    }
+]

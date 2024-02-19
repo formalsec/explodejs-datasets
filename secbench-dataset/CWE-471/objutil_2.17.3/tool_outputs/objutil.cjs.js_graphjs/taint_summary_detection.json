@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "ensure",
+        "source_lineno": 195,
+        "sink": "n[p] = value;",
+        "sink_lineno": 299
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "set",
+        "source_lineno": 232,
+        "sink": "n[p] = value;",
+        "sink_lineno": 299
+    }
+]

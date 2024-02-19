@@ -1,0 +1,30 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setObjValue",
+        "source_lineno": 231,
+        "sink": "current[v94] = v96 || v97;",
+        "sink_lineno": 267
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "update",
+        "source_lineno": 382,
+        "sink": "current[v94] = v96 || v97;",
+        "sink_lineno": 267
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setObjValue",
+        "source_lineno": 231,
+        "sink": "current[v93] = value;",
+        "sink_lineno": 260
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "update",
+        "source_lineno": 382,
+        "sink": "current[v93] = value;",
+        "sink_lineno": 260
+    }
+]

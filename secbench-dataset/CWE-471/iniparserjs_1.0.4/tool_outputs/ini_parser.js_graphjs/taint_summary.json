@@ -1,0 +1,37 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "IniParser",
+        "source_lineno": 11,
+        "sink": "readFileSync",
+        "sink_lineno": 26
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "IniParser",
+        "source_lineno": 11,
+        "sink": "writeFileSync",
+        "sink_lineno": 250
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v117",
+        "source_lineno": 238,
+        "sink": "writeFileSync",
+        "sink_lineno": 250
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "IniParser",
+        "source_lineno": 11,
+        "sink": "v54[curKey] = curValue;",
+        "sink_lineno": 116
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v87",
+        "source_lineno": 171,
+        "sink": "v86[key] = value;",
+        "sink_lineno": 188
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "arpOne",
+        "source_lineno": 145,
+        "sink": "exec",
+        "sink_lineno": 147
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "findLocalDevices",
+        "source_lineno": 10,
+        "sink": "exec",
+        "sink_lineno": 147
+    }
+]

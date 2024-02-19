@@ -1,0 +1,23 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v297",
+        "source_lineno": 395,
+        "sink": "v251[v252] = v257 || v258;",
+        "sink_lineno": 415
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v297",
+        "source_lineno": 395,
+        "sink": "v263[v264] = v271 || v272;",
+        "sink_lineno": 430
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v297",
+        "source_lineno": 395,
+        "sink": "v289[v290] = quad;",
+        "sink_lineno": 450
+    }
+]

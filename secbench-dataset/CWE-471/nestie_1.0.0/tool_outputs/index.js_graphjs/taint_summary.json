@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "nestie",
+        "source_lineno": 16,
+        "sink": "tmp[key] = v19;",
+        "sink_lineno": 54
+    }
+]

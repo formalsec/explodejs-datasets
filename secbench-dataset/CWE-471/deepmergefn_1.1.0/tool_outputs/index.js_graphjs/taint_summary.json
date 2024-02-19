@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "deepMerge",
+        "source_lineno": 1,
+        "sink": "target[prop] = v10;",
+        "sink_lineno": 18
+    }
+]

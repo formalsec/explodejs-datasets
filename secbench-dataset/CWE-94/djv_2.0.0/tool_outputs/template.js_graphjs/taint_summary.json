@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "restore",
+        "source_lineno": 108,
+        "sink": "Function",
+        "sink_lineno": 109
+    }
+]

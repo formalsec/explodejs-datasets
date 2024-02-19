@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "createServer",
+        "source_lineno": 58,
+        "sink": "readFileSync",
+        "sink_lineno": 90
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v38",
+        "source_lineno": 60,
+        "sink": "readFileSync",
+        "sink_lineno": 90
+    }
+]

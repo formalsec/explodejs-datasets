@@ -1,0 +1,100 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "compilePointerDereference",
+        "source_lineno": 386,
+        "sink": "Function",
+        "sink_lineno": 407
+    },
+    {
+        "vuln_type": "code-injection",
+        "source": "JsonPointer",
+        "source_lineno": 533,
+        "sink": "Function",
+        "sink_lineno": 407
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setValueAtPath",
+        "source_lineno": 410,
+        "sink": "it[step] = val;",
+        "sink_lineno": 481
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setValueAtPath",
+        "source_lineno": 410,
+        "sink": "const setValueAtPath = function (target, val, path, force) {",
+        "sink_lineno": 410
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v350",
+        "source_lineno": 829,
+        "sink": "it[step] = val;",
+        "sink_lineno": 481
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v350",
+        "source_lineno": 829,
+        "sink": "const setValueAtPath = function (target, val, path, force) {",
+        "sink_lineno": 410
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v230",
+        "source_lineno": 557,
+        "sink": "it[step] = val;",
+        "sink_lineno": 481
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v230",
+        "source_lineno": 557,
+        "sink": "const setValueAtPath = function (target, val, path, force) {",
+        "sink_lineno": 410
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setValueAtPath",
+        "source_lineno": 410,
+        "sink": "it[p] = val;",
+        "sink_lineno": 451
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v350",
+        "source_lineno": 829,
+        "sink": "it[p] = val;",
+        "sink_lineno": 451
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v230",
+        "source_lineno": 557,
+        "sink": "it[p] = val;",
+        "sink_lineno": 451
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setValueAtPath",
+        "source_lineno": 410,
+        "sink": "it[step] = val;",
+        "sink_lineno": 505
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v350",
+        "source_lineno": 829,
+        "sink": "it[step] = val;",
+        "sink_lineno": 505
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v230",
+        "source_lineno": 557,
+        "sink": "it[step] = val;",
+        "sink_lineno": 505
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "source": "v30",
+        "source_lineno": 49,
+        "sink": "require",
+        "sink_lineno": 52
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "treatFile",
+        "source_lineno": 657,
+        "sink": "writeFileSync",
+        "sink_lineno": 712
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "recursiveReaddirSync",
+        "source_lineno": 855,
+        "sink": "writeFileSync",
+        "sink_lineno": 712
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v731",
+        "source_lineno": 1274,
+        "sink": "execSync",
+        "sink_lineno": 1314
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v731",
+        "source_lineno": 1274,
+        "sink": "readFileSync",
+        "sink_lineno": 1320
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "linuxCmdline",
+        "source_lineno": 1,
+        "sink": "node[key] = val;",
+        "sink_lineno": 30
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v11",
+        "source_lineno": 5,
+        "sink": "node[key] = val;",
+        "sink_lineno": 30
+    }
+]

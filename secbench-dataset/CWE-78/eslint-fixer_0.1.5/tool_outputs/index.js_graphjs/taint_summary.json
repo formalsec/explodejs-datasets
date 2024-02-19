@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "exec",
+        "source_lineno": 6,
+        "sink": "exec",
+        "sink_lineno": 22
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "fix",
+        "source_lineno": 64,
+        "sink": "exec",
+        "sink_lineno": 22
+    }
+]

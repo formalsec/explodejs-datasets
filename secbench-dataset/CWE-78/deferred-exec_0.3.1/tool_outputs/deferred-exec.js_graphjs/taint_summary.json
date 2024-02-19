@@ -1,0 +1,86 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "deferredChildProcess",
+        "source_lineno": 10,
+        "sink": "execFile",
+        "sink_lineno": 42
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v48",
+        "source_lineno": 109,
+        "sink": "execFile",
+        "sink_lineno": 42
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v51",
+        "source_lineno": 115,
+        "sink": "execFile",
+        "sink_lineno": 42
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v54",
+        "source_lineno": 121,
+        "sink": "execFile",
+        "sink_lineno": 42
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "deferredChildProcess",
+        "source_lineno": 10,
+        "sink": "exec",
+        "sink_lineno": 47
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v48",
+        "source_lineno": 109,
+        "sink": "exec",
+        "sink_lineno": 47
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v51",
+        "source_lineno": 115,
+        "sink": "exec",
+        "sink_lineno": 47
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v54",
+        "source_lineno": 121,
+        "sink": "exec",
+        "sink_lineno": 47
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "deferredChildProcess",
+        "source_lineno": 10,
+        "sink": "spawn",
+        "sink_lineno": 52
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v48",
+        "source_lineno": 109,
+        "sink": "spawn",
+        "sink_lineno": 52
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v51",
+        "source_lineno": 115,
+        "sink": "spawn",
+        "sink_lineno": 52
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v54",
+        "source_lineno": 121,
+        "sink": "spawn",
+        "sink_lineno": 52
+    }
+]

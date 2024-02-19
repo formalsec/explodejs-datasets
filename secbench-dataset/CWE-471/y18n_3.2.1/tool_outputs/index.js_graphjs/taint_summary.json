@@ -1,0 +1,23 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "v75",
+        "source_lineno": 116,
+        "sink": "writeFile",
+        "sink_lineno": 141
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v85",
+        "source_lineno": 146,
+        "sink": "readFileSync",
+        "sink_lineno": 152
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v166",
+        "source_lineno": 311,
+        "sink": "v164[key] = v165;",
+        "sink_lineno": 326
+    }
+]

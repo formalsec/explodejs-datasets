@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "v19",
+        "source_lineno": 3,
+        "sink": "exec",
+        "sink_lineno": 37
+    }
+]

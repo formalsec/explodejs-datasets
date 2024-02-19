@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "deepSet",
+        "source_lineno": 124,
+        "sink": "currentObject[property] = value;",
+        "sink_lineno": 152
+    }
+]

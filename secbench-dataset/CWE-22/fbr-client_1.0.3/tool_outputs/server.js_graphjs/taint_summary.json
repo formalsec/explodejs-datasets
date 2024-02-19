@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "serverHandler",
+        "source_lineno": 25,
+        "sink": "readFile",
+        "sink_lineno": 78
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "cmd_exec",
+        "source_lineno": 97,
+        "sink": "spawn",
+        "sink_lineno": 100
+    }
+]

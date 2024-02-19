@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setPath",
+        "source_lineno": 48,
+        "sink": "document[keyPath] = value;",
+        "sink_lineno": 92
+    }
+]

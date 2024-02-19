@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "_recursiveMerge",
+        "source_lineno": 110,
+        "sink": "base[key] = v56;",
+        "sink_lineno": 133
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "_merge",
+        "source_lineno": 137,
+        "sink": "base[key] = v56;",
+        "sink_lineno": 133
+    }
+]

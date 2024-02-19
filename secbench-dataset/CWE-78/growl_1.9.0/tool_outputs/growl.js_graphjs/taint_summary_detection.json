@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "growl",
+        "source_lineno": 138,
+        "sink": "exec",
+        "sink_lineno": 415
+    }
+]

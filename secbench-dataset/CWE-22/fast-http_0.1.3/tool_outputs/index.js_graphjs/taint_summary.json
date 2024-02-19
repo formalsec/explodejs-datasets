@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "v55",
+        "source_lineno": 7,
+        "sink": "readFile",
+        "sink_lineno": 102
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v51",
+        "source_lineno": 16,
+        "sink": "readFile",
+        "sink_lineno": 102
+    }
+]

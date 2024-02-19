@@ -1,0 +1,58 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "commandExistsUnix",
+        "source_lineno": 57,
+        "sink": "exec",
+        "sink_lineno": 72
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "commandExists",
+        "source_lineno": 126,
+        "sink": "exec",
+        "sink_lineno": 72
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "commandExistsWindows",
+        "source_lineno": 81,
+        "sink": "exec",
+        "sink_lineno": 93
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "commandExists",
+        "source_lineno": 126,
+        "sink": "exec",
+        "sink_lineno": 93
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "commandExistsUnixSync",
+        "source_lineno": 95,
+        "sink": "execSync",
+        "sink_lineno": 104
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v68",
+        "source_lineno": 158,
+        "sink": "execSync",
+        "sink_lineno": 104
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "commandExistsWindowsSync",
+        "source_lineno": 115,
+        "sink": "execSync",
+        "sink_lineno": 118
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v68",
+        "source_lineno": 158,
+        "sink": "execSync",
+        "sink_lineno": 118
+    }
+]

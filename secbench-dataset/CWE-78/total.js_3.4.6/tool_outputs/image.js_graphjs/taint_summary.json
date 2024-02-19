@@ -1,0 +1,51 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "v117",
+        "source_lineno": 256,
+        "sink": "createReadStream",
+        "sink_lineno": 297
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v170",
+        "source_lineno": 336,
+        "sink": "exec",
+        "sink_lineno": 412
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "v170",
+        "source_lineno": 336,
+        "sink": "createReadStream",
+        "sink_lineno": 393
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v227",
+        "source_lineno": 448,
+        "sink": "spawn",
+        "sink_lineno": 490
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v227",
+        "source_lineno": 448,
+        "sink": "spawn",
+        "sink_lineno": 578
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v265",
+        "source_lineno": 541,
+        "sink": "spawn",
+        "sink_lineno": 578
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "v353",
+        "source_lineno": 742,
+        "sink": "exec",
+        "sink_lineno": 782
+    }
+]

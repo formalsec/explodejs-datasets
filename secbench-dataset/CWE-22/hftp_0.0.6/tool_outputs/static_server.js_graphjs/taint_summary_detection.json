@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "path-traversal",
+        "source": "hftp",
+        "source_lineno": 32,
+        "sink": "createReadStream",
+        "sink_lineno": 131
+    }
+]

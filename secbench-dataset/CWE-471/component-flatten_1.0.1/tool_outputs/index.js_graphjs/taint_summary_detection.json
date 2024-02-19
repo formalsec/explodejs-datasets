@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v16",
+        "source_lineno": 11,
+        "sink": "releases[v30] = branch;",
+        "sink_lineno": 70
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "traverse",
+        "source_lineno": 45,
+        "sink": "releases[v30] = branch;",
+        "sink_lineno": 70
+    }
+]

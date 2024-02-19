@@ -1,0 +1,44 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v20",
+        "source_lineno": 4,
+        "sink": "obj[key] = value;",
+        "sink_lineno": 249
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "copyWithFromto",
+        "source_lineno": 83,
+        "sink": "obj[key] = value;",
+        "sink_lineno": 249
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "copyWithoutFromto",
+        "source_lineno": 136,
+        "sink": "obj[key] = value;",
+        "sink_lineno": 249
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setDeep",
+        "source_lineno": 226,
+        "sink": "obj[key] = value;",
+        "sink_lineno": 249
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "_setDeep",
+        "source_lineno": 231,
+        "sink": "obj[key] = value;",
+        "sink_lineno": 249
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setParentEmptyObject",
+        "source_lineno": 264,
+        "sink": "obj[key] = value;",
+        "sink_lineno": 249
+    }
+]

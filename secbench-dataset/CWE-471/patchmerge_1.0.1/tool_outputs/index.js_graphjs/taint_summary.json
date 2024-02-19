@@ -1,0 +1,44 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "objectMerge",
+        "source_lineno": 84,
+        "sink": "original[name] = v80;",
+        "sink_lineno": 132
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v91",
+        "source_lineno": 140,
+        "sink": "original[name] = v80;",
+        "sink_lineno": 132
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "objectMerge",
+        "source_lineno": 84,
+        "sink": "original[name] = v77;",
+        "sink_lineno": 127
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v91",
+        "source_lineno": 140,
+        "sink": "original[name] = v77;",
+        "sink_lineno": 127
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "objectMerge",
+        "source_lineno": 84,
+        "sink": "original[name] = v74;",
+        "sink_lineno": 118
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v91",
+        "source_lineno": 140,
+        "sink": "original[name] = v74;",
+        "sink_lineno": 118
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "cat",
+        "source_lineno": 2,
+        "sink": "exec",
+        "sink_lineno": 14
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "catSync",
+        "source_lineno": 32,
+        "sink": "execSync",
+        "sink_lineno": 35
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "rec",
+        "source_lineno": 104,
+        "sink": "exec",
+        "sink_lineno": 121
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "recSync",
+        "source_lineno": 142,
+        "sink": "execSync",
+        "sink_lineno": 150
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "retimeSync",
+        "source_lineno": 250,
+        "sink": "readFileSync",
+        "sink_lineno": 251
+    },
+    {
+        "vuln_type": "path-traversal",
+        "source": "retimeSync",
+        "source_lineno": 250,
+        "sink": "writeFileSync",
+        "sink_lineno": 253
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "upload",
+        "source_lineno": 257,
+        "sink": "exec",
+        "sink_lineno": 270
+    },
+    {
+        "vuln_type": "command-injection",
+        "source": "uploadSync",
+        "source_lineno": 288,
+        "sink": "execSync",
+        "sink_lineno": 291
+    }
+]

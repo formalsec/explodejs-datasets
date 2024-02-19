@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v36",
+        "source_lineno": 26,
+        "sink": "destination[prop] = v33;",
+        "sink_lineno": 58
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "v34",
+        "source_lineno": 28,
+        "sink": "destination[prop] = v33;",
+        "sink_lineno": 58
+    }
+]

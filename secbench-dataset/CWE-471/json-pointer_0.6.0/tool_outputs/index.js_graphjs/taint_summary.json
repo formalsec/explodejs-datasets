@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "set",
+        "source_lineno": 60,
+        "sink": "obj[nextTok] = value;",
+        "sink_lineno": 105
+    }
+]
