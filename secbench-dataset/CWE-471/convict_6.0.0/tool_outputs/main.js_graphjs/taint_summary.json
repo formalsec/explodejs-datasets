@@ -1,114 +1,22 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "loadFile",
-        "source_lineno": 671,
-        "sink": "readFileSync",
-        "sink_lineno": 685
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "convict",
-        "source_lineno": 718,
-        "sink": "readFileSync",
-        "sink_lineno": 685
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v395",
-        "source_lineno": 826,
-        "sink": "readFileSync",
-        "sink_lineno": 685
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v399",
-        "source_lineno": 819,
-        "sink": "readFileSync",
-        "sink_lineno": 685
+        "sink": "return parse(fs.readFileSync(path, 'utf-8'))",
+        "sink_lineno": 429
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "addDefaultValues",
-        "source_lineno": 509,
-        "sink": "c[name] = v265;",
-        "sink_lineno": 527
+        "sink": "c[name] = coerce(name, cloneDeep(p.default), schema, instance)",
+        "sink_lineno": 342
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v266",
-        "source_lineno": 512,
-        "sink": "c[name] = v265;",
-        "sink_lineno": 527
+        "sink": "c[name] = kids",
+        "sink_lineno": 340
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "addDefaultValues",
-        "source_lineno": 509,
-        "sink": "c[name] = kids;",
-        "sink_lineno": 522
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v266",
-        "source_lineno": 512,
-        "sink": "c[name] = kids;",
-        "sink_lineno": 522
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "overlay",
-        "source_lineno": 540,
-        "sink": "to[k] = v285;",
-        "sink_lineno": 557
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "convict",
-        "source_lineno": 718,
-        "sink": "to[k] = v285;",
-        "sink_lineno": 557
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v383",
-        "source_lineno": 797,
-        "sink": "to[k] = v285;",
-        "sink_lineno": 557
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v389",
-        "source_lineno": 808,
-        "sink": "to[k] = v285;",
-        "sink_lineno": 557
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v399",
-        "source_lineno": 819,
-        "sink": "to[k] = v285;",
-        "sink_lineno": 557
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v457",
-        "source_lineno": 843,
-        "sink": "to[k] = v285;",
-        "sink_lineno": 557
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v295",
-        "source_lineno": 542,
-        "sink": "to[k] = v285;",
-        "sink_lineno": 557
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v395",
-        "source_lineno": 826,
-        "sink": "to[k] = v285;",
-        "sink_lineno": 557
+        "sink": "to[k] = coerce(k, from[k], schema)",
+        "sink_lineno": 355
     }
 ]

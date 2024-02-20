@@ -1,16 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "evaluateExpression",
-        "source_lineno": 17,
-        "sink": "eval",
-        "sink_lineno": 61
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "evaluateNestedExpression",
-        "source_lineno": 81,
-        "sink": "eval",
-        "sink_lineno": 61
+        "sink": "result = eval(toEvaluate)",
+        "sink_lineno": 73
     }
 ]

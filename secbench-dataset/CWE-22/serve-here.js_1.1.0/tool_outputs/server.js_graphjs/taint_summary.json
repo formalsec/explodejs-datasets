@@ -1,16 +1,7 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "Server",
-        "source_lineno": 6,
-        "sink": "readFile",
-        "sink_lineno": 78
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v49",
-        "source_lineno": 19,
-        "sink": "readFile",
-        "sink_lineno": 78
+        "sink": "FileSystem.readFile (FilePath, function (SomeError, Data) {",
+        "sink_lineno": 27
     }
 ]

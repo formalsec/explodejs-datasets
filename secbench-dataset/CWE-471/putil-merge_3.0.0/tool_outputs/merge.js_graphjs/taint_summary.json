@@ -1,1 +1,7 @@
-[]
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = srcVal;",
+        "sink_lineno": 72
+    }
+]

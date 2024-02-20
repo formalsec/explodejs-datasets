@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "v69",
-        "source_lineno": 93,
-        "sink": "eval",
-        "sink_lineno": 128
+        "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
+        "sink_lineno": 75
     }
 ]

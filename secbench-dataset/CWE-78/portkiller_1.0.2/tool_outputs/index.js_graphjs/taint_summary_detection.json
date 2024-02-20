@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "killer",
-        "source_lineno": 5,
-        "sink": "exec",
-        "sink_lineno": 26
+        "sink": "exec(`lsof -n -i4TCP:${port} | grep LISTEN`, (err, out, stderr) => {",
+        "sink_lineno": 10
     },
     {
         "vuln_type": "command-injection",
-        "source": "v21",
-        "source_lineno": 30,
-        "sink": "exec",
-        "sink_lineno": 40
+        "sink": "exec(`kill ${pid}`,(err, out, stderr) => {",
+        "sink_lineno": 22
     }
 ]

@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "selflatex",
-        "source_lineno": 6,
-        "sink": "exec",
-        "sink_lineno": 40
+        "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
+        "sink_lineno": 10
     },
     {
         "vuln_type": "command-injection",
-        "source": "selflatex",
-        "source_lineno": 6,
-        "sink": "exec",
-        "sink_lineno": 36
+        "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
+        "sink_lineno": 15
     }
 ]

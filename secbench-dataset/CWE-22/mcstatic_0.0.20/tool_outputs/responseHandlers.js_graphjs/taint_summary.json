@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "handleRange",
-        "source_lineno": 3,
-        "sink": "createReadStream",
-        "sink_lineno": 24
+        "sink": "var fstream = fs.createReadStream(file, {start: start, end: end});",
+        "sink_lineno": 12
     },
     {
         "vuln_type": "path-traversal",
-        "source": "streamResponse",
-        "source_lineno": 48,
-        "sink": "createReadStream",
-        "sink_lineno": 49
+        "sink": "var stream = fs.createReadStream(file);",
+        "sink_lineno": 23
     }
 ]

@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "evaluator",
-        "source_lineno": 52,
-        "sink": "eval",
-        "sink_lineno": 53
+        "sink": "eval(src);",
+        "sink_lineno": 74
     },
     {
         "vuln_type": "path-traversal",
-        "source": "modulifyFile",
-        "source_lineno": 146,
-        "sink": "readFileSync",
-        "sink_lineno": 149
+        "sink": "var src = fs.readFileSync(srcFile, 'utf8');",
+        "sink_lineno": 250
     }
 ]

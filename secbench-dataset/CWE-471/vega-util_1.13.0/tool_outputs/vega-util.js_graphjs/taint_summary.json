@@ -1,23 +1,12 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "key",
-        "source_lineno": 1276,
-        "sink": "Function",
-        "sink_lineno": 1317
+        "sink": ": Function('_', 'return \\'\\'+' +",
+        "sink_lineno": 694
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "writeConfig",
-        "source_lineno": 374,
-        "sink": "o[k] = v150;",
-        "sink_lineno": 402
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v133",
-        "source_lineno": 338,
-        "sink": "o[k] = v150;",
-        "sink_lineno": 402
+        "sink": "o[k] = value[k];",
+        "sink_lineno": 203
     }
 ]

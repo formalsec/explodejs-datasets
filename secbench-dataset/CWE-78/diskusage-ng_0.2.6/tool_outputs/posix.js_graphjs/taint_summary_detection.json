@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "diskusage",
-        "source_lineno": 6,
-        "sink": "exec",
-        "sink_lineno": 31
+        "sink": "exec('df -k \"' + path + '\"', function(err, stdout) {",
+        "sink_lineno": 11
     }
 ]

@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "is_infected",
-        "source_lineno": 1431,
-        "sink": "createReadStream",
-        "sink_lineno": 1798
+        "sink": "const stream = fs.createReadStream(file);",
+        "sink_lineno": 846
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v1755",
-        "source_lineno": 3425,
-        "sink": "createReadStream",
-        "sink_lineno": 3426
+        "sink": "results.concat(await Promise.all(chunk.map(file => this.scan_stream(fs.createReadStream(file)))));",
+        "sink_lineno": 1587
     }
 ]

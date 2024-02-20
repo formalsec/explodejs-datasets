@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "getCredential",
-        "source_lineno": 21,
-        "sink": "exec",
-        "sink_lineno": 23
+        "sink": "return exec(script)",
+        "sink_lineno": 16
     }
 ]

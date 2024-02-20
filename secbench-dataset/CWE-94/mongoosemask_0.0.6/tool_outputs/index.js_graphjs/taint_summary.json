@@ -1,79 +1,12 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "setItemPath",
-        "source_lineno": 159,
-        "sink": "eval",
-        "sink_lineno": 162
+        "sink": "eval(path);",
+        "sink_lineno": 170
     },
     {
         "vuln_type": "code-injection",
-        "source": "setItemValue",
-        "source_lineno": 165,
-        "sink": "eval",
-        "sink_lineno": 162
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "v46",
-        "source_lineno": 105,
-        "sink": "eval",
-        "sink_lineno": 162
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "v43",
-        "source_lineno": 108,
-        "sink": "eval",
-        "sink_lineno": 162
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "deleteItemValue",
-        "source_lineno": 170,
-        "sink": "eval",
-        "sink_lineno": 173
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "masked",
-        "source_lineno": 76,
-        "sink": "eval",
-        "sink_lineno": 173
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "mask",
-        "source_lineno": 41,
-        "sink": "eval",
-        "sink_lineno": 173
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "v7",
-        "source_lineno": 7,
-        "sink": "eval",
-        "sink_lineno": 173
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "v22",
-        "source_lineno": 45,
-        "sink": "eval",
-        "sink_lineno": 173
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "v39",
-        "source_lineno": 85,
-        "sink": "eval",
-        "sink_lineno": 173
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "v36",
-        "source_lineno": 88,
-        "sink": "eval",
-        "sink_lineno": 173
+        "sink": "eval(path);",
+        "sink_lineno": 181
     }
 ]

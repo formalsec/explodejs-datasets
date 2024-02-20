@@ -1,37 +1,22 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "IniParser",
-        "source_lineno": 11,
-        "sink": "readFileSync",
-        "sink_lineno": 26
+        "sink": "this.input = fs.readFileSync(path, encoding)",
+        "sink_lineno": 17
     },
     {
         "vuln_type": "path-traversal",
-        "source": "IniParser",
-        "source_lineno": 11,
-        "sink": "writeFileSync",
-        "sink_lineno": 250
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v117",
-        "source_lineno": 238,
-        "sink": "writeFileSync",
-        "sink_lineno": 250
+        "sink": "fs.writeFileSync(toPath, result, {encoding: toEncoding})",
+        "sink_lineno": 161
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "IniParser",
-        "source_lineno": 11,
-        "sink": "v54[curKey] = curValue;",
-        "sink_lineno": 116
+        "sink": "this.configs[curSection][curKey] = curValue",
+        "sink_lineno": 63
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v87",
-        "source_lineno": 171,
-        "sink": "v86[key] = value;",
-        "sink_lineno": 188
+        "sink": "this.configs[section][key] = value",
+        "sink_lineno": 108
     }
 ]

@@ -1,23 +1,17 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "upload",
-        "source_lineno": 6,
-        "sink": "exec",
-        "sink_lineno": 16
+        "sink": "let _cmd = exec(`gsutil -m cp ${_rn} -a public-read ${_path} ${bucket}`)",
+        "sink_lineno": 11
     },
     {
         "vuln_type": "command-injection",
-        "source": "cors",
-        "source_lineno": 27,
-        "sink": "exec",
-        "sink_lineno": 37
+        "sink": "let _cmd = exec(_c, (code, stdout, stderr) => {",
+        "sink_lineno": 22
     },
     {
         "vuln_type": "command-injection",
-        "source": "publicRead",
-        "source_lineno": 42,
-        "sink": "exec",
-        "sink_lineno": 56
+        "sink": "let _cmd = exec(_c, (code, stdout, stderr) => {",
+        "sink_lineno": 39
     }
 ]

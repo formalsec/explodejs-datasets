@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v62",
-        "source_lineno": 45,
-        "sink": "createReadStream",
-        "sink_lineno": 90
+        "sink": "var readstream = fs.createReadStream(filepath, { encoding: 'binary' });",
+        "sink_lineno": 41
     }
 ]

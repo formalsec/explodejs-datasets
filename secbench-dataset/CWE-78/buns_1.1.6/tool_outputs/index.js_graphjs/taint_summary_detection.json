@@ -1,37 +1,22 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "v30",
-        "source_lineno": 49,
-        "sink": "require",
-        "sink_lineno": 52
+        "sink": "return require(presetLoc);",
+        "sink_lineno": 28
     },
     {
         "vuln_type": "path-traversal",
-        "source": "treatFile",
-        "source_lineno": 657,
-        "sink": "writeFileSync",
-        "sink_lineno": 712
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "recursiveReaddirSync",
-        "source_lineno": 855,
-        "sink": "writeFileSync",
-        "sink_lineno": 712
+        "sink": "fs.writeFileSync(__tmp + parentDirs + DS + filename, result.code);",
+        "sink_lineno": 391
     },
     {
         "vuln_type": "command-injection",
-        "source": "v731",
-        "source_lineno": 1274,
-        "sink": "execSync",
-        "sink_lineno": 1314
+        "sink": "exec(command);",
+        "sink_lineno": 678
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v731",
-        "source_lineno": 1274,
-        "sink": "readFileSync",
-        "sink_lineno": 1320
+        "sink": "var conf = JSON.parse(fs.readFileSync(modulesPath + name + DS + 'package.json'));",
+        "sink_lineno": 681
     }
 ]

@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v20",
-        "source_lineno": 28,
-        "sink": "readFile",
-        "sink_lineno": 54
+        "sink": "fs.readFile(filePath, function(err, data) {",
+        "sink_lineno": 43
     },
     {
         "vuln_type": "code-injection",
-        "source": "v54",
-        "source_lineno": 75,
-        "sink": "eval",
-        "sink_lineno": 106
+        "sink": "msg.result = eval( msg.data )",
+        "sink_lineno": 83
     }
 ]

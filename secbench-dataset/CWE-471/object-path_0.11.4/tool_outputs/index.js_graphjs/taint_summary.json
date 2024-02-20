@@ -1,23 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "set",
-        "source_lineno": 146,
         "sink": "obj[currentPath] = value;",
-        "sink_lineno": 177
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v122",
-        "source_lineno": 255,
-        "sink": "obj[currentPath] = value;",
-        "sink_lineno": 177
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v124",
-        "source_lineno": 260,
-        "sink": "obj[currentPath] = value;",
-        "sink_lineno": 177
+        "sink_lineno": 110
     }
 ]

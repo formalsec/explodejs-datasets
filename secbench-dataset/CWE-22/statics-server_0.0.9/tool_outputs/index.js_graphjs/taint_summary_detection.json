@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v26",
-        "source_lineno": 8,
-        "sink": "createReadStream",
-        "sink_lineno": 23
+        "sink": "fs.createReadStream(indexPath).pipe(res);",
+        "sink_lineno": 16
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v26",
-        "source_lineno": 8,
-        "sink": "createReadStream",
-        "sink_lineno": 58
+        "sink": "fs.createReadStream(staticPath).pipe(res);",
+        "sink_lineno": 37
     }
 ]

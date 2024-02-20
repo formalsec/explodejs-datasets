@@ -1,16 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "funcs",
-        "source_lineno": 58,
-        "sink": "exec",
-        "sink_lineno": 90
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v38",
-        "source_lineno": 72,
-        "sink": "exec",
-        "sink_lineno": 90
+        "sink": "const execute = proc(cmd, (err, stdout, stderr) => {",
+        "sink_lineno": 114
     }
 ]

@@ -1,79 +1,57 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v12",
-        "source_lineno": 4,
-        "sink": "exec",
-        "sink_lineno": 18
+        "sink": "exec(",
+        "sink_lineno": 8
     },
     {
         "vuln_type": "command-injection",
-        "source": "v23",
-        "source_lineno": 29,
-        "sink": "exec",
-        "sink_lineno": 43
+        "sink": "exec(",
+        "sink_lineno": 27
     },
     {
         "vuln_type": "command-injection",
-        "source": "v34",
-        "source_lineno": 54,
-        "sink": "exec",
-        "sink_lineno": 68
+        "sink": "exec(",
+        "sink_lineno": 46
     },
     {
         "vuln_type": "command-injection",
-        "source": "v45",
-        "source_lineno": 79,
-        "sink": "exec",
-        "sink_lineno": 93
+        "sink": "exec(",
+        "sink_lineno": 65
     },
     {
         "vuln_type": "command-injection",
-        "source": "v57",
-        "source_lineno": 104,
-        "sink": "exec",
+        "sink": "exec(",
+        "sink_lineno": 83
+    },
+    {
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 101
+    },
+    {
+        "vuln_type": "command-injection",
+        "sink": "exec(",
         "sink_lineno": 119
     },
     {
         "vuln_type": "command-injection",
-        "source": "v70",
-        "source_lineno": 130,
-        "sink": "exec",
-        "sink_lineno": 146
+        "sink": "exec(",
+        "sink_lineno": 137
     },
     {
         "vuln_type": "command-injection",
-        "source": "v83",
-        "source_lineno": 157,
-        "sink": "exec",
+        "sink": "exec(",
+        "sink_lineno": 155
+    },
+    {
+        "vuln_type": "command-injection",
+        "sink": "exec(",
         "sink_lineno": 173
     },
     {
         "vuln_type": "command-injection",
-        "source": "v94",
-        "source_lineno": 184,
-        "sink": "exec",
-        "sink_lineno": 198
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v108",
-        "source_lineno": 209,
-        "sink": "exec",
-        "sink_lineno": 226
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v122",
-        "source_lineno": 237,
-        "sink": "exec",
-        "sink_lineno": 254
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v134",
-        "source_lineno": 265,
-        "sink": "exec",
-        "sink_lineno": 280
+        "sink": "exec(",
+        "sink_lineno": 191
     }
 ]

@@ -1,23 +1,7 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v123",
-        "source_lineno": 219,
-        "sink": "readFile",
-        "sink_lineno": 268
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "runServer",
-        "source_lineno": 111,
-        "sink": "readFile",
-        "sink_lineno": 268
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v138",
-        "source_lineno": 158,
-        "sink": "readFile",
-        "sink_lineno": 268
+        "sink": "fs.readFile(filepath, 'binary', function(err, file) {",
+        "sink_lineno": 148
     }
 ]

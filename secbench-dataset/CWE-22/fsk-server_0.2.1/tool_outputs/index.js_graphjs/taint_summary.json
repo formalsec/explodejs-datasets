@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v36",
-        "source_lineno": 27,
-        "sink": "readFileSync",
-        "sink_lineno": 70
+        "sink": "data = fs.readFileSync(url,'utf8');",
+        "sink_lineno": 48
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v28",
-        "source_lineno": 76,
-        "sink": "readFileSync",
-        "sink_lineno": 79
+        "sink": "return fs.existsSync(_path) ? fs.readFileSync(_path,'utf8') : '<!-- 404 Not found -->';",
+        "sink_lineno": 54
     }
 ]

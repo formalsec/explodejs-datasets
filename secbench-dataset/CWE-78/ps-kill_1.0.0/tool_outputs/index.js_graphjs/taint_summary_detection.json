@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "kill",
-        "source_lineno": 4,
-        "sink": "exec",
-        "sink_lineno": 19
+        "sink": "exec(cmd, function (error) {",
+        "sink_lineno": 8
     }
 ]

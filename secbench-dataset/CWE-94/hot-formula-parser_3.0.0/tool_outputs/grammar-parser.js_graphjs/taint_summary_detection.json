@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "v187",
-        "source_lineno": 493,
-        "sink": "eval",
-        "sink_lineno": 731
+        "sink": "var arr = eval(\"[\" + yytext + \"]\");",
+        "sink_lineno": 258
     }
 ]

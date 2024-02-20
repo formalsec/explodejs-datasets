@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v7",
-        "source_lineno": 4,
-        "sink": "exec",
-        "sink_lineno": 10
+        "sink": "exec('taskkill /F /IM ' + programname + '.exe /T');",
+        "sink_lineno": 9
     },
     {
         "vuln_type": "command-injection",
-        "source": "v7",
-        "source_lineno": 4,
-        "sink": "exec",
-        "sink_lineno": 15
+        "sink": "exec('pkill -f ' + programname);",
+        "sink_lineno": 12
     }
 ]

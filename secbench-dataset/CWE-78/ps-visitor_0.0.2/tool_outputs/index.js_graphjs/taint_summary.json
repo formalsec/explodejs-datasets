@@ -1,30 +1,17 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "psRaw",
-        "source_lineno": 117,
-        "sink": "exec",
-        "sink_lineno": 122
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 56
     },
     {
         "vuln_type": "command-injection",
-        "source": "ps",
-        "source_lineno": 293,
-        "sink": "exec",
-        "sink_lineno": 122
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 404
     },
     {
         "vuln_type": "command-injection",
-        "source": "kill",
-        "source_lineno": 616,
-        "sink": "exec",
-        "sink_lineno": 634
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "getSignalRaw",
-        "source_lineno": 674,
-        "sink": "exec",
-        "sink_lineno": 681
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 444
     }
 ]

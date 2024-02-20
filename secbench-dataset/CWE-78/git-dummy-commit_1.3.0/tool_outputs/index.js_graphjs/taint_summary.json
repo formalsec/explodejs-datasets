@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v20",
-        "source_lineno": 17,
-        "sink": "exec",
-        "sink_lineno": 46
+        "sink": "shell.exec('git commit ' + arg + ' --allow-empty --no-gpg-sign', {",
+        "sink_lineno": 37
     }
 ]

@@ -1,30 +1,7 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "serveFile",
-        "source_lineno": 86,
-        "sink": "createReadStream",
-        "sink_lineno": 87
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v81",
-        "source_lineno": 165,
-        "sink": "createReadStream",
-        "sink_lineno": 87
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "basicStatic",
-        "source_lineno": 135,
-        "sink": "createReadStream",
-        "sink_lineno": 87
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v96",
-        "source_lineno": 136,
-        "sink": "createReadStream",
-        "sink_lineno": 87
+        "sink": "const stream = fs.createReadStream(filePath);",
+        "sink_lineno": 121
     }
 ]

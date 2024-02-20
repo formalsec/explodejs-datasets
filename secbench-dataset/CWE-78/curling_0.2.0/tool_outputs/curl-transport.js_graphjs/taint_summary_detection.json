@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v51",
-        "source_lineno": 127,
-        "sink": "exec",
-        "sink_lineno": 138
+        "sink": "exec(\"curl \" + command, function (error, stdout, stderr) {",
+        "sink_lineno": 56
     }
 ]

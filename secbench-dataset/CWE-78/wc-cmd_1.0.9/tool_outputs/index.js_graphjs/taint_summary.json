@@ -1,16 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "cmd",
-        "source_lineno": 1,
-        "sink": "exec",
-        "sink_lineno": 76
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v18",
-        "source_lineno": 39,
-        "sink": "exec",
-        "sink_lineno": 76
+        "sink": "var child = exec(command, {",
+        "sink_lineno": 49
     }
 ]

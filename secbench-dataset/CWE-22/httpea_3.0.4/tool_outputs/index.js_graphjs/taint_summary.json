@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v33",
-        "source_lineno": 46,
-        "sink": "readFileSync",
-        "sink_lineno": 69
+        "sink": "const file = fs.readFileSync(filePath);",
+        "sink_lineno": 48
     }
 ]

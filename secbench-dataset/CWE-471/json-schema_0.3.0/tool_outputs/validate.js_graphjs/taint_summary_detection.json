@@ -1,23 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "v338",
-        "source_lineno": 54,
-        "sink": "value[i] = v136;",
-        "sink_lineno": 276
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "checkProp",
-        "source_lineno": 72,
-        "sink": "value[i] = v136;",
-        "sink_lineno": 276
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "checkObj",
-        "source_lineno": 446,
-        "sink": "value[i] = v136;",
-        "sink_lineno": 276
+        "sink": "value[i] = options.coerce(value[i], propDef);",
+        "sink_lineno": 149
     }
 ]

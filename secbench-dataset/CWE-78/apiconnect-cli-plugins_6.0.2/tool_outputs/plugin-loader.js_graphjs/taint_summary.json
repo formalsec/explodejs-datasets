@@ -1,149 +1,47 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "validatePlugin",
-        "source_lineno": 32,
-        "sink": "require",
-        "sink_lineno": 39
+        "sink": "pluginInfo = require(path.join(pluginPath, 'package.json'));",
+        "sink_lineno": 48
     },
     {
         "vuln_type": "code-injection",
-        "source": "v140",
-        "source_lineno": 231,
-        "sink": "require",
-        "sink_lineno": 39
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "loadPluginFromDir",
-        "source_lineno": 337,
-        "sink": "require",
-        "sink_lineno": 39
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "processDir",
-        "source_lineno": 425,
-        "sink": "require",
-        "sink_lineno": 39
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "validatePlugin",
-        "source_lineno": 32,
-        "sink": "require",
-        "sink_lineno": 66
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "v140",
-        "source_lineno": 231,
-        "sink": "require",
-        "sink_lineno": 66
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "loadPluginFromDir",
-        "source_lineno": 337,
-        "sink": "require",
-        "sink_lineno": 66
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "processDir",
-        "source_lineno": 425,
-        "sink": "require",
-        "sink_lineno": 66
+        "sink": "maybePlugin = require(pluginPath);",
+        "sink_lineno": 63
     },
     {
         "vuln_type": "command-injection",
-        "source": "installPluginInDir",
-        "source_lineno": 253,
-        "sink": "exec",
-        "sink_lineno": 322
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "installPlugin",
-        "source_lineno": 211,
-        "sink": "exec",
-        "sink_lineno": 322
+        "sink": "var proc = exec(installCmd, function(err) {",
+        "sink_lineno": 181
     },
     {
         "vuln_type": "code-injection",
-        "source": "installPluginInDir",
-        "source_lineno": 253,
-        "sink": "require",
-        "sink_lineno": 298
+        "sink": "var pkg = require(path.join(pluginDir, 'package.json'));",
+        "sink_lineno": 204
     },
     {
         "vuln_type": "code-injection",
-        "source": "loadPluginFromDir",
-        "source_lineno": 337,
-        "sink": "require",
-        "sink_lineno": 358
+        "sink": "if (!require(pluginDir).getVersion ||",
+        "sink_lineno": 240
     },
     {
         "vuln_type": "code-injection",
-        "source": "processDir",
-        "source_lineno": 425,
-        "sink": "require",
-        "sink_lineno": 358
+        "sink": "typeof require(pluginDir).getVersion !== 'function') {",
+        "sink_lineno": 241
     },
     {
         "vuln_type": "code-injection",
-        "source": "loadPluginFromDir",
-        "source_lineno": 337,
-        "sink": "require",
-        "sink_lineno": 361
+        "sink": "var pkg = require(path.join(pluginDir, 'package.json'));",
+        "sink_lineno": 243
     },
     {
         "vuln_type": "code-injection",
-        "source": "processDir",
-        "source_lineno": 425,
-        "sink": "require",
-        "sink_lineno": 361
+        "sink": "var plugin = require(pluginDir);",
+        "sink_lineno": 244
     },
     {
         "vuln_type": "code-injection",
-        "source": "loadPluginFromDir",
-        "source_lineno": 337,
-        "sink": "require",
-        "sink_lineno": 368
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "processDir",
-        "source_lineno": 425,
-        "sink": "require",
-        "sink_lineno": 368
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "loadPluginFromDir",
-        "source_lineno": 337,
-        "sink": "require",
-        "sink_lineno": 369
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "processDir",
-        "source_lineno": 425,
-        "sink": "require",
-        "sink_lineno": 369
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "loadPluginFromDir",
-        "source_lineno": 337,
-        "sink": "require",
-        "sink_lineno": 400
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "processDir",
-        "source_lineno": 425,
-        "sink": "require",
-        "sink_lineno": 400
+        "sink": "return require(pluginDir).getVersion();",
+        "sink_lineno": 257
     }
 ]

@@ -1,16 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "v185",
-        "source_lineno": 3,
-        "sink": "Function",
-        "sink_lineno": 356
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "v182",
-        "source_lineno": 9,
-        "sink": "Function",
-        "sink_lineno": 356
+        "sink": "return Function(keys.join(', '), 'return ' + unparse(node)).apply(null, vals);",
+        "sink_lineno": 118
     }
 ]

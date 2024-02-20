@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "start",
-        "source_lineno": 29,
-        "sink": "readFile",
-        "sink_lineno": 84
+        "sink": "fs.readFile(host.frondend + host.baseTemp, function(err, file) {",
+        "sink_lineno": 41
     },
     {
         "vuln_type": "path-traversal",
-        "source": "onRequest",
-        "source_lineno": 35,
-        "sink": "readFile",
-        "sink_lineno": 157
+        "sink": "fs.readFile(nowTemp, function(err, file) {",
+        "sink_lineno": 85
     }
 ]

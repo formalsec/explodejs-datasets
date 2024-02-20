@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "wfLoader",
-        "source_lineno": 18,
-        "sink": "require",
-        "sink_lineno": 25
+        "sink": "wf = require(wf);",
+        "sink_lineno": 26
     },
     {
         "vuln_type": "code-injection",
-        "source": "v55",
-        "source_lineno": 116,
-        "sink": "require",
-        "sink_lineno": 133
+        "sink": "return require(taskFile);",
+        "sink_lineno": 94
     }
 ]

@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "v85",
-        "source_lineno": 127,
-        "sink": "ret[v84] = value;",
-        "sink_lineno": 151
+        "sink": "if (keyPath.length > 0) ret[keyPath[keyPath.length - 1]] = value;",
+        "sink_lineno": 76
     }
 ]

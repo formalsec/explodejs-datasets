@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "v25",
-        "source_lineno": 57,
-        "sink": "runInContext",
-        "sink_lineno": 68
+        "sink": "return vm.runInContext('(function () {\"use strict\"; return ' + code + '})()', this._context, this._options);",
+        "sink_lineno": 60
     }
 ]

@@ -1,23 +1,17 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v83",
-        "source_lineno": 53,
-        "sink": "readFile",
-        "sink_lineno": 160
+        "sink": "fs.readFile(p.join('/proc', ''+pid, 'stat'), 'utf8', function(err, infos) {",
+        "sink_lineno": 45
     },
     {
         "vuln_type": "command-injection",
-        "source": "v102",
-        "source_lineno": 163,
-        "sink": "exec",
-        "sink_lineno": 195
+        "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
+        "sink_lineno": 103
     },
     {
         "vuln_type": "command-injection",
-        "source": "v168",
-        "source_lineno": 198,
-        "sink": "spawn",
-        "sink_lineno": 214
+        "sink": "var wmic = spawn('wmic', args.split(' '), {detached: true})",
+        "sink_lineno": 125
     }
 ]

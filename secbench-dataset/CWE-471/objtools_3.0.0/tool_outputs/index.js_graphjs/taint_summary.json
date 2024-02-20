@@ -1,93 +1,27 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "setPath",
-        "source_lineno": 455,
-        "sink": "cur[v202] = value;",
-        "sink_lineno": 468
+        "sink": "cur[parts[i]] = value;",
+        "sink_lineno": 349
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "mergeHeavy",
-        "source_lineno": 626,
         "sink": "object[key] = result;",
-        "sink_lineno": 702
+        "sink_lineno": 533
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "baseMergeHeavy",
-        "source_lineno": 660,
         "sink": "object[key] = result;",
-        "sink_lineno": 702
+        "sink_lineno": 565
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "baseMergeDeepHeavy",
-        "source_lineno": 712,
-        "sink": "object[key] = result;",
-        "sink_lineno": 702
+        "sink": "object[key] = baseMergeHeavy(result, srcValue, customizer);",
+        "sink_lineno": 563
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "mergeHeavy",
-        "source_lineno": 626,
-        "sink": "object[key] = result;",
-        "sink_lineno": 756
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "baseMergeHeavy",
-        "source_lineno": 660,
-        "sink": "object[key] = result;",
-        "sink_lineno": 756
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "baseMergeDeepHeavy",
-        "source_lineno": 712,
-        "sink": "object[key] = result;",
-        "sink_lineno": 756
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "mergeHeavy",
-        "source_lineno": 626,
-        "sink": "object[key] = v315;",
-        "sink_lineno": 752
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "baseMergeHeavy",
-        "source_lineno": 660,
-        "sink": "object[key] = v315;",
-        "sink_lineno": 752
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "baseMergeDeepHeavy",
-        "source_lineno": 712,
-        "sink": "object[key] = v315;",
-        "sink_lineno": 752
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "target",
-        "source_lineno": 561,
-        "sink": "target[key] = v251;",
-        "sink_lineno": 593
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "mergeLight",
-        "source_lineno": 560,
-        "sink": "target[key] = v251;",
-        "sink_lineno": 593
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": null,
-        "source_lineno": 570,
-        "sink": "target[key] = v251;",
-        "sink_lineno": 593
+        "sink": "target[key] = mergeLight(target[key], value);",
+        "sink_lineno": 440
     }
 ]

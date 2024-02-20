@@ -1,30 +1,17 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v65",
-        "source_lineno": 1,
-        "sink": "readFile",
-        "sink_lineno": 87
+        "sink": "fs.readFile(ROOT_DIR + \"/index.html\", function (err,data) {",
+        "sink_lineno": 37
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v65",
-        "source_lineno": 1,
-        "sink": "readFile",
-        "sink_lineno": 108
+        "sink": "fs.readFile(ROOT_DIR + \"/city-weather.html\", function (err,data) {",
+        "sink_lineno": 47
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v65",
-        "source_lineno": 1,
-        "sink": "readFile",
-        "sink_lineno": 127
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v62",
-        "source_lineno": 13,
-        "sink": "readFile",
-        "sink_lineno": 127
+        "sink": "fs.readFile(ROOT_DIR + urlObj.pathname, function (err,data) {",
+        "sink_lineno": 57
     }
 ]

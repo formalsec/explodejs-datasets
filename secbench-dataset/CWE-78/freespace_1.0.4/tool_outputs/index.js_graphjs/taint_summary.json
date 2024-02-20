@@ -1,30 +1,22 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v35",
-        "source_lineno": 22,
-        "sink": "exec",
-        "sink_lineno": 74
+        "sink": "cp.exec(`fsutil volume diskfree ${driveOrMount}:`, {}, cb);",
+        "sink_lineno": 49
     },
     {
         "vuln_type": "command-injection",
-        "source": "v35",
-        "source_lineno": 22,
-        "sink": "exec",
-        "sink_lineno": 79
+        "sink": "cp.exec(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {}, cb);",
+        "sink_lineno": 51
     },
     {
         "vuln_type": "command-injection",
-        "source": "v50",
-        "source_lineno": 96,
-        "sink": "execSync",
-        "sink_lineno": 111
+        "sink": "output = cp.execSync(`fsutil volume diskfree ${driveOrMount}:`, {});",
+        "sink_lineno": 65
     },
     {
         "vuln_type": "command-injection",
-        "source": "v50",
-        "source_lineno": 96,
-        "sink": "execSync",
-        "sink_lineno": 115
+        "sink": "output = cp.execSync(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {});",
+        "sink_lineno": 67
     }
 ]

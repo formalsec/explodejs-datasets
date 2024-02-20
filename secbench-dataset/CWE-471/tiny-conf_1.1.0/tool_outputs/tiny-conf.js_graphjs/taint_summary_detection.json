@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "v26",
-        "source_lineno": 34,
         "sink": "target[key] = val;",
-        "sink_lineno": 74
+        "sink_lineno": 73
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v52",
-        "source_lineno": 77,
         "sink": "target[key] = val;",
-        "sink_lineno": 113
+        "sink_lineno": 107
     }
 ]

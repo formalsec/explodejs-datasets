@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v40",
-        "source_lineno": 10,
-        "sink": "readFile",
-        "sink_lineno": 80
+        "sink": "fs.readFile(filePath, 'utf8', function (err, data) {",
+        "sink_lineno": 39
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v40",
-        "source_lineno": 10,
-        "sink": "createReadStream",
-        "sink_lineno": 85
+        "sink": "var readStream = fs.createReadStream(filePath);",
+        "sink_lineno": 62
     }
 ]

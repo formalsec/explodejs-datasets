@@ -1,16 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "template",
-        "source_lineno": 11371,
-        "sink": "Function",
-        "sink_lineno": 11505
-    },
-    {
-        "vuln_type": "code-injection",
-        "source": "runInContext",
-        "source_lineno": 1431,
-        "sink": "Function",
-        "sink_lineno": 11505
+        "sink": "return Function(importsKeys, sourceURL + 'return ' + source)",
+        "sink_lineno": 14870
     }
 ]

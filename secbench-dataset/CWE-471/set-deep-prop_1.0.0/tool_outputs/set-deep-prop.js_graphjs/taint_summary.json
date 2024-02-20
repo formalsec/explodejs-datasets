@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "setDeepProp",
-        "source_lineno": 1,
-        "sink": "current[v8] = value;",
-        "sink_lineno": 16
+        "sink": "current[path[path.length - 1]] = value",
+        "sink_lineno": 20
     }
 ]

@@ -1,37 +1,27 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "sh",
-        "source_lineno": 8,
-        "sink": "exec",
-        "sink_lineno": 15
+        "sink": "const child = exec(cmd, {",
+        "sink_lineno": 16
     },
     {
         "vuln_type": "path-traversal",
-        "source": "readYamlFile",
-        "source_lineno": 116,
-        "sink": "readFile",
+        "sink": "fs.readFile(file, 'utf8', (err, data) => {",
+        "sink_lineno": 112
+    },
+    {
+        "vuln_type": "path-traversal",
+        "sink": "return yaml.safeLoad(fs.readFileSync(file, 'utf8'));",
         "sink_lineno": 125
     },
     {
         "vuln_type": "path-traversal",
-        "source": "readYamlFileSync",
-        "source_lineno": 128,
-        "sink": "readFileSync",
-        "sink_lineno": 129
+        "sink": "fs.writeFile(file, yaml.safeDump(data), () => {",
+        "sink_lineno": 136
     },
     {
         "vuln_type": "path-traversal",
-        "source": "writeYamlFile",
-        "source_lineno": 133,
-        "sink": "writeFile",
-        "sink_lineno": 141
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "writeYamlFileSync",
-        "source_lineno": 144,
-        "sink": "writeFileSync",
-        "sink_lineno": 146
+        "sink": "fs.writeFileSync(file, yaml.safeDump(data));",
+        "sink_lineno": 147
     }
 ]

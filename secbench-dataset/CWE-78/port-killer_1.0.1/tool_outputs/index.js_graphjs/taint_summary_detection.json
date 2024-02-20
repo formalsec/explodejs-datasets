@@ -1,23 +1,12 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v19",
-        "source_lineno": 4,
-        "sink": "execSync",
-        "sink_lineno": 17
+        "sink": "pid = execSync(`lsof -t -i:${port}`)",
+        "sink_lineno": 19
     },
     {
         "vuln_type": "command-injection",
-        "source": "v12",
-        "source_lineno": 25,
-        "sink": "execSync",
-        "sink_lineno": 27
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v19",
-        "source_lineno": 4,
-        "sink": "execSync",
-        "sink_lineno": 27
+        "sink": "pid.forEach(proc => execSync(`kill -9 ${proc}`));",
+        "sink_lineno": 26
     }
 ]

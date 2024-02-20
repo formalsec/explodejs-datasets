@@ -1,58 +1,12 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "clone",
-        "source_lineno": 2,
-        "sink": "target[key] = v33;",
-        "sink_lineno": 66
+        "sink": "target[key] = clone(sourceVal);",
+        "sink_lineno": 38
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "_merge",
-        "source_lineno": 34,
-        "sink": "target[key] = v33;",
-        "sink_lineno": 66
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "source",
-        "source_lineno": 81,
-        "sink": "target[key] = v33;",
-        "sink_lineno": 66
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "merge",
-        "source_lineno": 71,
-        "sink": "target[key] = v33;",
-        "sink_lineno": 66
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "clone",
-        "source_lineno": 2,
-        "sink": "target[key] = v32;",
-        "sink_lineno": 63
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "_merge",
-        "source_lineno": 34,
-        "sink": "target[key] = v32;",
-        "sink_lineno": 63
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "merge",
-        "source_lineno": 71,
-        "sink": "target[key] = v32;",
-        "sink_lineno": 63
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "source",
-        "source_lineno": 81,
-        "sink": "target[key] = v32;",
-        "sink_lineno": 63
+        "sink": "target[key] = _merge(targetVal, sourceVal);",
+        "sink_lineno": 36
     }
 ]

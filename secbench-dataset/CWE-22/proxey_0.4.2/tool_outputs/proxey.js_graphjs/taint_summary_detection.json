@@ -1,30 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v170",
-        "source_lineno": 241,
-        "sink": "readFileSync",
-        "sink_lineno": 272
+        "sink": "var documentFile = fs.readFileSync(top.rootFolder + '/' + template);",
+        "sink_lineno": 157
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v163",
-        "source_lineno": 245,
-        "sink": "readFileSync",
-        "sink_lineno": 272
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v170",
-        "source_lineno": 241,
-        "sink": "readFileSync",
-        "sink_lineno": 345
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "v163",
-        "source_lineno": 245,
-        "sink": "readFileSync",
-        "sink_lineno": 345
+        "sink": "var resourceFile = fs.readFileSync(top.rootFolder + resource);",
+        "sink_lineno": 191
     }
 ]

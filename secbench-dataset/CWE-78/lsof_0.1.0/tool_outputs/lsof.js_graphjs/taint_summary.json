@@ -1,23 +1,17 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v26",
-        "source_lineno": 2,
-        "sink": "exec",
-        "sink_lineno": 54
+        "sink": "cp.exec('lsof -p ' + pid, function(err, d) {",
+        "sink_lineno": 9
     },
     {
         "vuln_type": "command-injection",
-        "source": "v53",
-        "source_lineno": 59,
-        "sink": "exec",
-        "sink_lineno": 110
+        "sink": "cp.exec('lsof -i tcp:' + port, function(err, d) {",
+        "sink_lineno": 37
     },
     {
         "vuln_type": "command-injection",
-        "source": "v74",
-        "source_lineno": 115,
-        "sink": "exec",
-        "sink_lineno": 155
+        "sink": "cp.exec('lsof -i udp:' + port, function(err, d) {",
+        "sink_lineno": 71
     }
 ]

@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v10",
-        "source_lineno": 1,
-        "sink": "execSync",
-        "sink_lineno": 17
+        "sink": "version = require('child_process').execSync(`npm view ${packageName} version --registry ${registry}`, config);",
+        "sink_lineno": 14
     },
     {
         "vuln_type": "command-injection",
-        "source": "v10",
-        "source_lineno": 1,
-        "sink": "execSync",
-        "sink_lineno": 21
+        "sink": "version = require('child_process').execSync(`npm view ${packageName} version`, config);",
+        "sink_lineno": 16
     }
 ]

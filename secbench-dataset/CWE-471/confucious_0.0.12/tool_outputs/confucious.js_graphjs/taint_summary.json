@@ -1,30 +1,22 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v67",
-        "source_lineno": 160,
-        "sink": "readFileSync",
-        "sink_lineno": 161
+        "sink": "this.push(JSON.parse(fs.readFileSync(filePath, 'utf8')));",
+        "sink_lineno": 160
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v20",
-        "source_lineno": 20,
         "sink": "hash[lastSubKey] = value;",
-        "sink_lineno": 51
+        "sink_lineno": 48
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v20",
-        "source_lineno": 20,
-        "sink": "hash[lastSubKey] = v19;",
-        "sink_lineno": 49
+        "sink": "hash[lastSubKey] = extend(true, {}, value);",
+        "sink_lineno": 45
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v20",
-        "source_lineno": 20,
         "sink": "hash[subKey] = hash;",
-        "sink_lineno": 36
+        "sink_lineno": 37
     }
 ]

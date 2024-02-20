@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "showError",
-        "source_lineno": 186,
-        "sink": "createReadStream",
-        "sink_lineno": 192
+        "sink": "fs.createReadStream(",
+        "sink_lineno": 119
     }
 ]

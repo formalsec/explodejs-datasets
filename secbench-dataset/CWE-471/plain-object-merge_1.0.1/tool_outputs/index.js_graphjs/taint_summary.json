@@ -1,44 +1,17 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "merge",
-        "source_lineno": 4,
-        "sink": "target[key] = v17;",
-        "sink_lineno": 43
+        "sink": "target[key] = mergeObjects(target[key], value);",
+        "sink_lineno": 25
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "mergeObjects",
-        "source_lineno": 19,
-        "sink": "target[key] = v17;",
-        "sink_lineno": 43
+        "sink": "target[key] = plain_object_clone_1.default(value);",
+        "sink_lineno": 22
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "merge",
-        "source_lineno": 4,
-        "sink": "target[key] = v15;",
-        "sink_lineno": 39
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "mergeObjects",
-        "source_lineno": 19,
-        "sink": "target[key] = v15;",
-        "sink_lineno": 39
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "merge",
-        "source_lineno": 4,
         "sink": "target[key] = value;",
-        "sink_lineno": 30
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "mergeObjects",
-        "source_lineno": 19,
-        "sink": "target[key] = value;",
-        "sink_lineno": 30
+        "sink_lineno": 18
     }
 ]

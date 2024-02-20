@@ -1,37 +1,27 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v440",
-        "source_lineno": 1143,
-        "sink": "readFile",
-        "sink_lineno": 1233
+        "sink": "return fs.readFile(filename, {",
+        "sink_lineno": 627
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v574",
-        "source_lineno": 1383,
-        "sink": "createReadStream",
-        "sink_lineno": 1454
+        "sink": "fd = fs.createReadStream(full_path);",
+        "sink_lineno": 757
     },
     {
         "vuln_type": "command-injection",
-        "source": "v747",
-        "source_lineno": 1597,
-        "sink": "spawn",
-        "sink_lineno": 1655
+        "sink": "child = spawn(dispatch.php_cgi, [full_path], {",
+        "sink_lineno": 852
     },
     {
         "vuln_type": "command-injection",
-        "source": "v747",
-        "source_lineno": 1597,
-        "sink": "spawn",
-        "sink_lineno": 1668
+        "sink": "child = spawn(full_path, [], {",
+        "sink_lineno": 860
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v1131",
-        "source_lineno": 2796,
-        "sink": "createReadStream",
-        "sink_lineno": 2820
+        "sink": "tf = fs.createReadStream(file_name, 'utf8');",
+        "sink_lineno": 1398
     }
 ]

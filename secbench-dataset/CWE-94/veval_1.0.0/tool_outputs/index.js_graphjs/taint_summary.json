@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "veval",
-        "source_lineno": 2,
-        "sink": "runInContext",
-        "sink_lineno": 6
+        "sink": "output = vm.runInContext(scr, context);",
+        "sink_lineno": 13
     }
 ]

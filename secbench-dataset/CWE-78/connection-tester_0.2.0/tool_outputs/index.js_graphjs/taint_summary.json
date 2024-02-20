@@ -1,16 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "testSync",
-        "source_lineno": 7,
-        "sink": "execSync",
-        "sink_lineno": 11
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v35",
-        "source_lineno": 78,
-        "sink": "execSync",
-        "sink_lineno": 11
+        "sink": "const shellOut = shell.execSync(cmd).toString();",
+        "sink_lineno": 15
     }
 ]

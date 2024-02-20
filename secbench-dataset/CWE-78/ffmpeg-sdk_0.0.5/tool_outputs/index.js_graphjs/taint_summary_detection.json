@@ -1,44 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "execute",
-        "source_lineno": 3,
-        "sink": "exec",
-        "sink_lineno": 14
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "clip",
-        "source_lineno": 57,
-        "sink": "exec",
-        "sink_lineno": 14
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "split",
-        "source_lineno": 65,
-        "sink": "exec",
-        "sink_lineno": 14
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v45",
-        "source_lineno": 67,
-        "sink": "exec",
-        "sink_lineno": 14
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "parseAudio",
-        "source_lineno": 86,
-        "sink": "exec",
-        "sink_lineno": 14
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "parseAudioLowQuality",
-        "source_lineno": 91,
-        "sink": "exec",
-        "sink_lineno": 14
+        "sink": "exec(command, (error, stdout, stderr) => {",
+        "sink_lineno": 9
     }
 ]

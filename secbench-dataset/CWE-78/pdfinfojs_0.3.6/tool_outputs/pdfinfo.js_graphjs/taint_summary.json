@@ -1,23 +1,17 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "pdfinfo",
-        "source_lineno": 5,
-        "sink": "exec",
-        "sink_lineno": 50
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '));",
+        "sink_lineno": 28
     },
     {
         "vuln_type": "command-injection",
-        "source": "pdfinfo",
-        "source_lineno": 5,
-        "sink": "exec",
-        "sink_lineno": 119
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
+        "sink_lineno": 47
     },
     {
         "vuln_type": "command-injection",
-        "source": "pdfinfo",
-        "source_lineno": 5,
-        "sink": "exec",
-        "sink_lineno": 168
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
+        "sink_lineno": 72
     }
 ]

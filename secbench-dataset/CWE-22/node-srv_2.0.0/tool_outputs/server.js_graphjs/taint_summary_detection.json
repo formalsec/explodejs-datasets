@@ -1,23 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v201",
-        "source_lineno": 356,
-        "sink": "createReadStream",
-        "sink_lineno": 360
+        "sink": "return fs.createReadStream(filePath).on('open', function() {",
+        "sink_lineno": 185
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v264",
-        "source_lineno": 19,
-        "sink": "createReadStream",
-        "sink_lineno": 416
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "Server",
-        "source_lineno": 37,
-        "sink": "createReadStream",
-        "sink_lineno": 416
+        "sink": "return fs.createReadStream(errorPath).on('open', function() {",
+        "sink_lineno": 211
     }
 ]

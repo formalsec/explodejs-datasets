@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v76",
-        "source_lineno": 6,
-        "sink": "execSync",
-        "sink_lineno": 111
+        "sink": "const childProcess = execSync(",
+        "sink_lineno": 54
     }
 ]

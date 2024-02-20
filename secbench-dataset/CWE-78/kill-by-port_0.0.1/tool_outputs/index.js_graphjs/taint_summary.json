@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v6",
-        "source_lineno": 4,
-        "sink": "execSync",
+        "sink": "processId = exec(`lsof -t -i:${port}`)",
         "sink_lineno": 8
     },
     {
         "vuln_type": "command-injection",
-        "source": "v6",
-        "source_lineno": 4,
-        "sink": "execSync",
+        "sink": "exec(`kill ${processId}`)",
         "sink_lineno": 14
     }
 ]

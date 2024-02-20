@@ -1,51 +1,32 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v117",
-        "source_lineno": 256,
-        "sink": "createReadStream",
-        "sink_lineno": 297
+        "sink": "var stream = require('fs').createReadStream(self.filename, { start: 0, end: extension === '.jpg' ? 40000 : 24 });",
+        "sink_lineno": 177
     },
     {
         "vuln_type": "command-injection",
-        "source": "v170",
-        "source_lineno": 336,
-        "sink": "exec",
-        "sink_lineno": 412
+        "sink": "var cmd = exec(command, function(err) {",
+        "sink_lineno": 231
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v170",
-        "source_lineno": 336,
-        "sink": "createReadStream",
-        "sink_lineno": 393
+        "sink": "var reader = Fs.createReadStream(filename);",
+        "sink_lineno": 252
     },
     {
         "vuln_type": "command-injection",
-        "source": "v227",
-        "source_lineno": 448,
-        "sink": "spawn",
-        "sink_lineno": 490
+        "sink": "var cmd = spawn(CMD_CONVERT[self.cmdarg], self.arg(self.filename ? wrap(self.filename) : '-', (type ? type + ':' : '') + '-'), SPAWN_OPT);",
+        "sink_lineno": 291
     },
     {
         "vuln_type": "command-injection",
-        "source": "v227",
-        "source_lineno": 448,
-        "sink": "spawn",
-        "sink_lineno": 578
+        "sink": "var cmd = spawn(CMD_CONVERT[self.cmdarg], self.arg(self.filename ? wrap(self.filename) : '-', (type ? type + ':' : '') + '-'), SPAWN_OPT);",
+        "sink_lineno": 329
     },
     {
         "vuln_type": "command-injection",
-        "source": "v265",
-        "source_lineno": 541,
-        "sink": "spawn",
-        "sink_lineno": 578
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v353",
-        "source_lineno": 742,
-        "sink": "exec",
-        "sink_lineno": 782
+        "sink": "exec((self.cmdarg === 'gm' ? 'gm ' : '') + 'identify' + wrap(self.filename, true), function(err, stdout) {",
+        "sink_lineno": 408
     }
 ]

@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "restore",
-        "source_lineno": 108,
-        "sink": "Function",
-        "sink_lineno": 109
+        "sink": "const tpl = new Function('schema', source)(schema);",
+        "sink_lineno": 110
     }
 ]

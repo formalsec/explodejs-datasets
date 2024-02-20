@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v48",
-        "source_lineno": 91,
-        "sink": "readFileSync",
-        "sink_lineno": 92
+        "sink": "return this._tmpl = fs.readFileSync(templatePath).toString();",
+        "sink_lineno": 50
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v72",
-        "source_lineno": 104,
-        "sink": "readFile",
-        "sink_lineno": 162
+        "sink": "return fs.readFile(filePath, {",
+        "sink_lineno": 65
     }
 ]

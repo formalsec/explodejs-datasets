@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "killPortProcess",
-        "source_lineno": 51,
-        "sink": "exec",
-        "sink_lineno": 65
+        "sink": "exec(command, (err, stdout, stderr) => {",
+        "sink_lineno": 44
     },
     {
         "vuln_type": "command-injection",
-        "source": "win32Kill",
-        "source_lineno": 72,
-        "sink": "exec",
-        "sink_lineno": 95
+        "sink": "exec(`taskkill /PID ${pid} /F`, (err, stdout, stderr) => {",
+        "sink_lineno": 63
     }
 ]

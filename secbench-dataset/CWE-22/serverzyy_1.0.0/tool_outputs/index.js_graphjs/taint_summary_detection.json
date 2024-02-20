@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v13",
-        "source_lineno": 4,
-        "sink": "readFile",
-        "sink_lineno": 27
+        "sink": "fs.readFile(path,function(error,file){  //\u5355\u7ebf\u7a0b\u5f02\u6b65\u52a0\u8f7d",
+        "sink_lineno": 8
     }
 ]

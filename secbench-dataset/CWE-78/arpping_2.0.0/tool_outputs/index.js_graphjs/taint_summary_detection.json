@@ -1,37 +1,12 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v128",
-        "source_lineno": 233,
-        "sink": "exec",
-        "sink_lineno": 265
+        "sink": "exec(`ping ${flag} ${this.timeout} ${ip}`, (err, stdout, stderr) => {",
+        "sink_lineno": 120
     },
     {
         "vuln_type": "command-injection",
-        "source": "v126",
-        "source_lineno": 237,
-        "sink": "exec",
-        "sink_lineno": 265
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v130",
-        "source_lineno": 214,
-        "sink": "exec",
-        "sink_lineno": 265
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v170",
-        "source_lineno": 307,
-        "sink": "exec",
-        "sink_lineno": 366
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v174",
-        "source_lineno": 276,
-        "sink": "exec",
-        "sink_lineno": 366
+        "sink": "exec(`arp ${ip}`, (err, stdout, stderr) => {",
+        "sink_lineno": 145
     }
 ]

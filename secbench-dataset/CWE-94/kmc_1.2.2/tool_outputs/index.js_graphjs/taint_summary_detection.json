@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v155",
-        "source_lineno": 247,
-        "sink": "readFileSync",
-        "sink_lineno": 266
+        "sink": "var fileContent = fs.readFileSync(filePath).toString();",
+        "sink_lineno": 157
     },
     {
         "vuln_type": "code-injection",
-        "source": "v155",
-        "source_lineno": 247,
-        "sink": "eval",
-        "sink_lineno": 278
+        "sink": "var requiredModules = eval('(' + requires[i]).requires;",
+        "sink_lineno": 164
     }
 ]

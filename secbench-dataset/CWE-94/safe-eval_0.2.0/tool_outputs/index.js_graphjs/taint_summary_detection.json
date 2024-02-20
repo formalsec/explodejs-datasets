@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "safeEval",
-        "source_lineno": 2,
-        "sink": "runInNewContext",
-        "sink_lineno": 21
+        "sink": "vm.runInNewContext(code, sandbox)",
+        "sink_lineno": 13
     }
 ]

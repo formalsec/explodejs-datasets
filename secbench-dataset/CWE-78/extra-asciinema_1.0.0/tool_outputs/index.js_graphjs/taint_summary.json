@@ -1,58 +1,42 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "cat",
-        "source_lineno": 2,
-        "sink": "exec",
-        "sink_lineno": 14
+        "sink": "cp.exec(`asciinema cat ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
+        "sink_lineno": 11
     },
     {
         "vuln_type": "command-injection",
-        "source": "catSync",
-        "source_lineno": 32,
-        "sink": "execSync",
-        "sink_lineno": 35
+        "sink": "return cp1.execSync(`asciinema cat ${f}`, {encoding: 'utf8'});",
+        "sink_lineno": 26
     },
     {
         "vuln_type": "command-injection",
-        "source": "rec",
-        "source_lineno": 104,
-        "sink": "exec",
-        "sink_lineno": 121
+        "sink": "cp3.exec(recCmd(f, o), {encoding: 'utf8'}, (err) => {",
+        "sink_lineno": 71
     },
     {
         "vuln_type": "command-injection",
-        "source": "recSync",
-        "source_lineno": 142,
-        "sink": "execSync",
-        "sink_lineno": 150
+        "sink": "cp4.execSync(recCmd(f, o), {encoding: 'utf8'});",
+        "sink_lineno": 99
     },
     {
         "vuln_type": "path-traversal",
-        "source": "retimeSync",
-        "source_lineno": 250,
-        "sink": "readFileSync",
-        "sink_lineno": 251
+        "sink": "var d = fs7.readFileSync(f, 'utf8');",
+        "sink_lineno": 179
     },
     {
         "vuln_type": "path-traversal",
-        "source": "retimeSync",
-        "source_lineno": 250,
-        "sink": "writeFileSync",
-        "sink_lineno": 253
+        "sink": "fs7.writeFileSync(f, d);",
+        "sink_lineno": 181
     },
     {
         "vuln_type": "command-injection",
-        "source": "upload",
-        "source_lineno": 257,
-        "sink": "exec",
-        "sink_lineno": 270
+        "sink": "cp8.exec(`asciinema upload ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
+        "sink_lineno": 193
     },
     {
         "vuln_type": "command-injection",
-        "source": "uploadSync",
-        "source_lineno": 288,
-        "sink": "execSync",
-        "sink_lineno": 291
+        "sink": "var stdout = cp9.execSync(`asciinema upload ${f}`, {encoding: 'utf8'});",
+        "sink_lineno": 208
     }
 ]

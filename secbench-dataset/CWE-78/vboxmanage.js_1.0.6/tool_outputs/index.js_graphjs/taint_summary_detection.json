@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v54",
-        "source_lineno": 50,
-        "sink": "exec",
-        "sink_lineno": 110
+        "sink": "child_process.exec(vBoxManageBinary + ' ' + command.join(' '), {}, function (err, stdout, stderr) {",
+        "sink_lineno": 76
     }
 ]

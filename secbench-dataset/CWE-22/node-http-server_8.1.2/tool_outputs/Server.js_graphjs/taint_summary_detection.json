@@ -1,30 +1,22 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "deploy",
-        "source_lineno": 45,
-        "sink": "readFileSync",
-        "sink_lineno": 85
+        "sink": "key: fs.readFileSync(this.config.https.privateKey),",
+        "sink_lineno": 350
     },
     {
         "vuln_type": "path-traversal",
-        "source": "deploy",
-        "source_lineno": 45,
-        "sink": "readFileSync",
-        "sink_lineno": 89
+        "sink": "cert: fs.readFileSync(this.config.https.certificate),",
+        "sink_lineno": 351
     },
     {
         "vuln_type": "path-traversal",
-        "source": "deploy",
-        "source_lineno": 45,
-        "sink": "readFileSync",
-        "sink_lineno": 105
+        "sink": "this.config.httpsOptions.ca=fs.readFileSync(this.config.https.ca);",
+        "sink_lineno": 356
     },
     {
         "vuln_type": "path-traversal",
-        "source": "serveFile",
-        "source_lineno": 210,
-        "sink": "readFile",
-        "sink_lineno": 354
+        "sink": "fs.readFile(",
+        "sink_lineno": 494
     }
 ]

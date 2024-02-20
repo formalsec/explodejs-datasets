@@ -1,37 +1,17 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "unflatten",
-        "source_lineno": 117,
-        "sink": "currentNode[currentProperty] = v64;",
-        "sink_lineno": 153
+        "sink": "currentNode[currentProperty] = getContainer(property[i + 1]);",
+        "sink_lineno": 112
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v65",
-        "source_lineno": 133,
-        "sink": "currentNode[currentProperty] = v64;",
-        "sink_lineno": 153
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v65",
-        "source_lineno": 133,
         "sink": "currentNode[currentProperty] = messages;",
-        "sink_lineno": 148
+        "sink_lineno": 110
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "deepSet",
-        "source_lineno": 167,
-        "sink": "object[v82] = value;",
-        "sink_lineno": 200
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v88",
-        "source_lineno": 216,
-        "sink": "object[v82] = value;",
-        "sink_lineno": 200
+        "sink": "object[property.shift()] = value;",
+        "sink_lineno": 146
     }
 ]

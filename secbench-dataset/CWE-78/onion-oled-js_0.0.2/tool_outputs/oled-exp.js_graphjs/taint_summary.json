@@ -1,37 +1,27 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v12",
-        "source_lineno": 16,
-        "sink": "exec",
-        "sink_lineno": 19
+        "sink": "return exec(oledExecutable + ' power ' + mode);",
+        "sink_lineno": 34
     },
     {
         "vuln_type": "command-injection",
-        "source": "v22",
-        "source_lineno": 30,
-        "sink": "exec",
-        "sink_lineno": 35
+        "sink": "return exec(oledExecutable + ' cursor ' + row + ',' + col);",
+        "sink_lineno": 60
     },
     {
         "vuln_type": "command-injection",
-        "source": "v26",
-        "source_lineno": 38,
-        "sink": "exec",
-        "sink_lineno": 41
+        "sink": "return exec(oledExecutable + ' invert ' + mode);",
+        "sink_lineno": 69
     },
     {
         "vuln_type": "command-injection",
-        "source": "v38",
-        "source_lineno": 44,
-        "sink": "exec",
-        "sink_lineno": 61
+        "sink": "return exec(oledExecutable + cursor + ' write \"' + string + '\"');",
+        "sink_lineno": 82
     },
     {
         "vuln_type": "command-injection",
-        "source": "v42",
-        "source_lineno": 64,
-        "sink": "exec",
-        "sink_lineno": 67
+        "sink": "return exec(oledExecutable + ' write ' + direction);",
+        "sink_lineno": 91
     }
 ]

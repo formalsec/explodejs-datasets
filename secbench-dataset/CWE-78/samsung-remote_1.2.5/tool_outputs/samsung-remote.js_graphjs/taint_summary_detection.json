@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "Remote",
-        "source_lineno": 10,
-        "sink": "exec",
-        "sink_lineno": 191
+        "sink": "return exec(\"ping -c 1 \" + config.ip, function (error, stdout, stderr) {",
+        "sink_lineno": 103
     }
 ]

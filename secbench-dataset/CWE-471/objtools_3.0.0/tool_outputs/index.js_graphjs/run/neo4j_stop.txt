@@ -1,1 +1,1 @@
-Stopping Neo4j....... stopped.
+Neo4j is not running.

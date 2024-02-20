@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "handler",
-        "source_lineno": 45,
-        "sink": "v17[name] = fn;",
-        "sink_lineno": 50
+        "sink": "handlers[type][name] = fn;",
+        "sink_lineno": 46
     }
 ]

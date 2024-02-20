@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "code-injection",
-        "source": "v783",
-        "source_lineno": 1995,
-        "sink": "eval",
-        "sink_lineno": 2022
+        "sink": "return eval('(' + string + ')');",
+        "sink_lineno": 1175
     }
 ]

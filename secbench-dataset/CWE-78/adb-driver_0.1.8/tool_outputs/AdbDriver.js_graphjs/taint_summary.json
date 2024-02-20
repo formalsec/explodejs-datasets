@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "execADBCommand",
-        "source_lineno": 26,
-        "sink": "exec",
-        "sink_lineno": 48
+        "sink": "child_process_1.exec(execCmd, option || { stdio: 'inherit' }, (err, stdout, stderr) => {",
+        "sink_lineno": 26
     }
 ]

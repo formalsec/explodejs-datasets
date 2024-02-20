@@ -1,16 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "internalSetPathValue",
-        "source_lineno": 75,
         "sink": "tempObj[propName] = val;",
-        "sink_lineno": 98
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "setPathValue",
-        "source_lineno": 186,
-        "sink": "tempObj[propName] = val;",
-        "sink_lineno": 98
+        "sink_lineno": 158
     }
 ]

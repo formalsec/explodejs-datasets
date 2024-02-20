@@ -1,23 +1,17 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v34",
-        "source_lineno": 54,
-        "sink": "readFileSync",
-        "sink_lineno": 61
+        "sink": "this.read(fs.readFileSync(sourceFile, typeof encoding === 'string' && encoding || this._encoding));",
+        "sink_lineno": 75
     },
     {
         "vuln_type": "path-traversal",
-        "source": "v209",
-        "source_lineno": 389,
-        "sink": "writeFile",
-        "sink_lineno": 401
+        "sink": "fs.writeFile(destFile, content, (err) => {",
+        "sink_lineno": 341
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v124",
-        "source_lineno": 192,
-        "sink": "source[v123] = parsedValue;",
-        "sink_lineno": 235
+        "sink": "source[expanded[0]] = parsedValue;",
+        "sink_lineno": 200
     }
 ]

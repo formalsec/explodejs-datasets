@@ -1,16 +1,12 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v4",
-        "source_lineno": 4,
-        "sink": "exec",
-        "sink_lineno": 10
+        "sink": "cp.exec(cmd, {",
+        "sink_lineno": 19
     },
     {
         "vuln_type": "command-injection",
-        "source": "v6",
-        "source_lineno": 13,
-        "sink": "spawn",
-        "sink_lineno": 14
+        "sink": "return cp.spawn(cmd, args, options)",
+        "sink_lineno": 28
     }
 ]

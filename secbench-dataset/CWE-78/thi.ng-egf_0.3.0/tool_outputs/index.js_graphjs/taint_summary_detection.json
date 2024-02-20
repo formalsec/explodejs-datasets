@@ -1,23 +1,17 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v162",
-        "source_lineno": 369,
-        "sink": "readFileSync",
-        "sink_lineno": 381
+        "sink": "return fs.readFileSync(path$1).toString();",
+        "sink_lineno": 148
     },
     {
         "vuln_type": "command-injection",
-        "source": "v170",
-        "source_lineno": 391,
-        "sink": "execSync",
-        "sink_lineno": 395
+        "sink": "? child_process.execSync(`echo \"${body}\" | gpg --decrypt`).toString()",
+        "sink_lineno": 157
     },
     {
         "vuln_type": "path-traversal",
-        "source": "$parseFile",
-        "source_lineno": 876,
-        "sink": "readFileSync",
-        "sink_lineno": 895
+        "sink": "return parse(fs.readFileSync(path$1).toString(), $ctx);",
+        "sink_lineno": 352
     }
 ]

@@ -1,51 +1,32 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "add",
-        "source_lineno": 13,
-        "sink": "exec",
-        "sink_lineno": 25
+        "sink": "exec('git add ' + files, function(err){",
+        "sink_lineno": 13
     },
     {
         "vuln_type": "command-injection",
-        "source": "commit",
-        "source_lineno": 31,
-        "sink": "exec",
-        "sink_lineno": 47
+        "sink": "exec('git commit ' + options + ' -m \\\"' + message + '\\\"', function(err){",
+        "sink_lineno": 27
     },
     {
         "vuln_type": "command-injection",
-        "source": "v75",
-        "source_lineno": 182,
-        "sink": "exec",
-        "sink_lineno": 193
+        "sink": "exec('git checkout -- ' + file, function(err){",
+        "sink_lineno": 126
     },
     {
         "vuln_type": "command-injection",
-        "source": "checkout",
-        "source_lineno": 331,
-        "sink": "exec",
-        "sink_lineno": 343
+        "sink": "exec('git checkout ' + branch, function(err, result){",
+        "sink_lineno": 223
     },
     {
         "vuln_type": "command-injection",
-        "source": "newBranch",
-        "source_lineno": 349,
-        "sink": "exec",
-        "sink_lineno": 361
+        "sink": "exec('git checkout -b ' + newBranchName, function(err){",
+        "sink_lineno": 236
     },
     {
         "vuln_type": "command-injection",
-        "source": "deleteBranch",
-        "source_lineno": 367,
-        "sink": "exec",
-        "sink_lineno": 379
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "v165",
-        "source_lineno": 392,
-        "sink": "exec",
-        "sink_lineno": 379
+        "sink": "exec(\"git branch -d \" + branch, function(err){",
+        "sink_lineno": 249
     }
 ]

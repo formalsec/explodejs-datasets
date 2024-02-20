@@ -1,23 +1,17 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "v297",
-        "source_lineno": 395,
-        "sink": "v251[v252] = v257 || v258;",
-        "sink_lineno": 415
+        "sink": "this._gspo[i.g][i.s] = this._gspo[i.g][i.s] || {}",
+        "sink_lineno": 207
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v297",
-        "source_lineno": 395,
-        "sink": "v263[v264] = v271 || v272;",
-        "sink_lineno": 430
+        "sink": "this._gspo[i.g][i.s][i.p] = this._gspo[i.g][i.s][i.p] || {}",
+        "sink_lineno": 208
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "v297",
-        "source_lineno": 395,
-        "sink": "v289[v290] = quad;",
-        "sink_lineno": 450
+        "sink": "this._gspo[i.g][i.s][i.p][i.o] = quad",
+        "sink_lineno": 211
     }
 ]

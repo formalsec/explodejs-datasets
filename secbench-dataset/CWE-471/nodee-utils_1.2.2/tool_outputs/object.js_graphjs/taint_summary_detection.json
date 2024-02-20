@@ -1,37 +1,17 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "deepSet",
-        "source_lineno": 347,
-        "sink": "current[v133] = v135 || v136;",
-        "sink_lineno": 383
+        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
+        "sink_lineno": 212
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "update",
-        "source_lineno": 593,
-        "sink": "current[v133] = v135 || v136;",
-        "sink_lineno": 383
+        "sink": "else current[parts[i]] = value;",
+        "sink_lineno": 210
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "deepSet",
-        "source_lineno": 347,
-        "sink": "current[v132] = value;",
-        "sink_lineno": 376
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "update",
-        "source_lineno": 593,
-        "sink": "current[v132] = value;",
-        "sink_lineno": 376
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "deepReplace",
-        "source_lineno": 485,
-        "sink": "parentObj[key] = value;",
-        "sink_lineno": 528
+        "sink": "else parentObj[key] = value;",
+        "sink_lineno": 260
     }
 ]

@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "v12",
-        "source_lineno": 13,
         "sink": "dest[k] = v;",
-        "sink_lineno": 17
+        "sink_lineno": 16
     }
 ]

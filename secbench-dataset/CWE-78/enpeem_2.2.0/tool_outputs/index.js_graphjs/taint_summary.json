@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "doNpmCommand",
-        "source_lineno": 66,
-        "sink": "exec",
-        "sink_lineno": 126
+        "sink": "var npm = exec(cmd, {cwd: options.dir});",
+        "sink_lineno": 114
     }
 ]

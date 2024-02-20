@@ -1,37 +1,27 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "mpv",
-        "source_lineno": 15,
-        "sink": "execSync",
-        "sink_lineno": 43
+        "sink": "var output = exec((options.binary ? options.binary + \" --version\" : \"mpv --version\"), {encoding: 'utf8'});",
+        "sink_lineno": 45
     },
     {
         "vuln_type": "command-injection",
-        "source": "mpv",
-        "source_lineno": 15,
-        "sink": "spawn",
-        "sink_lineno": 129
+        "sink": "this.mpvPlayer = spawn(options.binary, defaultArgs);",
+        "sink_lineno": 149
     },
     {
         "vuln_type": "command-injection",
-        "source": "mpv",
-        "source_lineno": 15,
-        "sink": "spawn",
-        "sink_lineno": 132
+        "sink": "this.mpvPlayer = spawn('mpv', defaultArgs);",
+        "sink_lineno": 153
     },
     {
         "vuln_type": "command-injection",
-        "source": "mpv",
-        "source_lineno": 15,
-        "sink": "spawn",
-        "sink_lineno": 197
+        "sink": "this.mpvPlayer = spawn(options.binary, defaultArgs);",
+        "sink_lineno": 199
     },
     {
         "vuln_type": "command-injection",
-        "source": "mpv",
-        "source_lineno": 15,
-        "sink": "spawn",
-        "sink_lineno": 200
+        "sink": "this.mpvPlayer = spawn('mpv', defaultArgs);",
+        "sink_lineno": 202
     }
 ]

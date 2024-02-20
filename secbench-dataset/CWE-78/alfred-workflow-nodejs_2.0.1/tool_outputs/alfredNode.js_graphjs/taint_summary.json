@@ -1,30 +1,22 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v184",
-        "source_lineno": 427,
-        "sink": "exec",
-        "sink_lineno": 454
+        "sink": "exec(setCommand, function(err, stdout, stderr) {",
+        "sink_lineno": 402
     },
     {
         "vuln_type": "command-injection",
-        "source": "v184",
-        "source_lineno": 427,
-        "sink": "exec",
-        "sink_lineno": 444
+        "sink": "exec(addCommand, function(err, stdout, stderr) {",
+        "sink_lineno": 406
     },
     {
         "vuln_type": "command-injection",
-        "source": "v189",
-        "source_lineno": 458,
-        "sink": "exec",
-        "sink_lineno": 470
+        "sink": "exec(getCommand, function(err, stdout, stderr) {",
+        "sink_lineno": 427
     },
     {
         "vuln_type": "command-injection",
-        "source": "v194",
-        "source_lineno": 473,
-        "sink": "exec",
-        "sink_lineno": 483
+        "sink": "exec(getCommand, function(err, stdout, stderr) {",
+        "sink_lineno": 445
     }
 ]

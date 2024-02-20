@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v172",
-        "source_lineno": 49,
-        "sink": "readFile",
-        "sink_lineno": 306
+        "sink": "",
+        "sink_lineno": 137
     }
 ]

@@ -1,16 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "unflatten",
-        "source_lineno": 68,
-        "sink": "recipient[key1] = v116;",
-        "sink_lineno": 230
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "v77",
-        "source_lineno": 141,
-        "sink": "recipient[key1] = v116;",
-        "sink_lineno": 230
+        "sink": "recipient[key1] = unflatten(target[key], opts)",
+        "sink_lineno": 145
     }
 ]

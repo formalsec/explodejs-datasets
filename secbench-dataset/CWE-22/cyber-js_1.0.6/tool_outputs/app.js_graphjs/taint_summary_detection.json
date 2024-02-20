@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v30",
-        "source_lineno": 13,
-        "sink": "readFile",
-        "sink_lineno": 67
+        "sink": "fs.readFile(filename, \"binary\", function(err, file) {",
+        "sink_lineno": 43
     }
 ]

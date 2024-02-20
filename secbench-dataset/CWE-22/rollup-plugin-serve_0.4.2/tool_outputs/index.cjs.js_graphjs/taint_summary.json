@@ -1,30 +1,12 @@
 [
     {
         "vuln_type": "path-traversal",
-        "source": "v67",
-        "source_lineno": 80,
-        "sink": "readFile",
-        "sink_lineno": 120
+        "sink": "fs.readFile(filePath, function (error, content) {",
+        "sink_lineno": 49
     },
     {
         "vuln_type": "path-traversal",
-        "source": "readFileFromContentBase",
-        "source_lineno": 203,
-        "sink": "readFile",
-        "sink_lineno": 225
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "serve",
-        "source_lineno": 25,
-        "sink": "readFile",
-        "sink_lineno": 225
-    },
-    {
-        "vuln_type": "path-traversal",
-        "source": "requestListener",
-        "source_lineno": 64,
-        "sink": "readFile",
-        "sink_lineno": 225
+        "sink": "fs.readFile(filePath, function (error, content) {",
+        "sink_lineno": 111
     }
 ]

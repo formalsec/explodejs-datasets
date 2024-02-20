@@ -1,9 +1,7 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "v38",
-        "source_lineno": 21,
-        "sink": "exec",
-        "sink_lineno": 72
+        "sink": "exec('ps -ef | grep ' + name, function(error, stdout) {",
+        "sink_lineno": 35
     }
 ]
