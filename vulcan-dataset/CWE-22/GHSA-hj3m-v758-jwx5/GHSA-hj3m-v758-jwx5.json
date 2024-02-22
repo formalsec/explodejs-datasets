@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-hj3m-v758-jwx5", 
+        "cve_id": "CVE-2021-23797",
+        "cwe": "CWE-22"
+    },
+    "correct_cwe": "CWE-22",
+    "correct_package_link": "https://registry.npmjs.org/http-server-node/-/http-server-node-1.0.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/server.js",
+                    "lineno": 10,
+                    "code": "const server = http.createServer(async (req, res) => {"
+                },
+                "sink": {
+                    "file": "lib/utils/file-system.js",
+                    "lineno": 13,
+                    "code": "const readStream = fs.createReadStream(filePath);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-HTTPSERVERNODE-1727656"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

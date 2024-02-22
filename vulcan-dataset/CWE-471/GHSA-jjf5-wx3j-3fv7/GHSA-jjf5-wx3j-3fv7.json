@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-jjf5-wx3j-3fv7", 
+        "cve_id": "CVE-2022-21190",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/convict/-/convict-6.2.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "src/main.js",
+                    "lineno": 569,
+                    "code": "set: function(k, v) {"
+                },
+                "sink": {
+                    "file": "src/main.js",
+                    "lineno": 581,
+                    "code": "parent[childKey] = v"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-CONVICT-2774757"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/mozilla/node-convict/commit/1ea0ab19c5208f66509e1c43b0d0f21c1fd29b75"
+        }
+    ]
+}

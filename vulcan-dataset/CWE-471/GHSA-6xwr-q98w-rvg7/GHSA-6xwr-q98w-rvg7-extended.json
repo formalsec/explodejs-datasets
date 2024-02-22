@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 189,
+        "file": "memory.js",
+        "normalized": "yes"
+    }
+]

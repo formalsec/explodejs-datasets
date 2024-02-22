@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-h9v8-rm3m-5h5f", 
+        "cve_id": "CVE-2020-7630",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/git-add-remote/-/git-add-remote-1.0.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 9,
+                    "code": "function addRemote(name, url, cb) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 21,
+                    "code": "cp.exec('git remote add ' + name + ' ' + url, {cwd: cwd}, cb);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-GITADDREMOTE-564269"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

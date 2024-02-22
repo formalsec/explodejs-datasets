@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-cf4h-3jhx-xvhq", 
+        "cve_id": "CVE-2021-23358",
+        "cwe": "CWE-94"
+    },
+    "correct_cwe": "CWE-94",
+    "correct_package_link": "https://registry.npmjs.org/underscore/-/underscore-1.3.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "underscore.js",
+                    "lineno": 954,
+                    "code": "_.template = function(text, data, settings) {"
+                },
+                "sink": {
+                    "file": "underscore.js",
+                    "lineno": 981,
+                    "code": "var render = new Function(settings.variable || 'obj', '_', source);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-UNDERSCORE-1080984"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/jashkenas/underscore/commit/4c73526d43838ad6ab43a6134728776632adeb66"
+        }
+    ]
+}

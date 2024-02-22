@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 96,
+        "file": "deap.js",
+        "normalized": "yes"
+    }
+]

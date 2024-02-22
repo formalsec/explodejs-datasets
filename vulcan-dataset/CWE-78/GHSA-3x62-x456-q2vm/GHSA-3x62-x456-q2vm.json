@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-3x62-x456-q2vm",
+        "cve_id": "CVE-2022-24437",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/git-pull-or-clone/-/git-pull-or-clone-2.0.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 8,
+                    "code": "function gitPullOrClone (url, outPath, opts, cb) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 52,
+                    "code": "const child = crossSpawn(command, args, opts)"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://gist.github.com/lirantal/327e9dd32686991b5a1fa6341aac2e7b"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/feross/git-pull-or-clone/commit/f9ce092be13cc32e685dfa26e7705e9c6e3108a3"
+        }
+    ]
+}

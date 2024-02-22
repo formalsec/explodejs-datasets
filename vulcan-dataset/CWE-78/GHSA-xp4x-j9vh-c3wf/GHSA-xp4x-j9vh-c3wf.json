@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-xp4x-j9vh-c3wf", 
+        "cve_id": "CVE-2019-15609",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/kill-port-process/-/kill-port-process-2.2.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "dist/lib/index.js",
+                    "lineno": 13,
+                    "code": "function killPortProcess(input, options = {}) {"
+                },
+                "sink": {
+                    "file": "dist/lib/killer.js",
+                    "lineno": 47,
+                    "code": "const lsof = child_process_1.spawn('lsof', ['-i', `tcp:${port}`]);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": ""
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

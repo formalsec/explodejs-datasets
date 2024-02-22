@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-3xgx-r9j4-qw9w", 
+        "cve_id": "CVE-2022-21189",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/dexie/-/dexie-3.2.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "dist/dexie.js",
+                    "lineno": 158,
+                    "code": "function setByKeyPath(obj, keyPath, value) {"
+                },
+                "sink": {
+                    "file": "dist/dexie.js",
+                    "lineno": 198,
+                    "code": "obj[keyPath] = value;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-2805308"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/dexie/Dexie.js/commit/1d655a69b9f28c3af6fae10cf5c61df387dc689b"
+        }
+    ]
+}

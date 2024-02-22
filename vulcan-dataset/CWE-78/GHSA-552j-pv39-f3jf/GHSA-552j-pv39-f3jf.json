@@ -1,0 +1,47 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-552j-pv39-f3jf",
+        "cve_id": "CVE-2021-34080",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/google-it/-/google-it-1.6.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/generate.js",
+                    "lineno": 103,
+                    "code": "function createCertRequest (opts, keyPath, cfgPath, cb) {"
+                },
+                "sink": {
+                    "file": "lib/generate.js",
+                    "lineno": 110,
+                    "code": "exec(cmd, function execCb (err) {"
+                }
+            },
+            {
+                "source": {
+                    "file": "lib/generate.js",
+                    "lineno": 128,
+                    "code": "function createCert (opts, reqPath, caKeyPath, caCertPath, extPath, cb) {"
+                },
+                "sink": {
+                    "file": "lib/generate.js",
+                    "lineno": 140,
+                    "code": "exec(cmd, function execCb (err) {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://advisory.checkmarx.net/advisory/CX-2021-4782/"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

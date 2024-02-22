@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "command-injection",
-        "sink": "exec('df -k \"' + path + '\"', function(err, stdout) {",
-        "sink_lineno": 11
-    }
-]

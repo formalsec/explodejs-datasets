@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-cg42-4wrc-gp47", 
+        "cve_id": "CVE-2020-7673",
+        "cwe": "CWE-94"
+    },
+    "correct_cwe": "CWE-94",
+    "correct_package_link": "https://registry.npmjs.org/node-extend/-/node-extend-0.2.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/extend.js",
+                    "lineno": 5,
+                    "code": "function extend(A,B,as,isAargs){"
+                },
+                "sink": {
+                    "file": "lib/extend.js",
+                    "lineno": 31,
+                    "code": "var nn = eval('('+ss+')');"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-NODEEXTEND-571491"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

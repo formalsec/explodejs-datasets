@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-vhxc-fhm5-qcp9", 
+        "cve_id": "CVE-2022-25296",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": " https://registry.npmjs.org/bodymen/-/bodymen-1.0.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "dist/index.js",
+                    "lineno": 42,
+                    "code": "function handler(type, name, fn) {"
+                },
+                "sink": {
+                    "file": "dist/index.js",
+                    "lineno": 44,
+                    "code": "handlers[type][name] = fn;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-BODYMEN-2342623"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

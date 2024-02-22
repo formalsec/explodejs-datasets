@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-mjjj-6p43-vhhv",
+        "cve_id": "CVE-2022-21231",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/deep-get-set/-/deep-get-set-1.1.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 9,
+                    "code": "function deep (obj, path, value) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 35,
+                    "code": "obj[keys[i]] = value;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-DEEPGETSET-2342655"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

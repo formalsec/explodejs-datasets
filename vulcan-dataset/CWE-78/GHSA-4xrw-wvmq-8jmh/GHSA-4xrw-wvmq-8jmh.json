@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-4xrw-wvmq-8jmh", 
+        "cve_id": "CVE-2020-7627",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/node-key-sender/-/node-key-sender-1.0.11.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "key-sender.js",
+                    "lineno": 111,
+                    "code": "module.execute = function(arrParams) {"
+                },
+                "sink": {
+                    "file": "key-sender.js",
+                    "lineno": 117,
+                    "code": "return exec(command, {}, function(error, stdout, stderr) {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-NODEKEYSENDER-564261"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

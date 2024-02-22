@@ -1,0 +1,53 @@
+{
+    "advisory": {
+        "id": 1469,
+        "cwe": "CWE-471"
+    },
+    "correct_cwe": "CWE-471",
+    "correct_package_link": "https://registry.npmjs.org/qs/-/qs-6.2.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/parse.js",
+                    "lineno": 131,
+                    "code": "module.exports = function (str, opts) {"
+                },
+                "sink": {
+                    "file": "dist/utils.js",
+                    "lineno": 55,
+                    "code": "acc[key] = value;"
+                }
+            }
+        ]
+    },
+    "tools": {
+        "codeql": {
+            "score": "D"
+        },
+        "njsscan": {
+            "score": "D"
+        },
+        "graudit": {
+            "score": "C"
+        },
+        "insidersec": {
+            "score": "D"
+        },
+        "eslint": {
+            "score": "D"
+        },
+        "appinspector": {
+            "score": "C"
+        },
+        "msdevskim": {
+            "score": "D"
+        },
+        "drek": {
+            "score": "D"
+        },
+        "mosca": {
+            "score": "C"
+        }
+    }
+}

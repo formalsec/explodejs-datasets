@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "FS.readFile(filepath,'binary',",
-        "sink_lineno": 40
-    }
-]

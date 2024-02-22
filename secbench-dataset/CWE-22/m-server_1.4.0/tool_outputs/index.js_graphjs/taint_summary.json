@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "res.end(fs.readFileSync(targetPath))",
-        "sink_lineno": 14
-    }
-]

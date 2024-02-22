@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-gwp3-f7mr-qpfv",
+        "cve_id": "CVE-2021-34084",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/s3-uploader/-/s3-uploader-2.0.3.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 165,
+                    "code": "Upload.prototype.upload = function upload(src, opts, cb) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 36,
+                    "code": "metadata(src, {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://advisory.checkmarx.net/advisory/CX-2021-4776/"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

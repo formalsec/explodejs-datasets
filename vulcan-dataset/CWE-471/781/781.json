@@ -1,0 +1,63 @@
+{
+    "advisory": {
+        "id": 781,
+        "cwe": "CWE-471"
+    },
+    "correct_cwe": "CWE-471",
+    "correct_package_link": "https://registry.npmjs.org/node.extend/-/node.extend-2.0.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/extend.js",
+                    "lineno": 14,
+                    "code": "module.exports = function extend() {"
+                },
+                "sink": {
+                    "file": "lib/extend.js",
+                    "lineno": 65,
+                    "code": "target[name] = copy;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://hackerone.com/reports/430831"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ],
+    "tools": {
+        "codeql": {
+            "score": "A"
+        },
+        "njsscan": {
+            "score": "D"
+        },
+        "graudit": {
+            "score": "C"
+        },
+        "insidersec": {
+            "score": "D"
+        },
+        "eslint": {
+            "score": "D"
+        },
+        "appinspector": {
+            "score": "C"
+        },
+        "msdevskim": {
+            "score": "D"
+        },
+        "drek": {
+            "score": "D"
+        },
+        "mosca": {
+            "score": "D"
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-f78f-353m-cf4j",
+        "cve_id": "CVE-2020-7609",
+        "cwe": "CWE-94"
+    },
+    "correct_cwe": "CWE-94",
+    "correct_package_link": "https://registry.npmjs.org/node-rules/-/node-rules-3.0.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/node-rules.js",
+                    "lineno": 222,
+                    "code": "RuleEngine.prototype.fromJSON = function(rules) {"
+                },
+                "sink": {
+                    "file": "lib/node-rules.js",
+                    "lineno": 236,
+                    "code": "rule.condition = eval(\"(\"+rule.condition+\")\");"
+                }
+            },
+            {
+                "source": {
+                    "file": "lib/node-rules.js",
+                    "lineno": 222,
+                    "code": "RuleEngine.prototype.fromJSON = function(rules) {"
+                },
+                "sink": {
+                    "file": "lib/node-rules.js",
+                    "lineno": 237,
+                    "code": "rule.consequence = eval(\"(\"+rule.consequence+\")\");"
+                }
+            },
+            {
+                "source": {
+                    "file": "lib/node-rules.js",
+                    "lineno": 222,
+                    "code": "RuleEngine.prototype.fromJSON = function(rules) {"
+                },
+                "sink": {
+                    "file": "lib/node-rules.js",
+                    "lineno": 244,
+                    "code": "rules.condition = eval(\"(\"+rules.condition+\")\");"
+                }
+            },
+            {
+                "source": {
+                    "file": "lib/node-rules.js",
+                    "lineno": 222,
+                    "code": "RuleEngine.prototype.fromJSON = function(rules) {"
+                },
+                "sink": {
+                    "file": "lib/node-rules.js",
+                    "lineno": 245,
+                    "code": "rules.consequence = eval(\"(\"+rules.consequence+\")\");"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-NODERULES-560426"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/mithunsatheesh/node-rules/commit/100862223904bb6478fcc33b701c7dee11f7b832"
+        }
+    ]
+}

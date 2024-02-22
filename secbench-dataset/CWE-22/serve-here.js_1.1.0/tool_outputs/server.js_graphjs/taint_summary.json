@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "FileSystem.readFile (FilePath, function (SomeError, Data) {",
-        "sink_lineno": 27
-    }
-]

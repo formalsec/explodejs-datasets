@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "fs.readFile(path,function (error,data) {//\u8bfb\u53d6\u6587\u4ef6\u5939",
-        "sink_lineno": 5
-    }
-]

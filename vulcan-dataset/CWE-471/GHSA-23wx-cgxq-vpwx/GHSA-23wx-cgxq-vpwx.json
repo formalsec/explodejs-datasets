@@ -1,0 +1,47 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-23wx-cgxq-vpwx", 
+        "cve_id": "CVE-2022-25645",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/dset/-/dset-3.1.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "merge/index.js",
+                    "lineno": 17,
+                    "code": "function dset(obj, keys, val) {"
+                },
+                "sink": {
+                    "file": "merge/index.js",
+                    "lineno": 5,
+                    "code": "a[k] = merge(a[k], b[k]);"
+                }
+            },
+            {
+                "source": {
+                    "file": "merge/index.js",
+                    "lineno": 17,
+                    "code": "function dset(obj, keys, val) {"
+                },
+                "sink": {
+                    "file": "merge/index.js",
+                    "lineno": 9,
+                    "code": "a[k] = merge(a[k], b[k]);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-DSET-2330881"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-297x-8xj4-vcxv",
+        "cve_id": "CVE-2020-8141",
+        "cwe": "CWE-94"
+    },
+    "correct_cwe": "CWE-94",
+    "correct_package_link": "https://registry.npmjs.org/dot/-/dot-1.1.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "doT.js",
+                    "lineno": 92,
+                    "code": "doT.template = function(tmpl, c, def) {"
+                },
+                "sink": {
+                    "file": "doT.js",
+                    "lineno": 133,
+                    "code": "return new Function(c.varname, str);"
+                }
+            },
+            {
+                "source": {
+                    "file": "doT.js",
+                    "lineno": 92,
+                    "code": "doT.template = function(tmpl, c, def) {"
+                },
+                "sink": {
+                    "file": "doT.js",
+                    "lineno": 69,
+                    "code": "new Function(\"def\", \"def['\"+code+\"']=\" + value)(def);"
+                }
+            },
+            {
+                "source": {
+                    "file": "doT.js",
+                    "lineno": 92,
+                    "code": "doT.template = function(tmpl, c, def) {"
+                },
+                "sink": {
+                    "file": "doT.js",
+                    "lineno": 83,
+                    "code": "var v = new Function(\"def\", \"return \" + code)(def);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://hackerone.com/reports/390929"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

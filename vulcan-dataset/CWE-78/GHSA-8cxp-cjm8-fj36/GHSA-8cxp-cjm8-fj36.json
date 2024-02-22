@@ -1,0 +1,47 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-8cxp-cjm8-fj36",
+        "cve_id": "CVE-2019-10807",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": " https://registry.npmjs.org/blamer/-/blamer-0.1.13.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "Blamer.js",
+                    "lineno": 5,
+                    "code": "var Blamer = function Blamer(type, args) {"
+                },
+                "sink": {
+                    "file": "svn/git.js",
+                    "lineno": 24,
+                    "code": "exec('git blame ' + args + ' ' + realFile, {"
+                }
+            },
+            {
+                "source": {
+                    "file": "Blamer.js",
+                    "lineno": 5,
+                    "code": "var Blamer = function Blamer(type, args) {"
+                },
+                "sink": {
+                    "file": "vcs/svn.js",
+                    "lineno": 38,
+                    "code": "exec('svn blame ' + realFile + ' ' + args, {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-BLAMER-559541"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/kucherenko/blamer/commit/5fada8c9b6986ecd28942b724fa682e77ce1e11c"
+        }
+    ]
+}

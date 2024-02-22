@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-fw2f-7f87-5r6c",
+        "cve_id": "CVE-2020-7674",
+        "cwe": "CWE-94"
+    },
+    "correct_cwe": "CWE-94",
+    "correct_package_link": "https://registry.npmjs.org/access-policy/-/access-policy-3.1.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/encode.js",
+                    "lineno": 9,
+                    "code": "function encodeStatements(statements, data) {"
+                },
+                "sink": {
+                    "file": "lib/encode.js",
+                    "lineno": 6,
+                    "code": "return eval('`' + tmpl + '`');"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-ACCESSPOLICY-571490"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

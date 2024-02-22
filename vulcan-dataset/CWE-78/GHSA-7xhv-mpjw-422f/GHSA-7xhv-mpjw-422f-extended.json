@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 370,
+        "file": "lib_googleIt.js",
+        "normalized": "yes"
+    }
+]

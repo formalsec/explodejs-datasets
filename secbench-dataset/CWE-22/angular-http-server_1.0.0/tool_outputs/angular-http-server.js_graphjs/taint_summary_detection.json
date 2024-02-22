@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "fileBuffer = fs.readFileSync(possibleFilename);",
-        "sink_lineno": 16
-    }
-]

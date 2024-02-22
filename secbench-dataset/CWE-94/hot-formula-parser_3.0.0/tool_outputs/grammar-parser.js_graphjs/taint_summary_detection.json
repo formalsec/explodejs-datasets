@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink": "var arr = eval(\"[\" + yytext + \"]\");",
-        "sink_lineno": 258
-    }
-]

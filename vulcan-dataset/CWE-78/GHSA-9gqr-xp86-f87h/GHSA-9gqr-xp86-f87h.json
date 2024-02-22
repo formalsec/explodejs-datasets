@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-9gqr-xp86-f87h",
+        "cve_id": "CVE-2021-23632",
+        "cwe": "CWE-94"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/git/-/git-0.1.5.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/git/git.js",
+                    "lineno": 188,
+                    "code": "Git.prototype.git = function() {"
+                },
+                "sink": {
+                    "file": "lib/git/git.js",
+                    "lineno": 232,
+                    "code": "exec(call_string, options,"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-GIT-1568518"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

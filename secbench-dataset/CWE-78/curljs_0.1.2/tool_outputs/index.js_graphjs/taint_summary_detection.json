@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "command-injection",
-        "sink": "cp.exec(curlString, function(err, stdout, stderr) {",
-        "sink_lineno": 37
-    }
-]

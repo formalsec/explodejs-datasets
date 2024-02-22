@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-pf8j-vhg8-xmc3", 
+        "cve_id": "CVE-2020-7626",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/karma-mojo/-/karma-mojo-1.0.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 9,
+                    "code": "function Mojo(emitter, config, executor, logger) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 100,
+                    "code": "exec('egrep -rl \"describe\\([\\'\\\"].*' + config.grep + '\" ' + config.grepDir, {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-KARMAMOJO-564260"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

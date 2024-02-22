@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "var stream = fs.createReadStream(fullPath, 'binary', {",
-        "sink_lineno": 200
-    }
-]

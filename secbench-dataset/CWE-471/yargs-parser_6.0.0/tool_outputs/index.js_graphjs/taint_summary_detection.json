@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink": "config = require(resolvedConfigPath)",
-        "sink_lineno": 451
-    }
-]

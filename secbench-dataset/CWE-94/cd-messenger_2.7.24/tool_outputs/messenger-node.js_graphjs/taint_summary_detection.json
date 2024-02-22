@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink": "eval(`cl.${color}()`); // eslint-disable-line",
-        "sink_lineno": 70
-    }
-]

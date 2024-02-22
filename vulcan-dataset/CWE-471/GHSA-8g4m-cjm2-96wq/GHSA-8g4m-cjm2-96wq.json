@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-8g4m-cjm2-96wq", 
+        "cve_id": "CVE-2021-23771",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/notevil/-/notevil-1.3.3.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 15,
+                    "code": "function safeEval(src, parentContext){"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 290,
+                    "code": "obj[prop.key.value || prop.key.name] = value"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-NOTEVIL-2385946"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

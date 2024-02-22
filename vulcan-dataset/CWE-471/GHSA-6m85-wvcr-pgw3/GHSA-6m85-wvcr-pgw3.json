@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-6m85-wvcr-pgw3", 
+        "cve_id": "CVE-2020-7737",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/safetydance/-/safetydance-1.1.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 182,
+                    "code": "function set(o, s, value) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 210,
+                    "code": "io[a[a.length - 1]] = value;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-SAFETYDANCE-598687"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

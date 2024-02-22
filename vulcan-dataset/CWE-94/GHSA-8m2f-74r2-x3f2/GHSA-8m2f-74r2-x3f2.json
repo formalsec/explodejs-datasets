@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-8m2f-74r2-x3f2",
+        "cve_id": "CVE-2022-25760",
+        "cwe": "CWE-94"
+    },
+    "correct_cwe": "CWE-94",
+    "correct_package_link": "https://registry.npmjs.org/accesslog/-/accesslog-0.0.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/index.js",
+                    "lineno": 3,
+                    "code": "exports = module.exports = function accesslog(options) {"
+                },
+                "sink": {
+                    "file": "lib/compile.js",
+                    "lineno": 6,
+                    "code": "return new Function('tokens, req, res', js).bind(context);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-ACCESSLOG-2312099"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

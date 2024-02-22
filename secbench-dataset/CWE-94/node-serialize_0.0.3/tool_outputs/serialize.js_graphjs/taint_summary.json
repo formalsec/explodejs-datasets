@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
-        "sink_lineno": 75
-    }
-]

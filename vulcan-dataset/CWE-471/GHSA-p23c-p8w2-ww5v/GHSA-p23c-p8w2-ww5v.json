@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-p23c-p8w2-ww5v",
+        "cve_id": "CVE-2022-25871",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/querymen/-/querymen-2.1.4.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "dist/index.js",
+                    "lineno": 43,
+                    "code": "};function handler(type, name, fn) {"
+                },
+                "sink": {
+                    "file": "dist/index.js",
+                    "lineno": 48,
+                    "code": "handlers[type][name] = fn;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-QUERYMEN-2391488"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

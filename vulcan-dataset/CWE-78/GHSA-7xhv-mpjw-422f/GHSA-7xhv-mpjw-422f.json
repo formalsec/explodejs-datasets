@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-7xhv-mpjw-422f",
+        "cve_id": "CVE-2021-34083",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/google-it/-/google-it-1.6.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/googleIt.js",
+                    "lineno": 232,
+                    "code": "function googleIt(config) {"
+                },
+                "sink": {
+                    "file": "lib/googleIt.js",
+                    "lineno": 59,
+                    "code": "exec(\"open \".concat(result.link), errorTryingToOpen);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://advisory.checkmarx.net/advisory/CX-2021-4777/"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

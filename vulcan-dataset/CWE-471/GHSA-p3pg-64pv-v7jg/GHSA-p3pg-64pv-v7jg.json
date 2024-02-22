@@ -1,0 +1,47 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-p3pg-64pv-v7jg", 
+        "cve_id": "CVE-2022-25301",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/jsgui-lang-essentials/-/jsgui-lang-essentials-0.4.3.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "jsgui-lang-essentials.js",
+                    "lineno": 1418,
+                    "code": "var ll_set = function(obj, prop_name, prop_value) {"
+                },
+                "sink": {
+                    "file": "jsgui-lang-essentials.js",
+                    "lineno": 1435,
+                    "code": "i[s] = prop_value;"
+                }
+            },
+            {
+                "source": {
+                    "file": "jsgui-lang-essentials.js",
+                    "lineno": 1418,
+                    "code": "var ll_set = function(obj, prop_name, prop_value) {"
+                },
+                "sink": {
+                    "file": "jsgui-lang-essentials.js",
+                    "lineno": 1442,
+                    "code": "i[s] = prop_value;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-JSGUILANGESSENTIALS-2316897"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

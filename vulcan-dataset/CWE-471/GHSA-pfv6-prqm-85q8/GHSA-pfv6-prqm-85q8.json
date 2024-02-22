@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-pfv6-prqm-85q8", 
+        "cve_id": "CVE-2022-24279",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/madlib-object-utils/-/madlib-object-utils-0.1.7.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/utils.js",
+                    "lineno": 88,
+                    "code": "setValue = function(path, object, value) {"
+                },
+                "sink": {
+                    "file": "lib/utils.js",
+                    "lineno": 80,
+                    "code": "value[key] = defaultValue;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-MADLIBOBJECTUTILS-2388572"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/Qwerios/madlib-object-utils/commit/8d5d54c11c8fb9a7980a99778329acd13e3ef98f"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 491,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 417,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 225,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 233,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 117,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 476,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 567,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 454,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 400,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 222,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 213,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 192,
+        "file": "index.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 102,
+        "file": "index.js",
+        "normalized": "yes"
+    }
+]

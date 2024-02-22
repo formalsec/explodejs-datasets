@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink": "eval('constructor = function ('+args+') {'+inner_code+'};');",
-        "sink_lineno": 26
-    }
-]

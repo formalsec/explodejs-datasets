@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-rphm-c8gw-3r38",
+        "cve_id": "CVE-2021-34078",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/lifion-verify-deps/-/lifion-verify-deps-1.1.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/index.js",
+                    "lineno": 74,
+                    "code": "async function verifyDeps({ autoUpgrade = false, dir, logger = console } = {}) {"
+                },
+                "sink": {
+                    "file": "lib/index.js",
+                    "lineno": 16,
+                    "code": "const { stdout } = await execAsync(`npm view ${name} versions --json`);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://advisory.checkmarx.net/advisory/CX-2021-4785/"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/lifion/lifion-verify-deps/commit/be1133d5b78e3caa0004fa60207013dca4e1bf38"
+        }
+    ]
+}

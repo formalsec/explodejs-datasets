@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-4448-rc82-fcr7", 
+        "cve_id": "CVE-2019-5444",
+        "cwe": "CWE-22"
+    },
+    "correct_cwe": "CWE-22",
+    "correct_package_link": "https://registry.npmjs.org/serve-here/-/serve-here-3.1.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/read-file.js",
+                    "lineno": 9,
+                    "code": "module.exports = (file) => {"
+                },
+                "sink": {
+                    "file": "lib/read-file.js",
+                    "lineno": 11,
+                    "code": "return fs.readFile(file, done);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://hackerone.com/reports/569966"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 353,
+        "file": "index.js",
+        "normalized": "yes"
+    }
+]

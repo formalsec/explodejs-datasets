@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 85,
+        "file": "server.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 85,
+        "file": "pi_video_recording.js",
+        "normalized": "yes"
+    }
+]

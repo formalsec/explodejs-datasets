@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "fs.readFile(path,function(error,file){",
-        "sink_lineno": 8
-    }
-]

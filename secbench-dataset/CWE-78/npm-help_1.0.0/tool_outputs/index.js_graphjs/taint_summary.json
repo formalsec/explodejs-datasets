@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "command-injection",
-        "sink": "var latestVersion = execSync('tnpm view ' + module + ' version').toString();",
-        "sink_lineno": 13
-    }
-]

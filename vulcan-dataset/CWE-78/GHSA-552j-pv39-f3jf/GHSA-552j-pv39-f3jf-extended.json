@@ -1,0 +1,44 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 72,
+        "file": "generate.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 24,
+        "file": "generate.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 165,
+        "file": "generate.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 92,
+        "file": "generate.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 282,
+        "file": "generate.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 285,
+        "file": "generate.js",
+        "normalized": "yes"
+    }
+]

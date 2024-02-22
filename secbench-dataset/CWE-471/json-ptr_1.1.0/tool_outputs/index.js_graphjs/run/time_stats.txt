@@ -1,3 +1,0 @@
-graph: 548.884629
-import: 2063
-injection_detection: 2446.763038635254

@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "const stream = Fs.createReadStream(data.path);",
-        "sink_lineno": 60
-    }
-]

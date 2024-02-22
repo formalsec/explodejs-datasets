@@ -1,0 +1,16 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 75,
+        "file": "ascii-art.js",
+        "normalized": "yes"
+    },
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 464,
+        "file": "ascii-art.js",
+        "normalized": "yes"
+    }
+]

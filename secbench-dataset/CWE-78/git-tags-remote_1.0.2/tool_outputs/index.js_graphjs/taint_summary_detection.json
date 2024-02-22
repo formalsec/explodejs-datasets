@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "command-injection",
-        "sink": "exec(`git ls-remote --tags ${repo}`, (error, stdout, stderr) => {",
-        "sink_lineno": 5
-    }
-]

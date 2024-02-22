@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-x949-7cm6-fm6p",
+        "cve_id": "CVE-2021-23639",
+        "cwe": "CWE-94"
+    },
+    "correct_cwe": "CWE-94",
+    "correct_package_link": "https://registry.npmjs.org/md-to-pdf/-/md-to-pdf-4.1.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "dist/index.js",
+                    "lineno": 15,
+                    "code": "async function mdToPdf(input, config = {}) {"
+                },
+                "sink": {
+                    "file": "dist/lib/md-to-pdf.js",
+                    "lineno": 23,
+                    "code": "const { content: md, data: frontMatterConfig } = gray_matter_1.default(mdFileContent);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-MDTOPDF-1657880"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/simonhaenisch/md-to-pdf/commit/a716259c548c82fa1d3b14a3422e9100619d2d8a"
+        }
+    ]
+}

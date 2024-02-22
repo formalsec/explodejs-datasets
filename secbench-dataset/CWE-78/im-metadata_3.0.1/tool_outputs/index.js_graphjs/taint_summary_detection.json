@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "command-injection",
-        "sink": "exec(cmd, opts, function(e, stdout, stderr) {",
-        "sink_lineno": 15
-    }
-]

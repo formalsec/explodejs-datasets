@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-926x-m6m5-3mmp", 
+        "cve_id": "CVE-2019-10803",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/push-dir/-/push-dir-0.4.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 5,
+                    "code": "function pushDir(opts) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 202,
+                    "code": "childProcess.exec(cmd, function(error, stdout, stderr) {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-PUSHDIR-559009"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

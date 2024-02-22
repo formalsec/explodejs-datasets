@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "var stream = fs.createReadStream(fpath.absolute);",
-        "sink_lineno": 57
-    }
-]

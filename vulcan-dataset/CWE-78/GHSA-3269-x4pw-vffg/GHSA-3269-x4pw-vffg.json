@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-3269-x4pw-vffg", 
+        "cve_id": "CVE-2020-7631",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/diskusage-ng/-/diskusage-ng-0.2.4.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/posix.js",
+                    "lineno": 6,
+                    "code": "function diskusage(path, cb) {"
+                },
+                "sink": {
+                    "file": "lib/posix.js",
+                    "lineno": 11,
+                    "code": "exec('df -k \"' + path + \"', function(err, stdout) {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-DISKUSAGENG-564425"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-29xr-v42j-r956", 
+        "cve_id": "CVE-2020-7677",
+        "cwe": "CWE-94"
+    },
+    "correct_cwe": "CWE-94",
+    "correct_package_link": "https://registry.npmjs.org/thenify/-/thenify-3.3.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 15,
+                    "code": "function thenify($$__fn__$$, options) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 17,
+                    "code": "return eval(createWrapper($$__fn__$$.name, options))"
+                }
+            },
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 28,
+                    "code": "thenify.withCallback = function ($$__fn__$$, options) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 33,
+                    "code": "return eval(createWrapper($$__fn__$$.name, options))"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-THENIFY-571690"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/thenables/thenify/commit/0d94a24eb933bc835d568f3009f4d269c4c4c17a"
+        }
+    ]
+}

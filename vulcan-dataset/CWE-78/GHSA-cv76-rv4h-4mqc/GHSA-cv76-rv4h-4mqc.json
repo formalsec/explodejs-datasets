@@ -1,0 +1,59 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-cv76-rv4h-4mqc",
+        "cve_id": "CVE-2021-34082",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/proctree/-/proctree-0.1.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 14,
+                    "code": "_buildProcessTree(processObj) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 17,
+                    "code": "let lines = execSync(`pgrep -lfP ${processObj.pid}`).toString().split('\n').filter(e => e);"
+                }
+            },
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 44,
+                    "code": "getProcessTree(pid) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 46,
+                    "code": "let psOutput = execSync(`ps -p ${pid} -o \"pid=,command=\"`).toString().trim();"
+                }
+            },
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 57,
+                    "code": "treeKill(pid) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 59,
+                    "code": "execSync(`kill -9 ${pids.join(' ')}`);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://advisory.checkmarx.net/advisory/CX-2021-4783/"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 2053,
+        "file": "chartkick.js",
+        "normalized": "yes"
+    }
+]

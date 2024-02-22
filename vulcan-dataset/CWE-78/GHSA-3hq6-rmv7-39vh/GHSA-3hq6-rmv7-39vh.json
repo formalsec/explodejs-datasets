@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-3hq6-rmv7-39vh", 
+        "cve_id": "CVE-2020-7625",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/op-browser/-/op-browser-1.0.9.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/index.js",
+                    "lineno": 54,
+                    "code": "open: function (browser, url, proxyURL, pacFileURL, dataDir, bypassList) {"
+                },
+                "sink": {
+                    "file": "lib/index.js",
+                    "lineno": 70,
+                    "code": "childProcess.execFile(path.resolve(browserPath), commandOptions, {maxBuffer: 50000 * 1024}, function (err) {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-OPBROWSER-564259"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

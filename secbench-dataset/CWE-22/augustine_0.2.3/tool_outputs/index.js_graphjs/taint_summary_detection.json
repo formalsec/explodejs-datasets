@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "res.write(fs.readFileSync(path, { flag: 'rs+' }));",
-        "sink_lineno": 88
-    }
-]

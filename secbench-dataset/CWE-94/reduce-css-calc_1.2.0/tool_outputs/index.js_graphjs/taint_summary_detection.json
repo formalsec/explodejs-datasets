@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink": "result = eval(toEvaluate)",
-        "sink_lineno": 73
-    }
-]

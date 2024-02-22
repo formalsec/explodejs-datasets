@@ -1,0 +1,59 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-f2jw-pr2c-9x96", 
+        "cve_id": "CVE-2021-29369",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/@rkesters/gnuplot/-/gnuplot-0.0.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "dist/index.js",
+                    "lineno": 276,
+                    "code": "function plot(options) {"
+                },
+                "sink": {
+                    "file": "dist/index.js",
+                    "lineno": 225,
+                    "code": "child_process_1.exec(`touch ${filePath}`);"
+                }
+            },
+            {
+                "source": {
+                    "file": "dist/index.js",
+                    "lineno": 276,
+                    "code": "function plot(options) {"
+                },
+                "sink": {
+                    "file": "dist/index.js",
+                    "lineno": 228,
+                    "code": "gnuplot = child_process_1.exec(`gnuplot | ps2pdf - ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);"
+                }
+            },
+            {
+                "source": {
+                    "file": "dist/index.js",
+                    "lineno": 276,
+                    "code": "function plot(options) {"
+                },
+                "sink": {
+                    "file": "dist/index.js",
+                    "lineno": 232,
+                    "code": "gnuplot = child_process_1.exec(`gnuplot > ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": ""
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

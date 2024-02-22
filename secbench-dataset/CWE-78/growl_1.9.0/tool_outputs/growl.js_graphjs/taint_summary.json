@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "command-injection",
-        "sink": "exec(args.join(' '), fn);",
-        "sink_lineno": 289
-    }
-]

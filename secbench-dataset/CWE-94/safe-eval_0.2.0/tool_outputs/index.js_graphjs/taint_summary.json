@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink": "vm.runInNewContext(code, sandbox)",
-        "sink_lineno": 13
-    }
-]

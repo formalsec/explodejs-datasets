@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-6hr9-4692-fch9", 
+        "cve_id": "CVE-2020-7624",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/effect/-/effect-1.0.4.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 29,
+                    "code": "edge : function (options, callback) {"
+                },
+                "sink": {
+                    "file": "helper.js",
+                    "lineno": 24,
+                    "code": "exec(cmd, function (error) {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-EFFECT-564256"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

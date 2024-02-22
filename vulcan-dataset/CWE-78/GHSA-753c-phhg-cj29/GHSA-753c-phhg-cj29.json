@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-753c-phhg-cj29", 
+        "cve_id": "CVE-2021-23352",
+        "cwe": ["CWE-77", "CWE-89"]
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/madge/-/madge-4.0.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/graph.js",
+                    "lineno": 125,
+                    "code": "module.exports.svg = function (modules, circular, config) {"
+                },
+                "sink": {
+                    "file": "lib/graph.js",
+                    "lineno": 28,
+                    "code": "return exec(cmd)"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-MADGE-1082875"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/pahen/madge/commit/da5cbc9ab30372d687fa7c324b22af7ffa5c6332"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 51,
+        "file": "pdfinfo.js",
+        "normalized": "yes"
+    }
+]

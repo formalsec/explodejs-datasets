@@ -1,0 +1,63 @@
+{
+    "advisory": {
+        "id": 996,
+        "cwe": "CWE-471"
+    },
+    "correct_cwe": "CWE-471",
+    "correct_package_link": "https://registry.npmjs.org/extend/-/extend-3.0.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 34,
+                    "code": "module.exports = function extend() {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 77,
+                    "code": "target[name] = copy;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://hackerone.com/reports/381185"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ],
+    "tools": {
+        "codeql": {
+            "score": "A"
+        },
+        "njsscan": {
+            "score": "D"
+        },
+        "graudit": {
+            "score": "D"
+        },
+        "insidersec": {
+            "score": "D"
+        },
+        "eslint": {
+            "score": "D"
+        },
+        "appinspector": {
+            "score": "D"
+        },
+        "msdevskim": {
+            "score": "D"
+        },
+        "drek": {
+            "score": "D"
+        },
+        "mosca": {
+            "score": "D"
+        }
+    }
+}

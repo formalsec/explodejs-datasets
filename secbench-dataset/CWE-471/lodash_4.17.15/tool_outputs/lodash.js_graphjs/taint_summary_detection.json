@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink": "return Function(importsKeys, sourceURL + 'return ' + source)",
-        "sink_lineno": 14870
-    }
-]

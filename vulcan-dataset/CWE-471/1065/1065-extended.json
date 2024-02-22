@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 11490,
+        "file": "lodash.js",
+        "normalized": "yes"
+    }
+]

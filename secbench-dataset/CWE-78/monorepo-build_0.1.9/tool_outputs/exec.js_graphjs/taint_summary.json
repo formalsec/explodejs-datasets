@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "command-injection",
-        "sink": "exports.execSync = (cwd, command) => child_process_1.execSync(command, { cwd, env: process.env });",
-        "sink_lineno": 4
-    }
-]

@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-6m4r-m3gc-h4r5", 
+        "cve_id": "CVE-2020-7629",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/install-package/-/install-package-0.4.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 63,
+                    "code": "module.exports = function (packages, options, execOptions) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 82,
+                    "code": "exec(args.join(' '), execOpts, (error, stdout, stderr) => {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-INSTALLPACKAGE-564267"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

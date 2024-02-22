@@ -1,0 +1,87 @@
+{
+    "advisory": {
+        "id": 580,
+        "cwe": "CWE-471"
+    },
+    "correct_cwe": "CWE-471",
+    "correct_package_link": "https://registry.npmjs.org/merge-deep/-/merge-deep-3.0.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 12,
+                    "code": "module.exports = function mergeDeep(orig, objects) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 41,
+                    "code": "target[key] = merge(newVal, oldVal);"
+                }
+            },
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 12,
+                    "code": "module.exports = function mergeDeep(orig, objects) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 43,
+                    "code": "target[key] = utils.union([], newVal, oldVal);"
+                }
+            },
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 12,
+                    "code": "module.exports = function mergeDeep(orig, objects) {"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 45,
+                    "code": "target[key] = utils.clone(oldVal);"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://hackerone.com/reports/310708"
+        }
+    ],
+    "patch": [
+        {
+            "url": "https://github.com/jonschlinkert/assign-deep/commit/19953a8c089b0328c470acaaaf6accdfcb34da11"
+        }
+    ],
+    "tools": {
+        "codeql": {
+            "score": "D"
+        },
+        "njsscan": {
+            "score": "D"
+        },
+        "graudit": {
+            "score": "D"
+        },
+        "insidersec": {
+            "score": "C"
+        },
+        "eslint": {
+            "score": "A"
+        },
+        "appinspector": {
+            "score": "D"
+        },
+        "msdevskim": {
+            "score": "D"
+        },
+        "drek": {
+            "score": "D"
+        },
+        "mosca": {
+            "score": "D"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-9v73-x562-wv5x",
+        "cve_id": "CVE-2021-34081",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/gitsome/-/gitsome-0.2.3.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/index.js",
+                    "lineno": 7,
+                    "code": "return function GitStory ({ path, format, date, tag }) {"
+                },
+                "sink": {
+                    "file": "lib/run/index.js",
+                    "lineno": 8,
+                    "code": "return exec(params.join(' '), { encoding, cwd: path }).toString(encoding)"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://advisory.checkmarx.net/advisory/CX-2021-4780/"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

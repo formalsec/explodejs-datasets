@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "path-traversal",
-        "sink": "fs.createReadStream(filename).pipe(response);",
-        "sink_lineno": 91
-    }
-]

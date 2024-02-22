@@ -1,0 +1,47 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-vvv8-xw5f-3f88",
+        "cve_id": "CVE-2022-21213",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": " https://registry.npmjs.org/mout/-/mout-1.2.3.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "src/object/deepFillIn.js",
+                    "lineno": 6,
+                    "code": "function deepFillIn(target, defaults){"
+                },
+                "sink": {
+                    "file": "src/object/deepFillIn.js",
+                    "lineno": 19,
+                    "code": "target[key] = newValue;"
+                }
+            },
+            {
+                "source": {
+                    "file": "src/object/deepMixIn.js",
+                    "lineno": 7,
+                    "code": "function deepMixIn(target, objects) {"
+                },
+                "sink": {
+                    "file": "src/object/deepMixIn.js",
+                    "lineno": 27,
+                    "code": "this[key] = val;"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "file_path": ["./FillInPoc.js", "./MixInPoc.js"]
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

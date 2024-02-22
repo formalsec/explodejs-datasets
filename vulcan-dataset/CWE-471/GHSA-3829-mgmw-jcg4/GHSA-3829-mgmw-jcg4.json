@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-3829-mgmw-jcg4",
+        "cve_id": "CVE-2021-40663",
+        "cwe": "CWE-1321"
+    },
+    "correct_cwe": ["CWE-471", "CWE-1321"],
+    "correct_package_link": "https://registry.npmjs.org/deep.assign/-/deep.assign-0.0.0-alpha.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "bin/deepAssign.js",
+                    "lineno": 3,
+                    "code": "function deepMerge (result, initial, options = {})"
+                },
+                "sink": {
+                    "file": "bin/deepAssign.js",
+                    "lineno": 23,
+                    "code": "if (current[1]) current[1][key] = current[0][key];"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://github.com/janbialostok/deep-assign/issues/1"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}

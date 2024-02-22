@@ -1,7 +1,0 @@
-[
-    {
-        "vuln_type": "code-injection",
-        "sink": "return eval('(' + string + ')');",
-        "sink_lineno": 1175
-    }
-]

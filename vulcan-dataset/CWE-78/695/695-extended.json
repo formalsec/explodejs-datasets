@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "?",
+        "sink": "?",
+        "sink_lineno": 395,
+        "file": "launchEditor.js",
+        "normalized": "yes"
+    }
+]

@@ -1,0 +1,35 @@
+{
+    "advisory": {
+        "ghsa_id": "GHSA-4v9w-pvwr-38h3", 
+        "cve_id": "CVE-2020-7621",
+        "cwe": "CWE-78"
+    },
+    "correct_cwe": "CWE-78",
+    "correct_package_link": "https://registry.npmjs.org/strong-nginx-controller/-/strong-nginx-controller-1.0.2.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "lib/server.js",
+                    "lineno": 57,
+                    "code": "function _nginxCmd(action, cb) {"
+                },
+                "sink": {
+                    "file": "lib/server.js",
+                    "lineno": 65,
+                    "code": "childProcess.exec(cmd.join(' '), function(err, stdout, stderr) {"
+                }
+            }
+        ]
+    },
+    "poc": [
+        {
+            "url": "https://security.snyk.io/vuln/SNYK-JS-STRONGNGINXCONTROLLER-564248"
+        }
+    ],
+    "patch": [
+        {
+            "url": ""
+        }
+    ]
+}
