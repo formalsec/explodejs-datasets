@@ -1,16 +1,14 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 75,
-        "file": "ascii-art.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFile(argv.o, rendered);",
+        "sink_lineno": 62,
+        "file": "ascii-art.js"
     },
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 464,
-        "file": "ascii-art.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFile(dir+target.toLowerCase()+'.flf', str, function(err){",
+        "sink_lineno": 228,
+        "file": "ascii-art.js"
     }
 ]

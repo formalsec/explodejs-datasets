@@ -1,9 +1,8 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 51,
-        "file": "pdfinfo.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-78",
+        "sink": "let data = execSync('pdfinfo ' + self.options.additional.join(' ')).toString('utf8');",
+        "sink_lineno": 26,
+        "file": "pdfinfo.js"
     }
 ]

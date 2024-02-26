@@ -1,23 +1,20 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 89,
-        "file": "index.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-78",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 34,
+        "file": "index.js"
     },
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 170,
-        "file": "index.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-78",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 77,
+        "file": "index.js"
     },
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 230,
-        "file": "index.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-78",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 96,
+        "file": "index.js"
     }
 ]
