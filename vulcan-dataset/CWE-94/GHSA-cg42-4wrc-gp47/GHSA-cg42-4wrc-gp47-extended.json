@@ -1,9 +1,1 @@
-[
-    {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 57,
-        "file": "extend.js",
-        "normalized": "yes"
-    }
-]
+[]

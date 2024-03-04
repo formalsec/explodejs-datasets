@@ -1,9 +1,8 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 11490,
-        "file": "lodash.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-94",
+        "sink": "return Function(importsKeys, sourceURL + 'return ' + source)",
+        "sink_lineno": 14866,
+        "file": "lodash.js"
     }
 ]

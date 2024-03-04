@@ -1,9 +1,8 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 214,
-        "file": "index.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": "Body: fs.createReadStream(version.path),",
+        "sink_lineno": 95,
+        "file": "index.js"
     }
 ]

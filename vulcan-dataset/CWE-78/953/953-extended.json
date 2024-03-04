@@ -1,37 +1,32 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 420,
-        "file": "expressfs.server.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFile(path, req.body.content, encoding, function (err) {",
+        "sink_lineno": 225,
+        "file": "expressfs.server.js"
     },
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 119,
-        "file": "expressfs.server.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFile(filename, content, 'utf8', function (err) {",
+        "sink_lineno": 61,
+        "file": "expressfs.server.js"
     },
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 87,
-        "file": "expressfs.server.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFile(path, req.body.content || '', 'utf8', function (err) {",
+        "sink_lineno": 47,
+        "file": "expressfs.server.js"
     },
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 331,
-        "file": "expressfs.server.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(path + filename, 'utf8', function (err, data) {",
+        "sink_lineno": 137,
+        "file": "expressfs.server.js"
     },
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 250,
-        "file": "expressfs.server.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(path, 'utf8', function (err, contents) {",
+        "sink_lineno": 182,
+        "file": "expressfs.server.js"
     }
 ]

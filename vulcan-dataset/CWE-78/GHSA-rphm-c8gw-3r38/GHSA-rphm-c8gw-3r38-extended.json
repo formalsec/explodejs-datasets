@@ -1,16 +1,8 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 46,
-        "file": "index.js",
-        "normalized": "yes"
-    },
-    {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 118,
-        "file": "index.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-94",
+        "sink": "return require(path.join(currentDir, 'node_modules', name, 'package.json')).version;",
+        "sink_lineno": 33,
+        "file": "index.js"
     }
 ]

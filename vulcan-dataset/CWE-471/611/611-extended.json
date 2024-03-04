@@ -1,9 +1,8 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 96,
-        "file": "deap.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-471",
+        "sink": "a[p] = deepClone(b[p]);",
+        "sink_lineno": 60,
+        "file": "deap.js"
     }
 ]

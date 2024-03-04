@@ -1,9 +1,8 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 62,
-        "file": "resize.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-78",
+        "sink": "child = exec(command,",
+        "sink_lineno": 40,
+        "file": "resize.js"
     }
 ]

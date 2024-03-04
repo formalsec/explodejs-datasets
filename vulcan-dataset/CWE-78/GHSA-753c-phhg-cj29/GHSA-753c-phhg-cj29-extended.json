@@ -1,9 +1,8 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 181,
-        "file": "graph.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": ".then((image) => writeFile(imagePath, image))",
+        "sink_lineno": 150,
+        "file": "graph.js"
     }
 ]

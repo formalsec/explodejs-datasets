@@ -1,30 +1,14 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 62,
-        "file": "routes.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-22",
+        "sink": "res.send(fs.readFileSync(req.query.resource, 'UTF-8'));",
+        "sink_lineno": 57,
+        "file": "routes.js"
     },
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 394,
-        "file": "routes.js",
-        "normalized": "yes"
-    },
-    {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 485,
-        "file": "routes.js",
-        "normalized": "yes"
-    },
-    {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 491,
-        "file": "routes.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-78",
+        "sink": "child = exec(\"sh \" + script);",
+        "sink_lineno": 226,
+        "file": "routes.js"
     }
 ]

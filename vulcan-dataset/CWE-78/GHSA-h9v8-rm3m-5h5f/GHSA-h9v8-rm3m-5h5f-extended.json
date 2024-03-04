@@ -1,9 +1,8 @@
 [
     {
-        "vuln_type": "?",
-        "sink": "?",
-        "sink_lineno": 61,
-        "file": "index.js",
-        "normalized": "yes"
+        "vuln_type": "CWE-78",
+        "sink": "cp.execSync('git remote add ' + name + ' ' + url, {cwd: cwd});",
+        "sink_lineno": 31,
+        "file": "index.js"
     }
 ]
