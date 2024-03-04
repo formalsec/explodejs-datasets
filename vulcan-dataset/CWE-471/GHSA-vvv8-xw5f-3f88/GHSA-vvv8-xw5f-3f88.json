@@ -16,7 +16,7 @@
                 },
                 "sink": {
                     "file": "src/object/deepFillIn.js",
-                    "lineno": 19,
+                    "lineno": 18,
                     "code": "target[key] = newValue;"
                 }
             },
