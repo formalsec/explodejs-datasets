@@ -127,7 +127,6 @@ var server = http.createServer(function (req, res) {
 			fs.exists(realPath, function (exists) {
 				if (!exists) {
 					res.writeHead(404, {'Content-Type': 'text/plain'});
-					res.write("访问路径没有找到。","utf8");
 					res.end();
 				} else {
 					//fs.createReadStream(realPath).pipe(res)
