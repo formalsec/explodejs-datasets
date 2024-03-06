@@ -1,0 +1,41 @@
+{
+  "name": "slash-prop",
+  "version": "2.4.0",
+  "description": "Get, set, or delete a property from a nested object using a slash path",
+  "license": "MIT",
+  "repository": "rubyrubenstahl/slash-prop",
+  "author": {
+    "name": "Ruby Rubenstahl",
+    "email": "ruby@ruby-lighting.com",
+    "url": "ruby-lighting.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "obj",
+    "object",
+    "prop",
+    "property",
+    "path",
+    "get",
+    "set",
+    "delete",
+    "del",
+    "access",
+    "notation",
+    "slash"
+  ],
+  "dependencies": {
+    "is-obj": "^1.0.0"
+  },
+  "devDependencies": {
+
+  }
+}

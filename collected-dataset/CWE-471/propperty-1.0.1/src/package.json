@@ -1,0 +1,22 @@
+{
+  "name": "propperty",
+  "version": "1.0.1",
+  "description": "Get, set, or delete a property from a nested object using a dot path.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gk803/propperty.git"
+  },
+  "keywords": [
+    "propperty"
+  ],
+  "author": "gk803",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gk803/propperty/issues"
+  },
+  "homepage": "https://github.com/gk803/propperty#readme"
+}

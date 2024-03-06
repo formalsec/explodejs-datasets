@@ -1,0 +1,40 @@
+{
+  "name": "minux",
+  "version": "0.1.0",
+  "description": "A simple library for flux architecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunght91/minux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tunght91/minux/issues"
+  },
+  "keywords": [
+    "deep",
+    "object",
+    "get",
+    "set",
+    "string",
+    "utility",
+    "nested",
+    "access",
+    "property",
+    "flux",
+    "minux",
+    "simple",
+    "redux",
+    "action",
+    "dispatch",
+    "store"
+  ],
+  "homepage": "https://github.com/tunght91/minux#readme",
+  "dependencies": {
+    "deep-obj": "^1.1.0"
+  }
+}

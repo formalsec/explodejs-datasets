@@ -1,0 +1,31 @@
+{
+  "name": "circle-github-bot",
+  "version": "2.1.0",
+  "description": "CircleCI comments on github",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p src",
+    "lint": "tslint -p src",
+    "check_version": "echo ${npm_package_version} $(npm view ${npm_package_name} version) | awk '{ if ($1 == $2) { print \"Duplicate version\"; exit 1 }}'"
+  },
+  "devDependencies": {
+    "@blueprintjs/tslint-config": "^1.7.0",
+    "@types/node": "^8.0.0",
+    "tslint": "^5.11.0",
+    "typescript": "~3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themadcreator/circle-github-bot.git"
+  },
+  "keywords": [
+    "circle",
+    "github",
+    "ops"
+  ],
+  "license": "Apache-2.0"
+}

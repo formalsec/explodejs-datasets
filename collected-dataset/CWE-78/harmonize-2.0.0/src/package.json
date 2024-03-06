@@ -1,0 +1,21 @@
+{
+    "name": "harmonize",
+    "description": "Enables --harmony flags programmatically.",
+    "author": "Daniel Wirtz",
+    "version": "2.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dcodeIO/node-harmonize.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dcodeIO/node-harmonize/issues"
+    },
+    "keywords": ["node", "harmony"],
+    "engines": {
+        "node": ">=0.8"
+    },
+    "scripts": {
+        "test": "node test.js"
+    },
+    "license": "BSD-3-Clause"
+}
