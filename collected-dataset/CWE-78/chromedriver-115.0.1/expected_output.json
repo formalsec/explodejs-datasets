@@ -1,0 +1,7 @@
+[
+  {
+    "vuln_type": "command-injection",
+    "sink_file": "lib/chromedriver.js",
+    "sink_lineno": 28
+  }
+]

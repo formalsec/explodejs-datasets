@@ -1,0 +1,17 @@
+[
+  {
+    "vuln_type": "prototype-pollution",
+    "sink_file": "lib/property.js",
+    "sink_lineno": 65
+  },
+  {
+    "vuln_type": "prototype-pollution",
+    "sink_file": "lib/property.js",
+    "sink_lineno": 78
+  },
+  {
+    "vuln_type": "prototype-pollution",
+    "sink_file": "lib/property.js",
+    "sink_lineno": 94
+  }
+]

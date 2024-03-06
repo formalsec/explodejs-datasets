@@ -1,0 +1,12 @@
+[
+  {
+    "vuln_type": "command-injection",
+    "sink_file": "index.js",
+    "sink_lineno": 18
+  },
+  {
+    "vuln_type": "command-injection",
+    "sink_file": "index.js",
+    "sink_lineno": 50
+  }
+]
