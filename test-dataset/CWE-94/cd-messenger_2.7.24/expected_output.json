@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "code-injection",
+        "sink_file": "src/messenger-node.js",
+        "sink_lineno": "70"
+    }
+]
