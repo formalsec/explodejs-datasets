@@ -1,0 +1,12 @@
+{
+    "name": "test",
+    "version": "0.0.1", 
+    "description": "",
+    "main": "check-dependencies-1.1.0_poc.js",
+    "author": "Vulnerability Detection",
+    "license": "ISC",
+    "dependencies": {
+        "utility": "~1.6.0",
+        "packagewhichdoesnotexist": "5.0.0"
+    }
+}
