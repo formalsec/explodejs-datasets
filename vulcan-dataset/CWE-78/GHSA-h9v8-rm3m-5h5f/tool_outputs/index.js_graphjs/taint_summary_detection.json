@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('git remote add ' + name + ' ' + url, {cwd: cwd}, cb);",
+        "sink_lineno": 21,
+        "sink_function": "118"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.execSync('git remote add ' + name + ' ' + url, {cwd: cwd});",
+        "sink_lineno": 31,
+        "sink_function": "183"
+    }
+]

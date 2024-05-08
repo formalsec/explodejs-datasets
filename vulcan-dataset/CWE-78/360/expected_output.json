@@ -1,0 +1,31 @@
+[
+    {
+      "vuln_type": "command-injection",
+      "source": "new FSGit",
+      "sink": "exec",
+      "tainted_params": [
+          "path0",
+          "ref0"
+      ],
+      "params_types": {
+          "path0": "string",
+          "ref0" : "string"
+      },
+      "return" : {
+        "vuln_type": "command-injection",
+        "source": ".readFile",
+        "sink": "exec",
+        "tainted_params": [
+            "path1",
+            "opts1"
+        ],
+        "params_types": {
+            "path1": "string",
+            "opts1": {
+                "encoding": "any"
+            }
+        }
+      }
+    }
+]
+

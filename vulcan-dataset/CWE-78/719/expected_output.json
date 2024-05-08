@@ -1,0 +1,29 @@
+ [
+      {
+          "vuln_type": "command-injection",
+          "source": "module.exports.funcs",
+          "source_lineno": 57,
+          "sink": "exec",
+          "sink_lineno": 89,
+          "tainted_params": [
+              "opts"
+          ],
+          "params_types": {
+              "opts": {
+                  "range": [ "string" ],
+                  "verbose": "any"
+              }
+          },
+          "return" : {
+            "vuln_type" : "command-injection",
+            "source": ".*",
+            "sink": "exec",
+            "tainted_params": [
+                "callback"
+            ],
+            "params_types": {
+                "callback": "function"
+            }
+          }
+      }
+  ]

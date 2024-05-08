@@ -1,0 +1,17 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "module.exports.ps",
+        "sink": "exec",
+        "tainted_params": [
+            "pid",
+            "options",
+            "done"
+        ],
+        "params_types": {
+            "pid": "string",
+            "options": "any",
+            "done": "function"
+        }
+    }
+]

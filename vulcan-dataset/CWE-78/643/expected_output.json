@@ -1,0 +1,26 @@
+[
+  {
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "sink": "exec",
+    "tainted_params": [
+      "filname",
+      "options"
+    ],
+    "params_types": {
+      "filename": "string",
+      "options": "object"
+    },
+    "return" : {
+      "vuln_type": "command-injection",
+      "source": ".getInfo",
+      "sink": "exec",
+      "tainted_params": [
+        "cb"
+      ],
+      "params_types": {
+        "cb": "function"
+      }
+    }
+  }
+]

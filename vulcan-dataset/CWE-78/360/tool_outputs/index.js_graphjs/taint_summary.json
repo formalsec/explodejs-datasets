@@ -1,0 +1,66 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 34,
+        "sink_function": "303",
+        "source": "new module.exports",
+        "tainted_params": [
+            "path",
+            "ref"
+        ],
+        "param_types": {
+            "path": "string",
+            "ref": "string"
+        }
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 56,
+        "sink_function": "413",
+        "source": "new module.exports",
+        "tainted_params": [
+            "path",
+            "ref"
+        ],
+        "param_types": {
+            "path": "string",
+            "ref": "string"
+        }
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 77,
+        "sink_function": "579",
+        "source": "new module.exports",
+        "tainted_params": [
+            "path",
+            "ref"
+        ],
+        "param_types": {
+            "path": "string",
+            "ref": "string"
+        }
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 96,
+        "sink_function": "802",
+        "source": "new module.exports",
+        "tainted_params": [
+            "path",
+            "ref"
+        ],
+        "param_types": {
+            "path": "string",
+            "ref": "string"
+        }
+    }
+]

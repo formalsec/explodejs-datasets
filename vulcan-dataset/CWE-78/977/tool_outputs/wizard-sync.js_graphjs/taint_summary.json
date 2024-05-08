@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/wizard-sync.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(command, {}, function(err, stdout, stderr) {",
+        "sink_lineno": 56,
+        "sink_function": "417",
+        "source": "module.exports.sync",
+        "tainted_params": [
+            "options",
+            "cb"
+        ],
+        "param_types": {
+            "options": {
+                "widgetName": "string",
+                "env": "string",
+                "comment": "any",
+                "branch": "string"
+            },
+            "cb": "function"
+        }
+    }
+]

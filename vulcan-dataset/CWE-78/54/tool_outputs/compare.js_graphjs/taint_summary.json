@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "../../src/compare.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(execCmd, function (err, stdout, stderr) {",
+        "sink_lineno": 72,
+        "sink_function": "462",
+        "source": "module.exports.compare",
+        "tainted_params": [
+            "orig",
+            "compareTo",
+            "options",
+            "cb"
+        ],
+        "param_types": {
+            "orig": "string",
+            "compareTo": "string",
+            "options": {
+                "highlightColor": {
+                    "_union": [
+                        "number",
+                        "string"
+                    ]
+                },
+                "file": "string",
+                "highlightStyle": "string",
+                "tolerance": "number"
+            },
+            "cb": "function"
+        }
+    }
+]

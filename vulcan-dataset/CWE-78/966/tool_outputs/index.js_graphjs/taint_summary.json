@@ -1,0 +1,40 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return sh(",
+        "sink_lineno": 11,
+        "sink_function": "51",
+        "source": "module.exports",
+        "tainted_params": [
+            "port"
+        ],
+        "param_types": {
+            "port": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        }
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return sh(",
+        "sink_lineno": 16,
+        "sink_function": "61",
+        "source": "module.exports",
+        "tainted_params": [
+            "port"
+        ],
+        "param_types": {
+            "port": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        }
+    }
+]

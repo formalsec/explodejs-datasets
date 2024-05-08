@@ -1,0 +1,15 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "module.exports",
+        "sink": "exec",
+        "tainted_params": [
+            "iface",
+            "callback"
+        ],
+        "params_types": {
+            "iface": "string",
+            "callback": "function"
+        }
+    }
+]

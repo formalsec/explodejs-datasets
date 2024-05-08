@@ -1,0 +1,51 @@
+[
+    {
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('cp -R ' + source + ' ' + destination, function () {",
+        "sink_lineno": 33,
+        "sink_function": "220"
+    },
+    {
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(path, req.body.content || '', 'utf8', function (err) {",
+        "sink_lineno": 47,
+        "sink_function": "307"
+    },
+    {
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(filename, content, 'utf8', function (err) {",
+        "sink_lineno": 61,
+        "sink_function": "418"
+    },
+    {
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path + filename, 'utf8', function (err, data) {",
+        "sink_lineno": 137,
+        "sink_function": "885"
+    },
+    {
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path, 'utf8', function (err, contents) {",
+        "sink_lineno": 182,
+        "sink_function": "1170"
+    },
+    {
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('rm -rf ' + path, function () {",
+        "sink_lineno": 204,
+        "sink_function": "1306"
+    },
+    {
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(path, req.body.content, encoding, function (err) {",
+        "sink_lineno": 225,
+        "sink_function": "1479"
+    }
+]

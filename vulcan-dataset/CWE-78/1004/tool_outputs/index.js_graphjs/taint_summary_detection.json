@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "execSync(",
+        "sink_lineno": 37,
+        "sink_function": "165"
+    }
+]

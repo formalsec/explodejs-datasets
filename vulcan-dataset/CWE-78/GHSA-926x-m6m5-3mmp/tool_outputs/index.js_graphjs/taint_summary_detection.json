@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const proc = childProcess.spawn(cmd, args, { stdio: 'pipe' });",
+        "sink_lineno": 180,
+        "sink_function": "800"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "childProcess.exec(cmd, function(error, stdout, stderr) {",
+        "sink_lineno": 202,
+        "sink_function": "1027"
+    }
+]

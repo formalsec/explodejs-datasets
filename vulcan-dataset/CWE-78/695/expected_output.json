@@ -1,0 +1,19 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "module.exports",
+        "source_lineno": 326,
+        "sink": "spawn",
+        "sink_lineno": 392,
+        "tainted_params": [
+            "fileName",
+            "lineNumber",
+            "colNumber"
+        ],
+        "params_types": {
+            "fileName": "string",
+            "lineNumber": "number",
+            "colNumber": "number"
+        }
+    }
+]

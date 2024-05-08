@@ -1,0 +1,50 @@
+[
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "path-traversal",
+        "sink": "status.commitMessage = fs.readFileSync(path.join(repoPath, '.git', 'MERGE_MSG'), { encoding: 'utf8' });",
+        "sink_lineno": 142,
+        "sink_function": "1265",
+        "source": "new module.exports",
+        "tainted_params": [
+            "command",
+            "repoPath"
+        ],
+        "param_types": {
+            "command": "any",
+            "repoPath": "any"
+        }
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, { encoding: 'utf8' }, function(err, text) {",
+        "sink_lineno": 217,
+        "sink_function": "1909",
+        "source": "new module.exports",
+        "tainted_params": [
+            "command",
+            "repoPath"
+        ],
+        "param_types": {
+            "command": "any",
+            "repoPath": "any"
+        }
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(HEADFile, { encoding: 'utf8' }, function(err, text) {",
+        "sink_lineno": 407,
+        "sink_function": "3184",
+        "source": "new module.exports",
+        "tainted_params": [
+            "command",
+            "repoPath"
+        ],
+        "param_types": {
+            "command": "any",
+            "repoPath": "any"
+        }
+    }
+]

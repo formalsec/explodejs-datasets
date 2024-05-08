@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "../../src/wx.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('curl \"'+ url +'\" -F media=@\"' + file + '\"', function(e, sout, serr){",
+        "sink_lineno": 123,
+        "sink_function": "787",
+        "source": "module.exports.postMaterial",
+        "tainted_params": [
+            "type",
+            "buf",
+            "cb"
+        ],
+        "param_types": {
+            "type": "any",
+            "buf": "string",
+            "cb": "function"
+        }
+    }
+]

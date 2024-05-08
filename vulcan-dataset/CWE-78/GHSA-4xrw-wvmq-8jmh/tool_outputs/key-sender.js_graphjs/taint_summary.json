@@ -1,0 +1,21 @@
+[
+    {
+        "filename": "../../src/key-sender.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(command, {}, function(error, stdout, stderr) {",
+        "sink_lineno": 117,
+        "sink_function": "574",
+        "source": "module.exports.execute",
+        "tainted_params": [
+            "arrParams"
+        ],
+        "param_types": {
+            "arrParams": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        }
+    }
+]

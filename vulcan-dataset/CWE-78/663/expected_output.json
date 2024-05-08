@@ -1,0 +1,17 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "open",
+        "sink": "exec",
+        "tainted_params": [
+            "target",
+            "appName",
+            "callback"
+        ],
+        "params_types": {
+            "target": "string",
+            "appName": "string",
+            "callback": "any"
+        }
+    }
+]

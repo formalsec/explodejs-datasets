@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/compare.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(execCmd, function (err, stdout, stderr) {",
+        "sink_lineno": 72,
+        "sink_function": "462"
+    }
+]

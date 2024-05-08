@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('git blame ' + args + ' ' + realFile, {",
+        "sink_lineno": 24,
+        "sink_function": "232"
+    }
+]

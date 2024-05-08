@@ -1,0 +1,64 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "childProcess.execFile(path.resolve(browserPath), commandOptions, {maxBuffer: 50000 * 1024}, function (err) {",
+        "sink_lineno": 70,
+        "sink_function": "249",
+        "source": "module.exports.open",
+        "tainted_params": [
+            "browser",
+            "url",
+            "proxyURL",
+            "pacFileURL",
+            "dataDir",
+            "bypassList"
+        ],
+        "param_types": {
+            "browser": "string",
+            "url": "any",
+            "proxyURL": "any",
+            "pacFileURL": "any",
+            "dataDir": "any",
+            "bypassList": "any"
+        }
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "result = childProcess.execSync(cmd).toString().trim();",
+        "sink_lineno": 107,
+        "sink_function": "328",
+        "source": "module.exports.detect",
+        "tainted_params": [
+            "name"
+        ],
+        "param_types": {
+            "name": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        }
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "result = childProcess.execSync(cmd).toString().trim();",
+        "sink_lineno": 124,
+        "sink_function": "382",
+        "source": "module.exports.detect",
+        "tainted_params": [
+            "name"
+        ],
+        "param_types": {
+            "name": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        }
+    }
+]

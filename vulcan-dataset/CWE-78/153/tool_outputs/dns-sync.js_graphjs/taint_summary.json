@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/dns-sync.js",
+        "vuln_type": "command-injection",
+        "sink": "response = shell.exec(cmd, {silent: true});",
+        "sink_lineno": 21,
+        "sink_function": "57",
+        "source": "module.exports.resolve",
+        "tainted_params": [
+            "hostname"
+        ],
+        "param_types": {
+            "hostname": "string"
+        }
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/server.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(s3command, (err, stdout, stderr) => {",
+        "sink_lineno": 21,
+        "sink_function": "119"
+    }
+]

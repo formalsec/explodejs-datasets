@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/unix.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"ifconfig \" + iface, function (err, out) {",
+        "sink_lineno": 4,
+        "sink_function": "74"
+    }
+]

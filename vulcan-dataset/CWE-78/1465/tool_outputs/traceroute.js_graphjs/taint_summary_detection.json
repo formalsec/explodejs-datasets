@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/traceroute.js",
+        "vuln_type": "command-injection",
+        "sink": "Child.exec(command, (err, stdout, stderr) => {",
+        "sink_lineno": 29,
+        "sink_function": "142"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "filename": "../../src/command-exists.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = exec('where ' + commandName,",
+        "sink_lineno": 64,
+        "sink_function": "280",
+        "source": "module.exports",
+        "tainted_params": [
+            "commandName",
+            "callback"
+        ],
+        "param_types": {
+            "commandName": "string",
+            "callback": "function"
+        }
+    },
+    {
+        "filename": "../../src/command-exists.js",
+        "vuln_type": "command-injection",
+        "sink": "var stdout = execSync('command -v ' + commandName +",
+        "sink_lineno": 78,
+        "sink_function": "316",
+        "source": "module.exports.sync",
+        "tainted_params": [
+            "commandName"
+        ],
+        "param_types": {
+            "commandName": "string"
+        }
+    },
+    {
+        "filename": "../../src/command-exists.js",
+        "vuln_type": "command-injection",
+        "sink": "var stdout = execSync('where ' + commandName);",
+        "sink_lineno": 94,
+        "sink_function": "351",
+        "source": "module.exports.sync",
+        "tainted_params": [
+            "commandName"
+        ],
+        "param_types": {
+            "commandName": "string"
+        }
+    }
+]

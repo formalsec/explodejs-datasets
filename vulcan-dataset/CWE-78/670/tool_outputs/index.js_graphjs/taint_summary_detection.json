@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(getInfoCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 43,
+        "sink_function": "235"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(convertCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 104,
+        "sink_function": "565"
+    }
+]

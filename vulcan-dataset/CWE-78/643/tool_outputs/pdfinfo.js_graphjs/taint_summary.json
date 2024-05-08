@@ -1,0 +1,44 @@
+[
+    {
+        "filename": "../../src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "let data = execSync('pdfinfo ' + self.options.additional.join(' ')).toString('utf8');",
+        "sink_lineno": 26,
+        "sink_function": "182",
+        "source": "new module.exports",
+        "tainted_params": [
+            "filename",
+            "options"
+        ],
+        "param_types": {
+            "filename": "string",
+            "options": {
+                "additional": "string",
+                "addtional": "any",
+                "error": "any",
+                "success": "any"
+            }
+        }
+    },
+    {
+        "filename": "../../src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "let child = exec('pdfinfo ' + self.options.additional.join(' '), function(error, stdout, stderr) {",
+        "sink_lineno": 36,
+        "sink_function": "343",
+        "source": "new module.exports",
+        "tainted_params": [
+            "filename",
+            "options"
+        ],
+        "param_types": {
+            "filename": "string",
+            "options": {
+                "additional": "string",
+                "addtional": "any",
+                "error": "any",
+                "success": "any"
+            }
+        }
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/tools.js",
+        "vuln_type": "command-injection",
+        "sink": "const execute = proc(cmd, (err, stdout, stderr) => {",
+        "sink_lineno": 114,
+        "sink_function": "299",
+        "source": "module.exports.*",
+        "tainted_params": [
+            "callback"
+        ],
+        "param_types": {
+            "callback": "string"
+        }
+    }
+]

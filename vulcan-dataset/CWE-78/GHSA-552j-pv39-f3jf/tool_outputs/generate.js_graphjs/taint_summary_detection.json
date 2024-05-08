@@ -1,0 +1,58 @@
+[
+    {
+        "filename": "../../src/generate.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
+        "sink_lineno": 26,
+        "sink_function": "75"
+    },
+    {
+        "filename": "../../src/generate.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
+        "sink_lineno": 67,
+        "sink_function": "259"
+    },
+    {
+        "filename": "../../src/generate.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function execCb (err) {",
+        "sink_lineno": 86,
+        "sink_function": "326"
+    },
+    {
+        "filename": "../../src/generate.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function execCb (err) {",
+        "sink_lineno": 110,
+        "sink_function": "404"
+    },
+    {
+        "filename": "../../src/generate.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function execCb (err) {",
+        "sink_lineno": 140,
+        "sink_function": "582"
+    },
+    {
+        "filename": "../../src/generate.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd2, function statsCb (err, stdout) {",
+        "sink_lineno": 143,
+        "sink_function": "574"
+    },
+    {
+        "filename": "../../src/generate.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(certPath, function readCertCb (err, certBuf) {",
+        "sink_lineno": 217,
+        "sink_function": "992"
+    },
+    {
+        "filename": "../../src/generate.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(keyPath, function readKeyCb (err, keyBuf) {",
+        "sink_lineno": 219,
+        "sink_function": "982"
+    }
+]

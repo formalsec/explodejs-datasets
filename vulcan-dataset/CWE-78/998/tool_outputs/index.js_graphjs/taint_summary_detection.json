@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('codesign -d --entitlements :- ' + path, function(error, output){",
+        "sink_lineno": 7,
+        "sink_function": "50"
+    }
+]

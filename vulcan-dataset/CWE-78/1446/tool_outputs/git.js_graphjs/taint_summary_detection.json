@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 195,
+        "sink_function": "1414"
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 208,
+        "sink_function": "1471"
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 223,
+        "sink_function": "1639"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 223,
+        "sink_function": "1639",
+        "source": "new module.exports",
+        "tainted_params": [
+            "opts"
+        ],
+        "param_types": {
+            "opts": {
+                "dir": "string",
+                "repoDir": "any",
+                "workDir": "any",
+                "autoCreate": "any",
+                "auth": "any"
+            }
+        }
+    }
+]

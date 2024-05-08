@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/mid-php.js",
+        "vuln_type": "command-injection",
+        "sink": "var cp = require('child_process').spawn(phpBin, [phpFile])",
+        "sink_lineno": 22,
+        "sink_function": "84"
+    }
+]

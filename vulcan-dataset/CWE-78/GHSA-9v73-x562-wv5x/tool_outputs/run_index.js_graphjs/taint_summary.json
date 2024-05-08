@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "../../src/run_index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(params.join(' '), { encoding, cwd: path }).toString(encoding)",
+        "sink_lineno": 8,
+        "sink_function": "49",
+        "source": "module.exports",
+        "tainted_params": [
+            "path",
+            "encoding"
+        ],
+        "param_types": {
+            "path": "any",
+            "encoding": "any"
+        }
+    }
+]

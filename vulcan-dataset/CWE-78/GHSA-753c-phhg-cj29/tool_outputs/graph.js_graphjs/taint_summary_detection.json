@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/graph.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd)",
+        "sink_lineno": 28,
+        "sink_function": "86"
+    },
+    {
+        "filename": "../../src/graph.js",
+        "vuln_type": "path-traversal",
+        "sink": ".then((image) => writeFile(imagePath, image))",
+        "sink_lineno": 150,
+        "sink_function": "657"
+    }
+]

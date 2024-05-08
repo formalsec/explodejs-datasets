@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, function(err, stdout, stderr) {",
+        "sink_lineno": 41,
+        "sink_function": "138",
+        "source": "module.exports",
+        "tainted_params": [
+            "aOptions",
+            "aCallback"
+        ],
+        "param_types": {
+            "aOptions": {
+                "file": "any"
+            },
+            "aCallback": "any"
+        }
+    }
+]

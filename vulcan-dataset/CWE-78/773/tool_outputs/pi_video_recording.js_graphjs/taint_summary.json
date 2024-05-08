@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/pi_video_recording.js",
+        "vuln_type": "command-injection",
+        "sink": "proc =",
+        "sink_lineno": 48,
+        "sink_function": "235",
+        "source": "module.exports.startRecord",
+        "tainted_params": [
+            "file"
+        ],
+        "param_types": {
+            "file": "string"
+        }
+    },
+    {
+        "filename": "../../src/pi_video_recording.js",
+        "vuln_type": "command-injection",
+        "sink": "const process = childProcess.exec(",
+        "sink_lineno": 69,
+        "sink_function": "314",
+        "source": "module.exports.encodeRecord",
+        "tainted_params": [
+            "file"
+        ],
+        "param_types": {
+            "file": "string"
+        }
+    }
+]

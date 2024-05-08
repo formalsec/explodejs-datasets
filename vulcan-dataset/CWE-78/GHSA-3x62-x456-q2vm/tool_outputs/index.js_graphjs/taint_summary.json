@@ -1,0 +1,40 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const child = crossSpawn(command, args, opts)",
+        "sink_lineno": 52,
+        "sink_function": "323",
+        "source": "module.exports",
+        "tainted_params": [
+            "url",
+            "outPath",
+            "opts",
+            "cb"
+        ],
+        "param_types": {
+            "url": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "outPath": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "opts": {
+                "depth": {
+                    "_union": [
+                        "array",
+                        "number",
+                        "string"
+                    ]
+                }
+            },
+            "cb": "function"
+        }
+    }
+]

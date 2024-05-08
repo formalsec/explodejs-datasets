@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var cmd = exec(cmdString, {cwd: opts.cwd?opts.cwd:\"/\", maxBuffer: opts.maxBuffer?opts.maxBuffer:200 * 1024},(error, stdout, stderr) => {",
+        "sink_lineno": 18,
+        "sink_function": "299",
+        "source": "module.exports.install",
+        "tainted_params": [
+            "packages",
+            "opts"
+        ],
+        "param_types": {
+            "packages": {
+                "length": "any",
+                "0": "any"
+            },
+            "opts": {
+                "global": "any",
+                "save": "any",
+                "saveDev": "any",
+                "legacyBundling": "any",
+                "noOptional": "any",
+                "ignoreScripts": "any",
+                "cwd": "any",
+                "maxBuffer": "any",
+                "output": "any"
+            }
+        }
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var cmd = exec(cmdString, {cwd: opts.cwd?opts.cwd:\"/\"},(error, stdout, stderr) => {",
+        "sink_lineno": 47,
+        "sink_function": "561",
+        "source": "module.exports.uninstall",
+        "tainted_params": [
+            "packages",
+            "opts"
+        ],
+        "param_types": {
+            "packages": {
+                "length": "any",
+                "0": "any"
+            },
+            "opts": {
+                "global": "any",
+                "save": "any",
+                "saveDev": "any",
+                "cwd": "any",
+                "output": "any"
+            }
+        }
+    }
+]

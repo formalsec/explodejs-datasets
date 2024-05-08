@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/controller.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = spawn(cmd, params.args, {",
+        "sink_lineno": 140,
+        "sink_function": "848"
+    }
+]

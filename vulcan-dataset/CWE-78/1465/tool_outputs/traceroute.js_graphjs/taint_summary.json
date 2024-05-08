@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/traceroute.js",
+        "vuln_type": "command-injection",
+        "sink": "Child.exec(command, (err, stdout, stderr) => {",
+        "sink_lineno": 29,
+        "sink_function": "142",
+        "source": "module.exports.trace",
+        "tainted_params": [
+            "host",
+            "callback"
+        ],
+        "param_types": {
+            "host": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            },
+            "callback": "function"
+        }
+    }
+]

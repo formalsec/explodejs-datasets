@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('which ' + name, function(error, stdout, stderr) {",
+        "sink_lineno": 4,
+        "sink_function": "288"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('whereis ' + name, function(error, stdout, stderr) {",
+        "sink_lineno": 8,
+        "sink_function": "269"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('where ' + name, function (error, stdout, stderr) { //windows",
+        "sink_lineno": 10,
+        "sink_function": "240"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('for %i in (' + name + '.exe) do @echo. %~$PATH:i', function (error, stdout, stderr) { //windows xp",
+        "sink_lineno": 12,
+        "sink_function": "221"
+    }
+]

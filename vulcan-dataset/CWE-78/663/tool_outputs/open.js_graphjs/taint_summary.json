@@ -1,0 +1,25 @@
+[
+    {
+        "filename": "../../src/open.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(opener + ' \"' + escape(target) + '\"', callback);",
+        "sink_lineno": 58,
+        "sink_function": "169",
+        "source": "module.exports",
+        "tainted_params": [
+            "target",
+            "appName",
+            "callback"
+        ],
+        "param_types": {
+            "target": "string",
+            "appName": {
+                "_union": [
+                    "function",
+                    "string"
+                ]
+            },
+            "callback": "any"
+        }
+    }
+]

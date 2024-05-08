@@ -1,0 +1,25 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('taskkill /pid ' + pid + ' /T /F');",
+        "sink_lineno": 32,
+        "sink_function": "70",
+        "source": "module.exports",
+        "tainted_params": [
+            "pid",
+            "signal",
+            "callback"
+        ],
+        "param_types": {
+            "pid": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "signal": "function",
+            "callback": "function"
+        }
+    }
+]

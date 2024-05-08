@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return execFile(execBinary, execArguments, execOptions).then(",
+        "sink_lineno": 34,
+        "sink_function": "167",
+        "source": "module.exports",
+        "tainted_params": [
+            "commandOrArgs",
+            "optionsOrCallback",
+            "callbackMaybe"
+        ],
+        "param_types": {
+            "commandOrArgs": "string",
+            "optionsOrCallback": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "callbackMaybe": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        }
+    }
+]

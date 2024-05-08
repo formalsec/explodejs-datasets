@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/jscover.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = exec(cmd, function (err, stdout, stderr) {",
+        "sink_lineno": 59,
+        "sink_function": "590"
+    },
+    {
+        "filename": "../../src/jscover.js",
+        "vuln_type": "path-traversal",
+        "sink": "var content = fs.readFileSync(from);",
+        "sink_lineno": 95,
+        "sink_function": "482"
+    },
+    {
+        "filename": "../../src/jscover.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(to, content);",
+        "sink_lineno": 99,
+        "sink_function": "517"
+    }
+]

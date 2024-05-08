@@ -1,0 +1,53 @@
+[
+    {
+        "filename": "../../src/lib_googleIt.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"open \".concat(result.link), errorTryingToOpen);",
+        "sink_lineno": 59,
+        "sink_function": "487",
+        "source": "module.exports.openInBrowser",
+        "tainted_params": [
+            "open",
+            "results"
+        ],
+        "param_types": {
+            "open": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "results": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        }
+    },
+    {
+        "filename": "../../src/lib_googleIt.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, function (err, data) {",
+        "sink_lineno": 195,
+        "sink_function": "1314",
+        "source": "module.exports.getResponse",
+        "tainted_params": [
+            "_ref2"
+        ],
+        "param_types": {
+            "_ref2": {
+                "fromFile": "array",
+                "fromString": "any",
+                "options": "any",
+                "htmlFileOutputPath": "any",
+                "query": "any",
+                "limit": "any",
+                "userAgent": "any",
+                "start": "any",
+                "includeSites": "any",
+                "excludeSites": "any"
+            }
+        }
+    }
+]

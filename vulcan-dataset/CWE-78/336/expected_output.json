@@ -1,0 +1,15 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "source": "exports.findLoad",
+        "sink": "exec",
+        "tainted_params": [
+            "arg",
+            "cb"
+        ],
+        "params_types": {
+            "arg": "string",
+            "cb": "function"
+        }
+    }
+]

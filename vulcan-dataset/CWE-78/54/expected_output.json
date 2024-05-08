@@ -1,0 +1,31 @@
+[
+  {
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "sink": "exec",
+    "tainted_params": [ "proto" ],
+    "params_types": { "proto" : "object" },
+    "return" : {
+      "vuln_type": "command-injection",
+      "source": "",
+      "sink": "exec",
+      "tainted_params": [
+        "orig",
+        "compareTo",
+        "options",
+        "cb"
+      ],
+      "params_types": {
+        "orig": "string",
+        "compareTo": "string",
+        "options": {
+          "file": "string",
+          "highlightColor": "string",
+          "highlightStyle": "string",
+          "tolerance": "number"
+        },
+        "cb": "function"
+      }
+    }
+  }
+]

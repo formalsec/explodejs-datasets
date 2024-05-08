@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process_1.exec(`touch ${filePath}`);",
+        "sink_lineno": 225,
+        "sink_function": "1467"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "gnuplot = child_process_1.exec(`gnuplot | ps2pdf - ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
+        "sink_lineno": 228,
+        "sink_function": "1519"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "gnuplot = child_process_1.exec(`gnuplot > ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
+        "sink_lineno": 232,
+        "sink_function": "1564"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "let data = execSync('pdfinfo ' + self.options.additional.join(' ')).toString('utf8');",
+        "sink_lineno": 26,
+        "sink_function": "182"
+    },
+    {
+        "filename": "../../src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "let child = exec('pdfinfo ' + self.options.additional.join(' '), function(error, stdout, stderr) {",
+        "sink_lineno": 36,
+        "sink_function": "343"
+    }
+]

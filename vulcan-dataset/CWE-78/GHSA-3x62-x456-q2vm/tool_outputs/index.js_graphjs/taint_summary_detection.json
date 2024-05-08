@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const child = crossSpawn(command, args, opts)",
+        "sink_lineno": 52,
+        "sink_function": "323"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "filename": "../../src/routes.js",
+        "vuln_type": "path-traversal",
+        "sink": "res.send(fs.readFileSync(req.query.resource, 'UTF-8'));",
+        "sink_lineno": 57,
+        "sink_function": "206"
+    },
+    {
+        "filename": "../../src/routes.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = exec(scripts_dir() + 'systemctl-unit.sh ' +",
+        "sink_lineno": 67,
+        "sink_function": "292"
+    },
+    {
+        "filename": "../../src/routes.js",
+        "vuln_type": "command-injection",
+        "sink": "var child_dot = spawn('sol-fbp-to-dot', ['--fbp', tmp_dir(current_user(req)) + 'fbp_svg.fbp',",
+        "sink_lineno": 101,
+        "sink_function": "512"
+    },
+    {
+        "filename": "../../src/routes.js",
+        "vuln_type": "command-injection",
+        "sink": "var child_svg =  spawn('dot', ['-Tsvg', tmp_dir(current_user(req)) + 'fbp_runner.dot']);",
+        "sink_lineno": 104,
+        "sink_function": "536"
+    },
+    {
+        "filename": "../../src/routes.js",
+        "vuln_type": "command-injection",
+        "sink": "child = spawn(script,",
+        "sink_lineno": 151,
+        "sink_function": "817"
+    },
+    {
+        "filename": "../../src/routes.js",
+        "vuln_type": "command-injection",
+        "sink": "child = exec(\"sh \" + script);",
+        "sink_lineno": 226,
+        "sink_function": "1333"
+    },
+    {
+        "filename": "../../src/routes.js",
+        "vuln_type": "command-injection",
+        "sink": "child = exec(\"sh \" + script);",
+        "sink_lineno": 478,
+        "sink_function": "3035"
+    }
+]

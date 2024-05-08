@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(cmd, {",
+        "sink_lineno": 76,
+        "sink_function": "298"
+    }
+]

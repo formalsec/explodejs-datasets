@@ -1,0 +1,44 @@
+[
+  {
+    "vuln_type": "command-injection",
+    "source": "new PDFImage",
+    "sink": "exec",
+    "tainted_params": [ "pdfFilePath", "options" ],
+    "params_types": {
+      "pdfFilePath" : "string",
+      "options" : {
+        "pdfFileBaseName" : "string",
+        "convert" : "object",
+        "convertExtension" : "string",
+        "outputDirectory" : "string"
+      }
+    },
+    "return" : {
+      "vuln_type": "command-injection",
+      "source": ".convertPage",
+      "sink": "exec",
+      "tainted_params": [ "pageNumber" ],
+      "params_types": {
+        "pageNumber" : "string"
+      }
+    }
+  },
+  {
+    "vuln_type": "command-injection",
+    "source": "new PDFImage",
+    "sink": "exec",
+    "tainted_params": [ "pdfFilePath", "options" ],
+    "params_types": {
+      "pdfFilePath" : "string",
+      "options" : "object"
+    },
+    "return" : {
+      "vuln_type": "command-injection",
+      "source": ".getInfo",
+      "sink": "exec",
+      "tainted_params": [ ],
+      "params_types": {
+      }
+    }
+  }
+]

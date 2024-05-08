@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "../../src/svn.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('svn blame ' + realFile + ' ' + args, {",
+        "sink_lineno": 38,
+        "sink_function": "310",
+        "source": "module.exports",
+        "tainted_params": [
+            "file",
+            "args"
+        ],
+        "param_types": {
+            "file": "string",
+            "args": "string"
+        }
+    }
+]

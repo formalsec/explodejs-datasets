@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "childProcess.execFile(path.resolve(browserPath), commandOptions, {maxBuffer: 50000 * 1024}, function (err) {",
+        "sink_lineno": 70,
+        "sink_function": "249"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "result = childProcess.execSync(cmd).toString().trim();",
+        "sink_lineno": 107,
+        "sink_function": "328"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "result = childProcess.execSync(cmd).toString().trim();",
+        "sink_lineno": 124,
+        "sink_function": "382"
+    }
+]
