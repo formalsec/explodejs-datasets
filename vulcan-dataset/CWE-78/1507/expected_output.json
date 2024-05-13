@@ -1,0 +1,51 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.install",
+    "source_lineno": 4,
+    "sink": "exec",
+    "sink_lineno": 107,
+    "tainted_params": [
+      "packages",
+      "opts"
+    ],
+    "params_types": {
+      "packages": "array",
+      "opts": "lazy_object"
+    }
+  },
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.uninstall",
+    "source_lineno": 126,
+    "sink": "exec",
+    "sink_lineno": 194,
+    "tainted_params": [
+      "packages",
+      "opts"
+    ],
+    "params_types": {
+      "packages": "array",
+      "opts": "lazy_object"
+    }
+  },
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.list",
+    "source_lineno": 213,
+    "sink": "exec",
+    "sink_lineno": 283,
+    "tainted_params": [
+      "path"
+    ],
+    "params_types": {
+      "path": "string"
+    }
+  }
+]

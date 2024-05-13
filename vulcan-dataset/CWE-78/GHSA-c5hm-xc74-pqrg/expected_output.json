@@ -1,0 +1,23 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "src/jscover.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "source_lineno": 29,
+    "sink": "exec",
+    "sink_lineno": 163,
+    "tainted_params": [
+      "source",
+      "target",
+      "options",
+      "callback"
+    ],
+    "params_types": {
+      "source": "string",
+      "target": "string",
+      "options": "array",
+      "callback": "function"
+    }
+  }
+]

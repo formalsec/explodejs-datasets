@@ -11,6 +11,15 @@
         ],
         "param_types": {
             "hostname": "string"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "resolve",
+                "fn_name": "130.v10-o9",
+                "fn_id": "27",
+                "source_fn_id": "27"
+            }
+        ]
     }
 ]

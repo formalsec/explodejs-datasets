@@ -26,7 +26,16 @@
                 "maxBuffer": "any",
                 "output": "any"
             }
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "install",
+                "fn_name": "888.v53-o7",
+                "fn_id": 13,
+                "source_fn_id": 13
+            }
+        ]
     },
     {
         "filename": "../../src/index.js",
@@ -51,6 +60,15 @@
                 "cwd": "any",
                 "output": "any"
             }
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "uninstall",
+                "fn_name": "888.v93-o11",
+                "fn_id": 362,
+                "source_fn_id": 362
+            }
+        ]
     }
 ]

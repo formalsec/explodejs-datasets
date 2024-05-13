@@ -13,34 +13,14 @@
         "param_types": {
             "commandName": "string",
             "callback": "function"
-        }
-    },
-    {
-        "filename": "../../src/command-exists.js",
-        "vuln_type": "command-injection",
-        "sink": "var stdout = execSync('command -v ' + commandName +",
-        "sink_lineno": 78,
-        "sink_function": "316",
-        "source": "module.exports.sync",
-        "tainted_params": [
-            "commandName"
-        ],
-        "param_types": {
-            "commandName": "string"
-        }
-    },
-    {
-        "filename": "../../src/command-exists.js",
-        "vuln_type": "command-injection",
-        "sink": "var stdout = execSync('where ' + commandName);",
-        "sink_lineno": 94,
-        "sink_function": "351",
-        "source": "module.exports.sync",
-        "tainted_params": [
-            "commandName"
-        ],
-        "param_types": {
-            "commandName": "string"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "514.commandExists-o45",
+                "fn_id": 391,
+                "source_fn_id": 391
+            }
+        ]
     }
 ]

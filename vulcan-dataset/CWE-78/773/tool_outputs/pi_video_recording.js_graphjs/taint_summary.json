@@ -11,7 +11,16 @@
         ],
         "param_types": {
             "file": "string"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "startRecord",
+                "fn_name": "365.v26-o26",
+                "fn_id": "198",
+                "source_fn_id": "198"
+            }
+        ]
     },
     {
         "filename": "../../src/pi_video_recording.js",
@@ -25,6 +34,15 @@
         ],
         "param_types": {
             "file": "string"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "encodeRecord",
+                "fn_name": "365.v36-o33",
+                "fn_id": "295",
+                "source_fn_id": "295"
+            }
+        ]
     }
 ]

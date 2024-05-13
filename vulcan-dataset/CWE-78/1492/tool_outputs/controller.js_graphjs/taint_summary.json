@@ -11,6 +11,52 @@
         ],
         "param_types": {
             "options": "any"
-        }
+        },
+        "returns": {
+            "source": ".createChild",
+            "param_types": {
+                "info": {
+                    "params": {
+                        "cmd": "string",
+                        "bin": "any",
+                        "args": "any",
+                        "env": "any",
+                        "cwd": "any",
+                        "logs": "any",
+                        "name": "string",
+                        "restart": "number",
+                        "logSize": "number"
+                    },
+                    "id": "string",
+                    "startedAt": "any",
+                    "process": "any",
+                    "stopped": "any",
+                    "code": "any",
+                    "_timeout": "any",
+                    "name": "string",
+                    "log": {
+                        "length": "any"
+                    }
+                }
+            },
+            "tainted_params": [
+                "info"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1853.v87-o71",
+                "fn_id": "55",
+                "source_fn_id": "55"
+            },
+            {
+                "type": "Method",
+                "prop": "createChild",
+                "fn_name": "1853.v209-o70",
+                "fn_id": "699",
+                "source_fn_id": "699"
+            }
+        ]
     }
 ]

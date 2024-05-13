@@ -1,0 +1,18 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "noLocalBranchConflict",
+    "source_lineno": 203,
+    "sink": "exec",
+    "sink_lineno": 335,
+    "tainted_params": [
+      "branch"
+    ],
+    "params_types": {
+      "branch": "string"
+    }
+  }
+]
+

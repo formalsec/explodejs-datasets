@@ -1,0 +1,28 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/helper.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.applyEffect",
+    "source_lineno": 44,
+    "sink": "exec",
+    "sink_lineno": 41,
+    "tainted_params": [
+      "effect",
+      "options",
+      "callback"
+    ],
+    "params_types": {
+      "effect": "any",
+      "options": {
+        "image": "string",
+        "filter": "string",
+        "level": "string",
+        "size": "string",
+        "to": "any"
+      },
+      "callback": "function"
+    }
+  }
+]
+

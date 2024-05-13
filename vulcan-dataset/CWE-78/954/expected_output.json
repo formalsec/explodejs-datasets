@@ -1,0 +1,23 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "package/server.js",
+    "vuln_type": "command-injection",
+    "source": "presignPath",
+    "source_lineno": 13,
+    "sink": "exec",
+    "sink_lineno": 36,
+    "tainted_params": [
+      "config",
+      "userDir",
+      "path"
+    ],
+    "params_types": {
+      "config": {
+        "rootPath": "string"
+      },
+      "userDir": "string",
+      "path": "string"
+    }
+  }
+]

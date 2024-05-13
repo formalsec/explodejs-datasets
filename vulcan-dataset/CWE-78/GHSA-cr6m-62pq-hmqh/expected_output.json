@@ -1,0 +1,19 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "src/getLockfile.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "source_lineno": 14,
+    "sink": "exec",
+    "sink_lineno": 123,
+    "tainted_params": [
+      "packageFile",
+      "date"
+    ],
+    "params_types": {
+      "packageFile": "array",
+      "date": "string"
+    }
+  }
+]

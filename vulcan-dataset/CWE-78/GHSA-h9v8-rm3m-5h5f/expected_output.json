@@ -1,0 +1,56 @@
+[
+  {
+    "type": "VFunRetByExport",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "source_lineno": 13,
+    "sink": "exec",
+    "sink_lineno": 40,
+    "tainted_params": [ "dir" ],
+    "params_types": { "dir": "string" },
+    "return" : {
+      "vuln_type": "command-injection",
+      "source": "",
+      "source_lineno": 13,
+      "sink": "exec",
+      "sink_lineno": 40,
+      "tainted_params": [
+        "name",
+        "url",
+        "cb"
+      ],
+      "params_types": {
+        "name": "string",
+        "url": "string",
+        "cb": "function"
+      }
+    }
+  },
+  {
+    "type": "VFunRetByExport",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "source_lineno": 13,
+    "sink": "exec",
+    "sink_lineno": 40,
+    "tainted_params": [ "dir" ],
+    "params_types": { "dir": "string" },
+    "return" : {
+      "vuln_type": "command-injection",
+      "source": ".sync",
+      "source_lineno": 13,
+      "sink": "exec",
+      "sink_lineno": 40,
+      "tainted_params": [
+        "name",
+        "url"
+      ],
+      "params_types": {
+        "name": "string",
+        "url": "string"
+      }
+    }
+  }
+]

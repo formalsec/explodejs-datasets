@@ -1,5 +1,7 @@
 [
     {
+        "type" : "VFunExported",
+        "filename": "src/open.js",
         "vuln_type": "command-injection",
         "source": "open",
         "sink": "exec",

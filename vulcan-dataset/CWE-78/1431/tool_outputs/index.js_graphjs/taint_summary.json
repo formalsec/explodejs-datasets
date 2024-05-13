@@ -15,6 +15,14 @@
                 "file": "any"
             },
             "aCallback": "any"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "152.df-o7",
+                "fn_id": "13",
+                "source_fn_id": "13"
+            }
+        ]
     }
 ]

@@ -1,5 +1,7 @@
 [
   {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "package/index.js",
     "vuln_type": "command-injection",
     "source": "new PDFImage",
     "sink": "exec",
@@ -24,6 +26,8 @@
     }
   },
   {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "package/index.js",
     "vuln_type": "command-injection",
     "source": "new PDFImage",
     "sink": "exec",

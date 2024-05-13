@@ -1,54 +1,62 @@
 [
-    {
-        "vuln_type": "command-injection",
-        "source": "commandExistsWindows",
-        "sink": "exec",
-        "tainted_params": [
-            "commandName",
-            "callback"
-        ],
-        "params_types": {
-            "commandName": "string",
-            "callback": "function"
-        }
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "CommandExistsUnix",
-        "sink": "exec",
-        "tainted_params": [
-            "commandName",
-            "callback"
-        ],
-        "params_types": {
-            "commandName": "string",
-            "callback": "function"
-        }
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "commandExistsWindowsSync",
-        "sink": "execSync",
-        "tainted_params": [
-            "commandName",
-            "callback"
-        ],
-        "params_types": {
-            "commandName": "string",
-            "callback": "function"
-        }
-    },
-    {
-        "vuln_type": "command-injection",
-        "source": "commandExistsUnixSync",
-        "sink": "execSync",
-        "tainted_params": [
-            "commandName",
-            "callback"
-        ],
-        "params_types": {
-            "commandName": "string",
-            "callback" : "function"
-        }
+  {
+    "type" : "VFunExported",
+    "filename": "src/command-exists.js",
+    "vuln_type": "command-injection",
+    "source": "commandExistsWindows",
+    "sink": "exec",
+    "tainted_params": [
+      "commandName",
+      "callback"
+    ],
+    "params_types": {
+      "commandName": "string",
+      "callback": "function"
     }
+  },
+  {
+    "type" : "VFunExported",
+    "filename": "src/command-exists.js",
+    "vuln_type": "command-injection",
+    "source": "CommandExistsUnix",
+    "sink": "exec",
+    "tainted_params": [
+      "commandName",
+      "callback"
+    ],
+    "params_types": {
+      "commandName": "string",
+      "callback": "function"
+    }
+  },
+  {
+    "type" : "VFunExported",
+    "filename": "src/command-exists.js",
+    "vuln_type": "command-injection",
+    "source": "commandExistsUnixSync",
+    "sink": "execSync",
+    "tainted_params": [
+      "commandName",
+      "callback"
+    ],
+    "params_types": {
+      "commandName": "string",
+      "callback": "function"
+    }
+  },
+  {
+    "type" : "VFunExported",
+    "filename": "src/command-exists.js",
+    "vuln_type": "command-injection",
+    "source": "commandExistsWindowsSync",
+    "sink": "execSync",
+    "tainted_params": [
+      "commandName",
+      "callback"
+    ],
+    "params_types": {
+      "commandName": "string",
+      "callback": "function"
+    }
+  }
 ]

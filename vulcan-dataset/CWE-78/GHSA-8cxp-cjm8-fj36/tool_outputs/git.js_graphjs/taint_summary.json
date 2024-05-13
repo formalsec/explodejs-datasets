@@ -13,6 +13,14 @@
         "param_types": {
             "file": "string",
             "args": "string"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "254.v26-o11",
+                "fn_id": 85,
+                "source_fn_id": 85
+            }
+        ]
     }
 ]

@@ -1,0 +1,27 @@
+[
+  {
+    "type" : "VFunRetByExport",
+    "filename": "src/run_index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "source_lineno": 5,
+    "sink": "none",
+    "sink_lineno": 16,
+    "tainted_params": [ "obj" ],
+    "params_types": {
+      "obj" : {
+        "path" : "string"
+      }
+    },
+    "return" : {
+      "vuln_type" : "command-injection",
+      "source": "",
+      "source_lineno": 5,
+      "sink": "exec",
+      "sink_lineno": 16,
+      "tainted_params": [ "params" ],
+      "params_types": { "params": "array" }
+    }
+  }
+]
+

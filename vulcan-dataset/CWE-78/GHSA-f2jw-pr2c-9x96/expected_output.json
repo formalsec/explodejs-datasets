@@ -1,0 +1,59 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "plot",
+    "source_lineno": 529,
+    "sink": "exec",
+    "sink_lineno": 429,
+    "tainted_params": [
+      "options"
+    ],
+    "params_types": {
+      "options": {
+        "filename": "string",
+        "data": { "_union" : [ "array", "object"] },
+        "time": "string",
+        "format": "string",
+        "font": "string",
+        "fontSize": "string",
+        "width": "string",
+        "height": "string",
+        "locale": "string",
+        "xRange": {
+          "min": "string",
+          "max": "string"
+        },
+        "yRange": {
+          "min": "string",
+          "max": "string"
+        },
+        "margin": {
+          "left": "string",
+          "right": "string",
+          "top": "string",
+          "bottom": "string"
+        },
+        "title": "string",
+        "titleSize": "string",
+        "xlabel": "string",
+        "ylabel": "string",
+        "decimalsign": "string",
+        "xRotate": {
+          "value": "string",
+          "xOffset": "string",
+          "yOffset": "string"
+        },
+        "yFormat": "string",
+        "args": "array",
+        "logscale": "any",
+        "nokey": "any",
+        "style": "string",
+        "exec": "any",
+        "hideSeriesTitle": "any"
+      }
+    }
+  }
+]
+

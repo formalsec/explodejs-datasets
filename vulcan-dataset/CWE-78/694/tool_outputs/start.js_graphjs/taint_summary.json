@@ -11,7 +11,66 @@
         ],
         "param_types": {
             "rawArgv": "any"
-        }
+        },
+        "returns": {
+            "source": ".run",
+            "param_types": {
+                "context": {
+                    "argv": {
+                        "_": {
+                            "0": {
+                                "_union": [
+                                    "array",
+                                    "string"
+                                ]
+                            }
+                        },
+                        "baseDir": "any",
+                        "daemon": "any",
+                        "framework": "any",
+                        "title": "array",
+                        "stdout": "any",
+                        "stderr": "string",
+                        "env": "any",
+                        "*": "any"
+                    },
+                    "env": {
+                        "HOME": "any",
+                        "NODE_ENV": "any",
+                        "PATH": "array",
+                        "Path": "array",
+                        "ENABLE_NODE_LOG": "any",
+                        "NODE_LOG_DIR": "any",
+                        "EGG_SERVER_ENV": "any"
+                    },
+                    "cwd": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "execArgv": "any"
+                }
+            },
+            "tainted_params": [
+                "context"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1531.StartCommand-o25",
+                "fn_id": "59",
+                "source_fn_id": "59"
+            },
+            {
+                "type": "Method",
+                "prop": "run",
+                "fn_name": "1531.run-o24",
+                "fn_id": "369",
+                "source_fn_id": "369"
+            }
+        ]
     },
     {
         "filename": "../../src/start.js",
@@ -25,7 +84,66 @@
         ],
         "param_types": {
             "rawArgv": "any"
-        }
+        },
+        "returns": {
+            "source": ".run",
+            "param_types": {
+                "context": {
+                    "argv": {
+                        "_": {
+                            "0": {
+                                "_union": [
+                                    "array",
+                                    "string"
+                                ]
+                            }
+                        },
+                        "baseDir": "any",
+                        "daemon": "any",
+                        "framework": "any",
+                        "title": "array",
+                        "stdout": "any",
+                        "stderr": "string",
+                        "env": "any",
+                        "*": "any"
+                    },
+                    "env": {
+                        "HOME": "any",
+                        "NODE_ENV": "any",
+                        "PATH": "array",
+                        "Path": "array",
+                        "ENABLE_NODE_LOG": "any",
+                        "NODE_LOG_DIR": "any",
+                        "EGG_SERVER_ENV": "any"
+                    },
+                    "cwd": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "execArgv": "any"
+                }
+            },
+            "tainted_params": [
+                "context"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1531.StartCommand-o25",
+                "fn_id": "59",
+                "source_fn_id": "59"
+            },
+            {
+                "type": "Method",
+                "prop": "run",
+                "fn_name": "1531.run-o24",
+                "fn_id": "369",
+                "source_fn_id": "369"
+            }
+        ]
     },
     {
         "filename": "../../src/start.js",
@@ -39,7 +157,66 @@
         ],
         "param_types": {
             "rawArgv": "any"
-        }
+        },
+        "returns": {
+            "source": ".run",
+            "param_types": {
+                "context": {
+                    "argv": {
+                        "_": {
+                            "0": {
+                                "_union": [
+                                    "array",
+                                    "string"
+                                ]
+                            }
+                        },
+                        "baseDir": "any",
+                        "daemon": "any",
+                        "framework": "any",
+                        "title": "array",
+                        "stdout": "any",
+                        "stderr": "string",
+                        "env": "any",
+                        "*": "any"
+                    },
+                    "env": {
+                        "HOME": "any",
+                        "NODE_ENV": "any",
+                        "PATH": "array",
+                        "Path": "array",
+                        "ENABLE_NODE_LOG": "any",
+                        "NODE_LOG_DIR": "any",
+                        "EGG_SERVER_ENV": "any"
+                    },
+                    "cwd": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "execArgv": "any"
+                }
+            },
+            "tainted_params": [
+                "context"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1531.StartCommand-o25",
+                "fn_id": "59",
+                "source_fn_id": "59"
+            },
+            {
+                "type": "Method",
+                "prop": "run",
+                "fn_name": "1531.run-o24",
+                "fn_id": "369",
+                "source_fn_id": "369"
+            }
+        ]
     },
     {
         "filename": "../../src/start.js",
@@ -53,7 +230,31 @@
         ],
         "param_types": {
             "rawArgv": "any"
-        }
+        },
+        "returns": {
+            "source": ".getFrameworkName",
+            "param_types": {
+                "framework": "string"
+            },
+            "tainted_params": [
+                "framework"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1531.StartCommand-o35",
+                "fn_id": "59",
+                "source_fn_id": "59"
+            },
+            {
+                "type": "Method",
+                "prop": "getFrameworkName",
+                "fn_name": "1531.getFrameworkName-o34",
+                "fn_id": "1139",
+                "source_fn_id": "1139"
+            }
+        ]
     },
     {
         "filename": "../../src/start.js",
@@ -67,6 +268,34 @@
         ],
         "param_types": {
             "rawArgv": "any"
-        }
+        },
+        "returns": {
+            "source": ".checkStatus",
+            "param_types": {
+                "stderr": "string",
+                "timeout": "number",
+                "ignoreStdErr": "any"
+            },
+            "tainted_params": [
+                "stderr",
+                "timeout",
+                "ignoreStdErr"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1531.StartCommand-o42",
+                "fn_id": "59",
+                "source_fn_id": "59"
+            },
+            {
+                "type": "Method",
+                "prop": "checkStatus",
+                "fn_name": "1531.checkStatus-o41",
+                "fn_id": "1182",
+                "source_fn_id": "1182"
+            }
+        ]
     }
 ]

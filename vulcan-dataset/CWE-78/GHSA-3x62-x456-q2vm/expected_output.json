@@ -1,0 +1,25 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "spawn",
+    "source_lineno": 103,
+    "sink": "cross-spawn",
+    "sink_lineno": 112,
+    "tainted_params": [
+      "command",
+      "args",
+      "opts",
+      "cb"
+    ],
+    "params_types": {
+      "command": "string",
+      "args": "any",
+      "opts": {
+        "stdio": "any"
+      },
+      "cb": "any"
+    }
+  }
+]

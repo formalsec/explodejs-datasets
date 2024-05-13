@@ -1,0 +1,56 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports._buildProcessTree",
+    "source_lineno": 21,
+    "sink": "execSync",
+    "sink_lineno": 29,
+    "tainted_params": [
+      "processObj"
+    ],
+    "params_types": {
+      "processObj": {
+        "name" : "string",
+        "pid": "string",
+        "children": "array",
+        "level": { "_union" : [ "array",  "number" ] }
+      }
+    }
+  },
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.getProcessTree",
+    "source_lineno": 117,
+    "sink": "execSync",
+    "sink_lineno": 120,
+    "tainted_params": [
+      "pid"
+    ],
+    "params_types": {
+      "pid": "string"
+    }
+  },
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.treeKill",
+    "source_lineno": 139,
+    "sink": "execSync",
+    "sink_lineno": 149,
+    "tainted_params": [
+      "pid"
+    ],
+    "params_types": {
+      "pid": {
+        "level" : "string",
+        "pid" : [ "string", "string" ],
+        "children" : []
+      }
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/posix.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.diskusage",
+    "source_lineno": 6,
+    "sink": "exec",
+    "sink_lineno": 31,
+    "tainted_params": [
+      "path",
+      "cb"
+    ],
+    "params_types": {
+      "path": "string",
+      "cb": "function"
+    }
+  }
+]
+

@@ -1,0 +1,30 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/controller.js",
+    "vuln_type": "command-injection",
+    "source": "new module.exports",
+    "sink": "",
+    "tainted_params": [
+      "opts"
+    ],
+    "params_types": {
+      "opts": "object"
+    },
+    "return": {
+      "vuln_type": "command-injection",
+      "source": ".createChild",
+      "sink": "",
+      "tainted_params": [
+        "info"
+      ],
+      "params_types": {
+        "info": {
+          "params" : {
+            "cmd": "string"
+          }
+        }
+      }
+    }
+  }
+]

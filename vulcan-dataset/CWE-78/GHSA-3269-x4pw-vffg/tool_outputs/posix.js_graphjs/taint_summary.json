@@ -18,6 +18,15 @@
                 ]
             },
             "cb": "function"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "diskusage",
+                "fn_name": "267.diskusage-o8",
+                "fn_id": "19",
+                "source_fn_id": "19"
+            }
+        ]
     }
 ]

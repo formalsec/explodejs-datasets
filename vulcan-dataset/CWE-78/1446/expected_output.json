@@ -1,0 +1,36 @@
+[
+  { "type": "VFunCBUnknownHandler" },
+  { "type": "VFunCBUnknownHandler" },
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/git.js",
+    "vuln_type": "command-injection",
+    "source": "new module.exports",
+    "sink": "",
+    "tainted_params": [
+      "opts"
+    ],
+    "params_types": {
+      "pid": {
+        "dir" : "string",
+        "repoDir": "string",
+        "workDir": "string"
+      }
+    },
+    "return": {
+      "vuln_type": "command-injection",
+      "source": ".pull",
+      "sink": "",
+      "tainted_params": [
+        "repo"
+      ],
+      "params_types": {
+        "repo": {
+          "organization" : "string",
+          "name": "string",
+          "branch": "string"
+        }
+      }
+    }
+  }
+]

@@ -1,5 +1,7 @@
 [
     {
+      "type" : "VFunPropOfExportedObj",
+      "filename": "package/index.js",
       "vuln_type": "command-injection",
       "source": "new FSGit",
       "sink": "exec",

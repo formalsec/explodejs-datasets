@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "vuln_type": "command-injection",
         "source": "module.exports",
         "source_lineno": 326,

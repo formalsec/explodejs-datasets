@@ -22,32 +22,23 @@
                 "childrens": "any"
             },
             "done": "function"
-        }
-    },
-    {
-        "filename": "../../src/stats.js",
-        "vuln_type": "command-injection",
-        "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
-        "sink_lineno": 103,
-        "sink_function": "716",
-        "source": "module.exports.ps",
-        "tainted_params": [
-            "pid",
-            "options",
-            "done"
-        ],
-        "param_types": {
-            "pid": "string",
-            "options": "any",
-            "done": "function"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "proc_calc",
+                "fn_name": "1316.v83-o21",
+                "fn_id": "184",
+                "source_fn_id": "184"
+            }
+        ]
     },
     {
         "filename": "../../src/stats.js",
         "vuln_type": "command-injection",
         "sink": "var wmic = spawn('wmic', args.split(' '), {detached: true})",
-        "sink_lineno": 124,
-        "sink_function": "779",
+        "sink_lineno": 104,
+        "sink_function": "648",
         "source": "module.exports.win",
         "tainted_params": [
             "pid",
@@ -63,6 +54,42 @@
             },
             "options": "any",
             "done": "function"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "win",
+                "fn_name": "1316.v156-o26",
+                "fn_id": "593",
+                "source_fn_id": "593"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/stats.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
+        "sink_lineno": 168,
+        "sink_function": "1264",
+        "source": "module.exports.ps",
+        "tainted_params": [
+            "pid",
+            "options",
+            "done"
+        ],
+        "param_types": {
+            "pid": "string",
+            "options": "any",
+            "done": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "ps",
+                "fn_name": "1316.v175-o31",
+                "fn_id": "1141",
+                "source_fn_id": "1141"
+            }
+        ]
     }
 ]

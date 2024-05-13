@@ -1,0 +1,35 @@
+[
+  {
+    "type": "VFunExported",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "Mojo",
+    "source_lineno": 9,
+    "sink": "exec",
+    "sink_lineno": 140,
+    "tainted_params": [
+      "emitter",
+      "config",
+      "executor",
+      "logger"
+    ],
+    "params_types": {
+      "emitter": "any",
+      "config": {
+        "runnerPath": "string",
+        "continue": "any",
+        "grep": "array",
+        "pattern": "any",
+        "rude": "any",
+        "creep": "any",
+        "focus": "any",
+        "cachePath": "string",
+        "grepDir": "string",
+        "noCache": "any"
+      },
+      "executor": "any",
+      "logger": "lazy_object"
+    }
+  }
+]
+

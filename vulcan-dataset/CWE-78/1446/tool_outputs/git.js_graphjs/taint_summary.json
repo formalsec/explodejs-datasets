@@ -17,6 +17,53 @@
                 "autoCreate": "any",
                 "auth": "any"
             }
-        }
+        },
+        "returns": {
+            "source": ".pull",
+            "param_types": {
+                "repo": {
+                    "organization": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "name": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "commit": "any",
+                    "id": "any",
+                    "branch": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    }
+                },
+                "cb": "function"
+            },
+            "tainted_params": [
+                "repo",
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1656.v209-o86",
+                "fn_id": "59",
+                "source_fn_id": "59"
+            },
+            {
+                "type": "Method",
+                "prop": "pull",
+                "fn_name": "1656.v236-o85",
+                "fn_id": "1493",
+                "source_fn_id": "1493"
+            }
+        ]
     }
 ]

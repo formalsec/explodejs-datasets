@@ -2,30 +2,6 @@
     {
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
-        "sink": "childProcess.execFile(path.resolve(browserPath), commandOptions, {maxBuffer: 50000 * 1024}, function (err) {",
-        "sink_lineno": 70,
-        "sink_function": "249",
-        "source": "module.exports.open",
-        "tainted_params": [
-            "browser",
-            "url",
-            "proxyURL",
-            "pacFileURL",
-            "dataDir",
-            "bypassList"
-        ],
-        "param_types": {
-            "browser": "string",
-            "url": "any",
-            "proxyURL": "any",
-            "pacFileURL": "any",
-            "dataDir": "any",
-            "bypassList": "any"
-        }
-    },
-    {
-        "filename": "../../src/index.js",
-        "vuln_type": "command-injection",
         "sink": "result = childProcess.execSync(cmd).toString().trim();",
         "sink_lineno": 107,
         "sink_function": "328",
@@ -40,7 +16,16 @@
                     "string"
                 ]
             }
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "detect",
+                "fn_name": "516.v47-o55",
+                "fn_id": 278,
+                "source_fn_id": 278
+            }
+        ]
     },
     {
         "filename": "../../src/index.js",
@@ -59,6 +44,15 @@
                     "string"
                 ]
             }
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "detect",
+                "fn_name": "516.v47-o55",
+                "fn_id": 278,
+                "source_fn_id": 278
+            }
+        ]
     }
 ]

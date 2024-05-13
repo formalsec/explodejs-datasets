@@ -9,15 +9,15 @@
     {
         "filename": "../../src/stats.js",
         "vuln_type": "command-injection",
-        "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
-        "sink_lineno": 103,
-        "sink_function": "716"
+        "sink": "var wmic = spawn('wmic', args.split(' '), {detached: true})",
+        "sink_lineno": 104,
+        "sink_function": "648"
     },
     {
         "filename": "../../src/stats.js",
         "vuln_type": "command-injection",
-        "sink": "var wmic = spawn('wmic', args.split(' '), {detached: true})",
-        "sink_lineno": 124,
-        "sink_function": "779"
+        "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
+        "sink_lineno": 168,
+        "sink_function": "1264"
     }
 ]

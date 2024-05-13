@@ -1,0 +1,19 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "src/lib_googleIt.js",
+    "vuln_type": "command-injection",
+    "source": "openInBrowser",
+    "source_lineno": 129,
+    "sink": "exec",
+    "sink_lineno": 136,
+    "tainted_params": [
+      "open",
+      "results"
+    ],
+    "params_types": {
+      "open": "number",
+      "results": [ { "link" : "string" } ]
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "source_lineno": 24,
+    "sink": "execFile",
+    "sink_lineno": 57,
+    "tainted_params": [
+      "commandOrArgs",
+      "optionsOrCallback",
+      "callbackMaybe"
+    ],
+    "params_types": {
+      "commandOrArgs": "array",
+      "optionsOrCallback": { "cwd" : "string", "gitExec" : "string" },
+      "callbackMaybe": "function"
+    }
+  }
+]
+

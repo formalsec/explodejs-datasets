@@ -1,0 +1,27 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.open",
+    "source_lineno": 28,
+    "sink": "execFile",
+    "sink_lineno": 60,
+    "tainted_params": [
+      "browser",
+      "url",
+      "proxyURL",
+      "pacFileURL",
+      "dataDir",
+      "bypassList"
+    ],
+    "params_types": {
+      "browser": "string",
+      "url": "any",
+      "proxyURL": "any",
+      "pacFileURL": "any",
+      "dataDir": "any",
+      "bypassList": "any"
+    }
+  }
+]

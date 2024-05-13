@@ -22,7 +22,16 @@
                 },
                 "level": "any"
             }
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "_buildProcessTree",
+                "fn_name": "668.v31-o14",
+                "fn_id": "59",
+                "source_fn_id": "59"
+            }
+        ]
     },
     {
         "filename": "../../src/index.js",
@@ -41,7 +50,16 @@
                     "string"
                 ]
             }
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getProcessTree",
+                "fn_name": "668.v74-o24",
+                "fn_id": "418",
+                "source_fn_id": "418"
+            }
+        ]
     },
     {
         "filename": "../../src/index.js",
@@ -60,6 +78,15 @@
                     "string"
                 ]
             }
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "treeKill",
+                "fn_name": "668.v84-o27",
+                "fn_id": "498",
+                "source_fn_id": "498"
+            }
+        ]
     }
 ]

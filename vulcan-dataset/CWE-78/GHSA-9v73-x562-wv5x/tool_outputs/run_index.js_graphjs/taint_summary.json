@@ -13,6 +13,34 @@
         "param_types": {
             "path": "any",
             "encoding": "any"
-        }
+        },
+        "returns": {
+            "source": "",
+            "param_types": {
+                "params": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                }
+            },
+            "tainted_params": [
+                "params"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "72.RunModule-o6",
+                "fn_id": "11",
+                "source_fn_id": "11"
+            },
+            {
+                "type": "Call",
+                "fn_name": "74.v8-o11",
+                "fn_id": "20",
+                "source_fn_id": "11"
+            }
+        ]
     }
 ]

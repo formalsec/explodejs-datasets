@@ -1,0 +1,15 @@
+[
+  {
+    "type": "VFunExported",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "verifyDeps",
+    "source_lineno": 116,
+    "sink": "execAsync",
+    "sink_lineno": 16,
+    "tainted_params": [
+    ],
+    "params_types": {
+    }
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "type" : "ToplevelVuln",
+    "filename": "src/find-opencv.js",
+    "vuln_type": "command-injection",
+    "source": "main",
+    "source_lineno": 6,
+    "sink": "exec",
+    "sink_lineno": 38,
+    "tainted_params": [],
+    "params_types": {}
+  }
+]

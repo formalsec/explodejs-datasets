@@ -1,15 +1,47 @@
 [
-    {
-        "vuln_type": "command-injection",
-        "source": "module.exports",
-        "sink": "exec",
-        "tainted_params": [
-            "iface",
-            "callback"
-        ],
-        "params_types": {
-            "iface": "string",
-            "callback": "function"
-        }
+  {
+    "type" : "VFunExported",
+    "filename" : "src/linux.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "sink": "exec",
+    "tainted_params": [
+      "iface",
+      "callback"
+    ],
+    "params_types": {
+      "iface": "string",
+      "callback": "function"
     }
+  },
+  {
+    "type" : "VFunExported",
+    "filename" : "src/macosx.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "sink": "exec",
+    "tainted_params": [
+      "iface",
+      "callback"
+    ],
+    "params_types": {
+      "iface": "string",
+      "callback": "function"
+    }
+  },
+  {
+    "type" : "VFunExported",
+    "filename": "src/unix.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "sink": "exec",
+    "tainted_params": [
+      "iface",
+      "callback"
+    ],
+    "params_types": {
+      "iface": "string",
+      "callback": "function"
+    }
+  }
 ]

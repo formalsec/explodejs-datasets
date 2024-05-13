@@ -1,0 +1,20 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "source_lineno": 4,
+    "sink": "exec",
+    "sink_lineno": 50,
+    "tainted_params": [
+      "aOptions",
+      "aCallback"
+    ],
+    "params_types": {
+      "aOptions": { "file" : "string" },
+      "aCallback": "function"
+    }
+  }
+]
+

@@ -1,0 +1,17 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "package/pi_video_recording.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.encodeRecord",
+    "source_lineno": 103,
+    "sink": "exec",
+    "sink_lineno": 108,
+    "tainted_params": [
+      "file"
+    ],
+    "params_types": {
+      "file": "string"
+    }
+  }
+]

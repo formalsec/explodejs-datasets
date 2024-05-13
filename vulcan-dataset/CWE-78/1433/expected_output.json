@@ -1,0 +1,21 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "treekill",
+    "source_lineno": 10,
+    "sink": "exec",
+    "sink_lineno": 20,
+    "tainted_params": [
+      "pid",
+      "signal",
+      "callback"
+    ],
+    "params_types": {
+      "pid": "string",
+      "signal": "function",
+      "callback": "function"
+    }
+  }
+]

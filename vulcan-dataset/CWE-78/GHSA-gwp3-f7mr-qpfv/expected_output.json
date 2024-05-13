@@ -1,0 +1,39 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/index.js",
+    "vuln_type": "command-injection",
+    "source": "new Image",
+    "source_lineno": 66,
+    "sink": "im-metadata",
+    "sink_lineno": 74,
+    "tainted_params": [
+      "src0",
+      "opts",
+      "upload"
+    ],
+    "params_types": {
+      "src0": "string",
+      "opts": "object",
+      "upload" : {
+        "opts": "object"
+      }
+    },
+    "return" : {
+      "vuln_type": "command-injection",
+      "source": ".getMetadata",
+      "source_lineno": 66,
+      "sink": "im-metadata",
+      "sink_lineno": 74,
+      "tainted_params": [
+        "src",
+        "cb"
+      ],
+      "params_types": {
+        "src": "string",
+        "cb": "function"
+      }
+    }
+  }
+]
+

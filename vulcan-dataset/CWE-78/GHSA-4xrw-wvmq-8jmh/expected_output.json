@@ -1,0 +1,17 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/key-sender.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.execute",
+    "source_lineno": 117,
+    "sink": "exec",
+    "sink_lineno": 137,
+    "tainted_params": [
+      "arrParams"
+    ],
+    "params_types": {
+      "arrParams": "array"
+    }
+  }
+]

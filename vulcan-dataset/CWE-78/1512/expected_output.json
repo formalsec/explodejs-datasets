@@ -1,0 +1,20 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/umount.js",
+    "vuln_type": "command-injection",
+    "source": "exports.umount",
+    "source_lineno": 7,
+    "sink": "exec",
+    "sink_lineno": 52,
+    "tainted_params": [
+      "device",
+      "callback"
+    ],
+    "params_types": {
+      "device": "string",
+      "callback": "function"
+    }
+  }
+]
+

@@ -1,0 +1,36 @@
+[
+  {
+    "type" : "VFunExported",
+    "filename": "src/git.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "source_lineno": 23,
+    "sink": "exec",
+    "sink_lineno": 70,
+    "tainted_params": [
+      "file",
+      "args"
+    ],
+    "params_types": {
+      "file": "string",
+      "args": "string"
+    }
+  },
+  {
+    "type" : "VFunExported",
+    "filename": "src/svn.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports",
+    "source_lineno": 6,
+    "sink": "exec",
+    "sink_lineno": 90,
+    "tainted_params": [
+      "file",
+      "args"
+    ],
+    "params_types": {
+      "file": "string",
+      "args": "string"
+    }
+  }
+]

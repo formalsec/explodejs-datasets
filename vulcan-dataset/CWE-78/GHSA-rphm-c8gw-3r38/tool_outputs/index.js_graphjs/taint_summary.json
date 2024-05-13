@@ -1,16 +1,1 @@
-[
-    {
-        "filename": "../../src/index.js",
-        "vuln_type": "code-injection",
-        "sink": "return require(path.join(currentDir, 'node_modules', name, 'package.json')).version;",
-        "sink_lineno": 33,
-        "sink_function": "163",
-        "source": "module.exports",
-        "tainted_params": [
-            "undefined"
-        ],
-        "param_types": {
-            "undefined": "any"
-        }
-    }
-]
+[]

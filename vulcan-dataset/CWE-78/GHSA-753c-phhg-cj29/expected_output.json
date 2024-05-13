@@ -1,0 +1,36 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/graph.js",
+    "vuln_type": "command-injection",
+    "source": "module.exports.svg",
+    "source_lineno": 159,
+    "sink": "exec",
+    "sink_lineno": 23,
+    "tainted_params": [
+      "modules",
+      "circular",
+      "config"
+    ],
+    "params_types": {
+      "modules": "lazy_object",
+      "circular": "array",
+      "config": {
+        "noDependencyColor": "any",
+        "cyclicNodeColor": "any",
+        "graphVizPath": "string",
+        "graphVizOptions": "any",
+        "rankdir": "any",
+        "layout": "any",
+        "backgroundColor": "any",
+        "edgeColor": "any",
+        "fontName": "any",
+        "fontSize": "any",
+        "nodeColor": "any",
+        "nodeShape": "any",
+        "nodeStyle": "any"
+      }
+    }
+  }
+]
+

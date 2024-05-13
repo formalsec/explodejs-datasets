@@ -1,5 +1,7 @@
 [
   {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/pdfinfo.js",
     "vuln_type": "command-injection",
     "source": "module.exports",
     "sink": "exec",

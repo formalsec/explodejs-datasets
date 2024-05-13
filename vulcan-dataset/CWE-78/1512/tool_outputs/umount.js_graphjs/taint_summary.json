@@ -13,6 +13,15 @@
         "param_types": {
             "device": "string",
             "callback": "function"
-        }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "umount",
+                "fn_name": "342.v21-o10",
+                "fn_id": "22",
+                "source_fn_id": "22"
+            }
+        ]
     }
 ]
