@@ -28,14 +28,14 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "3228.git-o56",
+                "fn_name": "3228.git-o58",
                 "fn_id": "61",
                 "source_fn_id": "61"
             },
             {
                 "type": "Method",
                 "prop": "status",
-                "fn_name": "3228.v174-o55",
+                "fn_name": "3228.v174-o57",
                 "fn_id": 1130,
                 "source_fn_id": 1130
             }
@@ -74,14 +74,14 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "3228.git-o83",
+                "fn_name": "3228.git-o85",
                 "fn_id": "61",
                 "source_fn_id": "61"
             },
             {
                 "type": "Method",
                 "prop": "diffFile",
-                "fn_name": "3228.v261-o82",
+                "fn_name": "3228.v261-o84",
                 "fn_id": 1568,
                 "source_fn_id": 1568
             }
@@ -114,14 +114,14 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "3228.git-o119",
+                "fn_name": "3228.git-o121",
                 "fn_id": "61",
                 "source_fn_id": "61"
             },
             {
                 "type": "Method",
                 "prop": "getCurrentBranch",
-                "fn_name": "3228.v457-o118",
+                "fn_name": "3228.v457-o120",
                 "fn_id": 3058,
                 "source_fn_id": 3058
             }

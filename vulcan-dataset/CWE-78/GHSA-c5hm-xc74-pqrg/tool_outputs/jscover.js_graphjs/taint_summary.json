@@ -23,7 +23,7 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "602.jscover-o28",
+                "fn_name": "602.jscover-o31",
                 "fn_id": "100",
                 "source_fn_id": "100"
             }
@@ -53,7 +53,7 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "602.jscover-o28",
+                "fn_name": "602.jscover-o31",
                 "fn_id": 100,
                 "source_fn_id": 100
             }
@@ -83,7 +83,7 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "602.jscover-o28",
+                "fn_name": "602.jscover-o31",
                 "fn_id": 100,
                 "source_fn_id": 100
             }
