@@ -1,1 +1,31 @@
-[]
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('ps ' + args, function(err, stdout, stderr) {",
+        "sink_lineno": 8,
+        "sink_function": "85",
+        "source": "module.exports",
+        "tainted_params": [
+            "args",
+            "callback"
+        ],
+        "param_types": {
+            "args": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "314.v11-o5",
+                "fn_id": "5",
+                "source_fn_id": "5"
+            }
+        ]
+    }
+]

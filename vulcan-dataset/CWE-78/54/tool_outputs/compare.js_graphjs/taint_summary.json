@@ -1,1 +1,57 @@
-[]
+[
+    {
+        "filename": "../../src/compare.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(execCmd, function (err, stdout, stderr) {",
+        "sink_lineno": 72,
+        "sink_function": "462",
+        "source": "module.exports",
+        "tainted_params": [
+            "proto"
+        ],
+        "param_types": {
+            "proto": {
+                "compare": "any"
+            }
+        },
+        "returns": {
+            "source": "",
+            "param_types": {
+                "orig": "string",
+                "compareTo": "string",
+                "options": {
+                    "highlightColor": {
+                        "_union": [
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "file": "string",
+                    "highlightStyle": "string",
+                    "tolerance": "number"
+                },
+                "cb": "function"
+            },
+            "tainted_params": [
+                "orig",
+                "compareTo",
+                "options",
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "492.v60-o6",
+                "fn_id": "13",
+                "source_fn_id": "13"
+            },
+            {
+                "type": "Call",
+                "fn_name": "494.compare-o14",
+                "fn_id": "16",
+                "source_fn_id": "13"
+            }
+        ]
+    }
+]

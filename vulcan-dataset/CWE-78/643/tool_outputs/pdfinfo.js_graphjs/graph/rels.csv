@@ -412,12 +412,13 @@ FromId:START_ID¿ToId:END_ID¿RelationLabel:TYPE¿RelationType¿IdentifierName¿
 419¿417¿AST¿stmt¿¿¿¿2¿¿¿¿¿false
 409¿419¿AST¿block¿¿¿¿¿¿¿¿¿false
 408¿409¿AST¿init¿¿¿¿¿¿¿¿¿false
-421¿422¿AST¿object¿¿¿¿¿¿¿¿¿false
-421¿423¿AST¿property¿¿¿¿¿¿¿¿¿false
-420¿421¿AST¿init¿¿¿¿¿¿¿¿¿false
-425¿426¿AST¿left¿¿¿¿¿¿¿¿¿false
-425¿427¿AST¿right¿¿¿¿¿¿¿¿¿false
-424¿425¿AST¿expression¿¿¿¿¿¿¿¿¿false
+424¿425¿AST¿object¿¿¿¿¿¿¿¿¿false
+424¿426¿AST¿property¿¿¿¿¿¿¿¿¿false
+423¿424¿AST¿left¿¿¿¿¿¿¿¿¿false
+423¿427¿AST¿right¿¿¿¿¿¿¿¿¿false
+421¿422¿AST¿left¿¿¿¿¿¿¿¿¿false
+421¿423¿AST¿right¿¿¿¿¿¿¿¿¿false
+420¿421¿AST¿expression¿¿¿¿¿¿¿¿¿false
 0¿1¿AST¿1¿¿¿¿¿¿¿¿¿false
 0¿5¿AST¿2¿¿¿¿¿¿¿¿¿false
 0¿9¿AST¿3¿¿¿¿¿¿¿¿¿false
@@ -425,7 +426,6 @@ FromId:START_ID¿ToId:END_ID¿RelationLabel:TYPE¿RelationType¿IdentifierName¿
 0¿17¿AST¿5¿¿¿¿¿¿¿¿¿false
 0¿408¿AST¿6¿¿¿¿¿¿¿¿¿false
 0¿420¿AST¿7¿¿¿¿¿¿¿¿¿false
-0¿424¿AST¿8¿¿¿¿¿¿¿¿¿false
 428¿1¿CFG¿¿¿¿¿¿¿¿¿¿false
 1¿5¿CFG¿¿¿¿¿¿¿¿¿¿false
 5¿9¿CFG¿¿¿¿¿¿¿¿¿¿false
@@ -573,8 +573,7 @@ FromId:START_ID¿ToId:END_ID¿RelationLabel:TYPE¿RelationType¿IdentifierName¿
 409¿452¿FD¿FD¿¿¿¿¿¿¿¿¿false
 17¿408¿CFG¿¿¿¿¿¿¿¿¿¿false
 408¿420¿CFG¿¿¿¿¿¿¿¿¿¿false
-420¿424¿CFG¿¿¿¿¿¿¿¿¿¿false
-424¿429¿CFG¿¿¿¿¿¿¿¿¿¿false
+420¿429¿CFG¿¿¿¿¿¿¿¿¿¿false
 1¿455¿REF¿obj¿¿¿¿¿¿¿¿¿false
 455¿457¿PDG¿SO¿exec¿¿¿¿¿¿¿¿false
 455¿458¿PDG¿SO¿execSync¿¿¿¿¿¿¿¿false
