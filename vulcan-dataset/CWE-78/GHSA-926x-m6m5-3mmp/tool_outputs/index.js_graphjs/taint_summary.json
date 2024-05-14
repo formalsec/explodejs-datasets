@@ -30,5 +30,37 @@
                 "source_fn_id": 11
             }
         ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "childProcess.exec(cmd, function(error, stdout, stderr) {",
+        "sink_lineno": 202,
+        "sink_function": "1027",
+        "source": "module.exports",
+        "tainted_params": [
+            "opts"
+        ],
+        "param_types": {
+            "opts": {
+                "dir": "any",
+                "branch": "string",
+                "remote": "any",
+                "message": "any",
+                "'allow-unclean'": "any",
+                "force": "any",
+                "'overwrite-local'": "any",
+                "cleanup": "any",
+                "verbose": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1044.pushDir-o2",
+                "fn_id": 11,
+                "source_fn_id": 11
+            }
+        ]
     }
 ]

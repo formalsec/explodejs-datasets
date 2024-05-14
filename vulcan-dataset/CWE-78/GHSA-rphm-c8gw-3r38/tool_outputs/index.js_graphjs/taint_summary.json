@@ -1,1 +1,24 @@
-[]
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return require(path.join(currentDir, 'node_modules', name, 'package.json')).version;",
+        "sink_lineno": 33,
+        "sink_function": "163",
+        "source": "module.exports",
+        "tainted_params": [
+            "undefined"
+        ],
+        "param_types": {
+            "undefined": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "762.verifyDeps-o36",
+                "fn_id": 404,
+                "source_fn_id": 404
+            }
+        ]
+    }
+]

@@ -1,1 +1,47 @@
-[]
+[
+    {
+        "filename": "../../src/mid-php.js",
+        "vuln_type": "command-injection",
+        "sink": "var cp = require('child_process').spawn(phpBin, [phpFile])",
+        "sink_lineno": 22,
+        "sink_function": "84",
+        "source": "module.exports",
+        "tainted_params": [
+            "docroot",
+            "phpBin"
+        ],
+        "param_types": {
+            "docroot": "string",
+            "phpBin": "string"
+        },
+        "returns": {
+            "source": "",
+            "param_types": {
+                "req": {
+                    "url": "any"
+                },
+                "res": "any",
+                "next": "function"
+            },
+            "tainted_params": [
+                "req",
+                "res",
+                "next"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "195.v26-o4",
+                "fn_id": "1",
+                "source_fn_id": "1"
+            },
+            {
+                "type": "Call",
+                "fn_name": "197.v25-o17",
+                "fn_id": 33,
+                "source_fn_id": "1"
+            }
+        ]
+    }
+]

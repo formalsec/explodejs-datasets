@@ -1,1 +1,36 @@
-[]
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "execSync(",
+        "sink_lineno": 37,
+        "sink_function": "165",
+        "source": "new module.exports",
+        "tainted_params": [],
+        "param_types": {},
+        "returns": {
+            "source": ".fetch",
+            "param_types": {
+                "id": "string"
+            },
+            "tainted_params": [
+                "id"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "492.Pullit-o20",
+                "fn_id": "21",
+                "source_fn_id": "21"
+            },
+            {
+                "type": "Method",
+                "prop": "fetch",
+                "fn_name": "492.fetch-o19",
+                "fn_id": 109,
+                "source_fn_id": 109
+            }
+        ]
+    }
+]

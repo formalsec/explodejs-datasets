@@ -1,1 +1,130 @@
-[]
+[
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "path-traversal",
+        "sink": "status.commitMessage = fs.readFileSync(path.join(repoPath, '.git', 'MERGE_MSG'), { encoding: 'utf8' });",
+        "sink_lineno": 142,
+        "sink_function": "1265",
+        "source": "new module.exports",
+        "tainted_params": [
+            "command",
+            "repoPath"
+        ],
+        "param_types": {
+            "command": "any",
+            "repoPath": "any"
+        },
+        "returns": {
+            "source": ".status",
+            "param_types": {
+                "repoPath": "string",
+                "file": "string"
+            },
+            "tainted_params": [
+                "repoPath",
+                "file"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "3228.git-o56",
+                "fn_id": "61",
+                "source_fn_id": "61"
+            },
+            {
+                "type": "Method",
+                "prop": "status",
+                "fn_name": "3228.v174-o55",
+                "fn_id": 1130,
+                "source_fn_id": 1130
+            }
+        ]
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, { encoding: 'utf8' }, function(err, text) {",
+        "sink_lineno": 217,
+        "sink_function": "1909",
+        "source": "new module.exports",
+        "tainted_params": [
+            "command",
+            "repoPath"
+        ],
+        "param_types": {
+            "command": "any",
+            "repoPath": "any"
+        },
+        "returns": {
+            "source": ".diffFile",
+            "param_types": {
+                "repoPath": "string",
+                "filename": "string",
+                "sha1": "string",
+                "maxNLines": "any"
+            },
+            "tainted_params": [
+                "repoPath",
+                "filename",
+                "sha1",
+                "maxNLines"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "3228.git-o83",
+                "fn_id": "61",
+                "source_fn_id": "61"
+            },
+            {
+                "type": "Method",
+                "prop": "diffFile",
+                "fn_name": "3228.v261-o82",
+                "fn_id": 1568,
+                "source_fn_id": 1568
+            }
+        ]
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(HEADFile, { encoding: 'utf8' }, function(err, text) {",
+        "sink_lineno": 407,
+        "sink_function": "3184",
+        "source": "new module.exports",
+        "tainted_params": [
+            "command",
+            "repoPath"
+        ],
+        "param_types": {
+            "command": "any",
+            "repoPath": "any"
+        },
+        "returns": {
+            "source": ".getCurrentBranch",
+            "param_types": {
+                "repoPath": "any"
+            },
+            "tainted_params": [
+                "repoPath"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "3228.git-o119",
+                "fn_id": "61",
+                "source_fn_id": "61"
+            },
+            {
+                "type": "Method",
+                "prop": "getCurrentBranch",
+                "fn_name": "3228.v457-o118",
+                "fn_id": 3058,
+                "source_fn_id": 3058
+            }
+        ]
+    }
+]

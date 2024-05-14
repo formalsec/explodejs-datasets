@@ -29,5 +29,67 @@
                 "source_fn_id": "15"
             }
         ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return spawn('pgrep', ['-P', parentPid]);",
+        "sink_lineno": 24,
+        "sink_function": "95",
+        "source": "module.exports",
+        "tainted_params": [
+            "pid",
+            "signal",
+            "callback"
+        ],
+        "param_types": {
+            "pid": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "signal": "function",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "475.v21-o8",
+                "fn_id": 15,
+                "source_fn_id": 15
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return spawn('ps', ['-o', 'pid', '--no-headers', '--ppid', parentPid]);",
+        "sink_lineno": 36,
+        "sink_function": "136",
+        "source": "module.exports",
+        "tainted_params": [
+            "pid",
+            "signal",
+            "callback"
+        ],
+        "param_types": {
+            "pid": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "signal": "function",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "475.v21-o8",
+                "fn_id": 15,
+                "source_fn_id": 15
+            }
+        ]
     }
 ]

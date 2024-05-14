@@ -1,6 +1,41 @@
 [
     {
         "filename": "../../src/lib_googleIt.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"open \".concat(result.link), errorTryingToOpen);",
+        "sink_lineno": 59,
+        "sink_function": "487",
+        "source": "module.exports.openInBrowser",
+        "tainted_params": [
+            "open",
+            "results"
+        ],
+        "param_types": {
+            "open": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "results": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "openInBrowser",
+                "fn_name": "1679.openInBrowser-o6",
+                "fn_id": 457,
+                "source_fn_id": 457
+            }
+        ]
+    },
+    {
+        "filename": "../../src/lib_googleIt.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (err, data) {",
         "sink_lineno": 195,
