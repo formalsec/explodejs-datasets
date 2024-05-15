@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/mosc.js",
+        "vuln_type": "code-injection",
+        "sink": "propertyBase[property_parts[0]] = eval(get_eval_string(pvalue));",
+        "sink_lineno": 50,
+        "sink_function": "250"
+    }
+]

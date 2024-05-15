@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "../../src/compile.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function('tokens, req, res', js).bind(context);",
+        "sink_lineno": 6,
+        "sink_function": "44",
+        "source": "module.exports",
+        "tainted_params": [
+            "format",
+            "context"
+        ],
+        "param_types": {
+            "format": "string",
+            "context": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "64.compile-o4",
+                "fn_id": "1",
+                "source_fn_id": "1"
+            }
+        ]
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "filename": "../../src/node-rules.js",
+        "vuln_type": "code-injection",
+        "sink": "rules.condition = eval(\"(\" + rules.condition + \")\");",
+        "sink_lineno": 157,
+        "sink_function": "1066",
+        "source": "new module.exports",
+        "tainted_params": [
+            "rules",
+            "options"
+        ],
+        "param_types": {
+            "rules": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            },
+            "options": {
+                "ignoreFactChanges": "any"
+            }
+        },
+        "returns": {
+            "source": ".fromJSON",
+            "param_types": {
+                "rules": {
+                    "condition": "string",
+                    "consequence": "string"
+                }
+            },
+            "tainted_params": [
+                "rules"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1134.v122-o61",
+                "fn_id": "27",
+                "source_fn_id": "27"
+            },
+            {
+                "type": "Method",
+                "prop": "fromJSON",
+                "fn_name": "1134.v149-o60",
+                "fn_id": "944",
+                "source_fn_id": "944"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/node-rules.js",
+        "vuln_type": "code-injection",
+        "sink": "rules.consequence = eval(\"(\" + rules.consequence + \")\");",
+        "sink_lineno": 158,
+        "sink_function": "1088",
+        "source": "new module.exports",
+        "tainted_params": [
+            "rules",
+            "options"
+        ],
+        "param_types": {
+            "rules": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            },
+            "options": {
+                "ignoreFactChanges": "any"
+            }
+        },
+        "returns": {
+            "source": ".fromJSON",
+            "param_types": {
+                "rules": {
+                    "condition": "string",
+                    "consequence": "string"
+                }
+            },
+            "tainted_params": [
+                "rules"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1134.v122-o61",
+                "fn_id": "27",
+                "source_fn_id": "27"
+            },
+            {
+                "type": "Method",
+                "prop": "fromJSON",
+                "fn_name": "1134.v149-o60",
+                "fn_id": "944",
+                "source_fn_id": "944"
+            }
+        ]
+    }
+]

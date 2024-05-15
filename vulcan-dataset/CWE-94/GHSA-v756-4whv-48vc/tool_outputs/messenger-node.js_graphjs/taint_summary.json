@@ -1,0 +1,27 @@
+[
+    {
+        "filename": "../../src/messenger-node.js",
+        "vuln_type": "code-injection",
+        "sink": "eval(`cl.${color}()`); // eslint-disable-line",
+        "sink_lineno": 71,
+        "sink_function": "345",
+        "source": "module.exports.line",
+        "tainted_params": [
+            "color"
+        ],
+        "param_types": {
+            "color": {
+                "length": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "line",
+                "fn_name": "466.v52-o33",
+                "fn_id": "328",
+                "source_fn_id": "328"
+            }
+        ]
+    }
+]

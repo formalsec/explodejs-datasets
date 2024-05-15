@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/browser.js",
+        "vuln_type": "code-injection",
+        "sink": "return Function('__context', src).call(null, __context) // eslint-disable-line",
+        "sink_lineno": 49,
+        "sink_function": "106"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "Function(src);",
+        "sink_lineno": 7,
+        "sink_function": "26",
+        "source": "module.exports",
+        "tainted_params": [
+            "src",
+            "file"
+        ],
+        "param_types": {
+            "src": "string",
+            "file": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "292.v8-o5",
+                "fn_id": "5",
+                "source_fn_id": "5"
+            }
+        ]
+    }
+]

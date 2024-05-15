@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/batch.js",
+        "vuln_type": "code-injection",
+        "sink": "eval('value = ref.' + parts[i].value + ';');",
+        "sink_lineno": 152,
+        "sink_function": "586"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[key] = value",
+        "sink_lineno": 50,
+        "sink_function": "237",
+        "source": "module.exports",
+        "tainted_params": [
+            "object",
+            "path",
+            "value"
+        ],
+        "param_types": {
+            "object": {
+                "length": "any",
+                "*": {
+                    "length": "any",
+                    "*": "any"
+                }
+            },
+            "path": {
+                "length": "number",
+                "*": "any"
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "246.setIn-o2",
+                "fn_id": 11,
+                "source_fn_id": 11
+            }
+        ]
+    }
+]

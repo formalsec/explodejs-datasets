@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/DocumentMatcher.js",
+        "vuln_type": "code-injection",
+        "sink": "selectorValue = Function('obj', 'return ' + selectorValue); //eslint-disable-line no-new-func",
+        "sink_lineno": 419,
+        "sink_function": "1967"
+    }
+]

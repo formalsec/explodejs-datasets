@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "result = eval(toEvaluate)",
+        "sink_lineno": 75,
+        "sink_function": "223",
+        "source": "module.exports",
+        "tainted_params": [
+            "value",
+            "decimalPrecision"
+        ],
+        "param_types": {
+            "value": "any",
+            "decimalPrecision": "number"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "533.reduceCSSCalc-o4",
+                "fn_id": 20,
+                "source_fn_id": 20
+            }
+        ]
+    }
+]

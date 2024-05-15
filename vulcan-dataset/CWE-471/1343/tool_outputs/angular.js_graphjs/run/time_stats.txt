@@ -1,4 +1,4 @@
 
 Timed out
-graph: 416419.447231
-import: 2775
+graph: 536745.536994
+import: 3015

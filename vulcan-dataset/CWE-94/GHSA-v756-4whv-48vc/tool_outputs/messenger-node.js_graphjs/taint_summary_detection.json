@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/messenger-node.js",
+        "vuln_type": "code-injection",
+        "sink": "eval(`cl.${color}()`); // eslint-disable-line",
+        "sink_lineno": 71,
+        "sink_function": "345"
+    }
+]

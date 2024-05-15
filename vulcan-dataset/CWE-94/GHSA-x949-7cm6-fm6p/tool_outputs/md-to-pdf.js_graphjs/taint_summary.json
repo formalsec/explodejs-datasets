@@ -1,0 +1,53 @@
+[
+    {
+        "filename": "../../src/md-to-pdf.js",
+        "vuln_type": "code-injection",
+        "sink": "const { content: md, data: frontMatterConfig } = gray_matter_1.default(mdFileContent);",
+        "sink_lineno": 23,
+        "sink_function": "180",
+        "source": "module.exports.convertMdToPdf",
+        "tainted_params": [
+            "input",
+            "config",
+            "args"
+        ],
+        "param_types": {
+            "input": {
+                "content": "any",
+                "path": "any"
+            },
+            "config": {
+                "md_file_encoding": "any",
+                "pdf_options": {
+                    "headerTemplate": "any",
+                    "footerTemplate": "any",
+                    "displayHeaderFooter": "any",
+                    "margin": "any"
+                },
+                "*": "array",
+                "dest": "any",
+                "as_html": "any",
+                "highlight_style": "any",
+                "stylesheet": "any",
+                "basedir": "any",
+                "devtools": "any"
+            },
+            "args": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "convertMdToPdf",
+                "fn_name": "714.convertMdToPdf-o23",
+                "fn_id": "107",
+                "source_fn_id": "107"
+            }
+        ]
+    }
+]

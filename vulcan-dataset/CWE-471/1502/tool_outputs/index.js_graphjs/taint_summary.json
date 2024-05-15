@@ -1,0 +1,21 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = value;",
+        "sink_lineno": 46,
+        "sink_function": "187",
+        "source": "module.exports.extend",
+        "tainted_params": [],
+        "param_types": {},
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "extend",
+                "fn_name": "743.v33-o29",
+                "fn_id": 212,
+                "source_fn_id": 212
+            }
+        ]
+    }
+]

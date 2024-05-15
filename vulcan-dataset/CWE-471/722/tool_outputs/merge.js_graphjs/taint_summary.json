@@ -1,0 +1,78 @@
+[
+    {
+        "filename": "../../src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = extend[key];",
+        "sink_lineno": 94,
+        "sink_function": "224",
+        "source": "new module.exports",
+        "tainted_params": [
+            "clone"
+        ],
+        "param_types": {
+            "clone": "bool"
+        },
+        "returns": {
+            "source": ".recursive",
+            "param_types": {
+                "clone": "bool"
+            },
+            "tainted_params": [
+                "clone"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "453.Public-o18",
+                "fn_id": "5",
+                "source_fn_id": "5"
+            },
+            {
+                "type": "Method",
+                "prop": "recursive",
+                "fn_name": "453.v5-o17",
+                "fn_id": 23,
+                "source_fn_id": 23
+            }
+        ]
+    },
+    {
+        "filename": "../../src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = merge_recursive(base[key], extend[key]);",
+        "sink_lineno": 90,
+        "sink_function": "213",
+        "source": "new module.exports",
+        "tainted_params": [
+            "clone"
+        ],
+        "param_types": {
+            "clone": "bool"
+        },
+        "returns": {
+            "source": ".recursive",
+            "param_types": {
+                "clone": "bool"
+            },
+            "tainted_params": [
+                "clone"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "453.Public-o18",
+                "fn_id": "5",
+                "source_fn_id": "5"
+            },
+            {
+                "type": "Method",
+                "prop": "recursive",
+                "fn_name": "453.v5-o17",
+                "fn_id": 23,
+                "source_fn_id": 23
+            }
+        ]
+    }
+]
