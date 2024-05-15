@@ -1,0 +1,46 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "x[key] = merge(x[key], y[key]);",
+        "sink_lineno": 19,
+        "sink_function": "157",
+        "source": "module.exports",
+        "tainted_params": [
+            "undefined"
+        ],
+        "param_types": {
+            "undefined": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "370.mergify-o10",
+                "fn_id": 321,
+                "source_fn_id": 321
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "x[key] = merge(x[key], y[key]);",
+        "sink_lineno": 15,
+        "sink_function": "107",
+        "source": "module.exports",
+        "tainted_params": [
+            "undefined"
+        ],
+        "param_types": {
+            "undefined": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "370.mergify-o10",
+                "fn_id": 321,
+                "source_fn_id": 321
+            }
+        ]
+    }
+]
