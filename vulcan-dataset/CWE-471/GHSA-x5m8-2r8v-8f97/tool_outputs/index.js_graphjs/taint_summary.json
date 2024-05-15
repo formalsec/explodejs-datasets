@@ -1,0 +1,47 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[path[i]] = value",
+        "sink_lineno": 27,
+        "sink_function": "213",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value"
+        ],
+        "param_types": {
+            "obj": {
+                "*": {
+                    "*": {
+                        "*": {
+                            "*": {
+                                "*": "any",
+                                "v38": "string"
+                            },
+                            "v38": "string"
+                        },
+                        "v38": "string"
+                    },
+                    "v38": "string"
+                },
+                "v38": "string"
+            },
+            "path": {
+                "*": "any",
+                "length": "any"
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "709.set-o20",
+                "fn_id": "153",
+                "source_fn_id": "153"
+            }
+        ]
+    }
+]

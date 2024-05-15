@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "item[part] = map(val[j]);",
+        "sink_lineno": 246,
+        "sink_function": "1120"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[part] = map(val);",
+        "sink_lineno": 269,
+        "sink_function": "1250"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "item[part] = map(val);",
+        "sink_lineno": 258,
+        "sink_function": "1191"
+    }
+]

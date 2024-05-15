@@ -1,0 +1,74 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = val;",
+        "sink_lineno": 48,
+        "sink_function": "184",
+        "source": "module.exports",
+        "tainted_params": [
+            "target"
+        ],
+        "param_types": {
+            "target": {
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "276.assign-o6",
+                "fn_id": 15,
+                "source_fn_id": 15
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = assign(target[key] || {}, val);",
+        "sink_lineno": 46,
+        "sink_function": "177",
+        "source": "module.exports",
+        "tainted_params": [
+            "target"
+        ],
+        "param_types": {
+            "target": {
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "276.assign-o6",
+                "fn_id": 15,
+                "source_fn_id": 15
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = val;",
+        "sink_lineno": 44,
+        "sink_function": "155",
+        "source": "module.exports",
+        "tainted_params": [
+            "target"
+        ],
+        "param_types": {
+            "target": {
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "276.assign-o6",
+                "fn_id": 15,
+                "source_fn_id": 15
+            }
+        ]
+    }
+]

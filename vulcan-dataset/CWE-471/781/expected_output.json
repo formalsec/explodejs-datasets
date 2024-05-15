@@ -1,0 +1,32 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports",
+        "sink": "target[name] = copy;",
+        "tainted_params": [
+            "deep",
+            "target",
+            "options"
+        ],
+        "params_types": {
+            "deep": "boolean",
+            "target": "object",
+            "options": "polluted_object2"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports",
+        "sink": "target[name] = copy;",
+        "tainted_params": [
+            "deep",
+            "target",
+            "options"
+        ],
+        "params_types": {
+            "deep": "boolean",
+            "target": "object",
+            "options": "polluted_object3"
+        }
+    }
+]

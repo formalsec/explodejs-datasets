@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/lodash.js",
+        "vuln_type": "code-injection",
+        "sink": "return Function(importsKeys, sourceURL + 'return ' + source)",
+        "sink_lineno": 14843,
+        "sink_function": "35702"
+    },
+    {
+        "filename": "../../src/lodash.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[key] = value;",
+        "sink_lineno": 2580,
+        "sink_function": "8136"
+    }
+]

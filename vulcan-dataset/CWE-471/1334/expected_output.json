@@ -1,0 +1,22 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "setDeep",
+        "source_lineno": 62,
+        "sink": "subject[key] = value;",
+        "sink_lineno": 111,
+        "tainted_params": [
+            "subject",
+            "keys",
+            "value",
+            "opts"
+        ],
+        "params_types": {
+            "subject": "object",
+            "keys": [ "string", "string" ],
+            "value": {
+              "toString" : "string"
+            }
+        }
+    }
+]

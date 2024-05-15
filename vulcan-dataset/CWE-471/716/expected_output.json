@@ -1,0 +1,28 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports",
+        "sink": "object1[key] = v17;",
+        "tainted_params": [
+            "object1",
+            "object2"
+        ],
+        "params_types": {
+            "object1": "object",
+            "object2": "polluted_object2"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports",
+        "sink": "object1[key] = v17;",
+        "tainted_params": [
+            "object1",
+            "object2"
+        ],
+        "params_types": {
+            "object1": "object",
+            "object2": "polluted_object3"
+        }
+    }
+]

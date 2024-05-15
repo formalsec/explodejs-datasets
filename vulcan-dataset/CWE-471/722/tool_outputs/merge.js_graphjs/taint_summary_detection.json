@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = extend[key];",
+        "sink_lineno": 94,
+        "sink_function": "224"
+    },
+    {
+        "filename": "../../src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = merge_recursive(base[key], extend[key]);",
+        "sink_lineno": 90,
+        "sink_function": "213"
+    }
+]

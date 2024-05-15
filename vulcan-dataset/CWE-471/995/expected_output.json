@@ -1,0 +1,28 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "sink": "x[key] = v25;",
+        "tainted_params": [
+            "x",
+            "y"
+        ],
+        "params_types" : {
+          "x" : "object",
+          "y" : "polluted_object2"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "sink": "x[key] = v25;",
+        "tainted_params": [
+            "x",
+            "y"
+        ],
+        "params_types" : {
+          "x" : "object",
+          "y" : "polluted_object3"
+        }
+    }
+]

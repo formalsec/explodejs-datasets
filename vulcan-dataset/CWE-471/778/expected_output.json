@@ -1,0 +1,33 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "defaultsDeep",
+        "source_lineno": 8,
+        "sink": "target[key] = value;",
+        "sink_lineno": 20,
+        "tainted_params": [
+            "target",
+            "objects"
+        ],
+        "params_types": {
+            "target": "object",
+            "objects": "polluted_object2"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "defaultsDeep",
+        "source_lineno": 8,
+        "sink": "target[key] = value;",
+        "sink_lineno": 20,
+        "tainted_params": [
+            "target",
+            "objects"
+        ],
+        "params_types": {
+            "target": "object",
+            "objects": "polluted_object3"
+        }
+    }
+
+]

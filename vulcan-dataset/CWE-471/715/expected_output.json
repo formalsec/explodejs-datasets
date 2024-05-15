@@ -1,0 +1,28 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports.recursive",
+        "sink": "host[key] = v2;",
+        "tainted_params": [
+            "host",
+            "obj"
+        ],
+        "params_types": {
+            "host": "object",
+            "target" : "polluted_object2"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports.recursive",
+        "sink": "host[key] = v2;",
+        "tainted_params": [
+            "host",
+            "obj"
+        ],
+        "params_types": {
+            "host": "object",
+            "target" : "polluted_object2"
+        }
+    }
+]

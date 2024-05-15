@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "acc[keyBase][onwardKey.join(delimiter)] = baseObj[key];",
+        "sink_lineno": 193,
+        "sink_function": "1243"
+    }
+]

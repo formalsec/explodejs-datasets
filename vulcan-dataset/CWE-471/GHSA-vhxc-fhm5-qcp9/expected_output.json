@@ -1,0 +1,19 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "exports.handler",
+        "source_lineno": 43,
+        "sink": "v16[name] = fn;",
+        "sink_lineno": 48,
+        "tainted_params": [
+            "type",
+            "name",
+            "fn"
+        ],
+        "params_types": {
+            "type": "string",
+            "name": "string",
+            "fn": "string"
+        }
+    }
+]

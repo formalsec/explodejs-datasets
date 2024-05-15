@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/main.js",
+        "vuln_type": "path-traversal",
+        "sink": "return parse(fs.readFileSync(path, 'utf-8'))",
+        "sink_lineno": 439,
+        "sink_function": "2340"
+    },
+    {
+        "filename": "../../src/main.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "c[name] = coerce(name, cloneDeep(p.default), schema, instance)",
+        "sink_lineno": 353,
+        "sink_function": "1836"
+    },
+    {
+        "filename": "../../src/main.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "c[name] = kids",
+        "sink_lineno": 351,
+        "sink_function": "1814"
+    },
+    {
+        "filename": "../../src/main.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[k] = coerce(k, from[k], schema)",
+        "sink_lineno": 366,
+        "sink_function": "1944"
+    }
+]

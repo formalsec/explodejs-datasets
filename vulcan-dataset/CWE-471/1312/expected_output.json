@@ -1,0 +1,17 @@
+[
+  {
+    "vuln_type": "prototype-pollution",
+    "source": "new module.exports.LineChart",
+    "sink": "target[key] = v47;",
+    "tainted_params": [
+      "chart",
+      "target",
+      "source"
+    ],
+    "params_types": {
+      "chart" : "object",
+      "target": "object",
+      "source": "polluted_object2"
+    }
+  }
+]

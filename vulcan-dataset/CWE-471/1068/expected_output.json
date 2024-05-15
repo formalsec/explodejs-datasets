@@ -1,0 +1,28 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "mergeWith",
+        "sink": "object[key] = value;",
+        "tainted_params": [
+            "object",
+            "value"
+        ],
+        "params_types": {
+            "object": "object",
+            "value": "polluted_object2"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "mergeWith",
+        "sink": "object[key] = value;",
+        "tainted_params": [
+            "object",
+            "value"
+        ],
+        "params_types": {
+            "object": "object",
+            "value": "polluted_object3"
+        }
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "filename": "../../src/deap.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[p] = deepClone(b[p]);",
+        "sink_lineno": 60,
+        "sink_function": "337",
+        "source": "module.exports.extend",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "param_types": {
+            "a": {
+                "*": {
+                    "*": "any"
+                }
+            },
+            "b": {
+                "_union": [
+                    "array",
+                    "object"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "extend",
+                "fn_name": "776.deepExtend-o12",
+                "fn_id": 260,
+                "source_fn_id": 260
+            }
+        ]
+    }
+]

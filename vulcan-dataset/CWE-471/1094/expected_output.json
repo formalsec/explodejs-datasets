@@ -1,0 +1,15 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports",
+        "source_lineno": 2,
+        "sink": "cursor[level] = value;",
+        "sink_lineno": 91,
+        "tainted_params": [
+            "string"
+        ],
+        "params_types": {
+            "string": "string"
+        }
+    }
+]

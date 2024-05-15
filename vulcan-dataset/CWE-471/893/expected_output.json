@@ -1,0 +1,33 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "source_lineno": 155,
+        "sink": "obj1[key] = v94;",
+        "sink_lineno": 214,
+        "tainted_params": [
+            "obj1",
+            "obj2"
+        ],
+        "params_types": {
+            "obj1": "object",
+            "obj2": "polluted_object2"
+        }
+    }
+    ,
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "merge",
+        "source_lineno": 155,
+        "sink": "obj1[key] = v94;",
+        "sink_lineno": 214,
+        "tainted_params": [
+            "obj1",
+            "obj2"
+        ],
+        "params_types": {
+            "obj1": "object",
+            "obj2": "polluted_object3"
+        }
+    }
+]

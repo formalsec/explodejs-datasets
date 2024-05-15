@@ -1,0 +1,15 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "cachedPathRelative",
+        "sink": "v10[to] = result;",
+        "tainted_params": [
+            "from",
+            "to"
+        ],
+        "params_types": {
+            "from": "string",
+            "to": "string"
+        }
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/lodash.js",
+        "vuln_type": "code-injection",
+        "sink": "return Function(importsKeys, sourceURL + 'return ' + source)",
+        "sink_lineno": 14866,
+        "sink_function": "35908"
+    }
+]

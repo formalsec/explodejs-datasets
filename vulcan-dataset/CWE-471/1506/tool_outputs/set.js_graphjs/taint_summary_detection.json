@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/set.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "o[kp[0]] = value;",
+        "sink_lineno": 38,
+        "sink_function": "194"
+    }
+]

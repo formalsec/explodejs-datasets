@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "handlers[type][name] = fn;",
+        "sink_lineno": 48,
+        "sink_function": "239"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "io[a[a.length - 1]] = value;",
+        "sink_lineno": 210,
+        "sink_function": "1189",
+        "source": "new module.exports",
+        "tainted_params": [
+            "optionalThis",
+            "func",
+            "errorReturnValue"
+        ],
+        "param_types": {
+            "optionalThis": "function",
+            "func": "any",
+            "errorReturnValue": "undefined"
+        },
+        "returns": {
+            "source": ".set",
+            "param_types": {
+                "o": {
+                    "*": {
+                        "*": {
+                            "*": "any"
+                        }
+                    }
+                },
+                "s": {
+                    "length": {
+                        "_union": [
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "*": "any"
+                },
+                "value": "any"
+            },
+            "tainted_params": [
+                "o",
+                "s",
+                "value"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1615.safeCall-o139",
+                "fn_id": "40",
+                "source_fn_id": "40"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1615.set-o70",
+                "fn_id": "997",
+                "source_fn_id": "997"
+            }
+        ]
+    }
+]

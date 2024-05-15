@@ -1,0 +1,19 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports",
+        "source_lineno": 33,
+        "sink": "tmp[v13] = val;",
+        "sink_lineno": 30,
+        "tainted_params": [
+            "obj",
+            "path",
+            "val"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": [ "string", "string" ],
+            "val": "string"
+        }
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/chartkick.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = source[key];",
+        "sink_lineno": 40,
+        "sink_function": "283"
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/deepFillIn.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = newValue;",
+        "sink_lineno": 18,
+        "sink_function": "51"
+    }
+]

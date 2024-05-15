@@ -1,0 +1,32 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports",
+        "source_lineno": 3,
+        "sink": "doc[key] = v17;",
+        "sink_lineno": 35,
+        "tainted_params": [
+            "doc",
+            "patch"
+        ],
+        "params_types": {
+            "doc": "object",
+            "patch": "polluted_object2"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "source": "module.exports",
+        "source_lineno": 3,
+        "sink": "doc[key] = v17;",
+        "sink_lineno": 35,
+        "tainted_params": [
+            "doc",
+            "patch"
+        ],
+        "params_types": {
+            "doc": "object",
+            "patch": "polluted_object3"
+        }
+    }
+]
