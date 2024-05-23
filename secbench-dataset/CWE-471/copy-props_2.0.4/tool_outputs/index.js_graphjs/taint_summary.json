@@ -14,16 +14,15 @@
             "reverse"
         ],
         "params_types": {
-            "src": "polluted-object",
+            "src": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object2"
+                ]
+            },
             "dst": {
                 "_union": [
-                    {
-                        "*": {
-                            "*": {
-                                "*": "any"
-                            }
-                        }
-                    },
+                    "object",
                     "array"
                 ]
             },

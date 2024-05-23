@@ -11,7 +11,12 @@
             "glue"
         ],
         "params_types": {
-            "input": "polluted-object",
+            "input": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object2"
+                ]
+            },
             "glue": "number"
         },
         "call_paths": [

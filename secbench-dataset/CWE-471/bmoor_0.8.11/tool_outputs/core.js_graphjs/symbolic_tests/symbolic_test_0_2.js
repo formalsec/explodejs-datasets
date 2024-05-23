@@ -360,7 +360,7 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let root = {  };
-let space = { *: esl_symbolic.any("*") };
+let space = {  };
 let value = esl_symbolic.function("value");
 module.exports.set(root, space, value);
 console.log(({}).toString);

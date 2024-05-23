@@ -15,9 +15,7 @@
             "root": "object",
             "space": {
                 "_union": [
-                    {
-                        "*": "any"
-                    },
+                    "object",
                     "array"
                 ]
             },

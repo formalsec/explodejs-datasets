@@ -289,6 +289,6 @@ let path =
   { length: esl_symbolic.number("length")
   , *: esl_symbolic.any("*") };
 let value = esl_symbolic.any("value");
-let descriptor = { *: { *: esl_symbolic.any("*") } };
+let descriptor = {  };
 module.exports.set(obj, path, value, descriptor);
 console.log(({}).toString);

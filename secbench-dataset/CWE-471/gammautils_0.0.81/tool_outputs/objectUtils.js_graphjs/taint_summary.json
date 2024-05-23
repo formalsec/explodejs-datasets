@@ -13,9 +13,7 @@
         "params_types": {
             "object": {
                 "_union": [
-                    {
-                        "*": "any"
-                    },
+                    "object",
                     "array"
                 ]
             },
@@ -45,9 +43,7 @@
         "params_types": {
             "object": {
                 "_union": [
-                    {
-                        "*": "any"
-                    },
+                    "object",
                     "array"
                 ]
             },

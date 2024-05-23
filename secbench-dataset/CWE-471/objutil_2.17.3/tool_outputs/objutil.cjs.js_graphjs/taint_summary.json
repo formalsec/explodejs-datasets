@@ -27,11 +27,7 @@
             "value": "any",
             "descriptor": {
                 "_union": [
-                    {
-                        "*": {
-                            "*": "any"
-                        }
-                    },
+                    "object",
                     "array"
                 ]
             }

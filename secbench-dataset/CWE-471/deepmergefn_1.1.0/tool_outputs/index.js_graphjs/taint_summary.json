@@ -12,7 +12,12 @@
         ],
         "params_types": {
             "target": "object",
-            "source": "polluted-object"
+            "source": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object2"
+                ]
+            }
         },
         "call_paths": [
             {

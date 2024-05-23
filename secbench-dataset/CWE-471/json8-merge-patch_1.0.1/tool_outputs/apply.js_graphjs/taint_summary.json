@@ -14,9 +14,7 @@
             "doc": "object",
             "patch": {
                 "_union": [
-                    {
-                        "*": "any"
-                    },
+                    "object",
                     "array"
                 ]
             }
