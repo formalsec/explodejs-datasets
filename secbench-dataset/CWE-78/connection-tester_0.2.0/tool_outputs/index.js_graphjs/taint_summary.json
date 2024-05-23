@@ -1,0 +1,37 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const shellOut = shell.execSync(cmd).toString();",
+        "sink_lineno": 15,
+        "sink_function": "48",
+        "source": "module.exports.test",
+        "tainted_params": [
+            "host",
+            "port",
+            "callbackOrConnectTimeout",
+            "callback"
+        ],
+        "params_types": {
+            "host": "string",
+            "port": "string",
+            "callbackOrConnectTimeout": {
+                "_union": [
+                    "function",
+                    "number",
+                    "string"
+                ]
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "test",
+                "fn_name": "392.v35-o24",
+                "fn_id": 292,
+                "source_fn_id": 292
+            }
+        ]
+    }
+]

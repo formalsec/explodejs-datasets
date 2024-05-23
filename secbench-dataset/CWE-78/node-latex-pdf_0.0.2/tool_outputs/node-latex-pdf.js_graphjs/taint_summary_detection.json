@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/node-latex-pdf.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
+        "sink_lineno": 10,
+        "sink_function": "137"
+    },
+    {
+        "filename": "../../src/node-latex-pdf.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
+        "sink_lineno": 15,
+        "sink_function": "128"
+    }
+]

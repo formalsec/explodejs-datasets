@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.pointer[ this.field ][key] = pointer[key];",
+        "sink_lineno": 126,
+        "sink_function": "608"
+    }
+]

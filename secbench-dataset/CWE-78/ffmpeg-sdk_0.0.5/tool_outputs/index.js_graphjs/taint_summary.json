@@ -1,0 +1,25 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, (error, stdout, stderr) => {",
+        "sink_lineno": 9,
+        "sink_function": "38",
+        "source": "module.exports.execute",
+        "tainted_params": [
+            "command"
+        ],
+        "params_types": {
+            "command": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "execute",
+                "fn_name": "377.execute-o5",
+                "fn_id": 9,
+                "source_fn_id": 9
+            }
+        ]
+    }
+]

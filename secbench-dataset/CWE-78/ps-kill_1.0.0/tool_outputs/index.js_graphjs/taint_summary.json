@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function (error) {",
+        "sink_lineno": 8,
+        "sink_function": "46",
+        "source": "module.exports.kill",
+        "tainted_params": [
+            "pid",
+            "callback"
+        ],
+        "params_types": {
+            "pid": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "kill",
+                "fn_name": "64.kill-o6",
+                "fn_id": "11",
+                "source_fn_id": "11"
+            }
+        ]
+    }
+]

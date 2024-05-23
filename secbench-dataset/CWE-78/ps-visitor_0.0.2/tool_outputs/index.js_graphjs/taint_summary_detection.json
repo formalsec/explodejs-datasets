@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 56,
+        "sink_function": "163"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 404,
+        "sink_function": "1681"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 444,
+        "sink_function": "1836"
+    }
+]

@@ -10,12 +10,8 @@
             "target",
             "source"
         ],
-        "param_types": {
-            "target": {
-                "*": {
-                    "*": "any"
-                }
-            },
+        "params_types": {
+            "target": "polluted-object | array",
             "source": {
                 "*": "array"
             }

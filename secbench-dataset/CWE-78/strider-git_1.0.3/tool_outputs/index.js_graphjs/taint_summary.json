@@ -1,0 +1,37 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`git ls-remote -h ${httpUrl(config)[0]}`, function (err, stdout) {",
+        "sink_lineno": 151,
+        "sink_function": "821",
+        "source": "module.exports.getBranches",
+        "tainted_params": [
+            "config",
+            "privkey",
+            "done"
+        ],
+        "params_types": {
+            "config": {
+                "auth": {
+                    "type": "any",
+                    "privkey": "any",
+                    "username": "any",
+                    "password": "any"
+                },
+                "url": "any"
+            },
+            "privkey": "any",
+            "done": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getBranches",
+                "fn_name": "830.getBranches-o25",
+                "fn_id": "683",
+                "source_fn_id": "683"
+            }
+        ]
+    }
+]

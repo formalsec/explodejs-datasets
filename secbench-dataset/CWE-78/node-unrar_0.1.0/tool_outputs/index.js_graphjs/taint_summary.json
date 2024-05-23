@@ -1,0 +1,51 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(execCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 23,
+        "sink_function": "164",
+        "source": "new module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "path": "any"
+            }
+        },
+        "returns": {
+            "source": "._execute",
+            "param_types": {
+                "args": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "dstPath": "string",
+                "cb": "function"
+            },
+            "tainted_params": [
+                "args",
+                "dstPath",
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "184.v8-o19",
+                "fn_id": "11",
+                "source_fn_id": "11"
+            },
+            {
+                "type": "Method",
+                "prop": "_execute",
+                "fn_name": "184.v23-o18",
+                "fn_id": "74",
+                "source_fn_id": "74"
+            }
+        ]
+    }
+]

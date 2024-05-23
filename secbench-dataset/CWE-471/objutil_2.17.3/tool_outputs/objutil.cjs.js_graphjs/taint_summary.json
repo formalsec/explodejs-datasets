@@ -1,0 +1,49 @@
+[
+    {
+        "filename": "../../src/objutil.cjs.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "n[p] = value;",
+        "sink_lineno": 142,
+        "sink_function": "920",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value",
+            "descriptor"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": {
+                "_union": [
+                    {
+                        "length": "number",
+                        "*": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any",
+            "descriptor": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any"
+                        }
+                    },
+                    "array"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1941.set-o72",
+                "fn_id": "726",
+                "source_fn_id": "726"
+            }
+        ]
+    }
+]

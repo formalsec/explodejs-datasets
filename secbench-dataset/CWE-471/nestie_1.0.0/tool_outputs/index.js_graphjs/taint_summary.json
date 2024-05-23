@@ -1,0 +1,27 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "tmp[key] = input[k];",
+        "sink_lineno": 29,
+        "sink_function": "172",
+        "source": "module.exports.nestie",
+        "tainted_params": [
+            "input",
+            "glue"
+        ],
+        "params_types": {
+            "input": "polluted-object",
+            "glue": "number"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "nestie",
+                "fn_name": "196.nestie-o7",
+                "fn_id": "42",
+                "source_fn_id": "42"
+            }
+        ]
+    }
+]

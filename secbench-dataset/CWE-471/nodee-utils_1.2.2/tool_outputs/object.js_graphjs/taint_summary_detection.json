@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
+        "sink_lineno": 212,
+        "sink_function": "1174"
+    },
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else current[parts[i]] = value;",
+        "sink_lineno": 210,
+        "sink_function": "1152"
+    },
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else parentObj[key] = value;",
+        "sink_lineno": 260,
+        "sink_function": "1619"
+    }
+]

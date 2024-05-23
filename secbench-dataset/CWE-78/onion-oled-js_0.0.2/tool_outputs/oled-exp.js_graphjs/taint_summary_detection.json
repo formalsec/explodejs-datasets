@@ -1,0 +1,37 @@
+[
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + ' power ' + mode);",
+        "sink_lineno": 34,
+        "sink_function": "58"
+    },
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + ' cursor ' + row + ',' + col);",
+        "sink_lineno": 60,
+        "sink_function": "107"
+    },
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + ' invert ' + mode);",
+        "sink_lineno": 69,
+        "sink_function": "125"
+    },
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + cursor + ' write \"' + string + '\"');",
+        "sink_lineno": 82,
+        "sink_function": "190"
+    },
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + ' write ' + direction);",
+        "sink_lineno": 91,
+        "sink_function": "208"
+    }
+]

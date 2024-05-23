@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "destination[prop] = source[prop];",
+        "sink_lineno": 31,
+        "sink_function": "203",
+        "source": "module.exports.default",
+        "tainted_params": [
+            "destination"
+        ],
+        "params_types": {
+            "destination": {
+                "*": {
+                    "constructor": "any",
+                    "*": "any"
+                }
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "default",
+                "fn_name": "255.merge-o3",
+                "fn_id": 24,
+                "source_fn_id": 24
+            }
+        ]
+    }
+]

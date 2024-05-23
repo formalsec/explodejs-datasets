@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, opts, function(e, stdout, stderr) {",
+        "sink_lineno": 15,
+        "sink_function": "103",
+        "source": "module.exports",
+        "tainted_params": [
+            "path",
+            "opts",
+            "cb"
+        ],
+        "params_types": {
+            "path": "string",
+            "opts": {
+                "timeout": "any"
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "638.v13-o9",
+                "fn_id": "14",
+                "source_fn_id": "14"
+            }
+        ]
+    }
+]

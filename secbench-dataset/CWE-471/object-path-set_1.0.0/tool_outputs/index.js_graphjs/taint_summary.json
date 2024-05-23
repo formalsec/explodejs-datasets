@@ -1,0 +1,62 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[key] = value;",
+        "sink_lineno": 19,
+        "sink_function": "119",
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value",
+            "delimiter"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": [
+                "any"
+            ],
+            "value": "any",
+            "delimiter": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "140.setPath-o6",
+                "fn_id": "3",
+                "source_fn_id": "3"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[key] = setPath(obj[key], arr, value, delimiter);",
+        "sink_lineno": 17,
+        "sink_function": "112",
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value",
+            "delimiter"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": [
+                "any"
+            ],
+            "value": "any",
+            "delimiter": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "140.setPath-o6",
+                "fn_id": "3",
+                "source_fn_id": "3"
+            }
+        ]
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/get.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('heroku config --app ' + app, function(err, stdout) {",
+        "sink_lineno": 3,
+        "sink_function": "118"
+    }
+]

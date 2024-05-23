@@ -12,17 +12,11 @@
             "val",
             "sep"
         ],
-        "param_types": {
-            "obj": {
-                "*": {
-                    "*": "any"
-                }
-            },
-            "path": {
-                "length": "number",
-                "0": "any",
-                "*": "any"
-            },
+        "params_types": {
+            "obj": "polluted-object | array",
+            "path": [
+                "any"
+            ],
             "val": {
                 "_union": [
                     "function",

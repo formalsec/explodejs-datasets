@@ -1,0 +1,37 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "ref[segment] = value;",
+        "sink_lineno": 221,
+        "sink_function": "964"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "res[segment] = exports.reach(source, sourcePath, options);",
+        "sink_lineno": 894,
+        "sink_function": "4541"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = value;",
+        "sink_lineno": 140,
+        "sink_function": "594"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = value;",
+        "sink_lineno": 137,
+        "sink_function": "581"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = exports.clone(value);",
+        "sink_lineno": 127,
+        "sink_function": "543"
+    }
+]

@@ -10,7 +10,7 @@
             "path",
             "value"
         ],
-        "param_types": {
+        "params_types": {
             "path": "string",
             "value": "any"
         },

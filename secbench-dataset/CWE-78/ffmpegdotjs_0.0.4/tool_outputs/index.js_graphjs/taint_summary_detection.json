@@ -1,0 +1,79 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 8,
+        "sink_function": "55"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 27,
+        "sink_function": "124"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 46,
+        "sink_function": "193"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 65,
+        "sink_function": "262"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 83,
+        "sink_function": "335"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 101,
+        "sink_function": "424"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 119,
+        "sink_function": "509"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 137,
+        "sink_function": "584"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 155,
+        "sink_function": "668"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 173,
+        "sink_function": "752"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 191,
+        "sink_function": "828"
+    }
+]

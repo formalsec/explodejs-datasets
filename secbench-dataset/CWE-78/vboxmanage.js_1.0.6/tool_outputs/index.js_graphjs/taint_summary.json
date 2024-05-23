@@ -1,0 +1,36 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(vBoxManageBinary + ' ' + command.join(' '), {}, function (err, stdout, stderr) {",
+        "sink_lineno": 76,
+        "sink_function": "367",
+        "source": "module.exports.manage",
+        "tainted_params": [
+            "command",
+            "options"
+        ],
+        "params_types": {
+            "command": [
+                "any"
+            ],
+            "options": {
+                "_union": [
+                    {
+                        "*": "any"
+                    },
+                    "array"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "manage",
+                "fn_name": "2346.v54-o25",
+                "fn_id": 163,
+                "source_fn_id": 163
+            }
+        ]
+    }
+]

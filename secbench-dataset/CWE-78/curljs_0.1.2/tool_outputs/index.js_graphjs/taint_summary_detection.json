@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(curlString, function(err, stdout, stderr) {",
+        "sink_lineno": 37,
+        "sink_function": "100"
+    }
+]

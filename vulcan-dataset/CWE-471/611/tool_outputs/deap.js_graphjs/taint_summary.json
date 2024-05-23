@@ -10,12 +10,8 @@
             "a",
             "b"
         ],
-        "param_types": {
-            "a": {
-                "*": {
-                    "*": "any"
-                }
-            },
+        "params_types": {
+            "a": "polluted-object | array",
             "b": {
                 "_union": [
                     "array",

@@ -1,0 +1,43 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, { cwd: base }, function(err, stdout){",
+        "sink_lineno": 90,
+        "sink_function": "279",
+        "source": "new module.exports",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": {
+                "base": "any",
+                "pretty": "any"
+            }
+        },
+        "returns": {
+            "source": ".*",
+            "param_types": {
+                "opts": "string"
+            },
+            "tainted_params": [
+                "opts"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "604.v23-o80",
+                "fn_id": "15",
+                "source_fn_id": "15"
+            },
+            {
+                "type": "Method",
+                "prop": "*",
+                "fn_name": "604.v34-o79",
+                "fn_id": 204,
+                "source_fn_id": 204
+            }
+        ]
+    }
+]

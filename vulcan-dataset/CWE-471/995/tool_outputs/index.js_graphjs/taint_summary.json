@@ -9,7 +9,7 @@
         "tainted_params": [
             "undefined"
         ],
-        "param_types": {
+        "params_types": {
             "undefined": "any"
         },
         "call_paths": [
@@ -31,7 +31,7 @@
         "tainted_params": [
             "undefined"
         ],
-        "param_types": {
+        "params_types": {
             "undefined": "any"
         },
         "call_paths": [

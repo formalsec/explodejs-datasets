@@ -1,0 +1,100 @@
+[
+    {
+        "filename": "../../src/objectUtils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[key] = child;",
+        "sink_lineno": 239,
+        "sink_function": "1070",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": {
+                "_union": [
+                    {
+                        "*": "any",
+                        "length": {
+                            "_union": [
+                                "number",
+                                "string"
+                            ]
+                        }
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "value": {
+                "_union": [
+                    "array",
+                    "function",
+                    "number",
+                    "object",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1817.set-o82",
+                "fn_id": "1006",
+                "source_fn_id": "1006"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/objectUtils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[path[path.length - 1]] = value;",
+        "sink_lineno": 246,
+        "sink_function": "1121",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": {
+                "_union": [
+                    {
+                        "*": "any",
+                        "length": {
+                            "_union": [
+                                "number",
+                                "string"
+                            ]
+                        }
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "value": {
+                "_union": [
+                    "array",
+                    "function",
+                    "number",
+                    "object",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1817.set-o82",
+                "fn_id": "1006",
+                "source_fn_id": "1006"
+            }
+        ]
+    }
+]

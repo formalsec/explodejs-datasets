@@ -1,0 +1,44 @@
+[
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('git add ' + files, function(err){",
+        "sink_lineno": 13,
+        "sink_function": "73"
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('git commit ' + options + ' -m \\\"' + message + '\\\"', function(err){",
+        "sink_lineno": 27,
+        "sink_function": "137"
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('git checkout -- ' + file, function(err){",
+        "sink_lineno": 126,
+        "sink_function": "553"
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('git checkout ' + branch, function(err, result){",
+        "sink_lineno": 223,
+        "sink_function": "1030"
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('git checkout -b ' + newBranchName, function(err){",
+        "sink_lineno": 236,
+        "sink_function": "1076"
+    },
+    {
+        "filename": "../../src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"git branch -d \" + branch, function(err){",
+        "sink_lineno": 249,
+        "sink_function": "1121"
+    }
+]

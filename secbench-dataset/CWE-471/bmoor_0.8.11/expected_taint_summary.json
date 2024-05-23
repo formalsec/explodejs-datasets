@@ -1,0 +1,14 @@
+[
+  {
+    "filename" : "src/core.js",
+    "vuln_type": "prototype-pollution",
+    "source": "module.exports.set",
+    "sink": "??",
+    "tainted_params": [ "root", "space", "value" ],
+    "params_types": {
+      "root" : "object",
+      "space" : "string",
+      "value" : "string"
+    }
+  }
+]

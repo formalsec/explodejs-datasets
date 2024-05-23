@@ -1,0 +1,108 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(`fsutil volume diskfree ${driveOrMount}:`, {}, cb);",
+        "sink_lineno": 49,
+        "sink_function": "232",
+        "source": "module.exports.check",
+        "tainted_params": [
+            "driveOrMount",
+            "callback"
+        ],
+        "params_types": {
+            "driveOrMount": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "check",
+                "fn_name": "408.v35-o8",
+                "fn_id": 79,
+                "source_fn_id": 79
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {}, cb);",
+        "sink_lineno": 51,
+        "sink_function": "248",
+        "source": "module.exports.check",
+        "tainted_params": [
+            "driveOrMount",
+            "callback"
+        ],
+        "params_types": {
+            "driveOrMount": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "check",
+                "fn_name": "408.v35-o8",
+                "fn_id": 79,
+                "source_fn_id": 79
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "output = cp.execSync(`fsutil volume diskfree ${driveOrMount}:`, {});",
+        "sink_lineno": 65,
+        "sink_function": "353",
+        "source": "module.exports.checkSync",
+        "tainted_params": [
+            "driveOrMount"
+        ],
+        "params_types": {
+            "driveOrMount": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "checkSync",
+                "fn_name": "408.v50-o13",
+                "fn_id": "303",
+                "source_fn_id": "303"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "output = cp.execSync(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {});",
+        "sink_lineno": 67,
+        "sink_function": "368",
+        "source": "module.exports.checkSync",
+        "tainted_params": [
+            "driveOrMount"
+        ],
+        "params_types": {
+            "driveOrMount": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "checkSync",
+                "fn_name": "408.v50-o13",
+                "fn_id": "303",
+                "source_fn_id": "303"
+            }
+        ]
+    }
+]

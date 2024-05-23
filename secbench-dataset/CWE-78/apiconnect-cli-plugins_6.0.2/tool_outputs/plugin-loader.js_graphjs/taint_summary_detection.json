@@ -1,0 +1,65 @@
+[
+    {
+        "filename": "../../src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "pluginInfo = require(path.join(pluginPath, 'package.json'));",
+        "sink_lineno": 48,
+        "sink_function": "146"
+    },
+    {
+        "filename": "../../src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "maybePlugin = require(pluginPath);",
+        "sink_lineno": 63,
+        "sink_function": "237"
+    },
+    {
+        "filename": "../../src/plugin-loader.js",
+        "vuln_type": "command-injection",
+        "sink": "var proc = exec(installCmd, function(err) {",
+        "sink_lineno": 181,
+        "sink_function": "1132"
+    },
+    {
+        "filename": "../../src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "var pkg = require(path.join(pluginDir, 'package.json'));",
+        "sink_lineno": 204,
+        "sink_function": "1045"
+    },
+    {
+        "filename": "../../src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "if (!require(pluginDir).getVersion ||",
+        "sink_lineno": 240,
+        "sink_function": "1246"
+    },
+    {
+        "filename": "../../src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "typeof require(pluginDir).getVersion !== 'function') {",
+        "sink_lineno": 241,
+        "sink_function": "1257"
+    },
+    {
+        "filename": "../../src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "var pkg = require(path.join(pluginDir, 'package.json'));",
+        "sink_lineno": 243,
+        "sink_function": "1285"
+    },
+    {
+        "filename": "../../src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "var plugin = require(pluginDir);",
+        "sink_lineno": 244,
+        "sink_function": "1289"
+    },
+    {
+        "filename": "../../src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "return require(pluginDir).getVersion();",
+        "sink_lineno": 257,
+        "sink_function": "1396"
+    }
+]

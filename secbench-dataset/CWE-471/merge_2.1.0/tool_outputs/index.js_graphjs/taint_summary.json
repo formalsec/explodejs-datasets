@@ -1,0 +1,40 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
+        "sink_lineno": 59,
+        "sink_function": "467",
+        "source": "module.exports.merge",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "628.merge-o32",
+                "fn_id": 148,
+                "source_fn_id": 148
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
+        "sink_lineno": 59,
+        "sink_function": "467",
+        "source": "module.exports.recursive",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "recursive",
+                "fn_name": "628.recursive-o28",
+                "fn_id": 207,
+                "source_fn_id": 207
+            }
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "filename": "../../src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = clone(sourceVal);",
+        "sink_lineno": 38,
+        "sink_function": "201",
+        "source": "module.exports",
+        "tainted_params": [
+            "target"
+        ],
+        "params_types": {
+            "target": "object"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "278.merge-o13",
+                "fn_id": 212,
+                "source_fn_id": 212
+            }
+        ]
+    },
+    {
+        "filename": "../../src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = _merge(targetVal, sourceVal);",
+        "sink_lineno": 36,
+        "sink_function": "190",
+        "source": "module.exports",
+        "tainted_params": [
+            "target"
+        ],
+        "params_types": {
+            "target": "object"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "278.merge-o13",
+                "fn_id": 212,
+                "source_fn_id": 212
+            }
+        ]
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(script)",
+        "sink_lineno": 16,
+        "sink_function": "89",
+        "source": "module.exports.getCredential",
+        "tainted_params": [
+            "target",
+            "pythonLancher"
+        ],
+        "params_types": {
+            "target": "string",
+            "pythonLancher": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getCredential",
+                "fn_name": "135.getCredential-o15",
+                "fn_id": "80",
+                "source_fn_id": "80"
+            }
+        ]
+    }
+]

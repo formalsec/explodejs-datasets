@@ -11,7 +11,7 @@
             "keypath",
             "value"
         ],
-        "param_types": {
+        "params_types": {
             "object": {
                 "*": {
                     "*": {

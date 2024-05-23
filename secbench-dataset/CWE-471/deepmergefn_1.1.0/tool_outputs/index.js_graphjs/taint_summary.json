@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[prop] = source[prop];",
+        "sink_lineno": 12,
+        "sink_function": "58",
+        "source": "module.exports",
+        "tainted_params": [
+            "target",
+            "source"
+        ],
+        "params_types": {
+            "target": "object",
+            "source": "polluted-object"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "76.deepMerge-o4",
+                "fn_id": "1",
+                "source_fn_id": "1"
+            }
+        ]
+    }
+]

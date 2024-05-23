@@ -11,14 +11,8 @@
             "key",
             "value"
         ],
-        "param_types": {
-            "obj": {
-                "*": {
-                    "*": {
-                        "*": "any"
-                    }
-                }
-            },
+        "params_types": {
+            "obj": "polluted-object | array",
             "key": {
                 "_union": [
                     "array",

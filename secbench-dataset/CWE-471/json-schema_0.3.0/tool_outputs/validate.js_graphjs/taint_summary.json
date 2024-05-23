@@ -1,0 +1,119 @@
+[
+    {
+        "filename": "../../src/validate.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "value[i] = options.coerce(value[i], propDef);",
+        "sink_lineno": 149,
+        "sink_function": "872",
+        "source": "module.exports._validate",
+        "tainted_params": [
+            "instance",
+            "schema",
+            "options"
+        ],
+        "params_types": {
+            "instance": {
+                "*": {
+                    "*": {
+                        "_union": [
+                            {
+                                "length": "any",
+                                "*": {
+                                    "length": "any"
+                                }
+                            },
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "length": "any",
+                    "$schema": "any"
+                },
+                "length": "any",
+                "$schema": "any",
+                "i": {
+                    "_union": [
+                        "number",
+                        "string",
+                        "undefined"
+                    ]
+                }
+            },
+            "schema": {
+                "type": {
+                    "_union": [
+                        "object",
+                        "string"
+                    ]
+                },
+                "name": "any",
+                "readonly": "any",
+                "'extends'": "any",
+                "required": "any",
+                "disallow": {
+                    "_union": [
+                        {
+                            "length": "any",
+                            "*": "any"
+                        },
+                        "array",
+                        "string"
+                    ]
+                },
+                "items": {
+                    "*": {
+                        "_union": [
+                            "number",
+                            "string"
+                        ]
+                    }
+                },
+                "minItems": "string",
+                "maxItems": "string",
+                "properties": {
+                    "*": {
+                        "default": "any",
+                        "requires": "string"
+                    }
+                },
+                "additionalProperties": "any",
+                "pattern": "any",
+                "maxLength": "string",
+                "minLength": "string",
+                "minimum": "any",
+                "maximum": "any",
+                "'enum'": {
+                    "_union": [
+                        {
+                            "length": "any",
+                            "*": "any"
+                        },
+                        "array",
+                        "string"
+                    ]
+                },
+                "maxDecimal": "string"
+            },
+            "options": {
+                "changing": {
+                    "_union": [
+                        "number",
+                        "string"
+                    ]
+                },
+                "coerce": "any",
+                "existingOnly": "any",
+                "filter": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "_validate",
+                "fn_name": "2060.v335-o68",
+                "fn_id": 189,
+                "source_fn_id": 189
+            }
+        ]
+    }
+]

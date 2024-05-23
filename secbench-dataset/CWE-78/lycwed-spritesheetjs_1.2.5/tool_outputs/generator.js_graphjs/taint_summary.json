@@ -1,0 +1,221 @@
+[
+    {
+        "filename": "../../src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, next);",
+        "sink_lineno": 85,
+        "sink_function": "316",
+        "source": "module.exports.treatImages",
+        "tainted_params": [
+            "files",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "files": "array",
+            "options": {
+                "scale": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "fuzz": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "trim": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "treatImages",
+                "fn_name": "2404.v39-o53",
+                "fn_id": 113,
+                "source_fn_id": 113
+            }
+        ]
+    },
+    {
+        "filename": "../../src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"identify \" + filePaths.join(\" \"), function (err, stdout) {",
+        "sink_lineno": 102,
+        "sink_function": "819",
+        "source": "module.exports.getImagesSizes",
+        "tainted_params": [
+            "files",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "files": {
+                "*": {
+                    "width": "any",
+                    "height": "any",
+                    "area": "any",
+                    "trimmed": "any",
+                    "trim": {
+                        "x": "any",
+                        "y": "any",
+                        "width": "any",
+                        "height": "any"
+                    }
+                }
+            },
+            "options": {
+                "padding": "number",
+                "divisibleByTwo": "any",
+                "trim": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getImagesSizes",
+                "fn_name": "2404.v118-o60",
+                "fn_id": "341",
+                "source_fn_id": "341"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command.join(\" \"), function (err) {",
+        "sink_lineno": 196,
+        "sink_function": "1545",
+        "source": "module.exports.generateImage",
+        "tainted_params": [
+            "files",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "files": {
+                "*": {
+                    "path": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "x": "string",
+                    "y": "string",
+                    "originalPath": "any"
+                }
+            },
+            "options": {
+                "width": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "height": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "path": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "name": "string",
+                "padding": "string",
+                "format": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "tinify": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "generateImage",
+                "fn_name": "2404.v231-o74",
+                "fn_id": "982",
+                "source_fn_id": "982"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"magick identify \" + filePath, function (err, stdout) {",
+        "sink_lineno": 204,
+        "sink_function": "1249",
+        "source": "module.exports.generateImage",
+        "tainted_params": [
+            "files",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "files": {
+                "*": {
+                    "path": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "x": "string",
+                    "y": "string",
+                    "originalPath": "any"
+                }
+            },
+            "options": {
+                "width": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "height": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "path": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "name": "string",
+                "padding": "string",
+                "format": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "tinify": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "generateImage",
+                "fn_name": "2404.v231-o74",
+                "fn_id": 982,
+                "source_fn_id": 982
+            }
+        ]
+    }
+]

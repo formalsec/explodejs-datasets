@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[prop] = source[prop];",
+        "sink_lineno": 12,
+        "sink_function": "58"
+    }
+]

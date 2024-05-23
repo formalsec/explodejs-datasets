@@ -11,7 +11,7 @@
             "path",
             "value"
         ],
-        "param_types": {
+        "params_types": {
             "obj": {
                 "*": {
                     "*": {
@@ -28,10 +28,7 @@
                 },
                 "v38": "string"
             },
-            "path": {
-                "*": "any",
-                "length": "any"
-            },
+            "path": "{'*': 'any', 'length': 'any'} | array | string",
             "value": "any"
         },
         "call_paths": [

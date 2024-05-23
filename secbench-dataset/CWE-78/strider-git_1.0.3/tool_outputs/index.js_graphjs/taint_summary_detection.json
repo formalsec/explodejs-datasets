@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`git ls-remote -h ${httpUrl(config)[0]}`, function (err, stdout) {",
+        "sink_lineno": 151,
+        "sink_function": "821"
+    }
+]

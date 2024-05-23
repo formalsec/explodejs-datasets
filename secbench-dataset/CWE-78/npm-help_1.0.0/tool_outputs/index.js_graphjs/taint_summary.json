@@ -1,0 +1,25 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var latestVersion = execSync('tnpm view ' + module + ' version').toString();",
+        "sink_lineno": 13,
+        "sink_function": "24",
+        "source": "module.exports.latestVersion",
+        "tainted_params": [
+            "module"
+        ],
+        "params_types": {
+            "module": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "latestVersion",
+                "fn_name": "73.v5-o6",
+                "fn_id": "13",
+                "source_fn_id": "13"
+            }
+        ]
+    }
+]

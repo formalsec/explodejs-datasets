@@ -7,7 +7,7 @@
         "sink_function": "187",
         "source": "module.exports.extend",
         "tainted_params": [],
-        "param_types": {},
+        "params_types": {},
         "call_paths": [
             {
                 "type": "Method",

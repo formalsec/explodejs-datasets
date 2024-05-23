@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/bestzip.js",
+        "vuln_type": "command-injection",
+        "sink": "const zipProcess = cp.exec(command, {",
+        "sink_lineno": 27,
+        "sink_function": "116"
+    }
+]

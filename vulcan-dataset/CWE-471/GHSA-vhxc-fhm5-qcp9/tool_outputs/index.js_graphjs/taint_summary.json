@@ -11,7 +11,7 @@
             "name",
             "fn"
         ],
-        "param_types": {
+        "params_types": {
             "type": "string",
             "name": "string",
             "fn": "any"

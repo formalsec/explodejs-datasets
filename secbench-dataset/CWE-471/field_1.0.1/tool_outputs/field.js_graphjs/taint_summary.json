@@ -1,0 +1,102 @@
+[
+    {
+        "filename": "../../src/field.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[field] = value",
+        "sink_lineno": 50,
+        "sink_function": "281",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "topObj",
+            "fields",
+            "value"
+        ],
+        "params_types": {
+            "topObj": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": {
+                                "*": {
+                                    "*": "any"
+                                }
+                            }
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "fields": {
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "413.set-o10",
+                "fn_id": 130,
+                "source_fn_id": 130
+            }
+        ]
+    },
+    {
+        "filename": "../../src/field.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[field] = value",
+        "sink_lineno": 39,
+        "sink_function": "221",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "topObj",
+            "fields",
+            "value"
+        ],
+        "params_types": {
+            "topObj": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": {
+                                "*": {
+                                    "*": "any"
+                                }
+                            }
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "fields": {
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "413.set-o10",
+                "fn_id": 130,
+                "source_fn_id": 130
+            }
+        ]
+    }
+]

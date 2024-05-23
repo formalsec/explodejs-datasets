@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/AdbDriver.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process_1.exec(execCmd, option || { stdio: 'inherit' }, (err, stdout, stderr) => {",
+        "sink_lineno": 26,
+        "sink_function": "196"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "result[key] = merge(target[key], additional[key]);",
+        "sink_lineno": 286,
+        "sink_function": "957"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "result[key] = value;",
+        "sink_lineno": 284,
+        "sink_function": "937"
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const childProcess = execSync(",
+        "sink_lineno": 54,
+        "sink_function": "389"
+    }
+]

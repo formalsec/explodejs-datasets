@@ -11,15 +11,9 @@
             "transform",
             "options"
         ],
-        "param_types": {
-            "source": {
-                "length": "any",
-                "*": "any"
-            },
-            "transform": {
-                "length": "any",
-                "*": "any"
-            },
+        "params_types": {
+            "source": "{'length': 'any', '*': 'any'} | array | string",
+            "transform": "{'length': 'any', '*': 'any'} | array | string",
             "options": {
                 "separator": "array",
                 "length": "any",
@@ -49,32 +43,11 @@
             "isNullOverride",
             "isMergeArrays"
         ],
-        "param_types": {
-            "target": {
-                "*": "any",
-                "length": "any"
-            },
-            "source": {
-                "*": {
-                    "*": "any",
-                    "length": "any"
-                },
-                "length": "any"
-            },
-            "isNullOverride": {
-                "*": {
-                    "*": "any",
-                    "length": "any"
-                },
-                "length": "any"
-            },
-            "isMergeArrays": {
-                "*": {
-                    "*": "any",
-                    "length": "any"
-                },
-                "length": "any"
-            }
+        "params_types": {
+            "target": "{'*': 'any', 'length': 'any'} | array | string",
+            "source": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
+            "isNullOverride": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
+            "isMergeArrays": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string"
         },
         "call_paths": [
             {
@@ -99,32 +72,11 @@
             "isNullOverride",
             "isMergeArrays"
         ],
-        "param_types": {
-            "target": {
-                "*": "any",
-                "length": "any"
-            },
-            "source": {
-                "*": {
-                    "*": "any",
-                    "length": "any"
-                },
-                "length": "any"
-            },
-            "isNullOverride": {
-                "*": {
-                    "*": "any",
-                    "length": "any"
-                },
-                "length": "any"
-            },
-            "isMergeArrays": {
-                "*": {
-                    "*": "any",
-                    "length": "any"
-                },
-                "length": "any"
-            }
+        "params_types": {
+            "target": "{'*': 'any', 'length': 'any'} | array | string",
+            "source": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
+            "isNullOverride": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
+            "isMergeArrays": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string"
         },
         "call_paths": [
             {
@@ -149,32 +101,11 @@
             "isNullOverride",
             "isMergeArrays"
         ],
-        "param_types": {
-            "target": {
-                "*": "any",
-                "length": "any"
-            },
-            "source": {
-                "*": {
-                    "*": "any",
-                    "length": "any"
-                },
-                "length": "any"
-            },
-            "isNullOverride": {
-                "*": {
-                    "*": "any",
-                    "length": "any"
-                },
-                "length": "any"
-            },
-            "isMergeArrays": {
-                "*": {
-                    "*": "any",
-                    "length": "any"
-                },
-                "length": "any"
-            }
+        "params_types": {
+            "target": "{'*': 'any', 'length': 'any'} | array | string",
+            "source": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
+            "isNullOverride": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
+            "isMergeArrays": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string"
         },
         "call_paths": [
             {

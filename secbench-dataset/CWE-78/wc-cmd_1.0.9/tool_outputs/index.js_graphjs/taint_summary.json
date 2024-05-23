@@ -1,0 +1,35 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = exec(command, {",
+        "sink_lineno": 49,
+        "sink_function": "221",
+        "source": "module.exports",
+        "tainted_params": [
+            "command",
+            "callback",
+            "log"
+        ],
+        "params_types": {
+            "command": {
+                "_union": [
+                    {
+                        "*": "any"
+                    },
+                    "array"
+                ]
+            },
+            "callback": "any",
+            "log": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "440.cmd-o5",
+                "fn_id": 1,
+                "source_fn_id": 1
+            }
+        ]
+    }
+]

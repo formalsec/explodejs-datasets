@@ -1,0 +1,147 @@
+[
+    {
+        "filename": "../../src/properties-reader.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.read(fs.readFileSync(sourceFile, typeof encoding === 'string' && encoding || this._encoding));",
+        "sink_lineno": 75,
+        "sink_function": "213",
+        "source": "new module.exports",
+        "tainted_params": [
+            "sourceFile",
+            "encoding",
+            "propertiesAppender"
+        ],
+        "params_types": {
+            "sourceFile": "string",
+            "encoding": "string",
+            "propertiesAppender": "any"
+        },
+        "returns": {
+            "source": ".append",
+            "param_types": {
+                "sourceFile": "string",
+                "encoding": "string"
+            },
+            "tainted_params": [
+                "sourceFile",
+                "encoding"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1509.v26-o25",
+                "fn_id": "13",
+                "source_fn_id": "13"
+            },
+            {
+                "type": "Method",
+                "prop": "append",
+                "fn_name": "1509.v34-o24",
+                "fn_id": "188",
+                "source_fn_id": "188"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/properties-reader.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(destFile, content, (err) => {",
+        "sink_lineno": 341,
+        "sink_function": "1427",
+        "source": "new module.exports",
+        "tainted_params": [
+            "sourceFile",
+            "encoding",
+            "propertiesAppender"
+        ],
+        "params_types": {
+            "sourceFile": "string",
+            "encoding": "string",
+            "propertiesAppender": "any"
+        },
+        "returns": {
+            "source": ".save",
+            "param_types": {
+                "destFile": "string",
+                "onComplete": {
+                    "_union": [
+                        {
+                            "length": "any"
+                        },
+                        "array",
+                        "string"
+                    ]
+                }
+            },
+            "tainted_params": [
+                "destFile",
+                "onComplete"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1509.v193-o96",
+                "fn_id": "13",
+                "source_fn_id": "13"
+            },
+            {
+                "type": "Method",
+                "prop": "save",
+                "fn_name": "1509.v208-o95",
+                "fn_id": 1389,
+                "source_fn_id": 1389
+            }
+        ]
+    },
+    {
+        "filename": "../../src/properties-reader.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "source[expanded[0]] = parsedValue;",
+        "sink_lineno": 200,
+        "sink_function": "836",
+        "source": "new module.exports",
+        "tainted_params": [
+            "sourceFile",
+            "encoding",
+            "propertiesAppender"
+        ],
+        "params_types": {
+            "sourceFile": "string",
+            "encoding": "string",
+            "propertiesAppender": "any"
+        },
+        "returns": {
+            "source": ".set",
+            "param_types": {
+                "key": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "value": "string"
+            },
+            "tainted_params": [
+                "key",
+                "value"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1509.v97-o62",
+                "fn_id": "13",
+                "source_fn_id": "13"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1509.v123-o61",
+                "fn_id": "662",
+                "source_fn_id": "662"
+            }
+        ]
+    }
+]

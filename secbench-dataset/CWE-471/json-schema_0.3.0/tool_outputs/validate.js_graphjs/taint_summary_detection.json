@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/validate.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "value[i] = options.coerce(value[i], propDef);",
+        "sink_lineno": 149,
+        "sink_function": "872"
+    }
+]

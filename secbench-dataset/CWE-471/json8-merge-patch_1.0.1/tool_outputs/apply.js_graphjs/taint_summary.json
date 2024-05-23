@@ -1,0 +1,33 @@
+[
+    {
+        "filename": "../../src/apply.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "doc[k] = apply(doc[k], v);",
+        "sink_lineno": 25,
+        "sink_function": "105",
+        "source": "module.exports",
+        "tainted_params": [
+            "doc",
+            "patch"
+        ],
+        "params_types": {
+            "doc": "object",
+            "patch": {
+                "_union": [
+                    {
+                        "*": "any"
+                    },
+                    "array"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "121.apply-o4",
+                "fn_id": "5",
+                "source_fn_id": "5"
+            }
+        ]
+    }
+]

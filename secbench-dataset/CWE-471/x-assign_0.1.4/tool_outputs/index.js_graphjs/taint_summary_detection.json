@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "acc[key] = value;",
+        "sink_lineno": 34,
+        "sink_function": "188"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "acc[key] = value;",
+        "sink_lineno": 31,
+        "sink_function": "179"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "acc[key] = acc[key] || {};",
+        "sink_lineno": 24,
+        "sink_function": "114"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "acc[key] =",
+        "sink_lineno": 19,
+        "sink_function": "92"
+    }
+]

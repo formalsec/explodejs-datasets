@@ -9,7 +9,7 @@
         "tainted_params": [
             "clone"
         ],
-        "param_types": {
+        "params_types": {
             "clone": "bool"
         },
         "returns": {
@@ -47,7 +47,7 @@
         "tainted_params": [
             "clone"
         ],
-        "param_types": {
+        "params_types": {
             "clone": "bool"
         },
         "returns": {

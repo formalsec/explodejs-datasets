@@ -1,0 +1,100 @@
+[
+    {
+        "filename": "../../src/objectUtils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "currentNode[currentProperty] = getContainer(property[i + 1]);",
+        "sink_lineno": 112,
+        "sink_function": "480",
+        "source": "module.exports.unflatten",
+        "tainted_params": [
+            "object",
+            "separator"
+        ],
+        "params_types": {
+            "object": {
+                "_union": [
+                    {
+                        "*": "any"
+                    },
+                    "array"
+                ]
+            },
+            "separator": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "unflatten",
+                "fn_name": "1596.unflatten-o37",
+                "fn_id": 368,
+                "source_fn_id": 368
+            }
+        ]
+    },
+    {
+        "filename": "../../src/objectUtils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "currentNode[currentProperty] = messages;",
+        "sink_lineno": 110,
+        "sink_function": "461",
+        "source": "module.exports.unflatten",
+        "tainted_params": [
+            "object",
+            "separator"
+        ],
+        "params_types": {
+            "object": {
+                "_union": [
+                    {
+                        "*": "any"
+                    },
+                    "array"
+                ]
+            },
+            "separator": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "unflatten",
+                "fn_name": "1596.unflatten-o37",
+                "fn_id": 368,
+                "source_fn_id": 368
+            }
+        ]
+    },
+    {
+        "filename": "../../src/objectUtils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[property.shift()] = value;",
+        "sink_lineno": 146,
+        "sink_function": "639",
+        "source": "module.exports.deepSet",
+        "tainted_params": [
+            "object",
+            "property",
+            "value"
+        ],
+        "params_types": {
+            "object": "object",
+            "property": [
+                "any"
+            ],
+            "value": {
+                "_union": [
+                    "object",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "deepSet",
+                "fn_name": "1596.deepSet-o44",
+                "fn_id": "525",
+                "source_fn_id": "525"
+            }
+        ]
+    }
+]

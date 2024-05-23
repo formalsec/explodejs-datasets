@@ -1,0 +1,74 @@
+[
+    {
+        "filename": "../../src/parser.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(file, (err, data) => {",
+        "sink_lineno": 750,
+        "sink_function": "3124",
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".parseFile",
+            "param_types": {
+                "file": "string",
+                "cb": "function"
+            },
+            "tainted_params": [
+                "file",
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "3160.ION-o96",
+                "fn_id": "3020",
+                "source_fn_id": "3020"
+            },
+            {
+                "type": "Method",
+                "prop": "parseFile",
+                "fn_name": "3160.v362-o95",
+                "fn_id": "3067",
+                "source_fn_id": "3067"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/parser.js",
+        "vuln_type": "path-traversal",
+        "sink": "return parse(fs.readFileSync(file))",
+        "sink_lineno": 762,
+        "sink_function": "3134",
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".parseFile",
+            "param_types": {
+                "file": "string",
+                "cb": "function"
+            },
+            "tainted_params": [
+                "file",
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "3160.ION-o96",
+                "fn_id": "3020",
+                "source_fn_id": "3020"
+            },
+            {
+                "type": "Method",
+                "prop": "parseFile",
+                "fn_name": "3160.v362-o95",
+                "fn_id": "3067",
+                "source_fn_id": "3067"
+            }
+        ]
+    }
+]

@@ -1,0 +1,109 @@
+[
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
+        "sink_lineno": 212,
+        "sink_function": "1174",
+        "source": "module.exports.deepSet",
+        "tainted_params": [
+            "parent",
+            "key",
+            "value",
+            "mode"
+        ],
+        "params_types": {
+            "parent": "object",
+            "key": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            },
+            "value": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            },
+            "mode": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "deepSet",
+                "fn_name": "2357.deepSet-o65",
+                "fn_id": "1055",
+                "source_fn_id": "1055"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else current[parts[i]] = value;",
+        "sink_lineno": 210,
+        "sink_function": "1152",
+        "source": "module.exports.deepSet",
+        "tainted_params": [
+            "parent",
+            "key",
+            "value",
+            "mode"
+        ],
+        "params_types": {
+            "parent": "object",
+            "key": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            },
+            "value": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            },
+            "mode": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "deepSet",
+                "fn_name": "2357.deepSet-o65",
+                "fn_id": "1055",
+                "source_fn_id": "1055"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else parentObj[key] = value;",
+        "sink_lineno": 260,
+        "sink_function": "1619",
+        "source": "module.exports.deepReplace",
+        "tainted_params": [
+            "parentObj",
+            "cb",
+            "keyPath"
+        ],
+        "params_types": {
+            "parentObj": "object",
+            "cb": "function",
+            "keyPath": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "deepReplace",
+                "fn_name": "2357.deepReplace-o70",
+                "fn_id": "1491",
+                "source_fn_id": "1491"
+            }
+        ]
+    }
+]

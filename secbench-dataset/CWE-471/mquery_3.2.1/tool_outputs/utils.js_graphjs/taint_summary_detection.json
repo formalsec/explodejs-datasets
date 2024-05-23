@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = from[key];",
+        "sink_lineno": 142,
+        "sink_function": "629"
+    },
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = from[key];",
+        "sink_lineno": 137,
+        "sink_function": "590"
+    },
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = clone(from[key]);",
+        "sink_lineno": 169,
+        "sink_function": "740"
+    },
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = clone(from[key]);",
+        "sink_lineno": 164,
+        "sink_function": "697"
+    }
+]

@@ -1,0 +1,307 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 8,
+        "sink_function": "55",
+        "source": "module.exports.generateimage",
+        "tainted_params": [
+            "input",
+            "output"
+        ],
+        "params_types": {
+            "input": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "generateimage",
+                "fn_name": "929.v12-o7",
+                "fn_id": 13,
+                "source_fn_id": 13
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 27,
+        "sink_function": "124",
+        "source": "module.exports.convertvideo",
+        "tainted_params": [
+            "input",
+            "output"
+        ],
+        "params_types": {
+            "input": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "convertvideo",
+                "fn_name": "929.v23-o11",
+                "fn_id": 82,
+                "source_fn_id": 82
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 46,
+        "sink_function": "193",
+        "source": "module.exports.generategif",
+        "tainted_params": [
+            "input",
+            "output"
+        ],
+        "params_types": {
+            "input": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "generategif",
+                "fn_name": "929.v34-o15",
+                "fn_id": 151,
+                "source_fn_id": 151
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 65,
+        "sink_function": "262",
+        "source": "module.exports.extractaudio",
+        "tainted_params": [
+            "input",
+            "output"
+        ],
+        "params_types": {
+            "input": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "extractaudio",
+                "fn_name": "929.v45-o19",
+                "fn_id": 220,
+                "source_fn_id": 220
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 83,
+        "sink_function": "335",
+        "source": "module.exports.compressvideo",
+        "tainted_params": [
+            "input",
+            "output"
+        ],
+        "params_types": {
+            "input": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "compressvideo",
+                "fn_name": "929.v57-o23",
+                "fn_id": 289,
+                "source_fn_id": 289
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 101,
+        "sink_function": "424",
+        "source": "module.exports.addoverlayimagetime",
+        "tainted_params": [
+            "input1",
+            "input2",
+            "start",
+            "end",
+            "x",
+            "y",
+            "output"
+        ],
+        "params_types": {
+            "input1": "string",
+            "input2": "string",
+            "start": "string",
+            "end": "string",
+            "x": "string",
+            "y": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "addoverlayimagetime",
+                "fn_name": "929.v70-o32",
+                "fn_id": 362,
+                "source_fn_id": 362
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 119,
+        "sink_function": "509",
+        "source": "module.exports.addoverlayimage",
+        "tainted_params": [
+            "input1",
+            "input2",
+            "x",
+            "y",
+            "output"
+        ],
+        "params_types": {
+            "input1": "string",
+            "input2": "string",
+            "x": "string",
+            "y": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "addoverlayimage",
+                "fn_name": "929.v83-o39",
+                "fn_id": 451,
+                "source_fn_id": 451
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 137,
+        "sink_function": "584",
+        "source": "module.exports.addoverlaytext",
+        "tainted_params": [
+            "input",
+            "text",
+            "x",
+            "y",
+            "output"
+        ],
+        "params_types": {
+            "input": "string",
+            "text": "string",
+            "x": "string",
+            "y": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "addoverlaytext",
+                "fn_name": "929.v94-o46",
+                "fn_id": 536,
+                "source_fn_id": 536
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 155,
+        "sink_function": "668",
+        "source": "module.exports.addaudiotovideo",
+        "tainted_params": [
+            "input",
+            "audio",
+            "output"
+        ],
+        "params_types": {
+            "input": "string",
+            "audio": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "addaudiotovideo",
+                "fn_name": "929.v108-o51",
+                "fn_id": 611,
+                "source_fn_id": 611
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 173,
+        "sink_function": "752",
+        "source": "module.exports.addaudiotoimage",
+        "tainted_params": [
+            "audio",
+            "image",
+            "output"
+        ],
+        "params_types": {
+            "audio": "string",
+            "image": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "addaudiotoimage",
+                "fn_name": "929.v122-o56",
+                "fn_id": 695,
+                "source_fn_id": 695
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 191,
+        "sink_function": "828",
+        "source": "module.exports.trimvideo",
+        "tainted_params": [
+            "input",
+            "start",
+            "duration",
+            "output"
+        ],
+        "params_types": {
+            "input": "string",
+            "start": "string",
+            "duration": "string",
+            "output": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "trimvideo",
+                "fn_name": "929.v134-o62",
+                "fn_id": 779,
+                "source_fn_id": 779
+            }
+        ]
+    }
+]

@@ -1,0 +1,88 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`ping ${flag} ${this.timeout} ${ip}`, (err, stdout, stderr) => {",
+        "sink_lineno": 120,
+        "sink_function": "921",
+        "source": "new module.exports",
+        "tainted_params": [
+            "undefined"
+        ],
+        "params_types": {
+            "undefined": "any"
+        },
+        "returns": {
+            "source": ".ping",
+            "param_types": {
+                "range": {
+                    "_union": [
+                        {
+                            "length": "any"
+                        },
+                        "array",
+                        "string"
+                    ]
+                }
+            },
+            "tainted_params": [
+                "range"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1720.v100-o30",
+                "fn_id": "69",
+                "source_fn_id": "69"
+            },
+            {
+                "type": "Method",
+                "prop": "ping",
+                "fn_name": "1720.v130-o29",
+                "fn_id": 762,
+                "source_fn_id": 762
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`arp ${ip}`, (err, stdout, stderr) => {",
+        "sink_lineno": 145,
+        "sink_function": "1230",
+        "source": "new module.exports",
+        "tainted_params": [
+            "undefined"
+        ],
+        "params_types": {
+            "undefined": "any"
+        },
+        "returns": {
+            "source": ".arp",
+            "param_types": {
+                "range": [
+                    "any"
+                ]
+            },
+            "tainted_params": [
+                "range"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1720.v131-o35",
+                "fn_id": "69",
+                "source_fn_id": "69"
+            },
+            {
+                "type": "Method",
+                "prop": "arp",
+                "fn_name": "1720.v174-o34",
+                "fn_id": 955,
+                "source_fn_id": 955
+            }
+        ]
+    }
+]

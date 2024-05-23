@@ -1,0 +1,54 @@
+[
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(cmd, {",
+        "sink_lineno": 19,
+        "sink_function": "27",
+        "source": "module.exports.exec",
+        "tainted_params": [
+            "cmd",
+            "callback"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "callback": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "exec",
+                "fn_name": "539.v4-o6",
+                "fn_id": "11",
+                "source_fn_id": "11"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "command-injection",
+        "sink": "return cp.spawn(cmd, args, options)",
+        "sink_lineno": 28,
+        "sink_function": "43",
+        "source": "module.exports.spawn",
+        "tainted_params": [
+            "cmd",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "args": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "spawn",
+                "fn_name": "539.v6-o11",
+                "fn_id": "38",
+                "source_fn_id": "38"
+            }
+        ]
+    }
+]

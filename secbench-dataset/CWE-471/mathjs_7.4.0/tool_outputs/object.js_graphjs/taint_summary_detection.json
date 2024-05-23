@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "child[lastKey] = value;",
+        "sink_lineno": 391,
+        "sink_function": "1346"
+    },
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[prop] = b[prop];",
+        "sink_lineno": 131,
+        "sink_function": "594"
+    },
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[prop] = b[prop];",
+        "sink_lineno": 126,
+        "sink_function": "563"
+    }
+]

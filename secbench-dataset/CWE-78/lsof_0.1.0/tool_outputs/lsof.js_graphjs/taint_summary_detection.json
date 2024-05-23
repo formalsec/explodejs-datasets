@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/lsof.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('lsof -p ' + pid, function(err, d) {",
+        "sink_lineno": 9,
+        "sink_function": "183"
+    },
+    {
+        "filename": "../../src/lsof.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('lsof -i tcp:' + port, function(err, d) {",
+        "sink_lineno": 37,
+        "sink_function": "389"
+    },
+    {
+        "filename": "../../src/lsof.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('lsof -i udp:' + port, function(err, d) {",
+        "sink_lineno": 71,
+        "sink_function": "551"
+    }
+]

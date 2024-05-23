@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
+        "sink_lineno": 59,
+        "sink_function": "467"
+    }
+]

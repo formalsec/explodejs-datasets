@@ -1,0 +1,34 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "shell.exec('git commit ' + arg + ' --allow-empty --no-gpg-sign', {",
+        "sink_lineno": 37,
+        "sink_function": "149",
+        "source": "module.exports",
+        "tainted_params": [
+            "msg",
+            "silent"
+        ],
+        "params_types": {
+            "msg": {
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "silent": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "165.v20-o8",
+                "fn_id": "47",
+                "source_fn_id": "47"
+            }
+        ]
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('taskkill /F /IM ' + programname + '.exe /T');",
+        "sink_lineno": 9,
+        "sink_function": "30"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('pkill -f ' + programname);",
+        "sink_lineno": 12,
+        "sink_function": "42"
+    }
+]

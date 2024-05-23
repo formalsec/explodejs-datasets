@@ -1,0 +1,110 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "cur[parts[i]] = value;",
+        "sink_lineno": 349,
+        "sink_function": "1482",
+        "source": "module.exports.setPath",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": "string",
+            "value": {
+                "_union": [
+                    "array",
+                    "function",
+                    "object"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "setPath",
+                "fn_name": "3728.setPath-o64",
+                "fn_id": "1437",
+                "source_fn_id": "1437"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[key] = result;",
+        "sink_lineno": 533,
+        "sink_function": "2252",
+        "source": "module.exports.mergeHeavy",
+        "tainted_params": [
+            "object",
+            "undefined"
+        ],
+        "params_types": {
+            "object": "object",
+            "undefined": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "mergeHeavy",
+                "fn_name": "3728.mergeHeavy-o89",
+                "fn_id": 1994,
+                "source_fn_id": 1994
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[key] = result;",
+        "sink_lineno": 565,
+        "sink_function": "2428",
+        "source": "module.exports.mergeHeavy",
+        "tainted_params": [
+            "object",
+            "undefined"
+        ],
+        "params_types": {
+            "object": "object",
+            "undefined": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "mergeHeavy",
+                "fn_name": "3728.mergeHeavy-o89",
+                "fn_id": 1994,
+                "source_fn_id": 1994
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[key] = baseMergeHeavy(result, srcValue, customizer);",
+        "sink_lineno": 563,
+        "sink_function": "2415",
+        "source": "module.exports.mergeHeavy",
+        "tainted_params": [
+            "object",
+            "undefined"
+        ],
+        "params_types": {
+            "object": "object",
+            "undefined": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "mergeHeavy",
+                "fn_name": "3728.mergeHeavy-o89",
+                "fn_id": 1994,
+                "source_fn_id": 1994
+            }
+        ]
+    }
+]

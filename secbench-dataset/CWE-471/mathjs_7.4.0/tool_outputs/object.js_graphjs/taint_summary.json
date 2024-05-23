@@ -1,0 +1,117 @@
+[
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "child[lastKey] = value;",
+        "sink_lineno": 391,
+        "sink_function": "1346",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "object",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "object": "object",
+            "path": {
+                "_union": [
+                    {
+                        "length": {
+                            "_union": [
+                                "number",
+                                "string"
+                            ]
+                        },
+                        "*": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1529.set-o39",
+                "fn_id": "1222",
+                "source_fn_id": "1222"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[prop] = b[prop];",
+        "sink_lineno": 131,
+        "sink_function": "594",
+        "source": "module.exports.deepExtend",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": {
+                "*": {
+                    "*": {
+                        "constructor": "any",
+                        "*": "any"
+                    },
+                    "constructor": "any"
+                }
+            },
+            "b": {
+                "*": {
+                    "constructor": "any"
+                }
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "deepExtend",
+                "fn_name": "1529.deepExtend-o12",
+                "fn_id": "450",
+                "source_fn_id": "450"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[prop] = b[prop];",
+        "sink_lineno": 126,
+        "sink_function": "563",
+        "source": "module.exports.deepExtend",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": {
+                "*": {
+                    "*": {
+                        "constructor": "any",
+                        "*": "any"
+                    },
+                    "constructor": "any"
+                }
+            },
+            "b": {
+                "*": {
+                    "constructor": "any"
+                }
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "deepExtend",
+                "fn_name": "1529.deepExtend-o12",
+                "fn_id": "450",
+                "source_fn_id": "450"
+            }
+        ]
+    }
+]

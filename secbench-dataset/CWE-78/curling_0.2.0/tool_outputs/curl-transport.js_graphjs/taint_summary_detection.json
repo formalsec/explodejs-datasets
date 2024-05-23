@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/curl-transport.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"curl \" + command, function (error, stdout, stderr) {",
+        "sink_lineno": 56,
+        "sink_function": "367"
+    }
+]

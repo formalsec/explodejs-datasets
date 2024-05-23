@@ -1,0 +1,82 @@
+[
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
+        "sink_lineno": 168,
+        "sink_function": "851",
+        "source": "module.exports.deepSet",
+        "tainted_params": [
+            "parent",
+            "namespace",
+            "value",
+            "mode"
+        ],
+        "params_types": {
+            "parent": "object",
+            "namespace": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            },
+            "value": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            },
+            "mode": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "deepSet",
+                "fn_name": "1754.setObjValue-o21",
+                "fn_id": "732",
+                "source_fn_id": "732"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else current[parts[i]] = value;",
+        "sink_lineno": 166,
+        "sink_function": "829",
+        "source": "module.exports.deepSet",
+        "tainted_params": [
+            "parent",
+            "namespace",
+            "value",
+            "mode"
+        ],
+        "params_types": {
+            "parent": "object",
+            "namespace": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            },
+            "value": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            },
+            "mode": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "deepSet",
+                "fn_name": "1754.setObjValue-o21",
+                "fn_id": "732",
+                "source_fn_id": "732"
+            }
+        ]
+    }
+]

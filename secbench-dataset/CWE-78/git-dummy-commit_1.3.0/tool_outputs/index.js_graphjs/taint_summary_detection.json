@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "shell.exec('git commit ' + arg + ' --allow-empty --no-gpg-sign', {",
+        "sink_lineno": 37,
+        "sink_function": "149"
+    }
+]

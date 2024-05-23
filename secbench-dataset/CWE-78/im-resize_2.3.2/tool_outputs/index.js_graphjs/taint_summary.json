@@ -1,0 +1,35 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, {timeout: 30000}, function(e, stdout, stderr) {",
+        "sink_lineno": 11,
+        "sink_function": "113",
+        "source": "module.exports",
+        "tainted_params": [
+            "image",
+            "output",
+            "cb"
+        ],
+        "params_types": {
+            "image": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "output": {
+                "versions": "any"
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "885.v16-o18",
+                "fn_id": "53",
+                "source_fn_id": "53"
+            }
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "childProcess.exec(cmd, function (err, stdout, stderr) {",
+        "sink_lineno": 72,
+        "sink_function": "407",
+        "source": "module.exports._ps",
+        "tainted_params": [
+            "args",
+            "cb"
+        ],
+        "params_types": {
+            "args": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "_ps",
+                "fn_name": "528._ps-o15",
+                "fn_id": "325",
+                "source_fn_id": "325"
+            }
+        ]
+    }
+]

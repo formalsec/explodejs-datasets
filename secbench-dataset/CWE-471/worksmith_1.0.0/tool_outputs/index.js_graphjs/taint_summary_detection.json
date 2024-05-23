@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "wf = require(wf);",
+        "sink_lineno": 26,
+        "sink_function": "84"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return require(taskFile);",
+        "sink_lineno": 94,
+        "sink_function": "451"
+    }
+]

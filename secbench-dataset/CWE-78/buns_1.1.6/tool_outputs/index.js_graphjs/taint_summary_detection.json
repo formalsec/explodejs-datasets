@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return require(presetLoc);",
+        "sink_lineno": 28,
+        "sink_function": "211"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(__tmp + parentDirs + DS + filename, result.code);",
+        "sink_lineno": 391,
+        "sink_function": "2609"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command);",
+        "sink_lineno": 678,
+        "sink_function": "4785"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var conf = JSON.parse(fs.readFileSync(modulesPath + name + DS + 'package.json'));",
+        "sink_lineno": 681,
+        "sink_function": "4805"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "let _cmd = exec(`gsutil -m cp ${_rn} -a public-read ${_path} ${bucket}`)",
+        "sink_lineno": 11,
+        "sink_function": "50"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "let _cmd = exec(_c, (code, stdout, stderr) => {",
+        "sink_lineno": 22,
+        "sink_function": "117"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "let _cmd = exec(_c, (code, stdout, stderr) => {",
+        "sink_lineno": 39,
+        "sink_function": "169"
+    }
+]

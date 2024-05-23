@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/properties-reader.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.read(fs.readFileSync(sourceFile, typeof encoding === 'string' && encoding || this._encoding));",
+        "sink_lineno": 75,
+        "sink_function": "213"
+    },
+    {
+        "filename": "../../src/properties-reader.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(destFile, content, (err) => {",
+        "sink_lineno": 341,
+        "sink_function": "1427"
+    },
+    {
+        "filename": "../../src/properties-reader.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "source[expanded[0]] = parsedValue;",
+        "sink_lineno": 200,
+        "sink_function": "836"
+    }
+]

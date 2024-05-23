@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return cp.exec('arp -n ' + address).then(parseOne)",
+        "sink_lineno": 114,
+        "sink_function": "511",
+        "source": "module.exports",
+        "tainted_params": [
+            "address"
+        ],
+        "params_types": {
+            "address": {
+                "_union": [
+                    "array",
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "651.findLocalDevices-o12",
+                "fn_id": 34,
+                "source_fn_id": 34
+            }
+        ]
+    }
+]

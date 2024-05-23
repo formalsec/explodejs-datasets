@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/killing.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('ps -ef | grep ' + name, function(error, stdout) {",
+        "sink_lineno": 35,
+        "sink_function": "232"
+    }
+]

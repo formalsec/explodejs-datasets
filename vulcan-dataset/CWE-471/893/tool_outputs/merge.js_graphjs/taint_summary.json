@@ -7,7 +7,7 @@
         "sink_function": "378",
         "source": "new module.exports",
         "tainted_params": [],
-        "param_types": {},
+        "params_types": {},
         "returns": {
             "source": ".black",
             "param_types": {},
@@ -37,7 +37,7 @@
         "sink_function": "378",
         "source": "new module.exports",
         "tainted_params": [],
-        "param_types": {},
+        "params_types": {},
         "returns": {
             "source": ".white",
             "param_types": {},
@@ -67,7 +67,7 @@
         "sink_function": "740",
         "source": "new module.exports",
         "tainted_params": [],
-        "param_types": {},
+        "params_types": {},
         "returns": {
             "source": ".black",
             "param_types": {},
@@ -97,7 +97,7 @@
         "sink_function": "740",
         "source": "new module.exports",
         "tainted_params": [],
-        "param_types": {},
+        "params_types": {},
         "returns": {
             "source": ".white",
             "param_types": {},

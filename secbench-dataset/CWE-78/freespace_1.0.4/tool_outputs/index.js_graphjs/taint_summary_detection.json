@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(`fsutil volume diskfree ${driveOrMount}:`, {}, cb);",
+        "sink_lineno": 49,
+        "sink_function": "232"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {}, cb);",
+        "sink_lineno": 51,
+        "sink_function": "248"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "output = cp.execSync(`fsutil volume diskfree ${driveOrMount}:`, {});",
+        "sink_lineno": 65,
+        "sink_function": "353"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "output = cp.execSync(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {});",
+        "sink_lineno": 67,
+        "sink_function": "368"
+    }
+]

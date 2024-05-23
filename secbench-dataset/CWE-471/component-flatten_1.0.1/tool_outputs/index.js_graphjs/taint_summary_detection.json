@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "releases[branch.ref] = branch",
+        "sink_lineno": 56,
+        "sink_function": "237"
+    }
+]

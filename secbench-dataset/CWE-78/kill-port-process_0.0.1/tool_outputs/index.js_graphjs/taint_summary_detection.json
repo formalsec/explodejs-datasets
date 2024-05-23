@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, (err, stdout, stderr) => {",
+        "sink_lineno": 44,
+        "sink_function": "204"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`taskkill /PID ${pid} /F`, (err, stdout, stderr) => {",
+        "sink_lineno": 63,
+        "sink_function": "306"
+    }
+]

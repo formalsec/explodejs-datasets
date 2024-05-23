@@ -1,0 +1,58 @@
+[
+    {
+        "filename": "../../src/scp.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command.join(' '), function (err, stdout, stderr) {",
+        "sink_lineno": 21,
+        "sink_function": "144",
+        "source": "module.exports.send",
+        "tainted_params": [
+            "options",
+            "cb"
+        ],
+        "params_types": {
+            "options": {
+                "port": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "file": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "user": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "host": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "path": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                }
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "send",
+                "fn_name": "295.v23-o9",
+                "fn_id": "21",
+                "source_fn_id": "21"
+            }
+        ]
+    }
+]

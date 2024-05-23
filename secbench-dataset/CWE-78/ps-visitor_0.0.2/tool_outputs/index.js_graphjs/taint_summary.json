@@ -1,0 +1,105 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 56,
+        "sink_function": "163",
+        "source": "module.exports.ps",
+        "tainted_params": [
+            "condition",
+            "extra",
+            "keywords",
+            "filterWaste"
+        ],
+        "params_types": {
+            "condition": "object",
+            "extra": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "keywords": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "filterWaste": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "ps",
+                "fn_name": "1916.ps-o117",
+                "fn_id": 712,
+                "source_fn_id": 712
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 404,
+        "sink_function": "1681",
+        "source": "module.exports.kill",
+        "tainted_params": [
+            "pid",
+            "signal"
+        ],
+        "params_types": {
+            "pid": "string",
+            "signal": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "kill",
+                "fn_name": "1916.kill-o133",
+                "fn_id": "1628",
+                "source_fn_id": "1628"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 444,
+        "sink_function": "1836",
+        "source": "module.exports.getSignalRaw",
+        "tainted_params": [
+            "signal"
+        ],
+        "params_types": {
+            "signal": {
+                "_union": [
+                    "array",
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getSignalRaw",
+                "fn_name": "1916.getSignalRaw-o139",
+                "fn_id": "1808",
+                "source_fn_id": "1808"
+            }
+        ]
+    }
+]

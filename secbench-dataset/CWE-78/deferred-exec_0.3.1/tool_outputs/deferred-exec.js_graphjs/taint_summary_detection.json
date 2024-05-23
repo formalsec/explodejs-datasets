@@ -1,0 +1,23 @@
+[
+    {
+        "filename": "../../src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.execFile( command, args, options, hollaback );",
+        "sink_lineno": 38,
+        "sink_function": "146"
+    },
+    {
+        "filename": "../../src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec( command, hollaback );",
+        "sink_lineno": 42,
+        "sink_function": "164"
+    },
+    {
+        "filename": "../../src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "var cp = child_process.spawn( command, args, options );",
+        "sink_lineno": 46,
+        "sink_function": "180"
+    }
+]

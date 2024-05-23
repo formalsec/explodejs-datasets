@@ -1,0 +1,29 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "handlers[type][name] = fn;",
+        "sink_lineno": 46,
+        "sink_function": "207",
+        "source": "module.exports.handler",
+        "tainted_params": [
+            "type",
+            "name",
+            "fn"
+        ],
+        "params_types": {
+            "type": "string",
+            "name": "string",
+            "fn": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "handler",
+                "fn_name": "660.handler-o10",
+                "fn_id": "188",
+                "source_fn_id": "188"
+            }
+        ]
+    }
+]

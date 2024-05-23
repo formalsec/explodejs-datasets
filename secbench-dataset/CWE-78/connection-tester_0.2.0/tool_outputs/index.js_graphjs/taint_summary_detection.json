@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const shellOut = shell.execSync(cmd).toString();",
+        "sink_lineno": 15,
+        "sink_function": "48"
+    }
+]

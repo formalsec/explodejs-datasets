@@ -1,0 +1,33 @@
+[
+    {
+        "filename": "../../src/create.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "tmp[keys[last]] = val;",
+        "sink_lineno": 43,
+        "sink_function": "114",
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "str",
+            "val"
+        ],
+        "params_types": {
+            "obj": "object",
+            "str": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            },
+            "val": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "159.create-o6",
+                "fn_id": "5",
+                "source_fn_id": "5"
+            }
+        ]
+    }
+]

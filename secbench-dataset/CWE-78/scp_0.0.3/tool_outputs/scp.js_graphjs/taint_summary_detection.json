@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/scp.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command.join(' '), function (err, stdout, stderr) {",
+        "sink_lineno": 21,
+        "sink_function": "144"
+    },
+    {
+        "filename": "../../src/scp.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command.join(' '), function (err, stdout, stderr) {",
+        "sink_lineno": 42,
+        "sink_function": "281"
+    }
+]

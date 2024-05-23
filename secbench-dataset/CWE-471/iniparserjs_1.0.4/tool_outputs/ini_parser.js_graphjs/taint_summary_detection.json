@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/ini_parser.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.input = fs.readFileSync(path, encoding)",
+        "sink_lineno": 17,
+        "sink_function": "71"
+    },
+    {
+        "filename": "../../src/ini_parser.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(toPath, result, {encoding: toEncoding})",
+        "sink_lineno": 161,
+        "sink_function": "859"
+    },
+    {
+        "filename": "../../src/ini_parser.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.configs[curSection][curKey] = curValue",
+        "sink_lineno": 63,
+        "sink_function": "402"
+    },
+    {
+        "filename": "../../src/ini_parser.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.configs[section][key] = value",
+        "sink_lineno": 108,
+        "sink_function": "642"
+    }
+]

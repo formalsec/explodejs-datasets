@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/jquery.js",
+        "vuln_type": "code-injection",
+        "sink": "( Function( \"return \" + str ) )() :",
+        "sink_lineno": 8550,
+        "sink_function": "43297"
+    },
+    {
+        "filename": "../../src/jquery.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "thisCache[ jQuery.camelCase( name ) ] = data;",
+        "sink_lineno": 3730,
+        "sink_function": "17950"
+    }
+]

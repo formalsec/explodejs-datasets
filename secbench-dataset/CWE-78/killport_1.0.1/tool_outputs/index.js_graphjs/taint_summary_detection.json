@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(cmd, function(err, stdout, stderr){",
+        "sink_lineno": 9,
+        "sink_function": "217"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('kill ' + pid, function (err, stdout, stderr) {",
+        "sink_lineno": 29,
+        "sink_function": "186"
+    }
+]

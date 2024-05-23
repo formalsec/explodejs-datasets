@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(cmd, {",
+        "sink_lineno": 19,
+        "sink_function": "27"
+    },
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "command-injection",
+        "sink": "return cp.spawn(cmd, args, options)",
+        "sink_lineno": 28,
+        "sink_function": "43"
+    }
+]

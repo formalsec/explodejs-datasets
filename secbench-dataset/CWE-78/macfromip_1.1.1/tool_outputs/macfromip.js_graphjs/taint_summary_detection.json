@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/macfromip.js",
+        "vuln_type": "command-injection",
+        "sink": "var ls = cp.exec('ping  -c 1 ' + ipAddress,",
+        "sink_lineno": 66,
+        "sink_function": "416"
+    },
+    {
+        "filename": "../../src/macfromip.js",
+        "vuln_type": "command-injection",
+        "sink": "var ls = cp.exec('ping  ' + ipAddress + ' -n 1',",
+        "sink_lineno": 96,
+        "sink_function": "602"
+    }
+]

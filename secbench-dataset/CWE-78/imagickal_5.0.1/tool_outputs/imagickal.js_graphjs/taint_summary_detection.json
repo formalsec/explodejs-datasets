@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/imagickal.js",
+        "vuln_type": "command-injection",
+        "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
+        "sink_lineno": 77,
+        "sink_function": "312"
+    },
+    {
+        "filename": "../../src/imagickal.js",
+        "vuln_type": "command-injection",
+        "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
+        "sink_lineno": 127,
+        "sink_function": "625"
+    }
+]

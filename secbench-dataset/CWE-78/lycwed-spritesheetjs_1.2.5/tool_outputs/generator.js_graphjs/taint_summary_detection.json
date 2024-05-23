@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, next);",
+        "sink_lineno": 85,
+        "sink_function": "316"
+    },
+    {
+        "filename": "../../src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"identify \" + filePaths.join(\" \"), function (err, stdout) {",
+        "sink_lineno": 102,
+        "sink_function": "819"
+    },
+    {
+        "filename": "../../src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command.join(\" \"), function (err) {",
+        "sink_lineno": 196,
+        "sink_function": "1545"
+    },
+    {
+        "filename": "../../src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"magick identify \" + filePath, function (err, stdout) {",
+        "sink_lineno": 204,
+        "sink_function": "1249"
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "filename": "../../src/bestzip.js",
+        "vuln_type": "command-injection",
+        "sink": "const zipProcess = cp.exec(command, {",
+        "sink_lineno": 27,
+        "sink_function": "116",
+        "source": "module.exports.nativeZip",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "source": "string",
+                "destination": "string",
+                "cwd": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "nativeZip",
+                "fn_name": "757.nativeZip-o12",
+                "fn_id": 52,
+                "source_fn_id": 52
+            }
+        ]
+    }
+]

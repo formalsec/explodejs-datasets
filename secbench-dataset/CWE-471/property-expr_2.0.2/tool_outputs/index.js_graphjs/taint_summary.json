@@ -1,0 +1,31 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "data[parts[index]] = value",
+        "sink_lineno": 55,
+        "sink_function": "228",
+        "source": "module.exports.setter",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": {
+                "_union": [
+                    "array",
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "setter",
+                "fn_name": "755.v31-o26",
+                "fn_id": 171,
+                "source_fn_id": 171
+            }
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "../../src/posix.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('df -k \"' + path + '\"', function(err, stdout) {",
+        "sink_lineno": 11,
+        "sink_function": "93",
+        "source": "module.exports.diskusage",
+        "tainted_params": [
+            "path",
+            "cb"
+        ],
+        "params_types": {
+            "path": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "diskusage",
+                "fn_name": "267.diskusage-o8",
+                "fn_id": "19",
+                "source_fn_id": "19"
+            }
+        ]
+    }
+]

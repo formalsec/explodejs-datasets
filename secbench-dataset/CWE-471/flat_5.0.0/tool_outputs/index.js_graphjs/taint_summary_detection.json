@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "recipient[key1] = unflatten(target[key], opts)",
+        "sink_lineno": 145,
+        "sink_function": "809"
+    }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "filename" : "src/index.js",
+    "vuln_type": "prototype-pollution",
+    "source": "module.exports",
+    "sink": "??",
+    "tainted_params": [ "target" ],
+    "params_types": {
+      "src" : "polluted_object2",
+      "dst" : "object"
+    }
+  }
+]

@@ -1,0 +1,160 @@
+[
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = from[key];",
+        "sink_lineno": 142,
+        "sink_function": "629",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "to",
+            "from"
+        ],
+        "params_types": {
+            "to": "object",
+            "from": {
+                "*": "array"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "1227.merge-o30",
+                "fn_id": "547",
+                "source_fn_id": "547"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = from[key];",
+        "sink_lineno": 137,
+        "sink_function": "590",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "to",
+            "from"
+        ],
+        "params_types": {
+            "to": "object",
+            "from": {
+                "*": "array"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "1227.merge-o30",
+                "fn_id": "547",
+                "source_fn_id": "547"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = clone(from[key]);",
+        "sink_lineno": 169,
+        "sink_function": "740",
+        "source": "module.exports.mergeClone",
+        "tainted_params": [
+            "to",
+            "from"
+        ],
+        "params_types": {
+            "to": "object",
+            "from": {
+                "*": {
+                    "tags": {
+                        "constructor": {
+                            "name": "any"
+                        },
+                        "clone": "function",
+                        "id": "any",
+                        "mode": "any",
+                        "_bsontype": "any",
+                        "buffer": "any",
+                        "value": "any",
+                        "sub_type": "any",
+                        "valueOf": "any"
+                    },
+                    "constructor": {
+                        "name": "any"
+                    },
+                    "clone": "function",
+                    "id": "any",
+                    "mode": "any",
+                    "_bsontype": "any",
+                    "buffer": "any",
+                    "value": "any",
+                    "sub_type": "any",
+                    "valueOf": "any"
+                }
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "mergeClone",
+                "fn_name": "1227.mergeClone-o36",
+                "fn_id": "650",
+                "source_fn_id": "650"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = clone(from[key]);",
+        "sink_lineno": 164,
+        "sink_function": "697",
+        "source": "module.exports.mergeClone",
+        "tainted_params": [
+            "to",
+            "from"
+        ],
+        "params_types": {
+            "to": "object",
+            "from": {
+                "*": {
+                    "tags": {
+                        "constructor": {
+                            "name": "any"
+                        },
+                        "clone": "function",
+                        "id": "any",
+                        "mode": "any",
+                        "_bsontype": "any",
+                        "buffer": "any",
+                        "value": "any",
+                        "sub_type": "any",
+                        "valueOf": "any"
+                    },
+                    "constructor": {
+                        "name": "any"
+                    },
+                    "clone": "function",
+                    "id": "any",
+                    "mode": "any",
+                    "_bsontype": "any",
+                    "buffer": "any",
+                    "value": "any",
+                    "sub_type": "any",
+                    "valueOf": "any"
+                }
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "mergeClone",
+                "fn_name": "1227.mergeClone-o36",
+                "fn_id": "650",
+                "source_fn_id": "650"
+            }
+        ]
+    }
+]

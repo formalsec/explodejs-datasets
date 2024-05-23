@@ -1,0 +1,273 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "res[segment] = exports.reach(source, sourcePath, options);",
+        "sink_lineno": 894,
+        "sink_function": "4541",
+        "source": "module.exports.transform",
+        "tainted_params": [
+            "source",
+            "transform",
+            "options"
+        ],
+        "params_types": {
+            "source": {
+                "_union": [
+                    {
+                        "length": "any",
+                        "*": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "transform": {
+                "_union": [
+                    {
+                        "length": "any",
+                        "*": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "options": {
+                "separator": "array",
+                "length": "any",
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "transform",
+                "fn_name": "4807.v623-o225",
+                "fn_id": "4287",
+                "source_fn_id": "4287"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = value;",
+        "sink_lineno": 140,
+        "sink_function": "594",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "source",
+            "isNullOverride",
+            "isMergeArrays"
+        ],
+        "params_types": {
+            "target": {
+                "_union": [
+                    {
+                        "*": "any",
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "source": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any",
+                            "length": "any"
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "isNullOverride": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any",
+                            "length": "any"
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "isMergeArrays": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any",
+                            "length": "any"
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "4807.v78-o17",
+                "fn_id": "279",
+                "source_fn_id": "279"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = value;",
+        "sink_lineno": 137,
+        "sink_function": "581",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "source",
+            "isNullOverride",
+            "isMergeArrays"
+        ],
+        "params_types": {
+            "target": {
+                "_union": [
+                    {
+                        "*": "any",
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "source": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any",
+                            "length": "any"
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "isNullOverride": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any",
+                            "length": "any"
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "isMergeArrays": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any",
+                            "length": "any"
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "4807.v78-o17",
+                "fn_id": "279",
+                "source_fn_id": "279"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = exports.clone(value);",
+        "sink_lineno": 127,
+        "sink_function": "543",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "source",
+            "isNullOverride",
+            "isMergeArrays"
+        ],
+        "params_types": {
+            "target": {
+                "_union": [
+                    {
+                        "*": "any",
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "source": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any",
+                            "length": "any"
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "isNullOverride": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any",
+                            "length": "any"
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "isMergeArrays": {
+                "_union": [
+                    {
+                        "*": {
+                            "*": "any",
+                            "length": "any"
+                        },
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "4807.v78-o17",
+                "fn_id": "279",
+                "source_fn_id": "279"
+            }
+        ]
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[keys[i]] = value;",
+        "sink_lineno": 30,
+        "sink_function": "238"
+    }
+]

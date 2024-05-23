@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "../../src/gitblame.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('git blame ' + filename, {cwd: dirname}, function (error, stdout, stderr) {",
+        "sink_lineno": 15,
+        "sink_function": "94",
+        "source": "module.exports",
+        "tainted_params": [
+            "file",
+            "cb"
+        ],
+        "params_types": {
+            "file": "string",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "109.v13-o7",
+                "fn_id": "13",
+                "source_fn_id": "13"
+            }
+        ]
+    }
+]

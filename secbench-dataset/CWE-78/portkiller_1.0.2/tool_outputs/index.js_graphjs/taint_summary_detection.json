@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`lsof -n -i4TCP:${port} | grep LISTEN`, (err, out, stderr) => {",
+        "sink_lineno": 10,
+        "sink_function": "84"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`kill ${pid}`,(err, out, stderr) => {",
+        "sink_lineno": 22,
+        "sink_function": "124"
+    }
+]

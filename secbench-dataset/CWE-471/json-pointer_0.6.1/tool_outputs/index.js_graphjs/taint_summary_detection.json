@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[nextTok] = value;",
+        "sink_lineno": 98,
+        "sink_function": "402"
+    }
+]

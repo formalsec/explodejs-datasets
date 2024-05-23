@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "version = require('child_process').execSync(`npm view ${packageName} version --registry ${registry}`, config);",
+        "sink_lineno": 14,
+        "sink_function": "39"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "version = require('child_process').execSync(`npm view ${packageName} version`, config);",
+        "sink_lineno": 16,
+        "sink_function": "56"
+    }
+]

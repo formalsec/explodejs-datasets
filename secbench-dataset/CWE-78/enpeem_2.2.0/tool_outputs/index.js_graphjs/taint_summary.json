@@ -1,0 +1,67 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var npm = exec(cmd, {cwd: options.dir});",
+        "sink_lineno": 114,
+        "sink_function": "462",
+        "source": "module.exports.install",
+        "tainted_params": [
+            "options",
+            "cb"
+        ],
+        "params_types": {
+            "options": {
+                "dependencies": "any",
+                "production": "any",
+                "loglevel": "any",
+                "save": "any",
+                "saveDev": "any",
+                "saveExact": "any",
+                "prefix": "any",
+                "dir": "any"
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "install",
+                "fn_name": "513.v20-o9",
+                "fn_id": 21,
+                "source_fn_id": 21
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var npm = exec(cmd, {cwd: options.dir});",
+        "sink_lineno": 114,
+        "sink_function": "462",
+        "source": "module.exports.update",
+        "tainted_params": [
+            "options",
+            "cb"
+        ],
+        "params_types": {
+            "options": {
+                "path": "any",
+                "production": "any",
+                "loglevel": "any",
+                "prefix": "any",
+                "dir": "any"
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "update",
+                "fn_name": "513.v34-o13",
+                "fn_id": 141,
+                "source_fn_id": 141
+            }
+        ]
+    }
+]

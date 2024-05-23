@@ -1,0 +1,123 @@
+[
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + ' power ' + mode);",
+        "sink_lineno": 34,
+        "sink_function": "58",
+        "source": "module.exports.power",
+        "tainted_params": [
+            "mode"
+        ],
+        "params_types": {
+            "mode": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "power",
+                "fn_name": "277.v12-o11",
+                "fn_id": "47",
+                "source_fn_id": "47"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + ' cursor ' + row + ',' + col);",
+        "sink_lineno": 60,
+        "sink_function": "107",
+        "source": "module.exports.cursor",
+        "tainted_params": [
+            "row",
+            "col"
+        ],
+        "params_types": {
+            "row": "string",
+            "col": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "cursor",
+                "fn_name": "277.v22-o19",
+                "fn_id": "87",
+                "source_fn_id": "87"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + ' invert ' + mode);",
+        "sink_lineno": 69,
+        "sink_function": "125",
+        "source": "module.exports.invert",
+        "tainted_params": [
+            "mode"
+        ],
+        "params_types": {
+            "mode": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "invert",
+                "fn_name": "277.v26-o22",
+                "fn_id": "114",
+                "source_fn_id": "114"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + cursor + ' write \"' + string + '\"');",
+        "sink_lineno": 82,
+        "sink_function": "190",
+        "source": "module.exports.write",
+        "tainted_params": [
+            "string",
+            "row",
+            "col"
+        ],
+        "params_types": {
+            "string": "string",
+            "row": "string",
+            "col": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "write",
+                "fn_name": "277.v38-o27",
+                "fn_id": "132",
+                "source_fn_id": "132"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + ' write ' + direction);",
+        "sink_lineno": 91,
+        "sink_function": "208",
+        "source": "module.exports.scroll",
+        "tainted_params": [
+            "direction"
+        ],
+        "params_types": {
+            "direction": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "scroll",
+                "fn_name": "277.v42-o30",
+                "fn_id": "197",
+                "source_fn_id": "197"
+            }
+        ]
+    }
+]

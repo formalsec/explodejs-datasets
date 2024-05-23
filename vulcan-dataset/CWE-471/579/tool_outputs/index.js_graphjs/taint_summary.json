@@ -9,10 +9,8 @@
         "tainted_params": [
             "target"
         ],
-        "param_types": {
-            "target": {
-                "*": "any"
-            }
+        "params_types": {
+            "target": "polluted-object | array"
         },
         "call_paths": [
             {
@@ -33,10 +31,8 @@
         "tainted_params": [
             "target"
         ],
-        "param_types": {
-            "target": {
-                "*": "any"
-            }
+        "params_types": {
+            "target": "polluted-object | array"
         },
         "call_paths": [
             {
@@ -57,10 +53,8 @@
         "tainted_params": [
             "target"
         ],
-        "param_types": {
-            "target": {
-                "*": "any"
-            }
+        "params_types": {
+            "target": "polluted-object | array"
         },
         "call_paths": [
             {

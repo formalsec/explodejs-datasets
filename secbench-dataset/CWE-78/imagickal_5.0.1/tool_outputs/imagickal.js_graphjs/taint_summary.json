@@ -1,0 +1,63 @@
+[
+    {
+        "filename": "../../src/imagickal.js",
+        "vuln_type": "command-injection",
+        "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
+        "sink_lineno": 77,
+        "sink_function": "312",
+        "source": "module.exports.dimensions",
+        "tainted_params": [
+            "path",
+            "callback"
+        ],
+        "params_types": {
+            "path": "string",
+            "callback": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "dimensions",
+                "fn_name": "1125.v38-o36",
+                "fn_id": 198,
+                "source_fn_id": 198
+            }
+        ]
+    },
+    {
+        "filename": "../../src/imagickal.js",
+        "vuln_type": "command-injection",
+        "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
+        "sink_lineno": 127,
+        "sink_function": "625",
+        "source": "module.exports.identify",
+        "tainted_params": [
+            "path",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "path": "string",
+            "options": {
+                "format": {
+                    "_union": [
+                        "array",
+                        "object",
+                        "string"
+                    ]
+                },
+                "verifyImage": "any"
+            },
+            "callback": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "identify",
+                "fn_name": "1125.v84-o43",
+                "fn_id": 357,
+                "source_fn_id": 357
+            }
+        ]
+    }
+]

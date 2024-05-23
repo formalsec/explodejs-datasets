@@ -1,0 +1,27 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "ChildProcess.exec(killCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 59,
+        "sink_function": "355",
+        "source": "module.exports.kill",
+        "tainted_params": [
+            "pid",
+            "next"
+        ],
+        "params_types": {
+            "pid": "string",
+            "next": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "kill",
+                "fn_name": "371.v53-o13",
+                "fn_id": "251",
+                "source_fn_id": "251"
+            }
+        ]
+    }
+]

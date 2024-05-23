@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const stream = fs.createReadStream(file);",
+        "sink_lineno": 846,
+        "sink_function": "5965"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "results.concat(await Promise.all(chunk.map(file => this.scan_stream(fs.createReadStream(file)))));",
+        "sink_lineno": 1587,
+        "sink_function": "11185"
+    }
+]

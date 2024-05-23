@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "processId = exec(`lsof -t -i:${port}`)",
+        "sink_lineno": 8,
+        "sink_function": "20"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`kill ${processId}`)",
+        "sink_lineno": 14,
+        "sink_function": "39"
+    }
+]

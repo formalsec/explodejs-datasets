@@ -1,0 +1,288 @@
+[
+    {
+        "filename": "../../src/paypal-adaptive.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[p] = b[p];",
+        "sink_lineno": 31,
+        "sink_function": "75",
+        "source": "module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": {
+                "userId": "any",
+                "password": "any",
+                "signature": "any",
+                "appId": "any",
+                "sandbox": "any",
+                "*": {
+                    "constructor": "any"
+                }
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1375.Paypal-o32",
+                "fn_id": 318,
+                "source_fn_id": 318
+            }
+        ]
+    },
+    {
+        "filename": "../../src/paypal-adaptive.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[p] = b[p];",
+        "sink_lineno": 31,
+        "sink_function": "75",
+        "source": "new module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": {
+                "userId": "any",
+                "password": "any",
+                "signature": "any",
+                "appId": "any",
+                "sandbox": "any",
+                "*": {
+                    "constructor": "any"
+                }
+            }
+        },
+        "returns": {
+            "source": ".paymentDetails",
+            "param_types": {
+                "params": {
+                    "payKey": "any",
+                    "transactionId": "any",
+                    "trackingId": "any",
+                    "*": {
+                        "constructor": "any"
+                    }
+                },
+                "callback": "function"
+            },
+            "tainted_params": [
+                "params",
+                "callback"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1375.v101-o51",
+                "fn_id": "318",
+                "source_fn_id": "318"
+            },
+            {
+                "type": "Method",
+                "prop": "paymentDetails",
+                "fn_name": "1375.v114-o50",
+                "fn_id": 895,
+                "source_fn_id": 895
+            }
+        ]
+    },
+    {
+        "filename": "../../src/paypal-adaptive.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[p] = b[p];",
+        "sink_lineno": 31,
+        "sink_function": "75",
+        "source": "new module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": {
+                "userId": "any",
+                "password": "any",
+                "signature": "any",
+                "appId": "any",
+                "sandbox": "any",
+                "*": {
+                    "constructor": "any"
+                }
+            }
+        },
+        "returns": {
+            "source": ".refund",
+            "param_types": {
+                "params": {
+                    "payKey": "any",
+                    "transactionId": "any",
+                    "trackingId": "any",
+                    "*": {
+                        "constructor": "any"
+                    }
+                },
+                "callback": "function"
+            },
+            "tainted_params": [
+                "params",
+                "callback"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1375.v140-o69",
+                "fn_id": "318",
+                "source_fn_id": "318"
+            },
+            {
+                "type": "Method",
+                "prop": "refund",
+                "fn_name": "1375.v153-o68",
+                "fn_id": 1174,
+                "source_fn_id": 1174
+            }
+        ]
+    },
+    {
+        "filename": "../../src/paypal-adaptive.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[p] = merge(a[p], b[p]);",
+        "sink_lineno": 29,
+        "sink_function": "64",
+        "source": "module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": {
+                "userId": "any",
+                "password": "any",
+                "signature": "any",
+                "appId": "any",
+                "sandbox": "any",
+                "*": {
+                    "constructor": "any"
+                }
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1375.Paypal-o32",
+                "fn_id": 318,
+                "source_fn_id": 318
+            }
+        ]
+    },
+    {
+        "filename": "../../src/paypal-adaptive.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[p] = merge(a[p], b[p]);",
+        "sink_lineno": 29,
+        "sink_function": "64",
+        "source": "new module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": {
+                "userId": "any",
+                "password": "any",
+                "signature": "any",
+                "appId": "any",
+                "sandbox": "any",
+                "*": {
+                    "constructor": "any"
+                }
+            }
+        },
+        "returns": {
+            "source": ".paymentDetails",
+            "param_types": {
+                "params": {
+                    "payKey": "any",
+                    "transactionId": "any",
+                    "trackingId": "any",
+                    "*": {
+                        "constructor": "any"
+                    }
+                },
+                "callback": "function"
+            },
+            "tainted_params": [
+                "params",
+                "callback"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1375.v101-o51",
+                "fn_id": "318",
+                "source_fn_id": "318"
+            },
+            {
+                "type": "Method",
+                "prop": "paymentDetails",
+                "fn_name": "1375.v114-o50",
+                "fn_id": 895,
+                "source_fn_id": 895
+            }
+        ]
+    },
+    {
+        "filename": "../../src/paypal-adaptive.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[p] = merge(a[p], b[p]);",
+        "sink_lineno": 29,
+        "sink_function": "64",
+        "source": "new module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": {
+                "userId": "any",
+                "password": "any",
+                "signature": "any",
+                "appId": "any",
+                "sandbox": "any",
+                "*": {
+                    "constructor": "any"
+                }
+            }
+        },
+        "returns": {
+            "source": ".refund",
+            "param_types": {
+                "params": {
+                    "payKey": "any",
+                    "transactionId": "any",
+                    "trackingId": "any",
+                    "*": {
+                        "constructor": "any"
+                    }
+                },
+                "callback": "function"
+            },
+            "tainted_params": [
+                "params",
+                "callback"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1375.v140-o69",
+                "fn_id": "318",
+                "source_fn_id": "318"
+            },
+            {
+                "type": "Method",
+                "prop": "refund",
+                "fn_name": "1375.v153-o68",
+                "fn_id": 1174,
+                "source_fn_id": 1174
+            }
+        ]
+    }
+]

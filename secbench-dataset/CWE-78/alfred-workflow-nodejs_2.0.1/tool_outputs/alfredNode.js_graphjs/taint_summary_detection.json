@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/alfredNode.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(setCommand, function(err, stdout, stderr) {",
+        "sink_lineno": 402,
+        "sink_function": "1469"
+    },
+    {
+        "filename": "../../src/alfredNode.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(addCommand, function(err, stdout, stderr) {",
+        "sink_lineno": 406,
+        "sink_function": "1449"
+    },
+    {
+        "filename": "../../src/alfredNode.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(getCommand, function(err, stdout, stderr) {",
+        "sink_lineno": 427,
+        "sink_function": "1517"
+    },
+    {
+        "filename": "../../src/alfredNode.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(getCommand, function(err, stdout, stderr) {",
+        "sink_lineno": 445,
+        "sink_function": "1556"
+    }
+]

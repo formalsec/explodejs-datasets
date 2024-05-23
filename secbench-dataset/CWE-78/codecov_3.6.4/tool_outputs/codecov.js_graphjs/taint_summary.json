@@ -1,0 +1,352 @@
+[
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "path-traversal",
+        "sink": "var loadedYamlFile = jsYaml.safeLoad(fs.readFileSync(query.yaml, 'utf8'))",
+        "sink_lineno": 306,
+        "sink_function": "1305",
+        "source": "module.exports.upload",
+        "tainted_params": [
+            "args",
+            "on_success",
+            "on_failure"
+        ],
+        "params_types": {
+            "args": {
+                "options": {
+                    "url": "string",
+                    "yml": "array",
+                    "disable": "array",
+                    "build": "any",
+                    "commit": "any",
+                    "branch": "any",
+                    "slug": "any",
+                    "flags": "any",
+                    "token": "any",
+                    "env": {
+                        "_union": [
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "root": {
+                        "_union": [
+                            "array",
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "'gcov-glob'": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "'gcov-root'": "string",
+                    "'gcov-exec'": "string",
+                    "'gcov-args'": "string",
+                    "pipe": "string",
+                    "file": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "dump": "any",
+                    "clear": "any"
+                }
+            },
+            "on_success": "function",
+            "on_failure": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "upload",
+                "fn_name": "2819.upload-o152",
+                "fn_id": "910",
+                "source_fn_id": "910"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "command-injection",
+        "sink": "execSync(gcov)",
+        "sink_lineno": 419,
+        "sink_function": "2010",
+        "source": "module.exports.upload",
+        "tainted_params": [
+            "args",
+            "on_success",
+            "on_failure"
+        ],
+        "params_types": {
+            "args": {
+                "options": {
+                    "url": "string",
+                    "yml": "array",
+                    "disable": "array",
+                    "build": "any",
+                    "commit": "any",
+                    "branch": "any",
+                    "slug": "any",
+                    "flags": "any",
+                    "token": "any",
+                    "env": {
+                        "_union": [
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "root": {
+                        "_union": [
+                            "array",
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "'gcov-glob'": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "'gcov-root'": "string",
+                    "'gcov-exec'": "string",
+                    "'gcov-args'": "string",
+                    "pipe": "string",
+                    "file": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "dump": "any",
+                    "clear": "any"
+                }
+            },
+            "on_success": "function",
+            "on_failure": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "upload",
+                "fn_name": "2819.upload-o152",
+                "fn_id": "910",
+                "source_fn_id": "910"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFileSync(file, 'utf8').toString() +",
+        "sink_lineno": 468,
+        "sink_function": "2243",
+        "source": "module.exports.upload",
+        "tainted_params": [
+            "args",
+            "on_success",
+            "on_failure"
+        ],
+        "params_types": {
+            "args": {
+                "options": {
+                    "url": "string",
+                    "yml": "array",
+                    "disable": "array",
+                    "build": "any",
+                    "commit": "any",
+                    "branch": "any",
+                    "slug": "any",
+                    "flags": "any",
+                    "token": "any",
+                    "env": {
+                        "_union": [
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "root": {
+                        "_union": [
+                            "array",
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "'gcov-glob'": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "'gcov-root'": "string",
+                    "'gcov-exec'": "string",
+                    "'gcov-args'": "string",
+                    "pipe": "string",
+                    "file": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "dump": "any",
+                    "clear": "any"
+                }
+            },
+            "on_success": "function",
+            "on_failure": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "upload",
+                "fn_name": "2819.upload-o152",
+                "fn_id": "910",
+                "source_fn_id": "910"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "command-injection",
+        "sink": "_files = execSync('find ' + root + ' ' + patterns + more_patterns)",
+        "sink_lineno": 480,
+        "sink_function": "2388",
+        "source": "module.exports.upload",
+        "tainted_params": [
+            "args",
+            "on_success",
+            "on_failure"
+        ],
+        "params_types": {
+            "args": {
+                "options": {
+                    "url": "string",
+                    "yml": "array",
+                    "disable": "array",
+                    "build": "any",
+                    "commit": "any",
+                    "branch": "any",
+                    "slug": "any",
+                    "flags": "any",
+                    "token": "any",
+                    "env": {
+                        "_union": [
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "root": {
+                        "_union": [
+                            "array",
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "'gcov-glob'": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "'gcov-root'": "string",
+                    "'gcov-exec'": "string",
+                    "'gcov-args'": "string",
+                    "pipe": "string",
+                    "file": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "dump": "any",
+                    "clear": "any"
+                }
+            },
+            "on_success": "function",
+            "on_failure": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "upload",
+                "fn_name": "2819.upload-o152",
+                "fn_id": "910",
+                "source_fn_id": "910"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFileSync(file, 'utf8').toString() +",
+        "sink_lineno": 500,
+        "sink_function": "2473",
+        "source": "module.exports.upload",
+        "tainted_params": [
+            "args",
+            "on_success",
+            "on_failure"
+        ],
+        "params_types": {
+            "args": {
+                "options": {
+                    "url": "string",
+                    "yml": "array",
+                    "disable": "array",
+                    "build": "any",
+                    "commit": "any",
+                    "branch": "any",
+                    "slug": "any",
+                    "flags": "any",
+                    "token": "any",
+                    "env": {
+                        "_union": [
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "root": {
+                        "_union": [
+                            "array",
+                            "number",
+                            "string"
+                        ]
+                    },
+                    "'gcov-glob'": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "'gcov-root'": "string",
+                    "'gcov-exec'": "string",
+                    "'gcov-args'": "string",
+                    "pipe": "string",
+                    "file": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "dump": "any",
+                    "clear": "any"
+                }
+            },
+            "on_success": "function",
+            "on_failure": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "upload",
+                "fn_name": "2819.upload-o152",
+                "fn_id": "910",
+                "source_fn_id": "910"
+            }
+        ]
+    }
+]

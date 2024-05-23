@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/getProcessForPort.js",
+        "vuln_type": "command-injection",
+        "sink": "return execSync('lsof -i:' + port + ' -P -t -sTCP:LISTEN', execOptions)",
+        "sink_lineno": 28,
+        "sink_function": "61"
+    },
+    {
+        "filename": "../../src/getProcessForPort.js",
+        "vuln_type": "code-injection",
+        "sink": "return require(packagePath).name;",
+        "sink_lineno": 37,
+        "sink_function": "100"
+    },
+    {
+        "filename": "../../src/getProcessForPort.js",
+        "vuln_type": "command-injection",
+        "sink": "var command = execSync(",
+        "sink_lineno": 44,
+        "sink_function": "129"
+    },
+    {
+        "filename": "../../src/getProcessForPort.js",
+        "vuln_type": "command-injection",
+        "sink": "return execSync(",
+        "sink_lineno": 60,
+        "sink_function": "184"
+    }
+]

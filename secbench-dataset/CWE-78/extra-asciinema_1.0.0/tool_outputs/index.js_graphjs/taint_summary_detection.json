@@ -1,0 +1,58 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(`asciinema cat ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
+        "sink_lineno": 11,
+        "sink_function": "41"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return cp1.execSync(`asciinema cat ${f}`, {encoding: 'utf8'});",
+        "sink_lineno": 26,
+        "sink_function": "105"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp3.exec(recCmd(f, o), {encoding: 'utf8'}, (err) => {",
+        "sink_lineno": 71,
+        "sink_function": "391"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp4.execSync(recCmd(f, o), {encoding: 'utf8'});",
+        "sink_lineno": 99,
+        "sink_function": "499"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var d = fs7.readFileSync(f, 'utf8');",
+        "sink_lineno": 179,
+        "sink_function": "816"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs7.writeFileSync(f, d);",
+        "sink_lineno": 181,
+        "sink_function": "830"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp8.exec(`asciinema upload ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
+        "sink_lineno": 193,
+        "sink_function": "887"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var stdout = cp9.execSync(`asciinema upload ${f}`, {encoding: 'utf8'});",
+        "sink_lineno": 208,
+        "sink_function": "951"
+    }
+]

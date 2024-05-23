@@ -10,12 +10,8 @@
             "doc",
             "patch"
         ],
-        "param_types": {
-            "doc": {
-                "*": {
-                    "*": "any"
-                }
-            },
+        "params_types": {
+            "doc": "polluted-object | array",
             "patch": {
                 "*": "array"
             }

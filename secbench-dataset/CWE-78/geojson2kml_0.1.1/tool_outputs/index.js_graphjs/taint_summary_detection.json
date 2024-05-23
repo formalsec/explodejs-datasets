@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(ogrCommand, function(err, stdout, stderr){",
+        "sink_lineno": 6,
+        "sink_function": "42"
+    }
+]

@@ -9,7 +9,7 @@
         "tainted_params": [
             "string"
         ],
-        "param_types": {
+        "params_types": {
             "string": {
                 "_union": [
                     "array",

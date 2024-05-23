@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/vega-util.js",
+        "vuln_type": "code-injection",
+        "sink": ": Function('_', 'return \\'\\'+' +",
+        "sink_lineno": 694,
+        "sink_function": "4038"
+    },
+    {
+        "filename": "../../src/vega-util.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "o[k] = value[k];",
+        "sink_lineno": 203,
+        "sink_function": "1203"
+    }
+]

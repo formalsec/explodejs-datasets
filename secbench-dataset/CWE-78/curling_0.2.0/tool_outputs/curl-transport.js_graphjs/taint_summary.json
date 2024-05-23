@@ -1,0 +1,27 @@
+[
+    {
+        "filename": "../../src/curl-transport.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"curl \" + command, function (error, stdout, stderr) {",
+        "sink_lineno": 56,
+        "sink_function": "367",
+        "source": "module.exports.run",
+        "tainted_params": [
+            "command",
+            "cb"
+        ],
+        "params_types": {
+            "command": "string",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "run",
+                "fn_name": "734.v51-o9",
+                "fn_id": "334",
+                "source_fn_id": "334"
+            }
+        ]
+    }
+]

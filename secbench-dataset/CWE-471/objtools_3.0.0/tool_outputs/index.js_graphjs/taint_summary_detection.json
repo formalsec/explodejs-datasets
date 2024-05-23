@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "cur[parts[i]] = value;",
+        "sink_lineno": 349,
+        "sink_function": "1482"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[key] = result;",
+        "sink_lineno": 533,
+        "sink_function": "2252"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[key] = result;",
+        "sink_lineno": 565,
+        "sink_function": "2428"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[key] = baseMergeHeavy(result, srcValue, customizer);",
+        "sink_lineno": 563,
+        "sink_function": "2415"
+    }
+]

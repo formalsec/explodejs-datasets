@@ -1,0 +1,35 @@
+[
+    {
+        "filename": "../../src/path.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "document[keyPath] = value;",
+        "sink_lineno": 54,
+        "sink_function": "292",
+        "source": "module.exports.setPath",
+        "tainted_params": [
+            "document",
+            "keyPath",
+            "value"
+        ],
+        "params_types": {
+            "document": "object",
+            "keyPath": {
+                "_union": [
+                    "array",
+                    "number",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "setPath",
+                "fn_name": "369.setPath-o5",
+                "fn_id": "152",
+                "source_fn_id": "152"
+            }
+        ]
+    }
+]

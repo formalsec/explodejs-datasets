@@ -1,0 +1,37 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[key] = value;",
+        "sink_lineno": 147,
+        "sink_function": "584",
+        "source": "module.exports.put",
+        "tainted_params": [
+            "object",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "object": "object",
+            "path": {
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "put",
+                "fn_name": "665.put-o25",
+                "fn_id": "495",
+                "source_fn_id": "495"
+            }
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "filename": "../../src/mithril.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "cursor[level] = isValue ? value : isNumber ? [] : {}",
+        "sink_lineno": 982,
+        "sink_function": "9820",
+        "source": "new module.exports",
+        "tainted_params": [
+            "selector"
+        ],
+        "params_types": {
+            "selector": {
+                "view": "any"
+            }
+        },
+        "returns": {
+            "source": ".parseQueryString",
+            "param_types": {
+                "string": {
+                    "_union": [
+                        "array",
+                        "number",
+                        "string"
+                    ]
+                }
+            },
+            "tainted_params": [
+                "string"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "11436.m-o142",
+                "fn_id": "222",
+                "source_fn_id": "222"
+            },
+            {
+                "type": "Method",
+                "prop": "parseQueryString",
+                "fn_name": "11436.parseQueryString-o112",
+                "fn_id": "9511",
+                "source_fn_id": "9511"
+            }
+        ]
+    }
+]

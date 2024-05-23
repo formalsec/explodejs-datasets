@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/confucious.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.push(JSON.parse(fs.readFileSync(filePath, 'utf8')));",
+        "sink_lineno": 160,
+        "sink_function": "538"
+    },
+    {
+        "filename": "../../src/confucious.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "hash[lastSubKey] = value;",
+        "sink_lineno": 48,
+        "sink_function": "176"
+    },
+    {
+        "filename": "../../src/confucious.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "hash[lastSubKey] = extend(true, {}, value);",
+        "sink_lineno": 45,
+        "sink_function": "169"
+    },
+    {
+        "filename": "../../src/confucious.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "hash[subKey] = hash;",
+        "sink_lineno": 37,
+        "sink_function": "123"
+    }
+]

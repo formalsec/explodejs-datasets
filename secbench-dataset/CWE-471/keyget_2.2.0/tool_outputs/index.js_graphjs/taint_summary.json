@@ -1,0 +1,89 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = value;",
+        "sink_lineno": 111,
+        "sink_function": "301",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "target",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "target": "object",
+            "path": [
+                "any"
+            ],
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "945.setByPath-o4",
+                "fn_id": "203",
+                "source_fn_id": "203"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = setByPath(target[key], path.slice(1), value);",
+        "sink_lineno": 108,
+        "sink_function": "294",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "target",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "target": "object",
+            "path": [
+                "any"
+            ],
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "945.setByPath-o4",
+                "fn_id": "203",
+                "source_fn_id": "203"
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = at(target[key], path.slice(1), update);",
+        "sink_lineno": 188,
+        "sink_function": "519",
+        "source": "module.exports.at",
+        "tainted_params": [
+            "target",
+            "path",
+            "update"
+        ],
+        "params_types": {
+            "target": "object",
+            "path": [
+                "any"
+            ],
+            "update": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "at",
+                "fn_name": "945.at-o25",
+                "fn_id": "423",
+                "source_fn_id": "423"
+            }
+        ]
+    }
+]

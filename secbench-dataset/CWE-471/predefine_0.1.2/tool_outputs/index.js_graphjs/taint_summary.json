@@ -1,0 +1,120 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "result[key] = merge(target[key], additional[key]);",
+        "sink_lineno": 286,
+        "sink_function": "957",
+        "source": "new module.exports",
+        "tainted_params": [
+            "obj",
+            "pattern"
+        ],
+        "params_types": {
+            "obj": {
+                "_union": [
+                    "array",
+                    "object"
+                ]
+            },
+            "pattern": "any"
+        },
+        "returns": {
+            "source": ".merge",
+            "param_types": {
+                "target": "object",
+                "additional": {
+                    "_union": [
+                        {
+                            "length": "number",
+                            "*": {
+                                "length": "number",
+                                "*": "any"
+                            }
+                        },
+                        "array",
+                        "string"
+                    ]
+                }
+            },
+            "tainted_params": [
+                "target",
+                "additional"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1086.predefine-o65",
+                "fn_id": "224",
+                "source_fn_id": "224"
+            },
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "1086.merge-o55",
+                "fn_id": 843,
+                "source_fn_id": 843
+            }
+        ]
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "result[key] = value;",
+        "sink_lineno": 284,
+        "sink_function": "937",
+        "source": "new module.exports",
+        "tainted_params": [
+            "obj",
+            "pattern"
+        ],
+        "params_types": {
+            "obj": {
+                "_union": [
+                    "array",
+                    "object"
+                ]
+            },
+            "pattern": "any"
+        },
+        "returns": {
+            "source": ".merge",
+            "param_types": {
+                "target": "object",
+                "additional": {
+                    "_union": [
+                        {
+                            "length": "number",
+                            "*": {
+                                "length": "number",
+                                "*": "any"
+                            }
+                        },
+                        "array",
+                        "string"
+                    ]
+                }
+            },
+            "tainted_params": [
+                "target",
+                "additional"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1086.predefine-o65",
+                "fn_id": "224",
+                "source_fn_id": "224"
+            },
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "1086.merge-o55",
+                "fn_id": 843,
+                "source_fn_id": 843
+            }
+        ]
+    }
+]

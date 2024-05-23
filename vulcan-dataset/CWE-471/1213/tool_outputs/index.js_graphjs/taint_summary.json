@@ -11,20 +11,8 @@
             "path",
             "value"
         ],
-        "param_types": {
-            "object": {
-                "*": {
-                    "*": {
-                        "*": {
-                            "*": {
-                                "*": {
-                                    "*": "any"
-                                }
-                            }
-                        }
-                    }
-                }
-            },
+        "params_types": {
+            "object": "polluted-object | array",
             "path": "string",
             "value": "any"
         },

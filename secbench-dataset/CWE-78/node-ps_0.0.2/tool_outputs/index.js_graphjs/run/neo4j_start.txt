@@ -1,0 +1,23 @@
+Directories in use:
+home:         /var/lib/neo4j
+config:       /etc/neo4j
+logs:         /var/log/neo4j
+plugins:      /var/lib/neo4j/plugins
+import:       /var/lib/neo4j/import
+data:         /var/lib/neo4j/data
+certificates: /var/lib/neo4j/certificates
+licenses:     /var/lib/neo4j/licenses
+run:          /var/lib/neo4j/run
+Starting Neo4j.
+WARNING! You are using an unsupported Java runtime.
+* Please use Oracle(R) Java(TM) 17, OpenJDK(TM) 17 to run Neo4j.
+* Please see https://neo4j.com/docs/ for Neo4j installation instructions.
+2024-05-21 16:18:25.331+0000 INFO  Starting...
+2024-05-21 16:18:25.857+0000 INFO  This instance is ServerId{5e2d68e5} (5e2d68e5-cbc5-421a-9db0-3b287fb96d17)
+2024-05-21 16:18:26.325+0000 INFO  ======== Neo4j 5.9.0 ========
+2024-05-21 16:18:27.478+0000 INFO  Bolt enabled on localhost:7687.
+2024-05-21 16:18:28.019+0000 INFO  Remote interface available at http://localhost:7474/
+2024-05-21 16:18:28.021+0000 INFO  id: 1A9693066E090333A286259A9C758C86B1F96BBB9FE78D9FF1BA8FB2597120FF
+2024-05-21 16:18:28.022+0000 INFO  name: system
+2024-05-21 16:18:28.022+0000 INFO  creationDate: 2024-05-06T14:45:43.471Z
+2024-05-21 16:18:28.022+0000 INFO  Started.

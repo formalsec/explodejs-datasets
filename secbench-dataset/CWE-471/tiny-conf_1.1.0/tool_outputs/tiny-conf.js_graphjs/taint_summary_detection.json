@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/tiny-conf.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = val;",
+        "sink_lineno": 73,
+        "sink_function": "233"
+    },
+    {
+        "filename": "../../src/tiny-conf.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = val;",
+        "sink_lineno": 107,
+        "sink_function": "377"
+    }
+]

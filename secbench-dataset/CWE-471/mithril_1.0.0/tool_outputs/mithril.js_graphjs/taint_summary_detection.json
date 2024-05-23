@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/mithril.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "cursor[level] = isValue ? value : isNumber ? [] : {}",
+        "sink_lineno": 982,
+        "sink_function": "9820"
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/mootools-core-1.5.2-server.js",
+        "vuln_type": "code-injection",
+        "sink": "return eval('(' + string + ')');",
+        "sink_lineno": 1175,
+        "sink_function": "6191"
+    }
+]

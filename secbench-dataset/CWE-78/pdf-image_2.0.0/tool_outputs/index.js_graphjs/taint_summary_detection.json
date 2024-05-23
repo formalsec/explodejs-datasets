@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(getInfoCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 44,
+        "sink_function": "247"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(combineCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 116,
+        "sink_function": "663"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"rm \"+imagePaths.join(' ')); //cleanUp",
+        "sink_lineno": 125,
+        "sink_function": "645"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(convertCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 170,
+        "sink_function": "936"
+    }
+]

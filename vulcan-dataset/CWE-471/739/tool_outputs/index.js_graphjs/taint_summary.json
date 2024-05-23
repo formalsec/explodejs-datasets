@@ -10,7 +10,7 @@
             "from",
             "to"
         ],
-        "param_types": {
+        "params_types": {
             "from": "string",
             "to": "string"
         },

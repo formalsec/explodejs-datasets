@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/samsung-remote.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(\"ping -c 1 \" + config.ip, function (error, stdout, stderr) {",
+        "sink_lineno": 103,
+        "sink_function": "692"
+    }
+]

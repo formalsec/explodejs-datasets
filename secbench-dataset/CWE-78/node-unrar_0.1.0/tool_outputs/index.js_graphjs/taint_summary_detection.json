@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(execCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 23,
+        "sink_function": "164"
+    }
+]

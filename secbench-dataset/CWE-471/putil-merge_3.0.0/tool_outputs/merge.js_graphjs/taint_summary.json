@@ -1,0 +1,106 @@
+[
+    {
+        "filename": "../../src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = srcVal;",
+        "sink_lineno": 72,
+        "sink_function": "373",
+        "source": "new module.exports",
+        "tainted_params": [
+            "target",
+            "source",
+            "options"
+        ],
+        "params_types": {
+            "target": {
+                "*": {
+                    "key": {
+                        "_union": [
+                            "object",
+                            "string"
+                        ]
+                    },
+                    "*": {
+                        "_union": [
+                            {
+                                "*": "any"
+                            },
+                            "array"
+                        ]
+                    }
+                },
+                "key": {
+                    "_union": [
+                        "object",
+                        "string"
+                    ]
+                }
+            },
+            "source": {
+                "_union": [
+                    "array",
+                    "object"
+                ]
+            },
+            "options": {
+                "filter": "any",
+                "descriptor": "any",
+                "deep": "any",
+                "clone": "any",
+                "arrayMerge": "any"
+            }
+        },
+        "returns": {
+            "source": ".all",
+            "param_types": {
+                "objects": [
+                    {
+                        "*": {
+                            "key": {
+                                "_union": [
+                                    "object",
+                                    "string"
+                                ]
+                            },
+                            "*": {
+                                "*": "any"
+                            }
+                        },
+                        "key": {
+                            "_union": [
+                                "object",
+                                "string"
+                            ]
+                        }
+                    }
+                ],
+                "options": {
+                    "filter": "any",
+                    "descriptor": "any",
+                    "deep": "any",
+                    "clone": "any",
+                    "arrayMerge": "any"
+                }
+            },
+            "tainted_params": [
+                "objects",
+                "options"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "472.merge-o13",
+                "fn_id": "27",
+                "source_fn_id": "27"
+            },
+            {
+                "type": "Method",
+                "prop": "all",
+                "fn_name": "472.all-o12",
+                "fn_id": 384,
+                "source_fn_id": 384
+            }
+        ]
+    }
+]

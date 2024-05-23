@@ -1,0 +1,44 @@
+[
+    {
+        "filename": "../../src/core.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "curSpace[ val ] = value;",
+        "sink_lineno": 194,
+        "sink_function": "438",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "root",
+            "space",
+            "value"
+        ],
+        "params_types": {
+            "root": "object",
+            "space": {
+                "_union": [
+                    {
+                        "*": "any"
+                    },
+                    "array"
+                ]
+            },
+            "value": {
+                "_union": [
+                    "boolean",
+                    "function",
+                    "number",
+                    "object",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "960.set-o38",
+                "fn_id": "358",
+                "source_fn_id": "358"
+            }
+        ]
+    }
+]

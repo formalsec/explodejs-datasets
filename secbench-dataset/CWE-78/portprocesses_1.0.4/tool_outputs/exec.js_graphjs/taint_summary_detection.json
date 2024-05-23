@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/exec.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, (err, stdout, stderr) => {",
+        "sink_lineno": 5,
+        "sink_function": "46"
+    }
+]

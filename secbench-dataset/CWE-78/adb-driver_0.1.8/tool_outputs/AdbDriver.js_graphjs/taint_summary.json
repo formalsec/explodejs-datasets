@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "../../src/AdbDriver.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process_1.exec(execCmd, option || { stdio: 'inherit' }, (err, stdout, stderr) => {",
+        "sink_lineno": 26,
+        "sink_function": "196",
+        "source": "module.exports.execADBCommand",
+        "tainted_params": [
+            "command",
+            "option"
+        ],
+        "params_types": {
+            "command": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "option": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "execADBCommand",
+                "fn_name": "232.execADBCommand-o27",
+                "fn_id": 117,
+                "source_fn_id": 117
+            }
+        ]
+    }
+]

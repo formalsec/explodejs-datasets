@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`git ls-remote --tags ${repo}`, (error, stdout, stderr) => {",
+        "sink_lineno": 5,
+        "sink_function": "58",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "repo"
+        ],
+        "params_types": {
+            "repo": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "get",
+                "fn_name": "331.get-o12",
+                "fn_id": 207,
+                "source_fn_id": 207
+            }
+        ]
+    }
+]

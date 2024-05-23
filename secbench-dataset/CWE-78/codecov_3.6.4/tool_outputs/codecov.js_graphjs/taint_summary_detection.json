@@ -1,0 +1,37 @@
+[
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "path-traversal",
+        "sink": "var loadedYamlFile = jsYaml.safeLoad(fs.readFileSync(query.yaml, 'utf8'))",
+        "sink_lineno": 306,
+        "sink_function": "1305"
+    },
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "command-injection",
+        "sink": "execSync(gcov)",
+        "sink_lineno": 419,
+        "sink_function": "2010"
+    },
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFileSync(file, 'utf8').toString() +",
+        "sink_lineno": 468,
+        "sink_function": "2243"
+    },
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "command-injection",
+        "sink": "_files = execSync('find ' + root + ' ' + patterns + more_patterns)",
+        "sink_lineno": 480,
+        "sink_function": "2388"
+    },
+    {
+        "filename": "../../src/codecov.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFileSync(file, 'utf8').toString() +",
+        "sink_lineno": 500,
+        "sink_function": "2473"
+    }
+]
