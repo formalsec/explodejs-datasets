@@ -359,6 +359,6 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let to = {  };
-let from = { *: [ esl_symbolic.string("*0") ] };
+let from = esl_symbolic.polluted_object(2);
 module.exports.merge(to, from);
 console.log(({}).toString);

@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
@@ -19,6 +20,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",

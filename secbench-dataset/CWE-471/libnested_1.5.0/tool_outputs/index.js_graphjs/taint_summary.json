@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[path[i]] = value",
@@ -12,28 +13,10 @@
             "value"
         ],
         "params_types": {
-            "obj": {
-                "*": {
-                    "*": {
-                        "*": {
-                            "*": {
-                                "*": "any",
-                                "v38": "string"
-                            },
-                            "v38": "string"
-                        },
-                        "v38": "string"
-                    },
-                    "v38": "string"
-                },
-                "v38": "string"
-            },
+            "obj": "object",
             "path": {
                 "_union": [
-                    {
-                        "*": "any",
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]

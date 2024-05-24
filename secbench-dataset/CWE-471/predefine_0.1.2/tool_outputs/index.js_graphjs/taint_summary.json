@@ -1,5 +1,6 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "result[key] = merge(target[key], additional[key]);",
@@ -25,13 +26,7 @@
                 "target": "object",
                 "additional": {
                     "_union": [
-                        {
-                            "length": "number",
-                            "*": {
-                                "length": "number",
-                                "*": "any"
-                            }
-                        },
+                        "object",
                         "array",
                         "string"
                     ]
@@ -59,6 +54,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "result[key] = value;",
@@ -84,13 +80,7 @@
                 "target": "object",
                 "additional": {
                     "_union": [
-                        {
-                            "length": "number",
-                            "*": {
-                                "length": "number",
-                                "*": "any"
-                            }
-                        },
+                        "object",
                         "array",
                         "string"
                     ]

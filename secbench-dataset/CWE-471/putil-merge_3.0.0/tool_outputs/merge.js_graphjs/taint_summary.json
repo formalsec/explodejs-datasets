@@ -1,5 +1,6 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = srcVal;",
@@ -12,28 +13,7 @@
             "options"
         ],
         "params_types": {
-            "target": {
-                "*": {
-                    "key": {
-                        "_union": [
-                            "object",
-                            "string"
-                        ]
-                    },
-                    "*": {
-                        "_union": [
-                            "object",
-                            "array"
-                        ]
-                    }
-                },
-                "key": {
-                    "_union": [
-                        "object",
-                        "string"
-                    ]
-                }
-            },
+            "target": "object",
             "source": {
                 "_union": [
                     "array",

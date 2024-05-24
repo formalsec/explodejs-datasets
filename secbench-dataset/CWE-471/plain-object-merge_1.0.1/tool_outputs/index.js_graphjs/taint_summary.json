@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = mergeObjects(target[key], value);",
@@ -10,9 +11,12 @@
             "objects"
         ],
         "params_types": {
-            "objects": [
-                "any"
-            ]
+            "objects": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
         },
         "call_paths": [
             {
@@ -24,6 +28,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = plain_object_clone_1.default(value);",
@@ -34,9 +39,12 @@
             "objects"
         ],
         "params_types": {
-            "objects": [
-                "any"
-            ]
+            "objects": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
         },
         "call_paths": [
             {
@@ -48,6 +56,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
@@ -58,9 +67,12 @@
             "objects"
         ],
         "params_types": {
-            "objects": [
-                "any"
-            ]
+            "objects": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
         },
         "call_paths": [
             {

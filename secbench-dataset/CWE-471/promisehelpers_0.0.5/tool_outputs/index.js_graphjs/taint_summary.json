@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunRetByExport",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "nestedObject[key] = value;",
@@ -13,10 +14,7 @@
         "params_types": {
             "key": {
                 "_union": [
-                    {
-                        "length": "any",
-                        "*": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]

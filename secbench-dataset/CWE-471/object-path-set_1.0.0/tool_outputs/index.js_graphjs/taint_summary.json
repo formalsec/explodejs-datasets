@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = value;",
@@ -30,6 +31,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = setPath(obj[key], arr, value, delimiter);",

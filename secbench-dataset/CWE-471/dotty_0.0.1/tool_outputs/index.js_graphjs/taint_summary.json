@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = value;",
@@ -15,9 +16,7 @@
             "object": "object",
             "path": {
                 "_union": [
-                    {
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]

@@ -1,5 +1,6 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/mithril.js",
         "vuln_type": "prototype-pollution",
         "sink": "cursor[level] = isValue ? value : isNumber ? [] : {}",

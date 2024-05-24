@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "res[segment] = exports.reach(source, sourcePath, options);",
@@ -14,28 +15,22 @@
         "params_types": {
             "source": {
                 "_union": [
-                    {
-                        "length": "any",
-                        "*": "any"
-                    },
-                    "array",
-                    "string"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "transform": {
                 "_union": [
-                    {
-                        "length": "any",
-                        "*": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
             },
             "options": {
-                "separator": "array",
-                "length": "any",
-                "*": "any"
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "call_paths": [
@@ -49,6 +44,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
@@ -64,49 +60,22 @@
         "params_types": {
             "target": {
                 "_union": [
-                    {
-                        "*": "any",
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
             },
-            "source": {
-                "_union": [
-                    {
-                        "*": {
-                            "*": "any",
-                            "length": "any"
-                        },
-                        "length": "any"
-                    },
-                    "array",
-                    "string"
-                ]
-            },
+            "source": "object",
             "isNullOverride": {
                 "_union": [
-                    {
-                        "*": {
-                            "*": "any",
-                            "length": "any"
-                        },
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
             },
             "isMergeArrays": {
                 "_union": [
-                    {
-                        "*": {
-                            "*": "any",
-                            "length": "any"
-                        },
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
@@ -123,6 +92,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
@@ -138,49 +108,22 @@
         "params_types": {
             "target": {
                 "_union": [
-                    {
-                        "*": "any",
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
             },
-            "source": {
-                "_union": [
-                    {
-                        "*": {
-                            "*": "any",
-                            "length": "any"
-                        },
-                        "length": "any"
-                    },
-                    "array",
-                    "string"
-                ]
-            },
+            "source": "object",
             "isNullOverride": {
                 "_union": [
-                    {
-                        "*": {
-                            "*": "any",
-                            "length": "any"
-                        },
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
             },
             "isMergeArrays": {
                 "_union": [
-                    {
-                        "*": {
-                            "*": "any",
-                            "length": "any"
-                        },
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
@@ -197,6 +140,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = exports.clone(value);",
@@ -212,49 +156,22 @@
         "params_types": {
             "target": {
                 "_union": [
-                    {
-                        "*": "any",
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
             },
-            "source": {
-                "_union": [
-                    {
-                        "*": {
-                            "*": "any",
-                            "length": "any"
-                        },
-                        "length": "any"
-                    },
-                    "array",
-                    "string"
-                ]
-            },
+            "source": "object",
             "isNullOverride": {
                 "_union": [
-                    {
-                        "*": {
-                            "*": "any",
-                            "length": "any"
-                        },
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
             },
             "isMergeArrays": {
                 "_union": [
-                    {
-                        "*": {
-                            "*": "any",
-                            "length": "any"
-                        },
-                        "length": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]

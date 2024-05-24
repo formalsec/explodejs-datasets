@@ -162,7 +162,7 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let object = {  };
-let path = { length: esl_symbolic.any("length") };
+let path = {  };
 let value = esl_symbolic.any("value");
 module.exports.put(object, path, value);
 console.log(({}).toString);

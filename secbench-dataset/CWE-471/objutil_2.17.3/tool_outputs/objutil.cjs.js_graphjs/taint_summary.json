@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/objutil.cjs.js",
         "vuln_type": "prototype-pollution",
         "sink": "n[p] = value;",
@@ -16,10 +17,7 @@
             "obj": "object",
             "path": {
                 "_union": [
-                    {
-                        "length": "number",
-                        "*": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]

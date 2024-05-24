@@ -1,5 +1,6 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/properties-reader.js",
         "vuln_type": "path-traversal",
         "sink": "this.read(fs.readFileSync(sourceFile, typeof encoding === 'string' && encoding || this._encoding));",
@@ -44,6 +45,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/properties-reader.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(destFile, content, (err) => {",
@@ -65,13 +67,7 @@
             "param_types": {
                 "destFile": "string",
                 "onComplete": {
-                    "_union": [
-                        {
-                            "length": "any"
-                        },
-                        "array",
-                        "string"
-                    ]
+                    "length": "any"
                 }
             },
             "tainted_params": [
@@ -96,6 +92,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/properties-reader.js",
         "vuln_type": "prototype-pollution",
         "sink": "source[expanded[0]] = parsedValue;",

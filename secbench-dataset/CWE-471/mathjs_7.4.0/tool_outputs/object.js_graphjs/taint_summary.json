@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "child[lastKey] = value;",
@@ -15,15 +16,7 @@
             "object": "object",
             "path": {
                 "_union": [
-                    {
-                        "length": {
-                            "_union": [
-                                "number",
-                                "string"
-                            ]
-                        },
-                        "*": "any"
-                    },
+                    "object",
                     "array",
                     "string"
                 ]
@@ -41,6 +34,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
@@ -52,19 +46,12 @@
             "b"
         ],
         "params_types": {
-            "a": {
-                "*": {
-                    "*": {
-                        "constructor": "any",
-                        "*": "any"
-                    },
-                    "constructor": "any"
-                }
-            },
+            "a": "object",
             "b": {
-                "*": {
-                    "constructor": "any"
-                }
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
             }
         },
         "call_paths": [
@@ -78,6 +65,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
@@ -89,19 +77,12 @@
             "b"
         ],
         "params_types": {
-            "a": {
-                "*": {
-                    "*": {
-                        "constructor": "any",
-                        "*": "any"
-                    },
-                    "constructor": "any"
-                }
-            },
+            "a": "object",
             "b": {
-                "*": {
-                    "constructor": "any"
-                }
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
             }
         },
         "call_paths": [

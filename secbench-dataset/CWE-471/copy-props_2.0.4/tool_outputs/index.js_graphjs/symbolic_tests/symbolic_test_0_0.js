@@ -230,7 +230,7 @@ esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let src = esl_symbolic.polluted_object(2);
 let dst = {  };
-let fromto = { *: [ esl_symbolic.any("*0") ] };
+let fromto = {  };
 let converter = esl_symbolic.boolean("converter");
 let reverse = esl_symbolic.any("reverse");
 module.exports(src, dst, fromto, converter, reverse);

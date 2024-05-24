@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/ini_parser.js",
         "vuln_type": "path-traversal",
         "sink": "this.input = fs.readFileSync(path, encoding)",
@@ -36,6 +37,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/ini_parser.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.configs[curSection][curKey] = curValue",

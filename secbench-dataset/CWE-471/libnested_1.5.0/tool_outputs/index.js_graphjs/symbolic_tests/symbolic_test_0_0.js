@@ -102,19 +102,8 @@ exports.copy = clone
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let obj =
-  { *:
-      { *:
-          { *:
-              { *:
-                  { *: esl_symbolic.any("*")
-                  , v38: esl_symbolic.string("v38") }
-              , v38: esl_symbolic.string("v38") }
-          , v38: esl_symbolic.string("v38") }
-      , v38: esl_symbolic.string("v38") }
-  , v38: esl_symbolic.string("v38") };
-let path = { *: esl_symbolic.any("*")
-           , length: esl_symbolic.any("length") };
+let obj = {  };
+let path = {  };
 let value = esl_symbolic.any("value");
 module.exports.set(obj, path, value);
 console.log(({}).toString);

@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "destination[prop] = source[prop];",
@@ -10,12 +11,7 @@
             "destination"
         ],
         "params_types": {
-            "destination": {
-                "*": {
-                    "constructor": "any",
-                    "*": "any"
-                }
-            }
+            "destination": "object"
         },
         "call_paths": [
             {

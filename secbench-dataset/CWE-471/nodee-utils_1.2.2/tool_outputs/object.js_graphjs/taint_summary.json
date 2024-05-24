@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
@@ -40,6 +41,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "else current[parts[i]] = value;",
@@ -80,6 +82,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "else parentObj[key] = value;",

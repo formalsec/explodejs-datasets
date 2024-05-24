@@ -359,27 +359,6 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let to = {  };
-let from =
-  { *:
-      { tags:
-          { constructor: { name: esl_symbolic.any("name") }
-          , clone: esl_symbolic.function("clone")
-          , id: esl_symbolic.any("id")
-          , mode: esl_symbolic.any("mode")
-          , _bsontype: esl_symbolic.any("_bsontype")
-          , buffer: esl_symbolic.any("buffer")
-          , value: esl_symbolic.any("value")
-          , sub_type: esl_symbolic.any("sub_type")
-          , valueOf: esl_symbolic.any("valueOf") }
-      , constructor: { name: esl_symbolic.any("name") }
-      , clone: esl_symbolic.function("clone")
-      , id: esl_symbolic.any("id")
-      , mode: esl_symbolic.any("mode")
-      , _bsontype: esl_symbolic.any("_bsontype")
-      , buffer: esl_symbolic.any("buffer")
-      , value: esl_symbolic.any("value")
-      , sub_type: esl_symbolic.any("sub_type")
-      , valueOf: esl_symbolic.any("valueOf") }
-  };
+let from = esl_symbolic.polluted_object(2);
 module.exports.mergeClone(to, from);
 console.log(({}).toString);

@@ -951,19 +951,9 @@ exports.block = function () {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let target = { *: esl_symbolic.any("*")
-             , length: esl_symbolic.any("length") };
-let source =
-  { *: { *: esl_symbolic.any("*")
-       , length: esl_symbolic.any("length") }
-  , length: esl_symbolic.any("length") };
-let isNullOverride =
-  { *: { *: esl_symbolic.any("*")
-       , length: esl_symbolic.any("length") }
-  , length: esl_symbolic.any("length") };
-let isMergeArrays =
-  { *: { *: esl_symbolic.any("*")
-       , length: esl_symbolic.any("length") }
-  , length: esl_symbolic.any("length") };
+let target = {  };
+let source = {  };
+let isNullOverride = {  };
+let isMergeArrays = {  };
 module.exports.merge(target, source, isNullOverride, isMergeArrays);
 console.log(({}).toString);

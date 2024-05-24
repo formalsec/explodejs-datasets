@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/validate.js",
         "vuln_type": "prototype-pollution",
         "sink": "value[i] = options.coerce(value[i], propDef);",
@@ -12,33 +13,7 @@
             "options"
         ],
         "params_types": {
-            "instance": {
-                "*": {
-                    "*": {
-                        "_union": [
-                            {
-                                "length": "any",
-                                "*": {
-                                    "length": "any"
-                                }
-                            },
-                            "array",
-                            "string"
-                        ]
-                    },
-                    "length": "any",
-                    "$schema": "any"
-                },
-                "length": "any",
-                "$schema": "any",
-                "i": {
-                    "_union": [
-                        "number",
-                        "string",
-                        "undefined"
-                    ]
-                }
-            },
+            "instance": "object",
             "schema": {
                 "type": {
                     "_union": [
@@ -52,29 +27,24 @@
                 "required": "any",
                 "disallow": {
                     "_union": [
-                        {
-                            "length": "any",
-                            "*": "any"
-                        },
+                        "object",
                         "array",
                         "string"
                     ]
                 },
                 "items": {
-                    "*": {
-                        "_union": [
-                            "number",
-                            "string"
-                        ]
-                    }
+                    "_union": [
+                        "object",
+                        "array"
+                    ]
                 },
                 "minItems": "string",
                 "maxItems": "string",
                 "properties": {
-                    "*": {
-                        "default": "any",
-                        "requires": "string"
-                    }
+                    "_union": [
+                        "object",
+                        "array"
+                    ]
                 },
                 "additionalProperties": "any",
                 "pattern": "any",
@@ -84,10 +54,7 @@
                 "maximum": "any",
                 "'enum'": {
                     "_union": [
-                        {
-                            "length": "any",
-                            "*": "any"
-                        },
+                        "object",
                         "array",
                         "string"
                     ]

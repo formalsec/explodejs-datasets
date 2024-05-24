@@ -1,4 +1,4 @@
-graph: 87.449458
-import: 754
-injection_detection: 1431.5762519836426
-injection_reconstruction: 0.022649765014648438
+graph: 116.744667
+import: 796
+injection_detection: 1305.5307865142822
+injection_reconstruction: 0.030040740966796875

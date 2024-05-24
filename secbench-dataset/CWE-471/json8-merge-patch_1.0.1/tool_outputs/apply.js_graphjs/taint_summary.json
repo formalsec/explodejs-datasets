@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/apply.js",
         "vuln_type": "prototype-pollution",
         "sink": "doc[k] = apply(doc[k], v);",

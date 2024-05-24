@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/field.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[field] = value",
+        "sink_lineno": 50,
+        "sink_function": "281"
+    },
+    {
+        "filename": "../../src/field.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[field] = value",
+        "sink_lineno": 39,
+        "sink_function": "221"
+    }
+]

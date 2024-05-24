@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "to[key] = from[key];",
@@ -13,7 +14,10 @@
         "params_types": {
             "to": "object",
             "from": {
-                "*": "array"
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
             }
         },
         "call_paths": [
@@ -27,6 +31,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "to[key] = from[key];",
@@ -40,7 +45,10 @@
         "params_types": {
             "to": "object",
             "from": {
-                "*": "array"
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
             }
         },
         "call_paths": [
@@ -54,6 +62,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "to[key] = clone(from[key]);",
@@ -67,32 +76,10 @@
         "params_types": {
             "to": "object",
             "from": {
-                "*": {
-                    "tags": {
-                        "constructor": {
-                            "name": "any"
-                        },
-                        "clone": "function",
-                        "id": "any",
-                        "mode": "any",
-                        "_bsontype": "any",
-                        "buffer": "any",
-                        "value": "any",
-                        "sub_type": "any",
-                        "valueOf": "any"
-                    },
-                    "constructor": {
-                        "name": "any"
-                    },
-                    "clone": "function",
-                    "id": "any",
-                    "mode": "any",
-                    "_bsontype": "any",
-                    "buffer": "any",
-                    "value": "any",
-                    "sub_type": "any",
-                    "valueOf": "any"
-                }
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
             }
         },
         "call_paths": [
@@ -106,6 +93,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "to[key] = clone(from[key]);",
@@ -119,32 +107,10 @@
         "params_types": {
             "to": "object",
             "from": {
-                "*": {
-                    "tags": {
-                        "constructor": {
-                            "name": "any"
-                        },
-                        "clone": "function",
-                        "id": "any",
-                        "mode": "any",
-                        "_bsontype": "any",
-                        "buffer": "any",
-                        "value": "any",
-                        "sub_type": "any",
-                        "valueOf": "any"
-                    },
-                    "constructor": {
-                        "name": "any"
-                    },
-                    "clone": "function",
-                    "id": "any",
-                    "mode": "any",
-                    "_bsontype": "any",
-                    "buffer": "any",
-                    "value": "any",
-                    "sub_type": "any",
-                    "valueOf": "any"
-                }
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
             }
         },
         "call_paths": [

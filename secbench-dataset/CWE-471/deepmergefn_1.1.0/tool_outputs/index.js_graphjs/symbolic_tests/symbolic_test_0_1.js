@@ -22,6 +22,6 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let target = {  };
-let source = esl_symbolic.polluted_object(2);
+let source = esl_symbolic.polluted_object(3);
 module.exports(target, source);
 console.log(({}).toString);

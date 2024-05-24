@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = b[p];",
@@ -11,14 +12,10 @@
         ],
         "params_types": {
             "config": {
-                "userId": "any",
-                "password": "any",
-                "signature": "any",
-                "appId": "any",
-                "sandbox": "any",
-                "*": {
-                    "constructor": "any"
-                }
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "call_paths": [
@@ -31,6 +28,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = b[p];",
@@ -42,26 +40,20 @@
         ],
         "params_types": {
             "config": {
-                "userId": "any",
-                "password": "any",
-                "signature": "any",
-                "appId": "any",
-                "sandbox": "any",
-                "*": {
-                    "constructor": "any"
-                }
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "returns": {
             "source": ".paymentDetails",
             "param_types": {
                 "params": {
-                    "payKey": "any",
-                    "transactionId": "any",
-                    "trackingId": "any",
-                    "*": {
-                        "constructor": "any"
-                    }
+                    "_union": [
+                        "object",
+                        "array"
+                    ]
                 },
                 "callback": "function"
             },
@@ -87,6 +79,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = b[p];",
@@ -98,26 +91,20 @@
         ],
         "params_types": {
             "config": {
-                "userId": "any",
-                "password": "any",
-                "signature": "any",
-                "appId": "any",
-                "sandbox": "any",
-                "*": {
-                    "constructor": "any"
-                }
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "returns": {
             "source": ".refund",
             "param_types": {
                 "params": {
-                    "payKey": "any",
-                    "transactionId": "any",
-                    "trackingId": "any",
-                    "*": {
-                        "constructor": "any"
-                    }
+                    "_union": [
+                        "object",
+                        "array"
+                    ]
                 },
                 "callback": "function"
             },
@@ -143,6 +130,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = merge(a[p], b[p]);",
@@ -154,14 +142,10 @@
         ],
         "params_types": {
             "config": {
-                "userId": "any",
-                "password": "any",
-                "signature": "any",
-                "appId": "any",
-                "sandbox": "any",
-                "*": {
-                    "constructor": "any"
-                }
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "call_paths": [
@@ -174,6 +158,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = merge(a[p], b[p]);",
@@ -185,26 +170,20 @@
         ],
         "params_types": {
             "config": {
-                "userId": "any",
-                "password": "any",
-                "signature": "any",
-                "appId": "any",
-                "sandbox": "any",
-                "*": {
-                    "constructor": "any"
-                }
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "returns": {
             "source": ".paymentDetails",
             "param_types": {
                 "params": {
-                    "payKey": "any",
-                    "transactionId": "any",
-                    "trackingId": "any",
-                    "*": {
-                        "constructor": "any"
-                    }
+                    "_union": [
+                        "object",
+                        "array"
+                    ]
                 },
                 "callback": "function"
             },
@@ -230,6 +209,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = merge(a[p], b[p]);",
@@ -241,26 +221,20 @@
         ],
         "params_types": {
             "config": {
-                "userId": "any",
-                "password": "any",
-                "signature": "any",
-                "appId": "any",
-                "sandbox": "any",
-                "*": {
-                    "constructor": "any"
-                }
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "returns": {
             "source": ".refund",
             "param_types": {
                 "params": {
-                    "payKey": "any",
-                    "transactionId": "any",
-                    "trackingId": "any",
-                    "*": {
-                        "constructor": "any"
-                    }
+                    "_union": [
+                        "object",
+                        "array"
+                    ]
                 },
                 "callback": "function"
             },
