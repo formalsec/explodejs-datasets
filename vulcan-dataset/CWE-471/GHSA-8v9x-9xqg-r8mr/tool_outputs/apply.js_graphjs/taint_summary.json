@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/apply.js",
         "vuln_type": "prototype-pollution",
         "sink": "doc[key] = apply(doc[key], v);",
@@ -11,9 +12,12 @@
             "patch"
         ],
         "params_types": {
-            "doc": "polluted-object | array",
+            "doc": "object",
             "patch": {
-                "*": "array"
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "call_paths": [

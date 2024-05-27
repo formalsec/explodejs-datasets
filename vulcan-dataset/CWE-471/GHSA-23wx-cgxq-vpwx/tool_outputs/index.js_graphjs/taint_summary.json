@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[k] = merge(a[k], b[k]);",
@@ -12,8 +13,14 @@
             "k"
         ],
         "params_types": {
-            "a": "polluted-object | array",
-            "b": "{'length': 'any', '*': {'length': 'any'}} | array | string",
+            "a": "object",
+            "b": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
             "k": {
                 "_union": [
                     "number",
@@ -32,6 +39,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[k] = merge(a[k], b[k]);",
@@ -44,136 +52,14 @@
             "k"
         ],
         "params_types": {
-            "a": "polluted-object | array",
-            "b": "{'length': 'any', '*': {'length': 'any'}} | array | string",
-            "k": {
+            "a": "object",
+            "b": {
                 "_union": [
-                    "number",
+                    "object",
+                    "array",
                     "string"
                 ]
-            }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "328.merge-o5",
-                "fn_id": "1",
-                "source_fn_id": "1"
-            }
-        ]
-    },
-    {
-        "filename": "../../src/index.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "a[k] = merge(a[k], b[k]);",
-        "sink_lineno": 9,
-        "sink_function": "103",
-        "source": "module.exports.merge",
-        "tainted_params": [
-            "a",
-            "b",
-            "k"
-        ],
-        "params_types": {
-            "a": "polluting-object | array",
-            "b": "{'length': 'any', '*': {'length': 'any'}} | array | string",
-            "k": {
-                "_union": [
-                    "number",
-                    "string"
-                ]
-            }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "328.merge-o5",
-                "fn_id": "1",
-                "source_fn_id": "1"
-            }
-        ]
-    },
-    {
-        "filename": "../../src/index.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "a[k] = merge(a[k], b[k]);",
-        "sink_lineno": 9,
-        "sink_function": "103",
-        "source": "module.exports.merge",
-        "tainted_params": [
-            "a",
-            "b",
-            "k"
-        ],
-        "params_types": {
-            "a": "lazy-object | array",
-            "b": "{'length': 'any', '*': {'length': 'any'}} | array | string",
-            "k": {
-                "_union": [
-                    "number",
-                    "string"
-                ]
-            }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "328.merge-o5",
-                "fn_id": "1",
-                "source_fn_id": "1"
-            }
-        ]
-    },
-    {
-        "filename": "../../src/index.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "a[k] = merge(a[k], b[k]);",
-        "sink_lineno": 5,
-        "sink_function": "70",
-        "source": "module.exports.merge",
-        "tainted_params": [
-            "a",
-            "b",
-            "k"
-        ],
-        "params_types": {
-            "a": "polluting-object | array",
-            "b": "{'length': 'any', '*': {'length': 'any'}} | array | string",
-            "k": {
-                "_union": [
-                    "number",
-                    "string"
-                ]
-            }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "328.merge-o5",
-                "fn_id": "1",
-                "source_fn_id": "1"
-            }
-        ]
-    },
-    {
-        "filename": "../../src/index.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "a[k] = merge(a[k], b[k]);",
-        "sink_lineno": 5,
-        "sink_function": "70",
-        "source": "module.exports.merge",
-        "tainted_params": [
-            "a",
-            "b",
-            "k"
-        ],
-        "params_types": {
-            "a": "lazy-object | array",
-            "b": "{'length': 'any', '*': {'length': 'any'}} | array | string",
+            },
             "k": {
                 "_union": [
                     "number",

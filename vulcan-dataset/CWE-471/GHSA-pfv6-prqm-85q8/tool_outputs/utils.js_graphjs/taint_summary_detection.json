@@ -5,5 +5,12 @@
         "sink": "value[key] = defaultValue;",
         "sink_lineno": 80,
         "sink_function": "469"
+    },
+    {
+        "filename": "../../src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "?",
+        "sink_lineno": "?",
+        "sink_function": "340"
     }
 ]

@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = val;",
@@ -10,7 +11,7 @@
             "target"
         ],
         "params_types": {
-            "target": "polluted-object | array"
+            "target": "object"
         },
         "call_paths": [
             {
@@ -22,6 +23,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = assign(target[key] || {}, val);",
@@ -32,7 +34,7 @@
             "target"
         ],
         "params_types": {
-            "target": "polluted-object | array"
+            "target": "object"
         },
         "call_paths": [
             {
@@ -44,6 +46,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = val;",
@@ -54,7 +57,7 @@
             "target"
         ],
         "params_types": {
-            "target": "polluted-object | array"
+            "target": "object"
         },
         "call_paths": [
             {

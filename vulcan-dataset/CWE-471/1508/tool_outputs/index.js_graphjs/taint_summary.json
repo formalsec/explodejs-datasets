@@ -1,0 +1,52 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(file, 'utf-8', function(error, data){",
+        "sink_lineno": 21,
+        "sink_function": "143",
+        "source": "module.exports.parseFile",
+        "tainted_params": [
+            "file",
+            "callback"
+        ],
+        "params_types": {
+            "file": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parseFile",
+                "fn_name": "197.parseFile-o7",
+                "fn_id": "114",
+                "source_fn_id": "114"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "return parse(fs.readFileSync(file, 'utf-8'))",
+        "sink_lineno": 31,
+        "sink_function": "157",
+        "source": "module.exports.parseFileSync",
+        "tainted_params": [
+            "file"
+        ],
+        "params_types": {
+            "file": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parseFileSync",
+                "fn_name": "197.parseFileSync-o10",
+                "fn_id": "154",
+                "source_fn_id": "154"
+            }
+        ]
+    }
+]

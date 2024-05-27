@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/main.js",
         "vuln_type": "prototype-pollution",
         "sink": "tmp[parts[i]] = val;",
@@ -13,7 +14,7 @@
             "sep"
         ],
         "params_types": {
-            "obj": "polluted-object | array",
+            "obj": "object",
             "path": [
                 "any"
             ],

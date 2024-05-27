@@ -1,5 +1,6 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/merge.js",
         "vuln_type": "code-injection",
         "sink": "if ( typeOf.Function(lastArg) ) {",
@@ -30,6 +31,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/merge.js",
         "vuln_type": "code-injection",
         "sink": "if ( typeOf.Function(lastArg) ) {",
@@ -60,6 +62,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj1[key] = obj2[key]",
@@ -90,6 +93,7 @@
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj1[key] = obj2[key]",

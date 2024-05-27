@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "res[segment] = exports.reach(source, sourcePath, options);",
@@ -12,12 +13,24 @@
             "options"
         ],
         "params_types": {
-            "source": "{'length': 'any', '*': 'any'} | array | string",
-            "transform": "{'length': 'any', '*': 'any'} | array | string",
+            "source": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            },
+            "transform": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
             "options": {
-                "separator": "array",
-                "length": "any",
-                "*": "any"
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "call_paths": [
@@ -31,6 +44,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
@@ -44,10 +58,28 @@
             "isMergeArrays"
         ],
         "params_types": {
-            "target": "{'*': 'any', 'length': 'any'} | array | string",
-            "source": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
-            "isNullOverride": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
-            "isMergeArrays": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string"
+            "target": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "source": "object",
+            "isNullOverride": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "isMergeArrays": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            }
         },
         "call_paths": [
             {
@@ -60,6 +92,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
@@ -73,10 +106,28 @@
             "isMergeArrays"
         ],
         "params_types": {
-            "target": "{'*': 'any', 'length': 'any'} | array | string",
-            "source": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
-            "isNullOverride": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
-            "isMergeArrays": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string"
+            "target": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "source": "object",
+            "isNullOverride": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "isMergeArrays": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            }
         },
         "call_paths": [
             {
@@ -89,6 +140,7 @@
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = exports.clone(value);",
@@ -102,10 +154,28 @@
             "isMergeArrays"
         ],
         "params_types": {
-            "target": "{'*': 'any', 'length': 'any'} | array | string",
-            "source": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
-            "isNullOverride": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string",
-            "isMergeArrays": "{'*': {'*': 'any', 'length': 'any'}, 'length': 'any'} | array | string"
+            "target": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "source": "object",
+            "isNullOverride": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "isMergeArrays": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            }
         },
         "call_paths": [
             {

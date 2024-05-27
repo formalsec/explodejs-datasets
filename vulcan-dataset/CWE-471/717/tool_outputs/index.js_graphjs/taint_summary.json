@@ -1,0 +1,40 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "merged[key] = clone(source[key]);",
+        "sink_lineno": 75,
+        "sink_function": "309",
+        "source": "module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "668.v88-o38",
+                "fn_id": 565,
+                "source_fn_id": 565
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "merged[key] = merge(merged[key], source[key], mergeOpts);",
+        "sink_lineno": 73,
+        "sink_function": "294",
+        "source": "module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "668.v88-o38",
+                "fn_id": 565,
+                "source_fn_id": 565
+            }
+        ]
+    }
+]

@@ -55,21 +55,7 @@ module.exports = set;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let object =
-  { *:
-      { *:
-          { *:
-              { *:
-                  { *:
-                      { *:
-                          { *: esl_symbolic.any("*")
-                          , k: esl_symbolic.string("k") }
-                      , k: esl_symbolic.string("k") }
-                  , k: esl_symbolic.string("k") }
-              , k: esl_symbolic.string("k") }
-          , k: esl_symbolic.string("k") }
-      , k: esl_symbolic.string("k") }
-  , k: esl_symbolic.string("k") };
+let object = {  };
 let keypath = esl_symbolic.number("keypath");
 let value = esl_symbolic.string("value");
 module.exports(object, keypath, value);

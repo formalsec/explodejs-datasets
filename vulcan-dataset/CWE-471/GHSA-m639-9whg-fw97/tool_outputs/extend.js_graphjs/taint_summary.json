@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = b[key];",
@@ -11,14 +12,12 @@
             "b"
         ],
         "params_types": {
-            "a": "polluted-object | array",
+            "a": "object",
             "b": {
-                "*": {
-                    "_union": [
-                        "array",
-                        "string"
-                    ]
-                }
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
             }
         },
         "call_paths": [
@@ -31,6 +30,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = extend(a[key], b[key]);",
@@ -42,14 +42,12 @@
             "b"
         ],
         "params_types": {
-            "a": "polluted-object | array",
+            "a": "object",
             "b": {
-                "*": {
-                    "_union": [
-                        "array",
-                        "string"
-                    ]
-                }
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
         },
         "call_paths": [
@@ -62,6 +60,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = b[key];",
@@ -73,14 +72,12 @@
             "b"
         ],
         "params_types": {
-            "a": "polluted-object | array",
+            "a": "object",
             "b": {
-                "*": {
-                    "_union": [
-                        "array",
-                        "string"
-                    ]
-                }
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
             }
         },
         "call_paths": [

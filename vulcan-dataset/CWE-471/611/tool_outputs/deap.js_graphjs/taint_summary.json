@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(b[p]);",
@@ -11,7 +12,7 @@
             "b"
         ],
         "params_types": {
-            "a": "polluted-object | array",
+            "a": "object",
             "b": {
                 "_union": [
                     "array",

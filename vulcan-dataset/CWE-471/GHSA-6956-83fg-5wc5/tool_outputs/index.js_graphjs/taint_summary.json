@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = value",
@@ -12,8 +13,14 @@
             "value"
         ],
         "params_types": {
-            "object": "{'length': 'any', '*': {'length': 'any', '*': 'any'}} | array | string",
-            "path": "{'length': 'number', '*': 'any'} | array | string",
+            "object": "object",
+            "path": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
             "value": "any"
         },
         "call_paths": [

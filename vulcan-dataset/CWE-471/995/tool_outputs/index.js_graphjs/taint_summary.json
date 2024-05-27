@@ -1,5 +1,6 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "x[key] = merge(x[key], y[key]);",
@@ -22,6 +23,7 @@
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "x[key] = merge(x[key], y[key]);",
