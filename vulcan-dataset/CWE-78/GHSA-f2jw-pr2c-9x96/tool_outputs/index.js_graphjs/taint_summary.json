@@ -1,0 +1,80 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process_1.exec(`touch ${filePath}`);",
+        "sink_lineno": 225,
+        "sink_function": "3968",
+        "source": "module.exports.plot",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "finish": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "plot",
+                "fn_name": "4397.plot-o518",
+                "fn_id": 4311,
+                "source_fn_id": 4311
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "gnuplot = child_process_1.exec(`gnuplot | ps2pdf - ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
+        "sink_lineno": 228,
+        "sink_function": "4020",
+        "source": "module.exports.plot",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "finish": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "plot",
+                "fn_name": "4397.plot-o518",
+                "fn_id": 4311,
+                "source_fn_id": 4311
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "gnuplot = child_process_1.exec(`gnuplot > ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
+        "sink_lineno": 232,
+        "sink_function": "4065",
+        "source": "module.exports.plot",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "finish": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "plot",
+                "fn_name": "4397.plot-o518",
+                "fn_id": 4311,
+                "source_fn_id": 4311
+            }
+        ]
+    }
+]

@@ -4,20 +4,20 @@
         "vuln_type": "command-injection",
         "sink": "var child = exec(cmd, function (err, stdout, stderr) {",
         "sink_lineno": 59,
-        "sink_function": "590"
+        "sink_function": "1397"
     },
     {
         "filename": "../../src/jscover.js",
         "vuln_type": "path-traversal",
         "sink": "var content = fs.readFileSync(from);",
         "sink_lineno": 95,
-        "sink_function": "482"
+        "sink_function": "1289"
     },
     {
         "filename": "../../src/jscover.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(to, content);",
         "sink_lineno": 99,
-        "sink_function": "517"
+        "sink_function": "1324"
     }
 ]

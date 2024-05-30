@@ -4,34 +4,34 @@
         "vuln_type": "code-injection",
         "sink": "const pkgInfo = require(path.join(baseDir, 'package.json'));",
         "sink_lineno": 97,
-        "sink_function": "492"
+        "sink_function": "2541"
     },
     {
         "filename": "../../src/start.js",
         "vuln_type": "command-injection",
         "sink": "const child = this.child = spawn('node', eggArgs, options);",
         "sink_lineno": 150,
-        "sink_function": "843"
+        "sink_function": "2892"
     },
     {
         "filename": "../../src/start.js",
         "vuln_type": "command-injection",
         "sink": "const child = this.child = spawn('node', eggArgs, options);",
         "sink_lineno": 168,
-        "sink_function": "982"
+        "sink_function": "3031"
     },
     {
         "filename": "../../src/start.js",
         "vuln_type": "code-injection",
         "sink": "const pkg = require(pkgPath);",
         "sink_lineno": 198,
-        "sink_function": "1152"
+        "sink_function": "3201"
     },
     {
         "filename": "../../src/start.js",
         "vuln_type": "command-injection",
         "sink": "const [ stdout ] = yield exec('tail -n 100 ' + stderr);",
         "sink_lineno": 235,
-        "sink_function": "1303"
+        "sink_function": "3352"
     }
 ]

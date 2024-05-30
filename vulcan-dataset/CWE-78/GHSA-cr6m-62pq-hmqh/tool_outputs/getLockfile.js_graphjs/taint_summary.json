@@ -1,17 +1,18 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/getLockfile.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 42,
-        "sink_function": "406",
+        "sink_function": "1085",
         "source": "module.exports",
         "tainted_params": [
             "packageFile",
             "date",
             "undefined"
         ],
-        "param_types": {
+        "params_types": {
             "packageFile": {
                 "length": "any"
             },
@@ -21,25 +22,26 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "485.getLockfile-o17",
-                "fn_id": 51,
-                "source_fn_id": 51
+                "fn_name": "1164.getLockfile-o188",
+                "fn_id": 730,
+                "source_fn_id": 730
             }
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/getLockfile.js",
         "vuln_type": "path-traversal",
         "sink": "return readFile(lockfile, { encoding: 'utf-8' });",
         "sink_lineno": 62,
-        "sink_function": "462",
+        "sink_function": "1141",
         "source": "module.exports",
         "tainted_params": [
             "packageFile",
             "date",
             "undefined"
         ],
-        "param_types": {
+        "params_types": {
             "packageFile": {
                 "length": "any"
             },
@@ -49,9 +51,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "485.getLockfile-o17",
-                "fn_id": 51,
-                "source_fn_id": 51
+                "fn_name": "1164.getLockfile-o188",
+                "fn_id": 730,
+                "source_fn_id": 730
             }
         ]
     }

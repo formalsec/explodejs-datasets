@@ -1,25 +1,26 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/linux.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"cat /sys/class/net/\" + iface + \"/address\", function (err, out) {",
         "sink_lineno": 4,
-        "sink_function": "54",
+        "sink_function": "157",
         "source": "module.exports",
         "tainted_params": [
             "iface",
             "callback"
         ],
-        "param_types": {
+        "params_types": {
             "iface": "string",
             "callback": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "68.v10-o6",
-                "fn_id": "9",
-                "source_fn_id": "9"
+                "fn_name": "171.v20-o32",
+                "fn_id": "112",
+                "source_fn_id": "112"
             }
         ]
     }

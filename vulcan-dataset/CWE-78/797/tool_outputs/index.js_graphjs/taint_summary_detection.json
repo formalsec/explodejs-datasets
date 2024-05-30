@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "child_process.exec(cmd, {",
         "sink_lineno": 76,
-        "sink_function": "298"
+        "sink_function": "857"
     }
 ]

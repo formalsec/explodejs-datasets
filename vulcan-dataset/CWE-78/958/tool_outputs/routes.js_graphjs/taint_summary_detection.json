@@ -4,48 +4,62 @@
         "vuln_type": "path-traversal",
         "sink": "res.send(fs.readFileSync(req.query.resource, 'UTF-8'));",
         "sink_lineno": 57,
-        "sink_function": "206"
+        "sink_function": "4416"
     },
     {
         "filename": "../../src/routes.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec(scripts_dir() + 'systemctl-unit.sh ' +",
         "sink_lineno": 67,
-        "sink_function": "292"
+        "sink_function": "4502"
     },
     {
         "filename": "../../src/routes.js",
         "vuln_type": "command-injection",
         "sink": "var child_dot = spawn('sol-fbp-to-dot', ['--fbp', tmp_dir(current_user(req)) + 'fbp_svg.fbp',",
         "sink_lineno": 101,
-        "sink_function": "512"
+        "sink_function": "4722"
     },
     {
         "filename": "../../src/routes.js",
         "vuln_type": "command-injection",
         "sink": "var child_svg =  spawn('dot', ['-Tsvg', tmp_dir(current_user(req)) + 'fbp_runner.dot']);",
         "sink_lineno": 104,
-        "sink_function": "536"
+        "sink_function": "4746"
     },
     {
         "filename": "../../src/routes.js",
         "vuln_type": "command-injection",
         "sink": "child = spawn(script,",
         "sink_lineno": 151,
-        "sink_function": "817"
+        "sink_function": "5027"
     },
     {
         "filename": "../../src/routes.js",
         "vuln_type": "command-injection",
         "sink": "child = exec(\"sh \" + script);",
         "sink_lineno": 226,
-        "sink_function": "1333"
+        "sink_function": "5543"
+    },
+    {
+        "filename": "../../src/routes.js",
+        "vuln_type": "command-injection",
+        "sink": "child = spawn(\"sol-fbp-runner\",  ['-c',  fbp_path],",
+        "sink_lineno": 274,
+        "sink_function": "5851"
+    },
+    {
+        "filename": "../../src/routes.js",
+        "vuln_type": "command-injection",
+        "sink": "child = spawn(\"sol-fbp-runner\",  ['-c', fbp_path]);",
+        "sink_lineno": 277,
+        "sink_function": "5864"
     },
     {
         "filename": "../../src/routes.js",
         "vuln_type": "command-injection",
         "sink": "child = exec(\"sh \" + script);",
         "sink_lineno": 478,
-        "sink_function": "3035"
+        "sink_function": "7245"
     }
 ]

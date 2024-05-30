@@ -4,62 +4,62 @@
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(path, 'ascii', callback);",
         "sink_lineno": 33,
-        "sink_function": "250"
+        "sink_function": "7246"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "var id = chomp(fs.readFileSync(result.path, 'ascii'));",
         "sink_lineno": 51,
-        "sink_function": "323"
+        "sink_function": "7319"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec(call_string, options,",
         "sink_lineno": 232,
-        "sink_function": "1435"
+        "sink_function": "8431"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return callback(null, chomp(fs.readFileSync(head, 'utf8')));",
         "sink_lineno": 352,
-        "sink_function": "2165"
+        "sink_function": "9161"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return chomp(fs.readFileSync(head, 'utf8'));",
         "sink_lineno": 354,
-        "sink_function": "2184"
+        "sink_function": "9180"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return callback(null, chomp(fs.readFileSync(head, 'utf8')));",
         "sink_lineno": 361,
-        "sink_function": "2221"
+        "sink_function": "9217"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return chomp(fs.readFileSync(head, 'utf8'));",
         "sink_lineno": 363,
-        "sink_function": "2240"
+        "sink_function": "9236"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return callback(null, chomp(fs.readFileSync(head, 'utf8')));",
         "sink_lineno": 370,
-        "sink_function": "2277"
+        "sink_function": "9273"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return chomp(fs.readFileSync(head, 'utf8'));",
         "sink_lineno": 372,
-        "sink_function": "2296"
+        "sink_function": "9292"
     }
 ]

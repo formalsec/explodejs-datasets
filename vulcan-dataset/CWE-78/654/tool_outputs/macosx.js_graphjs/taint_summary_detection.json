@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "exec(\"networksetup -getmacaddress \" + iface, function (err, out) {",
         "sink_lineno": 4,
-        "sink_function": "69"
+        "sink_function": "190"
     }
 ]

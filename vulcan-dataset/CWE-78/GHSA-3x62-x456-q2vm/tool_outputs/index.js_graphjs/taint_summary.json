@@ -1,10 +1,11 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "const child = crossSpawn(command, args, opts)",
         "sink_lineno": 52,
-        "sink_function": "323",
+        "sink_function": "856",
         "source": "module.exports",
         "tainted_params": [
             "url",
@@ -12,19 +13,14 @@
             "opts",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "url": {
                 "_union": [
                     "array",
                     "string"
                 ]
             },
-            "outPath": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
+            "outPath": "array",
             "opts": {
                 "depth": {
                     "_union": [
@@ -39,9 +35,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "381.gitPullOrClone-o1",
-                "fn_id": 23,
-                "source_fn_id": 23
+                "fn_name": "914.gitPullOrClone-o118",
+                "fn_id": 556,
+                "source_fn_id": 556
             }
         ]
     }

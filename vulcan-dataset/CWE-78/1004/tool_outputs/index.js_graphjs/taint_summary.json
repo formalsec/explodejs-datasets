@@ -1,13 +1,14 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "execSync(",
         "sink_lineno": 37,
-        "sink_function": "165",
+        "sink_function": "849",
         "source": "new module.exports",
         "tainted_params": [],
-        "param_types": {},
+        "params_types": {},
         "returns": {
             "source": ".fetch",
             "param_types": {
@@ -20,16 +21,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "492.Pullit-o20",
-                "fn_id": "21",
-                "source_fn_id": "21"
+                "fn_name": "1176.Pullit-o179",
+                "fn_id": "705",
+                "source_fn_id": "705"
             },
             {
                 "type": "Method",
                 "prop": "fetch",
-                "fn_name": "492.fetch-o19",
-                "fn_id": 109,
-                "source_fn_id": 109
+                "fn_name": "1176.fetch-o178",
+                "fn_id": 793,
+                "source_fn_id": 793
             }
         ]
     }

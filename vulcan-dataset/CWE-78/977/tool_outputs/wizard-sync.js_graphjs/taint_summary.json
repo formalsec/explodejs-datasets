@@ -1,16 +1,17 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/wizard-sync.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(command, {}, function(err, stdout, stderr) {",
         "sink_lineno": 56,
-        "sink_function": "417",
+        "sink_function": "1178",
         "source": "module.exports.sync",
         "tainted_params": [
             "options",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "options": {
                 "widgetName": "string",
                 "env": "string",
@@ -23,9 +24,9 @@
             {
                 "type": "Method",
                 "prop": "sync",
-                "fn_name": "552.v56-o10",
-                "fn_id": 26,
-                "source_fn_id": 26
+                "fn_name": "1313.v126-o179",
+                "fn_id": 787,
+                "source_fn_id": 787
             }
         ]
     }

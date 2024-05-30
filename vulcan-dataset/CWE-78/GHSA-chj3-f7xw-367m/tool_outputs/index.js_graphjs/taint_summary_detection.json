@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "return execFile(execBinary, execArguments, execOptions).then(",
         "sink_lineno": 34,
-        "sink_function": "167"
+        "sink_function": "503"
     }
 ]

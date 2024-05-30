@@ -1,22 +1,18 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "let lines = execSync(`pgrep -lfP ${processObj.pid}`).toString().split('\\n').filter(e => e);",
         "sink_lineno": 17,
-        "sink_function": "89",
+        "sink_function": "996",
         "source": "module.exports._buildProcessTree",
         "tainted_params": [
             "processObj"
         ],
-        "param_types": {
+        "params_types": {
             "processObj": {
-                "pid": {
-                    "_union": [
-                        "array",
-                        "string"
-                    ]
-                },
+                "pid": "string",
                 "children": {
                     "*": "any"
                 },
@@ -27,65 +23,57 @@
             {
                 "type": "Method",
                 "prop": "_buildProcessTree",
-                "fn_name": "668.v31-o14",
-                "fn_id": "59",
-                "source_fn_id": "59"
+                "fn_name": "1575.v125-o216",
+                "fn_id": "966",
+                "source_fn_id": "966"
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "let psOutput = execSync(`ps -p ${pid} -o \"pid=,command=\"`).toString().trim();",
         "sink_lineno": 46,
-        "sink_function": "425",
+        "sink_function": "1332",
         "source": "module.exports.getProcessTree",
         "tainted_params": [
             "pid"
         ],
-        "param_types": {
-            "pid": {
-                "_union": [
-                    "number",
-                    "string"
-                ]
-            }
+        "params_types": {
+            "pid": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "getProcessTree",
-                "fn_name": "668.v74-o24",
-                "fn_id": "418",
-                "source_fn_id": "418"
+                "fn_name": "1575.v168-o226",
+                "fn_id": "1325",
+                "source_fn_id": "1325"
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "execSync(`kill -9 ${pids.join(' ')}`);",
         "sink_lineno": 59,
-        "sink_function": "540",
+        "sink_function": "1447",
         "source": "module.exports.treeKill",
         "tainted_params": [
             "pid"
         ],
-        "param_types": {
-            "pid": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            }
+        "params_types": {
+            "pid": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "treeKill",
-                "fn_name": "668.v84-o27",
-                "fn_id": "498",
-                "source_fn_id": "498"
+                "fn_name": "1575.v178-o229",
+                "fn_id": "1405",
+                "source_fn_id": "1405"
             }
         ]
     }

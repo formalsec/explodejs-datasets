@@ -1,16 +1,17 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/umount.js",
         "vuln_type": "command-injection",
         "sink": "return child_process.exec(unmountCommand + \" \" + device, callback);",
         "sink_lineno": 52,
-        "sink_function": "160",
+        "sink_function": "630",
         "source": "module.exports.umount",
         "tainted_params": [
             "device",
             "callback"
         ],
-        "param_types": {
+        "params_types": {
             "device": "string",
             "callback": "function"
         },
@@ -18,9 +19,9 @@
             {
                 "type": "Method",
                 "prop": "umount",
-                "fn_name": "342.v21-o10",
-                "fn_id": "22",
-                "source_fn_id": "22"
+                "fn_name": "812.v69-o113",
+                "fn_id": "492",
+                "source_fn_id": "492"
             }
         ]
     }

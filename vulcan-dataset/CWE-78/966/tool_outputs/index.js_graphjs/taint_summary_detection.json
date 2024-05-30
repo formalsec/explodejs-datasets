@@ -4,13 +4,13 @@
         "vuln_type": "command-injection",
         "sink": "return sh(",
         "sink_lineno": 11,
-        "sink_function": "51"
+        "sink_function": "161"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "return sh(",
         "sink_lineno": 16,
-        "sink_function": "61"
+        "sink_function": "171"
     }
 ]

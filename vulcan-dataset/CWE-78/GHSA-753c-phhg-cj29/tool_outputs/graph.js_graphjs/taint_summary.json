@@ -1,65 +1,39 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
         "sink_lineno": 28,
-        "sink_function": "86",
+        "sink_function": "1171",
         "source": "module.exports.svg",
         "tainted_params": [
             "modules",
             "circular",
             "config"
         ],
-        "param_types": {
-            "modules": {
-                "*": {
-                    "length": "any",
-                    "*": "any"
-                }
-            },
-            "circular": {
-                "_union": [
-                    "array",
-                    "number"
-                ]
-            },
-            "config": {
-                "graphVizOptions": {
-                    "G": "any",
-                    "E": "any",
-                    "N": "any"
-                },
-                "rankdir": "any",
-                "layout": "any",
-                "backgroundColor": "any",
-                "edgeColor": "any",
-                "fontName": "any",
-                "fontSize": "any",
-                "nodeColor": "any",
-                "nodeShape": "any",
-                "nodeStyle": "any",
-                "graphVizPath": "string",
-                "noDependencyColor": "any",
-                "cyclicNodeColor": "any"
-            }
+        "params_types": {
+            "modules": "object",
+            "circular": "array",
+            "config": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "svg",
-                "fn_name": "774.v88-o33",
-                "fn_id": 560,
-                "source_fn_id": 560
+                "fn_name": "1859.v199-o295",
+                "fn_id": 1645,
+                "source_fn_id": 1645
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
         "sink_lineno": 28,
-        "sink_function": "86",
+        "sink_function": "1171",
         "source": "module.exports.image",
         "tainted_params": [
             "modules",
@@ -67,111 +41,57 @@
             "imagePath",
             "config"
         ],
-        "param_types": {
-            "modules": {
-                "*": {
-                    "length": "any",
-                    "*": "any"
-                }
-            },
-            "circular": {
-                "_union": [
-                    "array",
-                    "number"
-                ]
-            },
+        "params_types": {
+            "modules": "object",
+            "circular": "array",
             "imagePath": "string",
-            "config": {
-                "graphVizOptions": {
-                    "G": "any",
-                    "E": "any",
-                    "N": "any"
-                },
-                "rankdir": "any",
-                "layout": "any",
-                "backgroundColor": "any",
-                "edgeColor": "any",
-                "fontName": "any",
-                "fontSize": "any",
-                "nodeColor": "any",
-                "nodeShape": "any",
-                "nodeStyle": "any",
-                "graphVizPath": "string",
-                "noDependencyColor": "any",
-                "cyclicNodeColor": "any"
-            }
+            "config": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "image",
-                "fn_name": "774.v102-o41",
-                "fn_id": 610,
-                "source_fn_id": 610
+                "fn_name": "1859.v213-o303",
+                "fn_id": 1695,
+                "source_fn_id": 1695
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
         "sink_lineno": 28,
-        "sink_function": "86",
+        "sink_function": "1171",
         "source": "module.exports.dot",
         "tainted_params": [
             "modules",
             "circular",
             "config"
         ],
-        "param_types": {
-            "modules": {
-                "*": {
-                    "length": "any",
-                    "*": "any"
-                }
-            },
-            "circular": {
-                "_union": [
-                    "array",
-                    "number"
-                ]
-            },
-            "config": {
-                "graphVizOptions": {
-                    "G": "any",
-                    "E": "any",
-                    "N": "any"
-                },
-                "rankdir": "any",
-                "layout": "any",
-                "backgroundColor": "any",
-                "edgeColor": "any",
-                "fontName": "any",
-                "fontSize": "any",
-                "nodeColor": "any",
-                "nodeShape": "any",
-                "nodeStyle": "any",
-                "graphVizPath": "string",
-                "noDependencyColor": "any",
-                "cyclicNodeColor": "any"
-            }
+        "params_types": {
+            "modules": "object",
+            "circular": "array",
+            "config": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "dot",
-                "fn_name": "774.v111-o48",
-                "fn_id": 710,
-                "source_fn_id": 710
+                "fn_name": "1859.v222-o310",
+                "fn_id": 1795,
+                "source_fn_id": 1795
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/graph.js",
         "vuln_type": "path-traversal",
         "sink": ".then((image) => writeFile(imagePath, image))",
         "sink_lineno": 150,
-        "sink_function": "657",
+        "sink_function": "1742",
         "source": "module.exports.image",
         "tainted_params": [
             "modules",
@@ -179,47 +99,19 @@
             "imagePath",
             "config"
         ],
-        "param_types": {
-            "modules": {
-                "*": {
-                    "length": "any",
-                    "*": "any"
-                }
-            },
-            "circular": {
-                "_union": [
-                    "array",
-                    "number"
-                ]
-            },
+        "params_types": {
+            "modules": "object",
+            "circular": "array",
             "imagePath": "string",
-            "config": {
-                "graphVizOptions": {
-                    "G": "any",
-                    "E": "any",
-                    "N": "any"
-                },
-                "rankdir": "any",
-                "layout": "any",
-                "backgroundColor": "any",
-                "edgeColor": "any",
-                "fontName": "any",
-                "fontSize": "any",
-                "nodeColor": "any",
-                "nodeShape": "any",
-                "nodeStyle": "any",
-                "graphVizPath": "string",
-                "noDependencyColor": "any",
-                "cyclicNodeColor": "any"
-            }
+            "config": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "image",
-                "fn_name": "774.v102-o41",
-                "fn_id": 610,
-                "source_fn_id": 610
+                "fn_name": "1859.v213-o303",
+                "fn_id": 1695,
+                "source_fn_id": 1695
             }
         ]
     }

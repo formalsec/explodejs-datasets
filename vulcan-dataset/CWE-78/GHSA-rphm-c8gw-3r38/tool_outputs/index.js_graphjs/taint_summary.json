@@ -1,23 +1,24 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "code-injection",
         "sink": "return require(path.join(currentDir, 'node_modules', name, 'package.json')).version;",
         "sink_lineno": 33,
-        "sink_function": "163",
+        "sink_function": "1196",
         "source": "module.exports",
         "tainted_params": [
             "undefined"
         ],
-        "param_types": {
+        "params_types": {
             "undefined": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "762.verifyDeps-o36",
-                "fn_id": 404,
-                "source_fn_id": 404
+                "fn_name": "1795.verifyDeps-o267",
+                "fn_id": 1437,
+                "source_fn_id": 1437
             }
         ]
     }

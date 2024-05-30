@@ -1,37 +1,28 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "return execFile(execBinary, execArguments, execOptions).then(",
         "sink_lineno": 34,
-        "sink_function": "167",
+        "sink_function": "503",
         "source": "module.exports",
         "tainted_params": [
             "commandOrArgs",
             "optionsOrCallback",
             "callbackMaybe"
         ],
-        "param_types": {
+        "params_types": {
             "commandOrArgs": "string",
-            "optionsOrCallback": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
-            "callbackMaybe": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            }
+            "optionsOrCallback": "array",
+            "callbackMaybe": "array"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "228.v26-o22",
-                "fn_id": "66",
-                "source_fn_id": "66"
+                "fn_name": "564.v52-o110",
+                "fn_id": "402",
+                "source_fn_id": "402"
             }
         ]
     }

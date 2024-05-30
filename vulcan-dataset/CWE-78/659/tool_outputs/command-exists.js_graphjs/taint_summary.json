@@ -1,71 +1,74 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('where ' + commandName,",
         "sink_lineno": 64,
-        "sink_function": "280",
+        "sink_function": "1023",
         "source": "module.exports",
         "tainted_params": [
             "commandName",
             "callback"
         ],
-        "param_types": {
+        "params_types": {
             "commandName": "string",
             "callback": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "514.commandExists-o47",
-                "fn_id": 391,
-                "source_fn_id": 391
+                "fn_name": "1257.commandExists-o222",
+                "fn_id": 1134,
+                "source_fn_id": 1134
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('command -v ' + commandName +",
         "sink_lineno": 78,
-        "sink_function": "316",
+        "sink_function": "1059",
         "source": "module.exports.sync",
         "tainted_params": [
             "commandName"
         ],
-        "param_types": {
+        "params_types": {
             "commandName": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "sync",
-                "fn_name": "514.v71-o52",
-                "fn_id": 484,
-                "source_fn_id": 484
+                "fn_name": "1257.v142-o227",
+                "fn_id": 1227,
+                "source_fn_id": 1227
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('where ' + commandName);",
         "sink_lineno": 94,
-        "sink_function": "351",
+        "sink_function": "1094",
         "source": "module.exports.sync",
         "tainted_params": [
             "commandName"
         ],
-        "param_types": {
+        "params_types": {
             "commandName": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "sync",
-                "fn_name": "514.v71-o52",
-                "fn_id": 484,
-                "source_fn_id": 484
+                "fn_name": "1257.v142-o227",
+                "fn_id": 1227,
+                "source_fn_id": 1227
             }
         ]
     }

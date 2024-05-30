@@ -1,10 +1,11 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "childProcess.execFile(path.resolve(browserPath), commandOptions, {maxBuffer: 50000 * 1024}, function (err) {",
         "sink_lineno": 70,
-        "sink_function": "249",
+        "sink_function": "957",
         "source": "module.exports.open",
         "tainted_params": [
             "browser",
@@ -14,7 +15,7 @@
             "dataDir",
             "bypassList"
         ],
-        "param_types": {
+        "params_types": {
             "browser": "string",
             "url": "any",
             "proxyURL": "any",
@@ -26,65 +27,57 @@
             {
                 "type": "Method",
                 "prop": "open",
-                "fn_name": "516.v23-o52",
-                "fn_id": 134,
-                "source_fn_id": 134
+                "fn_name": "1224.v71-o217",
+                "fn_id": 842,
+                "source_fn_id": 842
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "result = childProcess.execSync(cmd).toString().trim();",
         "sink_lineno": 107,
-        "sink_function": "328",
+        "sink_function": "1036",
         "source": "module.exports.detect",
         "tainted_params": [
             "name"
         ],
-        "param_types": {
-            "name": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            }
+        "params_types": {
+            "name": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "detect",
-                "fn_name": "516.v47-o55",
-                "fn_id": 278,
-                "source_fn_id": 278
+                "fn_name": "1224.v95-o220",
+                "fn_id": 986,
+                "source_fn_id": 986
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "result = childProcess.execSync(cmd).toString().trim();",
         "sink_lineno": 124,
-        "sink_function": "382",
+        "sink_function": "1090",
         "source": "module.exports.detect",
         "tainted_params": [
             "name"
         ],
-        "param_types": {
-            "name": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            }
+        "params_types": {
+            "name": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "detect",
-                "fn_name": "516.v47-o55",
-                "fn_id": 278,
-                "source_fn_id": 278
+                "fn_name": "1224.v95-o220",
+                "fn_id": 986,
+                "source_fn_id": 986
             }
         ]
     }

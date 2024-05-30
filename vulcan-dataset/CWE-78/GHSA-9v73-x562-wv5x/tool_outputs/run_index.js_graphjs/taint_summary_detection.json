@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "return exec(params.join(' '), { encoding, cwd: path }).toString(encoding)",
         "sink_lineno": 8,
-        "sink_function": "49"
+        "sink_function": "154"
     }
 ]

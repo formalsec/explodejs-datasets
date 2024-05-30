@@ -1,25 +1,26 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/macosx.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"networksetup -getmacaddress \" + iface, function (err, out) {",
         "sink_lineno": 4,
-        "sink_function": "69",
+        "sink_function": "190",
         "source": "module.exports",
         "tainted_params": [
             "iface",
             "callback"
         ],
-        "param_types": {
+        "params_types": {
             "iface": "string",
             "callback": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "83.v11-o6",
-                "fn_id": "9",
-                "source_fn_id": "9"
+                "fn_name": "204.v22-o34",
+                "fn_id": "130",
+                "source_fn_id": "130"
             }
         ]
     }

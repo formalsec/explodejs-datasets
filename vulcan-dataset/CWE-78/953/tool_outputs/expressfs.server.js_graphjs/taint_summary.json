@@ -1,0 +1,191 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('cp -R ' + source + ' ' + destination, function () {",
+        "sink_lineno": 33,
+        "sink_function": "2313",
+        "source": "module.exports",
+        "tainted_params": [
+            "app",
+            "options"
+        ],
+        "params_types": {
+            "app": "any",
+            "options": {
+                "prefix": "string"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "3600.v422-o482",
+                "fn_id": 2126,
+                "source_fn_id": 2126
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(path, req.body.content || '', 'utf8', function (err) {",
+        "sink_lineno": 47,
+        "sink_function": "2400",
+        "source": "module.exports",
+        "tainted_params": [
+            "app",
+            "options"
+        ],
+        "params_types": {
+            "app": "any",
+            "options": {
+                "prefix": "string"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "3600.v422-o482",
+                "fn_id": 2126,
+                "source_fn_id": 2126
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(filename, content, 'utf8', function (err) {",
+        "sink_lineno": 61,
+        "sink_function": "2511",
+        "source": "module.exports",
+        "tainted_params": [
+            "app",
+            "options"
+        ],
+        "params_types": {
+            "app": "any",
+            "options": {
+                "prefix": "string"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "3600.v422-o482",
+                "fn_id": 2126,
+                "source_fn_id": 2126
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path + filename, 'utf8', function (err, data) {",
+        "sink_lineno": 137,
+        "sink_function": "2978",
+        "source": "module.exports",
+        "tainted_params": [
+            "app",
+            "options"
+        ],
+        "params_types": {
+            "app": "any",
+            "options": {
+                "prefix": "string"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "3600.v422-o482",
+                "fn_id": 2126,
+                "source_fn_id": 2126
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path, 'utf8', function (err, contents) {",
+        "sink_lineno": 182,
+        "sink_function": "3263",
+        "source": "module.exports",
+        "tainted_params": [
+            "app",
+            "options"
+        ],
+        "params_types": {
+            "app": "any",
+            "options": {
+                "prefix": "string"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "3600.v422-o482",
+                "fn_id": 2126,
+                "source_fn_id": 2126
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('rm -rf ' + path, function () {",
+        "sink_lineno": 204,
+        "sink_function": "3399",
+        "source": "module.exports",
+        "tainted_params": [
+            "app",
+            "options"
+        ],
+        "params_types": {
+            "app": "any",
+            "options": {
+                "prefix": "string"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "3600.v422-o482",
+                "fn_id": 2126,
+                "source_fn_id": 2126
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "../../src/expressfs.server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(path, req.body.content, encoding, function (err) {",
+        "sink_lineno": 225,
+        "sink_function": "3572",
+        "source": "module.exports",
+        "tainted_params": [
+            "app",
+            "options"
+        ],
+        "params_types": {
+            "app": "any",
+            "options": {
+                "prefix": "string"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "3600.v422-o482",
+                "fn_id": 2126,
+                "source_fn_id": 2126
+            }
+        ]
+    }
+]

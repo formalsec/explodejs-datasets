@@ -1,32 +1,28 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/open.js",
         "vuln_type": "command-injection",
         "sink": "return exec(opener + ' \"' + escape(target) + '\"', callback);",
         "sink_lineno": 58,
-        "sink_function": "169",
+        "sink_function": "425",
         "source": "module.exports",
         "tainted_params": [
             "target",
             "appName",
             "callback"
         ],
-        "param_types": {
-            "target": "string",
-            "appName": {
-                "_union": [
-                    "function",
-                    "string"
-                ]
-            },
+        "params_types": {
+            "target": "any",
+            "appName": "function",
             "callback": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "190.open-o4",
-                "fn_id": "19",
-                "source_fn_id": "19"
+                "fn_name": "446.open-o53",
+                "fn_id": "275",
+                "source_fn_id": "275"
             }
         ]
     }

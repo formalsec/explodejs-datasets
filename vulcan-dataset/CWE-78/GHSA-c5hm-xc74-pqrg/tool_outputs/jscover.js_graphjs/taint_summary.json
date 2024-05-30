@@ -1,10 +1,11 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/jscover.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec(cmd, function (err, stdout, stderr) {",
         "sink_lineno": 59,
-        "sink_function": "590",
+        "sink_function": "1397",
         "source": "module.exports",
         "tainted_params": [
             "source",
@@ -12,7 +13,7 @@
             "options",
             "callback"
         ],
-        "param_types": {
+        "params_types": {
             "source": "string",
             "target": "string",
             "options": {
@@ -23,18 +24,19 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "602.jscover-o31",
-                "fn_id": "100",
-                "source_fn_id": "100"
+                "fn_name": "1409.jscover-o210",
+                "fn_id": "907",
+                "source_fn_id": "907"
             }
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/jscover.js",
         "vuln_type": "path-traversal",
         "sink": "var content = fs.readFileSync(from);",
         "sink_lineno": 95,
-        "sink_function": "482",
+        "sink_function": "1289",
         "source": "module.exports",
         "tainted_params": [
             "source",
@@ -42,7 +44,7 @@
             "options",
             "callback"
         ],
-        "param_types": {
+        "params_types": {
             "source": "string",
             "target": "string",
             "options": {
@@ -53,18 +55,19 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "602.jscover-o31",
-                "fn_id": 100,
-                "source_fn_id": 100
+                "fn_name": "1409.jscover-o210",
+                "fn_id": 907,
+                "source_fn_id": 907
             }
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/jscover.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(to, content);",
         "sink_lineno": 99,
-        "sink_function": "517",
+        "sink_function": "1324",
         "source": "module.exports",
         "tainted_params": [
             "source",
@@ -72,7 +75,7 @@
             "options",
             "callback"
         ],
-        "param_types": {
+        "params_types": {
             "source": "string",
             "target": "string",
             "options": {
@@ -83,9 +86,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "602.jscover-o31",
-                "fn_id": 100,
-                "source_fn_id": 100
+                "fn_name": "1409.jscover-o210",
+                "fn_id": 907,
+                "source_fn_id": 907
             }
         ]
     }

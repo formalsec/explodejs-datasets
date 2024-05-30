@@ -1,17 +1,18 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
         "sink_lineno": 26,
-        "sink_function": "75",
+        "sink_function": "1570",
         "source": "module.exports.createExtensionsFile",
         "tainted_params": [
             "opts",
             "info",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "opts": "any",
             "info": {
                 "subjectaltname": "string"
@@ -22,25 +23,26 @@
             {
                 "type": "Method",
                 "prop": "createExtensionsFile",
-                "fn_name": "1035.createExtensionsFile-o9",
-                "fn_id": 19,
-                "source_fn_id": 19
+                "fn_name": "2530.createExtensionsFile-o373",
+                "fn_id": 1514,
+                "source_fn_id": 1514
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
         "sink_lineno": 67,
-        "sink_function": "259",
+        "sink_function": "1754",
         "source": "module.exports.createCertRequestConfig",
         "tainted_params": [
             "opts",
             "info",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "opts": "any",
             "info": {
                 "subject": {
@@ -55,24 +57,25 @@
             {
                 "type": "Method",
                 "prop": "createCertRequestConfig",
-                "fn_name": "1035.createCertRequestConfig-o16",
-                "fn_id": 106,
-                "source_fn_id": 106
+                "fn_name": "2530.createCertRequestConfig-o380",
+                "fn_id": 1601,
+                "source_fn_id": 1601
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function execCb (err) {",
         "sink_lineno": 86,
-        "sink_function": "326",
+        "sink_function": "1821",
         "source": "module.exports.createKeypair",
         "tainted_params": [
             "opts",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "opts": "any",
             "cb": "function"
         },
@@ -80,18 +83,19 @@
             {
                 "type": "Method",
                 "prop": "createKeypair",
-                "fn_name": "1035.createKeypair-o22",
-                "fn_id": 290,
-                "source_fn_id": 290
+                "fn_name": "2530.createKeypair-o386",
+                "fn_id": 1785,
+                "source_fn_id": 1785
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function execCb (err) {",
         "sink_lineno": 110,
-        "sink_function": "404",
+        "sink_function": "1899",
         "source": "module.exports.createCertRequest",
         "tainted_params": [
             "opts",
@@ -99,7 +103,7 @@
             "cfgPath",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "opts": "any",
             "keyPath": "string",
             "cfgPath": "string",
@@ -109,18 +113,19 @@
             {
                 "type": "Method",
                 "prop": "createCertRequest",
-                "fn_name": "1035.createCertRequest-o30",
-                "fn_id": 354,
-                "source_fn_id": 354
+                "fn_name": "2530.createCertRequest-o394",
+                "fn_id": 1849,
+                "source_fn_id": 1849
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function execCb (err) {",
         "sink_lineno": 140,
-        "sink_function": "582",
+        "sink_function": "2077",
         "source": "module.exports.createCert",
         "tainted_params": [
             "opts",
@@ -130,7 +135,7 @@
             "extPath",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "opts": "any",
             "reqPath": "string",
             "caKeyPath": "string",
@@ -142,18 +147,19 @@
             {
                 "type": "Method",
                 "prop": "createCert",
-                "fn_name": "1035.createCert-o40",
-                "fn_id": 432,
-                "source_fn_id": 432
+                "fn_name": "2530.createCert-o404",
+                "fn_id": 1927,
+                "source_fn_id": 1927
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd2, function statsCb (err, stdout) {",
         "sink_lineno": 143,
-        "sink_function": "574",
+        "sink_function": "2069",
         "source": "module.exports.createCert",
         "tainted_params": [
             "opts",
@@ -163,7 +169,7 @@
             "extPath",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "opts": "any",
             "reqPath": "string",
             "caKeyPath": "string",
@@ -175,18 +181,19 @@
             {
                 "type": "Method",
                 "prop": "createCert",
-                "fn_name": "1035.createCert-o40",
-                "fn_id": 432,
-                "source_fn_id": 432
+                "fn_name": "2530.createCert-o404",
+                "fn_id": 1927,
+                "source_fn_id": 1927
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(certPath, function readCertCb (err, certBuf) {",
         "sink_lineno": 217,
-        "sink_function": "992",
+        "sink_function": "2487",
         "source": "module.exports.generateCertBuffer",
         "tainted_params": [
             "prefix",
@@ -196,37 +203,31 @@
             "caCertPath",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "prefix": "string",
             "keepFiles": "any",
-            "info": {
-                "subject": {
-                    "*": {
-                        "0": "string"
-                    }
-                },
-                "subjectaltname": "string"
-            },
-            "caKeyPath": "string",
-            "caCertPath": "string",
+            "info": "any",
+            "caKeyPath": "any",
+            "caCertPath": "any",
             "cb": "function"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "generateCertBuffer",
-                "fn_name": "1035.generateCertBuf-o60",
-                "fn_id": 880,
-                "source_fn_id": 880
+                "fn_name": "2530.generateCertBuf-o424",
+                "fn_id": 2375,
+                "source_fn_id": 2375
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(keyPath, function readKeyCb (err, keyBuf) {",
         "sink_lineno": 219,
-        "sink_function": "982",
+        "sink_function": "2477",
         "source": "module.exports.generateCertBuffer",
         "tainted_params": [
             "prefix",
@@ -236,28 +237,21 @@
             "caCertPath",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "prefix": "string",
             "keepFiles": "any",
-            "info": {
-                "subject": {
-                    "*": {
-                        "0": "string"
-                    }
-                },
-                "subjectaltname": "string"
-            },
-            "caKeyPath": "string",
-            "caCertPath": "string",
+            "info": "any",
+            "caKeyPath": "any",
+            "caCertPath": "any",
             "cb": "function"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "generateCertBuffer",
-                "fn_name": "1035.generateCertBuf-o60",
-                "fn_id": 880,
-                "source_fn_id": 880
+                "fn_name": "2530.generateCertBuf-o424",
+                "fn_id": 2375,
+                "source_fn_id": 2375
             }
         ]
     }

@@ -1,22 +1,18 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/lib_googleIt.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"open \".concat(result.link), errorTryingToOpen);",
         "sink_lineno": 59,
-        "sink_function": "487",
+        "sink_function": "2785",
         "source": "module.exports.openInBrowser",
         "tainted_params": [
             "open",
             "results"
         ],
-        "param_types": {
-            "open": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
+        "params_types": {
+            "open": "any",
             "results": {
                 "_union": [
                     "array",
@@ -28,25 +24,26 @@
             {
                 "type": "Method",
                 "prop": "openInBrowser",
-                "fn_name": "1679.openInBrowser-o6",
-                "fn_id": 457,
-                "source_fn_id": 457
+                "fn_name": "3977.openInBrowser-o524",
+                "fn_id": 2755,
+                "source_fn_id": 2755
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/lib_googleIt.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (err, data) {",
         "sink_lineno": 195,
-        "sink_function": "1314",
+        "sink_function": "3612",
         "source": "module.exports.getResponse",
         "tainted_params": [
             "_ref2"
         ],
-        "param_types": {
+        "params_types": {
             "_ref2": {
-                "fromFile": "array",
+                "fromFile": "any",
                 "fromString": "any",
                 "options": "any",
                 "htmlFileOutputPath": "any",
@@ -62,9 +59,9 @@
             {
                 "type": "Method",
                 "prop": "getResponse",
-                "fn_name": "1679.getResponse-o18",
-                "fn_id": 1223,
-                "source_fn_id": 1223
+                "fn_name": "3977.getResponse-o536",
+                "fn_id": 3521,
+                "source_fn_id": 3521
             }
         ]
     }

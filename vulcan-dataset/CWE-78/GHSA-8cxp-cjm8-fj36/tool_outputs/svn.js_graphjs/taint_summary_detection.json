@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "exec('svn blame ' + realFile + ' ' + args, {",
         "sink_lineno": 38,
-        "sink_function": "310"
+        "sink_function": "760"
     }
 ]

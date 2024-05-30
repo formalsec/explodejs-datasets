@@ -1,47 +1,49 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/pi_video_recording.js",
         "vuln_type": "command-injection",
         "sink": "proc =",
         "sink_lineno": 48,
-        "sink_function": "235",
+        "sink_function": "763",
         "source": "module.exports.startRecord",
         "tainted_params": [
             "file"
         ],
-        "param_types": {
+        "params_types": {
             "file": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "startRecord",
-                "fn_name": "365.v26-o26",
-                "fn_id": "198",
-                "source_fn_id": "198"
+                "fn_name": "893.v63-o168",
+                "fn_id": "726",
+                "source_fn_id": "726"
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/pi_video_recording.js",
         "vuln_type": "command-injection",
         "sink": "const process = childProcess.exec(",
         "sink_lineno": 69,
-        "sink_function": "314",
+        "sink_function": "842",
         "source": "module.exports.encodeRecord",
         "tainted_params": [
             "file"
         ],
-        "param_types": {
+        "params_types": {
             "file": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "encodeRecord",
-                "fn_name": "365.v36-o33",
-                "fn_id": "295",
-                "source_fn_id": "295"
+                "fn_name": "893.v73-o175",
+                "fn_id": "823",
+                "source_fn_id": "823"
             }
         ]
     }

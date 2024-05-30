@@ -4,13 +4,13 @@
         "vuln_type": "command-injection",
         "sink": "exec(\"open \".concat(result.link), errorTryingToOpen);",
         "sink_lineno": 59,
-        "sink_function": "487"
+        "sink_function": "2785"
     },
     {
         "filename": "../../src/lib_googleIt.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (err, data) {",
         "sink_lineno": 195,
-        "sink_function": "1314"
+        "sink_function": "3612"
     }
 ]

@@ -4,13 +4,13 @@
         "vuln_type": "command-injection",
         "sink": "_childProcess = child_process.spawn(",
         "sink_lineno": 334,
-        "sink_function": "1199"
+        "sink_function": "2957"
     },
     {
         "filename": "../../src/launchEditor.js",
         "vuln_type": "command-injection",
         "sink": "_childProcess = child_process.spawn(editor, args, { stdio: 'inherit' });",
         "sink_lineno": 340,
-        "sink_function": "1215"
+        "sink_function": "2973"
     }
 ]

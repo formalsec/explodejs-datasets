@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "const lsof = child_process_1.spawn('lsof', ['-i', `tcp:${port}`]);",
         "sink_lineno": 47,
-        "sink_function": "492"
+        "sink_function": "1563"
     }
 ]

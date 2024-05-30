@@ -4,13 +4,13 @@
         "vuln_type": "command-injection",
         "sink": "metadata(src, {",
         "sink_lineno": 36,
-        "sink_function": "240"
+        "sink_function": "2346"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "path-traversal",
         "sink": "Body: fs.createReadStream(version.path),",
         "sink_lineno": 95,
-        "sink_function": "783"
+        "sink_function": "2889"
     }
 ]

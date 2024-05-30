@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function (error) {",
         "sink_lineno": 24,
-        "sink_function": "164"
+        "sink_function": "471"
     }
 ]

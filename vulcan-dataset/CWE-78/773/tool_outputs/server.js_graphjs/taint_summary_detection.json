@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "filename": "../../src/server.js",
+        "vuln_type": "command-injection",
+        "sink": "res.header('Access-Control-Allow-Methods', 'GET,POST');",
+        "sink_lineno": 48,
+        "sink_function": "235"
+    }
+]

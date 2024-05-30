@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "execSync(",
         "sink_lineno": 37,
-        "sink_function": "165"
+        "sink_function": "849"
     }
 ]

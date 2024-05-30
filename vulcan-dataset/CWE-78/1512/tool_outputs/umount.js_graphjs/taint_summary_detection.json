@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "return child_process.exec(unmountCommand + \" \" + device, callback);",
         "sink_lineno": 52,
-        "sink_function": "160"
+        "sink_function": "630"
     }
 ]

@@ -1,17 +1,18 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/launchEditor.js",
         "vuln_type": "command-injection",
         "sink": "_childProcess = child_process.spawn(",
         "sink_lineno": 334,
-        "sink_function": "1199",
+        "sink_function": "2957",
         "source": "module.exports",
         "tainted_params": [
             "fileName",
             "lineNumber",
             "colNumber"
         ],
-        "param_types": {
+        "params_types": {
             "fileName": "string",
             "lineNumber": {
                 "_union": [
@@ -29,25 +30,26 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1292.launchEditor-o110",
-                "fn_id": "985",
-                "source_fn_id": "985"
+                "fn_name": "3050.launchEditor-o486",
+                "fn_id": "2743",
+                "source_fn_id": "2743"
             }
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/launchEditor.js",
         "vuln_type": "command-injection",
         "sink": "_childProcess = child_process.spawn(editor, args, { stdio: 'inherit' });",
         "sink_lineno": 340,
-        "sink_function": "1215",
+        "sink_function": "2973",
         "source": "module.exports",
         "tainted_params": [
             "fileName",
             "lineNumber",
             "colNumber"
         ],
-        "param_types": {
+        "params_types": {
             "fileName": "string",
             "lineNumber": {
                 "_union": [
@@ -65,9 +67,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1292.launchEditor-o110",
-                "fn_id": "985",
-                "source_fn_id": "985"
+                "fn_name": "3050.launchEditor-o486",
+                "fn_id": "2743",
+                "source_fn_id": "2743"
             }
         ]
     }

@@ -4,27 +4,27 @@
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
         "sink_lineno": 34,
-        "sink_function": "303"
+        "sink_function": "1615"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
         "sink_lineno": 56,
-        "sink_function": "413"
+        "sink_function": "1725"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
         "sink_lineno": 77,
-        "sink_function": "579"
+        "sink_function": "1891"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
         "sink_lineno": 96,
-        "sink_function": "802"
+        "sink_function": "2114"
     }
 ]

@@ -1,17 +1,18 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/stats.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(p.join('/proc', ''+pid, 'stat'), 'utf8', function(err, infos) {",
         "sink_lineno": 45,
-        "sink_function": "582",
+        "sink_function": "2302",
         "source": "module.exports.proc_calc",
         "tainted_params": [
             "pid",
             "options",
             "done"
         ],
-        "param_types": {
+        "params_types": {
             "pid": {
                 "_union": [
                     "number",
@@ -27,25 +28,26 @@
             {
                 "type": "Method",
                 "prop": "proc_calc",
-                "fn_name": "1316.v83-o21",
-                "fn_id": "184",
-                "source_fn_id": "184"
+                "fn_name": "3036.v258-o377",
+                "fn_id": "1904",
+                "source_fn_id": "1904"
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/stats.js",
         "vuln_type": "command-injection",
         "sink": "var wmic = spawn('wmic', args.split(' '), {detached: true})",
         "sink_lineno": 104,
-        "sink_function": "648",
+        "sink_function": "2368",
         "source": "module.exports.win",
         "tainted_params": [
             "pid",
             "options",
             "done"
         ],
-        "param_types": {
+        "params_types": {
             "pid": {
                 "_union": [
                     "number",
@@ -59,25 +61,26 @@
             {
                 "type": "Method",
                 "prop": "win",
-                "fn_name": "1316.v156-o26",
-                "fn_id": "593",
-                "source_fn_id": "593"
+                "fn_name": "3036.v331-o382",
+                "fn_id": "2313",
+                "source_fn_id": "2313"
             }
         ]
     },
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/stats.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
         "sink_lineno": 168,
-        "sink_function": "1264",
+        "sink_function": "2984",
         "source": "module.exports.ps",
         "tainted_params": [
             "pid",
             "options",
             "done"
         ],
-        "param_types": {
+        "params_types": {
             "pid": "string",
             "options": "any",
             "done": "function"
@@ -86,9 +89,9 @@
             {
                 "type": "Method",
                 "prop": "ps",
-                "fn_name": "1316.v175-o31",
-                "fn_id": "1141",
-                "source_fn_id": "1141"
+                "fn_name": "3036.v350-o387",
+                "fn_id": "2861",
+                "source_fn_id": "2861"
             }
         ]
     }

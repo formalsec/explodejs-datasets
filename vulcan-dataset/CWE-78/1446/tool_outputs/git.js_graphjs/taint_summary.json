@@ -1,15 +1,16 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/git.js",
         "vuln_type": "command-injection",
         "sink": "child.exec(cmd, {",
         "sink_lineno": 223,
-        "sink_function": "1639",
+        "sink_function": "3886",
         "source": "new module.exports",
         "tainted_params": [
             "opts"
         ],
-        "param_types": {
+        "params_types": {
             "opts": {
                 "dir": "string",
                 "repoDir": "any",
@@ -22,26 +23,11 @@
             "source": ".pull",
             "param_types": {
                 "repo": {
-                    "organization": {
-                        "_union": [
-                            "array",
-                            "string"
-                        ]
-                    },
-                    "name": {
-                        "_union": [
-                            "array",
-                            "string"
-                        ]
-                    },
+                    "organization": "any",
+                    "name": "any",
                     "commit": "any",
                     "id": "any",
-                    "branch": {
-                        "_union": [
-                            "array",
-                            "string"
-                        ]
-                    }
+                    "branch": "any"
                 },
                 "cb": "function"
             },
@@ -53,16 +39,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1656.v209-o86",
-                "fn_id": "59",
-                "source_fn_id": "59"
+                "fn_name": "3903.v445-o598",
+                "fn_id": "2306",
+                "source_fn_id": "2306"
             },
             {
                 "type": "Method",
                 "prop": "pull",
-                "fn_name": "1656.v236-o85",
-                "fn_id": "1493",
-                "source_fn_id": "1493"
+                "fn_name": "3903.v472-o597",
+                "fn_id": "3740",
+                "source_fn_id": "3740"
             }
         ]
     }

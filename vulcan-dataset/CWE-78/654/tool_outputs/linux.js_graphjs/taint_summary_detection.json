@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "exec(\"cat /sys/class/net/\" + iface + \"/address\", function (err, out) {",
         "sink_lineno": 4,
-        "sink_function": "54"
+        "sink_function": "157"
     }
 ]

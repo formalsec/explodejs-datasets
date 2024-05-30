@@ -1,16 +1,17 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/posix.js",
         "vuln_type": "command-injection",
         "sink": "exec('df -k \"' + path + '\"', function(err, stdout) {",
         "sink_lineno": 11,
-        "sink_function": "93",
+        "sink_function": "466",
         "source": "module.exports.diskusage",
         "tainted_params": [
             "path",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "path": {
                 "_union": [
                     "array",
@@ -23,9 +24,9 @@
             {
                 "type": "Method",
                 "prop": "diskusage",
-                "fn_name": "267.diskusage-o8",
-                "fn_id": "19",
-                "source_fn_id": "19"
+                "fn_name": "640.diskusage-o97",
+                "fn_id": "392",
+                "source_fn_id": "392"
             }
         ]
     }

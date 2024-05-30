@@ -4,20 +4,20 @@
         "vuln_type": "command-injection",
         "sink": "child.exec(cmd, {",
         "sink_lineno": 195,
-        "sink_function": "1414"
+        "sink_function": "3661"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "command-injection",
         "sink": "child.exec(cmd, {",
         "sink_lineno": 208,
-        "sink_function": "1471"
+        "sink_function": "3718"
     },
     {
         "filename": "../../src/git.js",
         "vuln_type": "command-injection",
         "sink": "child.exec(cmd, {",
         "sink_lineno": 223,
-        "sink_function": "1639"
+        "sink_function": "3886"
     }
 ]

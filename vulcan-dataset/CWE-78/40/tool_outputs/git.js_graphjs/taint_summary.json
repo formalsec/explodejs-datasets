@@ -1,23 +1,24 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "status.commitMessage = fs.readFileSync(path.join(repoPath, '.git', 'MERGE_MSG'), { encoding: 'utf8' });",
         "sink_lineno": 142,
-        "sink_function": "1265",
+        "sink_function": "5607",
         "source": "new module.exports",
         "tainted_params": [
             "command",
             "repoPath"
         ],
-        "param_types": {
+        "params_types": {
             "command": "any",
             "repoPath": "any"
         },
         "returns": {
             "source": ".status",
             "param_types": {
-                "repoPath": "string",
+                "repoPath": "any",
                 "file": "string"
             },
             "tainted_params": [
@@ -28,38 +29,39 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "3228.git-o58",
-                "fn_id": "61",
-                "source_fn_id": "61"
+                "fn_name": "7570.git-o1017",
+                "fn_id": "4403",
+                "source_fn_id": "4403"
             },
             {
                 "type": "Method",
                 "prop": "status",
-                "fn_name": "3228.v174-o57",
-                "fn_id": 1130,
-                "source_fn_id": 1130
+                "fn_name": "7570.v631-o1016",
+                "fn_id": 5472,
+                "source_fn_id": 5472
             }
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, { encoding: 'utf8' }, function(err, text) {",
         "sink_lineno": 217,
-        "sink_function": "1909",
+        "sink_function": "6251",
         "source": "new module.exports",
         "tainted_params": [
             "command",
             "repoPath"
         ],
-        "param_types": {
+        "params_types": {
             "command": "any",
             "repoPath": "any"
         },
         "returns": {
             "source": ".diffFile",
             "param_types": {
-                "repoPath": "string",
+                "repoPath": "any",
                 "filename": "string",
                 "sha1": "string",
                 "maxNLines": "any"
@@ -74,31 +76,32 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "3228.git-o85",
-                "fn_id": "61",
-                "source_fn_id": "61"
+                "fn_name": "7570.git-o1044",
+                "fn_id": "4403",
+                "source_fn_id": "4403"
             },
             {
                 "type": "Method",
                 "prop": "diffFile",
-                "fn_name": "3228.v261-o84",
-                "fn_id": 1568,
-                "source_fn_id": 1568
+                "fn_name": "7570.v718-o1043",
+                "fn_id": 5910,
+                "source_fn_id": 5910
             }
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/git.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(HEADFile, { encoding: 'utf8' }, function(err, text) {",
         "sink_lineno": 407,
-        "sink_function": "3184",
+        "sink_function": "7526",
         "source": "new module.exports",
         "tainted_params": [
             "command",
             "repoPath"
         ],
-        "param_types": {
+        "params_types": {
             "command": "any",
             "repoPath": "any"
         },
@@ -114,16 +117,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "3228.git-o121",
-                "fn_id": "61",
-                "source_fn_id": "61"
+                "fn_name": "7570.git-o1080",
+                "fn_id": "4403",
+                "source_fn_id": "4403"
             },
             {
                 "type": "Method",
                 "prop": "getCurrentBranch",
-                "fn_name": "3228.v457-o120",
-                "fn_id": 3058,
-                "source_fn_id": 3058
+                "fn_name": "7570.v914-o1079",
+                "fn_id": 7400,
+                "source_fn_id": 7400
             }
         ]
     }

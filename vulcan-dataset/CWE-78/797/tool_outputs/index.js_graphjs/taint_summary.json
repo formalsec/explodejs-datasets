@@ -1,10 +1,11 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(cmd, {",
         "sink_lineno": 76,
-        "sink_function": "298",
+        "sink_function": "857",
         "source": "module.exports",
         "tainted_params": [
             "worker",
@@ -12,7 +13,7 @@
             "logger",
             "config"
         ],
-        "param_types": {
+        "params_types": {
             "worker": {
                 "emit": "any"
             },
@@ -23,9 +24,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "409.v51-o8",
-                "fn_id": 9,
-                "source_fn_id": 9
+                "fn_name": "968.v102-o132",
+                "fn_id": 568,
+                "source_fn_id": 568
             }
         ]
     }

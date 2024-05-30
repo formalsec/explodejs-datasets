@@ -1,15 +1,16 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/controller.js",
         "vuln_type": "command-injection",
         "sink": "var child = spawn(cmd, params.args, {",
         "sink_lineno": 140,
-        "sink_function": "848",
+        "sink_function": "3268",
         "source": "new module.exports",
         "tainted_params": [
             "options"
         ],
-        "param_types": {
+        "params_types": {
             "options": "any"
         },
         "returns": {
@@ -28,8 +29,12 @@
                         "logSize": "number"
                     },
                     "id": "string",
+                    "process": {
+                        "priestId": "any",
+                        "stdout": "any",
+                        "stderr": "any"
+                    },
                     "startedAt": "any",
-                    "process": "any",
                     "stopped": "any",
                     "code": "any",
                     "_timeout": "any",
@@ -46,16 +51,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1853.v87-o71",
-                "fn_id": "55",
-                "source_fn_id": "55"
+                "fn_name": "4273.v356-o561",
+                "fn_id": "2475",
+                "source_fn_id": "2475"
             },
             {
                 "type": "Method",
                 "prop": "createChild",
-                "fn_name": "1853.v209-o70",
-                "fn_id": "699",
-                "source_fn_id": "699"
+                "fn_name": "4273.v478-o560",
+                "fn_id": "3119",
+                "source_fn_id": "3119"
             }
         ]
     }

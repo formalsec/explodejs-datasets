@@ -1,97 +1,101 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('which ' + name, function(error, stdout, stderr) {",
         "sink_lineno": 4,
-        "sink_function": "288",
+        "sink_function": "699",
         "source": "module.exports",
         "tainted_params": [
             "name",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "name": "string",
             "cb": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "304.whereis-o5",
-                "fn_id": "5",
-                "source_fn_id": "5"
+                "fn_name": "715.whereis-o91",
+                "fn_id": "416",
+                "source_fn_id": "416"
             }
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('whereis ' + name, function(error, stdout, stderr) {",
         "sink_lineno": 8,
-        "sink_function": "269",
+        "sink_function": "680",
         "source": "module.exports",
         "tainted_params": [
             "name",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "name": "string",
             "cb": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "304.whereis-o5",
-                "fn_id": 5,
-                "source_fn_id": 5
+                "fn_name": "715.whereis-o91",
+                "fn_id": 416,
+                "source_fn_id": 416
             }
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('where ' + name, function (error, stdout, stderr) { //windows",
         "sink_lineno": 10,
-        "sink_function": "240",
+        "sink_function": "651",
         "source": "module.exports",
         "tainted_params": [
             "name",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "name": "string",
             "cb": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "304.whereis-o5",
-                "fn_id": 5,
-                "source_fn_id": 5
+                "fn_name": "715.whereis-o91",
+                "fn_id": 416,
+                "source_fn_id": 416
             }
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('for %i in (' + name + '.exe) do @echo. %~$PATH:i', function (error, stdout, stderr) { //windows xp",
         "sink_lineno": 12,
-        "sink_function": "221",
+        "sink_function": "632",
         "source": "module.exports",
         "tainted_params": [
             "name",
             "cb"
         ],
-        "param_types": {
+        "params_types": {
             "name": "string",
             "cb": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "304.whereis-o5",
-                "fn_id": 5,
-                "source_fn_id": 5
+                "fn_name": "715.whereis-o91",
+                "fn_id": 416,
+                "source_fn_id": 416
             }
         ]
     }

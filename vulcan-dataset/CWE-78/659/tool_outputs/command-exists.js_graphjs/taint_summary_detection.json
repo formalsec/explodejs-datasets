@@ -4,27 +4,27 @@
         "vuln_type": "command-injection",
         "sink": "var child = exec('command -v ' + commandName +",
         "sink_lineno": 49,
-        "sink_function": "223"
+        "sink_function": "966"
     },
     {
         "filename": "../../src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('where ' + commandName,",
         "sink_lineno": 64,
-        "sink_function": "280"
+        "sink_function": "1023"
     },
     {
         "filename": "../../src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('command -v ' + commandName +",
         "sink_lineno": 78,
-        "sink_function": "316"
+        "sink_function": "1059"
     },
     {
         "filename": "../../src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('where ' + commandName);",
         "sink_lineno": 94,
-        "sink_function": "351"
+        "sink_function": "1094"
     }
 ]

@@ -4,6 +4,6 @@
         "vuln_type": "command-injection",
         "sink": "return exec(opener + ' \"' + escape(target) + '\"', callback);",
         "sink_lineno": 58,
-        "sink_function": "169"
+        "sink_function": "425"
     }
 ]

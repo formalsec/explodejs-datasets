@@ -4,13 +4,13 @@
         "vuln_type": "command-injection",
         "sink": "proc =",
         "sink_lineno": 48,
-        "sink_function": "235"
+        "sink_function": "763"
     },
     {
         "filename": "../../src/pi_video_recording.js",
         "vuln_type": "command-injection",
         "sink": "const process = childProcess.exec(",
         "sink_lineno": 69,
-        "sink_function": "314"
+        "sink_function": "842"
     }
 ]
