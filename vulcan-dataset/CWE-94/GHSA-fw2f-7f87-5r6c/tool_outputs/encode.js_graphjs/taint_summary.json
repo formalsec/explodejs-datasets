@@ -1,30 +1,26 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/encode.js",
         "vuln_type": "code-injection",
         "sink": "return eval('`' + tmpl + '`');",
         "sink_lineno": 6,
-        "sink_function": "22",
+        "sink_function": "161",
         "source": "module.exports",
         "tainted_params": [
             "statements",
             "data"
         ],
-        "param_types": {
-            "statements": {
-                "_union": [
-                    "object",
-                    "string"
-                ]
-            },
-            "data": "object"
+        "params_types": {
+            "statements": "any",
+            "data": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "99.encodeStatements-o8",
-                "fn_id": 29,
-                "source_fn_id": 29
+                "fn_name": "238.encodeStatements-o38",
+                "fn_id": 168,
+                "source_fn_id": 168
             }
         ]
     }

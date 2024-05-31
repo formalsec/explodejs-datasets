@@ -54,8 +54,8 @@ function set (object, key, value) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let object = {  };
-let path = {  };
+let object = [ esl_symbolic.string("object0") ];
+let path = [ esl_symbolic.string("path0") ];
 let value = esl_symbolic.any("value");
 module.exports(object, path, value);
 console.log(({}).toString);

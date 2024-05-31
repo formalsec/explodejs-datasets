@@ -40,6 +40,6 @@ module.exports = function(string) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let string = esl_symbolic.number("string");
+let string = esl_symbolic.string("string");
 module.exports(string);
 console.log(({}).toString);

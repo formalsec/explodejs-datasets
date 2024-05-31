@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = extend[key];",
         "sink_lineno": 94,
-        "sink_function": "224",
+        "sink_function": "832",
         "source": "new module.exports",
         "tainted_params": [
             "clone"
@@ -25,16 +25,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "453.Public-o18",
-                "fn_id": "5",
-                "source_fn_id": "5"
+                "fn_name": "1061.Public-o145",
+                "fn_id": "613",
+                "source_fn_id": "613"
             },
             {
                 "type": "Method",
                 "prop": "recursive",
-                "fn_name": "453.v5-o17",
-                "fn_id": 23,
-                "source_fn_id": 23
+                "fn_name": "1061.v60-o144",
+                "fn_id": 631,
+                "source_fn_id": 631
             }
         ]
     },
@@ -44,7 +44,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = merge_recursive(base[key], extend[key]);",
         "sink_lineno": 90,
-        "sink_function": "213",
+        "sink_function": "821",
         "source": "new module.exports",
         "tainted_params": [
             "clone"
@@ -64,16 +64,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "453.Public-o18",
-                "fn_id": "5",
-                "source_fn_id": "5"
+                "fn_name": "1061.Public-o145",
+                "fn_id": "613",
+                "source_fn_id": "613"
             },
             {
                 "type": "Method",
                 "prop": "recursive",
-                "fn_name": "453.v5-o17",
-                "fn_id": 23,
-                "source_fn_id": 23
+                "fn_name": "1061.v60-o144",
+                "fn_id": 631,
+                "source_fn_id": 631
             }
         ]
     }

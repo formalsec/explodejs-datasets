@@ -4,13 +4,13 @@
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, 'utf-8', function(error, data){",
         "sink_lineno": 21,
-        "sink_function": "143"
+        "sink_function": "413"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(file, 'utf-8'))",
         "sink_lineno": 31,
-        "sink_function": "157"
+        "sink_function": "427"
     }
 ]

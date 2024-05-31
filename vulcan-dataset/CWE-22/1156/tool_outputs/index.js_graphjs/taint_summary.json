@@ -1,0 +1,113 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(req.routed.templateFullPath, function (err, str) {",
+        "sink_lineno": 215,
+        "sink_function": "5116",
+        "source": "new module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "baseOptions": {
+                    "middleware": "any"
+                }
+            }
+        },
+        "returns": {
+            "source": ".mwRender",
+            "param_types": {
+                "req": {
+                    "logPrefix": "string",
+                    "finished": "any",
+                    "render": "any",
+                    "routed": {
+                        "templateFullPath": "string"
+                    }
+                },
+                "res": {
+                    "data": "any",
+                    "renderedData": "any"
+                },
+                "cb": "function"
+            },
+            "tainted_params": [
+                "req",
+                "res",
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "6421.v534-o763",
+                "fn_id": "3685",
+                "source_fn_id": "3685"
+            },
+            {
+                "type": "Method",
+                "prop": "mwRender",
+                "fn_name": "6421.mwRender-o762",
+                "fn_id": 4505,
+                "source_fn_id": 4505
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
+        "sink_lineno": 350,
+        "sink_function": "5909",
+        "source": "new module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "baseOptions": {
+                    "middleware": "any"
+                }
+            }
+        },
+        "returns": {
+            "source": ".mwRunController",
+            "param_types": {
+                "req": {
+                    "logPrefix": "string",
+                    "finished": "any",
+                    "routed": {
+                        "templateFullPath": "any",
+                        "controllerFullPath": "string"
+                    }
+                },
+                "res": "any",
+                "cb": "function"
+            },
+            "tainted_params": [
+                "req",
+                "res",
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "6421.v736-o777",
+                "fn_id": "3685",
+                "source_fn_id": "3685"
+            },
+            {
+                "type": "Method",
+                "prop": "mwRunController",
+                "fn_name": "6421.mwRunController-o776",
+                "fn_id": "5755",
+                "source_fn_id": "5755"
+            }
+        ]
+    }
+]

@@ -1,17 +1,18 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/md-to-pdf.js",
         "vuln_type": "code-injection",
         "sink": "const { content: md, data: frontMatterConfig } = gray_matter_1.default(mdFileContent);",
         "sink_lineno": 23,
-        "sink_function": "180",
+        "sink_function": "1104",
         "source": "module.exports.convertMdToPdf",
         "tainted_params": [
             "input",
             "config",
             "args"
         ],
-        "param_types": {
+        "params_types": {
             "input": {
                 "content": "any",
                 "path": "any"
@@ -32,21 +33,15 @@
                 "basedir": "any",
                 "devtools": "any"
             },
-            "args": {
-                "_union": [
-                    "array",
-                    "object",
-                    "string"
-                ]
-            }
+            "args": "object"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "convertMdToPdf",
-                "fn_name": "714.convertMdToPdf-o23",
-                "fn_id": "107",
-                "source_fn_id": "107"
+                "fn_name": "1638.convertMdToPdf-o208",
+                "fn_id": "1031",
+                "source_fn_id": "1031"
             }
         ]
     }

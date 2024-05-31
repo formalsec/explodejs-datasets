@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(b[p]);",
         "sink_lineno": 60,
-        "sink_function": "337",
+        "sink_function": "1454",
         "source": "module.exports.extend",
         "tainted_params": [
             "a",
@@ -13,20 +13,67 @@
         ],
         "params_types": {
             "a": "object",
-            "b": {
-                "_union": [
-                    "array",
-                    "object"
-                ]
-            }
+            "b": "object"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "extend",
-                "fn_name": "776.deepExtend-o12",
-                "fn_id": 260,
-                "source_fn_id": 260
+                "fn_name": "1893.deepExtend-o288",
+                "fn_id": 1377,
+                "source_fn_id": 1377
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/deap.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[p] = deepClone(bp);",
+        "sink_lineno": 90,
+        "sink_function": "1680",
+        "source": "module.exports.update",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "object",
+            "b": "object"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "update",
+                "fn_name": "1893.deepUpdate-o294",
+                "fn_id": 1545,
+                "source_fn_id": 1545
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/deap.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "a[p] = deepClone(bp);",
+        "sink_lineno": 117,
+        "sink_function": "1864",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "object",
+            "b": "object"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "1893.deepMerge-o300",
+                "fn_id": 1776,
+                "source_fn_id": 1776
             }
         ]
     }

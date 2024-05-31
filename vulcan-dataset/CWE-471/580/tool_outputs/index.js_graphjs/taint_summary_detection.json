@@ -4,20 +4,20 @@
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.clone(oldVal);",
         "sink_lineno": 45,
-        "sink_function": "196"
+        "sink_function": "512"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.union([], newVal, oldVal);",
         "sink_lineno": 43,
-        "sink_function": "183"
+        "sink_function": "499"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = merge(newVal, oldVal);",
         "sink_lineno": 41,
-        "sink_function": "158"
+        "sink_function": "474"
     }
 ]

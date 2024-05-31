@@ -4,20 +4,20 @@
         "vuln_type": "prototype-pollution",
         "sink": "requestedValue_1[keyPath] = additionalChanges_1[keyPath];",
         "sink_lineno": 4133,
-        "sink_function": "32685"
+        "sink_function": "87600"
     },
     {
         "filename": "../../src/dexie.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[keyPath] = value;",
         "sink_lineno": 198,
-        "sink_function": "1343"
+        "sink_function": "56258"
     },
     {
         "filename": "../../src/dexie.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[currentKeyPath] = value;",
         "sink_lineno": 182,
-        "sink_function": "1253"
+        "sink_function": "56168"
     }
 ]

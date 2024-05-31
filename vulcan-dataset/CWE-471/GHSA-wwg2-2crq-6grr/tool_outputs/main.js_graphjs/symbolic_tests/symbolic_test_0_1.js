@@ -28,9 +28,9 @@ module.exports = (obj, path, val, sep = '.') => {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let obj = {  };
+let obj = [ esl_symbolic.string("obj0") ];
 let path = [ esl_symbolic.any("path0") ];
-let val = {  };
-let sep = esl_symbolic.number("sep");
+let val = esl_symbolic.function("val");
+let sep = esl_symbolic.any("sep");
 module.exports(obj, path, val, sep);
 console.log(({}).toString);

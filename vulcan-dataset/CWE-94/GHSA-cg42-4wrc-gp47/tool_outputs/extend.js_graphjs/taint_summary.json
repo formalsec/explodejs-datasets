@@ -1,10 +1,11 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/extend.js",
         "vuln_type": "code-injection",
         "sink": "var nn = eval('('+ss+')');",
         "sink_lineno": 31,
-        "sink_function": "126",
+        "sink_function": "387",
         "source": "module.exports",
         "tainted_params": [
             "A",
@@ -12,7 +13,7 @@
             "as",
             "isAargs"
         ],
-        "param_types": {
+        "params_types": {
             "A": {
                 "prototype": {
                     "*": "any"
@@ -22,15 +23,15 @@
             "B": {
                 "*": "any"
             },
-            "as": "string",
+            "as": "any",
             "isAargs": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "195.extend-o2",
-                "fn_id": "11",
-                "source_fn_id": "11"
+                "fn_name": "456.extend-o55",
+                "fn_id": "272",
+                "source_fn_id": "272"
             }
         ]
     }

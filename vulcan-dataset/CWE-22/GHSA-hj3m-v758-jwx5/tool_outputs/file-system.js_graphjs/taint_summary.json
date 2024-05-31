@@ -1,0 +1,26 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "const readStream = fs.createReadStream(filePath);",
+        "sink_lineno": 13,
+        "sink_function": "328",
+        "source": "module.exports.createReadStream",
+        "tainted_params": [
+            "url"
+        ],
+        "params_types": {
+            "url": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "createReadStream",
+                "fn_name": "494.createReadStream-o80",
+                "fn_id": "312",
+                "source_fn_id": "312"
+            }
+        ]
+    }
+]

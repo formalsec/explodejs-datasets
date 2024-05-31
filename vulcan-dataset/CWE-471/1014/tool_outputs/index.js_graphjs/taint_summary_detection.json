@@ -4,20 +4,20 @@
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = val;",
         "sink_lineno": 48,
-        "sink_function": "184"
+        "sink_function": "573"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = assign(target[key] || {}, val);",
         "sink_lineno": 46,
-        "sink_function": "177"
+        "sink_function": "566"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = val;",
         "sink_lineno": 44,
-        "sink_function": "155"
+        "sink_function": "544"
     }
 ]

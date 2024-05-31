@@ -4,6 +4,6 @@
         "vuln_type": "code-injection",
         "sink": "Function(src);",
         "sink_lineno": 7,
-        "sink_function": "26"
+        "sink_function": "425"
     }
 ]

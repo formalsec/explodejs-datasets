@@ -1,15 +1,16 @@
 [
     {
+        "type": "VFunPropOfExportedObj",
         "filename": "../../src/messenger-node.js",
         "vuln_type": "code-injection",
         "sink": "eval(`cl.${color}()`); // eslint-disable-line",
         "sink_lineno": 71,
-        "sink_function": "345",
+        "sink_function": "1006",
         "source": "module.exports.line",
         "tainted_params": [
             "color"
         ],
-        "param_types": {
+        "params_types": {
             "color": {
                 "length": "any"
             }
@@ -18,9 +19,9 @@
             {
                 "type": "Method",
                 "prop": "line",
-                "fn_name": "466.v52-o33",
-                "fn_id": "328",
-                "source_fn_id": "328"
+                "fn_name": "1127.v106-o192",
+                "fn_id": "989",
+                "source_fn_id": "989"
             }
         ]
     }

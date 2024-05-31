@@ -1,15 +1,16 @@
 [
     {
+        "type": "VNewCall",
         "filename": "../../src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rules.condition = eval(\"(\"+rules.condition+\")\");",
         "sink_lineno": 244,
-        "sink_function": "953",
+        "sink_function": "2344",
         "source": "new module.exports",
         "tainted_params": [
             "rules"
         ],
-        "param_types": {
+        "params_types": {
             "rules": {
                 "_union": [
                     "array",
@@ -33,30 +34,31 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1021.v106-o57",
-                "fn_id": "15",
-                "source_fn_id": "15"
+                "fn_name": "2412.v242-o354",
+                "fn_id": "1406",
+                "source_fn_id": "1406"
             },
             {
                 "type": "Method",
                 "prop": "fromJSON",
-                "fn_name": "1021.v133-o56",
-                "fn_id": "831",
-                "source_fn_id": "831"
+                "fn_name": "2412.v269-o353",
+                "fn_id": "2222",
+                "source_fn_id": "2222"
             }
         ]
     },
     {
+        "type": "VNewCall",
         "filename": "../../src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rules.consequence = eval(\"(\"+rules.consequence+\")\");",
         "sink_lineno": 245,
-        "sink_function": "975",
+        "sink_function": "2366",
         "source": "new module.exports",
         "tainted_params": [
             "rules"
         ],
-        "param_types": {
+        "params_types": {
             "rules": {
                 "_union": [
                     "array",
@@ -80,16 +82,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1021.v106-o57",
-                "fn_id": "15",
-                "source_fn_id": "15"
+                "fn_name": "2412.v242-o354",
+                "fn_id": "1406",
+                "source_fn_id": "1406"
             },
             {
                 "type": "Method",
                 "prop": "fromJSON",
-                "fn_name": "1021.v133-o56",
-                "fn_id": "831",
-                "source_fn_id": "831"
+                "fn_name": "2412.v269-o353",
+                "fn_id": "2222",
+                "source_fn_id": "2222"
             }
         ]
     }

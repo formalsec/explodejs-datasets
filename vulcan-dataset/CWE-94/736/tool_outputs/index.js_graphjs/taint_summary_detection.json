@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function('tokens, req, res', js)",
+        "sink_lineno": 391,
+        "sink_function": "3490"
+    }
+]

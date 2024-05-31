@@ -85,6 +85,6 @@ module.exports = assign;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let target = {  };
+let target = esl_symbolic.any("target");
 module.exports(target);
 console.log(({}).toString);

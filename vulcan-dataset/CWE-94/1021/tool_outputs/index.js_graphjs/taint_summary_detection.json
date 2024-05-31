@@ -4,6 +4,6 @@
         "vuln_type": "code-injection",
         "sink": "return vm.runInContext(",
         "sink_lineno": 46,
-        "sink_function": "99"
+        "sink_function": "312"
     }
 ]

@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "a[k] = merge(a[k], b[k]);",
         "sink_lineno": 9,
-        "sink_function": "103",
+        "sink_function": "513",
         "source": "module.exports.merge",
         "tainted_params": [
             "a",
@@ -32,9 +32,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "328.merge-o5",
-                "fn_id": "1",
-                "source_fn_id": "1"
+                "fn_name": "738.merge-o71",
+                "fn_id": "411",
+                "source_fn_id": "411"
             }
         ]
     },
@@ -44,7 +44,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "a[k] = merge(a[k], b[k]);",
         "sink_lineno": 5,
-        "sink_function": "70",
+        "sink_function": "480",
         "source": "module.exports.merge",
         "tainted_params": [
             "a",
@@ -71,9 +71,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "328.merge-o5",
-                "fn_id": "1",
-                "source_fn_id": "1"
+                "fn_name": "738.merge-o71",
+                "fn_id": "411",
+                "source_fn_id": "411"
             }
         ]
     }

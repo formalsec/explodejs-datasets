@@ -4,13 +4,13 @@
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 107,
-        "sink_function": "386"
+        "sink_function": "1452"
     },
     {
         "filename": "../../src/memory.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 200,
-        "sink_function": "702"
+        "sink_function": "1768"
     }
 ]

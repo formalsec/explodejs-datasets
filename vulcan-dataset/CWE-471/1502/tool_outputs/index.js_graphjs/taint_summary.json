@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 46,
-        "sink_function": "187",
+        "sink_function": "1227",
         "source": "module.exports.extend",
         "tainted_params": [],
         "params_types": {},
@@ -13,9 +13,9 @@
             {
                 "type": "Method",
                 "prop": "extend",
-                "fn_name": "743.v33-o29",
-                "fn_id": 212,
-                "source_fn_id": 212
+                "fn_name": "1783.v129-o274",
+                "fn_id": 1252,
+                "source_fn_id": 1252
             }
         ]
     }

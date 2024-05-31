@@ -31,6 +31,6 @@ esl_symbolic.sealProperties(Object.prototype);
 let obj = {  };
 let path = [ esl_symbolic.any("path0") ];
 let val = esl_symbolic.function("val");
-let sep = esl_symbolic.number("sep");
+let sep = esl_symbolic.any("sep");
 module.exports(obj, path, val, sep);
 console.log(({}).toString);

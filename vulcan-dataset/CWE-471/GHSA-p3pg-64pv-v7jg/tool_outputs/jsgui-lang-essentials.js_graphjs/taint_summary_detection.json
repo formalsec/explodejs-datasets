@@ -4,13 +4,13 @@
         "vuln_type": "prototype-pollution",
         "sink": "i[s] = prop_value;",
         "sink_lineno": 1442,
-        "sink_function": "3989"
+        "sink_function": "10784"
     },
     {
         "filename": "../../src/jsgui-lang-essentials.js",
         "vuln_type": "prototype-pollution",
         "sink": "i[s] = prop_value;",
         "sink_lineno": 1435,
-        "sink_function": "3959"
+        "sink_function": "10754"
     }
 ]

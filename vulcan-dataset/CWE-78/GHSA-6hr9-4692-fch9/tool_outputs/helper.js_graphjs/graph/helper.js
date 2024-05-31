@@ -3,7 +3,7 @@ var exec = v29.exec;
 const v55 = function (exec) {
     const generateCmd = function (options) {
         var filters = {};
-        filters.blur = ' -channel RGBA -blur 0x';x
+        filters.blur = ' -channel RGBA -blur 0x';
         filters.gaussian = ' -filter Gaussian -define filter:sigma=';
         filters.sharpen = ' -sharpen 0x';
         filters.unsharp = ' -unsharp 0x';

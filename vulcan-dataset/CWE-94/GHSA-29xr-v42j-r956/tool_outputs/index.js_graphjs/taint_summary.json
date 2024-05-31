@@ -1,35 +1,28 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "code-injection",
         "sink": "return eval(createWrapper($$__fn__$$.name, options))",
         "sink_lineno": 17,
-        "sink_function": "41",
+        "sink_function": "591",
         "source": "module.exports",
         "tainted_params": [
             "$$__fn__$$",
             "options"
         ],
-        "param_types": {
+        "params_types": {
             "$$__fn__$$": {
                 "name": "string"
             },
-            "options": {
-                "multiArgs": {
-                    "_union": [
-                        "array",
-                        "string"
-                    ]
-                },
-                "withCallback": "any"
-            }
+            "options": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "409.thenify-o3",
-                "fn_id": "15",
-                "source_fn_id": "15"
+                "fn_name": "959.thenify-o121",
+                "fn_id": "565",
+                "source_fn_id": "565"
             }
         ]
     }

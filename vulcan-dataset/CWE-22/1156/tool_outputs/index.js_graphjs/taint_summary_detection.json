@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(req.routed.templateFullPath, function (err, str) {",
+        "sink_lineno": 215,
+        "sink_function": "5116"
+    },
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
+        "sink_lineno": 350,
+        "sink_function": "5909"
+    }
+]

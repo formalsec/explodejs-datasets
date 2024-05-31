@@ -5,7 +5,7 @@
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, 'utf-8', function(error, data){",
         "sink_lineno": 21,
-        "sink_function": "143",
+        "sink_function": "413",
         "source": "module.exports.parseFile",
         "tainted_params": [
             "file",
@@ -19,9 +19,9 @@
             {
                 "type": "Method",
                 "prop": "parseFile",
-                "fn_name": "197.parseFile-o7",
-                "fn_id": "114",
-                "source_fn_id": "114"
+                "fn_name": "467.parseFile-o63",
+                "fn_id": "384",
+                "source_fn_id": "384"
             }
         ]
     },
@@ -31,7 +31,7 @@
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(file, 'utf-8'))",
         "sink_lineno": 31,
-        "sink_function": "157",
+        "sink_function": "427",
         "source": "module.exports.parseFileSync",
         "tainted_params": [
             "file"
@@ -43,9 +43,9 @@
             {
                 "type": "Method",
                 "prop": "parseFileSync",
-                "fn_name": "197.parseFileSync-o10",
-                "fn_id": "154",
-                "source_fn_id": "154"
+                "fn_name": "467.parseFileSync-o66",
+                "fn_id": "424",
+                "source_fn_id": "424"
             }
         ]
     }

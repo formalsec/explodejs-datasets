@@ -4,13 +4,13 @@
         "vuln_type": "prototype-pollution",
         "sink": "x[key] = merge(x[key], y[key]);",
         "sink_lineno": 19,
-        "sink_function": "157"
+        "sink_function": "669"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "x[key] = merge(x[key], y[key]);",
         "sink_lineno": 15,
-        "sink_function": "107"
+        "sink_function": "619"
     }
 ]

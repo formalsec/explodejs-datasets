@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = source[key];",
         "sink_lineno": 14,
-        "sink_function": "105",
+        "sink_function": "266",
         "source": "module.exports.deepMerge",
         "tainted_params": [
             "target",
@@ -24,9 +24,9 @@
             {
                 "type": "Method",
                 "prop": "deepMerge",
-                "fn_name": "122.deepMerge-o7",
-                "fn_id": "22",
-                "source_fn_id": "22"
+                "fn_name": "283.deepMerge-o38",
+                "fn_id": "183",
+                "source_fn_id": "183"
             }
         ]
     }

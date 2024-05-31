@@ -4,13 +4,13 @@
         "vuln_type": "code-injection",
         "sink": "return eval(createWrapper($$__fn__$$.name, options))",
         "sink_lineno": 17,
-        "sink_function": "41"
+        "sink_function": "591"
     },
     {
         "filename": "../../src/index.js",
         "vuln_type": "code-injection",
         "sink": "return eval(createWrapper($$__fn__$$.name, options))",
         "sink_lineno": 33,
-        "sink_function": "105"
+        "sink_function": "655"
     }
 ]

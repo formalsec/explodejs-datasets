@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/read-file.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.readFile(file, done);",
+        "sink_lineno": 11,
+        "sink_function": "68"
+    }
+]

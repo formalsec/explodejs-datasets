@@ -1,0 +1,31 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function('tokens, req, res', js)",
+        "sink_lineno": 391,
+        "sink_function": "3490",
+        "source": "module.exports.compile",
+        "tainted_params": [
+            "format"
+        ],
+        "params_types": {
+            "format": {
+                "_union": [
+                    "object",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "compile",
+                "fn_name": "3782.compile-o469",
+                "fn_id": "3382",
+                "source_fn_id": "3382"
+            }
+        ]
+    }
+]

@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "cache[from][to] = result",
         "sink_lineno": 39,
-        "sink_function": "101",
+        "sink_function": "247",
         "source": "module.exports",
         "tainted_params": [
             "from",
@@ -18,9 +18,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "110.cachedPathRelative-o5",
-                "fn_id": "22",
-                "source_fn_id": "22"
+                "fn_name": "256.cachedPathRelative-o35",
+                "fn_id": "168",
+                "source_fn_id": "168"
             }
         ]
     }

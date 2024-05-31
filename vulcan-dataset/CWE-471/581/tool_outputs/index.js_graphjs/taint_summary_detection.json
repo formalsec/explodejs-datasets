@@ -4,6 +4,6 @@
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 22,
-        "sink_function": "55"
+        "sink_function": "260"
     }
 ]

@@ -1,0 +1,26 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/dns-sync.js",
+        "vuln_type": "command-injection",
+        "sink": "response = shell.exec(cmd, {silent: true});",
+        "sink_lineno": 21,
+        "sink_function": "243",
+        "source": "module.exports.resolve",
+        "tainted_params": [
+            "hostname"
+        ],
+        "params_types": {
+            "hostname": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "resolve",
+                "fn_name": "316.v21-o58",
+                "fn_id": "213",
+                "source_fn_id": "213"
+            }
+        ]
+    }
+]

@@ -1,1 +1,27 @@
-[]
+[
+    {
+        "type": "VFunExported",
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = value;",
+        "sink_lineno": 22,
+        "sink_function": "260",
+        "source": "module.exports",
+        "tainted_params": [
+            "target",
+            "objects"
+        ],
+        "params_types": {
+            "target": "any",
+            "objects": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "351.defaultsDeep-o57",
+                "fn_id": 230,
+                "source_fn_id": 230
+            }
+        ]
+    }
+]

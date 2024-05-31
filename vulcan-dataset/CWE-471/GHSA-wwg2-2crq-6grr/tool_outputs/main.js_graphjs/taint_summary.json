@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "tmp[parts[i]] = val;",
         "sink_lineno": 11,
-        "sink_function": "98",
+        "sink_function": "376",
         "source": "module.exports",
         "tainted_params": [
             "obj",
@@ -14,7 +14,12 @@
             "sep"
         ],
         "params_types": {
-            "obj": "object",
+            "obj": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
             "path": [
                 "any"
             ],
@@ -24,14 +29,14 @@
                     "object"
                 ]
             },
-            "sep": "number"
+            "sep": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "213.v29-o15",
-                "fn_id": 107,
-                "source_fn_id": 107
+                "fn_name": "491.v58-o66",
+                "fn_id": 385,
+                "source_fn_id": 385
             }
         ]
     }

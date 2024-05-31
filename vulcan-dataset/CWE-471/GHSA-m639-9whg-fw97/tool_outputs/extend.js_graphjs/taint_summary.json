@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = b[key];",
         "sink_lineno": 42,
-        "sink_function": "115",
+        "sink_function": "301",
         "source": "module.exports",
         "tainted_params": [
             "a",
@@ -23,9 +23,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "140.extend-o4",
-                "fn_id": 1,
-                "source_fn_id": 1
+                "fn_name": "326.extend-o40",
+                "fn_id": 187,
+                "source_fn_id": 187
             }
         ]
     },
@@ -35,7 +35,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = extend(a[key], b[key]);",
         "sink_lineno": 39,
-        "sink_function": "103",
+        "sink_function": "289",
         "source": "module.exports",
         "tainted_params": [
             "a",
@@ -53,9 +53,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "140.extend-o4",
-                "fn_id": 1,
-                "source_fn_id": 1
+                "fn_name": "326.extend-o40",
+                "fn_id": 187,
+                "source_fn_id": 187
             }
         ]
     },
@@ -65,7 +65,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = b[key];",
         "sink_lineno": 37,
-        "sink_function": "83",
+        "sink_function": "269",
         "source": "module.exports",
         "tainted_params": [
             "a",
@@ -83,9 +83,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "140.extend-o4",
-                "fn_id": 1,
-                "source_fn_id": 1
+                "fn_name": "326.extend-o40",
+                "fn_id": 187,
+                "source_fn_id": 187
             }
         ]
     }

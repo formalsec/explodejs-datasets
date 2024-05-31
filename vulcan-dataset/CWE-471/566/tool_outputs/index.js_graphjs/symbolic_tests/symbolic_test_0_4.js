@@ -959,8 +959,8 @@ exports.block = function () {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let source = esl_symbolic.polluted_object(2);
-let transform = esl_symbolic.string("transform");
-let options = {  };
+let source = [ esl_symbolic.string("source0") ];
+let transform = [ esl_symbolic.string("transform0") ];
+let options = { separator: esl_symbolic.any("separator") };
 module.exports.transform(source, transform, options);
 console.log(({}).toString);

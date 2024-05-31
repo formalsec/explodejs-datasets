@@ -1,15 +1,16 @@
 [
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.readFile(readmeFile, function (err, data) {",
         "sink_lineno": 153,
-        "sink_function": "1360",
+        "sink_function": "3813",
         "source": "module.exports",
         "tainted_params": [
             "options"
         ],
-        "param_types": {
+        "params_types": {
             "options": {
                 "baseOptions": {
                     "middleware": "any"
@@ -19,23 +20,24 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1935.Api-o11",
-                "fn_id": 37,
-                "source_fn_id": 37
+                "fn_name": "4388.Api-o461",
+                "fn_id": 2490,
+                "source_fn_id": 2490
             }
         ]
     },
     {
+        "type": "VFunExported",
         "filename": "../../src/index.js",
         "vuln_type": "code-injection",
         "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
         "sink_lineno": 207,
-        "sink_function": "1660",
+        "sink_function": "4113",
         "source": "module.exports",
         "tainted_params": [
             "options"
         ],
-        "param_types": {
+        "params_types": {
             "options": {
                 "baseOptions": {
                     "middleware": "any"
@@ -45,9 +47,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1935.Api-o11",
-                "fn_id": 37,
-                "source_fn_id": 37
+                "fn_name": "4388.Api-o461",
+                "fn_id": 2490,
+                "source_fn_id": 2490
             }
         ]
     }

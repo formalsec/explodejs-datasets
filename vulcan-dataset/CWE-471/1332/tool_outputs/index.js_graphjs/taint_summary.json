@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "obj[arr.shift()] = value;",
         "sink_lineno": 41,
-        "sink_function": "145",
+        "sink_function": "353",
         "source": "module.exports.set",
         "tainted_params": [
             "path",
@@ -19,9 +19,9 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "154.setter-o5",
-                "fn_id": "76",
-                "source_fn_id": "76"
+                "fn_name": "362.setter-o48",
+                "fn_id": "284",
+                "source_fn_id": "284"
             }
         ]
     }

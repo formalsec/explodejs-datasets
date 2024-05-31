@@ -959,9 +959,9 @@ exports.block = function () {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let target = [ esl_symbolic.string("target0") ];
-let source = {  };
-let isNullOverride = {  };
-let isMergeArrays = {  };
+let target = {  };
+let source = esl_symbolic.polluted_object(3);
+let isNullOverride = esl_symbolic.boolean("isNullOverride");
+let isMergeArrays = esl_symbolic.boolean("isMergeArrays");
 module.exports.merge(target, source, isNullOverride, isMergeArrays);
 console.log(({}).toString);

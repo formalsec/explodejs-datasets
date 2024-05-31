@@ -4,6 +4,6 @@
         "vuln_type": "code-injection",
         "sink": "return new Function('tokens, req, res', js).bind(context);",
         "sink_lineno": 6,
-        "sink_function": "44"
+        "sink_function": "140"
     }
 ]

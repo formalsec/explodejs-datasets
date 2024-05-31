@@ -4,20 +4,20 @@
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = b[key];",
         "sink_lineno": 42,
-        "sink_function": "115"
+        "sink_function": "301"
     },
     {
         "filename": "../../src/extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = extend(a[key], b[key]);",
         "sink_lineno": 39,
-        "sink_function": "103"
+        "sink_function": "289"
     },
     {
         "filename": "../../src/extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = b[key];",
         "sink_lineno": 37,
-        "sink_function": "83"
+        "sink_function": "269"
     }
 ]

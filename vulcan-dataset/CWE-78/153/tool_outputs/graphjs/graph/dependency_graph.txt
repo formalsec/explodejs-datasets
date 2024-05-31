@@ -1,0 +1,4 @@
+/datasets/vulcan-dataset/CWE-78/153/src/dns-sync.js:
+
+	No dependencies
+

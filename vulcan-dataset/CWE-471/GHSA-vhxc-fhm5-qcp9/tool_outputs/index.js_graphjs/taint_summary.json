@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "handlers[type][name] = fn;",
         "sink_lineno": 44,
-        "sink_function": "193",
+        "sink_function": "947",
         "source": "module.exports.handler",
         "tainted_params": [
             "type",
@@ -21,9 +21,9 @@
             {
                 "type": "Method",
                 "prop": "handler",
-                "fn_name": "542.handler-o10",
-                "fn_id": "174",
-                "source_fn_id": "174"
+                "fn_name": "1296.handler-o193",
+                "fn_id": "928",
+                "source_fn_id": "928"
             }
         ]
     }

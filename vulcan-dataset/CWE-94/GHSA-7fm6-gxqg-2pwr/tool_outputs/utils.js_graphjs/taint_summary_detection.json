@@ -4,83 +4,69 @@
         "vuln_type": "path-traversal",
         "sink": "var stream = Fs.createReadStream(file.filename);",
         "sink_lineno": 957,
-        "sink_function": "6620"
+        "sink_function": "65138"
     },
     {
         "filename": "../../src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "stream = Fs.createReadStream(stream, STREAM_READONLY);",
         "sink_lineno": 1597,
-        "sink_function": "10763"
+        "sink_function": "69281"
     },
     {
         "filename": "../../src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "!item.stream && (item.stream = Fs.createReadStream(item.filename));",
         "sink_lineno": 1810,
-        "sink_function": "12486"
+        "sink_function": "71004"
     },
     {
         "filename": "../../src/utils.js",
         "vuln_type": "code-injection",
         "sink": "obj[name] = new Function('return ' + value)();",
         "sink_lineno": 4124,
-        "sink_function": "25582"
+        "sink_function": "84100"
     },
     {
         "filename": "../../src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "Fs.writeFile(filename, self.substring(index), 'base64', callback || exports.noop);",
         "sink_lineno": 4728,
-        "sink_function": "30392"
-    },
-    {
-        "filename": "../../src/utils.js",
-        "vuln_type": "code-injection",
-        "sink": "var fn = new Function('w', 'a', 'b', a);",
-        "sink_lineno": 6628,
-        "sink_function": "40253"
-    },
-    {
-        "filename": "../../src/utils.js",
-        "vuln_type": "code-injection",
-        "sink": "var fn = (new Function('w', builder.join(';') + ';return w' + (v[0] === '[' ? '' : '.') + v));",
-        "sink_lineno": 6647,
-        "sink_function": "40471"
+        "sink_function": "88910"
     },
     {
         "filename": "../../src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "Fs.writeFile(self.filename + index + '.chunker', JSON.stringify(self.stack), () => self.flushing--);",
         "sink_lineno": 6842,
-        "sink_function": "41752"
+        "sink_function": "100270"
     },
     {
         "filename": "../../src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "Fs.writeFile(self.filename + index + '.chunker', buffer, () => self.flushing--);",
         "sink_lineno": 6839,
-        "sink_function": "41697"
+        "sink_function": "100215"
     },
     {
         "filename": "../../src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "Fs.writeFile(self.filename + index + '.chunker', JSON.stringify(self.stack), () => self.flushing--);",
         "sink_lineno": 6865,
-        "sink_function": "41940"
+        "sink_function": "100458"
     },
     {
         "filename": "../../src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "Fs.writeFile(self.filename + index + '.chunker', buffer, () => self.flushing--);",
         "sink_lineno": 6862,
-        "sink_function": "41885"
+        "sink_function": "100403"
     },
     {
         "filename": "../../src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "Fs.readFile(filename, function(err, data) {",
         "sink_lineno": 6903,
-        "sink_function": "42256"
+        "sink_function": "100774"
     }
 ]

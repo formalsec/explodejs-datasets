@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "res[segment] = exports.reach(source, sourcePath, options);",
         "sink_lineno": 902,
-        "sink_function": "4568",
+        "sink_function": "10790",
         "source": "module.exports.transform",
         "tainted_params": [
             "source",
@@ -15,31 +15,59 @@
         "params_types": {
             "source": {
                 "_union": [
-                    "polluted_object2",
-                    "polluted_object3"
-                ]
-            },
-            "transform": {
-                "_union": [
                     "object",
                     "array",
                     "string"
                 ]
             },
-            "options": {
+            "transform": {
                 "_union": [
                     "object",
                     "array"
                 ]
+            },
+            "options": {
+                "separator": "any"
             }
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "transform",
-                "fn_name": "4834.v625-o226",
-                "fn_id": "4314",
-                "source_fn_id": "4314"
+                "fn_name": "11056.v1279-o1390",
+                "fn_id": "10536",
+                "source_fn_id": "10536"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "../../src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "newObj[key] = exports.clone(obj[key], seen);",
+        "sink_lineno": 80,
+        "sink_function": "6478",
+        "source": "module.exports.clone",
+        "tainted_params": [
+            "obj",
+            "seen"
+        ],
+        "params_types": {
+            "obj": "object",
+            "seen": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "clone",
+                "fn_name": "11056.v679-o1174",
+                "fn_id": "6247",
+                "source_fn_id": "6247"
             }
         ]
     },
@@ -49,7 +77,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 142,
-        "sink_function": "598",
+        "sink_function": "6820",
         "source": "module.exports.merge",
         "tainted_params": [
             "target",
@@ -58,36 +86,23 @@
             "isMergeArrays"
         ],
         "params_types": {
-            "target": {
+            "target": "object",
+            "source": {
                 "_union": [
-                    "object",
-                    "array",
-                    "string"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
-            "source": "object",
-            "isNullOverride": {
-                "_union": [
-                    "object",
-                    "array",
-                    "string"
-                ]
-            },
-            "isMergeArrays": {
-                "_union": [
-                    "object",
-                    "array",
-                    "string"
-                ]
-            }
+            "isNullOverride": "bool",
+            "isMergeArrays": "bool"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "4834.v78-o18",
-                "fn_id": "283",
-                "source_fn_id": "283"
+                "fn_name": "11056.v732-o1182",
+                "fn_id": "6505",
+                "source_fn_id": "6505"
             }
         ]
     },
@@ -97,7 +112,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 139,
-        "sink_function": "585",
+        "sink_function": "6807",
         "source": "module.exports.merge",
         "tainted_params": [
             "target",
@@ -106,36 +121,23 @@
             "isMergeArrays"
         ],
         "params_types": {
-            "target": {
+            "target": "object",
+            "source": {
                 "_union": [
-                    "object",
-                    "array",
-                    "string"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
-            "source": "object",
-            "isNullOverride": {
-                "_union": [
-                    "object",
-                    "array",
-                    "string"
-                ]
-            },
-            "isMergeArrays": {
-                "_union": [
-                    "object",
-                    "array",
-                    "string"
-                ]
-            }
+            "isNullOverride": "bool",
+            "isMergeArrays": "bool"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "4834.v78-o18",
-                "fn_id": "283",
-                "source_fn_id": "283"
+                "fn_name": "11056.v732-o1182",
+                "fn_id": "6505",
+                "source_fn_id": "6505"
             }
         ]
     },
@@ -145,7 +147,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = exports.clone(value);",
         "sink_lineno": 129,
-        "sink_function": "547",
+        "sink_function": "6769",
         "source": "module.exports.merge",
         "tainted_params": [
             "target",
@@ -154,36 +156,24 @@
             "isMergeArrays"
         ],
         "params_types": {
-            "target": {
+            "target": "object",
+            "source": {
                 "_union": [
                     "object",
                     "array",
                     "string"
                 ]
             },
-            "source": "object",
-            "isNullOverride": {
-                "_union": [
-                    "object",
-                    "array",
-                    "string"
-                ]
-            },
-            "isMergeArrays": {
-                "_union": [
-                    "object",
-                    "array",
-                    "string"
-                ]
-            }
+            "isNullOverride": "bool",
+            "isMergeArrays": "bool"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "4834.v78-o18",
-                "fn_id": "283",
-                "source_fn_id": "283"
+                "fn_name": "11056.v732-o1182",
+                "fn_id": "6505",
+                "source_fn_id": "6505"
             }
         ]
     }

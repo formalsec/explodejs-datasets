@@ -1,0 +1,9 @@
+[
+    {
+        "filename": "../../src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path,function (error,data) {",
+        "sink_lineno": 10,
+        "sink_function": "151"
+    }
+]

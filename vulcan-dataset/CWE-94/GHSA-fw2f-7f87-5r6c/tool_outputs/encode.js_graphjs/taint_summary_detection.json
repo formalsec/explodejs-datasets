@@ -4,6 +4,6 @@
         "vuln_type": "code-injection",
         "sink": "return eval('`' + tmpl + '`');",
         "sink_lineno": 6,
-        "sink_function": "22"
+        "sink_function": "161"
     }
 ]

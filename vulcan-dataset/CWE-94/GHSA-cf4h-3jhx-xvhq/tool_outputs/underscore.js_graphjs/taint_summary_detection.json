@@ -4,6 +4,6 @@
         "vuln_type": "code-injection",
         "sink": "var render = new Function(settings.variable || 'obj', '_', source);",
         "sink_lineno": 981,
-        "sink_function": "6009"
+        "sink_function": "14767"
     }
 ]

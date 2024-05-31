@@ -5,7 +5,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "io[a[a.length - 1]] = value;",
         "sink_lineno": 210,
-        "sink_function": "1189",
+        "sink_function": "3460",
         "source": "new module.exports",
         "tainted_params": [
             "optionalThis",
@@ -20,7 +20,12 @@
         "returns": {
             "source": ".set",
             "param_types": {
-                "o": "object",
+                "o": {
+                    "_union": [
+                        "object",
+                        "array"
+                    ]
+                },
                 "s": {
                     "_union": [
                         "object",
@@ -39,16 +44,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1615.safeCall-o139",
-                "fn_id": "40",
-                "source_fn_id": "40"
+                "fn_name": "3886.safeCall-o668",
+                "fn_id": "2311",
+                "source_fn_id": "2311"
             },
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "1615.set-o70",
-                "fn_id": "997",
-                "source_fn_id": "997"
+                "fn_name": "3886.set-o599",
+                "fn_id": "3268",
+                "source_fn_id": "3268"
             }
         ]
     }
