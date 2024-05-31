@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/995/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "x[key] = merge(x[key], y[key]);",
         "sink_lineno": 19,
-        "sink_function": "669",
         "source": "module.exports",
         "tainted_params": [
             "undefined"
@@ -24,11 +23,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/995/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "x[key] = merge(x[key], y[key]);",
         "sink_lineno": 15,
-        "sink_function": "619",
         "source": "module.exports",
         "tainted_params": [
             "undefined"

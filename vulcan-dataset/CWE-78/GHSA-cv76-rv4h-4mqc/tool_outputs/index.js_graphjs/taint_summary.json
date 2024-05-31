@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/src/index.js",
         "vuln_type": "command-injection",
         "sink": "let lines = execSync(`pgrep -lfP ${processObj.pid}`).toString().split('\\n').filter(e => e);",
         "sink_lineno": 17,
-        "sink_function": "996",
         "source": "module.exports._buildProcessTree",
         "tainted_params": [
             "processObj"
@@ -31,11 +30,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/src/index.js",
         "vuln_type": "command-injection",
         "sink": "let psOutput = execSync(`ps -p ${pid} -o \"pid=,command=\"`).toString().trim();",
         "sink_lineno": 46,
-        "sink_function": "1332",
         "source": "module.exports.getProcessTree",
         "tainted_params": [
             "pid"
@@ -55,11 +53,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/src/index.js",
         "vuln_type": "command-injection",
         "sink": "execSync(`kill -9 ${pids.join(' ')}`);",
         "sink_lineno": 59,
-        "sink_function": "1447",
         "source": "module.exports.treeKill",
         "tainted_params": [
             "pid"

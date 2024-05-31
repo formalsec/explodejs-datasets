@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec('git blame ' + args + ' ' + realFile, {",
         "sink_lineno": 24,
-        "sink_function": "588",
         "source": "module.exports",
         "tainted_params": [
             "file",

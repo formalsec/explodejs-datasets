@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/src/index.js",
         "vuln_type": "code-injection",
         "sink": "return eval(createWrapper($$__fn__$$.name, options))",
         "sink_lineno": 17,
-        "sink_function": "591",
         "source": "module.exports",
         "tainted_params": [
             "$$__fn__$$",

@@ -1,30 +1,26 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('which ' + name, function(error, stdout, stderr) {",
-        "sink_lineno": 4,
-        "sink_function": "699"
+        "sink_lineno": 4
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('whereis ' + name, function(error, stdout, stderr) {",
-        "sink_lineno": 8,
-        "sink_function": "680"
+        "sink_lineno": 8
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('where ' + name, function (error, stdout, stderr) { //windows",
-        "sink_lineno": 10,
-        "sink_function": "651"
+        "sink_lineno": 10
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('for %i in (' + name + '.exe) do @echo. %~$PATH:i', function (error, stdout, stderr) { //windows xp",
-        "sink_lineno": 12,
-        "sink_function": "632"
+        "sink_lineno": 12
     }
 ]

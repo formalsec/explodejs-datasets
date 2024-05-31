@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/linux.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/654/src/linux.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"cat /sys/class/net/\" + iface + \"/address\", function (err, out) {",
         "sink_lineno": 4,
-        "sink_function": "157",
         "source": "module.exports",
         "tainted_params": [
             "iface",

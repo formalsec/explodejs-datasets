@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/md-to-pdf.js",
+        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-x949-7cm6-fm6p/src/md-to-pdf.js",
         "vuln_type": "code-injection",
         "sink": "const { content: md, data: frontMatterConfig } = gray_matter_1.default(mdFileContent);",
-        "sink_lineno": 23,
-        "sink_function": "1104"
+        "sink_lineno": 23
     }
 ]

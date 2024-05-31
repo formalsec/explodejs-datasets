@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/mosc.js",
+        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-j665-rvj7-2jv9/src/mosc.js",
         "vuln_type": "code-injection",
         "sink": "propertyBase[property_parts[0]] = eval(get_eval_string(pvalue));",
-        "sink_lineno": 50,
-        "sink_function": "957"
+        "sink_lineno": 50
     },
     {
-        "filename": "../../src/mosc.js",
+        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-j665-rvj7-2jv9/src/mosc.js",
         "vuln_type": "prototype-pollution",
         "sink": "propertyBase[property_parts[0]] = pvalue;",
-        "sink_lineno": 44,
-        "sink_function": "945"
+        "sink_lineno": 44
     }
 ]

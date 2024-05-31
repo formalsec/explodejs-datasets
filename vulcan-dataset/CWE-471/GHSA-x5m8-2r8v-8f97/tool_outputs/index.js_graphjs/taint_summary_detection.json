@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/input/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[path[i]] = value",
-        "sink_lineno": 27,
-        "sink_function": "1178"
+        "sink_lineno": 27
     }
 ]

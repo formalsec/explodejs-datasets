@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/utils.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-pfv6-prqm-85q8/src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "value[key] = defaultValue;",
-        "sink_lineno": 80,
-        "sink_function": "1233"
+        "sink_lineno": 80
     }
 ]

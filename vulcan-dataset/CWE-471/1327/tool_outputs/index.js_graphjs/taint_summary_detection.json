@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/1327/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "acc[keyBase][onwardKey.join(delimiter)] = baseObj[key];",
-        "sink_lineno": 193,
-        "sink_function": "3080"
+        "sink_lineno": 193
     }
 ]

@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/batch.js",
+        "filename": "/datasets/vulcan-dataset/CWE-94/1/src/batch.js",
         "vuln_type": "code-injection",
         "sink": "eval('value = ref.' + parts[i].value + ';');",
-        "sink_lineno": 152,
-        "sink_function": "1967"
+        "sink_lineno": 152
     }
 ]

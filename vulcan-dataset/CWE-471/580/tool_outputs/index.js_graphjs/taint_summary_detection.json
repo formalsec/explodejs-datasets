@@ -1,23 +1,20 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/580/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.clone(oldVal);",
-        "sink_lineno": 45,
-        "sink_function": "512"
+        "sink_lineno": 45
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/580/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.union([], newVal, oldVal);",
-        "sink_lineno": 43,
-        "sink_function": "499"
+        "sink_lineno": 43
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/580/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = merge(newVal, oldVal);",
-        "sink_lineno": 41,
-        "sink_function": "474"
+        "sink_lineno": 41
     }
 ]

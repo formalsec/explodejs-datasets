@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/1012/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[path] = value;",
-        "sink_lineno": 59,
-        "sink_function": "1021"
+        "sink_lineno": 59
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/1012/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[path] = merge({}, target[path], value);",
-        "sink_lineno": 57,
-        "sink_function": "1014"
+        "sink_lineno": 57
     }
 ]

@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/wizard-sync.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/977/src/wizard-sync.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(command, {}, function(err, stdout, stderr) {",
-        "sink_lineno": 56,
-        "sink_function": "1178"
+        "sink_lineno": 56
     }
 ]

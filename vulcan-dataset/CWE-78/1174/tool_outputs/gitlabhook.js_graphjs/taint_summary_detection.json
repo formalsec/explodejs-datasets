@@ -1,23 +1,20 @@
 [
     {
-        "filename": "../../src/gitlabhook.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1174/src/gitlabhook.js",
         "vuln_type": "path-traversal",
         "sink": "var data = Fs.readFileSync(fname, 'utf-8');",
-        "sink_lineno": 86,
-        "sink_function": "3040"
+        "sink_lineno": 86
     },
     {
-        "filename": "../../src/gitlabhook.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1174/src/gitlabhook.js",
         "vuln_type": "path-traversal",
         "sink": "Fs.writeFile(fname, cmds[idx], function (err) {",
-        "sink_lineno": 140,
-        "sink_function": "3599"
+        "sink_lineno": 140
     },
     {
-        "filename": "../../src/gitlabhook.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1174/src/gitlabhook.js",
         "vuln_type": "command-injection",
         "sink": "execFile(self.cmdshell, [ fname ], { cwd:path, env:process.env },",
-        "sink_lineno": 146,
-        "sink_function": "3589"
+        "sink_lineno": 146
     }
 ]

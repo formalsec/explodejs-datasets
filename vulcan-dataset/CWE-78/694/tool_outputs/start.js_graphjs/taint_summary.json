@@ -1,11 +1,10 @@
 [
     {
         "type": "VNewCall",
-        "filename": "../../src/start.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "code-injection",
         "sink": "const pkgInfo = require(path.join(baseDir, 'package.json'));",
         "sink_lineno": 97,
-        "sink_function": "2541",
         "source": "new module.exports",
         "tainted_params": [
             "rawArgv"
@@ -64,11 +63,10 @@
     },
     {
         "type": "VNewCall",
-        "filename": "../../src/start.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "command-injection",
         "sink": "const child = this.child = spawn('node', eggArgs, options);",
         "sink_lineno": 150,
-        "sink_function": "2892",
         "source": "new module.exports",
         "tainted_params": [
             "rawArgv"
@@ -127,11 +125,10 @@
     },
     {
         "type": "VNewCall",
-        "filename": "../../src/start.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "command-injection",
         "sink": "const child = this.child = spawn('node', eggArgs, options);",
         "sink_lineno": 168,
-        "sink_function": "3031",
         "source": "new module.exports",
         "tainted_params": [
             "rawArgv"
@@ -190,11 +187,10 @@
     },
     {
         "type": "VNewCall",
-        "filename": "../../src/start.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "code-injection",
         "sink": "const pkg = require(pkgPath);",
         "sink_lineno": 198,
-        "sink_function": "3201",
         "source": "new module.exports",
         "tainted_params": [
             "rawArgv"
@@ -229,11 +225,10 @@
     },
     {
         "type": "VNewCall",
-        "filename": "../../src/start.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "command-injection",
         "sink": "const [ stdout ] = yield exec('tail -n 100 ' + stderr);",
         "sink_lineno": 235,
-        "sink_function": "3352",
         "source": "new module.exports",
         "tainted_params": [
             "rawArgv"

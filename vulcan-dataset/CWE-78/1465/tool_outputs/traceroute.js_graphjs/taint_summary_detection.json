@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/traceroute.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1465/src/traceroute.js",
         "vuln_type": "command-injection",
         "sink": "Child.exec(command, (err, stdout, stderr) => {",
-        "sink_lineno": 29,
-        "sink_function": "967"
+        "sink_lineno": 29
     }
 ]

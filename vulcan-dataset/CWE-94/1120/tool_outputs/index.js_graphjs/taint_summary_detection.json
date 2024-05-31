@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.readFile(readmeFile, function (err, data) {",
-        "sink_lineno": 153,
-        "sink_function": "3813"
+        "sink_lineno": 153
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
         "vuln_type": "code-injection",
         "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
-        "sink_lineno": 207,
-        "sink_function": "4113"
+        "sink_lineno": 207
     }
 ]

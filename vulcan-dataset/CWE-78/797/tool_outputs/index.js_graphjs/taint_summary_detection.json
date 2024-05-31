@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/797/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(cmd, {",
-        "sink_lineno": 76,
-        "sink_function": "857"
+        "sink_lineno": 76
     }
 ]

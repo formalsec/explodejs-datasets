@@ -1,23 +1,20 @@
 [
     {
-        "filename": "../../src/dexie.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
         "vuln_type": "prototype-pollution",
         "sink": "requestedValue_1[keyPath] = additionalChanges_1[keyPath];",
-        "sink_lineno": 4133,
-        "sink_function": "87600"
+        "sink_lineno": 4133
     },
     {
-        "filename": "../../src/dexie.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[keyPath] = value;",
-        "sink_lineno": 198,
-        "sink_function": "56258"
+        "sink_lineno": 198
     },
     {
-        "filename": "../../src/dexie.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[currentKeyPath] = value;",
-        "sink_lineno": 182,
-        "sink_function": "56168"
+        "sink_lineno": 182
     }
 ]

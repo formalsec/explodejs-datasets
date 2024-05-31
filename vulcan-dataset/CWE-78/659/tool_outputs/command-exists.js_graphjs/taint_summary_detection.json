@@ -1,30 +1,26 @@
 [
     {
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('command -v ' + commandName +",
-        "sink_lineno": 49,
-        "sink_function": "966"
+        "sink_lineno": 49
     },
     {
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('where ' + commandName,",
-        "sink_lineno": 64,
-        "sink_function": "1023"
+        "sink_lineno": 64
     },
     {
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('command -v ' + commandName +",
-        "sink_lineno": 78,
-        "sink_function": "1059"
+        "sink_lineno": 78
     },
     {
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('where ' + commandName);",
-        "sink_lineno": 94,
-        "sink_function": "1094"
+        "sink_lineno": 94
     }
 ]

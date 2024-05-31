@@ -1,30 +1,26 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
-        "sink_lineno": 34,
-        "sink_function": "1615"
+        "sink_lineno": 34
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
-        "sink_lineno": 56,
-        "sink_function": "1725"
+        "sink_lineno": 56
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
-        "sink_lineno": 77,
-        "sink_function": "1891"
+        "sink_lineno": 77
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
-        "sink_lineno": 96,
-        "sink_function": "2114"
+        "sink_lineno": 96
     }
 ]

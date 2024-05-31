@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/jscover.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec(cmd, function (err, stdout, stderr) {",
         "sink_lineno": 59,
-        "sink_function": "1397",
         "source": "module.exports",
         "tainted_params": [
             "source",
@@ -32,11 +31,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/jscover.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
         "vuln_type": "path-traversal",
         "sink": "var content = fs.readFileSync(from);",
         "sink_lineno": 95,
-        "sink_function": "1289",
         "source": "module.exports",
         "tainted_params": [
             "source",
@@ -63,11 +61,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/jscover.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(to, content);",
         "sink_lineno": 99,
-        "sink_function": "1324",
         "source": "module.exports",
         "tainted_params": [
             "source",

@@ -1,11 +1,10 @@
 [
     {
         "type": "VNewCall",
-        "filename": "../../src/merge.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = extend[key];",
         "sink_lineno": 94,
-        "sink_function": "832",
         "source": "new module.exports",
         "tainted_params": [
             "clone"
@@ -40,11 +39,10 @@
     },
     {
         "type": "VNewCall",
-        "filename": "../../src/merge.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = merge_recursive(base[key], extend[key]);",
         "sink_lineno": 90,
-        "sink_function": "821",
         "source": "new module.exports",
         "tainted_params": [
             "clone"

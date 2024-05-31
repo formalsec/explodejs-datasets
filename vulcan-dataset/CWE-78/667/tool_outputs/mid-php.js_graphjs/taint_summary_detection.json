@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/mid-php.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/667/src/mid-php.js",
         "vuln_type": "command-injection",
         "sink": "var cp = require('child_process').spawn(phpBin, [phpFile])",
-        "sink_lineno": 22,
-        "sink_function": "370"
+        "sink_lineno": 22
     }
 ]

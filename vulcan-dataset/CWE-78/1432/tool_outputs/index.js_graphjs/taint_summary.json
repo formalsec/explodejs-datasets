@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1432/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec('taskkill /pid ' + pid + ' /T /F', callback);",
         "sink_lineno": 20,
-        "sink_function": "752",
         "source": "module.exports",
         "tainted_params": [
             "pid",
@@ -28,11 +27,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1432/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return spawn('pgrep', ['-P', parentPid]);",
         "sink_lineno": 24,
-        "sink_function": "769",
         "source": "module.exports",
         "tainted_params": [
             "pid",
@@ -55,11 +53,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1432/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return spawn('ps', ['-o', 'pid', '--no-headers', '--ppid', parentPid]);",
         "sink_lineno": 36,
-        "sink_function": "810",
         "source": "module.exports",
         "tainted_params": [
             "pid",

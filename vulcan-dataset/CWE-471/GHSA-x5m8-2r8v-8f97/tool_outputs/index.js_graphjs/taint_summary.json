@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/input/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[path[i]] = value",
         "sink_lineno": 27,
-        "sink_function": "1178",
         "source": "module.exports.set",
         "tainted_params": [
             "obj",

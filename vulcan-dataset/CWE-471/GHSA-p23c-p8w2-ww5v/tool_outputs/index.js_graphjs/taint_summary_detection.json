@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-p23c-p8w2-ww5v/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "handlers[type][name] = fn;",
-        "sink_lineno": 48,
-        "sink_function": "1181"
+        "sink_lineno": 48
     }
 ]

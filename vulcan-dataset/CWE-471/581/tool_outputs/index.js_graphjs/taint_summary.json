@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/581/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 22,
-        "sink_function": "260",
         "source": "module.exports",
         "tainted_params": [
             "target",

@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-qffw-8wg7-h665/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const child = child_process_1.spawn('git', commandArgs, { cwd: this.dir });",
-        "sink_lineno": 27,
-        "sink_function": "3487"
+        "sink_lineno": 27
     }
 ]

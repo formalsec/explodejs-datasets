@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/read-file.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/GHSA-4448-rc82-fcr7/src/read-file.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.readFile(file, done);",
-        "sink_lineno": 11,
-        "sink_function": "68"
+        "sink_lineno": 11
     }
 ]

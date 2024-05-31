@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/controller.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1492/src/controller.js",
         "vuln_type": "command-injection",
         "sink": "var child = spawn(cmd, params.args, {",
-        "sink_lineno": 140,
-        "sink_function": "3268"
+        "sink_lineno": 140
     }
 ]

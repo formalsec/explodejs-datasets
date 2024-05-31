@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.exec(`touch ${filePath}`);",
         "sink_lineno": 225,
-        "sink_function": "3968",
         "source": "module.exports.plot",
         "tainted_params": [
             "options"
@@ -27,11 +26,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "vuln_type": "command-injection",
         "sink": "gnuplot = child_process_1.exec(`gnuplot | ps2pdf - ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
         "sink_lineno": 228,
-        "sink_function": "4020",
         "source": "module.exports.plot",
         "tainted_params": [
             "options"
@@ -53,11 +51,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "vuln_type": "command-injection",
         "sink": "gnuplot = child_process_1.exec(`gnuplot > ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
         "sink_lineno": 232,
-        "sink_function": "4065",
         "source": "module.exports.plot",
         "tainted_params": [
             "options"

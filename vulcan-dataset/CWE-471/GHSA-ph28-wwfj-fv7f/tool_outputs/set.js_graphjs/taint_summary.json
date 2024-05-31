@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/set.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-ph28-wwfj-fv7f/src/set.js",
         "vuln_type": "prototype-pollution",
         "sink": "o[kp[0]] = value;",
         "sink_lineno": 42,
-        "sink_function": "610",
         "source": "module.exports",
         "tainted_params": [
             "object",

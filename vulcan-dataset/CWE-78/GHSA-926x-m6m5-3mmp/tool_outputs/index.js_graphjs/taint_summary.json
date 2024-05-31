@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-926x-m6m5-3mmp/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const proc = childProcess.spawn(cmd, args, { stdio: 'pipe' });",
         "sink_lineno": 180,
-        "sink_function": "2285",
         "source": "module.exports",
         "tainted_params": [
             "opts"
@@ -34,11 +33,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-926x-m6m5-3mmp/src/index.js",
         "vuln_type": "command-injection",
         "sink": "childProcess.exec(cmd, function(error, stdout, stderr) {",
         "sink_lineno": 202,
-        "sink_function": "2512",
         "source": "module.exports",
         "tainted_params": [
             "opts"

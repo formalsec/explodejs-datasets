@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/server.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/954/src/server.js",
         "vuln_type": "command-injection",
         "sink": "exec(s3command, (err, stdout, stderr) => {",
-        "sink_lineno": 21,
-        "sink_function": "541"
+        "sink_lineno": 21
     }
 ]

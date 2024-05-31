@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/messenger-node.js",
+        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-v756-4whv-48vc/src/messenger-node.js",
         "vuln_type": "code-injection",
         "sink": "eval(`cl.${color}()`); // eslint-disable-line",
         "sink_lineno": 71,
-        "sink_function": "1006",
         "source": "module.exports.line",
         "tainted_params": [
             "color"

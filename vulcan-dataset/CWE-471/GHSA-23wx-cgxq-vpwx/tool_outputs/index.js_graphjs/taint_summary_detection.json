@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[k] = merge(a[k], b[k]);",
-        "sink_lineno": 9,
-        "sink_function": "513"
+        "sink_lineno": 9
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[k] = merge(a[k], b[k]);",
-        "sink_lineno": 5,
-        "sink_function": "480"
+        "sink_lineno": 5
     }
 ]

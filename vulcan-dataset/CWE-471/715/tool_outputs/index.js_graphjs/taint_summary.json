@@ -1,1 +1,55 @@
-[]
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/vulcan-dataset/CWE-471/715/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "host[key] = donor[key];",
+        "sink_lineno": 66,
+        "source": "new module.exports",
+        "tainted_params": [
+            "host"
+        ],
+        "params_types": {
+            "host": "object"
+        },
+        "returns": {
+            "source": ".recursive",
+            "param_types": {
+                "host": "any"
+            },
+            "tainted_params": [
+                "host"
+            ],
+            "returns": {
+                "source": "",
+                "param_types": {
+                    "key": "string"
+                },
+                "tainted_params": [
+                    "key"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "965.exports-o154",
+                "fn_id": "571",
+                "source_fn_id": "571"
+            },
+            {
+                "type": "Method",
+                "prop": "recursive",
+                "fn_name": "965.v73-o153",
+                "fn_id": 684,
+                "source_fn_id": 684
+            },
+            {
+                "type": "Call",
+                "fn_name": "993.v108-o258",
+                "fn_id": "863",
+                "source_fn_id": "859"
+            }
+        ]
+    }
+]

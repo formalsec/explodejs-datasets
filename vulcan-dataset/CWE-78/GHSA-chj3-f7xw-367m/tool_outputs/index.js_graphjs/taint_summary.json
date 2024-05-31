@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-chj3-f7xw-367m/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return execFile(execBinary, execArguments, execOptions).then(",
         "sink_lineno": 34,
-        "sink_function": "503",
         "source": "module.exports",
         "tainted_params": [
             "commandOrArgs",

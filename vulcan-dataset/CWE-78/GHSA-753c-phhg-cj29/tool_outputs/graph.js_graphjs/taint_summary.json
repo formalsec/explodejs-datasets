@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/graph.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
         "sink_lineno": 28,
-        "sink_function": "1171",
         "source": "module.exports.svg",
         "tainted_params": [
             "modules",
@@ -29,11 +28,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/graph.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
         "sink_lineno": 28,
-        "sink_function": "1171",
         "source": "module.exports.image",
         "tainted_params": [
             "modules",
@@ -59,11 +57,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/graph.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
         "sink_lineno": 28,
-        "sink_function": "1171",
         "source": "module.exports.dot",
         "tainted_params": [
             "modules",
@@ -87,11 +84,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/graph.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "path-traversal",
         "sink": ".then((image) => writeFile(imagePath, image))",
         "sink_lineno": 150,
-        "sink_function": "1742",
         "source": "module.exports.image",
         "tainted_params": [
             "modules",

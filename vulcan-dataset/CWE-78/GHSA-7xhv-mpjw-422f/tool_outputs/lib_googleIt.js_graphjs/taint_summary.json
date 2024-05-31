@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/lib_googleIt.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"open \".concat(result.link), errorTryingToOpen);",
         "sink_lineno": 59,
-        "sink_function": "2785",
         "source": "module.exports.openInBrowser",
         "tainted_params": [
             "open",
@@ -32,11 +31,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/lib_googleIt.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (err, data) {",
         "sink_lineno": 195,
-        "sink_function": "3612",
         "source": "module.exports.getResponse",
         "tainted_params": [
             "_ref2"

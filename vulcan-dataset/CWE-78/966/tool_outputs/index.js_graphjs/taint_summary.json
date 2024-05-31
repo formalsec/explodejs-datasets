@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/966/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return sh(",
         "sink_lineno": 11,
-        "sink_function": "161",
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -29,11 +28,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/966/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return sh(",
         "sink_lineno": 16,
-        "sink_function": "171",
         "source": "module.exports",
         "tainted_params": [
             "port"

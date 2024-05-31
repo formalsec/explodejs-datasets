@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/parse.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/1094/src/parse.js",
         "vuln_type": "prototype-pollution",
         "sink": "if (isValue) cursor[level] = value",
         "sink_lineno": 32,
-        "sink_function": "767",
         "source": "module.exports",
         "tainted_params": [
             "string"

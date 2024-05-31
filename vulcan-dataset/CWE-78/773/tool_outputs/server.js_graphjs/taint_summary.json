@@ -1,1 +1,25 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/773/src/pi_video_recording.js",
+        "vuln_type": "command-injection",
+        "sink": "proc =",
+        "sink_lineno": 48,
+        "source": "module.exports.startRecord",
+        "tainted_params": [
+            "file"
+        ],
+        "params_types": {
+            "file": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "startRecord",
+                "fn_name": "365.v26-o32",
+                "fn_id": "198",
+                "source_fn_id": "198"
+            }
+        ]
+    }
+]

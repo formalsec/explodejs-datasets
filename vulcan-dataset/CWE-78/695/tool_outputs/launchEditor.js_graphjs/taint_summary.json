@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/launchEditor.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/695/src/launchEditor.js",
         "vuln_type": "command-injection",
         "sink": "_childProcess = child_process.spawn(",
         "sink_lineno": 334,
-        "sink_function": "2957",
         "source": "module.exports",
         "tainted_params": [
             "fileName",
@@ -38,11 +37,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/launchEditor.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/695/src/launchEditor.js",
         "vuln_type": "command-injection",
         "sink": "_childProcess = child_process.spawn(editor, args, { stdio: 'inherit' });",
         "sink_lineno": 340,
-        "sink_function": "2973",
         "source": "module.exports",
         "tainted_params": [
             "fileName",

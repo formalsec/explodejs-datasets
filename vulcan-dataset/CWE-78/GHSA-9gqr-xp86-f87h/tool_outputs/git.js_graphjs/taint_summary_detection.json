@@ -1,65 +1,56 @@
 [
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(path, 'ascii', callback);",
-        "sink_lineno": 33,
-        "sink_function": "7246"
+        "sink_lineno": 33
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "vuln_type": "path-traversal",
         "sink": "var id = chomp(fs.readFileSync(result.path, 'ascii'));",
-        "sink_lineno": 51,
-        "sink_function": "7319"
+        "sink_lineno": 51
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec(call_string, options,",
-        "sink_lineno": 232,
-        "sink_function": "8431"
+        "sink_lineno": 232
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return callback(null, chomp(fs.readFileSync(head, 'utf8')));",
-        "sink_lineno": 352,
-        "sink_function": "9161"
+        "sink_lineno": 352
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return chomp(fs.readFileSync(head, 'utf8'));",
-        "sink_lineno": 354,
-        "sink_function": "9180"
+        "sink_lineno": 354
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return callback(null, chomp(fs.readFileSync(head, 'utf8')));",
-        "sink_lineno": 361,
-        "sink_function": "9217"
+        "sink_lineno": 361
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return chomp(fs.readFileSync(head, 'utf8'));",
-        "sink_lineno": 363,
-        "sink_function": "9236"
+        "sink_lineno": 363
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return callback(null, chomp(fs.readFileSync(head, 'utf8')));",
-        "sink_lineno": 370,
-        "sink_function": "9273"
+        "sink_lineno": 370
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "vuln_type": "path-traversal",
         "sink": "return chomp(fs.readFileSync(head, 'utf8'));",
-        "sink_lineno": 372,
-        "sink_function": "9292"
+        "sink_lineno": 372
     }
 ]

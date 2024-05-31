@@ -1,65 +1,56 @@
 [
     {
-        "filename": "../../src/routes.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/958/src/routes.js",
         "vuln_type": "path-traversal",
         "sink": "res.send(fs.readFileSync(req.query.resource, 'UTF-8'));",
-        "sink_lineno": 57,
-        "sink_function": "4416"
+        "sink_lineno": 57
     },
     {
-        "filename": "../../src/routes.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/958/src/routes.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec(scripts_dir() + 'systemctl-unit.sh ' +",
-        "sink_lineno": 67,
-        "sink_function": "4502"
+        "sink_lineno": 67
     },
     {
-        "filename": "../../src/routes.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/958/src/routes.js",
         "vuln_type": "command-injection",
         "sink": "var child_dot = spawn('sol-fbp-to-dot', ['--fbp', tmp_dir(current_user(req)) + 'fbp_svg.fbp',",
-        "sink_lineno": 101,
-        "sink_function": "4722"
+        "sink_lineno": 101
     },
     {
-        "filename": "../../src/routes.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/958/src/routes.js",
         "vuln_type": "command-injection",
         "sink": "var child_svg =  spawn('dot', ['-Tsvg', tmp_dir(current_user(req)) + 'fbp_runner.dot']);",
-        "sink_lineno": 104,
-        "sink_function": "4746"
+        "sink_lineno": 104
     },
     {
-        "filename": "../../src/routes.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/958/src/routes.js",
         "vuln_type": "command-injection",
         "sink": "child = spawn(script,",
-        "sink_lineno": 151,
-        "sink_function": "5027"
+        "sink_lineno": 151
     },
     {
-        "filename": "../../src/routes.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/958/src/routes.js",
         "vuln_type": "command-injection",
         "sink": "child = exec(\"sh \" + script);",
-        "sink_lineno": 226,
-        "sink_function": "5543"
+        "sink_lineno": 226
     },
     {
-        "filename": "../../src/routes.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/958/src/routes.js",
         "vuln_type": "command-injection",
         "sink": "child = spawn(\"sol-fbp-runner\",  ['-c',  fbp_path],",
-        "sink_lineno": 274,
-        "sink_function": "5851"
+        "sink_lineno": 274
     },
     {
-        "filename": "../../src/routes.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/958/src/routes.js",
         "vuln_type": "command-injection",
         "sink": "child = spawn(\"sol-fbp-runner\",  ['-c', fbp_path]);",
-        "sink_lineno": 277,
-        "sink_function": "5864"
+        "sink_lineno": 277
     },
     {
-        "filename": "../../src/routes.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/958/src/routes.js",
         "vuln_type": "command-injection",
         "sink": "child = exec(\"sh \" + script);",
-        "sink_lineno": 478,
-        "sink_function": "7245"
+        "sink_lineno": 478
     }
 ]

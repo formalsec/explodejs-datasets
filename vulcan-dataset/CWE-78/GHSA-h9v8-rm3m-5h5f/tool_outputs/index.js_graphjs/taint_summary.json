@@ -1,1 +1,42 @@
-[]
+[
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-h9v8-rm3m-5h5f/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.execSync('git remote add ' + name + ' ' + url, {cwd: cwd});",
+        "sink_lineno": 31,
+        "source": "module.exports",
+        "tainted_params": [
+            "dir"
+        ],
+        "params_types": {
+            "dir": "any"
+        },
+        "returns": {
+            "source": "new",
+            "param_types": {
+                "name": "string",
+                "url": "string"
+            },
+            "tainted_params": [
+                "name",
+                "url"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "492.v62-o64",
+                "fn_id": "295",
+                "source_fn_id": "295"
+            },
+            {
+                "type": "New",
+                "fn_name": "494.v61-o80",
+                "fn_id": "414",
+                "source_fn_id": "295",
+                "prop": "sync"
+            }
+        ]
+    }
+]

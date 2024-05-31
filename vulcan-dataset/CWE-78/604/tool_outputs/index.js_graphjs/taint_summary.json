@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('which ' + name, function(error, stdout, stderr) {",
         "sink_lineno": 4,
-        "sink_function": "699",
         "source": "module.exports",
         "tainted_params": [
             "name",
@@ -26,11 +25,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('whereis ' + name, function(error, stdout, stderr) {",
         "sink_lineno": 8,
-        "sink_function": "680",
         "source": "module.exports",
         "tainted_params": [
             "name",
@@ -51,11 +49,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('where ' + name, function (error, stdout, stderr) { //windows",
         "sink_lineno": 10,
-        "sink_function": "651",
         "source": "module.exports",
         "tainted_params": [
             "name",
@@ -76,11 +73,10 @@
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('for %i in (' + name + '.exe) do @echo. %~$PATH:i', function (error, stdout, stderr) { //windows xp",
         "sink_lineno": 12,
-        "sink_function": "632",
         "source": "module.exports",
         "tainted_params": [
             "name",

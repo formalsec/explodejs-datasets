@@ -167,7 +167,7 @@ var execCompose = function (command, args, options) {
         var cwd = options.cwd;
         var env = options.env || undefined;
         var executablePath = options.executablePath || 'docker-compose';
-        var childProc = child_process_1.default.spawn(executablePath, composeArgs, {
+        var childProc = child_process_1.spawn(executablePath, composeArgs, {
             cwd: cwd,
             env: env
         });

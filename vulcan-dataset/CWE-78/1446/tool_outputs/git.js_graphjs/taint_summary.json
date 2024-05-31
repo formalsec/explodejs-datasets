@@ -1,11 +1,10 @@
 [
     {
         "type": "VNewCall",
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1446/src/git.js",
         "vuln_type": "command-injection",
         "sink": "child.exec(cmd, {",
         "sink_lineno": 223,
-        "sink_function": "3886",
         "source": "new module.exports",
         "tainted_params": [
             "opts"

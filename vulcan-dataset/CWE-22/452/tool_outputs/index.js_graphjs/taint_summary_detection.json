@@ -1,79 +1,68 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(packagejson, function (err, data) {",
-        "sink_lineno": 151,
-        "sink_function": "3656"
+        "sink_lineno": 151
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(file, new Buffer(pkgData._attachments[fileName].data, 'base64'));",
-        "sink_lineno": 144,
-        "sink_function": "3497"
+        "sink_lineno": 144
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(packagejson, JSON.stringify(pkgData, null, 4));",
-        "sink_lineno": 154,
-        "sink_function": "3576"
+        "sink_lineno": 154
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(packagejson, function (err, data) {",
-        "sink_lineno": 157,
-        "sink_function": "3626"
+        "sink_lineno": 157
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(packagejson, JSON.stringify(newObj, null, 4));",
-        "sink_lineno": 161,
-        "sink_function": "3616"
+        "sink_lineno": 161
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(settings.storageDir + 'published/' + req.params.package + '/' + req.params.filename, function (err, data) {",
-        "sink_lineno": 172,
-        "sink_function": "3753"
+        "sink_lineno": 172
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile('cache/' + req.query.sha, function (err, data) {",
-        "sink_lineno": 284,
-        "sink_function": "4321"
+        "sink_lineno": 284
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync('cache/' + req.query.sha, b);",
-        "sink_lineno": 294,
-        "sink_function": "4269"
+        "sink_lineno": 294
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(settings.storageDir + 'published' + req.url + '.json', function (err, data) {",
-        "sink_lineno": 314,
-        "sink_function": "4584"
+        "sink_lineno": 314
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(settings.storageDir + 'cache' + req.url + '.json', JSON.stringify(b, null, 4));",
-        "sink_lineno": 325,
-        "sink_function": "4461"
+        "sink_lineno": 325
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-22/452/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(settings.storageDir + 'cache' + req.url + '.json', function(err, data) {",
-        "sink_lineno": 329,
-        "sink_function": "4540"
+        "sink_lineno": 329
     }
 ]

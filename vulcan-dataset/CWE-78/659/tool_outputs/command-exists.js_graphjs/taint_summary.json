@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('where ' + commandName,",
         "sink_lineno": 64,
-        "sink_function": "1023",
         "source": "module.exports",
         "tainted_params": [
             "commandName",
@@ -26,11 +25,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('command -v ' + commandName +",
         "sink_lineno": 78,
-        "sink_function": "1059",
         "source": "module.exports.sync",
         "tainted_params": [
             "commandName"
@@ -50,11 +48,10 @@
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('where ' + commandName);",
         "sink_lineno": 94,
-        "sink_function": "1094",
         "source": "module.exports.sync",
         "tainted_params": [
             "commandName"

@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/umount.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1512/src/umount.js",
         "vuln_type": "command-injection",
         "sink": "return child_process.exec(unmountCommand + \" \" + device, callback);",
         "sink_lineno": 52,
-        "sink_function": "630",
         "source": "module.exports.umount",
         "tainted_params": [
             "device",

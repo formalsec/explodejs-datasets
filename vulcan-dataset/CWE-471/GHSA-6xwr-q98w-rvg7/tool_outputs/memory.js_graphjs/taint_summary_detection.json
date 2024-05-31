@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/memory.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-6xwr-q98w-rvg7/src/memory.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
-        "sink_lineno": 107,
-        "sink_function": "1452"
+        "sink_lineno": 107
     },
     {
-        "filename": "../../src/memory.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-6xwr-q98w-rvg7/src/memory.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
-        "sink_lineno": 200,
-        "sink_function": "1768"
+        "sink_lineno": 200
     }
 ]

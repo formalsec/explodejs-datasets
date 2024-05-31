@@ -1,1 +1,52 @@
-[]
+[
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/vulcan-dataset/CWE-78/54/src/compare.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(execCmd, function (err, stdout, stderr) {",
+        "sink_lineno": 72,
+        "source": "module.exports",
+        "tainted_params": [
+            "proto"
+        ],
+        "params_types": {
+            "proto": {
+                "compare": "any"
+            }
+        },
+        "returns": {
+            "source": "",
+            "param_types": {
+                "orig": "string",
+                "compareTo": "string",
+                "options": {
+                    "highlightColor": "string",
+                    "file": "any",
+                    "highlightStyle": "string",
+                    "tolerance": "number"
+                },
+                "cb": "function"
+            },
+            "tainted_params": [
+                "orig",
+                "compareTo",
+                "options",
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1114.v120-o108",
+                "fn_id": "635",
+                "source_fn_id": "635"
+            },
+            {
+                "type": "Call",
+                "fn_name": "1116.compare-o116",
+                "fn_id": "638",
+                "source_fn_id": "635"
+            }
+        ]
+    }
+]

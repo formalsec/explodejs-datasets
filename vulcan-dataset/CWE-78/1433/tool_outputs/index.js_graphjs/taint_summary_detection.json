@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1433/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec('taskkill /pid ' + pid + ' /T /F');",
-        "sink_lineno": 32,
-        "sink_function": "749"
+        "sink_lineno": 32
     }
 ]

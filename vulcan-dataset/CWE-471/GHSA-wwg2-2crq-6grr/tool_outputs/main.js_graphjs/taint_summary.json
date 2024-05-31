@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/main.js",
+        "filename": "/input/main.js",
         "vuln_type": "prototype-pollution",
         "sink": "tmp[parts[i]] = val;",
         "sink_lineno": 11,
-        "sink_function": "376",
         "source": "module.exports",
         "tainted_params": [
             "obj",

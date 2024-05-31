@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1004/src/index.js",
         "vuln_type": "command-injection",
         "sink": "execSync(",
-        "sink_lineno": 37,
-        "sink_function": "849"
+        "sink_lineno": 37
     }
 ]

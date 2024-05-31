@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/chartkick.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/1312/src/chartkick.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = source[key];",
-        "sink_lineno": 40,
-        "sink_function": "19198"
+        "sink_lineno": 40
     }
 ]

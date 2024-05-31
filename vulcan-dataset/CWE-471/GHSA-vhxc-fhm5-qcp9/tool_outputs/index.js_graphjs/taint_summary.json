@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-vhxc-fhm5-qcp9/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "handlers[type][name] = fn;",
         "sink_lineno": 44,
-        "sink_function": "947",
         "source": "module.exports.handler",
         "tainted_params": [
             "type",

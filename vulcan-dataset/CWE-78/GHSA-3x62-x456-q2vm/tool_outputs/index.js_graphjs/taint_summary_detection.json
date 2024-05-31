@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3x62-x456-q2vm/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const child = crossSpawn(command, args, opts)",
-        "sink_lineno": 52,
-        "sink_function": "856"
+        "sink_lineno": 52
     }
 ]

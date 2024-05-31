@@ -1,51 +1,44 @@
 [
     {
-        "filename": "../../src/expressfs.server.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/953/src/expressfs.server.js",
         "vuln_type": "command-injection",
         "sink": "exec('cp -R ' + source + ' ' + destination, function () {",
-        "sink_lineno": 33,
-        "sink_function": "2313"
+        "sink_lineno": 33
     },
     {
-        "filename": "../../src/expressfs.server.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/953/src/expressfs.server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(path, req.body.content || '', 'utf8', function (err) {",
-        "sink_lineno": 47,
-        "sink_function": "2400"
+        "sink_lineno": 47
     },
     {
-        "filename": "../../src/expressfs.server.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/953/src/expressfs.server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(filename, content, 'utf8', function (err) {",
-        "sink_lineno": 61,
-        "sink_function": "2511"
+        "sink_lineno": 61
     },
     {
-        "filename": "../../src/expressfs.server.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/953/src/expressfs.server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(path + filename, 'utf8', function (err, data) {",
-        "sink_lineno": 137,
-        "sink_function": "2978"
+        "sink_lineno": 137
     },
     {
-        "filename": "../../src/expressfs.server.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/953/src/expressfs.server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(path, 'utf8', function (err, contents) {",
-        "sink_lineno": 182,
-        "sink_function": "3263"
+        "sink_lineno": 182
     },
     {
-        "filename": "../../src/expressfs.server.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/953/src/expressfs.server.js",
         "vuln_type": "command-injection",
         "sink": "exec('rm -rf ' + path, function () {",
-        "sink_lineno": 204,
-        "sink_function": "3399"
+        "sink_lineno": 204
     },
     {
-        "filename": "../../src/expressfs.server.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/953/src/expressfs.server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(path, req.body.content, encoding, function (err) {",
-        "sink_lineno": 225,
-        "sink_function": "3572"
+        "sink_lineno": 225
     }
 ]

@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-94/144/src/index.js",
         "vuln_type": "code-injection",
         "sink": "result = eval(toEvaluate)",
-        "sink_lineno": 75,
-        "sink_function": "920"
+        "sink_lineno": 75
     }
 ]

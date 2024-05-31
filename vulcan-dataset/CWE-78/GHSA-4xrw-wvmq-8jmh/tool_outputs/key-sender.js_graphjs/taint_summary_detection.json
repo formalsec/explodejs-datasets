@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/key-sender.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-4xrw-wvmq-8jmh/src/key-sender.js",
         "vuln_type": "command-injection",
         "sink": "return exec(command, {}, function(error, stdout, stderr) {",
-        "sink_lineno": 117,
-        "sink_function": "2431"
+        "sink_lineno": 117
     }
 ]

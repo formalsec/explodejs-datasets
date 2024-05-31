@@ -1,23 +1,20 @@
 [
     {
-        "filename": "../../src/main.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-jjf5-wx3j-3fv7/src/main.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(path, 'utf-8'))",
-        "sink_lineno": 439,
-        "sink_function": "7527"
+        "sink_lineno": 439
     },
     {
-        "filename": "../../src/main.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-jjf5-wx3j-3fv7/src/main.js",
         "vuln_type": "prototype-pollution",
         "sink": "c[name] = coerce(name, cloneDeep(p.default), schema, instance)",
-        "sink_lineno": 353,
-        "sink_function": "7023"
+        "sink_lineno": 353
     },
     {
-        "filename": "../../src/main.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-jjf5-wx3j-3fv7/src/main.js",
         "vuln_type": "prototype-pollution",
         "sink": "c[name] = kids",
-        "sink_lineno": 351,
-        "sink_function": "7001"
+        "sink_lineno": 351
     }
 ]

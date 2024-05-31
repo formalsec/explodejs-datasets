@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/run_index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-9v73-x562-wv5x/src/run_index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(params.join(' '), { encoding, cwd: path }).toString(encoding)",
-        "sink_lineno": 8,
-        "sink_function": "154"
+        "sink_lineno": 8
     }
 ]

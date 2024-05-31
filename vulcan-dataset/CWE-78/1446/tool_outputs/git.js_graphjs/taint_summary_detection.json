@@ -1,23 +1,20 @@
 [
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1446/src/git.js",
         "vuln_type": "command-injection",
         "sink": "child.exec(cmd, {",
-        "sink_lineno": 195,
-        "sink_function": "3661"
+        "sink_lineno": 195
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1446/src/git.js",
         "vuln_type": "command-injection",
         "sink": "child.exec(cmd, {",
-        "sink_lineno": 208,
-        "sink_function": "3718"
+        "sink_lineno": 208
     },
     {
-        "filename": "../../src/git.js",
+        "filename": "/datasets/vulcan-dataset/CWE-78/1446/src/git.js",
         "vuln_type": "command-injection",
         "sink": "child.exec(cmd, {",
-        "sink_lineno": 223,
-        "sink_function": "3886"
+        "sink_lineno": 223
     }
 ]
