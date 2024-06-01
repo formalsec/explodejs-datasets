@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/ini_1.3.5/src/ini.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "p[key] = value",
+        "sink_lineno": 109
+    }
+]

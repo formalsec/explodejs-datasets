@@ -25,6 +25,6 @@ module.exports = function(file, cb) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let file = esl_symbolic.string("file");
+let file = esl_symbolic.any("file");
 let cb = esl_symbolic.function("cb");
 module.exports(file, cb);

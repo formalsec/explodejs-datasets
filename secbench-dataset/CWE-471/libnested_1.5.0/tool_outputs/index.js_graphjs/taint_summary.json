@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/libnested_1.5.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[path[i]] = value",
         "sink_lineno": 27,
-        "sink_function": "213",
         "source": "module.exports.set",
         "tainted_params": [
             "obj",
@@ -27,9 +26,9 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "678.set-o20",
-                "fn_id": "153",
-                "source_fn_id": "153"
+                "fn_name": "1597.set-o210",
+                "fn_id": "1072",
+                "source_fn_id": "1072"
             }
         ]
     }

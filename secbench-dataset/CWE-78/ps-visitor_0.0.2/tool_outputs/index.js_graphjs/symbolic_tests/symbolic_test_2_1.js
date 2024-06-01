@@ -459,5 +459,5 @@ module.exports = {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let signal = esl_symbolic.number("signal");
+let signal = esl_symbolic.string("signal");
 module.exports.getSignalRaw(signal);

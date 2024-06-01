@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/der-server_0.0.9/src/der-server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(pn, encode, function(err, data) {",
+        "sink_lineno": 52,
+        "source": "module.exports.start",
+        "tainted_params": [
+            "dir",
+            "defaultPage",
+            "port"
+        ],
+        "params_types": {
+            "dir": "string",
+            "defaultPage": "string",
+            "port": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "start",
+                "fn_name": "641.start-o75",
+                "fn_id": 376,
+                "source_fn_id": 376
+            }
+        ]
+    }
+]

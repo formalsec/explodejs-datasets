@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/psnode_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "ChildProcess.exec(killCommand, function (err, stdout, stderr) {",
         "sink_lineno": 59,
-        "sink_function": "355",
         "source": "module.exports.kill",
         "tainted_params": [
             "pid",
@@ -18,9 +18,9 @@
             {
                 "type": "Method",
                 "prop": "kill",
-                "fn_name": "371.v53-o13",
-                "fn_id": "251",
-                "source_fn_id": "251"
+                "fn_name": "894.v106-o133",
+                "fn_id": "774",
+                "source_fn_id": "774"
             }
         ]
     }

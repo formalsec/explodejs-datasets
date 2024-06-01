@@ -50,7 +50,7 @@ function isObject(obj) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let obj = {  };
+let obj = [ esl_symbolic.string("obj0") ];
 let path = esl_symbolic.string("path");
 let value = esl_symbolic.any("value");
 let create = esl_symbolic.any("create");

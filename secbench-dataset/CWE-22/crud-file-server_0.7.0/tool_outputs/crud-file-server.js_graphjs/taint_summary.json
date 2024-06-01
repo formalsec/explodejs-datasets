@@ -1,0 +1,96 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(relativePath, function(err, data) { ",
+        "sink_lineno": 158,
+        "source": "module.exports.handleRequest",
+        "tainted_params": [
+            "vpath",
+            "path",
+            "req",
+            "res",
+            "readOnly",
+            "logHeadRequests"
+        ],
+        "params_types": {
+            "vpath": {
+                "length": "any"
+            },
+            "path": {
+                "length": "any"
+            },
+            "req": {
+                "url": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "method": "string"
+            },
+            "res": {
+                "statusCode": "any"
+            },
+            "readOnly": "any",
+            "logHeadRequests": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "handleRequest",
+                "fn_name": "4211.v518-o468",
+                "fn_id": 2432,
+                "source_fn_id": 2432
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(relativePath, function(err, data) { ",
+        "sink_lineno": 170,
+        "source": "module.exports.handleRequest",
+        "tainted_params": [
+            "vpath",
+            "path",
+            "req",
+            "res",
+            "readOnly",
+            "logHeadRequests"
+        ],
+        "params_types": {
+            "vpath": {
+                "length": "any"
+            },
+            "path": {
+                "length": "any"
+            },
+            "req": {
+                "url": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "method": "string"
+            },
+            "res": {
+                "statusCode": "any"
+            },
+            "readOnly": "any",
+            "logHeadRequests": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "handleRequest",
+                "fn_name": "4211.v518-o468",
+                "fn_id": 2432,
+                "source_fn_id": 2432
+            }
+        ]
+    }
+]

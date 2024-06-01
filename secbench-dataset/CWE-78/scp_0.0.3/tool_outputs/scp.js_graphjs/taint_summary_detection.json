@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/scp.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/scp_0.0.3/src/scp.js",
         "vuln_type": "command-injection",
         "sink": "exec(command.join(' '), function (err, stdout, stderr) {",
-        "sink_lineno": 21,
-        "sink_function": "144"
+        "sink_lineno": 21
     },
     {
-        "filename": "../../src/scp.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/scp_0.0.3/src/scp.js",
         "vuln_type": "command-injection",
         "sink": "exec(command.join(' '), function (err, stdout, stderr) {",
-        "sink_lineno": 42,
-        "sink_function": "281"
+        "sink_lineno": 42
     }
 ]

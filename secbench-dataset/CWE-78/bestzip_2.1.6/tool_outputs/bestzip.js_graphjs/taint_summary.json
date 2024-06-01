@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/bestzip.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/bestzip_2.1.6/src/bestzip.js",
         "vuln_type": "command-injection",
         "sink": "const zipProcess = cp.exec(command, {",
         "sink_lineno": 27,
-        "sink_function": "116",
         "source": "module.exports.nativeZip",
         "tainted_params": [
             "options"
@@ -20,9 +20,9 @@
             {
                 "type": "Method",
                 "prop": "nativeZip",
-                "fn_name": "757.nativeZip-o12",
-                "fn_id": 52,
-                "source_fn_id": 52
+                "fn_name": "1809.nativeZip-o258",
+                "fn_id": 1104,
+                "source_fn_id": 1104
             }
         ]
     }

@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/kill-by-port_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "processId = exec(`lsof -t -i:${port}`)",
-        "sink_lineno": 8,
-        "sink_function": "20"
+        "sink_lineno": 8
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/kill-by-port_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`kill ${processId}`)",
-        "sink_lineno": 14,
-        "sink_function": "39"
+        "sink_lineno": 14
     }
 ]

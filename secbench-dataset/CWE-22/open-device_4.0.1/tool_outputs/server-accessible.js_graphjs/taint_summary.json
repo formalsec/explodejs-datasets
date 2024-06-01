@@ -1,0 +1,45 @@
+[
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/secbench-dataset/CWE-22/open-device_4.0.1/src/server-accessible.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, function(error, data){",
+        "sink_lineno": 14,
+        "source": "module.exports",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "string"
+        },
+        "returns": {
+            "source": "",
+            "params_types": {
+                "req": {
+                    "url": "string"
+                },
+                "res": "any",
+                "next": "function"
+            },
+            "tainted_params": [
+                "req",
+                "res",
+                "next"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "201.v20-o34",
+                "fn_id": "126",
+                "source_fn_id": "126"
+            },
+            {
+                "type": "Call",
+                "fn_name": "203.v19-o41",
+                "fn_id": "129",
+                "source_fn_id": "126"
+            }
+        ]
+    }
+]

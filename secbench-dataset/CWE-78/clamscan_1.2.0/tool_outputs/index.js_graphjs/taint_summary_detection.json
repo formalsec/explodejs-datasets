@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/clamscan_1.2.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "const stream = fs.createReadStream(file);",
-        "sink_lineno": 846,
-        "sink_function": "5965"
+        "sink_lineno": 846
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/clamscan_1.2.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "results.concat(await Promise.all(chunk.map(file => this.scan_stream(fs.createReadStream(file)))));",
-        "sink_lineno": 1587,
-        "sink_function": "11185"
+        "sink_lineno": 1587
     }
 ]

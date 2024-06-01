@@ -1,0 +1,31 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/api-proxy_0.0.2/src/static.js",
+        "vuln_type": "path-traversal",
+        "sink": "FS.readFile(filepath,'binary',",
+        "sink_lineno": 40,
+        "source": "module.exports.writeStatic",
+        "tainted_params": [
+            "request",
+            "response",
+            "callback"
+        ],
+        "params_types": {
+            "request": {
+                "url": "string"
+            },
+            "response": "any",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "writeStatic",
+                "fn_name": "1367.writeStatic-o177",
+                "fn_id": 801,
+                "source_fn_id": 801
+            }
+        ]
+    }
+]

@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/command-exists.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('command -v ' + commandName +",
         "sink_lineno": 49,
-        "sink_function": "223",
         "source": "module.exports",
         "tainted_params": [
             "commandName",
@@ -17,18 +17,18 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "485.commandExists-o44",
-                "fn_id": 370,
-                "source_fn_id": 370
+                "fn_name": "1185.commandExists-o207",
+                "fn_id": 1070,
+                "source_fn_id": 1070
             }
         ]
     },
     {
-        "filename": "../../src/command-exists.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('where ' + commandName,",
         "sink_lineno": 64,
-        "sink_function": "280",
         "source": "module.exports",
         "tainted_params": [
             "commandName",
@@ -41,18 +41,18 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "485.commandExists-o44",
-                "fn_id": 370,
-                "source_fn_id": 370
+                "fn_name": "1185.commandExists-o207",
+                "fn_id": 1070,
+                "source_fn_id": 1070
             }
         ]
     },
     {
-        "filename": "../../src/command-exists.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('command -v ' + commandName +",
         "sink_lineno": 78,
-        "sink_function": "316",
         "source": "module.exports.sync",
         "tainted_params": [
             "commandName"
@@ -64,18 +64,18 @@
             {
                 "type": "Method",
                 "prop": "sync",
-                "fn_name": "485.v68-o49",
-                "fn_id": 459,
-                "source_fn_id": 459
+                "fn_name": "1185.v136-o212",
+                "fn_id": 1159,
+                "source_fn_id": 1159
             }
         ]
     },
     {
-        "filename": "../../src/command-exists.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('where ' + commandName);",
         "sink_lineno": 94,
-        "sink_function": "351",
         "source": "module.exports.sync",
         "tainted_params": [
             "commandName"
@@ -87,9 +87,9 @@
             {
                 "type": "Method",
                 "prop": "sync",
-                "fn_name": "485.v68-o49",
-                "fn_id": 459,
-                "source_fn_id": 459
+                "fn_name": "1185.v136-o212",
+                "fn_id": 1159,
+                "source_fn_id": 1159
             }
         ]
     }

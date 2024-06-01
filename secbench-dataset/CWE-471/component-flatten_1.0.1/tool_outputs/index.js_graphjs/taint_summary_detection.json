@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/component-flatten_1.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "releases[branch.ref] = branch",
-        "sink_lineno": 56,
-        "sink_function": "237"
+        "sink_lineno": 56
     }
 ]

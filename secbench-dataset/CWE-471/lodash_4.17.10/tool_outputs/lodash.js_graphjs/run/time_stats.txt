@@ -1,6 +1,4 @@
-graph: 62024.522445
-import: 1933
-injection_detection: 1469.7966575622559
-injection_reconstruction: 61661.38744354248
+graph: 137064.752311
+import: 1710
 
 Timed out

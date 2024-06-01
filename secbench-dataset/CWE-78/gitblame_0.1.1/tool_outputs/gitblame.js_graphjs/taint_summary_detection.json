@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/gitblame.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/gitblame_0.1.1/src/gitblame.js",
         "vuln_type": "command-injection",
         "sink": "exec('git blame ' + filename, {cwd: dirname}, function (error, stdout, stderr) {",
-        "sink_lineno": 15,
-        "sink_function": "94"
+        "sink_lineno": 15
     }
 ]

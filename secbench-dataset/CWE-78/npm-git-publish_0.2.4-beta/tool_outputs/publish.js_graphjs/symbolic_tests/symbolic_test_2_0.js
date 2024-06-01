@@ -217,14 +217,7 @@ esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
 let packageDir = esl_symbolic.string("packageDir");
 let gitRemoteUrl = esl_symbolic.string("gitRemoteUrl");
-let options =
-  { commitText: esl_symbolic.any("commitText")
-  , prepublishCallback: esl_symbolic.any("prepublishCallback")
-  , tagName: esl_symbolic.any("tagName")
-  , tagMessageText: esl_symbolic.any("tagMessageText")
-  , tempDir: esl_symbolic.any("tempDir")
-  , originalPackageInfo: esl_symbolic.any("originalPackageInfo")
-  , extraBranchNames: esl_symbolic.string("extraBranchNames") };
+let options = esl_symbolic.string("options");
 let tagName = esl_symbolic.any("tagName");
 let tagMessageText = esl_symbolic.any("tagMessageText");
 let tempDir = esl_symbolic.any("tempDir");

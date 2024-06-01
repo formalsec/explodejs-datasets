@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/strider-git_1.0.3/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`git ls-remote -h ${httpUrl(config)[0]}`, function (err, stdout) {",
-        "sink_lineno": 151,
-        "sink_function": "821"
+        "sink_lineno": 151
     }
 ]

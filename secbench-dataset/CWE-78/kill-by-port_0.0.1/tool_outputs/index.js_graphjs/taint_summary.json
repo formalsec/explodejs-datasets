@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/kill-by-port_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "processId = exec(`lsof -t -i:${port}`)",
         "sink_lineno": 8,
-        "sink_function": "20",
         "source": "module.exports.killByPort",
         "tainted_params": [
             "port"
@@ -16,18 +16,18 @@
             {
                 "type": "Method",
                 "prop": "killByPort",
-                "fn_name": "53.v6-o5",
-                "fn_id": "11",
-                "source_fn_id": "11"
+                "fn_name": "131.v12-o21",
+                "fn_id": "89",
+                "source_fn_id": "89"
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/kill-by-port_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`kill ${processId}`)",
         "sink_lineno": 14,
-        "sink_function": "39",
         "source": "module.exports.killByPort",
         "tainted_params": [
             "port"
@@ -39,9 +39,9 @@
             {
                 "type": "Method",
                 "prop": "killByPort",
-                "fn_name": "53.v6-o5",
-                "fn_id": "11",
-                "source_fn_id": "11"
+                "fn_name": "131.v12-o21",
+                "fn_id": "89",
+                "source_fn_id": "89"
             }
         ]
     }

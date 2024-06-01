@@ -1,29 +1,23 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/local-devices_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return cp.exec('arp -n ' + address).then(parseOne)",
         "sink_lineno": 114,
-        "sink_function": "511",
         "source": "module.exports",
         "tainted_params": [
             "address"
         ],
         "params_types": {
-            "address": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            }
+            "address": "string"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "651.findLocalDevices-o12",
-                "fn_id": 34,
-                "source_fn_id": 34
+                "fn_name": "1564.findLocalDevices-o228",
+                "fn_id": 947,
+                "source_fn_id": 947
             }
         ]
     }

@@ -53,9 +53,9 @@ esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
 let options =
   { port: [ esl_symbolic.string("port0") ]
-  , file: esl_symbolic.string("file")
+  , file: [ esl_symbolic.string("file0") ]
   , user: [ esl_symbolic.string("user0") ]
-  , host: [ esl_symbolic.string("host0") ]
+  , host: esl_symbolic.string("host")
   , path: [ esl_symbolic.string("path0") ] };
 let cb = esl_symbolic.function("cb");
 module.exports.send(options, cb);

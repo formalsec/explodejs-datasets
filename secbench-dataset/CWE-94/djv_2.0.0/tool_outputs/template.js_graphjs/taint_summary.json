@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-94/djv_2.0.0/src/template.js",
+        "vuln_type": "code-injection",
+        "sink": "const tpl = new Function('schema', source)(schema);",
+        "sink_lineno": 110,
+        "source": "module.exports.restore",
+        "tainted_params": [
+            "source",
+            "schema",
+            "undefined"
+        ],
+        "params_types": {
+            "source": "any",
+            "schema": "any",
+            "undefined": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "restore",
+                "fn_name": "1413.restore-o188",
+                "fn_id": "1162",
+                "source_fn_id": "1162"
+            }
+        ]
+    }
+]

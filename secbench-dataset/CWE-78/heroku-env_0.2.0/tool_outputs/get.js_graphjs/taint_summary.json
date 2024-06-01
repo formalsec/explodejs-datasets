@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/get.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/heroku-env_0.2.0/src/get.js",
         "vuln_type": "command-injection",
         "sink": "exec('heroku config --app ' + app, function(err, stdout) {",
         "sink_lineno": 3,
-        "sink_function": "118",
         "source": "module.exports",
         "tainted_params": [
             "app",
@@ -17,9 +17,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "132.v19-o6",
-                "fn_id": "9",
-                "source_fn_id": "9"
+                "fn_name": "320.v38-o49",
+                "fn_id": "197",
+                "source_fn_id": "197"
             }
         ]
     }

@@ -1,214 +1,172 @@
 [
     {
-        "filename": "../../src/plugin-loader.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "pluginInfo = require(path.join(pluginPath, 'package.json'));",
         "sink_lineno": 48,
-        "sink_function": "146",
         "source": "module.exports.validatePlugin",
         "tainted_params": [
             "pluginPath"
         ],
         "params_types": {
-            "pluginPath": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            }
+            "pluginPath": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "validatePlugin",
-                "fn_name": "1762.validatePlugin-o32",
-                "fn_id": "126",
-                "source_fn_id": "126"
+                "fn_name": "4163.validatePlugin-o583",
+                "fn_id": "2527",
+                "source_fn_id": "2527"
             }
         ]
     },
     {
-        "filename": "../../src/plugin-loader.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "maybePlugin = require(pluginPath);",
         "sink_lineno": 63,
-        "sink_function": "237",
         "source": "module.exports.validatePlugin",
         "tainted_params": [
             "pluginPath"
         ],
         "params_types": {
-            "pluginPath": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            }
+            "pluginPath": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "validatePlugin",
-                "fn_name": "1762.validatePlugin-o32",
-                "fn_id": "126",
-                "source_fn_id": "126"
+                "fn_name": "4163.validatePlugin-o583",
+                "fn_id": "2527",
+                "source_fn_id": "2527"
             }
         ]
     },
     {
-        "filename": "../../src/plugin-loader.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "if (!require(pluginDir).getVersion ||",
         "sink_lineno": 240,
-        "sink_function": "1246",
         "source": "module.exports.loadPluginFromDir",
         "tainted_params": [
             "pluginDir",
             "isBuiltin"
         ],
         "params_types": {
-            "pluginDir": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            },
+            "pluginDir": "string",
             "isBuiltin": "undefined"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "loadPluginFromDir",
-                "fn_name": "1762.loadPluginFromDir-o44",
-                "fn_id": "1184",
-                "source_fn_id": "1184"
+                "fn_name": "4163.loadPluginFromDir-o595",
+                "fn_id": "3585",
+                "source_fn_id": "3585"
             }
         ]
     },
     {
-        "filename": "../../src/plugin-loader.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "typeof require(pluginDir).getVersion !== 'function') {",
         "sink_lineno": 241,
-        "sink_function": "1257",
         "source": "module.exports.loadPluginFromDir",
         "tainted_params": [
             "pluginDir",
             "isBuiltin"
         ],
         "params_types": {
-            "pluginDir": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            },
+            "pluginDir": "string",
             "isBuiltin": "undefined"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "loadPluginFromDir",
-                "fn_name": "1762.loadPluginFromDir-o44",
-                "fn_id": "1184",
-                "source_fn_id": "1184"
+                "fn_name": "4163.loadPluginFromDir-o595",
+                "fn_id": "3585",
+                "source_fn_id": "3585"
             }
         ]
     },
     {
-        "filename": "../../src/plugin-loader.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "var pkg = require(path.join(pluginDir, 'package.json'));",
         "sink_lineno": 243,
-        "sink_function": "1285",
         "source": "module.exports.loadPluginFromDir",
         "tainted_params": [
             "pluginDir",
             "isBuiltin"
         ],
         "params_types": {
-            "pluginDir": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            },
+            "pluginDir": "string",
             "isBuiltin": "undefined"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "loadPluginFromDir",
-                "fn_name": "1762.loadPluginFromDir-o44",
-                "fn_id": "1184",
-                "source_fn_id": "1184"
+                "fn_name": "4163.loadPluginFromDir-o595",
+                "fn_id": "3585",
+                "source_fn_id": "3585"
             }
         ]
     },
     {
-        "filename": "../../src/plugin-loader.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "var plugin = require(pluginDir);",
         "sink_lineno": 244,
-        "sink_function": "1289",
         "source": "module.exports.loadPluginFromDir",
         "tainted_params": [
             "pluginDir",
             "isBuiltin"
         ],
         "params_types": {
-            "pluginDir": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            },
+            "pluginDir": "string",
             "isBuiltin": "undefined"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "loadPluginFromDir",
-                "fn_name": "1762.loadPluginFromDir-o44",
-                "fn_id": "1184",
-                "source_fn_id": "1184"
+                "fn_name": "4163.loadPluginFromDir-o595",
+                "fn_id": "3585",
+                "source_fn_id": "3585"
             }
         ]
     },
     {
-        "filename": "../../src/plugin-loader.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "return require(pluginDir).getVersion();",
         "sink_lineno": 257,
-        "sink_function": "1396",
         "source": "module.exports.loadPluginFromDir",
         "tainted_params": [
             "pluginDir",
             "isBuiltin"
         ],
         "params_types": {
-            "pluginDir": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            },
+            "pluginDir": "string",
             "isBuiltin": "undefined"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "loadPluginFromDir",
-                "fn_name": "1762.loadPluginFromDir-o44",
-                "fn_id": "1184",
-                "source_fn_id": "1184"
+                "fn_name": "4163.loadPluginFromDir-o595",
+                "fn_id": "3585",
+                "source_fn_id": "3585"
             }
         ]
     }

@@ -382,15 +382,5 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: path-traversal
 let path$1 = esl_symbolic.string("path$1");
-let ctx =
-  { opts: esl_symbolic.any("opts")
-  , cwd: esl_symbolic.any("cwd")
-  , file: esl_symbolic.any("file")
-  , files: esl_symbolic.any("files")
-  , nodes: [ esl_symbolic.string("nodes0") ]
-  , index: esl_symbolic.any("index")
-  , tags: esl_symbolic.any("tags")
-  , defaultTag: esl_symbolic.any("defaultTag")
-  , prefixes: {  }
-  , logger: esl_symbolic.any("logger") };
+let ctx = {  };
 module.exports.$parseFile(path$1, ctx);

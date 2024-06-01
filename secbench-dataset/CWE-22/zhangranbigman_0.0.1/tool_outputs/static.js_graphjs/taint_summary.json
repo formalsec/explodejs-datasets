@@ -1,0 +1,47 @@
+[
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/secbench-dataset/CWE-22/zhangranbigman_0.0.1/src/static.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(parent_path + path, callback);",
+        "sink_lineno": 21,
+        "source": "module.exports",
+        "tainted_params": [
+            "parent_path"
+        ],
+        "params_types": {
+            "parent_path": "string"
+        },
+        "returns": {
+            "source": "",
+            "params_types": {
+                "req": {
+                    "url": "any"
+                },
+                "res": {
+                    "status": "any"
+                },
+                "next": "any"
+            },
+            "tainted_params": [
+                "req",
+                "res",
+                "next"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "242.v14-o48",
+                "fn_id": "173",
+                "source_fn_id": "173"
+            },
+            {
+                "type": "Call",
+                "fn_name": "246.v13-o59",
+                "fn_id": "176",
+                "source_fn_id": "173"
+            }
+        ]
+    }
+]

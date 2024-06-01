@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-94/safer-eval_1.3.1/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return vm.runInContext('(function () {\"use strict\"; return ' + code + '})()', this._context, this._options);",
+        "sink_lineno": 60
+    }
+]

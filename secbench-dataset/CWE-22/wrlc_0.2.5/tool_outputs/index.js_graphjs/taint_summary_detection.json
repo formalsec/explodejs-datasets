@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var file = fs.createReadStream(filename);",
+        "sink_lineno": 26
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var bundler = child.spawn(options.bundler, options.argv);",
+        "sink_lineno": 42
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var browser = child.spawn(options.browser, [util.format('http://%s:%d', options.host, options.port)]);",
+        "sink_lineno": 65
+    }
+]

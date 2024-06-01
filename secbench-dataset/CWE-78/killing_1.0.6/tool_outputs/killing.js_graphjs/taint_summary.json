@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/killing.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/killing_1.0.6/src/killing.js",
         "vuln_type": "command-injection",
         "sink": "exec('ps -ef | grep ' + name, function(error, stdout) {",
         "sink_lineno": 35,
-        "sink_function": "232",
         "source": "module.exports",
         "tainted_params": [
             "name",
@@ -17,9 +17,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "278.v38-o12",
-                "fn_id": 60,
-                "source_fn_id": 60
+                "fn_name": "681.v76-o109",
+                "fn_id": 463,
+                "source_fn_id": 463
             }
         ]
     }

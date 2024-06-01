@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/mcstatic_0.0.20/src/responseHandlers.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fstream = fs.createReadStream(file, {start: start, end: end});",
+        "sink_lineno": 12
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/mcstatic_0.0.20/src/responseHandlers.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = fs.createReadStream(file);",
+        "sink_lineno": 23
+    }
+]

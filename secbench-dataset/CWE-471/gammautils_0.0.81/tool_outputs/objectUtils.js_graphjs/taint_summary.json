@@ -1,42 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/objectUtils.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "currentNode[currentProperty] = getContainer(property[i + 1]);",
-        "sink_lineno": 112,
-        "sink_function": "480",
-        "source": "module.exports.unflatten",
-        "tainted_params": [
-            "object",
-            "separator"
-        ],
-        "params_types": {
-            "object": {
-                "_union": [
-                    "object",
-                    "array"
-                ]
-            },
-            "separator": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "unflatten",
-                "fn_name": "1596.unflatten-o37",
-                "fn_id": 368,
-                "source_fn_id": 368
-            }
-        ]
-    },
-    {
-        "type": "VFunPropOfExportedObj",
-        "filename": "../../src/objectUtils.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "currentNode[currentProperty] = messages;",
         "sink_lineno": 110,
-        "sink_function": "461",
         "source": "module.exports.unflatten",
         "tainted_params": [
             "object",
@@ -45,8 +13,11 @@
         "params_types": {
             "object": {
                 "_union": [
+                    "array",
+                    "boolean",
                     "object",
-                    "array"
+                    "string",
+                    "undefined"
                 ]
             },
             "separator": "any"
@@ -55,19 +26,18 @@
             {
                 "type": "Method",
                 "prop": "unflatten",
-                "fn_name": "1596.unflatten-o37",
-                "fn_id": 368,
-                "source_fn_id": 368
+                "fn_name": "3761.unflatten-o487",
+                "fn_id": 2533,
+                "source_fn_id": 2533
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/objectUtils.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[property.shift()] = value;",
         "sink_lineno": 146,
-        "sink_function": "639",
         "source": "module.exports.deepSet",
         "tainted_params": [
             "object",
@@ -90,9 +60,9 @@
             {
                 "type": "Method",
                 "prop": "deepSet",
-                "fn_name": "1596.deepSet-o44",
-                "fn_id": "525",
-                "source_fn_id": "525"
+                "fn_name": "3761.deepSet-o494",
+                "fn_id": "2690",
+                "source_fn_id": "2690"
             }
         ]
     }

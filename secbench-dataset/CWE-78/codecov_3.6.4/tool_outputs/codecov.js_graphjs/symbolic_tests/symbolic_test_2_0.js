@@ -570,21 +570,21 @@ let args =
   { options:
       { url: esl_symbolic.string("url")
       , yml: [ esl_symbolic.string("yml0") ]
-      , disable: [ esl_symbolic.string("disable0") ]
+      , disable: esl_symbolic.any("disable")
       , build: esl_symbolic.any("build")
       , commit: esl_symbolic.any("commit")
       , branch: esl_symbolic.any("branch")
       , slug: esl_symbolic.any("slug")
       , flags: esl_symbolic.any("flags")
       , token: esl_symbolic.any("token")
-      , env: esl_symbolic.number("env")
-      , root: [ esl_symbolic.string("root0") ]
-      , 'gcov-glob': [ esl_symbolic.string("'gcov-glob'0") ]
+      , env: esl_symbolic.string("env")
+      , root: esl_symbolic.string("root")
+      , 'gcov-glob': esl_symbolic.string("'gcov-glob'")
       , 'gcov-root': esl_symbolic.string("'gcov-root'")
       , 'gcov-exec': esl_symbolic.string("'gcov-exec'")
       , 'gcov-args': esl_symbolic.string("'gcov-args'")
-      , pipe: esl_symbolic.string("pipe")
-      , file: [ esl_symbolic.string("file0") ]
+      , pipe: esl_symbolic.any("pipe")
+      , file: esl_symbolic.string("file")
       , dump: esl_symbolic.any("dump")
       , clear: esl_symbolic.any("clear") }
   };

@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/field.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/field_1.0.1/src/field.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[field] = value",
         "sink_lineno": 50,
-        "sink_function": "281",
         "source": "module.exports.set",
         "tainted_params": [
             "topObj",
@@ -22,8 +21,9 @@
             },
             "fields": {
                 "_union": [
-                    "polluted_object2",
-                    "polluted_object3"
+                    "object",
+                    "array",
+                    "string"
                 ]
             },
             "value": "any"
@@ -32,19 +32,18 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "413.set-o10",
-                "fn_id": 130,
-                "source_fn_id": 130
+                "fn_name": "965.set-o127",
+                "fn_id": 682,
+                "source_fn_id": 682
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/field.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/field_1.0.1/src/field.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[field] = value",
         "sink_lineno": 39,
-        "sink_function": "221",
         "source": "module.exports.set",
         "tainted_params": [
             "topObj",
@@ -61,8 +60,9 @@
             },
             "fields": {
                 "_union": [
-                    "polluted_object2",
-                    "polluted_object3"
+                    "object",
+                    "array",
+                    "string"
                 ]
             },
             "value": "any"
@@ -71,9 +71,9 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "413.set-o10",
-                "fn_id": 130,
-                "source_fn_id": 130
+                "fn_name": "965.set-o127",
+                "fn_id": 682,
+                "source_fn_id": 682
             }
         ]
     }

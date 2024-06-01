@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/git-tags-remote_1.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`git ls-remote --tags ${repo}`, (error, stdout, stderr) => {",
-        "sink_lineno": 5,
-        "sink_function": "58"
+        "sink_lineno": 5
     }
 ]

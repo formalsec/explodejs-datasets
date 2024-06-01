@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/dilu_0.1.3/src/get.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = fs.createReadStream(fpath.absolute);",
+        "sink_lineno": 57,
+        "source": "module.exports.proceed",
+        "tainted_params": [
+            "req",
+            "res"
+        ],
+        "params_types": {
+            "req": {
+                "url": "any"
+            },
+            "res": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "proceed",
+                "fn_name": "1092.v66-o152",
+                "fn_id": 670,
+                "source_fn_id": 670
+            }
+        ]
+    }
+]

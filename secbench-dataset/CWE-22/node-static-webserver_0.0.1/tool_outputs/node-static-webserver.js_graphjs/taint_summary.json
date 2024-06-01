@@ -1,0 +1,53 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-22/node-static-webserver_0.0.1/src/node-static-webserver.js",
+        "vuln_type": "path-traversal",
+        "sink": "var readStream = fs.createReadStream(filename);",
+        "sink_lineno": 79,
+        "source": "new module.exports",
+        "tainted_params": [
+            "contentPath",
+            "port",
+            "address"
+        ],
+        "params_types": {
+            "contentPath": "any",
+            "port": "any",
+            "address": "any"
+        },
+        "returns": {
+            "source": "._responseFile",
+            "params_types": {
+                "response": "any",
+                "filename": "string",
+                "stats": {
+                    "mtime": "any",
+                    "size": "any"
+                },
+                "lastModifiedSince": "any"
+            },
+            "tainted_params": [
+                "response",
+                "filename",
+                "stats",
+                "lastModifiedSince"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1648.v119-o241",
+                "fn_id": "967",
+                "source_fn_id": "967"
+            },
+            {
+                "type": "Method",
+                "prop": "_responseFile",
+                "fn_name": "1648.v143-o240",
+                "fn_id": "1275",
+                "source_fn_id": "1275"
+            }
+        ]
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "code-injection",
+        "sink": "eval('constructor = function ('+args+') {'+inner_code+'};');",
+        "sink_lineno": 26,
+        "source": "module.exports.create",
+        "tainted_params": [
+            "members"
+        ],
+        "params_types": {
+            "members": {
+                "__parent": "any",
+                "__construct": {
+                    "*": "any",
+                    "prototype": {
+                        "*": "any"
+                    }
+                },
+                "__static": {
+                    "*": "any"
+                },
+                "__events": "any",
+                "__mixins": {
+                    "length": "any",
+                    "*": {
+                        "prototype": {
+                            "*": "any"
+                        },
+                        "__static": {
+                            "*": "any"
+                        }
+                    }
+                },
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "create",
+                "fn_name": "1020.v136-o93",
+                "fn_id": "575",
+                "source_fn_id": "575"
+            }
+        ]
+    }
+]

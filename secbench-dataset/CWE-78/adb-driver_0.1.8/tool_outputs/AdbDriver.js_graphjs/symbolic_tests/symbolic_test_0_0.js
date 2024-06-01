@@ -38,6 +38,6 @@ exports.execADBCommand = execADBCommand;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let command = [ esl_symbolic.string("command0") ];
+let command = esl_symbolic.string("command");
 let option = esl_symbolic.any("option");
 module.exports.execADBCommand(command, option);

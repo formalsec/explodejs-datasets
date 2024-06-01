@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/cyber-js_1.0.6/src/app.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filename, \"binary\", function(err, file) {",
+        "sink_lineno": 43
+    }
+]

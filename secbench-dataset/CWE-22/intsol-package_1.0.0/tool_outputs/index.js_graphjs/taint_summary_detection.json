@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/intsol-package_1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = fs.createReadStream(fileRequested, {",
+        "sink_lineno": 35
+    }
+]

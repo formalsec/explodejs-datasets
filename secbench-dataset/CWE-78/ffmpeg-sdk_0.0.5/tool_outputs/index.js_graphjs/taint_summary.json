@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpeg-sdk_0.0.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, (error, stdout, stderr) => {",
         "sink_lineno": 9,
-        "sink_function": "38",
         "source": "module.exports.execute",
         "tainted_params": [
             "command"
@@ -16,9 +16,9 @@
             {
                 "type": "Method",
                 "prop": "execute",
-                "fn_name": "377.execute-o5",
-                "fn_id": 9,
-                "source_fn_id": 9
+                "fn_name": "927.execute-o151",
+                "fn_id": 559,
+                "source_fn_id": 559
             }
         ]
     }

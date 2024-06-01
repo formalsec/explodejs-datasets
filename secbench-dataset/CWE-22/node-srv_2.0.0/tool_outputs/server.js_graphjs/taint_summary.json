@@ -1,0 +1,162 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-22/node-srv_2.0.0/src/server.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.createReadStream(filePath).on('open', function() {",
+        "sink_lineno": 185,
+        "source": "new module.exports",
+        "tainted_params": [
+            "options",
+            "exitCallback"
+        ],
+        "params_types": {
+            "options": "any",
+            "exitCallback": "any"
+        },
+        "returns": {
+            "source": ".handlerStaticFile",
+            "params_types": {
+                "res": "any",
+                "filePath": "string"
+            },
+            "tainted_params": [
+                "res",
+                "filePath"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "4334.v449-o669",
+                "fn_id": "2645",
+                "source_fn_id": "2645"
+            },
+            {
+                "type": "Method",
+                "prop": "handlerStaticFile",
+                "fn_name": "4334.v467-o668",
+                "fn_id": 3793,
+                "source_fn_id": 3793
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-22/node-srv_2.0.0/src/server.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.createReadStream(errorPath).on('open', function() {",
+        "sink_lineno": 211,
+        "source": "new module.exports",
+        "tainted_params": [
+            "options",
+            "exitCallback"
+        ],
+        "params_types": {
+            "options": "any",
+            "exitCallback": "any"
+        },
+        "returns": {
+            "source": ".handlerNotFound",
+            "params_types": {
+                "res": "any",
+                "filePath": "string"
+            },
+            "tainted_params": [
+                "res",
+                "filePath"
+            ],
+            "returns": {
+                "source": "",
+                "params_types": {
+                    "resolve": "function",
+                    "reject": "function"
+                },
+                "tainted_params": [
+                    "resolve",
+                    "reject"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "4334.v468-o675",
+                "fn_id": "2645",
+                "source_fn_id": "2645"
+            },
+            {
+                "type": "Method",
+                "prop": "handlerNotFound",
+                "fn_name": "4334.v501-o674",
+                "fn_id": "3916",
+                "source_fn_id": "3916"
+            },
+            {
+                "type": "Call",
+                "fn_name": "4421.v497-o1070",
+                "fn_id": "3995",
+                "source_fn_id": "3916"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-22/node-srv_2.0.0/src/server.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.createReadStream(errorPath).on('open', function() {",
+        "sink_lineno": 211,
+        "source": "new module.exports",
+        "tainted_params": [
+            "options",
+            "exitCallback"
+        ],
+        "params_types": {
+            "options": "any",
+            "exitCallback": "any"
+        },
+        "returns": {
+            "source": ".handlerNotFound",
+            "params_types": {
+                "res": "any",
+                "filePath": "string"
+            },
+            "tainted_params": [
+                "res",
+                "filePath"
+            ],
+            "returns": {
+                "source": "",
+                "params_types": {
+                    "resolve": "function",
+                    "reject": "function"
+                },
+                "tainted_params": [
+                    "resolve",
+                    "reject"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "4334.v468-o675",
+                "fn_id": "2645",
+                "source_fn_id": "2645"
+            },
+            {
+                "type": "Method",
+                "prop": "handlerNotFound",
+                "fn_name": "4334.v501-o674",
+                "fn_id": 3916,
+                "source_fn_id": 3916
+            },
+            {
+                "type": "Call",
+                "fn_name": "4421.v497-o1070",
+                "fn_id": "3995",
+                "source_fn_id": "3992"
+            }
+        ]
+    }
+]

@@ -1,30 +1,32 @@
 [
     {
-        "filename": "../../src/generator.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, next);",
-        "sink_lineno": 85,
-        "sink_function": "316"
+        "sink_lineno": 85
     },
     {
-        "filename": "../../src/generator.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"identify \" + filePaths.join(\" \"), function (err, stdout) {",
-        "sink_lineno": 102,
-        "sink_function": "819"
+        "sink_lineno": 102
     },
     {
-        "filename": "../../src/generator.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
         "vuln_type": "command-injection",
         "sink": "exec(command.join(\" \"), function (err) {",
-        "sink_lineno": 196,
-        "sink_function": "1545"
+        "sink_lineno": 196
     },
     {
-        "filename": "../../src/generator.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"magick identify \" + filePath, function (err, stdout) {",
-        "sink_lineno": 204,
-        "sink_function": "1249"
+        "sink_lineno": 204
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "vuln_type": "path-traversal",
+        "sink": "var templateContent = fs.readFileSync(path, \"utf-8\");",
+        "sink_lineno": 301
     }
 ]

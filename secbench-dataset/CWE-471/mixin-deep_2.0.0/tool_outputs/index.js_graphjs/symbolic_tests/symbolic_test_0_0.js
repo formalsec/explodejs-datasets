@@ -36,7 +36,7 @@ module.exports = mixinDeep;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let target = {  };
+let target = esl_symbolic.any("target");
 let undefined = esl_symbolic.any("undefined");
 module.exports(target, undefined);
 console.log(({}).toString);

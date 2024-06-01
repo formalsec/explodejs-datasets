@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/querymen_2.1.3/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "handlers[type][name] = fn;",
         "sink_lineno": 46,
-        "sink_function": "207",
         "source": "module.exports.handler",
         "tainted_params": [
             "type",
@@ -21,9 +20,9 @@
             {
                 "type": "Method",
                 "prop": "handler",
-                "fn_name": "660.handler-o10",
-                "fn_id": "188",
-                "source_fn_id": "188"
+                "fn_name": "1565.handler-o221",
+                "fn_id": "1093",
+                "source_fn_id": "1093"
             }
         ]
     }

@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-78/monorepo-build_0.1.9/src/exec.js",
+        "vuln_type": "command-injection",
+        "sink": "exports.execSync = (cwd, command) => child_process_1.execSync(command, { cwd, env: process.env });",
+        "sink_lineno": 4
+    }
+]

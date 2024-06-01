@@ -1,23 +1,14 @@
 [
     {
-        "filename": "../../src/objectUtils.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "currentNode[currentProperty] = getContainer(property[i + 1]);",
-        "sink_lineno": 112,
-        "sink_function": "480"
-    },
-    {
-        "filename": "../../src/objectUtils.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "currentNode[currentProperty] = messages;",
-        "sink_lineno": 110,
-        "sink_function": "461"
+        "sink_lineno": 110
     },
     {
-        "filename": "../../src/objectUtils.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[property.shift()] = value;",
-        "sink_lineno": 146,
-        "sink_function": "639"
+        "sink_lineno": 146
     }
 ]

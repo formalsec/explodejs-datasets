@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/just-safe-set_1.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[lastProp] = value;",
         "sink_lineno": 36,
-        "sink_function": "76",
         "source": "module.exports",
         "tainted_params": [
             "obj",
@@ -25,9 +24,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "85.set-o1",
-                "fn_id": "7",
-                "source_fn_id": "7"
+                "fn_name": "200.set-o22",
+                "fn_id": "122",
+                "source_fn_id": "122"
             }
         ]
     }

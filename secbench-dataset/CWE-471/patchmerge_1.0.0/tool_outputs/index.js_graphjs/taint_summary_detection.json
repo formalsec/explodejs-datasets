@@ -1,23 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "original[name] = objectMerge(original[name], patch[name], removeMode);",
-        "sink_lineno": 105,
-        "sink_function": "483"
-    },
-    {
-        "filename": "../../src/index.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "original[name] = arrayMerge(original[name], patch[name], removeMode);",
-        "sink_lineno": 101,
-        "sink_function": "462"
-    },
-    {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/patchmerge_1.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "original[name] = patch[name];",
-        "sink_lineno": 93,
-        "sink_function": "431"
+        "sink_lineno": 93
     }
 ]

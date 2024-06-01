@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/m-server_1.4.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "res.end(fs.readFileSync(targetPath))",
+        "sink_lineno": 14,
+        "source": "module.exports.HttpServer",
+        "tainted_params": [
+            "option"
+        ],
+        "params_types": {
+            "option": {
+                "port": "string"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "HttpServer",
+                "fn_name": "1307.HttpServer-o180",
+                "fn_id": 778,
+                "source_fn_id": 778
+            }
+        ]
+    }
+]

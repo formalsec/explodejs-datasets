@@ -1,9 +1,1 @@
-[
-    {
-        "filename": "../../src/merge.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "destination[prop] = source[prop];",
-        "sink_lineno": 31,
-        "sink_function": "203"
-    }
-]
+[]

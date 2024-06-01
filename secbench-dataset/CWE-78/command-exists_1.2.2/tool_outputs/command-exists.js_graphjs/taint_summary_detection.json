@@ -1,30 +1,26 @@
 [
     {
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('command -v ' + commandName +",
-        "sink_lineno": 49,
-        "sink_function": "223"
+        "sink_lineno": 49
     },
     {
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('where ' + commandName,",
-        "sink_lineno": 64,
-        "sink_function": "280"
+        "sink_lineno": 64
     },
     {
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('command -v ' + commandName +",
-        "sink_lineno": 78,
-        "sink_function": "316"
+        "sink_lineno": 78
     },
     {
-        "filename": "../../src/command-exists.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('where ' + commandName);",
-        "sink_lineno": 94,
-        "sink_function": "351"
+        "sink_lineno": 94
     }
 ]

@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/node-staticserver_1.0.3/src/server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.createReadStream(file, {",
+        "sink_lineno": 178
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/node-staticserver_1.0.3/src/server.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = fs.createReadStream(file);",
+        "sink_lineno": 183
+    }
+]

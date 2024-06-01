@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "cur[parts[i]] = value;",
         "sink_lineno": 349,
-        "sink_function": "1482",
         "source": "module.exports.setPath",
         "tainted_params": [
             "obj",
@@ -13,7 +12,12 @@
             "value"
         ],
         "params_types": {
-            "obj": "object",
+            "obj": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
             "path": "string",
             "value": {
                 "_union": [
@@ -27,87 +31,84 @@
             {
                 "type": "Method",
                 "prop": "setPath",
-                "fn_name": "3728.setPath-o64",
-                "fn_id": "1437",
-                "source_fn_id": "1437"
+                "fn_name": "8608.setPath-o994",
+                "fn_id": "6317",
+                "source_fn_id": "6317"
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = result;",
         "sink_lineno": 533,
-        "sink_function": "2252",
         "source": "module.exports.mergeHeavy",
         "tainted_params": [
             "object",
             "undefined"
         ],
         "params_types": {
-            "object": "object",
+            "object": "any",
             "undefined": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "mergeHeavy",
-                "fn_name": "3728.mergeHeavy-o89",
-                "fn_id": 1994,
-                "source_fn_id": 1994
+                "fn_name": "8608.mergeHeavy-o1019",
+                "fn_id": 6874,
+                "source_fn_id": 6874
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = result;",
         "sink_lineno": 565,
-        "sink_function": "2428",
         "source": "module.exports.mergeHeavy",
         "tainted_params": [
             "object",
             "undefined"
         ],
         "params_types": {
-            "object": "object",
+            "object": "any",
             "undefined": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "mergeHeavy",
-                "fn_name": "3728.mergeHeavy-o89",
-                "fn_id": 1994,
-                "source_fn_id": 1994
+                "fn_name": "8608.mergeHeavy-o1019",
+                "fn_id": 6874,
+                "source_fn_id": 6874
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = baseMergeHeavy(result, srcValue, customizer);",
         "sink_lineno": 563,
-        "sink_function": "2415",
         "source": "module.exports.mergeHeavy",
         "tainted_params": [
             "object",
             "undefined"
         ],
         "params_types": {
-            "object": "object",
+            "object": "any",
             "undefined": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "mergeHeavy",
-                "fn_name": "3728.mergeHeavy-o89",
-                "fn_id": 1994,
-                "source_fn_id": 1994
+                "fn_name": "8608.mergeHeavy-o1019",
+                "fn_id": 6874,
+                "source_fn_id": 6874
             }
         ]
     }

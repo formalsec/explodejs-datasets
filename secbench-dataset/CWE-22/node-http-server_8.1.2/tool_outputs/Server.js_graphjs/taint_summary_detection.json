@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/node-http-server_8.1.2/src/Server.js",
+        "vuln_type": "path-traversal",
+        "sink": "key: fs.readFileSync(this.config.https.privateKey),",
+        "sink_lineno": 350
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/node-http-server_8.1.2/src/Server.js",
+        "vuln_type": "path-traversal",
+        "sink": "cert: fs.readFileSync(this.config.https.certificate),",
+        "sink_lineno": 351
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/node-http-server_8.1.2/src/Server.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.config.httpsOptions.ca=fs.readFileSync(this.config.https.ca);",
+        "sink_lineno": 356
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/node-http-server_8.1.2/src/Server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(",
+        "sink_lineno": 494
+    }
+]

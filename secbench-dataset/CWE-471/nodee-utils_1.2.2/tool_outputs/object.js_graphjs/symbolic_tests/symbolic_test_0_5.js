@@ -364,7 +364,7 @@ function update(obj, expression){
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let parent = {  };
+let parent = [ esl_symbolic.string("parent0") ];
 let key = esl_symbolic.string("key");
 let value = esl_symbolic.string("value");
 let mode = esl_symbolic.any("mode");

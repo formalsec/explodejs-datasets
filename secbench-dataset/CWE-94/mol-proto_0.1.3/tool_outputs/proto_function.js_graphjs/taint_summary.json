@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-94/mol-proto_0.1.3/src/proto_function.js",
+        "vuln_type": "code-injection",
+        "sink": "eval(code);",
+        "sink_lineno": 70,
+        "source": "module.exports.makeFunction",
+        "tainted_params": [
+            "arg1",
+            "arg2",
+            "funcBody"
+        ],
+        "params_types": {
+            "arg1": "any",
+            "arg2": "any",
+            "funcBody": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "makeFunction",
+                "fn_name": "2653.makeFunction-o356",
+                "fn_id": "1679",
+                "source_fn_id": "1679"
+            }
+        ]
+    }
+]

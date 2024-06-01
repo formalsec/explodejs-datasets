@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/arpping_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`ping ${flag} ${this.timeout} ${ip}`, (err, stdout, stderr) => {",
-        "sink_lineno": 120,
-        "sink_function": "921"
+        "sink_lineno": 120
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/arpping_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`arp ${ip}`, (err, stdout, stderr) => {",
-        "sink_lineno": 145,
-        "sink_function": "1230"
+        "sink_lineno": 145
     }
 ]

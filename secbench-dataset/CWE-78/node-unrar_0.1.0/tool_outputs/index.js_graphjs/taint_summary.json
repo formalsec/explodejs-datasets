@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-78/node-unrar_0.1.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(execCommand, function (err, stdout, stderr) {",
         "sink_lineno": 23,
-        "sink_function": "164",
         "source": "new module.exports",
         "tainted_params": [
             "options"
@@ -16,13 +16,8 @@
         },
         "returns": {
             "source": "._execute",
-            "param_types": {
-                "args": {
-                    "_union": [
-                        "array",
-                        "string"
-                    ]
-                },
+            "params_types": {
+                "args": "array",
                 "dstPath": "string",
                 "cb": "function"
             },
@@ -35,16 +30,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "184.v8-o19",
-                "fn_id": "11",
-                "source_fn_id": "11"
+                "fn_name": "452.v31-o85",
+                "fn_id": "279",
+                "source_fn_id": "279"
             },
             {
                 "type": "Method",
                 "prop": "_execute",
-                "fn_name": "184.v23-o18",
-                "fn_id": "74",
-                "source_fn_id": "74"
+                "fn_name": "452.v46-o84",
+                "fn_id": "342",
+                "source_fn_id": "342"
             }
         ]
     }

@@ -365,7 +365,7 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let parent = {  };
-let key = esl_symbolic.number("key");
+let key = esl_symbolic.string("key");
 let value = esl_symbolic.string("value");
 let mode = esl_symbolic.any("mode");
 module.exports.deepSet(parent, key, value, mode);

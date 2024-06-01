@@ -1,0 +1,21 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/isv-http_0.0.9/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filename, function (err, data) {",
+        "sink_lineno": 47,
+        "source": "module.exports.runserver",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "runserver",
+                "fn_name": "839.v88-o106",
+                "fn_id": 503,
+                "source_fn_id": 503
+            }
+        ]
+    }
+]

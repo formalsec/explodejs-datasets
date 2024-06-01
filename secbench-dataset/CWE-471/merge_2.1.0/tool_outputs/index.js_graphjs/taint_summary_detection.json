@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/merge_2.1.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
-        "sink_lineno": 59,
-        "sink_function": "467"
+        "sink_lineno": 59
     }
 ]

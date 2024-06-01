@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/field.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/field_1.0.1/src/field.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[field] = value",
-        "sink_lineno": 50,
-        "sink_function": "281"
+        "sink_lineno": 50
     },
     {
-        "filename": "../../src/field.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/field_1.0.1/src/field.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[field] = value",
-        "sink_lineno": 39,
-        "sink_function": "221"
+        "sink_lineno": 39
     }
 ]

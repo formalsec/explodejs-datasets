@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/uekw1511server_1.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(relpath,function(err,file){",
+        "sink_lineno": 14
+    }
+]

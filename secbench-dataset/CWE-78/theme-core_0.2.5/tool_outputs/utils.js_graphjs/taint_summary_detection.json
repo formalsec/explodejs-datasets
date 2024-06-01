@@ -1,37 +1,32 @@
 [
     {
-        "filename": "../../src/utils.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "command-injection",
         "sink": "const child = exec(cmd, {",
-        "sink_lineno": 16,
-        "sink_function": "48"
+        "sink_lineno": 16
     },
     {
-        "filename": "../../src/utils.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, 'utf8', (err, data) => {",
-        "sink_lineno": 112,
-        "sink_function": "387"
+        "sink_lineno": 112
     },
     {
-        "filename": "../../src/utils.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "return yaml.safeLoad(fs.readFileSync(file, 'utf8'));",
-        "sink_lineno": 125,
-        "sink_function": "401"
+        "sink_lineno": 125
     },
     {
-        "filename": "../../src/utils.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(file, yaml.safeDump(data), () => {",
-        "sink_lineno": 136,
-        "sink_function": "439"
+        "sink_lineno": 136
     },
     {
-        "filename": "../../src/utils.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(file, yaml.safeDump(data));",
-        "sink_lineno": 147,
-        "sink_function": "460"
+        "sink_lineno": 147
     }
 ]

@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-94/mongoosemask_0.0.6/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "eval(path);",
+        "sink_lineno": 170
+    }
+]

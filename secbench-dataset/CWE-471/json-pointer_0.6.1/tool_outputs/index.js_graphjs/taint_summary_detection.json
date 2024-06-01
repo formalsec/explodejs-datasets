@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/json-pointer_0.6.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[nextTok] = value;",
-        "sink_lineno": 98,
-        "sink_function": "402"
+        "sink_lineno": 98
     }
 ]

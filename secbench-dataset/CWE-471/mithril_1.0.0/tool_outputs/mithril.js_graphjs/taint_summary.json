@@ -1,11 +1,10 @@
 [
     {
         "type": "VNewCall",
-        "filename": "../../src/mithril.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
         "vuln_type": "prototype-pollution",
         "sink": "cursor[level] = isValue ? value : isNumber ? [] : {}",
         "sink_lineno": 982,
-        "sink_function": "9820",
         "source": "new module.exports",
         "tainted_params": [
             "selector"
@@ -17,11 +16,10 @@
         },
         "returns": {
             "source": ".parseQueryString",
-            "param_types": {
+            "params_types": {
                 "string": {
                     "_union": [
                         "array",
-                        "number",
                         "string"
                     ]
                 }
@@ -33,16 +31,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "11436.m-o142",
-                "fn_id": "222",
-                "source_fn_id": "222"
+                "fn_name": "26185.m-o2852",
+                "fn_id": "14971",
+                "source_fn_id": "14971"
             },
             {
                 "type": "Method",
                 "prop": "parseQueryString",
-                "fn_name": "11436.parseQueryString-o112",
-                "fn_id": "9511",
-                "source_fn_id": "9511"
+                "fn_name": "26185.parseQueryString-o2820",
+                "fn_id": "24260",
+                "source_fn_id": "24260"
             }
         ]
     }

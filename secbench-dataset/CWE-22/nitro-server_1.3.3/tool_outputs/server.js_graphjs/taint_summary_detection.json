@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/nitro-server_1.3.3/src/server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filepath, 'binary', function(err, file) {",
+        "sink_lineno": 148
+    }
+]

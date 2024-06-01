@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/pathval_1.1.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "tempObj[propName] = val;",
         "sink_lineno": 158,
-        "sink_function": "308",
         "source": "module.exports.setPathValue",
         "tainted_params": [
             "obj",
@@ -13,22 +12,17 @@
             "val"
         ],
         "params_types": {
-            "obj": "object",
-            "path": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
+            "obj": "undefined",
+            "path": "string",
             "val": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "setPathValue",
-                "fn_name": "661.setPathValue-o30",
-                "fn_id": 609,
-                "source_fn_id": 609
+                "fn_name": "1503.setPathValue-o176",
+                "fn_id": 1451,
+                "source_fn_id": 1451
             }
         ]
     }

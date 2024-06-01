@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/thi.ng-egf_0.3.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(path$1).toString(), $ctx);",
         "sink_lineno": 352,
-        "sink_function": "3066",
         "source": "module.exports.$parseFile",
         "tainted_params": [
             "path$1",
@@ -12,26 +12,15 @@
         ],
         "params_types": {
             "path$1": "string",
-            "ctx": {
-                "opts": "any",
-                "cwd": "any",
-                "file": "any",
-                "files": "any",
-                "nodes": "array",
-                "index": "any",
-                "tags": "any",
-                "defaultTag": "any",
-                "prefixes": "object",
-                "logger": "any"
-            }
+            "ctx": "object"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "$parseFile",
-                "fn_name": "3259.$parseFile-o155",
-                "fn_id": "2986",
-                "source_fn_id": "2986"
+                "fn_name": "7585.$parseFile-o1072",
+                "fn_id": "7312",
+                "source_fn_id": "7312"
             }
         ]
     }

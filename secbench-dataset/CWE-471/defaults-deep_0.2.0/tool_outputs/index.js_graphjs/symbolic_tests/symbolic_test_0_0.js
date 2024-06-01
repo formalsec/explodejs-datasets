@@ -37,7 +37,7 @@ module.exports = function defaultsDeep(o, objects) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let o = {  };
+let o = esl_symbolic.any("o");
 let objects = esl_symbolic.any("objects");
 module.exports(o, objects);
 console.log(({}).toString);

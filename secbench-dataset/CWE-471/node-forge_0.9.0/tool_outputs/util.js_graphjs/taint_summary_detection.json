@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/util.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/node-forge_0.9.0/src/util.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[next] = value;",
-        "sink_lineno": 2536,
-        "sink_function": "10026"
+        "sink_lineno": 2536
     }
 ]

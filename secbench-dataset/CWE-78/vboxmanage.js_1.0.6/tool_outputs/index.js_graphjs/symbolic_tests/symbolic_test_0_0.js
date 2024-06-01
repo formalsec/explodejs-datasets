@@ -644,6 +644,9 @@ module.exports = VBoxManage;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let command = [ esl_symbolic.any("command0") ];
+let command =
+  { 0: esl_symbolic.any("0")
+  , length: esl_symbolic.any("length")
+  , *: esl_symbolic.any("*") };
 let options = { *: esl_symbolic.any("*") };
 module.exports.manage(command, options);

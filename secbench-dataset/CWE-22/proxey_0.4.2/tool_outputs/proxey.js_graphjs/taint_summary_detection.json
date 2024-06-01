@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/proxey_0.4.2/src/proxey.js",
+        "vuln_type": "path-traversal",
+        "sink": "var documentFile = fs.readFileSync(top.rootFolder + '/' + template);",
+        "sink_lineno": 157
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/proxey_0.4.2/src/proxey.js",
+        "vuln_type": "path-traversal",
+        "sink": "var resourceFile = fs.readFileSync(top.rootFolder + resource);",
+        "sink_lineno": 191
+    }
+]

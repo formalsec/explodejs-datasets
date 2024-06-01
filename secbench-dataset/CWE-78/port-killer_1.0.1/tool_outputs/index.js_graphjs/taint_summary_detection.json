@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/port-killer_1.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "pid = execSync(`lsof -t -i:${port}`)",
-        "sink_lineno": 19,
-        "sink_function": "48"
+        "sink_lineno": 19
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/port-killer_1.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "pid.forEach(proc => execSync(`kill -9 ${proc}`));",
-        "sink_lineno": 26,
-        "sink_function": "87"
+        "sink_lineno": 26
     }
 ]

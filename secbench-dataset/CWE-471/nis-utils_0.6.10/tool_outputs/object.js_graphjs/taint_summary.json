@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/object.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/nis-utils_0.6.10/src/object.js",
         "vuln_type": "prototype-pollution",
-        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
-        "sink_lineno": 168,
-        "sink_function": "851",
+        "sink": "else current[parts[i]] = value;",
+        "sink_lineno": 166,
         "source": "module.exports.deepSet",
         "tainted_params": [
             "parent",
@@ -14,13 +13,13 @@
             "mode"
         ],
         "params_types": {
-            "parent": "object",
-            "namespace": {
+            "parent": {
                 "_union": [
-                    "number",
-                    "string"
+                    "object",
+                    "array"
                 ]
             },
+            "namespace": "string",
             "value": {
                 "_union": [
                     "array",
@@ -34,19 +33,18 @@
             {
                 "type": "Method",
                 "prop": "deepSet",
-                "fn_name": "1754.setObjValue-o21",
-                "fn_id": "732",
-                "source_fn_id": "732"
+                "fn_name": "3983.setObjValue-o398",
+                "fn_id": "2961",
+                "source_fn_id": "2961"
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/object.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/nis-utils_0.6.10/src/object.js",
         "vuln_type": "prototype-pollution",
-        "sink": "else current[parts[i]] = value;",
-        "sink_lineno": 166,
-        "sink_function": "829",
+        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
+        "sink_lineno": 168,
         "source": "module.exports.deepSet",
         "tainted_params": [
             "parent",
@@ -55,13 +53,13 @@
             "mode"
         ],
         "params_types": {
-            "parent": "object",
-            "namespace": {
+            "parent": {
                 "_union": [
-                    "number",
-                    "string"
+                    "object",
+                    "array"
                 ]
             },
+            "namespace": "string",
             "value": {
                 "_union": [
                     "array",
@@ -75,9 +73,9 @@
             {
                 "type": "Method",
                 "prop": "deepSet",
-                "fn_name": "1754.setObjValue-o21",
-                "fn_id": "732",
-                "source_fn_id": "732"
+                "fn_name": "3983.setObjValue-o398",
+                "fn_id": "2961",
+                "source_fn_id": "2961"
             }
         ]
     }

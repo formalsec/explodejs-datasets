@@ -273,28 +273,10 @@ return exports;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let instance = {  };
-let schema =
-  { type: {  }
-  , name: esl_symbolic.any("name")
-  , readonly: esl_symbolic.any("readonly")
-  , 'extends': esl_symbolic.any("'extends'")
-  , required: esl_symbolic.any("required")
-  , disallow: {  }
-  , items: {  }
-  , minItems: esl_symbolic.string("minItems")
-  , maxItems: esl_symbolic.string("maxItems")
-  , properties: {  }
-  , additionalProperties: esl_symbolic.any("additionalProperties")
-  , pattern: esl_symbolic.any("pattern")
-  , maxLength: esl_symbolic.string("maxLength")
-  , minLength: esl_symbolic.string("minLength")
-  , minimum: esl_symbolic.any("minimum")
-  , maximum: esl_symbolic.any("maximum")
-  , 'enum': {  }
-  , maxDecimal: esl_symbolic.string("maxDecimal") };
+let instance = { $schema: esl_symbolic.any("$schema") };
+let schema = esl_symbolic.function("schema");
 let options =
-  { changing: esl_symbolic.number("changing")
+  { changing: esl_symbolic.any("changing")
   , coerce: esl_symbolic.any("coerce")
   , existingOnly: esl_symbolic.any("existingOnly")
   , filter: esl_symbolic.any("filter") };

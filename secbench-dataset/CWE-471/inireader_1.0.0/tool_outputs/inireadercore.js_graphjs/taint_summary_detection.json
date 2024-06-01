@@ -1,37 +1,26 @@
 [
     {
-        "filename": "../../src/inireadercore.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, function fileReadCb(err, data) {",
-        "sink_lineno": 83,
-        "sink_function": "169"
+        "sink_lineno": 83
     },
     {
-        "filename": "../../src/inireadercore.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
         "vuln_type": "path-traversal",
         "sink": "data = fs.readFileSync(file);",
-        "sink_lineno": 91,
-        "sink_function": "179"
+        "sink_lineno": 91
     },
     {
-        "filename": "../../src/inireadercore.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(file, output, function writeFile(err) {",
-        "sink_lineno": 508,
-        "sink_function": "1643"
+        "sink_lineno": 508
     },
     {
-        "filename": "../../src/inireadercore.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(file, output);",
-        "sink_lineno": 516,
-        "sink_function": "1654"
-    },
-    {
-        "filename": "../../src/inireadercore.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "out[key] = sourceObj[key];",
-        "sink_lineno": 133,
-        "sink_function": "368"
+        "sink_lineno": 516
     }
 ]

@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/oled-exp.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + ' power ' + mode);",
         "sink_lineno": 34,
-        "sink_function": "58",
         "source": "module.exports.power",
         "tainted_params": [
             "mode"
@@ -16,18 +16,18 @@
             {
                 "type": "Method",
                 "prop": "power",
-                "fn_name": "277.v12-o11",
-                "fn_id": "47",
-                "source_fn_id": "47"
+                "fn_name": "689.v54-o118",
+                "fn_id": "459",
+                "source_fn_id": "459"
             }
         ]
     },
     {
-        "filename": "../../src/oled-exp.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + ' cursor ' + row + ',' + col);",
         "sink_lineno": 60,
-        "sink_function": "107",
         "source": "module.exports.cursor",
         "tainted_params": [
             "row",
@@ -41,18 +41,18 @@
             {
                 "type": "Method",
                 "prop": "cursor",
-                "fn_name": "277.v22-o19",
-                "fn_id": "87",
-                "source_fn_id": "87"
+                "fn_name": "689.v64-o126",
+                "fn_id": "499",
+                "source_fn_id": "499"
             }
         ]
     },
     {
-        "filename": "../../src/oled-exp.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + ' invert ' + mode);",
         "sink_lineno": 69,
-        "sink_function": "125",
         "source": "module.exports.invert",
         "tainted_params": [
             "mode"
@@ -64,18 +64,18 @@
             {
                 "type": "Method",
                 "prop": "invert",
-                "fn_name": "277.v26-o22",
-                "fn_id": "114",
-                "source_fn_id": "114"
+                "fn_name": "689.v68-o129",
+                "fn_id": "526",
+                "source_fn_id": "526"
             }
         ]
     },
     {
-        "filename": "../../src/oled-exp.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + cursor + ' write \"' + string + '\"');",
         "sink_lineno": 82,
-        "sink_function": "190",
         "source": "module.exports.write",
         "tainted_params": [
             "string",
@@ -91,18 +91,18 @@
             {
                 "type": "Method",
                 "prop": "write",
-                "fn_name": "277.v38-o27",
-                "fn_id": "132",
-                "source_fn_id": "132"
+                "fn_name": "689.v80-o134",
+                "fn_id": "544",
+                "source_fn_id": "544"
             }
         ]
     },
     {
-        "filename": "../../src/oled-exp.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + ' write ' + direction);",
         "sink_lineno": 91,
-        "sink_function": "208",
         "source": "module.exports.scroll",
         "tainted_params": [
             "direction"
@@ -114,9 +114,9 @@
             {
                 "type": "Method",
                 "prop": "scroll",
-                "fn_name": "277.v42-o30",
-                "fn_id": "197",
-                "source_fn_id": "197"
+                "fn_name": "689.v84-o137",
+                "fn_id": "609",
+                "source_fn_id": "609"
             }
         ]
     }

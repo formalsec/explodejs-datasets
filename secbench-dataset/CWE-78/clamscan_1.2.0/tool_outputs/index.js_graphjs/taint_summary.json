@@ -1,19 +1,18 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-78/clamscan_1.2.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "const stream = fs.createReadStream(file);",
         "sink_lineno": 846,
-        "sink_function": "5965",
         "source": "new module.exports",
         "tainted_params": [],
         "params_types": {},
         "returns": {
             "source": ".is_infected",
-            "param_types": {
+            "params_types": {
                 "file": {
                     "_union": [
-                        "array",
                         "bool",
                         "object",
                         "string"
@@ -35,37 +34,32 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "12122.NodeClam-o91",
-                "fn_id": "175",
-                "source_fn_id": "175"
+                "fn_name": "27432.NodeClam-o2761",
+                "fn_id": "15485",
+                "source_fn_id": "15485"
             },
             {
                 "type": "Method",
                 "prop": "is_infected",
-                "fn_name": "12122.is_infected-o90",
-                "fn_id": 4856,
-                "source_fn_id": 4856
+                "fn_name": "27432.is_infected-o2760",
+                "fn_id": 20166,
+                "source_fn_id": 20166
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-78/clamscan_1.2.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "results.concat(await Promise.all(chunk.map(file => this.scan_stream(fs.createReadStream(file)))));",
         "sink_lineno": 1587,
-        "sink_function": "11185",
         "source": "new module.exports",
         "tainted_params": [],
         "params_types": {},
         "returns": {
             "source": ".scan_dir",
-            "param_types": {
-                "path": {
-                    "_union": [
-                        "object",
-                        "string"
-                    ]
-                },
+            "params_types": {
+                "path": "string",
                 "end_cb": "function",
                 "file_cb": "function"
             },
@@ -78,16 +72,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "12122.NodeClam-o115",
-                "fn_id": "175",
-                "source_fn_id": "175"
+                "fn_name": "27432.NodeClam-o2785",
+                "fn_id": "15485",
+                "source_fn_id": "15485"
             },
             {
                 "type": "Method",
                 "prop": "scan_dir",
-                "fn_name": "12122.scan_dir-o114",
-                "fn_id": 9688,
-                "source_fn_id": 9688
+                "fn_name": "27432.scan_dir-o2784",
+                "fn_id": 24998,
+                "source_fn_id": 24998
             }
         ]
     }

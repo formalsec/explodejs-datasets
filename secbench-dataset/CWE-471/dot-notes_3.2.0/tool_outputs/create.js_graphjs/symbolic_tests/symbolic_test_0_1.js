@@ -70,7 +70,7 @@ module.exports = create;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let obj = {  };
+let obj = [ esl_symbolic.string("obj0") ];
 let str = esl_symbolic.string("str");
 let val = esl_symbolic.any("val");
 module.exports(obj, str, val);

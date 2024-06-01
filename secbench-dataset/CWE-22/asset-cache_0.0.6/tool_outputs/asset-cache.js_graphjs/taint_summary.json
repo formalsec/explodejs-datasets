@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/asset-cache_0.0.6/src/asset-cache.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(file, function(err, data) {",
+        "sink_lineno": 31,
+        "source": "module.exports.loadFile",
+        "tainted_params": [
+            "file",
+            "ifNoneMatch",
+            "callback"
+        ],
+        "params_types": {
+            "file": "string",
+            "ifNoneMatch": "any",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "loadFile",
+                "fn_name": "977.loadFile-o124",
+                "fn_id": 617,
+                "source_fn_id": 617
+            }
+        ]
+    }
+]

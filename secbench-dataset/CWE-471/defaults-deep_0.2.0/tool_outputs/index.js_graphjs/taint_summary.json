@@ -1,26 +1,25 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/defaults-deep_0.2.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "o[key] = value;",
         "sink_lineno": 20,
-        "sink_function": "54",
         "source": "module.exports",
         "tainted_params": [
             "o",
             "objects"
         ],
         "params_types": {
-            "o": "object",
+            "o": "any",
             "objects": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "138.defaultsDeep-o6",
-                "fn_id": 11,
-                "source_fn_id": 11
+                "fn_name": "333.defaultsDeep-o49",
+                "fn_id": 206,
+                "source_fn_id": 206
             }
         ]
     }

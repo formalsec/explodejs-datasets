@@ -815,6 +815,6 @@ esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let obj = {  };
 let path = esl_symbolic.string("path");
-let value = {  };
+let value = esl_symbolic.function("value");
 module.exports.setPath(obj, path, value);
 console.log(({}).toString);

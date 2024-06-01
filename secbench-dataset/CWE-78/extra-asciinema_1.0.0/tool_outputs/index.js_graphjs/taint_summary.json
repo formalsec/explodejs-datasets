@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(`asciinema cat ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
         "sink_lineno": 11,
-        "sink_function": "41",
         "source": "module.exports.cat",
         "tainted_params": [
             "f",
@@ -18,18 +18,18 @@
             {
                 "type": "Method",
                 "prop": "cat",
-                "fn_name": "1022.cat-o5",
-                "fn_id": 5,
-                "source_fn_id": 5
+                "fn_name": "2429.cat-o301",
+                "fn_id": 1412,
+                "source_fn_id": 1412
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return cp1.execSync(`asciinema cat ${f}`, {encoding: 'utf8'});",
         "sink_lineno": 26,
-        "sink_function": "105",
         "source": "module.exports.catSync",
         "tainted_params": [
             "f"
@@ -41,18 +41,18 @@
             {
                 "type": "Method",
                 "prop": "catSync",
-                "fn_name": "1022.catSync-o9",
-                "fn_id": "94",
-                "source_fn_id": "94"
+                "fn_name": "2429.catSync-o306",
+                "fn_id": "1501",
+                "source_fn_id": "1501"
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp3.exec(recCmd(f, o), {encoding: 'utf8'}, (err) => {",
         "sink_lineno": 71,
-        "sink_function": "391",
         "source": "module.exports.rec",
         "tainted_params": [
             "f",
@@ -61,37 +61,25 @@
         ],
         "params_types": {
             "f": "string",
-            "o": {
-                "input": "string",
-                "command": "any",
-                "overwrite": "any",
-                "yes": "any",
-                "stdin": "any",
-                "append": "any",
-                "raw": "any",
-                "env": "any",
-                "title": "any",
-                "idleTimeLimit": "any",
-                "quiet": "any"
-            },
+            "o": "any",
             "fn": "function"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "rec",
-                "fn_name": "1022.rec-o22",
-                "fn_id": 324,
-                "source_fn_id": 324
+                "fn_name": "2429.rec-o323",
+                "fn_id": 1731,
+                "source_fn_id": 1731
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp4.execSync(recCmd(f, o), {encoding: 'utf8'});",
         "sink_lineno": 99,
-        "sink_function": "499",
         "source": "module.exports.recSync",
         "tainted_params": [
             "f",
@@ -99,110 +87,74 @@
         ],
         "params_types": {
             "f": "string",
-            "o": {
-                "input": "string",
-                "command": "any",
-                "overwrite": "any",
-                "yes": "any",
-                "stdin": "any",
-                "append": "any",
-                "raw": "any",
-                "env": "any",
-                "title": "any",
-                "idleTimeLimit": "any",
-                "quiet": "any"
-            }
+            "o": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "recSync",
-                "fn_name": "1022.recSync-o30",
-                "fn_id": "456",
-                "source_fn_id": "456"
+                "fn_name": "2429.recSync-o335",
+                "fn_id": "1863",
+                "source_fn_id": "1863"
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "var d = fs7.readFileSync(f, 'utf8');",
         "sink_lineno": 179,
-        "sink_function": "816",
         "source": "module.exports.retimeSync",
         "tainted_params": [
             "f",
             "o"
         ],
         "params_types": {
-            "f": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
-            "o": {
-                "input": "string",
-                "delay": "string",
-                "outputRate": "any",
-                "inputRate": "any",
-                "outputDelay": "string",
-                "inputDelay": "string"
-            }
+            "f": "string",
+            "o": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "retimeSync",
-                "fn_name": "1022.retimeSync-o44",
-                "fn_id": "812",
-                "source_fn_id": "812"
+                "fn_name": "2429.retimeSync-o351",
+                "fn_id": "2219",
+                "source_fn_id": "2219"
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs7.writeFileSync(f, d);",
         "sink_lineno": 181,
-        "sink_function": "830",
         "source": "module.exports.retimeSync",
         "tainted_params": [
             "f",
             "o"
         ],
         "params_types": {
-            "f": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
-            "o": {
-                "input": "string",
-                "delay": "string",
-                "outputRate": "any",
-                "inputRate": "any",
-                "outputDelay": "string",
-                "inputDelay": "string"
-            }
+            "f": "string",
+            "o": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "retimeSync",
-                "fn_name": "1022.retimeSync-o44",
-                "fn_id": "812",
-                "source_fn_id": "812"
+                "fn_name": "2429.retimeSync-o351",
+                "fn_id": "2219",
+                "source_fn_id": "2219"
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp8.exec(`asciinema upload ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
         "sink_lineno": 193,
-        "sink_function": "887",
         "source": "module.exports.upload",
         "tainted_params": [
             "f",
@@ -216,18 +168,18 @@
             {
                 "type": "Method",
                 "prop": "upload",
-                "fn_name": "1022.upload-o49",
-                "fn_id": 844,
-                "source_fn_id": 844
+                "fn_name": "2429.upload-o357",
+                "fn_id": 2251,
+                "source_fn_id": 2251
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = cp9.execSync(`asciinema upload ${f}`, {encoding: 'utf8'});",
         "sink_lineno": 208,
-        "sink_function": "951",
         "source": "module.exports.uploadSync",
         "tainted_params": [
             "f"
@@ -239,9 +191,9 @@
             {
                 "type": "Method",
                 "prop": "uploadSync",
-                "fn_name": "1022.uploadSync-o53",
-                "fn_id": "940",
-                "source_fn_id": "940"
+                "fn_name": "2429.uploadSync-o362",
+                "fn_id": "2347",
+                "source_fn_id": "2347"
             }
         ]
     }

@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/ptest_1.0.0/src/server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, function(err, data) {",
+        "sink_lineno": 43
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/ptest_1.0.0/src/server.js",
+        "vuln_type": "code-injection",
+        "sink": "msg.result = eval( msg.data )",
+        "sink_lineno": 83
+    }
+]

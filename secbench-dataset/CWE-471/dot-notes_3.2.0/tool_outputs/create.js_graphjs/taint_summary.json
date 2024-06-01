@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/create.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/dot-notes_3.2.0/src/create.js",
         "vuln_type": "prototype-pollution",
         "sink": "tmp[keys[last]] = val;",
         "sink_lineno": 43,
-        "sink_function": "114",
         "source": "module.exports",
         "tainted_params": [
             "obj",
@@ -13,21 +12,21 @@
             "val"
         ],
         "params_types": {
-            "obj": "object",
-            "str": {
+            "obj": {
                 "_union": [
-                    "number",
-                    "string"
+                    "object",
+                    "array"
                 ]
             },
+            "str": "string",
             "val": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "159.create-o6",
-                "fn_id": "5",
-                "source_fn_id": "5"
+                "fn_name": "369.create-o46",
+                "fn_id": "215",
+                "source_fn_id": "215"
             }
         ]
     }

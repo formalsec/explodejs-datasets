@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/querymen_2.1.3/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "handlers[type][name] = fn;",
-        "sink_lineno": 46,
-        "sink_function": "207"
+        "sink_lineno": 46
     }
 ]

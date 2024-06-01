@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd).then((result) => {",
         "sink_lineno": 56,
-        "sink_function": "163",
         "source": "module.exports.ps",
         "tainted_params": [
             "condition",
@@ -14,41 +14,26 @@
         ],
         "params_types": {
             "condition": "object",
-            "extra": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
-            "keywords": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
-            "filterWaste": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            }
+            "extra": "string",
+            "keywords": "array",
+            "filterWaste": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "ps",
-                "fn_name": "1916.ps-o117",
-                "fn_id": 712,
-                "source_fn_id": 712
+                "fn_name": "4533.ps-o682",
+                "fn_id": 3329,
+                "source_fn_id": 3329
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd).then((result) => {",
         "sink_lineno": 404,
-        "sink_function": "1681",
         "source": "module.exports.kill",
         "tainted_params": [
             "pid",
@@ -67,18 +52,18 @@
             {
                 "type": "Method",
                 "prop": "kill",
-                "fn_name": "1916.kill-o133",
-                "fn_id": "1628",
-                "source_fn_id": "1628"
+                "fn_name": "4533.kill-o698",
+                "fn_id": "4245",
+                "source_fn_id": "4245"
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd).then((result) => {",
         "sink_lineno": 444,
-        "sink_function": "1836",
         "source": "module.exports.getSignalRaw",
         "tainted_params": [
             "signal"
@@ -86,7 +71,6 @@
         "params_types": {
             "signal": {
                 "_union": [
-                    "array",
                     "number",
                     "string"
                 ]
@@ -96,9 +80,9 @@
             {
                 "type": "Method",
                 "prop": "getSignalRaw",
-                "fn_name": "1916.getSignalRaw-o139",
-                "fn_id": "1808",
-                "source_fn_id": "1808"
+                "fn_name": "4533.getSignalRaw-o704",
+                "fn_id": "4425",
+                "source_fn_id": "4425"
             }
         ]
     }

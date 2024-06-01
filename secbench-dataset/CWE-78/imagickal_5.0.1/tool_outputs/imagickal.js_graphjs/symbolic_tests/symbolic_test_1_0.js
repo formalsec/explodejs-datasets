@@ -259,9 +259,8 @@ exports.setDefaults = function (opts) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let path = esl_symbolic.string("path");
-let options =
-  { format: [ esl_symbolic.string("format0") ]
-  , verifyImage: esl_symbolic.any("verifyImage") };
+let path = esl_symbolic.any("path");
+let options = { format: {  }
+              , verifyImage: esl_symbolic.any("verifyImage") };
 let callback = esl_symbolic.any("callback");
 module.exports.identify(path, options, callback);

@@ -118,6 +118,6 @@ esl_symbolic.sealProperties(Object.prototype);
 let obj = {  };
 let path = esl_symbolic.string("path");
 let value = esl_symbolic.any("value");
-let __res = {  };
+let __res = esl_symbolic.string("__res");
 module.exports(obj, path, value, __res);
 console.log(({}).toString);

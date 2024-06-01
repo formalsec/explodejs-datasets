@@ -35,6 +35,6 @@ Object.defineProperty(module.exports, "__esModule", { value: true });
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let objects = esl_symbolic.polluted_object(2);
+let objects = [ esl_symbolic.any("objects0") ];
 module.exports(objects);
 console.log(({}).toString);

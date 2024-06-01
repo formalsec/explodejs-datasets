@@ -1,17 +1,16 @@
 [
     {
         "type": "VNewCall",
-        "filename": "../../src/parser.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/ion-parser_0.5.2/src/parser.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, (err, data) => {",
         "sink_lineno": 750,
-        "sink_function": "3124",
         "source": "new module.exports",
         "tainted_params": [],
         "params_types": {},
         "returns": {
             "source": ".parseFile",
-            "param_types": {
+            "params_types": {
                 "file": "string",
                 "cb": "function"
             },
@@ -23,32 +22,31 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "3160.ION-o96",
-                "fn_id": "3020",
-                "source_fn_id": "3020"
+                "fn_name": "7238.ION-o797",
+                "fn_id": "7098",
+                "source_fn_id": "7098"
             },
             {
                 "type": "Method",
                 "prop": "parseFile",
-                "fn_name": "3160.v362-o95",
-                "fn_id": "3067",
-                "source_fn_id": "3067"
+                "fn_name": "7238.v724-o796",
+                "fn_id": "7145",
+                "source_fn_id": "7145"
             }
         ]
     },
     {
         "type": "VNewCall",
-        "filename": "../../src/parser.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/ion-parser_0.5.2/src/parser.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(file))",
         "sink_lineno": 762,
-        "sink_function": "3134",
         "source": "new module.exports",
         "tainted_params": [],
         "params_types": {},
         "returns": {
             "source": ".parseFile",
-            "param_types": {
+            "params_types": {
                 "file": "string",
                 "cb": "function"
             },
@@ -60,16 +58,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "3160.ION-o96",
-                "fn_id": "3020",
-                "source_fn_id": "3020"
+                "fn_name": "7238.ION-o797",
+                "fn_id": "7098",
+                "source_fn_id": "7098"
             },
             {
                 "type": "Method",
                 "prop": "parseFile",
-                "fn_name": "3160.v362-o95",
-                "fn_id": "3067",
-                "source_fn_id": "3067"
+                "fn_name": "7238.v724-o796",
+                "fn_id": "7145",
+                "source_fn_id": "7145"
             }
         ]
     }

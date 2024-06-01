@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "code-injection",
+        "sink": "eval('constructor = function ('+args+') {'+inner_code+'};');",
+        "sink_lineno": 26
+    }
+]

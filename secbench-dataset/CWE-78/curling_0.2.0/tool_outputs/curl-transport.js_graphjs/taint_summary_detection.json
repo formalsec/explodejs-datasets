@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/curl-transport.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/curling_0.2.0/src/curl-transport.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"curl \" + command, function (error, stdout, stderr) {",
-        "sink_lineno": 56,
-        "sink_function": "367"
+        "sink_lineno": 56
     }
 ]

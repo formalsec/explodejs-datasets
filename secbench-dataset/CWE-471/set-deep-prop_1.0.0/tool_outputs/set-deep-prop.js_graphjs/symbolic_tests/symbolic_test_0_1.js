@@ -25,8 +25,8 @@ module.exports = function setDeepProp(obj, path, value) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let obj = {  };
-let path = [ esl_symbolic.string("path0") ];
+let obj = [ esl_symbolic.string("obj0") ];
+let path = {  };
 let value = esl_symbolic.any("value");
 module.exports(obj, path, value);
 console.log(({}).toString);

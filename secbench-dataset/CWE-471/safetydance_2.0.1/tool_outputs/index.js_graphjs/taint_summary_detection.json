@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/safetydance_2.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "io[a[a.length - 1]] = value;",
-        "sink_lineno": 215,
-        "sink_function": "1258"
+        "sink_lineno": 215
     }
 ]

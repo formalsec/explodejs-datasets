@@ -57,6 +57,6 @@ module.exports = linuxCmdline
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let cmdline = [ esl_symbolic.string("cmdline0") ];
+let cmdline = esl_symbolic.string("cmdline");
 module.exports(cmdline);
 console.log(({}).toString);

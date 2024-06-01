@@ -1,35 +1,32 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/vboxmanage.js_1.0.6/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(vBoxManageBinary + ' ' + command.join(' '), {}, function (err, stdout, stderr) {",
         "sink_lineno": 76,
-        "sink_function": "367",
         "source": "module.exports.manage",
         "tainted_params": [
             "command",
             "options"
         ],
         "params_types": {
-            "command": [
-                "any"
-            ],
+            "command": {
+                "0": "any",
+                "length": "any",
+                "*": "any"
+            },
             "options": {
-                "_union": [
-                    {
-                        "*": "any"
-                    },
-                    "array"
-                ]
+                "*": "any"
             }
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "manage",
-                "fn_name": "2346.v54-o25",
-                "fn_id": 163,
-                "source_fn_id": 163
+                "fn_name": "5643.v335-o840",
+                "fn_id": 3460,
+                "source_fn_id": 3460
             }
         ]
     }

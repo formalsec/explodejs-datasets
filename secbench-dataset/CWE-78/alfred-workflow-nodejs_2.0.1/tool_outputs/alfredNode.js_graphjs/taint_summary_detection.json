@@ -1,30 +1,26 @@
 [
     {
-        "filename": "../../src/alfredNode.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/alfred-workflow-nodejs_2.0.1/src/alfredNode.js",
         "vuln_type": "command-injection",
         "sink": "exec(setCommand, function(err, stdout, stderr) {",
-        "sink_lineno": 402,
-        "sink_function": "1469"
+        "sink_lineno": 402
     },
     {
-        "filename": "../../src/alfredNode.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/alfred-workflow-nodejs_2.0.1/src/alfredNode.js",
         "vuln_type": "command-injection",
         "sink": "exec(addCommand, function(err, stdout, stderr) {",
-        "sink_lineno": 406,
-        "sink_function": "1449"
+        "sink_lineno": 406
     },
     {
-        "filename": "../../src/alfredNode.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/alfred-workflow-nodejs_2.0.1/src/alfredNode.js",
         "vuln_type": "command-injection",
         "sink": "exec(getCommand, function(err, stdout, stderr) {",
-        "sink_lineno": 427,
-        "sink_function": "1517"
+        "sink_lineno": 427
     },
     {
-        "filename": "../../src/alfredNode.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/alfred-workflow-nodejs_2.0.1/src/alfredNode.js",
         "vuln_type": "command-injection",
         "sink": "exec(getCommand, function(err, stdout, stderr) {",
-        "sink_lineno": 445,
-        "sink_function": "1556"
+        "sink_lineno": 445
     }
 ]

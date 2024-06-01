@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpeg-sdk_0.0.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, (error, stdout, stderr) => {",
-        "sink_lineno": 9,
-        "sink_function": "38"
+        "sink_lineno": 9
     }
 ]

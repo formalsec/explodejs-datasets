@@ -221,12 +221,6 @@ exports.uploadSync = uploadSync;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: path-traversal
-let f = [ esl_symbolic.string("f0") ];
-let o =
-  { input: esl_symbolic.string("input")
-  , delay: esl_symbolic.string("delay")
-  , outputRate: esl_symbolic.any("outputRate")
-  , inputRate: esl_symbolic.any("inputRate")
-  , outputDelay: esl_symbolic.string("outputDelay")
-  , inputDelay: esl_symbolic.string("inputDelay") };
+let f = esl_symbolic.string("f");
+let o = esl_symbolic.any("o");
 module.exports.retimeSync(f, o);

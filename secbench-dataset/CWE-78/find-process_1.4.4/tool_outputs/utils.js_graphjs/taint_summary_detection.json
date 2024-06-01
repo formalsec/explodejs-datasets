@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/utils.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/find-process_1.4.4/src/utils.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(cmd, {",
-        "sink_lineno": 19,
-        "sink_function": "27"
+        "sink_lineno": 19
     },
     {
-        "filename": "../../src/utils.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/find-process_1.4.4/src/utils.js",
         "vuln_type": "command-injection",
         "sink": "return cp.spawn(cmd, args, options)",
-        "sink_lineno": 28,
-        "sink_function": "43"
+        "sink_lineno": 28
     }
 ]

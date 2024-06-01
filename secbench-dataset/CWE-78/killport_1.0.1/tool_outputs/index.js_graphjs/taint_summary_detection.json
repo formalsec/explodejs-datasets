@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/killport_1.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(cmd, function(err, stdout, stderr){",
-        "sink_lineno": 9,
-        "sink_function": "217"
+        "sink_lineno": 9
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/killport_1.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('kill ' + pid, function (err, stdout, stderr) {",
-        "sink_lineno": 29,
-        "sink_function": "186"
+        "sink_lineno": 29
     }
 ]

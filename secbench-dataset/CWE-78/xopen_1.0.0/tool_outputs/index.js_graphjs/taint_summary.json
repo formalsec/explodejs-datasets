@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/xopen_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(command + ' ' + filepath, (error, stdout, stderr) => {",
         "sink_lineno": 13,
-        "sink_function": "77",
         "source": "module.exports",
         "tainted_params": [
             "filepath"
@@ -15,9 +15,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "98.xopen-o16",
-                "fn_id": 41,
-                "source_fn_id": 41
+                "fn_name": "248.xopen-o57",
+                "fn_id": 191,
+                "source_fn_id": 191
             }
         ]
     }

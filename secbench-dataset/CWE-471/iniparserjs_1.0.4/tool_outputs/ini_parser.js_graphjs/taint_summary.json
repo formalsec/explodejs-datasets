@@ -1,75 +1,49 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/ini_parser.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
         "vuln_type": "path-traversal",
         "sink": "this.input = fs.readFileSync(path, encoding)",
         "sink_lineno": 17,
-        "sink_function": "71",
         "source": "module.exports",
         "tainted_params": [
             "path",
             "encoding"
         ],
         "params_types": {
-            "path": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            },
-            "encoding": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            }
+            "path": "string",
+            "encoding": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "933.IniParser-o11",
-                "fn_id": "15",
-                "source_fn_id": "15"
+                "fn_name": "2154.IniParser-o251",
+                "fn_id": "1236",
+                "source_fn_id": "1236"
             }
         ]
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/ini_parser.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.configs[curSection][curKey] = curValue",
         "sink_lineno": 63,
-        "sink_function": "402",
         "source": "module.exports",
         "tainted_params": [
             "path",
             "encoding"
         ],
         "params_types": {
-            "path": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            },
-            "encoding": {
-                "_union": [
-                    "array",
-                    "number",
-                    "string"
-                ]
-            }
+            "path": "string",
+            "encoding": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "933.IniParser-o11",
-                "fn_id": "15",
-                "source_fn_id": "15"
+                "fn_name": "2154.IniParser-o251",
+                "fn_id": "1236",
+                "source_fn_id": "1236"
             }
         ]
     }

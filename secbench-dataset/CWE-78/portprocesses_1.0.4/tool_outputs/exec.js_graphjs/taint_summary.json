@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/exec.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/portprocesses_1.0.4/src/exec.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, (err, stdout, stderr) => {",
         "sink_lineno": 5,
-        "sink_function": "46",
         "source": "module.exports",
         "tainted_params": [
             "cmd"
@@ -15,9 +15,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "67.v9-o5",
-                "fn_id": 9,
-                "source_fn_id": 9
+                "fn_name": "173.v18-o33",
+                "fn_id": 115,
+                "source_fn_id": 115
             }
         ]
     }

@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/object.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "child[lastKey] = value;",
         "sink_lineno": 391,
-        "sink_function": "1346",
         "source": "module.exports.set",
         "tainted_params": [
             "object",
@@ -13,7 +12,12 @@
             "value"
         ],
         "params_types": {
-            "object": "object",
+            "object": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
             "path": {
                 "_union": [
                     "object",
@@ -27,19 +31,18 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "1529.set-o39",
-                "fn_id": "1222",
-                "source_fn_id": "1222"
+                "fn_name": "3577.set-o448",
+                "fn_id": "3270",
+                "source_fn_id": "3270"
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/object.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
         "sink_lineno": 131,
-        "sink_function": "594",
         "source": "module.exports.deepExtend",
         "tainted_params": [
             "a",
@@ -58,19 +61,18 @@
             {
                 "type": "Method",
                 "prop": "deepExtend",
-                "fn_name": "1529.deepExtend-o12",
-                "fn_id": "450",
-                "source_fn_id": "450"
+                "fn_name": "3577.deepExtend-o421",
+                "fn_id": "2498",
+                "source_fn_id": "2498"
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/object.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
         "sink_lineno": 126,
-        "sink_function": "563",
         "source": "module.exports.deepExtend",
         "tainted_params": [
             "a",
@@ -89,9 +91,9 @@
             {
                 "type": "Method",
                 "prop": "deepExtend",
-                "fn_name": "1529.deepExtend-o12",
-                "fn_id": "450",
-                "source_fn_id": "450"
+                "fn_name": "3577.deepExtend-o421",
+                "fn_id": "2498",
+                "source_fn_id": "2498"
             }
         ]
     }

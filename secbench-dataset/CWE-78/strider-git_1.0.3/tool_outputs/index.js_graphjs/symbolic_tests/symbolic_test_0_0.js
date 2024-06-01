@@ -161,10 +161,8 @@ esl_symbolic.sealProperties(Object.prototype);
 let config =
   { auth:
       { type: esl_symbolic.any("type")
-      , privkey: esl_symbolic.any("privkey")
-      , username: esl_symbolic.any("username")
-      , password: esl_symbolic.any("password") }
-  , url: esl_symbolic.any("url") };
+      , privkey: esl_symbolic.any("privkey") }
+  };
 let privkey = esl_symbolic.any("privkey");
 let done = esl_symbolic.function("done");
 module.exports.getBranches(config, privkey, done);

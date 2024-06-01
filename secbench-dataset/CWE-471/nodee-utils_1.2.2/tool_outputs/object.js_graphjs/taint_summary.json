@@ -1,52 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/object.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
-        "sink_lineno": 212,
-        "sink_function": "1174",
-        "source": "module.exports.deepSet",
-        "tainted_params": [
-            "parent",
-            "key",
-            "value",
-            "mode"
-        ],
-        "params_types": {
-            "parent": "object",
-            "key": {
-                "_union": [
-                    "number",
-                    "string"
-                ]
-            },
-            "value": {
-                "_union": [
-                    "array",
-                    "object",
-                    "string"
-                ]
-            },
-            "mode": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "deepSet",
-                "fn_name": "2357.deepSet-o65",
-                "fn_id": "1055",
-                "source_fn_id": "1055"
-            }
-        ]
-    },
-    {
-        "type": "VFunPropOfExportedObj",
-        "filename": "../../src/object.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/nodee-utils_1.2.2/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "else current[parts[i]] = value;",
         "sink_lineno": 210,
-        "sink_function": "1152",
         "source": "module.exports.deepSet",
         "tainted_params": [
             "parent",
@@ -55,13 +13,13 @@
             "mode"
         ],
         "params_types": {
-            "parent": "object",
-            "key": {
+            "parent": {
                 "_union": [
-                    "number",
-                    "string"
+                    "object",
+                    "array"
                 ]
             },
+            "key": "string",
             "value": {
                 "_union": [
                     "array",
@@ -75,19 +33,58 @@
             {
                 "type": "Method",
                 "prop": "deepSet",
-                "fn_name": "2357.deepSet-o65",
-                "fn_id": "1055",
-                "source_fn_id": "1055"
+                "fn_name": "5369.deepSet-o595",
+                "fn_id": "4067",
+                "source_fn_id": "4067"
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/object.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/nodee-utils_1.2.2/src/object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
+        "sink_lineno": 212,
+        "source": "module.exports.deepSet",
+        "tainted_params": [
+            "parent",
+            "key",
+            "value",
+            "mode"
+        ],
+        "params_types": {
+            "parent": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
+            "key": "string",
+            "value": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            },
+            "mode": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "deepSet",
+                "fn_name": "5369.deepSet-o595",
+                "fn_id": "4067",
+                "source_fn_id": "4067"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-471/nodee-utils_1.2.2/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "else parentObj[key] = value;",
         "sink_lineno": 260,
-        "sink_function": "1619",
         "source": "module.exports.deepReplace",
         "tainted_params": [
             "parentObj",
@@ -103,9 +100,9 @@
             {
                 "type": "Method",
                 "prop": "deepReplace",
-                "fn_name": "2357.deepReplace-o70",
-                "fn_id": "1491",
-                "source_fn_id": "1491"
+                "fn_name": "5369.deepReplace-o600",
+                "fn_id": "4503",
+                "source_fn_id": "4503"
             }
         ]
     }

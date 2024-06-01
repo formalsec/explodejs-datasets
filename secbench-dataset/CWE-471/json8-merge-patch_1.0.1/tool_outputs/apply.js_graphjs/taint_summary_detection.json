@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/apply.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/json8-merge-patch_1.0.1/src/apply.js",
         "vuln_type": "prototype-pollution",
         "sink": "doc[k] = apply(doc[k], v);",
-        "sink_lineno": 25,
-        "sink_function": "105"
+        "sink_lineno": 25
     }
 ]

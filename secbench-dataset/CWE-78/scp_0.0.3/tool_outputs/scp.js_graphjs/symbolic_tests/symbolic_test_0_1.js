@@ -52,9 +52,9 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
 let options =
-  { port: esl_symbolic.string("port")
+  { port: [ esl_symbolic.string("port0") ]
   , file: [ esl_symbolic.string("file0") ]
-  , user: [ esl_symbolic.string("user0") ]
+  , user: esl_symbolic.string("user")
   , host: [ esl_symbolic.string("host0") ]
   , path: [ esl_symbolic.string("path0") ] };
 let cb = esl_symbolic.function("cb");

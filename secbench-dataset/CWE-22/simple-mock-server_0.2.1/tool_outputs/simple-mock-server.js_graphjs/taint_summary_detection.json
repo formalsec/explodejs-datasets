@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/simple-mock-server_0.2.1/src/simple-mock-server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, 'utf8', function (err, data) {",
+        "sink_lineno": 39
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/simple-mock-server_0.2.1/src/simple-mock-server.js",
+        "vuln_type": "path-traversal",
+        "sink": "var readStream = fs.createReadStream(filePath);",
+        "sink_lineno": 62
+    }
+]

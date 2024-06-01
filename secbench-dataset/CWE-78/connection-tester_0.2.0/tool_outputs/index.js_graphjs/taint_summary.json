@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/connection-tester_0.2.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const shellOut = shell.execSync(cmd).toString();",
         "sink_lineno": 15,
-        "sink_function": "48",
         "source": "module.exports.test",
         "tainted_params": [
             "host",
@@ -13,13 +13,12 @@
             "callback"
         ],
         "params_types": {
-            "host": "string",
-            "port": "string",
+            "host": "any",
+            "port": "any",
             "callbackOrConnectTimeout": {
                 "_union": [
                     "function",
-                    "number",
-                    "string"
+                    "number"
                 ]
             },
             "callback": "function"
@@ -28,9 +27,9 @@
             {
                 "type": "Method",
                 "prop": "test",
-                "fn_name": "392.v35-o24",
-                "fn_id": 292,
-                "source_fn_id": 292
+                "fn_name": "940.v71-o155",
+                "fn_id": 840,
+                "source_fn_id": 840
             }
         ]
     }

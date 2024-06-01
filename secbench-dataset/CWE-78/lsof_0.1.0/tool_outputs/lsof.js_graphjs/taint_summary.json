@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/lsof.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('lsof -p ' + pid, function(err, d) {",
         "sink_lineno": 9,
-        "sink_function": "183",
         "source": "module.exports.raw",
         "tainted_params": [
             "pid",
@@ -23,18 +23,18 @@
             {
                 "type": "Method",
                 "prop": "raw",
-                "fn_name": "733.v26-o5",
-                "fn_id": "5",
-                "source_fn_id": "5"
+                "fn_name": "1739.v118-o226",
+                "fn_id": "1011",
+                "source_fn_id": "1011"
             }
         ]
     },
     {
-        "filename": "../../src/lsof.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('lsof -i tcp:' + port, function(err, d) {",
         "sink_lineno": 37,
-        "sink_function": "389",
         "source": "module.exports.rawTcpPort",
         "tainted_params": [
             "port",
@@ -48,18 +48,18 @@
             {
                 "type": "Method",
                 "prop": "rawTcpPort",
-                "fn_name": "733.v53-o11",
-                "fn_id": "203",
-                "source_fn_id": "203"
+                "fn_name": "1739.v145-o232",
+                "fn_id": "1209",
+                "source_fn_id": "1209"
             }
         ]
     },
     {
-        "filename": "../../src/lsof.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('lsof -i udp:' + port, function(err, d) {",
         "sink_lineno": 71,
-        "sink_function": "551",
         "source": "module.exports.rawUdpPort",
         "tainted_params": [
             "port",
@@ -73,9 +73,9 @@
             {
                 "type": "Method",
                 "prop": "rawUdpPort",
-                "fn_name": "733.v74-o17",
-                "fn_id": "409",
-                "source_fn_id": "409"
+                "fn_name": "1739.v166-o238",
+                "fn_id": "1415",
+                "source_fn_id": "1415"
             }
         ]
     }

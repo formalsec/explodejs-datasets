@@ -1,0 +1,54 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/simple-mock-server_0.2.1/src/simple-mock-server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, 'utf8', function (err, data) {",
+        "sink_lineno": 39,
+        "source": "module.exports.start",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "port": "any",
+                "cors": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "start",
+                "fn_name": "1050.v97-o131",
+                "fn_id": 618,
+                "source_fn_id": 618
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/simple-mock-server_0.2.1/src/simple-mock-server.js",
+        "vuln_type": "path-traversal",
+        "sink": "var readStream = fs.createReadStream(filePath);",
+        "sink_lineno": 62,
+        "source": "module.exports.start",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "port": "any",
+                "cors": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "start",
+                "fn_name": "1050.v97-o131",
+                "fn_id": 618,
+                "source_fn_id": 618
+            }
+        ]
+    }
+]

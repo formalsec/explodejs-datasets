@@ -312,6 +312,7 @@ module.exports = wfLoader;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: code-injection
-let wf = { task: esl_symbolic.any("task")
-         , items: esl_symbolic.any("items") };
+let wf =
+  { task: esl_symbolic.any("task")
+  , items: { items: esl_symbolic.any("items") } };
 module.exports(wf);

@@ -1,11 +1,10 @@
 [
     {
         "type": "VNewCall",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/predefine_0.1.2/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "result[key] = merge(target[key], additional[key]);",
         "sink_lineno": 286,
-        "sink_function": "957",
         "source": "new module.exports",
         "tainted_params": [
             "obj",
@@ -22,15 +21,14 @@
         },
         "returns": {
             "source": ".merge",
-            "param_types": {
-                "target": "object",
-                "additional": {
+            "params_types": {
+                "target": {
                     "_union": [
                         "object",
-                        "array",
-                        "string"
+                        "array"
                     ]
-                }
+                },
+                "additional": "object"
             },
             "tainted_params": [
                 "target",
@@ -40,26 +38,25 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1086.predefine-o65",
-                "fn_id": "224",
-                "source_fn_id": "224"
+                "fn_name": "2525.predefine-o356",
+                "fn_id": "1663",
+                "source_fn_id": "1663"
             },
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "1086.merge-o55",
-                "fn_id": 843,
-                "source_fn_id": 843
+                "fn_name": "2525.merge-o345",
+                "fn_id": 2282,
+                "source_fn_id": 2282
             }
         ]
     },
     {
         "type": "VNewCall",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/predefine_0.1.2/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "result[key] = value;",
         "sink_lineno": 284,
-        "sink_function": "937",
         "source": "new module.exports",
         "tainted_params": [
             "obj",
@@ -76,15 +73,14 @@
         },
         "returns": {
             "source": ".merge",
-            "param_types": {
-                "target": "object",
-                "additional": {
+            "params_types": {
+                "target": {
                     "_union": [
                         "object",
-                        "array",
-                        "string"
+                        "array"
                     ]
-                }
+                },
+                "additional": "object"
             },
             "tainted_params": [
                 "target",
@@ -94,16 +90,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1086.predefine-o65",
-                "fn_id": "224",
-                "source_fn_id": "224"
+                "fn_name": "2525.predefine-o356",
+                "fn_id": "1663",
+                "source_fn_id": "1663"
             },
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "1086.merge-o55",
-                "fn_id": 843,
-                "source_fn_id": 843
+                "fn_name": "2525.merge-o345",
+                "fn_id": 2282,
+                "source_fn_id": 2282
             }
         ]
     }

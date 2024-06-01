@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/zhanglina_1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path,function(error,file){",
+        "sink_lineno": 10
+    }
+]

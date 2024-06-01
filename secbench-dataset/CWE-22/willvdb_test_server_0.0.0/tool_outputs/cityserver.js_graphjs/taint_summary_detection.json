@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(ROOT_DIR + \"/index.html\", function (err,data) {",
+        "sink_lineno": 37
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(ROOT_DIR + \"/city-weather.html\", function (err,data) {",
+        "sink_lineno": 47
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(ROOT_DIR + urlObj.pathname, function (err,data) {",
+        "sink_lineno": 57
+    }
+]

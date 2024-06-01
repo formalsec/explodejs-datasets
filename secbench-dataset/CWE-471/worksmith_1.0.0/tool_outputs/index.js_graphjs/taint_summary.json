@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/worksmith_1.0.0/src/index.js",
         "vuln_type": "code-injection",
         "sink": "wf = require(wf);",
         "sink_lineno": 26,
-        "sink_function": "84",
         "source": "module.exports",
         "tainted_params": [
             "wf"
@@ -13,15 +12,17 @@
         "params_types": {
             "wf": {
                 "task": "any",
-                "items": "any"
+                "items": {
+                    "items": "any"
+                }
             }
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1629.wfLoader-o21",
-                "fn_id": "57",
-                "source_fn_id": "57"
+                "fn_name": "3896.wfLoader-o551",
+                "fn_id": "2324",
+                "source_fn_id": "2324"
             }
         ]
     }

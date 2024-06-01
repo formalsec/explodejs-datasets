@@ -1,23 +1,20 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/thi.ng-egf_0.3.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.readFileSync(path$1).toString();",
-        "sink_lineno": 148,
-        "sink_function": "1223"
+        "sink_lineno": 148
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/thi.ng-egf_0.3.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "? child_process.execSync(`echo \"${body}\" | gpg --decrypt`).toString()",
-        "sink_lineno": 157,
-        "sink_function": "1270"
+        "sink_lineno": 157
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/thi.ng-egf_0.3.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(path$1).toString(), $ctx);",
-        "sink_lineno": 352,
-        "sink_function": "3066"
+        "sink_lineno": 352
     }
 ]

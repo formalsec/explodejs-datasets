@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/merge-deep2_3.0.5/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.clone(oldVal);",
         "sink_lineno": 45,
-        "sink_function": "196",
         "source": "module.exports",
         "tainted_params": [
             "orig",
@@ -18,19 +17,18 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "230.mergeDeep-o5",
-                "fn_id": 7,
-                "source_fn_id": 7
+                "fn_name": "546.mergeDeep-o75",
+                "fn_id": 323,
+                "source_fn_id": 323
             }
         ]
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/merge-deep2_3.0.5/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.union([], newVal, oldVal);",
         "sink_lineno": 43,
-        "sink_function": "183",
         "source": "module.exports",
         "tainted_params": [
             "orig",
@@ -43,19 +41,18 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "230.mergeDeep-o5",
-                "fn_id": 7,
-                "source_fn_id": 7
+                "fn_name": "546.mergeDeep-o75",
+                "fn_id": 323,
+                "source_fn_id": 323
             }
         ]
     },
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/merge-deep2_3.0.5/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = merge(newVal, oldVal);",
         "sink_lineno": 41,
-        "sink_function": "158",
         "source": "module.exports",
         "tainted_params": [
             "orig",
@@ -68,9 +65,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "230.mergeDeep-o5",
-                "fn_id": 7,
-                "source_fn_id": 7
+                "fn_name": "546.mergeDeep-o75",
+                "fn_id": 323,
+                "source_fn_id": 323
             }
         ]
     }

@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/objutil.cjs.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/objutil_2.17.3/src/objutil.cjs.js",
         "vuln_type": "prototype-pollution",
         "sink": "n[p] = value;",
         "sink_lineno": 142,
-        "sink_function": "920",
         "source": "module.exports.set",
         "tainted_params": [
             "obj",
@@ -14,7 +13,12 @@
             "descriptor"
         ],
         "params_types": {
-            "obj": "object",
+            "obj": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
             "path": {
                 "_union": [
                     "object",
@@ -23,20 +27,15 @@
                 ]
             },
             "value": "any",
-            "descriptor": {
-                "_union": [
-                    "object",
-                    "array"
-                ]
-            }
+            "descriptor": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "1941.set-o72",
-                "fn_id": "726",
-                "source_fn_id": "726"
+                "fn_name": "4609.set-o670",
+                "fn_id": "3394",
+                "source_fn_id": "3394"
             }
         ]
     }

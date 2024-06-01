@@ -28,7 +28,7 @@ module.exports = selflatex
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let src_file = [ esl_symbolic.string("src_file0") ];
+let src_file = esl_symbolic.string("src_file");
 let dest_file = esl_symbolic.string("dest_file");
 let callback = esl_symbolic.function("callback");
 module.exports(src_file, dest_file, callback);

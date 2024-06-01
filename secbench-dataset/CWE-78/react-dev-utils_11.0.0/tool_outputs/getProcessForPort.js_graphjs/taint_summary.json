@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/getProcessForPort.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
         "vuln_type": "command-injection",
         "sink": "return execSync('lsof -i:' + port + ' -P -t -sTCP:LISTEN', execOptions)",
         "sink_lineno": 28,
-        "sink_function": "61",
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -15,18 +15,18 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "273.getProcessForPort-o32",
-                "fn_id": 197,
-                "source_fn_id": 197
+                "fn_name": "672.getProcessForPort-o135",
+                "fn_id": 596,
+                "source_fn_id": 596
             }
         ]
     },
     {
-        "filename": "../../src/getProcessForPort.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
         "vuln_type": "code-injection",
         "sink": "return require(packagePath).name;",
         "sink_lineno": 37,
-        "sink_function": "100",
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -37,18 +37,18 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "273.getProcessForPort-o32",
-                "fn_id": 197,
-                "source_fn_id": 197
+                "fn_name": "672.getProcessForPort-o135",
+                "fn_id": 596,
+                "source_fn_id": 596
             }
         ]
     },
     {
-        "filename": "../../src/getProcessForPort.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
         "vuln_type": "command-injection",
         "sink": "var command = execSync(",
         "sink_lineno": 44,
-        "sink_function": "129",
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -59,18 +59,18 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "273.getProcessForPort-o32",
-                "fn_id": 197,
-                "source_fn_id": 197
+                "fn_name": "672.getProcessForPort-o135",
+                "fn_id": 596,
+                "source_fn_id": 596
             }
         ]
     },
     {
-        "filename": "../../src/getProcessForPort.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
         "vuln_type": "command-injection",
         "sink": "return execSync(",
         "sink_lineno": 60,
-        "sink_function": "184",
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -81,9 +81,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "273.getProcessForPort-o32",
-                "fn_id": 197,
-                "source_fn_id": 197
+                "fn_name": "672.getProcessForPort-o135",
+                "fn_id": 596,
+                "source_fn_id": 596
             }
         ]
     }

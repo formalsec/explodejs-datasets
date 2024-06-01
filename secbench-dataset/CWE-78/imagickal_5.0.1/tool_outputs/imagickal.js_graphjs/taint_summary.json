@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/imagickal.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
         "vuln_type": "command-injection",
         "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
         "sink_lineno": 77,
-        "sink_function": "312",
         "source": "module.exports.dimensions",
         "tainted_params": [
             "path",
@@ -18,18 +18,18 @@
             {
                 "type": "Method",
                 "prop": "dimensions",
-                "fn_name": "1125.v38-o36",
-                "fn_id": 198,
-                "source_fn_id": 198
+                "fn_name": "2647.v191-o374",
+                "fn_id": 1720,
+                "source_fn_id": 1720
             }
         ]
     },
     {
-        "filename": "../../src/imagickal.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
         "vuln_type": "command-injection",
         "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
         "sink_lineno": 127,
-        "sink_function": "625",
         "source": "module.exports.identify",
         "tainted_params": [
             "path",
@@ -37,15 +37,9 @@
             "callback"
         ],
         "params_types": {
-            "path": "string",
+            "path": "any",
             "options": {
-                "format": {
-                    "_union": [
-                        "array",
-                        "object",
-                        "string"
-                    ]
-                },
+                "format": "object",
                 "verifyImage": "any"
             },
             "callback": "any"
@@ -54,9 +48,9 @@
             {
                 "type": "Method",
                 "prop": "identify",
-                "fn_name": "1125.v84-o43",
-                "fn_id": 357,
-                "source_fn_id": 357
+                "fn_name": "2647.v237-o381",
+                "fn_id": 1879,
+                "source_fn_id": 1879
             }
         ]
     }

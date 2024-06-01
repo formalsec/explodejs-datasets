@@ -1,0 +1,57 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-22/servey_2.2.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const stream = Fs.createReadStream(data.path);",
+        "sink_lineno": 60,
+        "source": "new module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "port": "any",
+                "spa": "any",
+                "cors": "any",
+                "cache": "any",
+                "secure": "any",
+                "host": "any",
+                "file": "any",
+                "hostname": "any",
+                "folder": "any"
+            }
+        },
+        "returns": {
+            "source": ".request",
+            "params_types": {
+                "request": "any",
+                "response": "any",
+                "data": {
+                    "code": "any",
+                    "path": "any"
+                }
+            },
+            "tainted_params": [
+                "request",
+                "response",
+                "data"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1572.v102-o218",
+                "fn_id": "923",
+                "source_fn_id": "923"
+            },
+            {
+                "type": "Method",
+                "prop": "request",
+                "fn_name": "1572.v125-o217",
+                "fn_id": "1225",
+                "source_fn_id": "1225"
+            }
+        ]
+    }
+]

@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/bestzip.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/bestzip_2.1.6/src/bestzip.js",
         "vuln_type": "command-injection",
         "sink": "const zipProcess = cp.exec(command, {",
-        "sink_lineno": 27,
-        "sink_function": "116"
+        "sink_lineno": 27
     }
 ]

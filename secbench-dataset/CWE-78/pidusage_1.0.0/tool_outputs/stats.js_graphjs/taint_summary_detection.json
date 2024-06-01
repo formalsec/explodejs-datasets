@@ -1,23 +1,20 @@
 [
     {
-        "filename": "../../src/stats.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(p.join('/proc', ''+pid, 'stat'), 'utf8', function(err, infos) {",
-        "sink_lineno": 44,
-        "sink_function": "610"
+        "sink_lineno": 44
     },
     {
-        "filename": "../../src/stats.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
-        "sink_lineno": 108,
-        "sink_function": "744"
+        "sink_lineno": 108
     },
     {
-        "filename": "../../src/stats.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function(err, stdout, stderr) {",
-        "sink_lineno": 138,
-        "sink_function": "887"
+        "sink_lineno": 138
     }
 ]

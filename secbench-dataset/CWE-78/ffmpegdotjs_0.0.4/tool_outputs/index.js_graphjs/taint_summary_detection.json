@@ -1,79 +1,68 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 8,
-        "sink_function": "55"
+        "sink_lineno": 8
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 27,
-        "sink_function": "124"
+        "sink_lineno": 27
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 46,
-        "sink_function": "193"
+        "sink_lineno": 46
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 65,
-        "sink_function": "262"
+        "sink_lineno": 65
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 83,
-        "sink_function": "335"
+        "sink_lineno": 83
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 101,
-        "sink_function": "424"
+        "sink_lineno": 101
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 119,
-        "sink_function": "509"
+        "sink_lineno": 119
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 137,
-        "sink_function": "584"
+        "sink_lineno": 137
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 155,
-        "sink_function": "668"
+        "sink_lineno": 155
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 173,
-        "sink_function": "752"
+        "sink_lineno": 173
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
-        "sink_lineno": 191,
-        "sink_function": "828"
+        "sink_lineno": 191
     }
 ]

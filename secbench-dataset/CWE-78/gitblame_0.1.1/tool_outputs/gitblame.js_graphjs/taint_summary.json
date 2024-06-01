@@ -1,25 +1,25 @@
 [
     {
-        "filename": "../../src/gitblame.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/gitblame_0.1.1/src/gitblame.js",
         "vuln_type": "command-injection",
         "sink": "exec('git blame ' + filename, {cwd: dirname}, function (error, stdout, stderr) {",
         "sink_lineno": 15,
-        "sink_function": "94",
         "source": "module.exports",
         "tainted_params": [
             "file",
             "cb"
         ],
         "params_types": {
-            "file": "string",
+            "file": "any",
             "cb": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "109.v13-o7",
-                "fn_id": "13",
-                "source_fn_id": "13"
+                "fn_name": "268.v26-o48",
+                "fn_id": "172",
+                "source_fn_id": "172"
             }
         ]
     }

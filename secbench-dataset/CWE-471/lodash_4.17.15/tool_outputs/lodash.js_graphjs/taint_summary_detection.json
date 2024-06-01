@@ -1,9 +1,1 @@
-[
-    {
-        "filename": "../../src/lodash.js",
-        "vuln_type": "code-injection",
-        "sink": "return Function(importsKeys, sourceURL + 'return ' + source)",
-        "sink_lineno": 14870,
-        "sink_function": "35967"
-    }
-]
+[]

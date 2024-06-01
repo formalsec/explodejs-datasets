@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/asset-cache_0.0.6/src/asset-cache.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(file, function(err, data) {",
+        "sink_lineno": 31
+    }
+]

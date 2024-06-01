@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/portkiller_1.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`lsof -n -i4TCP:${port} | grep LISTEN`, (err, out, stderr) => {",
         "sink_lineno": 10,
-        "sink_function": "84",
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -15,18 +15,18 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "172.killer-o8",
-                "fn_id": 17,
-                "source_fn_id": 17
+                "fn_name": "427.killer-o71",
+                "fn_id": 272,
+                "source_fn_id": 272
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/portkiller_1.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`kill ${pid}`,(err, out, stderr) => {",
         "sink_lineno": 22,
-        "sink_function": "124",
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -37,9 +37,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "172.killer-o8",
-                "fn_id": 17,
-                "source_fn_id": 17
+                "fn_name": "427.killer-o71",
+                "fn_id": 272,
+                "source_fn_id": 272
             }
         ]
     }

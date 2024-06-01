@@ -1,0 +1,69 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/mcstatic_0.0.20/src/responseHandlers.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fstream = fs.createReadStream(file, {start: start, end: end});",
+        "sink_lineno": 12,
+        "source": "module.exports.handleRange",
+        "tainted_params": [
+            "res",
+            "file",
+            "stat"
+        ],
+        "params_types": {
+            "res": "any",
+            "file": "string",
+            "stat": {
+                "size": {
+                    "_union": [
+                        "number",
+                        "string"
+                    ]
+                }
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "handleRange",
+                "fn_name": "711.handleRange-o102",
+                "fn_id": "420",
+                "source_fn_id": "420"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/mcstatic_0.0.20/src/responseHandlers.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = fs.createReadStream(file);",
+        "sink_lineno": 23,
+        "source": "module.exports.handleDelete",
+        "tainted_params": [
+            "res",
+            "file",
+            "stat",
+            "next"
+        ],
+        "params_types": {
+            "res": {
+                "statusCode": "any"
+            },
+            "file": "string",
+            "stat": {
+                "size": "any"
+            },
+            "next": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "handleDelete",
+                "fn_name": "711.streamResponse-o112",
+                "fn_id": "580",
+                "source_fn_id": "580"
+            }
+        ]
+    }
+]

@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/curl-transport.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/curling_0.2.0/src/curl-transport.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"curl \" + command, function (error, stdout, stderr) {",
         "sink_lineno": 56,
-        "sink_function": "367",
         "source": "module.exports.run",
         "tainted_params": [
             "command",
@@ -18,9 +18,9 @@
             {
                 "type": "Method",
                 "prop": "run",
-                "fn_name": "734.v51-o9",
-                "fn_id": "334",
-                "source_fn_id": "334"
+                "fn_name": "1763.v139-o248",
+                "fn_id": "1363",
+                "source_fn_id": "1363"
             }
         ]
     }

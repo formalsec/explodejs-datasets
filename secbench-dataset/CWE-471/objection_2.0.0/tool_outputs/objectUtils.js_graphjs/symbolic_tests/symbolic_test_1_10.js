@@ -389,8 +389,8 @@ module.exports = {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let obj = {  };
-let path = [ esl_symbolic.string("path0") ];
-let value = {  };
+let obj = esl_symbolic.polluted_object(2);
+let path = esl_symbolic.string("path");
+let value = esl_symbolic.function("value");
 module.exports.set(obj, path, value);
 console.log(({}).toString);

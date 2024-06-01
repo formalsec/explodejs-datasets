@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/eslint-fixer_0.1.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "childProcess.exec(cmd, (error, stdout, stderr) => {",
-        "sink_lineno": 24,
-        "sink_function": "64"
+        "sink_lineno": 24
     }
 ]

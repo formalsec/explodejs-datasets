@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/geojson2kml_0.1.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(ogrCommand, function(err, stdout, stderr){",
         "sink_lineno": 6,
-        "sink_function": "42",
         "source": "module.exports",
         "tainted_params": [
             "inPath",
@@ -19,9 +19,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "56.v7-o8",
-                "fn_id": "13",
-                "source_fn_id": "13"
+                "fn_name": "146.v14-o34",
+                "fn_id": "103",
+                "source_fn_id": "103"
             }
         ]
     }

@@ -287,6 +287,6 @@ esl_symbolic.sealProperties(Object.prototype);
 let obj = {  };
 let path = {  };
 let value = esl_symbolic.any("value");
-let descriptor = {  };
+let descriptor = esl_symbolic.any("descriptor");
 module.exports.set(obj, path, value, descriptor);
 console.log(({}).toString);

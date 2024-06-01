@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/apex-publish-static-files_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const childProcess = execSync(",
-        "sink_lineno": 54,
-        "sink_function": "389"
+        "sink_lineno": 54
     }
 ]

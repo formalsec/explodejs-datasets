@@ -93,10 +93,6 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
 let command = esl_symbolic.string("command");
-let args =
-  { trim: esl_symbolic.function("trim")
-  , encoding: esl_symbolic.any("encoding") };
-let options =
-  { trim: esl_symbolic.function("trim")
-  , encoding: esl_symbolic.any("encoding") };
+let args = esl_symbolic.any("args");
+let options = esl_symbolic.any("options");
 module.exports.spawn(command, args, options);

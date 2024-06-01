@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/node-cxc_1.0.0/src/app.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(\"./\"+url,function(err,data){",
+        "sink_lineno": 24
+    }
+]

@@ -1,37 +1,32 @@
 [
     {
-        "filename": "../../src/publish.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
         "vuln_type": "path-traversal",
         "sink": "return writeFile(commitTextPath, commitText);",
-        "sink_lineno": 43,
-        "sink_function": "346"
+        "sink_lineno": 43
     },
     {
-        "filename": "../../src/publish.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
         "vuln_type": "path-traversal",
         "sink": "return writeFile(tagTextPath, tagMessageText);",
-        "sink_lineno": 48,
-        "sink_function": "381"
+        "sink_lineno": 48
     },
     {
-        "filename": "../../src/publish.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.execSync(\"git clone --quiet --depth 1 \" + gitRemoteUrl + \" \\\"\" + gitRepoDir + \"\\\"\", { stdio: 'inherit' });",
-        "sink_lineno": 92,
-        "sink_function": "777"
+        "sink_lineno": 92
     },
     {
-        "filename": "../../src/publish.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.execSync(\"git push --follow-tags --force origin HEAD \" + extraBranchNames, { cwd: gitRepoDir, stdio: 'inherit' });",
-        "sink_lineno": 138,
-        "sink_function": "1130"
+        "sink_lineno": 138
     },
     {
-        "filename": "../../src/publish.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.exec(command, options, function (error, stdout, stderr) {",
-        "sink_lineno": 198,
-        "sink_function": "1545"
+        "sink_lineno": 198
     }
 ]

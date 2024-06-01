@@ -1,0 +1,26 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-94/reduce-css-calc_1.2.0/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "result = eval(toEvaluate)",
+        "sink_lineno": 73,
+        "source": "module.exports",
+        "tainted_params": [
+            "value",
+            "decimalPrecision"
+        ],
+        "params_types": {
+            "value": "any",
+            "decimalPrecision": "number"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1121.reduceCSSCalc-o126",
+                "fn_id": 657,
+                "source_fn_id": 657
+            }
+        ]
+    }
+]

@@ -1,37 +1,38 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "ref[segment] = value;",
-        "sink_lineno": 221,
-        "sink_function": "964"
+        "sink_lineno": 221
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "res[segment] = exports.reach(source, sourcePath, options);",
-        "sink_lineno": 894,
-        "sink_function": "4541"
+        "sink_lineno": 894
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "newObj[key] = exports.clone(obj[key], seen);",
+        "sink_lineno": 78
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
-        "sink_lineno": 140,
-        "sink_function": "594"
+        "sink_lineno": 140
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
-        "sink_lineno": 137,
-        "sink_function": "581"
+        "sink_lineno": 137
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = exports.clone(value);",
-        "sink_lineno": 127,
-        "sink_function": "543"
+        "sink_lineno": 127
     }
 ]

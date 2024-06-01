@@ -1,0 +1,92 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, function (error, content) {",
+        "sink_lineno": 68,
+        "source": "module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "contentBase": {
+                    "contentBase": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "0": "any",
+                    "*": "any"
+                },
+                "host": "string",
+                "port": "any",
+                "ssl": "any",
+                "ssl_key": "any",
+                "ssl_cert": "any",
+                "ssl_ciphers": "any",
+                "customResponseHeaders": {
+                    "*": "any"
+                },
+                "verbose": "any",
+                "historyApiFallback": "any",
+                "open": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "2246.server-o290",
+                "fn_id": 1375,
+                "source_fn_id": 1375
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, function (error, content) {",
+        "sink_lineno": 130,
+        "source": "module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "contentBase": {
+                    "contentBase": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "0": "any",
+                    "*": "any"
+                },
+                "host": "string",
+                "port": "any",
+                "ssl": "any",
+                "ssl_key": "any",
+                "ssl_cert": "any",
+                "ssl_ciphers": "any",
+                "customResponseHeaders": {
+                    "*": "any"
+                },
+                "verbose": "any",
+                "historyApiFallback": "any",
+                "open": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "2246.server-o290",
+                "fn_id": 1375,
+                "source_fn_id": 1375
+            }
+        ]
+    }
+]

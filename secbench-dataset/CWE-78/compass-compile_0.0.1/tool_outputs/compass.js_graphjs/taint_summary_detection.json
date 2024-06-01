@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/compass.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/compass-compile_0.0.1/src/compass.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, function(error, stdout, stderr) {",
-        "sink_lineno": 25,
-        "sink_function": "155"
+        "sink_lineno": 25
     }
 ]

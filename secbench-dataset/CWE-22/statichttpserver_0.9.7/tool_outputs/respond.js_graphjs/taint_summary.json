@@ -1,0 +1,37 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-22/statichttpserver_0.9.7/src/respond.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.createReadStream(options.filePath).pipe(response);",
+        "sink_lineno": 28,
+        "source": "module.exports",
+        "tainted_params": [
+            "request",
+            "response"
+        ],
+        "params_types": {
+            "request": {
+                "options": {
+                    "headers": {
+                        "*": "any"
+                    },
+                    "mimeType": "any",
+                    "html": "any",
+                    "text": "any",
+                    "filePath": "any"
+                },
+                "method": "any"
+            },
+            "response": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "423.v58-o53",
+                "fn_id": 248,
+                "source_fn_id": 248
+            }
+        ]
+    }
+]

@@ -96,7 +96,7 @@ module.exports.parse = function(path, stdout, opts) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let path = esl_symbolic.string("path");
+let path = esl_symbolic.any("path");
 let opts = { timeout: esl_symbolic.any("timeout") };
 let cb = esl_symbolic.function("cb");
 module.exports(path, opts, cb);

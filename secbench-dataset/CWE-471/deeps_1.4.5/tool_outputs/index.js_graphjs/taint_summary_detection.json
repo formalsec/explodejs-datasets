@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/deeps_1.4.5/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (isObject(object) || (Array.isArray(object) && !Number.isNaN(keys[i]))) object[keys[i]] = value;",
+        "sink_lineno": 226
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/tinyserver2_0.5.2/src/tinyserver.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path.join(process.cwd(),myurl.pathname),function(err,data)",
+        "sink_lineno": 27
+    }
+]

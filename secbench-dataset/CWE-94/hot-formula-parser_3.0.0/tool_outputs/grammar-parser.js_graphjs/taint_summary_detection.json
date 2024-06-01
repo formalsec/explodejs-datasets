@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-94/hot-formula-parser_3.0.0/src/grammar-parser.js",
+        "vuln_type": "code-injection",
+        "sink": "var arr = eval(\"[\" + yytext + \"]\");",
+        "sink_lineno": 258
+    }
+]

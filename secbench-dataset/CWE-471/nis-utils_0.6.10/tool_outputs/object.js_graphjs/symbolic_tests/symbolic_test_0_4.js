@@ -296,7 +296,7 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let parent = {  };
-let namespace = esl_symbolic.number("namespace");
+let namespace = esl_symbolic.string("namespace");
 let value = esl_symbolic.string("value");
 let mode = esl_symbolic.any("mode");
 module.exports.deepSet(parent, namespace, value, mode);

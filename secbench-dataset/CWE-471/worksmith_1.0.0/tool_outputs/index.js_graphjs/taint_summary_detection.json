@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/worksmith_1.0.0/src/index.js",
         "vuln_type": "code-injection",
         "sink": "wf = require(wf);",
-        "sink_lineno": 26,
-        "sink_function": "84"
+        "sink_lineno": 26
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/worksmith_1.0.0/src/index.js",
         "vuln_type": "code-injection",
         "sink": "return require(taskFile);",
-        "sink_lineno": 94,
-        "sink_function": "451"
+        "sink_lineno": 94
     }
 ]

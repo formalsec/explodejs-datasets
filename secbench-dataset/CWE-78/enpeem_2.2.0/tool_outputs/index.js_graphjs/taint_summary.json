@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/enpeem_2.2.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var npm = exec(cmd, {cwd: options.dir});",
         "sink_lineno": 114,
-        "sink_function": "462",
         "source": "module.exports.install",
         "tainted_params": [
             "options",
@@ -27,18 +27,18 @@
             {
                 "type": "Method",
                 "prop": "install",
-                "fn_name": "513.v20-o9",
-                "fn_id": 21,
-                "source_fn_id": 21
+                "fn_name": "1192.v94-o153",
+                "fn_id": 700,
+                "source_fn_id": 700
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/enpeem_2.2.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var npm = exec(cmd, {cwd: options.dir});",
         "sink_lineno": 114,
-        "sink_function": "462",
         "source": "module.exports.update",
         "tainted_params": [
             "options",
@@ -58,9 +58,9 @@
             {
                 "type": "Method",
                 "prop": "update",
-                "fn_name": "513.v34-o13",
-                "fn_id": 141,
-                "source_fn_id": 141
+                "fn_name": "1192.v108-o157",
+                "fn_id": 820,
+                "source_fn_id": 820
             }
         ]
     }

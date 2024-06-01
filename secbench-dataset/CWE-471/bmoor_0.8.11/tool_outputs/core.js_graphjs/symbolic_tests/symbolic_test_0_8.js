@@ -361,6 +361,6 @@ esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let root = {  };
 let space = {  };
-let value = esl_symbolic.string("value");
+let value = esl_symbolic.number("value");
 module.exports.set(root, space, value);
 console.log(({}).toString);

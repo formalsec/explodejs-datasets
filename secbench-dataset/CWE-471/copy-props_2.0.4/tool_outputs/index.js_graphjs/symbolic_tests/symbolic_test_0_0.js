@@ -228,9 +228,9 @@ function isObject(v) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let src = esl_symbolic.polluted_object(2);
-let dst = {  };
-let fromto = {  };
+let src = esl_symbolic.any("src");
+let dst = esl_symbolic.any("dst");
+let fromto = [ esl_symbolic.string("fromto0") ];
 let converter = esl_symbolic.boolean("converter");
 let reverse = esl_symbolic.any("reverse");
 module.exports(src, dst, fromto, converter, reverse);

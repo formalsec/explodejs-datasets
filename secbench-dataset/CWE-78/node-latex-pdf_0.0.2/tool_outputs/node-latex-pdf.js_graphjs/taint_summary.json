@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/node-latex-pdf.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/node-latex-pdf_0.0.2/src/node-latex-pdf.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
         "sink_lineno": 10,
-        "sink_function": "137",
         "source": "module.exports",
         "tainted_params": [
             "src_file",
@@ -12,30 +12,25 @@
             "callback"
         ],
         "params_types": {
-            "src_file": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
+            "src_file": "string",
             "dest_file": "string",
             "callback": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "151.selflatex-o10",
-                "fn_id": "21",
-                "source_fn_id": "21"
+                "fn_name": "372.selflatex-o67",
+                "fn_id": "242",
+                "source_fn_id": "242"
             }
         ]
     },
     {
-        "filename": "../../src/node-latex-pdf.js",
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-78/node-latex-pdf_0.0.2/src/node-latex-pdf.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
         "sink_lineno": 15,
-        "sink_function": "128",
         "source": "module.exports",
         "tainted_params": [
             "src_file",
@@ -43,21 +38,16 @@
             "callback"
         ],
         "params_types": {
-            "src_file": {
-                "_union": [
-                    "array",
-                    "string"
-                ]
-            },
+            "src_file": "string",
             "dest_file": "string",
             "callback": "function"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "151.selflatex-o10",
-                "fn_id": 21,
-                "source_fn_id": 21
+                "fn_name": "372.selflatex-o67",
+                "fn_id": 242,
+                "source_fn_id": 242
             }
         ]
     }

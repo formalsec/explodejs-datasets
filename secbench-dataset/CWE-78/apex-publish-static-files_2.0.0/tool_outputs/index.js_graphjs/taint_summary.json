@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/apex-publish-static-files_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const childProcess = execSync(",
         "sink_lineno": 54,
-        "sink_function": "389",
         "source": "module.exports.publish",
         "tainted_params": [
             "opts"
@@ -12,7 +12,7 @@
         "params_types": {
             "opts": {
                 "connectString": "string",
-                "directory": "string",
+                "directory": "any",
                 "appID": "string",
                 "destination": "string",
                 "pluginName": "string",
@@ -23,9 +23,9 @@
             {
                 "type": "Method",
                 "prop": "publish",
-                "fn_name": "441.v76-o7",
-                "fn_id": "19",
-                "source_fn_id": "19"
+                "fn_name": "1002.v153-o110",
+                "fn_id": "580",
+                "source_fn_id": "580"
             }
         ]
     }

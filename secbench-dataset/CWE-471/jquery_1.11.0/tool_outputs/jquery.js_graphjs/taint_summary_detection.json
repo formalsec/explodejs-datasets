@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/jquery.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/jquery_1.11.0/src/jquery.js",
         "vuln_type": "code-injection",
         "sink": "( Function( \"return \" + str ) )() :",
-        "sink_lineno": 8550,
-        "sink_function": "43297"
+        "sink_lineno": 8550
     },
     {
-        "filename": "../../src/jquery.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/jquery_1.11.0/src/jquery.js",
         "vuln_type": "prototype-pollution",
         "sink": "thisCache[ jQuery.camelCase( name ) ] = data;",
-        "sink_lineno": 3730,
-        "sink_function": "17950"
+        "sink_lineno": 3730
     }
 ]

@@ -82,7 +82,7 @@ esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
 let opts =
   { connectString: esl_symbolic.string("connectString")
-  , directory: esl_symbolic.string("directory")
+  , directory: esl_symbolic.any("directory")
   , appID: esl_symbolic.string("appID")
   , destination: esl_symbolic.string("destination")
   , pluginName: esl_symbolic.string("pluginName")

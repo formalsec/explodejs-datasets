@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/kill-process-by-name_1.0.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec('taskkill /F /IM ' + programname + '.exe /T');",
-        "sink_lineno": 9,
-        "sink_function": "30"
+        "sink_lineno": 9
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/kill-process-by-name_1.0.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec('pkill -f ' + programname);",
-        "sink_lineno": 12,
-        "sink_function": "42"
+        "sink_lineno": 12
     }
 ]

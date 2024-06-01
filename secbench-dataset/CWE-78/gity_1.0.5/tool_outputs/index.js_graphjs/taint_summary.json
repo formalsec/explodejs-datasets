@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-78/gity_1.0.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, { cwd: base }, function(err, stdout){",
         "sink_lineno": 90,
-        "sink_function": "279",
         "source": "new module.exports",
         "tainted_params": [
             "opts"
@@ -17,7 +17,7 @@
         },
         "returns": {
             "source": ".*",
-            "param_types": {
+            "params_types": {
                 "opts": "string"
             },
             "tainted_params": [
@@ -27,16 +27,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "604.v23-o80",
-                "fn_id": "15",
-                "source_fn_id": "15"
+                "fn_name": "1448.v84-o293",
+                "fn_id": "859",
+                "source_fn_id": "859"
             },
             {
                 "type": "Method",
                 "prop": "*",
-                "fn_name": "604.v34-o79",
-                "fn_id": 204,
-                "source_fn_id": 204
+                "fn_name": "1448.v95-o292",
+                "fn_id": 1048,
+                "source_fn_id": 1048
             }
         ]
     }

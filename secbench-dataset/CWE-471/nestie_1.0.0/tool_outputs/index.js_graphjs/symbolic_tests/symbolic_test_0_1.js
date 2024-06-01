@@ -39,6 +39,6 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
 let input = esl_symbolic.polluted_object(3);
-let glue = esl_symbolic.number("glue");
+let glue = esl_symbolic.any("glue");
 module.exports.nestie(input, glue);
 console.log(({}).toString);

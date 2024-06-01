@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/utils.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/madlib-object-utils_0.1.6/src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "value[key] = defaultValue;",
-        "sink_lineno": 60,
-        "sink_function": "355"
+        "sink_lineno": 60
     }
 ]

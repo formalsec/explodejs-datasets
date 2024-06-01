@@ -1,10 +1,10 @@
 [
     {
-        "filename": "../../src/index.js",
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-78/arpping_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`ping ${flag} ${this.timeout} ${ip}`, (err, stdout, stderr) => {",
         "sink_lineno": 120,
-        "sink_function": "921",
         "source": "new module.exports",
         "tainted_params": [
             "undefined"
@@ -14,15 +14,9 @@
         },
         "returns": {
             "source": ".ping",
-            "param_types": {
+            "params_types": {
                 "range": {
-                    "_union": [
-                        {
-                            "length": "any"
-                        },
-                        "array",
-                        "string"
-                    ]
+                    "length": "any"
                 }
             },
             "tainted_params": [
@@ -32,25 +26,25 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1720.v100-o30",
-                "fn_id": "69",
-                "source_fn_id": "69"
+                "fn_name": "4091.v347-o570",
+                "fn_id": "2440",
+                "source_fn_id": "2440"
             },
             {
                 "type": "Method",
                 "prop": "ping",
-                "fn_name": "1720.v130-o29",
-                "fn_id": 762,
-                "source_fn_id": 762
+                "fn_name": "4091.v377-o569",
+                "fn_id": 3133,
+                "source_fn_id": 3133
             }
         ]
     },
     {
-        "filename": "../../src/index.js",
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-78/arpping_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`arp ${ip}`, (err, stdout, stderr) => {",
         "sink_lineno": 145,
-        "sink_function": "1230",
         "source": "new module.exports",
         "tainted_params": [
             "undefined"
@@ -60,10 +54,12 @@
         },
         "returns": {
             "source": ".arp",
-            "param_types": {
-                "range": [
-                    "any"
-                ]
+            "params_types": {
+                "range": {
+                    "0": "any",
+                    "length": "any",
+                    "*": "string"
+                }
             },
             "tainted_params": [
                 "range"
@@ -72,16 +68,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1720.v131-o35",
-                "fn_id": "69",
-                "source_fn_id": "69"
+                "fn_name": "4091.v378-o575",
+                "fn_id": "2440",
+                "source_fn_id": "2440"
             },
             {
                 "type": "Method",
                 "prop": "arp",
-                "fn_name": "1720.v174-o34",
-                "fn_id": 955,
-                "source_fn_id": 955
+                "fn_name": "4091.v421-o574",
+                "fn_id": 3326,
+                "source_fn_id": 3326
             }
         ]
     }

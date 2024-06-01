@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/http-file-server_0.2.6/src/http-file-server.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = fs.createReadStream(fullPath, 'binary', {",
+        "sink_lineno": 200
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/http-file-server_0.2.6/src/http-file-server.js",
+        "vuln_type": "command-injection",
+        "sink": "spawn('xdg-open', [httpAddr], { stdio: 'inherit' });",
+        "sink_lineno": 298
+    }
+]

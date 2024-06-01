@@ -98,8 +98,8 @@ module.exports = {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let host = esl_symbolic.string("host");
-let port = esl_symbolic.string("port");
+let host = esl_symbolic.any("host");
+let port = esl_symbolic.any("port");
 let callbackOrConnectTimeout =
   esl_symbolic.function("callbackOrConnectTimeout");
 let callback = esl_symbolic.function("callback");

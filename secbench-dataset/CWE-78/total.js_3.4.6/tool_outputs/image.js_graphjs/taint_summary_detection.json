@@ -1,44 +1,38 @@
 [
     {
-        "filename": "../../src/image.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "path-traversal",
         "sink": "var stream = require('fs').createReadStream(self.filename, { start: 0, end: extension === '.jpg' ? 40000 : 24 });",
-        "sink_lineno": 177,
-        "sink_function": "1011"
+        "sink_lineno": 177
     },
     {
-        "filename": "../../src/image.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = exec(command, function(err) {",
-        "sink_lineno": 231,
-        "sink_function": "1386"
+        "sink_lineno": 231
     },
     {
-        "filename": "../../src/image.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "path-traversal",
         "sink": "var reader = Fs.createReadStream(filename);",
-        "sink_lineno": 252,
-        "sink_function": "1316"
+        "sink_lineno": 252
     },
     {
-        "filename": "../../src/image.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = spawn(CMD_CONVERT[self.cmdarg], self.arg(self.filename ? wrap(self.filename) : '-', (type ? type + ':' : '') + '-'), SPAWN_OPT);",
-        "sink_lineno": 291,
-        "sink_function": "1642"
+        "sink_lineno": 291
     },
     {
-        "filename": "../../src/image.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = spawn(CMD_CONVERT[self.cmdarg], self.arg(self.filename ? wrap(self.filename) : '-', (type ? type + ':' : '') + '-'), SPAWN_OPT);",
-        "sink_lineno": 329,
-        "sink_function": "1961"
+        "sink_lineno": 329
     },
     {
-        "filename": "../../src/image.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "command-injection",
         "sink": "exec((self.cmdarg === 'gm' ? 'gm ' : '') + 'identify' + wrap(self.filename, true), function(err, stdout) {",
-        "sink_lineno": 408,
-        "sink_function": "2662"
+        "sink_lineno": 408
     }
 ]

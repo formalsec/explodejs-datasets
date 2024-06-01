@@ -813,7 +813,7 @@ exports.isEmpty = isEmpty;
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let object = {  };
+let object = esl_symbolic.any("object");
 let undefined = esl_symbolic.any("undefined");
 module.exports.mergeHeavy(object, undefined);
 console.log(({}).toString);

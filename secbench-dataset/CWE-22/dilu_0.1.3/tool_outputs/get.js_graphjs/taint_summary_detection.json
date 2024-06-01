@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/dilu_0.1.3/src/get.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = fs.createReadStream(fpath.absolute);",
+        "sink_lineno": 57
+    }
+]

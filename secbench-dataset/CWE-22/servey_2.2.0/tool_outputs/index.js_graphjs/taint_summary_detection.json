@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/servey_2.2.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const stream = Fs.createReadStream(data.path);",
+        "sink_lineno": 60
+    }
+]

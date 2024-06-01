@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/mootools-core-1.5.2-server.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
         "vuln_type": "code-injection",
         "sink": "return eval('(' + string + ')');",
-        "sink_lineno": 1175,
-        "sink_function": "6191"
+        "sink_lineno": 1175
     }
 ]

@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunExported",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/deep-set_1.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "currentObject[property] = value",
         "sink_lineno": 37,
-        "sink_function": "469",
         "source": "module.exports",
         "tainted_params": [
             "obj",
@@ -14,22 +13,22 @@
             "create"
         ],
         "params_types": {
-            "obj": "object",
-            "path": {
+            "obj": {
                 "_union": [
-                    "array",
-                    "string"
+                    "object",
+                    "array"
                 ]
             },
+            "path": "string",
             "value": "any",
             "create": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "580.deepSet-o92",
-                "fn_id": "383",
-                "source_fn_id": "383"
+                "fn_name": "1307.deepSet-o244",
+                "fn_id": "1110",
+                "source_fn_id": "1110"
             }
         ]
     }

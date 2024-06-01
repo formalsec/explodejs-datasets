@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/validate.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/json-schema_0.3.0/src/validate.js",
         "vuln_type": "prototype-pollution",
         "sink": "value[i] = options.coerce(value[i], propDef);",
         "sink_lineno": 149,
-        "sink_function": "872",
         "source": "module.exports._validate",
         "tainted_params": [
             "instance",
@@ -13,61 +12,17 @@
             "options"
         ],
         "params_types": {
-            "instance": "object",
+            "instance": {
+                "$schema": "any"
+            },
             "schema": {
-                "type": {
-                    "_union": [
-                        "object",
-                        "string"
-                    ]
-                },
-                "name": "any",
-                "readonly": "any",
-                "'extends'": "any",
-                "required": "any",
-                "disallow": {
-                    "_union": [
-                        "object",
-                        "array",
-                        "string"
-                    ]
-                },
-                "items": {
-                    "_union": [
-                        "object",
-                        "array"
-                    ]
-                },
-                "minItems": "string",
-                "maxItems": "string",
-                "properties": {
-                    "_union": [
-                        "object",
-                        "array"
-                    ]
-                },
-                "additionalProperties": "any",
-                "pattern": "any",
-                "maxLength": "string",
-                "minLength": "string",
-                "minimum": "any",
-                "maximum": "any",
-                "'enum'": {
-                    "_union": [
-                        "object",
-                        "array",
-                        "string"
-                    ]
-                },
-                "maxDecimal": "string"
+                "_union": [
+                    "function",
+                    "string"
+                ]
             },
             "options": {
-                "changing": {
-                    "_union": [
-                        "number",
-                        "string"
-                    ]
-                },
+                "changing": "any",
                 "coerce": "any",
                 "existingOnly": "any",
                 "filter": "any"
@@ -77,9 +32,9 @@
             {
                 "type": "Method",
                 "prop": "_validate",
-                "fn_name": "2060.v335-o68",
-                "fn_id": 189,
-                "source_fn_id": 189
+                "fn_name": "4647.v685-o521",
+                "fn_id": 2776,
+                "source_fn_id": 2776
             }
         ]
     }

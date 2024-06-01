@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 111,
-        "sink_function": "301",
         "source": "module.exports.set",
         "tainted_params": [
             "target",
@@ -23,19 +22,18 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "945.setByPath-o4",
-                "fn_id": "203",
-                "source_fn_id": "203"
+                "fn_name": "2245.setByPath-o293",
+                "fn_id": "1503",
+                "source_fn_id": "1503"
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = setByPath(target[key], path.slice(1), value);",
         "sink_lineno": 108,
-        "sink_function": "294",
         "source": "module.exports.set",
         "tainted_params": [
             "target",
@@ -53,19 +51,18 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "945.setByPath-o4",
-                "fn_id": "203",
-                "source_fn_id": "203"
+                "fn_name": "2245.setByPath-o293",
+                "fn_id": "1503",
+                "source_fn_id": "1503"
             }
         ]
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = at(target[key], path.slice(1), update);",
         "sink_lineno": 188,
-        "sink_function": "519",
         "source": "module.exports.at",
         "tainted_params": [
             "target",
@@ -83,9 +80,9 @@
             {
                 "type": "Method",
                 "prop": "at",
-                "fn_name": "945.at-o25",
-                "fn_id": "423",
-                "source_fn_id": "423"
+                "fn_name": "2245.at-o314",
+                "fn_id": "1723",
+                "source_fn_id": "1723"
             }
         ]
     }

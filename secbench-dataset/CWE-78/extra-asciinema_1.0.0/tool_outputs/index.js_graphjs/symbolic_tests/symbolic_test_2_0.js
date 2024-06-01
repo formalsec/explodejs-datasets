@@ -222,17 +222,6 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
 let f = esl_symbolic.string("f");
-let o =
-  { input: esl_symbolic.string("input")
-  , command: esl_symbolic.any("command")
-  , overwrite: esl_symbolic.any("overwrite")
-  , yes: esl_symbolic.any("yes")
-  , stdin: esl_symbolic.any("stdin")
-  , append: esl_symbolic.any("append")
-  , raw: esl_symbolic.any("raw")
-  , env: esl_symbolic.any("env")
-  , title: esl_symbolic.any("title")
-  , idleTimeLimit: esl_symbolic.any("idleTimeLimit")
-  , quiet: esl_symbolic.any("quiet") };
+let o = esl_symbolic.any("o");
 let fn = esl_symbolic.function("fn");
 module.exports.rec(f, o, fn);

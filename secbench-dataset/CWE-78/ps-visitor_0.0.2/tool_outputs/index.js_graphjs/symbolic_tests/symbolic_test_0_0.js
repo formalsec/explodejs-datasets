@@ -460,7 +460,7 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
 let condition = {  };
-let extra = [ esl_symbolic.string("extra0") ];
+let extra = esl_symbolic.string("extra");
 let keywords = [ esl_symbolic.string("keywords0") ];
-let filterWaste = [ esl_symbolic.string("filterWaste0") ];
+let filterWaste = esl_symbolic.any("filterWaste");
 module.exports.ps(condition, extra, keywords, filterWaste);

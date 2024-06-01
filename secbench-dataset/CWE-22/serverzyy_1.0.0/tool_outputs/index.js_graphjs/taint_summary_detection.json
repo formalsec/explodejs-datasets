@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/serverzyy_1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path,function(error,file){  //\u5355\u7ebf\u7a0b\u5f02\u6b65\u52a0\u8f7d",
+        "sink_lineno": 8
+    }
+]

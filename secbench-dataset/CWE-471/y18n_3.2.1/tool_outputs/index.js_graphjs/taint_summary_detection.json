@@ -1,23 +1,20 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/y18n_3.2.1/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(languageFile, serializedLocale, 'utf-8', function (err) {",
-        "sink_lineno": 60,
-        "sink_function": "488"
+        "sink_lineno": 60
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/y18n_3.2.1/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "localeLookup = JSON.parse(fs.readFileSync(languageFile, 'utf-8'))",
-        "sink_lineno": 72,
-        "sink_function": "530"
+        "sink_lineno": 72
     },
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/y18n_3.2.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.cache[this.locale][key] = obj[key]",
-        "sink_lineno": 156,
-        "sink_function": "1130"
+        "sink_lineno": 156
     }
 ]

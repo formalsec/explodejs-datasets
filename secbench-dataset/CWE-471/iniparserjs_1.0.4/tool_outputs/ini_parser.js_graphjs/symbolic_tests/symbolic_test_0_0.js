@@ -178,6 +178,6 @@ module.exports = IniParser
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: path-traversal
-let path = [ esl_symbolic.string("path0") ];
-let encoding = [ esl_symbolic.string("encoding0") ];
+let path = esl_symbolic.string("path");
+let encoding = esl_symbolic.any("encoding");
 module.exports(path, encoding);

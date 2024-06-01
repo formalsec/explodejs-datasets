@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/local-devices_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return cp.exec('arp -n ' + address).then(parseOne)",
-        "sink_lineno": 114,
-        "sink_function": "511"
+        "sink_lineno": 114
     }
 ]

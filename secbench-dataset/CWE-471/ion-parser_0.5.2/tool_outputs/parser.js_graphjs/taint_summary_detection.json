@@ -1,16 +1,14 @@
 [
     {
-        "filename": "../../src/parser.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/ion-parser_0.5.2/src/parser.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, (err, data) => {",
-        "sink_lineno": 750,
-        "sink_function": "3124"
+        "sink_lineno": 750
     },
     {
-        "filename": "../../src/parser.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/ion-parser_0.5.2/src/parser.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(file))",
-        "sink_lineno": 762,
-        "sink_function": "3134"
+        "sink_lineno": 762
     }
 ]

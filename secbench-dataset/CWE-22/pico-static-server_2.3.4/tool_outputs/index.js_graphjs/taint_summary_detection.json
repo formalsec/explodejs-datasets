@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/pico-static-server_2.3.4/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const data = fs.readFileSync(requestPath);",
+        "sink_lineno": 118
+    }
+]

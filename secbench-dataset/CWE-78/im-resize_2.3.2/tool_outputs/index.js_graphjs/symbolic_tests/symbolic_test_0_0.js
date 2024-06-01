@@ -187,7 +187,7 @@ module.exports.cmdVersion = function(image, version, last) {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let image = [ esl_symbolic.string("image0") ];
+let image = esl_symbolic.any("image");
 let output = { versions: esl_symbolic.any("versions") };
 let cb = esl_symbolic.function("cb");
 module.exports(image, output, cb);

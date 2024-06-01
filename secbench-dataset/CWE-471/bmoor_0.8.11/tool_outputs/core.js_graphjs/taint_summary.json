@@ -1,11 +1,10 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "../../src/core.js",
+        "filename": "/datasets/secbench-dataset/CWE-471/bmoor_0.8.11/src/core.js",
         "vuln_type": "prototype-pollution",
         "sink": "curSpace[ val ] = value;",
         "sink_lineno": 194,
-        "sink_function": "438",
         "source": "module.exports.set",
         "tainted_params": [
             "root",
@@ -13,7 +12,12 @@
             "value"
         ],
         "params_types": {
-            "root": "object",
+            "root": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
             "space": {
                 "_union": [
                     "object",
@@ -34,9 +38,9 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "960.set-o38",
-                "fn_id": "358",
-                "source_fn_id": "358"
+                "fn_name": "2294.set-o334",
+                "fn_id": "1692",
+                "source_fn_id": "1692"
             }
         ]
     }

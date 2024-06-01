@@ -359,8 +359,8 @@ module.exports = {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: prototype-pollution
-let root = {  };
+let root = [ esl_symbolic.string("root0") ];
 let space = [ esl_symbolic.string("space0") ];
-let value = esl_symbolic.function("value");
+let value = esl_symbolic.boolean("value");
 module.exports.set(root, space, value);
 console.log(({}).toString);

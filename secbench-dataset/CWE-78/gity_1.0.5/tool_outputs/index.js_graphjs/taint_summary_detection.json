@@ -1,9 +1,8 @@
 [
     {
-        "filename": "../../src/index.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/gity_1.0.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, { cwd: base }, function(err, stdout){",
-        "sink_lineno": 90,
-        "sink_function": "279"
+        "sink_lineno": 90
     }
 ]

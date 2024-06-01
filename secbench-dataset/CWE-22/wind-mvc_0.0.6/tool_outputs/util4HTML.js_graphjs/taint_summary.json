@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path, 'binary', callback);",
+        "sink_lineno": 7,
+        "source": "module.exports.getHTMLBinary",
+        "tainted_params": [
+            "path",
+            "callback"
+        ],
+        "params_types": {
+            "path": "string",
+            "callback": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getHTMLBinary",
+                "fn_name": "69.v4-o16",
+                "fn_id": "48",
+                "source_fn_id": "48"
+            }
+        ]
+    }
+]

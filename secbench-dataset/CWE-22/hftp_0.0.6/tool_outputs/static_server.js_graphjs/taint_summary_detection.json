@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/hftp_0.0.6/src/static_server.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.createReadStream(filename).pipe(response);",
+        "sink_lineno": 91
+    }
+]

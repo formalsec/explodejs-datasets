@@ -43,5 +43,5 @@ module.exports = {
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
-let repo = [ esl_symbolic.string("repo0") ];
+let repo = esl_symbolic.string("repo");
 module.exports.get(repo);

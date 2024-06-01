@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/shenliru3_1.3.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path,function(error,data){",
+        "sink_lineno": 7
+    }
+]

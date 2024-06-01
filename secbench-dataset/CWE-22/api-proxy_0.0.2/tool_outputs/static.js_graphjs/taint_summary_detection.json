@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/api-proxy_0.0.2/src/static.js",
+        "vuln_type": "path-traversal",
+        "sink": "FS.readFile(filepath,'binary',",
+        "sink_lineno": 40
+    }
+]

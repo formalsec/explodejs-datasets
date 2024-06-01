@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-22/httpea_3.0.4/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const file = fs.readFileSync(filePath);",
+        "sink_lineno": 48
+    }
+]

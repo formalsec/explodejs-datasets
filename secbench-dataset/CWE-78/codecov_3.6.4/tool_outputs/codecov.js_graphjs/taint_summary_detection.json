@@ -1,37 +1,32 @@
 [
     {
-        "filename": "../../src/codecov.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "path-traversal",
         "sink": "var loadedYamlFile = jsYaml.safeLoad(fs.readFileSync(query.yaml, 'utf8'))",
-        "sink_lineno": 306,
-        "sink_function": "1305"
+        "sink_lineno": 306
     },
     {
-        "filename": "../../src/codecov.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "command-injection",
         "sink": "execSync(gcov)",
-        "sink_lineno": 419,
-        "sink_function": "2010"
+        "sink_lineno": 419
     },
     {
-        "filename": "../../src/codecov.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFileSync(file, 'utf8').toString() +",
-        "sink_lineno": 468,
-        "sink_function": "2243"
+        "sink_lineno": 468
     },
     {
-        "filename": "../../src/codecov.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "command-injection",
         "sink": "_files = execSync('find ' + root + ' ' + patterns + more_patterns)",
-        "sink_lineno": 480,
-        "sink_function": "2388"
+        "sink_lineno": 480
     },
     {
-        "filename": "../../src/codecov.js",
+        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFileSync(file, 'utf8').toString() +",
-        "sink_lineno": 500,
-        "sink_function": "2473"
+        "sink_lineno": 500
     }
 ]
