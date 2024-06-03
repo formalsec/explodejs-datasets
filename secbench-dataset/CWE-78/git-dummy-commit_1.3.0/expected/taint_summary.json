@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "shell.exec('git commit ' + arg + ' --allow-empty --no-gpg-sign', {",
+        "sink_lineno": 37,
+        "source": "module.exports",
+        "tainted_params": [
+            "msg",
+            "silent"
+        ],
+        "params_types": {
+            "msg": {
+              "_union": ["string", "array"]
+            },
+            "silent": "any"
+        }
+    }
+]

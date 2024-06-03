@@ -1,0 +1,22 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, opts, function(e, stdout, stderr) {",
+        "sink_lineno": 15,
+        "source": "module.exports",
+        "tainted_params": [
+            "path",
+            "opts",
+            "cb"
+        ],
+        "params_types": {
+            "path": "string",
+            "opts": {
+                "timeout": "any"
+            },
+            "cb": "function"
+        }
+    }
+]

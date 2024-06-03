@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "let _cmd = exec(`gsutil -m cp ${_rn} -a public-read ${_path} ${bucket}`)",
+        "sink_lineno": 11,
+        "source": "module.exports.upload",
+        "tainted_params": [
+          "inputDirectory", "bucket", "force"
+        ],
+        "params_types": {
+          "inputDirectory": "string",
+          "bucket": "string",
+          "force": "boolean"
+        }
+    }
+]

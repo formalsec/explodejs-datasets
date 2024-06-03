@@ -1,0 +1,26 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(file, 'utf8', (err, data) => {",
+        "sink_lineno": 112,
+        "file": "utils.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "return yaml.safeLoad(fs.readFileSync(file, 'utf8'));",
+        "sink_lineno": 125,
+        "file": "utils.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFile(file, yaml.safeDump(data), () => {",
+        "sink_lineno": 136,
+        "file": "utils.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFileSync(file, yaml.safeDump(data));",
+        "sink_lineno": 147,
+        "file": "utils.js"
+    }
+]

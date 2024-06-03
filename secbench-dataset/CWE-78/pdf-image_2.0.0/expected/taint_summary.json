@@ -1,0 +1,19 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(getInfoCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 44,
+        "source": "new module.exports.PDFImage",
+        "tainted_params": [ "pdfFilePath" ],
+        "params_types": {
+            "pdfFilePath": "string"
+        },
+        "returns": {
+            "source": ".getInfo",
+             "tainted_params": [],
+            "params_types": {}
+        }
+    }
+]

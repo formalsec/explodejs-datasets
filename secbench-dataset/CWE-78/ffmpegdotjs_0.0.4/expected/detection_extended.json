@@ -1,0 +1,62 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 8,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 27,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 46,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 65,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 83,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 101,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 119,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 137,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 155,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(",
+        "sink_lineno": 173,
+        "file": "index.js"
+    }
+]

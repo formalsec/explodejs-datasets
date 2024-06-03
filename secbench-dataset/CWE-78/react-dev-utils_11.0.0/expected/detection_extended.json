@@ -1,0 +1,20 @@
+[
+    {
+        "vuln_type": "CWE-94",
+        "sink": "return require(packagePath).name;",
+        "sink_lineno": 37,
+        "file": "getProcessForPort.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "var command = execSync(",
+        "sink_lineno": 44,
+        "file": "getProcessForPort.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "return execSync(",
+        "sink_lineno": 60,
+        "file": "getProcessForPort.js"
+    }
+]

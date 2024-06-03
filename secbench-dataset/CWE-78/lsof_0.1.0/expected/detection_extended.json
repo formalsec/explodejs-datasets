@@ -1,0 +1,14 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "cp.exec('lsof -p ' + pid, function(err, d) {",
+        "sink_lineno": 9,
+        "file": "lsof.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "cp.exec('lsof -i udp:' + port, function(err, d) {",
+        "sink_lineno": 71,
+        "file": "lsof.js"
+    }
+]

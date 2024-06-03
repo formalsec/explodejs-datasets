@@ -1,0 +1,16 @@
+[
+  {
+        "type": "VFunPropOfExportedObj",
+        "filename": "oled-exp.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(oledExecutable + ' write ' + direction);",
+        "sink_lineno": 91,
+        "source": "module.exports.scroll",
+        "tainted_params": [
+            "direction"
+        ],
+        "params_types": {
+            "direction": "string"
+        }
+    }
+]

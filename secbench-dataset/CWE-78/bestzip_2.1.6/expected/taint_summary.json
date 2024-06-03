@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "bestzip.js",
+        "vuln_type": "command-injection",
+        "sink": "const zipProcess = cp.exec(command, {",
+        "sink_lineno": 27,
+        "source": "module.exports.nativeZip",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "source": "string",
+                "destination": "string",
+                "cwd": "string"
+            }
+        }
+    }
+]

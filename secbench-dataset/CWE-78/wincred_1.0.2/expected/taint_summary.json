@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(script)",
+        "sink_lineno": 16,
+        "source": "module.exports.getCredential",
+        "tainted_params": [
+            "target",
+            "pythonLancher"
+        ],
+        "params_types": {
+            "target": "string",
+            "pythonLancher": "string"
+        }
+    }
+]

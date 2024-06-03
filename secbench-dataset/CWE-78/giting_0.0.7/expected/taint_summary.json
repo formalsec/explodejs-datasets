@@ -1,0 +1,39 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "git.js",
+        "vuln_type": "command-injection",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 223,
+        "source": "new module.exports",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": {
+                "dir": "string",
+                "repoDir": "string",
+                "workDir": "string",
+                "autoCreate": "any",
+                "auth": "any"
+            }
+        },
+        "returns": {
+            "source": ".pull",
+            "params_types": {
+                "repo": {
+                    "organization": "string",
+                    "name": "string",
+                    "commit": "string",
+                    "id": "any",
+                    "branch": "string"
+                },
+                "cb": "function"
+            },
+            "tainted_params": [
+                "repo",
+                "cb"
+            ]
+        }
+    }
+]

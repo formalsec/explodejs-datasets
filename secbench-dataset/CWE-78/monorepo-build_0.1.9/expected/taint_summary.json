@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "exec.js",
+        "vuln_type": "command-injection",
+        "sink": "exports.execSync = (cwd, command) => child_process_1.execSync(command, { cwd, env: process.env });",
+        "sink_lineno": 4,
+        "source": "module.exports.execSync",
+        "tainted_params": [
+            "cwd",
+            "command"
+        ],
+        "params_types": {
+            "cwd": "object",
+            "command": "string"
+        }
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
+        "sink_lineno": 15,
+        "file": "node-latex-pdf.js"
+    }
+]

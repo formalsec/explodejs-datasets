@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "posix.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('df -k \"' + path + '\"', function(err, stdout) {",
+        "sink_lineno": 11,
+        "source": "module.exports.diskusage",
+        "tainted_params": [
+            "path",
+            "cb"
+        ],
+        "params_types": {
+            "path": "array",
+            "cb": "function"
+        }
+    }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
+    "vuln_type": "command-injection",
+    "sink": "var stdout = execSync('command -v ' + commandName +",
+    "sink_lineno": 78,
+    "source": "module.exports.sync",
+    "tainted_params": [
+      "commandName"
+    ],
+    "params_types": {
+      "commandName": "string"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command);",
+        "sink_lineno": 678,
+        "source": "module.exports.install",
+        "tainted_params": [
+          "requestedModule"
+        ],
+        "params_types": {
+          "requestedModule": "string"
+        }
+    }
+]

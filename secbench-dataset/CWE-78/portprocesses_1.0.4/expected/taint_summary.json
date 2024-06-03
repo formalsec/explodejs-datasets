@@ -1,0 +1,16 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "exec.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, (err, stdout, stderr) => {",
+        "sink_lineno": 5,
+        "source": "module.exports",
+        "tainted_params": [
+            "cmd"
+        ],
+        "params_types": {
+            "cmd": "string"
+        }
+    }
+]

@@ -1,0 +1,16 @@
+[
+      {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "processId = exec(`lsof -t -i:${port}`)",
+        "sink_lineno": 8,
+        "source": "module.exports.killByPort",
+        "tainted_params": [
+            "port"
+        ],
+        "params_types": {
+            "port": "string"
+        }
+    }
+]

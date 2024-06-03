@@ -1,0 +1,32 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "var stream = require('fs').createReadStream(self.filename, { start: 0, end: extension === '.jpg' ? 40000 : 24 });",
+        "sink_lineno": 177,
+        "file": "image.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "var cmd = exec(command, function(err) {",
+        "sink_lineno": 231,
+        "file": "image.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "var reader = Fs.createReadStream(filename);",
+        "sink_lineno": 252,
+        "file": "image.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "var cmd = spawn(CMD_CONVERT[self.cmdarg], self.arg(self.filename ? wrap(self.filename) : '-', (type ? type + ':' : '') + '-'), SPAWN_OPT);",
+        "sink_lineno": 291,
+        "file": "image.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec((self.cmdarg === 'gm' ? 'gm ' : '') + 'identify' + wrap(self.filename, true), function(err, stdout) {",
+        "sink_lineno": 408,
+        "file": "image.js"
+    }
+]

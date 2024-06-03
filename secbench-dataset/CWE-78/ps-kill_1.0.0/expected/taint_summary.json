@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function (error) {",
+        "sink_lineno": 8,
+        "source": "module.exports.kill",
+        "tainted_params": [
+            "pid",
+            "callback"
+        ],
+        "params_types": {
+            "pid": "string",
+            "callback": "function"
+        }
+    }
+]

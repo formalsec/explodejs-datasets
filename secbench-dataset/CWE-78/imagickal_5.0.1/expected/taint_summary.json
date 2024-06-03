@@ -1,0 +1,20 @@
+[
+  {
+        "type": "VFunPropOfExportedObj",
+        "filename": "imagickal.js",
+        "vuln_type": "command-injection",
+        "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
+        "sink_lineno": 127,
+        "source": "module.exports.identify",
+        "tainted_params": [
+            "path",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "path": "string",
+            "options": "object",
+            "callback": "function"
+        }
+    }
+]

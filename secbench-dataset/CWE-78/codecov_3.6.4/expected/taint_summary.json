@@ -1,0 +1,26 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "codecov.js",
+        "vuln_type": "command-injection",
+        "sink": "execSync(gcov)",
+        "sink_lineno": 419,
+        "source": "module.exports.upload",
+        "tainted_params": [
+            "args",
+            "on_success",
+            "on_failure"
+        ],
+        "params_types": {
+            "args": {
+                "options": {
+                    "gcov-root": "string",
+                    "gcov-exec": "string",
+                    "gcov-args": "string"
+                }
+            },
+            "on_success": "function",
+            "on_failure": "function"
+        }
+    }
+]

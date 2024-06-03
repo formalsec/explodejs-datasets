@@ -1,0 +1,16 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(args.join(' '), fn);",
+        "sink_lineno": 289,
+        "source": "module.exports",
+        "tainted_params": [ "msg", "options", "fn" ],
+        "params_types": {
+          "msg": "string",
+          "options": "object",
+          "fn": "function"
+        }
+    }
+]

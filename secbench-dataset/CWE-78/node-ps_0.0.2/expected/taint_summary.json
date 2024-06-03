@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "childProcess.exec(cmd, function (err, stdout, stderr) {",
+        "sink_lineno": 72,
+        "source": "module.exports.lookup",
+        "tainted_params": [
+            "query",
+            "cb"
+        ],
+        "params_types": {
+            "query": {
+                "psargs": "array"
+            },
+            "cb": "function"
+        }
+    }
+]

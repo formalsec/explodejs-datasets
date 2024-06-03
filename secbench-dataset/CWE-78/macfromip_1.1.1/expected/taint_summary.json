@@ -1,0 +1,15 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "macfromip",
+        "vuln_type": "command-injection",
+        "sink": "var ls = cp.exec('ping  -c 1 ' + ipAddress,",
+        "sink_lineno": 66,
+        "source": "module.exports.getMacInLinux",
+        "tainted_params": [ "ipAddress", "callback" ],
+        "params_types": {
+            "ipAddress": "string",
+            "callback": "function"
+        }
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "let _cmd = exec(_c, (code, stdout, stderr) => {",
+        "sink_lineno": 22,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "let _cmd = exec(_c, (code, stdout, stderr) => {",
+        "sink_lineno": 39,
+        "file": "index.js"
+    }
+]

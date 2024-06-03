@@ -1,0 +1,20 @@
+[
+   {
+        "type": "VFunPropOfExportedObj",
+        "filename": "stats.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
+        "sink_lineno": 108,
+        "source": "module.exports.ps",
+        "tainted_params": [
+            "pid",
+            "options",
+            "done"
+        ],
+        "params_types": {
+            "pid": "string",
+            "options": "object",
+            "done": "function"
+        }
+    }
+]

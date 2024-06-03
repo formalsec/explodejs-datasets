@@ -1,0 +1,16 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "tools.ks",
+        "vuln_type": "command-injection",
+        "sink": "const execute = proc(cmd, (err, stdout, stderr) => {",
+        "sink_lineno": 114,
+        "source": "module.exports.scan",
+        "tainted_params": [ "opts" ],
+        "params_types": {
+          "opts": {
+            "range": "array"
+          }
+        }
+    }
+]

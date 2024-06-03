@@ -1,0 +1,26 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`git ls-remote -h ${httpUrl(config)[0]}`, function (err, stdout) {",
+        "sink_lineno": 151,
+        "source": "module.exports.getBranches",
+        "tainted_params": [
+            "config",
+            "privkey",
+            "done"
+        ],
+        "params_types": {
+            "config": {
+                "auth": {
+                    "type": "string",
+                    "privkey": "string"
+                },
+                "url": "string"
+            },
+            "privkey": "string",
+            "done": "function"
+        }
+    }
+]

@@ -1,0 +1,16 @@
+{
+        "type": "VFunExported",
+        "filename": "deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec( command, hollaback );",
+        "sink_lineno": 42,
+        "source": "module.exports",
+        "tainted_params": [
+            "command",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "options": "object"
+        }
+    }

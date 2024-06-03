@@ -1,0 +1,16 @@
+[
+  {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "var stdout = cp9.execSync(`asciinema upload ${f}`, {encoding: 'utf8'});",
+        "sink_lineno": 208,
+        "source": "module.exports.uploadSync",
+        "tainted_params": [
+            "f"
+        ],
+        "params_types": {
+            "f": "string"
+        }
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "var ls = cp.exec('ping  ' + ipAddress + ' -n 1',",
+        "sink_lineno": 96,
+        "file": "macfromip.js"
+    }
+]

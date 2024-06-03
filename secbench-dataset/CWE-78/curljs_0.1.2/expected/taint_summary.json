@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(curlString, function(err, stdout, stderr) {",
+        "sink_lineno": 37,
+        "source": "module.exports",
+        "tainted_params": [
+            "url",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "url": "string",
+            "options": "function",
+            "callback": "function"
+        }
+    }
+]

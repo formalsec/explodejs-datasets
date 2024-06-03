@@ -1,0 +1,23 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "const childProcess = execSync(",
+        "sink_lineno": 54,
+        "source": "module.exports.publish",
+        "tainted_params": [
+          "opts"
+        ],
+         "params_types": {
+            "opts": {
+                "connectString": "string",
+                "directory": "string",
+                "appID": "number",
+                "destination": "string",
+                "pluginName": "string",
+                "sqlclPath": "string"
+            }
+        }
+    }
+]

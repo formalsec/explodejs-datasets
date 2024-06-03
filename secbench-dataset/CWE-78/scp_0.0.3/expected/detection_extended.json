@@ -1,0 +1,9 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(command.join(' '), function (err, stdout, stderr) {",
+        "sink_lineno": 42,
+        "file": "scp.js"
+    }
+]
+

@@ -1,0 +1,26 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "return writeFile(commitTextPath, commitText);",
+        "sink_lineno": 43,
+        "file": "publish.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "return writeFile(tagTextPath, tagMessageText);",
+        "sink_lineno": 48,
+        "file": "publish.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "child_process_1.execSync(\"git push --follow-tags --force origin HEAD \" + extraBranchNames, { cwd: gitRepoDir, stdio: 'inherit' });",
+        "sink_lineno": 138,
+        "file": "publish.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "child_process_1.exec(command, options, function (error, stdout, stderr) {",
+        "sink_lineno": 198,
+        "file": "publish.js"
+    }
+]

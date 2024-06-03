@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(ogrCommand, function(err, stdout, stderr){",
+        "sink_lineno": 6,
+        "source": "module.exports",
+        "tainted_params": [
+            "inPath",
+            "outPath",
+            "done"
+        ],
+        "params_types": {
+            "inPath": "string",
+            "outPath": "string",
+            "done": "function"
+        }
+    }
+]

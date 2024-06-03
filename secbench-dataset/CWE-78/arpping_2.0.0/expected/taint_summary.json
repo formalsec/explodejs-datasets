@@ -1,0 +1,21 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`ping ${flag} ${this.timeout} ${ip}`, (err, stdout, stderr) => {",
+        "sink_lineno": 120,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".ping",
+            "params_types": {
+                "range": "array"
+            },
+            "tainted_params": [
+                "range"
+            ]
+        }
+    }
+]

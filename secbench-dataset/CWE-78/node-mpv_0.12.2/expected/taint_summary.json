@@ -1,0 +1,16 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "mpv.js",
+        "vuln_type": "command-injection",
+        "sink": "var output = exec((options.binary ? options.binary + \" --version\" : \"mpv --version\"), {encoding: 'utf8'});",
+        "sink_lineno": 45,
+        "source": "new module.exports",
+        "tainted_params": [ "options" ],
+        "params_types": {
+            "options": {
+                "binary": "string"
+            }
+        }
+    }
+]

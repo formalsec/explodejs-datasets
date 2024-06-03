@@ -1,0 +1,20 @@
+[
+   {
+        "type": "VFunExported",
+        "filename": "node-latex-pdf.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
+        "sink_lineno": 10,
+        "source": "module.exports",
+        "tainted_params": [
+            "src_file",
+            "dest_file",
+            "callback"
+        ],
+        "params_types": {
+            "src_file": "string",
+            "dest_file": "string",
+            "callback": "function"
+        }
+    }
+]

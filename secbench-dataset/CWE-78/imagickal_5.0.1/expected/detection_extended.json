@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
+        "sink_lineno": 77,
+        "file": "imagickal.js"
+    }
+]

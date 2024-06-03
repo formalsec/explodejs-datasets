@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "killing.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('ps -ef | grep ' + name, function(error, stdout) {",
+        "sink_lineno": 35,
+        "source": "module.exports",
+        "tainted_params": [
+            "name",
+            "callback"
+        ],
+        "params_types": {
+            "name": "string",
+            "callback": "function"
+        }
+    }
+]

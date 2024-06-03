@@ -1,0 +1,19 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, { cwd: base }, function(err, stdout){",
+        "sink_lineno": 90,
+        "source": "new module.exports",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": "object"
+        },
+        "returns": {
+            "source": "?"
+        }
+    }
+]

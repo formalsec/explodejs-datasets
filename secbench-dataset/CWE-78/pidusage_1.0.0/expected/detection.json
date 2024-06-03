@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "sink_file": "lib/stats.js",
+        "sink_lineno": "108"
+    }
+]

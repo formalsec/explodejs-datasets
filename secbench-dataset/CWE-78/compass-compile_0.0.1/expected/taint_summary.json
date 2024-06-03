@@ -1,0 +1,21 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "compass.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, function(error, stdout, stderr) {",
+        "sink_lineno": 25,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+          "source": ".compile",
+          "tainted_params": [ "options" ],
+          "params_types": {
+            "options": {
+              "compassCommand": "string"
+            }
+          }
+        }
+    }
+]

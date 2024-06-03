@@ -1,0 +1,15 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "lib/plugin-loader.js",
+        "vuln_type": "command-injection",
+        "sink": "var proc = exec(installCmd, function(err) {",
+        "sink_lineno": 181,
+        "source": "module.exports.installPlugin",
+        "tainted_params": [ "pluginUri", "registryUri" ],
+        "params_types": {
+            "pluginUri" : "string",
+            "registryUri": "string"
+        }
+    }
+]

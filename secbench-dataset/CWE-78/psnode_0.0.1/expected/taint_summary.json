@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "ChildProcess.exec(killCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 59,
+        "source": "module.exports.kill",
+        "tainted_params": [
+            "pid",
+            "next"
+        ],
+        "params_types": {
+            "pid": "string",
+            "next": "function"
+        }
+    }
+]

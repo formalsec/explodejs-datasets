@@ -1,0 +1,31 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(execCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 23,
+        "source": "new module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "path": "string"
+            }
+        },
+        "returns": {
+            "source": "._execute",
+            "params_types": {
+                "args": "array",
+                "dstPath": "string",
+                "cb": "function"
+            },
+            "tainted_params": [
+                "args",
+                "dstPath",
+                "cb"
+            ]
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "gitblame.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('git blame ' + filename, {cwd: dirname}, function (error, stdout, stderr) {",
+        "sink_lineno": 15,
+        "source": "module.exports",
+        "tainted_params": [
+            "file",
+            "cb"
+        ],
+        "params_types": {
+            "file": "string",
+            "cb": "function"
+        }
+    }
+]

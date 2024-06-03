@@ -1,0 +1,14 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 195,
+        "file": "git.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 108,
+        "file": "git.js"
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
+        "sink_lineno": 47,
+        "source": "new module.exports",
+        "tainted_params": [ "filename" ],
+        "params_types": {
+            "filename": "string"
+        },
+        "returns": {
+            "source": ".getInfo",
+             "tainted_params": [ "cb" ],
+            "params_types": {
+                "cb": "function"
+            }
+        }
+    }
+]

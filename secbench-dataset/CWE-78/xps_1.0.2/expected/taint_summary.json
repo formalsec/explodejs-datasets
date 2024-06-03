@@ -1,0 +1,15 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "utils.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, function(error, stdout, stderr) {",
+        "sink_lineno": 28,
+        "source": "module.exports.shell",
+        "tainted_params": [ "cmd", "args" ],
+        "params_types": {
+            "cmd": "string",
+            "args": "array"
+        }
+    }
+]

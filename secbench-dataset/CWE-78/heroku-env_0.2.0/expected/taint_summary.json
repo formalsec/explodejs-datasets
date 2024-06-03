@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "get.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('heroku config --app ' + app, function(err, stdout) {",
+        "sink_lineno": 3,
+        "source": "module.exports",
+        "tainted_params": [
+            "app",
+            "cb"
+        ],
+        "params_types": {
+            "app": "string",
+            "cb": "function"
+        }
+    }
+]

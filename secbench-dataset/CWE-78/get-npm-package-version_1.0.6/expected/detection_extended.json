@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "version = require('child_process').execSync(`npm view ${packageName} version --registry ${registry}`, config);",
+        "sink_lineno": 14,
+        "file": "index.js"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(combineCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 116,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(\"rm \"+imagePaths.join(' ')); //cleanUp",
+        "sink_lineno": 125,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(convertCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 170,
+        "file": "index.js"
+    }
+]

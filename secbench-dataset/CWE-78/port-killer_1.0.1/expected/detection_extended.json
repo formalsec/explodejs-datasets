@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "pid.forEach(proc => execSync(`kill -9 ${proc}`));",
+        "sink_lineno": 26,
+        "file": "index.js"
+    }
+]

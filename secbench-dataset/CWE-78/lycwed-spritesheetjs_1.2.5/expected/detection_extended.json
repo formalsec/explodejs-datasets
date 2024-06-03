@@ -1,0 +1,20 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(\"identify \" + filePaths.join(\" \"), function (err, stdout) {",
+        "sink_lineno": 102,
+        "file": "generator.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(command.join(\" \"), function (err) {",
+        "sink_lineno": 196,
+        "file": "generator.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(\"magick identify \" + filePath, function (err, stdout) {",
+        "sink_lineno": 204,
+        "file": "generator.js"
+    }
+]

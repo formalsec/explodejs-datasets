@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "sink_file": "node-latex-pdf.js",
+        "sink_lineno": "10"
+    }
+]

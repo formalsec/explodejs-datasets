@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "exec(`arp ${ip}`, (err, stdout, stderr) => {",
+        "sink_lineno": 145,
+        "file": "index.js"
+    }
+]

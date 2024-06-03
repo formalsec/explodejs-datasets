@@ -1,0 +1,16 @@
+[
+  {
+        "type": "VFunExported",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('pkill -f ' + programname);",
+        "sink_lineno": 12,
+        "source": "module.exports",
+        "tainted_params": [
+            "programname"
+        ],
+        "params_types": {
+            "programname": "string"
+        }
+    }
+]

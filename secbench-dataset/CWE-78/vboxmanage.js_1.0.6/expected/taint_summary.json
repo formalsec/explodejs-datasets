@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(vBoxManageBinary + ' ' + command.join(' '), {}, function (err, stdout, stderr) {",
+        "sink_lineno": 76,
+        "source": "module.exports.manage",
+        "tainted_params": [
+            "command",
+            "options"
+        ],
+        "params_types": {
+            "command": "array",
+            "options": "object"
+        }
+    }
+]

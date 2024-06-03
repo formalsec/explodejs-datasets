@@ -1,0 +1,18 @@
+[
+      {
+        "type": "VFunPropOfExportedObj",
+        "filename": "utils.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(cmd, {",
+        "sink_lineno": 19,
+        "source": "module.exports.exec",
+        "tainted_params": [
+            "cmd",
+            "callback"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "callback": "function"
+        }
+    }
+]

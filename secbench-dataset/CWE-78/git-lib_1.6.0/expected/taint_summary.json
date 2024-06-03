@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename": "git.js",
+    "vuln_type": "command-injection",
+    "sink": "exec('git add ' + files, function(err){",
+    "sink_lineno": 13,
+    "source": "module.exports.add",
+    "tainted_params": [
+      "files"
+    ],
+    "params_types": {
+      "files": "string"
+    }
+  }
+]

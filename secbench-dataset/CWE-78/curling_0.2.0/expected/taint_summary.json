@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "curl-transport.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"curl \" + command, function (error, stdout, stderr) {",
+        "sink_lineno": 56,
+        "source": "module.exports.run",
+        "tainted_params": [
+            "command",
+            "cb"
+        ],
+        "params_types": {
+            "command": "string",
+            "cb": "function"
+        }
+    }
+]

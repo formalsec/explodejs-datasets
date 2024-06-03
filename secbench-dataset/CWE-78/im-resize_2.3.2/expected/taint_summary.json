@@ -1,0 +1,24 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, {timeout: 30000}, function(e, stdout, stderr) {",
+        "sink_lineno": 11,
+        "source": "module.exports",
+        "tainted_params": [
+            "image",
+            "output",
+            "cb"
+        ],
+        "params_types": {
+            "image": {
+              "path": "string"
+            },
+            "output": {
+                "versions": "array"
+            },
+            "cb": "function"
+        }
+    }
+]

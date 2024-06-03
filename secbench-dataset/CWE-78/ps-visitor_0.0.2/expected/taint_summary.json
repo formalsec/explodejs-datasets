@@ -1,0 +1,23 @@
+[
+  {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 404,
+        "source": "module.exports.kill",
+        "tainted_params": [
+            "pid",
+            "signal"
+        ],
+        "params_types": {
+            "pid": "string",
+            "signal": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        }
+    }
+]

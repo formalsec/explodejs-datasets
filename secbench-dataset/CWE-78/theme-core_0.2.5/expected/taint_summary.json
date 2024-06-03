@@ -1,0 +1,20 @@
+[
+      {
+        "type": "VFunPropOfExportedObj",
+        "filename": "utils.js",
+        "vuln_type": "command-injection",
+        "sink": "const child = exec(cmd, {",
+        "sink_lineno": 16,
+        "source": "module.exports.sh",
+        "tainted_params": [
+            "cmd",
+            "exitOnError",
+            "cb"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "exitOnError": "boolean",
+            "cb": "function"
+        }
+    }
+]

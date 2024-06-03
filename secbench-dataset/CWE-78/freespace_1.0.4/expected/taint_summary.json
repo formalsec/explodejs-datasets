@@ -1,0 +1,18 @@
+[
+  {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {}, cb);",
+        "sink_lineno": 51,
+        "source": "module.exports.check",
+        "tainted_params": [
+            "driveOrMount",
+            "callback"
+        ],
+        "params_types": {
+            "driveOrMount": "string",
+            "callback": "function"
+        }
+    }
+]

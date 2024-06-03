@@ -1,0 +1,26 @@
+[
+   {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 191,
+        "source": "module.exports.trimvideo",
+        "tainted_params": [
+            "input",
+            "start",
+            "duration",
+            "output"
+        ],
+        "params_types": {
+            "input": "string",
+            "start": {
+              "_union": ["string", "number"]
+            },
+            "duration": {
+              "_union": ["string", "number"]
+            },
+            "output": "string"
+        }
+    }
+]

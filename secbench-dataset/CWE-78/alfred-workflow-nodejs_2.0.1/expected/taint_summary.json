@@ -1,0 +1,14 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "vuln_type": "command-injection",
+        "sink": "exec(getCommand, function(err, stdout, stderr) {",
+        "sink_lineno": 445,
+        "source": "module.exports.utils.wfVars.remove",
+        "tainted_params": [ "key", "callback" ],
+        "params_types": {
+          "key": "string",
+          "callback": "function"
+        }
+    }
+]

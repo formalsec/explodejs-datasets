@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "const shellOut = shell.execSync(cmd).toString();",
+        "sink_lineno": 15,
+        "source": "module.exports.test",
+        "tainted_params": [
+            "host",
+            "port",
+            "callbackOrConnectTimeout",
+            "callback"
+        ],
+        "params_types": {
+            "host": "string",
+            "port": "number",
+            "callbackOrConnectTimeout": {
+                "_union": [
+                    "function",
+                    "number"
+                ]
+            },
+            "callback": "function"
+        }
+    }
+]

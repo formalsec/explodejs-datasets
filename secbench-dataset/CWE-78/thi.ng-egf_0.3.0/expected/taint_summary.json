@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "? child_process.execSync(`echo \"${body}\" | gpg --decrypt`).toString()",
+        "sink_lineno": 157,
+        "source": "module.exports.BUILTINS.gpg",
+        "tainted_params": [ "_", "body", "ctx" ],
+        "params_types": {
+            "_": "any",
+            "body": "string",
+            "ctx": {
+                "opts": {
+                    "decrypt": "boolean"
+                }
+            }
+        }
+    }
+]

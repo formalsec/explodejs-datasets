@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "index.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = exec(command, {",
+        "sink_lineno": 49,
+        "source": "module.exports",
+        "tainted_params": [
+            "command",
+            "callback",
+            "log"
+        ],
+        "params_types": {
+            "command": "string",
+            "callback": "function",
+            "log": "function"
+        }
+    }
+]

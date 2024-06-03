@@ -1,0 +1,18 @@
+[
+  {
+        "type": "VFunPropOfExportedObj",
+        "filename": "lsof.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('lsof -i tcp:' + port, function(err, d) {",
+        "sink_lineno": 37,
+        "source": "module.exports.rawTcpPort",
+        "tainted_params": [
+            "port",
+            "fn"
+        ],
+        "params_types": {
+            "port": "string",
+            "fn": "function"
+        }
+    }
+]

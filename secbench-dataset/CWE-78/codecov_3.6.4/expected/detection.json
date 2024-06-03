@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "command-injection",
+        "sink_file": "lib/codecov.js",
+        "sink_lineno": "419"
+    }
+]
