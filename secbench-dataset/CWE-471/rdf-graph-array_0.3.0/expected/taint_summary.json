@@ -1,0 +1,23 @@
+[
+  {
+    "type": "VFunRetByExport",
+    "filename" : "index.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "this._gspo[i.g][i.s][i.p] = this._gspo[i.g][i.s][i.p] || {}",
+    "sink_lineno": 208,
+    "source": "new module.exports.Graph",
+    "tainted_params": [],
+    "params_types": {},
+    "returns": {
+      "source": ".add",
+      "tainted_params": [ "graph", "subject", "predicate", "object"],
+      "params_types": {
+        "quad": {
+          "graph" : "string",
+          "subject" : "string",
+          "predicate" : "string",
+          "object" : "string"
+      }
+    }
+  }
+]

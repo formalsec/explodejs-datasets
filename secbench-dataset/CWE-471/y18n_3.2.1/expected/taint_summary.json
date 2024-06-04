@@ -1,0 +1,19 @@
+[
+  {
+    "type": "VNewCall",
+    "filename" : "index.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "this.cache[this.locale][key] = obj[key]",
+    "sink_lineno": 156,
+    "source": "new module.exports",
+    "tainted_params": [],
+    "params_types": {},
+    "returns": {
+      "source": ".updateLocale",
+       "tainted_params": [ "loc" ],
+        "params_types": {
+          "loc" : "polluted_object2"
+        }
+    }
+  }
+]

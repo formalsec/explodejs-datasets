@@ -1,0 +1,17 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "object.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "else current[parts[i]] = value;",
+    "sink_lineno": 210,
+    "source": "module.exports.deepSet",
+    "tainted_params": [ "parent", "key", "value", "mode" ],
+    "params_types": {
+      "parent" : "object",
+      "key" : "string",
+      "value" : "string",
+      "mode": "any"
+    }
+  }
+]

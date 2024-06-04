@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "var documentFile = fs.readFileSync(top.rootFolder + '/' + template);",
+        "sink_lineno": 157,
+        "file": "proxey.js"
+    }
+]

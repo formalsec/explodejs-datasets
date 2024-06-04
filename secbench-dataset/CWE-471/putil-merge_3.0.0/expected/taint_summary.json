@@ -1,0 +1,18 @@
+[
+  {
+    "type": "VFunExported",
+    "filename" : "merge.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "target[key] = srcVal;",
+    "sink_lineno": 72,
+    "source": "module.exports",
+    "tainted_params": [ "target", "source" ],
+    "params_types": {
+      "target" : "object",
+      "source" : "polluted_object2",
+      "opts" : {
+        "deep" : "boolean"
+      }
+    }
+  }
+]

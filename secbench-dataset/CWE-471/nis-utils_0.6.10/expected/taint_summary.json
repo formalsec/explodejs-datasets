@@ -1,0 +1,17 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "object.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "else current[parts[i]] = value;",
+    "sink_lineno": 166,
+    "source": "module.exports.setValue",
+    "tainted_params": [ "parent", "namespace", "value", "mode" ],
+    "params_types": {
+      "parent" : "object",
+      "namespace" : "string",
+      "value" : "string",
+      "mode" : "string"
+    }
+  }
+]

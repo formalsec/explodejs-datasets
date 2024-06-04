@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "index.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "obj[nextTok] = value;",
+    "sink_lineno": 91,
+    "source": "module.exports.set",
+    "tainted_params": [ "obj", "pointer", "value" ],
+    "params_types": {
+      "obj" : "object",
+      "pointer" : "string",
+      "value": "string"
+    }
+  }
+]

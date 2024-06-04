@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "sink_file": "parser.js",
+        "sink_lineno": "359"
+    }
+]

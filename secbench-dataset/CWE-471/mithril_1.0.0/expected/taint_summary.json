@@ -1,0 +1,14 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "mithril.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "cursor[level] = isValue ? value : isNumber ? [] : {}",
+    "sink_lineno": 982,
+    "source": "module.exports.parseQueryString",
+    "tainted_params": [ "string" ],
+    "params_types": {
+      "string" : "string"
+    }
+  }
+]

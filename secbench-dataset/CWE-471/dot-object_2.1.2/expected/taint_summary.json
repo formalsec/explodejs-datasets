@@ -1,0 +1,17 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "index.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "obj[key][k] = val[k]",
+    "sink_lineno": 415,
+    "source": "module.exports.set",
+    "tainted_params": [ "path", "val", "obj", "merge" ],
+    "params_types": {
+      "path" : "string",
+      "val" : "string",
+      "obj" : "object",
+      "merge" : "boolean"
+    }
+  }
+]

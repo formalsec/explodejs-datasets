@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "jsonpointer.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "else obj[part] = value",
+    "sink_lineno": 48,
+    "source": "module.exports.set",
+    "tainted_params": ["obj", "pointer", "value"],
+    "params_types": {
+      "obj" : "object",
+      "pointer" : "array",
+      "value" : "string"
+    }
+  }
+]

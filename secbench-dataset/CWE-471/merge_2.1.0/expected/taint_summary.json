@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "index.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
+    "sink_lineno": 59,
+    "source": "module.exports.recursive",
+    "tainted_params": [ "arg0", "arg1", "arg2" ],
+    "params_types": {
+      "arg0": "object",
+      "arg1": "polluted_object2",
+      "arg2": "bool"
+    }
+  }
+]

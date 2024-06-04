@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "path.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "document[keyPath] = value;",
+    "sink_lineno": 54,
+    "source": "module.exports.setPath",
+    "tainted_params": [ "document", "keyPath", "value" ],
+    "params_types": {
+      "document" : "object",
+      "keyPath" : "string",
+      "value" : "string"
+    }
+  }
+]

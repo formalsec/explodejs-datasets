@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "sink_file": "lib/mootools-core-1.5.2-server.js",
+        "sink_lineno": "355"
+    }
+]

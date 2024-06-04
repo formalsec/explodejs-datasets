@@ -1,0 +1,15 @@
+[
+  {
+    "type": "VFunExported",
+    "filename" : "index.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "target[key] = val;",
+    "sink_lineno": 21,
+    "source": "module.exports",
+    "tainted_params": [ "target", "rest" ],
+    "params_types": {
+      "target" : "object",
+      "rest" : "polluted_object3"
+    }
+  }
+]

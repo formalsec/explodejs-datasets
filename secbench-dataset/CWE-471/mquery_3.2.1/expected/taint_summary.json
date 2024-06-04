@@ -1,0 +1,15 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "utils.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "to[key] = from[key];",
+    "sink_lineno": 137,
+    "source": "module.exports.merge",
+    "tainted_params": [ "to", "from" ],
+    "params_types": {
+      "dst" : "object",
+      "src" : "polluted_object2"
+    }
+  }
+]

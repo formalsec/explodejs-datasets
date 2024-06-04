@@ -1,0 +1,24 @@
+[
+  {
+    "type": "VNewCall",
+    "filename" : "properties-reader.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "source[expanded[0]] = parsedValue;",
+    "sink_lineno": 200,
+    "source": "new module.exports",
+    "tainted_params": [ "sourceFile", "encoding", "propertiesAppender" ],
+    "params_types": {
+      "sourceFile" : "string",
+      "encoding" : "string",
+      "propertiesAppender": "string"
+    },
+    "returns": {
+      "source": ".set",
+      "tainted_params": [ "key", "value" ],
+      "params_types": {
+        "key" : "string",
+        "value" : "string"
+      }
+    }
+  }
+]

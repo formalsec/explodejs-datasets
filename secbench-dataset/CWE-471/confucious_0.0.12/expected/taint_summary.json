@@ -1,0 +1,20 @@
+[
+  {
+    "type": "VNewCall",
+    "filename" : "confucious.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "hash[lastSubKey] = value;",
+    "sink_lineno": 48,
+    "source": "new module.exports",
+    "tainted_params": [],
+    "params_types": {},
+    "return": {
+      "source": ".set",
+      "tainted_params": [],
+      "params_types": {
+        "key" : "string",
+        "value" : "string"
+      }
+    }
+  }
+]

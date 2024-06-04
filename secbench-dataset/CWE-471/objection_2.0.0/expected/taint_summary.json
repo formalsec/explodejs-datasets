@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "objectUtils.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "obj[path[path.length - 1]] = value;",
+    "sink_lineno": 246,
+    "source": "module.exports.set",
+    "tainted_params": [ "obj", "path", "value" ],
+    "params_types": {
+      "obj" : "object",
+      "path" : "array",
+      "value" : "string"
+    }
+  }
+]

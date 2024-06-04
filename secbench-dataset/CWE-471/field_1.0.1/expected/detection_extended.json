@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-471",
+        "sink": "obj[field] = value",
+        "sink_lineno": 39,
+        "file": "field.js"
+    }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "type": "VFunExported",
+    "filename" : "undefsafe.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "parent[key] = value;",
+    "sink_lineno": 106,
+    "source": "module.exports",
+    "tainted_params": [ "obj", "path", "value", "__res" ],
+    "params_types": {
+      "obj" : "object",
+      "path" : "string",
+      "value" : "string",
+      "__res": "any"
+    }
+  }
+]

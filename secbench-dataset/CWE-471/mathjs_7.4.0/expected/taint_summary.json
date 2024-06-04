@@ -1,0 +1,15 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "object.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "a[prop] = b[prop];",
+    "sink_lineno": 131,
+    "source": "exports.deepExtend",
+    "tainted_params": [ "a", "b" ],
+    "params_types": {
+      "a" : "object",
+      "b" : "polluted_object2"
+    }
+  }
+]

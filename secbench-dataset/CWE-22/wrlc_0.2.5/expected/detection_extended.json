@@ -1,0 +1,14 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "var bundler = child.spawn(options.bundler, options.argv);",
+        "sink_lineno": 42,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "var browser = child.spawn(options.browser, [util.format('http://%s:%d', options.host, options.port)]);",
+        "sink_lineno": 65,
+        "file": "index.js"
+    }
+]

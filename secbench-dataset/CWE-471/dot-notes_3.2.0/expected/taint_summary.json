@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunExported",
+    "filename" : "create.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "tmp[keys[last]] = val;",
+    "sink_lineno": 43,
+    "source": "module.exports",
+    "tainted_params": [ "obj", "str", "val" ],
+    "params_types": {
+      "obj" : "object",
+      "str" : "string",
+      "val" : "string"
+    }
+  }
+]

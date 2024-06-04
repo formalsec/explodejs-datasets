@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-94",
+        "sink": "return new Function(['obj'], body);",
+        "sink_lineno": 231,
+        "file": "index.js"
+    }
+]

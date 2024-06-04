@@ -1,0 +1,24 @@
+[
+  {
+    "type": "VFunRetByExport",
+    "filename" : "src/index.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "if (keyPath.length > 0) ret[keyPath[keyPath.length - 1]] = value;",
+    "sink_lineno": 76,
+    "source": "module.exports",
+    "tainted_params": [ "obj" ],
+    "params_types" : {
+      "obj" : "object"
+    },
+    "returns" : {
+      "source": ".set",
+      "tainted_params": ["keyPath", "value", "options" ],
+      "params_types": {
+        "keyPath" : "string",
+        "value" : "string",
+        "options": "object"
+      }
+    }
+  }
+]
+

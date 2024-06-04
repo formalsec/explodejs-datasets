@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunExported",
+    "filename" : "index.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "original[name] = patch[name];",
+    "sink_lineno": 93,
+    "source": "module.exports",
+    "tainted_params": [ "original", "patch", "removeMode" ],
+    "params_types": {
+      "original" : "object",
+      "patch" : "polluted_object2",
+      "removeMode" : "bool"
+    }
+  }
+]

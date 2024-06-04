@@ -1,0 +1,18 @@
+[
+  {
+    "type": "VFunExported",
+    "filename" : "index.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "releases[branch.ref] = branch",
+    "sink_lineno": 56,
+    "source": "module.exports",
+    "tainted_params": [ "target" ],
+    "params_types": {
+      "target" : {
+        "ref" : "string",
+        "name" : "string"
+      }
+    }
+  }
+]
+

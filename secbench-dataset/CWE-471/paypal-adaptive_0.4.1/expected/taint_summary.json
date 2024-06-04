@@ -1,0 +1,14 @@
+[
+  {
+    "type": "VNewCall",
+    "filename" : "paypal-adaptive.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "a[p] = b[p];",
+    "sink_lineno": 31,
+    "source": "new module.exports",
+    "tainted_params": [ "config" ],
+    "params_types": {
+      "config" : "polluted_object2"
+    }
+  }
+]

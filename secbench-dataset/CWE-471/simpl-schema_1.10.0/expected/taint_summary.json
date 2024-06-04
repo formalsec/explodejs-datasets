@@ -1,0 +1,13 @@
+[
+  {
+    "filename" : "src/merge.js",
+    "vuln_type": "prototype-pollution",
+    "source": "module.exports",
+    "sink": "??",
+    "tainted_params": [ "dst", "src" ],
+    "params_types": {
+      "dst" : "object",
+      "src" : "polluted_object2"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "field.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "obj[field] = value",
+    "sink_lineno": 50,
+    "source": "module.exports.set",
+    "tainted_params": [ "topObj", "fields", "value" ],
+    "params_types": {
+      "topObj" : "object",
+      "fields" : "string",
+      "value" : "string"
+    }
+  }
+]

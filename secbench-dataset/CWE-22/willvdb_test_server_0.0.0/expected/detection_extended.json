@@ -1,0 +1,14 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(ROOT_DIR + \"/index.html\", function (err,data) {",
+        "sink_lineno": 37,
+        "file": "cityserver.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(ROOT_DIR + \"/city-weather.html\", function (err,data) {",
+        "sink_lineno": 47,
+        "file": "cityserver.js"
+    }
+]

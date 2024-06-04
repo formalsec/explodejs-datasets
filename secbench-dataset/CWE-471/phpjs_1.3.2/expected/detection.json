@@ -1,0 +1,7 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "sink_file": "build/npm.js",
+        "sink_lineno": "6406"
+    }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "type": "VFunExported",
+    "filename" : "apply.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "doc[k] = apply(doc[k], v);",
+    "sink_lineno": 25,
+    "source": "module.exports",
+    "tainted_params": [ "doc", "patch" ],
+    "params_types": {
+      "doc" : "object",
+      "patch" : "polluted_object2"
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "this.input = fs.readFileSync(path, encoding)",
+        "sink_lineno": 17,
+        "file": "ini_parser.js"
+    },
+    {
+        "vuln_type": "CWE-471",
+        "sink": "this.configs[section][key] = value",
+        "sink_lineno": 108,
+        "file": "ini_parser.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFileSync(toPath, result, {encoding: toEncoding})",
+        "sink_lineno": 161,
+        "file": "ini_parser.js"
+    }
+]
