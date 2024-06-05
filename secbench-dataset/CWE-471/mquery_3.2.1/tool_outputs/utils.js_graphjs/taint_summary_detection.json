@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = from[key];",
+        "sink_lineno": 142
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = from[key];",
+        "sink_lineno": 137
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = clone(from[key]);",
+        "sink_lineno": 169
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "to[key] = clone(from[key]);",
+        "sink_lineno": 164
+    }
+]

@@ -1,1 +1,57 @@
-[]
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-471/keyd_1.3.4/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (keyPath.length > 0) ret[keyPath[keyPath.length - 1]] = value;",
+        "sink_lineno": 76,
+        "source": "new module.exports",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            }
+        },
+        "returns": {
+            "source": ".set",
+            "params_types": {
+                "keyPath": {
+                    "_union": [
+                        "object",
+                        "array",
+                        "string"
+                    ]
+                },
+                "value": "any",
+                "options": {
+                    "separator": "any"
+                }
+            },
+            "tainted_params": [
+                "keyPath",
+                "value",
+                "options"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "2500.KeyPath-o345",
+                "fn_id": "1459",
+                "source_fn_id": "1459"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "2502.v225-o442",
+                "fn_id": "1891",
+                "source_fn_id": "1891"
+            }
+        ]
+    }
+]

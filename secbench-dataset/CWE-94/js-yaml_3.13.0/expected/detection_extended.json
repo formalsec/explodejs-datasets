@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-94",
+        "sink": "return new Function(params, 'return ' + source.slice(body[0], body[1]));",
+        "sink_lineno": 75,
+        "file": "function.js"
+    }
+]

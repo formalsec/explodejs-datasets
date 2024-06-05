@@ -24,6 +24,50 @@
         ]
     },
     {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(toPath, result, {encoding: toEncoding})",
+        "sink_lineno": 161,
+        "source": "new module.exports",
+        "tainted_params": [
+            "path",
+            "encoding"
+        ],
+        "params_types": {
+            "path": "string",
+            "encoding": "any"
+        },
+        "returns": {
+            "source": ".save",
+            "params_types": {
+                "opt": {
+                    "path": "string",
+                    "encoding": "any",
+                    "delimiter": "any"
+                }
+            },
+            "tainted_params": [
+                "opt"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "2154.IniParser-o251",
+                "fn_id": "1236",
+                "source_fn_id": "1236"
+            },
+            {
+                "type": "Method",
+                "prop": "save",
+                "fn_name": "2156.v235-o381",
+                "fn_id": "2033",
+                "source_fn_id": "2033"
+            }
+        ]
+    },
+    {
         "type": "VFunExported",
         "filename": "/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
         "vuln_type": "prototype-pollution",
@@ -44,6 +88,50 @@
                 "fn_name": "2154.IniParser-o251",
                 "fn_id": "1236",
                 "source_fn_id": "1236"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.configs[section][key] = value",
+        "sink_lineno": 108,
+        "source": "new module.exports",
+        "tainted_params": [
+            "path",
+            "encoding"
+        ],
+        "params_types": {
+            "path": "string",
+            "encoding": "any"
+        },
+        "returns": {
+            "source": ".set",
+            "params_types": {
+                "section": "string",
+                "key": "string",
+                "value": "any"
+            },
+            "tainted_params": [
+                "section",
+                "key",
+                "value"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "2154.IniParser-o251",
+                "fn_id": "1236",
+                "source_fn_id": "1236"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "2156.v205-o366",
+                "fn_id": "1802",
+                "source_fn_id": "1802"
             }
         ]
     }

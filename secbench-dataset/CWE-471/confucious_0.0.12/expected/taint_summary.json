@@ -8,9 +8,9 @@
     "source": "new module.exports",
     "tainted_params": [],
     "params_types": {},
-    "return": {
+    "returns": {
       "source": ".set",
-      "tainted_params": [],
+      "tainted_params": [ "key", "value" ],
       "params_types": {
         "key" : "string",
         "value" : "string"

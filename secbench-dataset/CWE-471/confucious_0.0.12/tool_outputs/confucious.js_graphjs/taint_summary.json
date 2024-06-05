@@ -1,1 +1,144 @@
-[]
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.push(JSON.parse(fs.readFileSync(filePath, 'utf8')));",
+        "sink_lineno": 160,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".pushJsonFile",
+            "params_types": {
+                "filePath": "string"
+            },
+            "tainted_params": [
+                "filePath"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1517.v152-o183",
+                "fn_id": "877",
+                "source_fn_id": "877"
+            },
+            {
+                "type": "Method",
+                "prop": "pushJsonFile",
+                "fn_name": "1519.v143-o250",
+                "fn_id": "1409",
+                "source_fn_id": "1409"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "hash[lastSubKey] = value;",
+        "sink_lineno": 48,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".set",
+            "params_types": {
+                "key": "string",
+                "value": "object"
+            },
+            "tainted_params": [
+                "key",
+                "value"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1517.v152-o183",
+                "fn_id": "877",
+                "source_fn_id": "877"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1519.v96-o207",
+                "fn_id": "936",
+                "source_fn_id": "936"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "hash[lastSubKey] = extend(true, {}, value);",
+        "sink_lineno": 45,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".set",
+            "params_types": {
+                "key": "string",
+                "value": "object"
+            },
+            "tainted_params": [
+                "key",
+                "value"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1517.v152-o183",
+                "fn_id": "877",
+                "source_fn_id": "877"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1519.v96-o207",
+                "fn_id": "936",
+                "source_fn_id": "936"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "hash[subKey] = hash;",
+        "sink_lineno": 37,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".set",
+            "params_types": {
+                "key": "string",
+                "value": "object"
+            },
+            "tainted_params": [
+                "key",
+                "value"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1517.v152-o183",
+                "fn_id": "877",
+                "source_fn_id": "877"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1519.v96-o207",
+                "fn_id": "936",
+                "source_fn_id": "936"
+            }
+        ]
+    }
+]

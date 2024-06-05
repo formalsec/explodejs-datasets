@@ -1,1 +1,81 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
+        "vuln_type": "command-injection",
+        "sink": "var childProcess = cp.exec(command, options, function (err, stdout, stderr) {",
+        "sink_lineno": 45,
+        "source": "module.exports.exec",
+        "tainted_params": [
+            "command",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "exec",
+                "fn_name": "1452.exec-o246",
+                "fn_id": 999,
+                "source_fn_id": 999
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
+        "vuln_type": "command-injection",
+        "sink": "var childProcess = cp.execFile(file, args, options, function (err, stdout, stderr) {",
+        "sink_lineno": 64,
+        "source": "module.exports.execFile",
+        "tainted_params": [
+            "file",
+            "argsOrOptions",
+            "options"
+        ],
+        "params_types": {
+            "file": "string",
+            "argsOrOptions": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "execFile",
+                "fn_name": "1452.execFile-o253",
+                "fn_id": 1092,
+                "source_fn_id": 1092
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
+        "vuln_type": "command-injection",
+        "sink": "var childProcess = cp.spawn(command, args, options);",
+        "sink_lineno": 83,
+        "source": "module.exports.spawn",
+        "tainted_params": [
+            "command",
+            "argsOrOptions",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "argsOrOptions": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "spawn",
+                "fn_name": "1452.spawn-o260",
+                "fn_id": 1198,
+                "source_fn_id": 1198
+            }
+        ]
+    }
+]

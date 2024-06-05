@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-94",
+        "sink": "eval(path);",
+        "sink_lineno": 170,
+        "file": "index.js"
+    }
+]

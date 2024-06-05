@@ -31,16 +31,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "26185.m-o2852",
-                "fn_id": "14971",
-                "source_fn_id": "14971"
+                "fn_name": "26193.m-o2860",
+                "fn_id": "14979",
+                "source_fn_id": "14979"
             },
             {
                 "type": "Method",
                 "prop": "parseQueryString",
-                "fn_name": "26185.parseQueryString-o2820",
-                "fn_id": "24260",
-                "source_fn_id": "24260"
+                "fn_name": "26193.parseQueryString-o2828",
+                "fn_id": "24268",
+                "source_fn_id": "24268"
             }
         ]
     }

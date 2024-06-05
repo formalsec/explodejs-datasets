@@ -177,8 +177,12 @@ var rowContent = function(type, section, key, value) {
 module.exports = IniParser
 let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
-// Vuln: prototype-pollution
+// Vuln: path-traversal
 let path = esl_symbolic.string("path");
 let encoding = esl_symbolic.any("encoding");
-module.exports(path, encoding);
-console.log(({}).toString);
+var ret_new_module_exports = new module.exports(path, encoding);
+let opt =
+  { path: esl_symbolic.string("path")
+  , encoding: esl_symbolic.any("encoding")
+  , delimiter: esl_symbolic.any("delimiter") };
+ret_new_module_exports.save(opt);

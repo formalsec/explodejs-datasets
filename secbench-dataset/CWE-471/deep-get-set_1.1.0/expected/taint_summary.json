@@ -6,11 +6,11 @@
     "sink": "obj[keys[i]] = value;",
     "sink_lineno": 30,
     "source": "module.exports",
-    "tainted_params": [],
+    "tainted_params": [ "obj", "path", "value"],
     "params_types": {
       "obj" : "object",
-      "key" : ["string", "string"],
-      "val" : "string"
+      "path" : ["string", "string"],
+      "value" : "string"
     }
   }
 ]
