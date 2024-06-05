@@ -16,7 +16,7 @@
         },
         "returns": {
             "source": "",
-            "param_types": {
+            "params_types": {
                 "orig": "string",
                 "compareTo": "string",
                 "options": {

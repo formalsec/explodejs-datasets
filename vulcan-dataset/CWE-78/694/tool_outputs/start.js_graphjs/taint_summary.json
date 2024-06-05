@@ -14,7 +14,7 @@
         },
         "returns": {
             "source": ".run",
-            "param_types": {
+            "params_types": {
                 "context": {
                     "argv": {
                         "_": {
@@ -76,7 +76,7 @@
         },
         "returns": {
             "source": ".run",
-            "param_types": {
+            "params_types": {
                 "context": {
                     "argv": {
                         "_": {
@@ -138,7 +138,7 @@
         },
         "returns": {
             "source": ".run",
-            "param_types": {
+            "params_types": {
                 "context": {
                     "argv": {
                         "_": {
@@ -200,7 +200,7 @@
         },
         "returns": {
             "source": ".getFrameworkName",
-            "param_types": {
+            "params_types": {
                 "framework": "any"
             },
             "tainted_params": [
@@ -238,7 +238,7 @@
         },
         "returns": {
             "source": ".checkStatus",
-            "param_types": {
+            "params_types": {
                 "stderr": "string",
                 "timeout": "number",
                 "ignoreStdErr": "any"

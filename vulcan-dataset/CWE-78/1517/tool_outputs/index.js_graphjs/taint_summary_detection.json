@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "filename": "/datasets/vulcan-dataset/CWE-78/1517/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "r.exec(\"git ls-remote --tags \" + e, (e, r, o) => {",
+        "sink_lineno": 12
+    }
+]

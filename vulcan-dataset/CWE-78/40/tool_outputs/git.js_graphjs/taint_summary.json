@@ -16,7 +16,7 @@
         },
         "returns": {
             "source": ".status",
-            "param_types": {
+            "params_types": {
                 "repoPath": "any",
                 "file": "string"
             },
@@ -58,7 +58,7 @@
         },
         "returns": {
             "source": ".diffFile",
-            "param_types": {
+            "params_types": {
                 "repoPath": "any",
                 "filename": "string",
                 "sha1": "string",
@@ -104,7 +104,7 @@
         },
         "returns": {
             "source": ".getCurrentBranch",
-            "param_types": {
+            "params_types": {
                 "repoPath": "any"
             },
             "tainted_params": [

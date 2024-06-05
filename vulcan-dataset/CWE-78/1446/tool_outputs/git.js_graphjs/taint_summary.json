@@ -20,7 +20,7 @@
         },
         "returns": {
             "source": ".pull",
-            "param_types": {
+            "params_types": {
                 "repo": {
                     "organization": "any",
                     "name": "any",

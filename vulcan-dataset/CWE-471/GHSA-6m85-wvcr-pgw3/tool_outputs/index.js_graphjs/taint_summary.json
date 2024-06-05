@@ -18,7 +18,7 @@
         },
         "returns": {
             "source": ".set",
-            "param_types": {
+            "params_types": {
                 "o": {
                     "_union": [
                         "object",

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/input/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-x5m8-2r8v-8f97/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[path[i]] = value",
         "sink_lineno": 27,

@@ -16,7 +16,7 @@
         },
         "returns": {
             "source": "",
-            "param_types": {
+            "params_types": {
                 "req": {
                     "url": "any"
                 },

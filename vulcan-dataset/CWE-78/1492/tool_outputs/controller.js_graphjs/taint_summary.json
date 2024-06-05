@@ -14,7 +14,7 @@
         },
         "returns": {
             "source": ".createChild",
-            "param_types": {
+            "params_types": {
                 "info": {
                     "params": {
                         "cmd": "string",

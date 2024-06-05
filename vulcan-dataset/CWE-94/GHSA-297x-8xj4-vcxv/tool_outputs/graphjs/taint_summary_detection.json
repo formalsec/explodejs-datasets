@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/input/doT.js",
+        "vuln_type": "code-injection",
+        "sink": "new Function(\"def\", \"def['\"+code+\"']=\" + value)(def);",
+        "sink_lineno": 69
+    },
+    {
+        "filename": "/input/doT.js",
+        "vuln_type": "code-injection",
+        "sink": "var v = new Function(\"def\", \"return \" + code)(def);",
+        "sink_lineno": 83
+    },
+    {
+        "filename": "/input/doT.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function(c.varname, str);",
+        "sink_lineno": 133
+    }
+]

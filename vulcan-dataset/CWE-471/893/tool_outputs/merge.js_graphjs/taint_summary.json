@@ -10,7 +10,7 @@
         "params_types": {},
         "returns": {
             "source": ".black",
-            "param_types": {},
+            "params_types": {},
             "tainted_params": []
         },
         "call_paths": [
@@ -40,7 +40,7 @@
         "params_types": {},
         "returns": {
             "source": ".white",
-            "param_types": {},
+            "params_types": {},
             "tainted_params": []
         },
         "call_paths": [
@@ -70,7 +70,7 @@
         "params_types": {},
         "returns": {
             "source": ".black",
-            "param_types": {},
+            "params_types": {},
             "tainted_params": []
         },
         "call_paths": [
@@ -100,7 +100,7 @@
         "params_types": {},
         "returns": {
             "source": ".white",
-            "param_types": {},
+            "params_types": {},
             "tainted_params": []
         },
         "call_paths": [

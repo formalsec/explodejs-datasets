@@ -14,7 +14,7 @@
         },
         "returns": {
             "source": ".recursive",
-            "param_types": {
+            "params_types": {
                 "host": "any"
             },
             "tainted_params": [
@@ -22,7 +22,7 @@
             ],
             "returns": {
                 "source": "",
-                "param_types": {
+                "params_types": {
                     "key": "string"
                 },
                 "tainted_params": [

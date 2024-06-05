@@ -20,7 +20,7 @@
         },
         "returns": {
             "source": ".fromJSON",
-            "param_types": {
+            "params_types": {
                 "rules": {
                     "condition": "string",
                     "consequence": "string"
@@ -67,7 +67,7 @@
         },
         "returns": {
             "source": ".fromJSON",
-            "param_types": {
+            "params_types": {
                 "rules": {
                     "condition": "string",
                     "consequence": "string"
@@ -90,6 +90,100 @@
                 "fn_name": "2412.v269-o353",
                 "fn_id": "2222",
                 "source_fn_id": "2222"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "vuln_type": "code-injection",
+        "sink": "rule.condition = eval(\"(\"+rule.condition+\")\");",
+        "sink_lineno": 236,
+        "source": "new module.exports",
+        "tainted_params": [
+            "rules"
+        ],
+        "params_types": {
+            "rules": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            }
+        },
+        "returns": {
+            "source": ".fromJSON",
+            "params_types": {
+                "rules": {
+                    "condition": "string",
+                    "consequence": "string"
+                }
+            },
+            "tainted_params": [
+                "rules"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "2412.v242-o354",
+                "fn_id": "1406",
+                "source_fn_id": "1406"
+            },
+            {
+                "type": "Method",
+                "prop": "fromJSON",
+                "fn_name": "2412.v269-o353",
+                "fn_id": 2222,
+                "source_fn_id": 2222
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "vuln_type": "code-injection",
+        "sink": "rule.consequence = eval(\"(\"+rule.consequence+\")\");",
+        "sink_lineno": 237,
+        "source": "new module.exports",
+        "tainted_params": [
+            "rules"
+        ],
+        "params_types": {
+            "rules": {
+                "_union": [
+                    "array",
+                    "object",
+                    "string"
+                ]
+            }
+        },
+        "returns": {
+            "source": ".fromJSON",
+            "params_types": {
+                "rules": {
+                    "condition": "string",
+                    "consequence": "string"
+                }
+            },
+            "tainted_params": [
+                "rules"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "2412.v242-o354",
+                "fn_id": "1406",
+                "source_fn_id": "1406"
+            },
+            {
+                "type": "Method",
+                "prop": "fromJSON",
+                "fn_name": "2412.v269-o353",
+                "fn_id": 2222,
+                "source_fn_id": 2222
             }
         ]
     }

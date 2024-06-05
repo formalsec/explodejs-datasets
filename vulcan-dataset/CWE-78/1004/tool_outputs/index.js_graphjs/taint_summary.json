@@ -10,7 +10,7 @@
         "params_types": {},
         "returns": {
             "source": ".fetch",
-            "param_types": {
+            "params_types": {
                 "id": "string"
             },
             "tainted_params": [
@@ -20,16 +20,16 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1176.Pullit-o179",
-                "fn_id": "705",
-                "source_fn_id": "705"
+                "fn_name": "1180.Pullit-o183",
+                "fn_id": "709",
+                "source_fn_id": "709"
             },
             {
                 "type": "Method",
                 "prop": "fetch",
-                "fn_name": "1176.fetch-o178",
-                "fn_id": 793,
-                "source_fn_id": 793
+                "fn_name": "1180.fetch-o182",
+                "fn_id": 797,
+                "source_fn_id": 797
             }
         ]
     }

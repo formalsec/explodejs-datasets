@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/input/main.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-wwg2-2crq-6grr/src/main.js",
         "vuln_type": "prototype-pollution",
         "sink": "tmp[parts[i]] = val;",
         "sink_lineno": 11
