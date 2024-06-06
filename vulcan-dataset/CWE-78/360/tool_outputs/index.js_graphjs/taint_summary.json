@@ -1,1 +1,78 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 34,
+        "source": "module.exports.FSGit",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "FSGit",
+                "fn_name": "2234.FSGit-o328",
+                "fn_id": 2225,
+                "source_fn_id": 2225
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 56,
+        "source": "module.exports.FSGit",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "FSGit",
+                "fn_name": "2234.FSGit-o328",
+                "fn_id": 2225,
+                "source_fn_id": 2225
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 77,
+        "source": "module.exports.FSGit",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "FSGit",
+                "fn_name": "2234.FSGit-o328",
+                "fn_id": 2225,
+                "source_fn_id": 2225
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
+        "sink_lineno": 96,
+        "source": "module.exports.FSGit",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "FSGit",
+                "fn_name": "2234.FSGit-o328",
+                "fn_id": 2225,
+                "source_fn_id": 2225
+            }
+        ]
+    }
+]

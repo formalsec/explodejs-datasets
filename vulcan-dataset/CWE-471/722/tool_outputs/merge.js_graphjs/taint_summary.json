@@ -14,7 +14,7 @@
         },
         "returns": {
             "source": ".recursive",
-            "param_types": {
+            "params_types": {
                 "clone": "bool"
             },
             "tainted_params": [
@@ -52,7 +52,7 @@
         },
         "returns": {
             "source": ".recursive",
-            "param_types": {
+            "params_types": {
                 "clone": "bool"
             },
             "tainted_params": [

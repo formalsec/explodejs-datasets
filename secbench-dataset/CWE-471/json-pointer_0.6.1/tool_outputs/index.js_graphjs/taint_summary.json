@@ -1,1 +1,38 @@
-[]
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-471/json-pointer_0.6.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[nextTok] = value;",
+        "sink_lineno": 98,
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "pointer",
+            "value"
+        ],
+        "params_types": {
+            "obj": {
+                "_union": [
+                    "array",
+                    "object"
+                ]
+            },
+            "pointer": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "2185.api-o272",
+                "fn_id": 1269,
+                "source_fn_id": 1269
+            }
+        ]
+    }
+]

@@ -22,13 +22,13 @@
         "returns": {
             "source": ".merge",
             "params_types": {
-                "target": "object",
-                "additional": {
+                "target": {
                     "_union": [
                         "object",
                         "array"
                     ]
-                }
+                },
+                "additional": "object"
             },
             "tainted_params": [
                 "target",
@@ -74,13 +74,13 @@
         "returns": {
             "source": ".merge",
             "params_types": {
-                "target": "object",
-                "additional": {
+                "target": {
                     "_union": [
                         "object",
                         "array"
                     ]
-                }
+                },
+                "additional": "object"
             },
             "tainted_params": [
                 "target",

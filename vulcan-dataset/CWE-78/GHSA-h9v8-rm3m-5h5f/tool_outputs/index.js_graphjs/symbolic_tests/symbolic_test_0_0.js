@@ -38,7 +38,4 @@ let esl_symbolic = require("esl_symbolic");
 esl_symbolic.sealProperties(Object.prototype);
 // Vuln: command-injection
 let dir = esl_symbolic.any("dir");
-var ret_module_exports = module.exports(dir);
-let name = esl_symbolic.string("name");
-let url = esl_symbolic.string("url");
-ret_module_exportsnew(name, url);
+module.exports(dir);
