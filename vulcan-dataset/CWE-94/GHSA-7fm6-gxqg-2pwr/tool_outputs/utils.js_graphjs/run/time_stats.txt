@@ -1,5 +1,5 @@
-graph: 230079.225939
-import: 1576
-injection_detection: 5537.625789642334
+graph: 247049.885655
+import: 1708
+injection_detection: 7491.3458824157715
 
 Timed out

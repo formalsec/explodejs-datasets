@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "656",
+        "obj_name": "985.exports-o144",
+        "prop_name": "check",
+        "fn_node_id": "985.v85-o143",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "880",
+        "obj_name": "985.exports-o149",
+        "prop_name": "checkSync",
+        "fn_node_id": "985.v100-o148",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

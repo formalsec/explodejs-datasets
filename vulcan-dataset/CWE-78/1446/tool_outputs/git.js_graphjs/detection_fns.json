@@ -1,0 +1,135 @@
+[
+    {
+        "exported_fn_id": "2306",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "3903.Git-o525",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "2300",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "3903.Git-o525",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "3740",
+        "obj_name": "3903.v445-o598",
+        "prop_name": "pull",
+        "fn_node_id": "3903.v472-o597",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3466",
+        "obj_name": "3903.v402-o592",
+        "prop_name": "checkout",
+        "fn_node_id": "3903.v444-o591",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3429",
+        "obj_name": "3903.v398-o586",
+        "prop_name": "createDir",
+        "fn_node_id": "3903.v401-o585",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3342",
+        "obj_name": "3903.v384-o579",
+        "prop_name": "update",
+        "fn_node_id": "3903.v397-o578",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3313",
+        "obj_name": "3903.v380-o573",
+        "prop_name": "checkoutDir",
+        "fn_node_id": "3903.v383-o572",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3203",
+        "obj_name": "3903.v364-o567",
+        "prop_name": "handlePush",
+        "fn_node_id": "3903.v379-o566",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3120",
+        "obj_name": "3903.v352-o561",
+        "prop_name": "init",
+        "fn_node_id": "3903.v363-o560",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2947",
+        "obj_name": "3903.v323-o555",
+        "prop_name": "handle",
+        "fn_node_id": "3903.v351-o554",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2927",
+        "obj_name": "3903.v321-o549",
+        "prop_name": "perm",
+        "fn_node_id": "3903.v322-o548",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2891",
+        "obj_name": "3903.v316-o544",
+        "prop_name": "create",
+        "fn_node_id": "3903.v320-o543",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2618",
+        "obj_name": "3903.v284-o537",
+        "prop_name": "onRequest",
+        "fn_node_id": "3903.v315-o536",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2339",
+        "obj_name": "3905.this-o607",
+        "prop_name": "opts",
+        "fn_node_id": "3905.v243-o606",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2378",
+        "obj_name": "3905.this-o617",
+        "prop_name": "repoDir",
+        "fn_node_id": "3905.v249-o616",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2401",
+        "obj_name": "3905.this-o622",
+        "prop_name": "workDir",
+        "fn_node_id": "3905.v252-o621",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2442",
+        "obj_name": "3905.this-o630",
+        "prop_name": "repos",
+        "fn_node_id": "3905.v257-o629",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2453",
+        "obj_name": "3905.this-o635",
+        "prop_name": "onPerm",
+        "fn_node_id": "3905.v259-o634",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2589",
+        "obj_name": "3905.this-o662",
+        "prop_name": "auth",
+        "fn_node_id": "3905.v281-o661",
+        "type": "get_functions_exported_via_this_property"
+    }
+]

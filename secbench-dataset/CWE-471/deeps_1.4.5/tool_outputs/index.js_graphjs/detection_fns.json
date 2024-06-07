@@ -1,0 +1,86 @@
+[
+    {
+        "exported_fn_id": "3303",
+        "obj_name": "3784.v382-o520",
+        "prop_name": "mapToProps",
+        "fn_node_id": "3784.mapToProps-o491",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2697",
+        "obj_name": "3784.v381-o518",
+        "prop_name": "unflatten",
+        "fn_node_id": "3784.unflatten-o449",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2151",
+        "obj_name": "3784.v380-o516",
+        "prop_name": "isObject",
+        "fn_node_id": "3784.isObject-o411",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2632",
+        "obj_name": "3784.v379-o514",
+        "prop_name": "collapse",
+        "fn_node_id": "3784.flatten-o445",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2697",
+        "obj_name": "3784.v378-o512",
+        "prop_name": "expand",
+        "fn_node_id": "3784.unflatten-o449",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2632",
+        "obj_name": "3784.v377-o510",
+        "prop_name": "flatten",
+        "fn_node_id": "3784.flatten-o445",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2376",
+        "obj_name": "3784.v376-o508",
+        "prop_name": "values",
+        "fn_node_id": "3784.values-o425",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "3571",
+        "obj_name": "3784.v375-o506",
+        "prop_name": "merge",
+        "fn_node_id": "3784.merge-o495",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2504",
+        "obj_name": "3784.v374-o504",
+        "prop_name": "keys",
+        "fn_node_id": "3784.keys-o435",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2189",
+        "obj_name": "3784.v373-o502",
+        "prop_name": "diff",
+        "fn_node_id": "3784.diff-o415",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2844",
+        "obj_name": "3784.v372-o500",
+        "prop_name": "set",
+        "fn_node_id": "3784.set-o461",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2768",
+        "obj_name": "3784.v371-o498",
+        "prop_name": "get",
+        "fn_node_id": "3784.get-o454",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

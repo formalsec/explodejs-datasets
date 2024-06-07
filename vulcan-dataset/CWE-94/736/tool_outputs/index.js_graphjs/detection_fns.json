@@ -1,0 +1,58 @@
+[
+    {
+        "exported_fn_id": "2256",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "3782.morgan-o466",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "2176",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "3782.morgan-o466",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "3769",
+        "obj_name": "3782.v213-o476",
+        "prop_name": "token",
+        "fn_node_id": "3782.token-o475",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2206",
+        "obj_name": "3782.v213-o476",
+        "prop_name": "token",
+        "fn_node_id": "3782.token-o475",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "3570",
+        "obj_name": "3782.v212-o473",
+        "prop_name": "format",
+        "fn_node_id": "3782.format-o472",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2196",
+        "obj_name": "3782.v212-o473",
+        "prop_name": "format",
+        "fn_node_id": "3782.format-o472",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "3382",
+        "obj_name": "3782.v211-o470",
+        "prop_name": "compile",
+        "fn_node_id": "3782.compile-o469",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "2186",
+        "obj_name": "3782.v211-o470",
+        "prop_name": "compile",
+        "fn_node_id": "3782.compile-o469",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

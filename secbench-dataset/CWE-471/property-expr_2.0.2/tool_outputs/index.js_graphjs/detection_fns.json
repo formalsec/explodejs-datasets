@@ -1,0 +1,72 @@
+[
+    {
+        "exported_fn_id": "1443",
+        "obj_name": "1791.v155-o287",
+        "prop_name": "forEach",
+        "fn_node_id": "1791.v154-o271",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1367",
+        "obj_name": "1791.v155-o285",
+        "prop_name": "join",
+        "fn_node_id": "1791.v149-o266",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1285",
+        "obj_name": "1791.v155-o283",
+        "prop_name": "getter",
+        "fn_node_id": "1791.v137-o263",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1207",
+        "obj_name": "1791.v155-o281",
+        "prop_name": "setter",
+        "fn_node_id": "1791.v126-o259",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1530",
+        "obj_name": "1791.v155-o279",
+        "prop_name": "normalizePath",
+        "fn_node_id": "1791.normalizePath-o278",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1494",
+        "obj_name": "1791.v155-o279",
+        "prop_name": "normalizePath",
+        "fn_node_id": "1791.normalizePath-o278",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1576",
+        "obj_name": "1791.v155-o276",
+        "prop_name": "split",
+        "fn_node_id": "1791.split-o275",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1488",
+        "obj_name": "1791.v155-o276",
+        "prop_name": "split",
+        "fn_node_id": "1791.split-o275",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1039",
+        "obj_name": "1791.v155-o273",
+        "prop_name": "Cache",
+        "fn_node_id": "1791.Cache-o233",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1443",
+        "obj_name": "1791.module.exports-o290",
+        "prop_name": "forEach",
+        "fn_node_id": "1791.v154-o271",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

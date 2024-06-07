@@ -1,0 +1,86 @@
+[
+    {
+        "exported_fn_id": "7400",
+        "obj_name": "7570.git-o1080",
+        "prop_name": "getCurrentBranch",
+        "fn_node_id": "7570.v914-o1079",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "7140",
+        "obj_name": "7570.git-o1075",
+        "prop_name": "resolveConflicts",
+        "fn_node_id": "7570.v894-o1074",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "6954",
+        "obj_name": "7570.git-o1069",
+        "prop_name": "commit",
+        "fn_node_id": "7570.v852-o1068",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "6603",
+        "obj_name": "7570.git-o1061",
+        "prop_name": "updateIndexFromFileList",
+        "fn_node_id": "7570.v821-o1060",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "6364",
+        "obj_name": "7570.git-o1055",
+        "prop_name": "discardChangesInFile",
+        "fn_node_id": "7570.v767-o1054",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "6291",
+        "obj_name": "7570.git-o1049",
+        "prop_name": "discardAllChanges",
+        "fn_node_id": "7570.v729-o1048",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5910",
+        "obj_name": "7570.git-o1044",
+        "prop_name": "diffFile",
+        "fn_node_id": "7570.v718-o1043",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5873",
+        "obj_name": "7570.git-o1036",
+        "prop_name": "binaryFileContent",
+        "fn_node_id": "7570.v667-o1035",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5712",
+        "obj_name": "7570.git-o1029",
+        "prop_name": "stashAndPop",
+        "fn_node_id": "7570.v661-o1028",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5658",
+        "obj_name": "7570.git-o1023",
+        "prop_name": "getRemoteAddress",
+        "fn_node_id": "7570.v640-o1022",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5472",
+        "obj_name": "7570.git-o1017",
+        "prop_name": "status",
+        "fn_node_id": "7570.v631-o1016",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5454",
+        "obj_name": "7570.git-o1011",
+        "prop_name": "queueTask",
+        "fn_node_id": "7570.v607-o1010",
+        "type": "get_functions_exported_via_module_obj"
+    }
+]

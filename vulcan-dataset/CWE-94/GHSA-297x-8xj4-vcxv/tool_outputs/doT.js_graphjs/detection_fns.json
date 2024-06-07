@@ -1,0 +1,37 @@
+[
+    {
+        "exported_fn_id": "2059",
+        "obj_name": "3381.doT-o463",
+        "prop_name": "encodeHTMLSource",
+        "fn_node_id": "3381.v210-o462",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2040",
+        "obj_name": "3381.doT-o455",
+        "prop_name": "compile",
+        "fn_node_id": "3381.undefined-o452",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2040",
+        "obj_name": "3381.doT-o453",
+        "prop_name": "template",
+        "fn_node_id": "3381.undefined-o452",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2059",
+        "obj_name": "3381.module.exports-o474",
+        "prop_name": "encodeHTMLSource",
+        "fn_node_id": "3381.v210-o462",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2059",
+        "obj_name": "3381.module.exports-o474",
+        "prop_name": "encodeHTMLSource",
+        "fn_node_id": "3381.v210-o462",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

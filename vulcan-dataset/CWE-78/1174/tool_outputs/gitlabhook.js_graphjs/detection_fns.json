@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "2487",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "4333.GitLabHook-o472",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "2900",
+        "obj_name": "4333.v311-o477",
+        "prop_name": "listen",
+        "fn_node_id": "4333.v330-o476",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2559",
+        "obj_name": "4335.this-o525",
+        "prop_name": "configPathes",
+        "fn_node_id": "4335.v264-o521",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2623",
+        "obj_name": "4335.this-o539",
+        "prop_name": "keep",
+        "fn_node_id": "4335.v272-o538",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2834",
+        "obj_name": "4335.this-o584",
+        "prop_name": "logger",
+        "fn_node_id": "4335.v303-o583",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2882",
+        "obj_name": "4335.this-o596",
+        "prop_name": "server",
+        "fn_node_id": "4335.v310-o595",
+        "type": "get_functions_exported_via_this_property"
+    }
+]

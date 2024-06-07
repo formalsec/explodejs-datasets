@@ -1,0 +1,37 @@
+[
+    {
+        "exported_fn_id": "1451",
+        "obj_name": "1503.v150-o184",
+        "prop_name": "setPathValue",
+        "fn_node_id": "1503.setPathValue-o176",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1435",
+        "obj_name": "1503.v150-o182",
+        "prop_name": "getPathValue",
+        "fn_node_id": "1503.getPathValue-o171",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1321",
+        "obj_name": "1503.v150-o180",
+        "prop_name": "getPathInfo",
+        "fn_node_id": "1503.getPathInfo-o167",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "845",
+        "obj_name": "1503.v150-o178",
+        "prop_name": "hasProperty",
+        "fn_node_id": "1503.hasProperty-o150",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1451",
+        "obj_name": "1503.module.exports-o187",
+        "prop_name": "setPathValue",
+        "fn_node_id": "1503.setPathValue-o176",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

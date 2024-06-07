@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "989",
+        "obj_name": "1638.exports-o184",
+        "prop_name": "convertMdToPdf",
+        "fn_node_id": "1638.v100-o183",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1031",
+        "obj_name": "1638.exports-o209",
+        "prop_name": "convertMdToPdf",
+        "fn_node_id": "1638.convertMdToPdf-o208",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

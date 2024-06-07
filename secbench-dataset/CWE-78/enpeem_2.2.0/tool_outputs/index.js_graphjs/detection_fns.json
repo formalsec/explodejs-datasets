@@ -1,0 +1,23 @@
+[
+    {
+        "exported_fn_id": "820",
+        "obj_name": "1192.v109-o161",
+        "prop_name": "update",
+        "fn_node_id": "1192.v108-o157",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "700",
+        "obj_name": "1192.v109-o159",
+        "prop_name": "install",
+        "fn_node_id": "1192.v94-o153",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "820",
+        "obj_name": "1192.module.exports-o164",
+        "prop_name": "update",
+        "fn_node_id": "1192.v108-o157",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

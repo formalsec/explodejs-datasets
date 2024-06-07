@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "1088",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "1890.v93-o231",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "1108",
+        "obj_name": "1890.util-o240",
+        "prop_name": "codegen",
+        "fn_node_id": "1890.v94-o239",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

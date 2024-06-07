@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "1339",
+        "obj_name": "1353.set-o165",
+        "prop_name": "memo",
+        "fn_node_id": "1353.v148-o164",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1086",
+        "obj_name": "1368.v136-o254",
+        "prop_name": "*",
+        "fn_node_id": "1368.res-o229",
+        "type": "get_functions_exported_via_prototype"
+    }
+]

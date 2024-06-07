@@ -1,0 +1,30 @@
+[
+    {
+        "exported_fn_id": "1251",
+        "obj_name": "1293.modulify-o212",
+        "prop_name": "file",
+        "fn_node_id": "1293.modulifyFile-o211",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1209",
+        "obj_name": "1293.modulify-o207",
+        "prop_name": "string",
+        "fn_node_id": "1293.modulifyString-o206",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "773",
+        "obj_name": "1293.modulify-o161",
+        "prop_name": "utils",
+        "fn_node_id": "1293.v59-o159",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1251",
+        "obj_name": "1293.module.exports-o215",
+        "prop_name": "file",
+        "fn_node_id": "1293.modulifyFile-o211",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

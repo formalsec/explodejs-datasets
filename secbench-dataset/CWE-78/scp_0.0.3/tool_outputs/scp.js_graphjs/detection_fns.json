@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "410",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "696.v46-o88",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "422",
+        "obj_name": "696.scp-o95",
+        "prop_name": "send",
+        "fn_node_id": "696.v67-o94",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

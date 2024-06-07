@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "756",
+        "obj_name": "872.exports-o131",
+        "prop_name": "has",
+        "fn_node_id": "872.has-o105",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "507",
+        "obj_name": "872.exports-o131",
+        "prop_name": "has",
+        "fn_node_id": "872.has-o105",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "796",
+        "obj_name": "872.exports-o133",
+        "prop_name": "get",
+        "fn_node_id": "872.get-o106",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "508",
+        "obj_name": "872.exports-o133",
+        "prop_name": "get",
+        "fn_node_id": "872.get-o106",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "824",
+        "obj_name": "872.exports-o135",
+        "prop_name": "set",
+        "fn_node_id": "872.set-o107",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "509",
+        "obj_name": "872.exports-o135",
+        "prop_name": "set",
+        "fn_node_id": "872.set-o107",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

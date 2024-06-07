@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "278",
+        "obj_name": "333.exports-o72",
+        "prop_name": "getCredential",
+        "fn_node_id": "333.getCredential-o71",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "278",
+        "obj_name": "333.exports-o74",
+        "prop_name": "default",
+        "fn_node_id": "333.getCredential-o71",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

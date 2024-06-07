@@ -1,0 +1,30 @@
+[
+    {
+        "exported_fn_id": "515",
+        "obj_name": "535.v46-o105",
+        "prop_name": "log",
+        "fn_node_id": "535.v48-o104",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "471",
+        "obj_name": "535.v41-o100",
+        "prop_name": "insert",
+        "fn_node_id": "535.v45-o99",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "444",
+        "obj_name": "535.v37-o94",
+        "prop_name": "notify",
+        "fn_node_id": "535.v40-o93",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "415",
+        "obj_name": "535.v34-o89",
+        "prop_name": "wrap",
+        "fn_node_id": "535.v36-o88",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "653",
+        "obj_name": "1061.Public-o150",
+        "prop_name": "clone",
+        "fn_node_id": "1061.v69-o149",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "631",
+        "obj_name": "1061.Public-o145",
+        "prop_name": "recursive",
+        "fn_node_id": "1061.v60-o144",
+        "type": "get_functions_exported_via_module_obj"
+    }
+]

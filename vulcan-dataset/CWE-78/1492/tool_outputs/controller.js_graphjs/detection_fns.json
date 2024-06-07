@@ -1,0 +1,86 @@
+[
+    {
+        "exported_fn_id": "2475",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "4273.PriestController-o501",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "2469",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "4273.PriestController-o501",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "4196",
+        "obj_name": "4273.v528-o580",
+        "prop_name": "stopAll",
+        "fn_node_id": "4273.v538-o579",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "4092",
+        "obj_name": "4273.v510-o574",
+        "prop_name": "getProcess",
+        "fn_node_id": "4273.v527-o573",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3886",
+        "obj_name": "4273.v479-o568",
+        "prop_name": "stopProcess",
+        "fn_node_id": "4273.v509-o567",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3119",
+        "obj_name": "4273.v356-o561",
+        "prop_name": "createChild",
+        "fn_node_id": "4273.v478-o560",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3035",
+        "obj_name": "4273.v345-o556",
+        "prop_name": "restartProcess",
+        "fn_node_id": "4273.v355-o555",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2795",
+        "obj_name": "4273.v313-o550",
+        "prop_name": "startProcess",
+        "fn_node_id": "4273.v344-o549",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2720",
+        "obj_name": "4273.v300-o544",
+        "prop_name": "listNamedProcess",
+        "fn_node_id": "4273.v312-o543",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2619",
+        "obj_name": "4273.v285-o538",
+        "prop_name": "listProcess",
+        "fn_node_id": "4273.v299-o537",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2504",
+        "obj_name": "4275.this-o592",
+        "prop_name": "options",
+        "fn_node_id": "4275.v276-o591",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2518",
+        "obj_name": "4275.this-o595",
+        "prop_name": "names",
+        "fn_node_id": "4275.v277-o594",
+        "type": "get_functions_exported_via_this_property"
+    }
+]

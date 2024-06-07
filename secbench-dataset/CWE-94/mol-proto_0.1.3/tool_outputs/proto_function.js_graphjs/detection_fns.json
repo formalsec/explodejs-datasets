@@ -1,0 +1,240 @@
+[
+    {
+        "exported_fn_id": "2631",
+        "obj_name": "2653.v94-o402",
+        "prop_name": "not",
+        "fn_node_id": "2653.not-o401",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1655",
+        "obj_name": "2653.v94-o402",
+        "prop_name": "not",
+        "fn_node_id": "2653.not-o401",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2557",
+        "obj_name": "2653.v94-o399",
+        "prop_name": "waitFor",
+        "fn_node_id": "2653.waitFor-o398",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1649",
+        "obj_name": "2653.v94-o399",
+        "prop_name": "waitFor",
+        "fn_node_id": "2653.waitFor-o398",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2520",
+        "obj_name": "2653.v94-o396",
+        "prop_name": "once",
+        "fn_node_id": "2653.once-o395",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1643",
+        "obj_name": "2653.v94-o396",
+        "prop_name": "once",
+        "fn_node_id": "2653.once-o395",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2351",
+        "obj_name": "2653.v94-o393",
+        "prop_name": "throttle",
+        "fn_node_id": "2653.throttle-o392",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1637",
+        "obj_name": "2653.v94-o393",
+        "prop_name": "throttle",
+        "fn_node_id": "2653.throttle-o392",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2235",
+        "obj_name": "2653.v94-o390",
+        "prop_name": "debounce",
+        "fn_node_id": "2653.debounce-o389",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1631",
+        "obj_name": "2653.v94-o390",
+        "prop_name": "debounce",
+        "fn_node_id": "2653.debounce-o389",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2089",
+        "obj_name": "2653.v94-o387",
+        "prop_name": "deferMethod",
+        "fn_node_id": "2653.deferMethod-o386",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1625",
+        "obj_name": "2653.v94-o387",
+        "prop_name": "deferMethod",
+        "fn_node_id": "2653.deferMethod-o386",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2068",
+        "obj_name": "2653.v94-o384",
+        "prop_name": "delayMethod",
+        "fn_node_id": "2653.delayMethod-o383",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1619",
+        "obj_name": "2653.v94-o384",
+        "prop_name": "delayMethod",
+        "fn_node_id": "2653.delayMethod-o383",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2012",
+        "obj_name": "2653.v94-o381",
+        "prop_name": "deferTicks",
+        "fn_node_id": "2653.deferTicks-o380",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1613",
+        "obj_name": "2653.v94-o381",
+        "prop_name": "deferTicks",
+        "fn_node_id": "2653.deferTicks-o380",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2198",
+        "obj_name": "2653.v94-o378",
+        "prop_name": "deferred",
+        "fn_node_id": "2653.deferred-o377",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1607",
+        "obj_name": "2653.v94-o378",
+        "prop_name": "deferred",
+        "fn_node_id": "2653.deferred-o377",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2159",
+        "obj_name": "2653.v94-o375",
+        "prop_name": "delayed",
+        "fn_node_id": "2653.delayed-o374",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1601",
+        "obj_name": "2653.v94-o375",
+        "prop_name": "delayed",
+        "fn_node_id": "2653.delayed-o374",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1967",
+        "obj_name": "2653.v94-o372",
+        "prop_name": "defer",
+        "fn_node_id": "2653.defer-o371",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1595",
+        "obj_name": "2653.v94-o372",
+        "prop_name": "defer",
+        "fn_node_id": "2653.defer-o371",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1948",
+        "obj_name": "2653.v94-o369",
+        "prop_name": "delay",
+        "fn_node_id": "2653.delay-o368",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1589",
+        "obj_name": "2653.v94-o369",
+        "prop_name": "delay",
+        "fn_node_id": "2653.delay-o368",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1835",
+        "obj_name": "2653.v94-o366",
+        "prop_name": "memoize",
+        "fn_node_id": "2653.memoize-o365",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1583",
+        "obj_name": "2653.v94-o366",
+        "prop_name": "memoize",
+        "fn_node_id": "2653.memoize-o365",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1798",
+        "obj_name": "2653.v94-o363",
+        "prop_name": "partialRight",
+        "fn_node_id": "2653.partialRight-o362",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1577",
+        "obj_name": "2653.v94-o363",
+        "prop_name": "partialRight",
+        "fn_node_id": "2653.partialRight-o362",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1761",
+        "obj_name": "2653.v94-o360",
+        "prop_name": "partial",
+        "fn_node_id": "2653.partial-o359",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1571",
+        "obj_name": "2653.v94-o360",
+        "prop_name": "partial",
+        "fn_node_id": "2653.partial-o359",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1679",
+        "obj_name": "2653.v94-o357",
+        "prop_name": "makeFunction",
+        "fn_node_id": "2653.makeFunction-o356",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1565",
+        "obj_name": "2653.v94-o357",
+        "prop_name": "makeFunction",
+        "fn_node_id": "2653.makeFunction-o356",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2631",
+        "obj_name": "2653.module.exports-o405",
+        "prop_name": "not",
+        "fn_node_id": "2653.not-o401",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1655",
+        "obj_name": "2653.module.exports-o405",
+        "prop_name": "not",
+        "fn_node_id": "2653.not-o401",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

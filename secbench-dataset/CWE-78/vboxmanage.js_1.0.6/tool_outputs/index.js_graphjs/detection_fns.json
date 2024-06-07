@@ -1,0 +1,212 @@
+[
+    {
+        "exported_fn_id": "5557",
+        "obj_name": "5643.VBoxManage-o1036",
+        "prop_name": "killOnVm",
+        "fn_node_id": "5643.v562-o1035",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5384",
+        "obj_name": "5643.VBoxManage-o1028",
+        "prop_name": "execOnVm",
+        "fn_node_id": "5643.v556-o1027",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5094",
+        "obj_name": "5643.VBoxManage-o1018",
+        "prop_name": "stat",
+        "fn_node_id": "5643.v535-o1017",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5003",
+        "obj_name": "5643.VBoxManage-o1008",
+        "prop_name": "move",
+        "fn_node_id": "5643.v507-o1007",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4917",
+        "obj_name": "5643.VBoxManage-o999",
+        "prop_name": "removeFile",
+        "fn_node_id": "5643.v498-o998",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4831",
+        "obj_name": "5643.VBoxManage-o990",
+        "prop_name": "rmdir",
+        "fn_node_id": "5643.v488-o989",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4745",
+        "obj_name": "5643.VBoxManage-o981",
+        "prop_name": "mkdir",
+        "fn_node_id": "5643.v478-o980",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4649",
+        "obj_name": "5643.VBoxManage-o972",
+        "prop_name": "copyFromVm",
+        "fn_node_id": "5643.v468-o971",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4553",
+        "obj_name": "5643.VBoxManage-o962",
+        "prop_name": "copyToVm",
+        "fn_node_id": "5643.v458-o961",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4530",
+        "obj_name": "5643.VBoxManage-o952",
+        "prop_name": "acpiSleepButton",
+        "fn_node_id": "5643.v448-o951",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4507",
+        "obj_name": "5643.VBoxManage-o947",
+        "prop_name": "acpiPowerButton",
+        "fn_node_id": "5643.v445-o946",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4484",
+        "obj_name": "5643.VBoxManage-o942",
+        "prop_name": "powerOff",
+        "fn_node_id": "5643.v442-o941",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4461",
+        "obj_name": "5643.VBoxManage-o937",
+        "prop_name": "stopAndSaveState",
+        "fn_node_id": "5643.v439-o936",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4438",
+        "obj_name": "5643.VBoxManage-o932",
+        "prop_name": "resume",
+        "fn_node_id": "5643.v436-o931",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4415",
+        "obj_name": "5643.VBoxManage-o927",
+        "prop_name": "reset",
+        "fn_node_id": "5643.v433-o926",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4362",
+        "obj_name": "5643.VBoxManage-o922",
+        "prop_name": "start",
+        "fn_node_id": "5643.v430-o921",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4338",
+        "obj_name": "5643.VBoxManage-o915",
+        "prop_name": "import",
+        "fn_node_id": "5643.v425-o914",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4298",
+        "obj_name": "5643.VBoxManage-o909",
+        "prop_name": "isRegistered",
+        "fn_node_id": "5643.v422-o908",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4274",
+        "obj_name": "5643.VBoxManage-o904",
+        "prop_name": "modify",
+        "fn_node_id": "5643.v416-o903",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4118",
+        "obj_name": "5643.VBoxManage-o898",
+        "prop_name": "getIPAddress",
+        "fn_node_id": "5643.v413-o897",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3935",
+        "obj_name": "5643.VBoxManage-o892",
+        "prop_name": "getInfo",
+        "fn_node_id": "5643.v389-o891",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3910",
+        "obj_name": "5643.VBoxManage-o887",
+        "prop_name": "restoreSnapshot",
+        "fn_node_id": "5643.v365-o886",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3885",
+        "obj_name": "5643.VBoxManage-o881",
+        "prop_name": "takeSnapshot",
+        "fn_node_id": "5643.v362-o880",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3858",
+        "obj_name": "5643.VBoxManage-o875",
+        "prop_name": "cloneSnapshot",
+        "fn_node_id": "5643.v359-o874",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3819",
+        "obj_name": "5643.VBoxManage-o868",
+        "prop_name": "clone",
+        "fn_node_id": "5643.v356-o867",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3794",
+        "obj_name": "5643.VBoxManage-o861",
+        "prop_name": "deleteProperty",
+        "fn_node_id": "5643.v352-o860",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3765",
+        "obj_name": "5643.VBoxManage-o855",
+        "prop_name": "setProperty",
+        "fn_node_id": "5643.v349-o854",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3688",
+        "obj_name": "5643.VBoxManage-o847",
+        "prop_name": "getProperty",
+        "fn_node_id": "5643.v346-o846",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3460",
+        "obj_name": "5643.VBoxManage-o841",
+        "prop_name": "manage",
+        "fn_node_id": "5643.v335-o840",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "5557",
+        "obj_name": "5643.module.exports-o1039",
+        "prop_name": "killOnVm",
+        "fn_node_id": "5643.v562-o1035",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

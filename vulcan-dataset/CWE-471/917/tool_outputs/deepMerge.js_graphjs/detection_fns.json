@@ -1,0 +1,9 @@
+[
+    {
+        "exported_fn_id": "183",
+        "obj_name": "283.exports-o39",
+        "prop_name": "deepMerge",
+        "fn_node_id": "283.deepMerge-o38",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

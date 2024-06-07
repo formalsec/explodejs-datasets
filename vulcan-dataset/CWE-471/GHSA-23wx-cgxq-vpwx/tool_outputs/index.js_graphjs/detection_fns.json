@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "527",
+        "obj_name": "738.exports-o77",
+        "prop_name": "dset",
+        "fn_node_id": "738.dset-o76",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "411",
+        "obj_name": "738.exports-o79",
+        "prop_name": "merge",
+        "fn_node_id": "738.merge-o71",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

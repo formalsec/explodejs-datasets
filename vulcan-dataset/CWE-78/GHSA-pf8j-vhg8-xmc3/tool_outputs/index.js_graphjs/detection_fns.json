@@ -1,0 +1,23 @@
+[
+    {
+        "exported_fn_id": "2336",
+        "obj_name": "2364.v269-o342",
+        "prop_name": "'reporter:mojo'",
+        "fn_node_id": "2364.v268-o338",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2336",
+        "obj_name": "2364.module.exports-o345",
+        "prop_name": "'reporter:mojo'",
+        "fn_node_id": "2364.v268-o338",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1405",
+        "obj_name": "2364.v270-o346",
+        "prop_name": "defaults",
+        "fn_node_id": "2364.defaults-o324",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

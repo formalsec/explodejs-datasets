@@ -1,0 +1,58 @@
+[
+    {
+        "exported_fn_id": "1514",
+        "obj_name": "2530.exports-o374",
+        "prop_name": "createExtensionsFile",
+        "fn_node_id": "2530.createExtensionsFile-o373",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1601",
+        "obj_name": "2530.exports-o381",
+        "prop_name": "createCertRequestConfig",
+        "fn_node_id": "2530.createCertRequestConfig-o380",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1785",
+        "obj_name": "2530.exports-o387",
+        "prop_name": "createKeypair",
+        "fn_node_id": "2530.createKeypair-o386",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1849",
+        "obj_name": "2530.exports-o395",
+        "prop_name": "createCertRequest",
+        "fn_node_id": "2530.createCertRequest-o394",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1927",
+        "obj_name": "2530.exports-o405",
+        "prop_name": "createCert",
+        "fn_node_id": "2530.createCert-o404",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2105",
+        "obj_name": "2530.exports-o415",
+        "prop_name": "generateCert",
+        "fn_node_id": "2530.generateCert-o414",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2375",
+        "obj_name": "2530.exports-o425",
+        "prop_name": "generateCertBuffer",
+        "fn_node_id": "2530.generateCertBuf-o424",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2516",
+        "obj_name": "2530.exports-o431",
+        "prop_name": "setExpiryDays",
+        "fn_node_id": "2530.v224-o430",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

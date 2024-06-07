@@ -1,0 +1,30 @@
+[
+    {
+        "exported_fn_id": "1016",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "1098.v104-o158",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "1089",
+        "obj_name": "1098.v111-o177",
+        "prop_name": "prompt",
+        "fn_node_id": "1098.v112-o176",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "1064",
+        "obj_name": "1098.v108-o173",
+        "prop_name": "spawn",
+        "fn_node_id": "1098.v110-o172",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "1039",
+        "obj_name": "1098.v105-o166",
+        "prop_name": "file",
+        "fn_node_id": "1098.v107-o165",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "exported_fn_id": "259",
+        "obj_name": "415.exports-o52",
+        "prop_name": "default",
+        "fn_node_id": "415.replaceValue-o51",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "253",
+        "obj_name": "415.exports-o44",
+        "prop_name": "default",
+        "fn_node_id": "415.v26-o43",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "253",
+        "obj_name": "415.exports-o44",
+        "prop_name": "default",
+        "fn_node_id": "415.v26-o43",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "259",
+        "obj_name": "415.exports-o52",
+        "prop_name": "default",
+        "fn_node_id": "415.replaceValue-o51",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

@@ -1,0 +1,121 @@
+[
+    {
+        "exported_fn_id": "7312",
+        "obj_name": "7585.exports-o1081",
+        "prop_name": "$parseFile",
+        "fn_node_id": "7585.$parseFile-o1072",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "5698",
+        "obj_name": "7585.exports.BUILTINS-o1084",
+        "prop_name": "num",
+        "fn_node_id": "7585.v595-o1010",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4388",
+        "obj_name": "7585.exports-o1085",
+        "prop_name": "IS_NODE",
+        "fn_node_id": "7585.IS_NODE-o931",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4393",
+        "obj_name": "7585.exports-o1087",
+        "prop_name": "NODE_ONLY",
+        "fn_node_id": "7585.NODE_ONLY-o933",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4579",
+        "obj_name": "7585.exports-o1089",
+        "prop_name": "defPrefixer",
+        "fn_node_id": "7585.defPrefixer-o949",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4666",
+        "obj_name": "7585.exports-o1091",
+        "prop_name": "defVocab",
+        "fn_node_id": "7585.defVocab-o952",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4404",
+        "obj_name": "7585.exports-o1093",
+        "prop_name": "isNode",
+        "fn_node_id": "7585.isNode-o936",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4424",
+        "obj_name": "7585.exports-o1095",
+        "prop_name": "isRef",
+        "fn_node_id": "7585.isRef-o939",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4444",
+        "obj_name": "7585.exports-o1097",
+        "prop_name": "isToEGF",
+        "fn_node_id": "7585.isToEGF-o942",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "5766",
+        "obj_name": "7585.exports-o1099",
+        "prop_name": "parse",
+        "fn_node_id": "7585.parse-o1031",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "7411",
+        "obj_name": "7585.exports-o1101",
+        "prop_name": "parseFile",
+        "fn_node_id": "7585.parseFile-o1076",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "7445",
+        "obj_name": "7585.exports-o1103",
+        "prop_name": "parseString",
+        "fn_node_id": "7585.parseString-o1080",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4459",
+        "obj_name": "7585.exports-o1105",
+        "prop_name": "qualifiedID",
+        "fn_node_id": "7585.qualifiedID-o946",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "5147",
+        "obj_name": "7585.exports-o1107",
+        "prop_name": "toDot",
+        "fn_node_id": "7585.toDot-o970",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4682",
+        "obj_name": "7585.exports-o1109",
+        "prop_name": "toEGF",
+        "fn_node_id": "7585.toEGF-o957",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4751",
+        "obj_name": "7585.exports-o1111",
+        "prop_name": "toEGFNode",
+        "fn_node_id": "7585.toEGFNode-o962",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4968",
+        "obj_name": "7585.exports-o1113",
+        "prop_name": "toEGFProp",
+        "fn_node_id": "7585.toEGFProp-o966",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

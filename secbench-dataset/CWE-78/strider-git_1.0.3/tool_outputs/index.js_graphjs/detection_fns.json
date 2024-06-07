@@ -1,0 +1,128 @@
+[
+    {
+        "exported_fn_id": "1242",
+        "obj_name": "1961.v116-o285",
+        "prop_name": "shellEscape",
+        "fn_node_id": "1961.shellEscape-o284",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1198",
+        "obj_name": "1961.v116-o285",
+        "prop_name": "shellEscape",
+        "fn_node_id": "1961.shellEscape-o284",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1814",
+        "obj_name": "1961.v116-o282",
+        "prop_name": "getBranches",
+        "fn_node_id": "1961.getBranches-o281",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1192",
+        "obj_name": "1961.v116-o282",
+        "prop_name": "getBranches",
+        "fn_node_id": "1961.getBranches-o281",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1750",
+        "obj_name": "1961.v116-o279",
+        "prop_name": "processBranches",
+        "fn_node_id": "1961.processBranches-o278",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1186",
+        "obj_name": "1961.v116-o279",
+        "prop_name": "processBranches",
+        "fn_node_id": "1961.processBranches-o278",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1552",
+        "obj_name": "1961.v116-o276",
+        "prop_name": "gitaneCmd",
+        "fn_node_id": "1961.gitaneCmd-o275",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1180",
+        "obj_name": "1961.v116-o276",
+        "prop_name": "gitaneCmd",
+        "fn_node_id": "1961.gitaneCmd-o275",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1502",
+        "obj_name": "1961.v116-o273",
+        "prop_name": "gitCmd",
+        "fn_node_id": "1961.gitCmd-o272",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1174",
+        "obj_name": "1961.v116-o273",
+        "prop_name": "gitCmd",
+        "fn_node_id": "1961.gitCmd-o272",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1414",
+        "obj_name": "1961.v116-o270",
+        "prop_name": "httpUrl",
+        "fn_node_id": "1961.httpUrl-o269",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1168",
+        "obj_name": "1961.v116-o270",
+        "prop_name": "httpUrl",
+        "fn_node_id": "1961.httpUrl-o269",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1303",
+        "obj_name": "1961.v116-o267",
+        "prop_name": "sshUrl",
+        "fn_node_id": "1961.sshUrl-o266",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1162",
+        "obj_name": "1961.v116-o267",
+        "prop_name": "sshUrl",
+        "fn_node_id": "1961.sshUrl-o266",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1268",
+        "obj_name": "1961.v116-o264",
+        "prop_name": "gitUrl",
+        "fn_node_id": "1961.gitUrl-o263",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1156",
+        "obj_name": "1961.v116-o264",
+        "prop_name": "gitUrl",
+        "fn_node_id": "1961.gitUrl-o263",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1242",
+        "obj_name": "1961.module.exports-o288",
+        "prop_name": "shellEscape",
+        "fn_node_id": "1961.shellEscape-o284",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1198",
+        "obj_name": "1961.module.exports-o288",
+        "prop_name": "shellEscape",
+        "fn_node_id": "1961.shellEscape-o284",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

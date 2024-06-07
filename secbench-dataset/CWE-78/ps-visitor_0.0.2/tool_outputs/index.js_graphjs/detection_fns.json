@@ -1,0 +1,30 @@
+[
+    {
+        "exported_fn_id": "4425",
+        "obj_name": "4533.v458-o710",
+        "prop_name": "getSignalRaw",
+        "fn_node_id": "4533.getSignalRaw-o704",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4245",
+        "obj_name": "4533.v458-o708",
+        "prop_name": "kill",
+        "fn_node_id": "4533.kill-o698",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3329",
+        "obj_name": "4533.v458-o706",
+        "prop_name": "ps",
+        "fn_node_id": "4533.ps-o682",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "4425",
+        "obj_name": "4533.module.exports-o713",
+        "prop_name": "getSignalRaw",
+        "fn_node_id": "4533.getSignalRaw-o704",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "exported_fn_id": "1039",
+        "obj_name": "1127.messenger-o217",
+        "prop_name": "dir",
+        "fn_node_id": "1127.v108-o195",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "989",
+        "obj_name": "1127.messenger-o215",
+        "prop_name": "line",
+        "fn_node_id": "1127.v106-o192",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "840",
+        "obj_name": "1127.messenger-o213",
+        "prop_name": "table",
+        "fn_node_id": "1127.v97-o189",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "814",
+        "obj_name": "1127.messenger-o211",
+        "prop_name": "error",
+        "fn_node_id": "1127.v78-o186",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "788",
+        "obj_name": "1127.messenger-o209",
+        "prop_name": "warning",
+        "fn_node_id": "1127.v74-o183",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "762",
+        "obj_name": "1127.messenger-o207",
+        "prop_name": "success",
+        "fn_node_id": "1127.v70-o180",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "745",
+        "obj_name": "1127.messenger-o205",
+        "prop_name": "note",
+        "fn_node_id": "1127.v66-o177",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "719",
+        "obj_name": "1127.messenger-o203",
+        "prop_name": "info",
+        "fn_node_id": "1127.v64-o173",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "704",
+        "obj_name": "1127.messenger-o201",
+        "prop_name": "log",
+        "fn_node_id": "1127.v60-o170",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "695",
+        "obj_name": "1127.messenger-o199",
+        "prop_name": "name",
+        "fn_node_id": "1127.v58-o167",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "686",
+        "obj_name": "1127.messenger-o197",
+        "prop_name": "version",
+        "fn_node_id": "1127.v56-o165",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1039",
+        "obj_name": "1127.module.exports-o220",
+        "prop_name": "dir",
+        "fn_node_id": "1127.v108-o195",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

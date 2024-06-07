@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "295",
+        "obj_name": "365.v37-o49",
+        "prop_name": "encodeRecord",
+        "fn_node_id": "365.v36-o39",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "257",
+        "obj_name": "365.v37-o47",
+        "prop_name": "stopRecord",
+        "fn_node_id": "365.v32-o36",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "198",
+        "obj_name": "365.v37-o45",
+        "prop_name": "startRecord",
+        "fn_node_id": "365.v26-o32",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "152",
+        "obj_name": "365.v37-o43",
+        "prop_name": "stopLive",
+        "fn_node_id": "365.v22-o29",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "123",
+        "obj_name": "365.v37-o41",
+        "prop_name": "startLive",
+        "fn_node_id": "365.v13-o26",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "295",
+        "obj_name": "365.module.exports-o52",
+        "prop_name": "encodeRecord",
+        "fn_node_id": "365.v36-o39",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

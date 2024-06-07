@@ -1,0 +1,100 @@
+[
+    {
+        "exported_fn_id": "2440",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "4091.Arpping-o550",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "4014",
+        "obj_name": "4091.v483-o593",
+        "prop_name": "searchByMacType",
+        "fn_node_id": "4091.v494-o592",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3812",
+        "obj_name": "4091.v451-o587",
+        "prop_name": "searchByMacAddress",
+        "fn_node_id": "4091.v482-o586",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3635",
+        "obj_name": "4091.v422-o581",
+        "prop_name": "searchByIpAddress",
+        "fn_node_id": "4091.v450-o580",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3326",
+        "obj_name": "4091.v378-o575",
+        "prop_name": "arp",
+        "fn_node_id": "4091.v421-o574",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "3133",
+        "obj_name": "4091.v347-o570",
+        "prop_name": "ping",
+        "fn_node_id": "4091.v377-o569",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2905",
+        "obj_name": "4091.v309-o565",
+        "prop_name": "discover",
+        "fn_node_id": "4091.v346-o564",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2638",
+        "obj_name": "4091.v273-o559",
+        "prop_name": "findMyInfo",
+        "fn_node_id": "4091.v308-o558",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2524",
+        "obj_name": "4091.v256-o555",
+        "prop_name": "_getFullRange",
+        "fn_node_id": "4091.v272-o554",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "2469",
+        "obj_name": "4098.this-o607",
+        "prop_name": "timeout",
+        "fn_node_id": "4098.v255-o606",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2465",
+        "obj_name": "4098.this-o607",
+        "prop_name": "timeout",
+        "fn_node_id": "4098.v254-o604",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2483",
+        "obj_name": "4098.this-o610",
+        "prop_name": "includeEndpoints",
+        "fn_node_id": "4098.includeEndpoints-o609",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2495",
+        "obj_name": "4098.this-o615",
+        "prop_name": "useCache",
+        "fn_node_id": "4098.useCache-o614",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "2507",
+        "obj_name": "4098.this-o620",
+        "prop_name": "cacheTimeout",
+        "fn_node_id": "4098.cacheTimeout-o619",
+        "type": "get_functions_exported_via_this_property"
+    }
+]

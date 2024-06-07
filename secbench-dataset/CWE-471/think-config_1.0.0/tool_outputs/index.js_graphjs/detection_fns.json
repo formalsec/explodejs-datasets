@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "478",
+        "obj_name": "600.Config-o86",
+        "prop_name": "set",
+        "fn_node_id": "600.set-o85",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "360",
+        "obj_name": "600.Config-o80",
+        "prop_name": "get",
+        "fn_node_id": "600.get-o79",
+        "type": "get_functions_exported_via_module_obj"
+    }
+]

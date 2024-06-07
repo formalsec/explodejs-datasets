@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "2366",
+        "obj_name": "3260.v166-o363",
+        "prop_name": "unflatten",
+        "fn_node_id": "3260.unflatten-o362",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1848",
+        "obj_name": "3260.v166-o363",
+        "prop_name": "unflatten",
+        "fn_node_id": "3260.unflatten-o362",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1860",
+        "obj_name": "3260.v166-o360",
+        "prop_name": "flatten",
+        "fn_node_id": "3260.flatten-o359",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1842",
+        "obj_name": "3260.v166-o360",
+        "prop_name": "flatten",
+        "fn_node_id": "3260.flatten-o359",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2366",
+        "obj_name": "3260.module.exports-o366",
+        "prop_name": "unflatten",
+        "fn_node_id": "3260.unflatten-o362",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1848",
+        "obj_name": "3260.module.exports-o366",
+        "prop_name": "unflatten",
+        "fn_node_id": "3260.unflatten-o362",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

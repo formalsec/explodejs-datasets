@@ -1,0 +1,58 @@
+[
+    {
+        "exported_fn_id": "2098",
+        "obj_name": "2903.exports-o305",
+        "prop_name": "decode",
+        "fn_node_id": "2903.decode-o304",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1636",
+        "obj_name": "2903.exports-o305",
+        "prop_name": "decode",
+        "fn_node_id": "2903.decode-o304",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1708",
+        "obj_name": "2903.exports-o310",
+        "prop_name": "encode",
+        "fn_node_id": "2903.encode-o309",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1650",
+        "obj_name": "2903.exports-o310",
+        "prop_name": "encode",
+        "fn_node_id": "2903.encode-o309",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2620",
+        "obj_name": "2903.exports-o315",
+        "prop_name": "safe",
+        "fn_node_id": "2903.safe-o314",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1664",
+        "obj_name": "2903.exports-o315",
+        "prop_name": "safe",
+        "fn_node_id": "2903.safe-o314",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2719",
+        "obj_name": "2903.exports-o318",
+        "prop_name": "unsafe",
+        "fn_node_id": "2903.unsafe-o317",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1670",
+        "obj_name": "2903.exports-o318",
+        "prop_name": "unsafe",
+        "fn_node_id": "2903.unsafe-o317",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

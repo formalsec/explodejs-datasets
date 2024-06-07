@@ -1,0 +1,30 @@
+[
+    {
+        "exported_fn_id": "424",
+        "obj_name": "467.v38-o72",
+        "prop_name": "parseFileSync",
+        "fn_node_id": "467.parseFileSync-o66",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "384",
+        "obj_name": "467.v38-o70",
+        "prop_name": "parseFile",
+        "fn_node_id": "467.parseFile-o63",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "275",
+        "obj_name": "467.v38-o68",
+        "prop_name": "parse",
+        "fn_node_id": "467.parse-o59",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "424",
+        "obj_name": "467.module.exports-o75",
+        "prop_name": "parseFileSync",
+        "fn_node_id": "467.parseFileSync-o66",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "823",
+        "obj_name": "893.v74-o185",
+        "prop_name": "encodeRecord",
+        "fn_node_id": "893.v73-o175",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "785",
+        "obj_name": "893.v74-o183",
+        "prop_name": "stopRecord",
+        "fn_node_id": "893.v69-o172",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "726",
+        "obj_name": "893.v74-o181",
+        "prop_name": "startRecord",
+        "fn_node_id": "893.v63-o168",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "680",
+        "obj_name": "893.v74-o179",
+        "prop_name": "stopLive",
+        "fn_node_id": "893.v59-o165",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "651",
+        "obj_name": "893.v74-o177",
+        "prop_name": "startLive",
+        "fn_node_id": "893.v50-o162",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "823",
+        "obj_name": "893.module.exports-o188",
+        "prop_name": "encodeRecord",
+        "fn_node_id": "893.v73-o175",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

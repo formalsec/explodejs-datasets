@@ -1,0 +1,65 @@
+[
+    {
+        "exported_fn_id": "2124",
+        "obj_name": "2254._safe-o311",
+        "prop_name": "noneOf",
+        "fn_node_id": "2254.v261-o299",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2103",
+        "obj_name": "2254._safe-o309",
+        "prop_name": "anyOf",
+        "fn_node_id": "2254.v257-o297",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2082",
+        "obj_name": "2254._safe-o307",
+        "prop_name": "allOf",
+        "fn_node_id": "2254.v253-o295",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2001",
+        "obj_name": "2254._safe-o305",
+        "prop_name": "ensure",
+        "fn_node_id": "2254.v249-o293",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1879",
+        "obj_name": "2254._safe-o303",
+        "prop_name": "expand",
+        "fn_node_id": "2254.v237-o287",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1713",
+        "obj_name": "2254._safe-o301",
+        "prop_name": "safe",
+        "fn_node_id": "2254.v219-o282",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2124",
+        "obj_name": "2254.module.exports-o319",
+        "prop_name": "noneOf",
+        "fn_node_id": "2254.v261-o299",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2124",
+        "obj_name": "2254.exports._safe-o321",
+        "prop_name": "noneOf",
+        "fn_node_id": "2254.v261-o299",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2124",
+        "obj_name": "2254.module.exports-o319",
+        "prop_name": "noneOf",
+        "fn_node_id": "2254.v261-o299",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "2007",
+        "obj_name": "2194.stats-o317",
+        "prop_name": "win",
+        "fn_node_id": "2194.v250-o305",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1876",
+        "obj_name": "2194.stats-o315",
+        "prop_name": "ps",
+        "fn_node_id": "2194.v230-o300",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1431",
+        "obj_name": "2194.stats-o313",
+        "prop_name": "proc_calc",
+        "fn_node_id": "2194.v211-o295",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1290",
+        "obj_name": "2194.stats-o311",
+        "prop_name": "proc",
+        "fn_node_id": "2194.v146-o290",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1288",
+        "obj_name": "2194.stats-o307",
+        "prop_name": "history",
+        "fn_node_id": "2194.v128-o285",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2007",
+        "obj_name": "2194.module.exports-o320",
+        "prop_name": "win",
+        "fn_node_id": "2194.v250-o305",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "exported_fn_id": "16636",
+        "obj_name": "26193.m-o2862",
+        "prop_name": "buildQueryString",
+        "fn_node_id": "26193.buildQueryString-o2798",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "24268",
+        "obj_name": "26193.m-o2860",
+        "prop_name": "parseQueryString",
+        "fn_node_id": "26193.parseQueryString-o2828",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "26024",
+        "obj_name": "26193.m-o2845",
+        "prop_name": "withAttr",
+        "fn_node_id": "26193.v3220-o2844",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "26013",
+        "obj_name": "26193.m-o2838",
+        "prop_name": "route",
+        "fn_node_id": "26193.v3209-o2837",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "24256",
+        "obj_name": "26193.m-o2824",
+        "prop_name": "mount",
+        "fn_node_id": "26193.v2989-o2823",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "15680",
+        "obj_name": "26193.hyperscript-o2747",
+        "prop_name": "fragment",
+        "fn_node_id": "26193.v1737-o2746",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "15648",
+        "obj_name": "26193.hyperscript-o2741",
+        "prop_name": "trust",
+        "fn_node_id": "26193.v1733-o2740",
+        "type": "get_functions_exported_via_module_obj"
+    }
+]

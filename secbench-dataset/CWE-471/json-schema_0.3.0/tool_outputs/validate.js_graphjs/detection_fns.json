@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "2728",
+        "obj_name": "4647.exports-o505",
+        "prop_name": "validate",
+        "fn_node_id": "4647.validate-o504",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2722",
+        "obj_name": "4647.exports-o505",
+        "prop_name": "validate",
+        "fn_node_id": "4647.validate-o504",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2747",
+        "obj_name": "4647.exports-o515",
+        "prop_name": "checkPropertyChange",
+        "fn_node_id": "4647.v372-o514",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2776",
+        "obj_name": "4647.exports-o522",
+        "prop_name": "_validate",
+        "fn_node_id": "4647.v685-o521",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4561",
+        "obj_name": "4647.exports-o527",
+        "prop_name": "mustBeValid",
+        "fn_node_id": "4647.v698-o526",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2644",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "4641.v363-o470",
+        "type": "get_functions_exported_directly"
+    }
+]

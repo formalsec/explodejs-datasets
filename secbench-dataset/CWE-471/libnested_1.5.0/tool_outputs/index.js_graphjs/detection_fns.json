@@ -1,0 +1,51 @@
+[
+    {
+        "exported_fn_id": "979",
+        "obj_name": "1597.exports-o233",
+        "prop_name": "get",
+        "fn_node_id": "1597.get-o202",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1072",
+        "obj_name": "1597.exports-o235",
+        "prop_name": "set",
+        "fn_node_id": "1597.set-o210",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1224",
+        "obj_name": "1597.exports-o237",
+        "prop_name": "each",
+        "fn_node_id": "1597.each-o216",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1396",
+        "obj_name": "1597.exports-o239",
+        "prop_name": "map",
+        "fn_node_id": "1597.map-o222",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1458",
+        "obj_name": "1597.exports-o241",
+        "prop_name": "paths",
+        "fn_node_id": "1597.paths-o226",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1494",
+        "obj_name": "1597.exports-o243",
+        "prop_name": "clone",
+        "fn_node_id": "1597.clone-o232",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1494",
+        "obj_name": "1597.exports-o245",
+        "prop_name": "copy",
+        "fn_node_id": "1597.clone-o232",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

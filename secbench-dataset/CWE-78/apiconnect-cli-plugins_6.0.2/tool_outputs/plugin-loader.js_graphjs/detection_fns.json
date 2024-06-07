@@ -1,0 +1,58 @@
+[
+    {
+        "exported_fn_id": "2527",
+        "obj_name": "4163.exports-o584",
+        "prop_name": "validatePlugin",
+        "fn_node_id": "4163.validatePlugin-o583",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3133",
+        "obj_name": "4163.exports-o590",
+        "prop_name": "installPlugin",
+        "fn_node_id": "4163.installPlugin-o589",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3585",
+        "obj_name": "4163.exports-o596",
+        "prop_name": "loadPluginFromDir",
+        "fn_node_id": "4163.loadPluginFromDir-o595",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3953",
+        "obj_name": "4163.exports-o605",
+        "prop_name": "loadPlugins",
+        "fn_node_id": "4163.loadPlugins-o604",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4048",
+        "obj_name": "4163.exports-o608",
+        "prop_name": "__loaderContext",
+        "fn_node_id": "4163.__dirname-o607",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4054",
+        "obj_name": "4163.exports-o613",
+        "prop_name": "init",
+        "fn_node_id": "4163.init-o612",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4070",
+        "obj_name": "4163.exports-o618",
+        "prop_name": "getContextDirs",
+        "fn_node_id": "4163.getContextDirs-o617",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "4114",
+        "obj_name": "4163.exports-o623",
+        "prop_name": "getPluginDirs",
+        "fn_node_id": "4163.getPluginDirs-o622",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

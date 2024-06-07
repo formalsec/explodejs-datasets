@@ -1,0 +1,37 @@
+[
+    {
+        "exported_fn_id": "934",
+        "obj_name": "1180.Pullit-o191",
+        "prop_name": "display",
+        "fn_node_id": "1180.display-o190",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "893",
+        "obj_name": "1180.Pullit-o187",
+        "prop_name": "fetchRequests",
+        "fn_node_id": "1180.fetchRequests-o186",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "797",
+        "obj_name": "1180.Pullit-o183",
+        "prop_name": "fetch",
+        "fn_node_id": "1180.fetch-o182",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "763",
+        "obj_name": "1180.Pullit-o178",
+        "prop_name": "parsedGithubUrl",
+        "fn_node_id": "1180.parsedGithubUrl-o177",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "729",
+        "obj_name": "1180.Pullit-o173",
+        "prop_name": "init",
+        "fn_node_id": "1180.init-o172",
+        "type": "get_functions_exported_via_module_obj"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "exported_fn_id": "2192",
+        "obj_name": "2342.ffmpegjs-o466",
+        "prop_name": "trimvideo",
+        "fn_node_id": "2342.v268-o444",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2108",
+        "obj_name": "2342.ffmpegjs-o464",
+        "prop_name": "addaudiotoimage",
+        "fn_node_id": "2342.v256-o438",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2024",
+        "obj_name": "2342.ffmpegjs-o462",
+        "prop_name": "addaudiotovideo",
+        "fn_node_id": "2342.v242-o433",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1949",
+        "obj_name": "2342.ffmpegjs-o460",
+        "prop_name": "addoverlaytext",
+        "fn_node_id": "2342.v228-o428",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1864",
+        "obj_name": "2342.ffmpegjs-o458",
+        "prop_name": "addoverlayimage",
+        "fn_node_id": "2342.v217-o421",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1775",
+        "obj_name": "2342.ffmpegjs-o456",
+        "prop_name": "addoverlayimagetime",
+        "fn_node_id": "2342.v204-o414",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1702",
+        "obj_name": "2342.ffmpegjs-o454",
+        "prop_name": "compressvideo",
+        "fn_node_id": "2342.v191-o405",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1633",
+        "obj_name": "2342.ffmpegjs-o452",
+        "prop_name": "extractaudio",
+        "fn_node_id": "2342.v179-o401",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1564",
+        "obj_name": "2342.ffmpegjs-o450",
+        "prop_name": "generategif",
+        "fn_node_id": "2342.v168-o397",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1495",
+        "obj_name": "2342.ffmpegjs-o448",
+        "prop_name": "convertvideo",
+        "fn_node_id": "2342.v157-o393",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1426",
+        "obj_name": "2342.ffmpegjs-o446",
+        "prop_name": "generateimage",
+        "fn_node_id": "2342.v146-o389",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2192",
+        "obj_name": "2342.module.exports-o469",
+        "prop_name": "trimvideo",
+        "fn_node_id": "2342.v268-o444",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

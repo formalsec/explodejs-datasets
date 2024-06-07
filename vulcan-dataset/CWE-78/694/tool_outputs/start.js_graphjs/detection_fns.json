@@ -1,0 +1,37 @@
+[
+    {
+        "exported_fn_id": "3231",
+        "obj_name": "3580.StartCommand-o504",
+        "prop_name": "checkStatus",
+        "fn_node_id": "3580.checkStatus-o503",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3188",
+        "obj_name": "3580.StartCommand-o497",
+        "prop_name": "getFrameworkName",
+        "fn_node_id": "3580.getFrameworkName-o496",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3170",
+        "obj_name": "3580.StartCommand-o492",
+        "prop_name": "getFrameworkPath",
+        "fn_node_id": "3580.getFrameworkPath-o491",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2418",
+        "obj_name": "3580.StartCommand-o487",
+        "prop_name": "run",
+        "fn_node_id": "3580.run-o486",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2407",
+        "obj_name": "3580.StartCommand-o482",
+        "prop_name": "description",
+        "fn_node_id": "3580.description-o481",
+        "type": "get_functions_exported_via_module_obj"
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "exported_fn_id": "1061",
+        "obj_name": "1783.exports-o271",
+        "prop_name": "isObject",
+        "fn_node_id": "1783.isObject-o253",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1252",
+        "obj_name": "1783.exports-o275",
+        "prop_name": "extend",
+        "fn_node_id": "1783.v129-o274",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1312",
+        "obj_name": "1783.exports-o284",
+        "prop_name": "isUndefined",
+        "fn_node_id": "1783.v133-o283",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1331",
+        "obj_name": "1783.exports-o288",
+        "prop_name": "noop",
+        "fn_node_id": "1783.v134-o287",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1340",
+        "obj_name": "1783.exports-o293",
+        "prop_name": "unique",
+        "fn_node_id": "1783.v141-o292",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1390",
+        "obj_name": "1783.exports-o298",
+        "prop_name": "escape",
+        "fn_node_id": "1783.v148-o297",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1441",
+        "obj_name": "1783.exports-o303",
+        "prop_name": "unescape",
+        "fn_node_id": "1783.v155-o302",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1492",
+        "obj_name": "1783.exports-o308",
+        "prop_name": "hrtime",
+        "fn_node_id": "1783.v162-o307",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1547",
+        "obj_name": "1783.exports-o314",
+        "prop_name": "pick",
+        "fn_node_id": "1783.v171-o313",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1640",
+        "obj_name": "1783.exports-o317",
+        "prop_name": "path",
+        "fn_node_id": "1783.v172-o316",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1091",
+        "obj_name": "1787.exports-o347",
+        "prop_name": "*",
+        "fn_node_id": "1787.v107-o346",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

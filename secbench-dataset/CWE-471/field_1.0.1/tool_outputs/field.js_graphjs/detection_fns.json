@@ -1,0 +1,23 @@
+[
+    {
+        "exported_fn_id": "682",
+        "obj_name": "965.v106-o134",
+        "prop_name": "set",
+        "fn_node_id": "965.set-o127",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "559",
+        "obj_name": "965.v106-o132",
+        "prop_name": "get",
+        "fn_node_id": "965.get-o122",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "682",
+        "obj_name": "965.module.exports-o137",
+        "prop_name": "set",
+        "fn_node_id": "965.set-o127",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

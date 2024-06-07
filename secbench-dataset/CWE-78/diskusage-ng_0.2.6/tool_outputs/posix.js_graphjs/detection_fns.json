@@ -1,0 +1,23 @@
+[
+    {
+        "exported_fn_id": "474",
+        "obj_name": "640.v76-o104",
+        "prop_name": "parse",
+        "fn_node_id": "640.parse-o100",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "392",
+        "obj_name": "640.v76-o102",
+        "prop_name": "diskusage",
+        "fn_node_id": "640.diskusage-o97",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "474",
+        "obj_name": "640.module.exports-o107",
+        "prop_name": "parse",
+        "fn_node_id": "640.parse-o100",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

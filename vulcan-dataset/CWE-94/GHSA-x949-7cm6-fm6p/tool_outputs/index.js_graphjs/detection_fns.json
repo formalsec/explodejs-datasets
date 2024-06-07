@@ -1,0 +1,23 @@
+[
+    {
+        "exported_fn_id": "501",
+        "obj_name": "763.exports-o96",
+        "prop_name": "mdToPdf",
+        "fn_node_id": "763.v52-o95",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "551",
+        "obj_name": "763.exports-o120",
+        "prop_name": "mdToPdf",
+        "fn_node_id": "763.mdToPdf-o119",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "551",
+        "obj_name": "763.exports-o122",
+        "prop_name": "default",
+        "fn_node_id": "763.mdToPdf-o119",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

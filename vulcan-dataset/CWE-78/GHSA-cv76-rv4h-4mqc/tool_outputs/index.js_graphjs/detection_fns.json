@@ -1,0 +1,51 @@
+[
+    {
+        "exported_fn_id": "1465",
+        "obj_name": "1575.PsTree-o244",
+        "prop_name": "show",
+        "fn_node_id": "1575.v181-o232",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1405",
+        "obj_name": "1575.PsTree-o242",
+        "prop_name": "treeKill",
+        "fn_node_id": "1575.v178-o229",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1325",
+        "obj_name": "1575.PsTree-o240",
+        "prop_name": "getProcessTree",
+        "fn_node_id": "1575.v168-o226",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1232",
+        "obj_name": "1575.PsTree-o238",
+        "prop_name": "getPids",
+        "fn_node_id": "1575.v159-o223",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1110",
+        "obj_name": "1575.PsTree-o236",
+        "prop_name": "_txtProcessTree",
+        "fn_node_id": "1575.v143-o219",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "966",
+        "obj_name": "1575.PsTree-o234",
+        "prop_name": "_buildProcessTree",
+        "fn_node_id": "1575.v125-o216",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "1465",
+        "obj_name": "1575.module.exports-o258",
+        "prop_name": "show",
+        "fn_node_id": "1575.v181-o232",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

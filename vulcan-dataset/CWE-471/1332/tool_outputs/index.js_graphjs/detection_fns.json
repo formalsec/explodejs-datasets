@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "284",
+        "obj_name": "362.v12-o49",
+        "prop_name": "set",
+        "fn_node_id": "362.setter-o48",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "219",
+        "obj_name": "362.v12-o49",
+        "prop_name": "set",
+        "fn_node_id": "362.setter-o48",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "231",
+        "obj_name": "362.v12-o46",
+        "prop_name": "get",
+        "fn_node_id": "362.getter-o45",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "213",
+        "obj_name": "362.v12-o46",
+        "prop_name": "get",
+        "fn_node_id": "362.getter-o45",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "284",
+        "obj_name": "362.module.exports-o52",
+        "prop_name": "set",
+        "fn_node_id": "362.setter-o48",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "219",
+        "obj_name": "362.module.exports-o52",
+        "prop_name": "set",
+        "fn_node_id": "362.setter-o48",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

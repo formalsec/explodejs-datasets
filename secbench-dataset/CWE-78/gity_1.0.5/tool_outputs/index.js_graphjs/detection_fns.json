@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "859",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "1436.Git-o205",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "853",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "1436.Git-o205",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "1048",
+        "obj_name": "1448.v84-o293",
+        "prop_name": "*",
+        "fn_node_id": "1448.v95-o292",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "971",
+        "obj_name": "1436.v74-o236",
+        "prop_name": "run",
+        "fn_node_id": "1436.v83-o235",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "896",
+        "obj_name": "1438.this-o264",
+        "prop_name": "base",
+        "fn_node_id": "1438.v68-o263",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "924",
+        "obj_name": "1438.this-o269",
+        "prop_name": "pretty",
+        "fn_node_id": "1438.v73-o268",
+        "type": "get_functions_exported_via_this_property"
+    }
+]

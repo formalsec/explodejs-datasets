@@ -1,0 +1,23 @@
+[
+    {
+        "exported_fn_id": "840",
+        "obj_name": "940.v72-o159",
+        "prop_name": "test",
+        "fn_node_id": "940.v71-o155",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "821",
+        "obj_name": "940.v72-o157",
+        "prop_name": "timeout",
+        "fn_node_id": "940.v60-o149",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "840",
+        "obj_name": "940.module.exports-o162",
+        "prop_name": "test",
+        "fn_node_id": "940.v71-o155",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

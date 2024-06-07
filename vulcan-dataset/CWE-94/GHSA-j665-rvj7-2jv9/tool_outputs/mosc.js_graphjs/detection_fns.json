@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "708",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "1248.MoscBase-o139",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "717",
+        "obj_name": "1250.this-o145",
+        "prop_name": "baseObject",
+        "fn_node_id": "1250.v64-o144",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "759",
+        "obj_name": "1250.this-o159",
+        "prop_name": "parse_properties",
+        "fn_node_id": "1250.v96-o158",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "997",
+        "obj_name": "1250.this-o165",
+        "prop_name": "build",
+        "fn_node_id": "1250.v104-o164",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "1063",
+        "obj_name": "1250.this-o171",
+        "prop_name": "buildIn",
+        "fn_node_id": "1250.v124-o170",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "1220",
+        "obj_name": "1250.this-o175",
+        "prop_name": "end",
+        "fn_node_id": "1250.v126-o174",
+        "type": "get_functions_exported_via_this_property"
+    }
+]

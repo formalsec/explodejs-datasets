@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "492",
+        "obj_name": "812.exports-o114",
+        "prop_name": "umount",
+        "fn_node_id": "812.v69-o113",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "646",
+        "obj_name": "812.exports-o120",
+        "prop_name": "isMounted",
+        "fn_node_id": "812.v96-o119",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

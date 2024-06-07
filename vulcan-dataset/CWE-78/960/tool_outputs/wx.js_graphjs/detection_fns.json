@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "2085",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "3477.v206-o518",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "2097",
+        "obj_name": "3477.wx-o525",
+        "prop_name": "getShortUrl",
+        "fn_node_id": "3477.v208-o524",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

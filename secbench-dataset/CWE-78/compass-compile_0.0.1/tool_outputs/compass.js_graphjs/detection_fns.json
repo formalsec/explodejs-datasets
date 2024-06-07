@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "335",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "459.Compass-o84",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "356",
+        "obj_name": "459.v25-o89",
+        "prop_name": "compile",
+        "fn_node_id": "459.v38-o88",
+        "type": "get_functions_exported_via_prototype"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "1070",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "1185.commandExists-o207",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "1159",
+        "obj_name": "1185.v133-o213",
+        "prop_name": "sync",
+        "fn_node_id": "1185.v136-o212",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

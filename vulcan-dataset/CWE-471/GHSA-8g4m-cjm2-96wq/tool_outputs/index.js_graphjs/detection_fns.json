@@ -1,0 +1,44 @@
+[
+    {
+        "exported_fn_id": "3675",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "6344.safeEval-o711",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "3638",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "6344.safeEval-o711",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "3707",
+        "obj_name": "6344.v355-o717",
+        "prop_name": "FunctionFactory",
+        "fn_node_id": "6344.FunctionFactory-o716",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "3658",
+        "obj_name": "6344.v355-o717",
+        "prop_name": "FunctionFactory",
+        "fn_node_id": "6344.FunctionFactory-o716",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "3675",
+        "obj_name": "6344.v354-o714",
+        "prop_name": "eval",
+        "fn_node_id": "6344.safeEval-o711",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "3638",
+        "obj_name": "6344.v354-o714",
+        "prop_name": "eval",
+        "fn_node_id": "6344.safeEval-o711",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

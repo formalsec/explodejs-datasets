@@ -1,0 +1,23 @@
+[
+    {
+        "exported_fn_id": "279",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "452.UnrarModule-o71",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "342",
+        "obj_name": "452.v31-o85",
+        "prop_name": "_execute",
+        "fn_node_id": "452.v46-o84",
+        "type": "get_functions_exported_via_prototype"
+    },
+    {
+        "exported_fn_id": "299",
+        "obj_name": "452.v25-o78",
+        "prop_name": "extract",
+        "fn_node_id": "452.v30-o77",
+        "type": "get_functions_exported_via_prototype"
+    }
+]

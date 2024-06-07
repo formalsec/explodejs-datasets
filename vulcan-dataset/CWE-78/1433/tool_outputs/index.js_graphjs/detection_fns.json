@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "716",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "1168.treekill-o160",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "710",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "1168.treekill-o160",
+        "type": "get_functions_exported_directly"
+    }
+]

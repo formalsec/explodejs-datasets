@@ -1,0 +1,37 @@
+[
+    {
+        "exported_fn_id": "568",
+        "obj_name": "915.v120-o161",
+        "prop_name": "latest",
+        "fn_node_id": "915.exports.latest-o144",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "562",
+        "obj_name": "915.exports-o141",
+        "prop_name": "get",
+        "fn_node_id": "915.v64-o140",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "590",
+        "obj_name": "915.exports-o163",
+        "prop_name": "get",
+        "fn_node_id": "915.v107-o153",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "826",
+        "obj_name": "915.exports-o165",
+        "prop_name": "latest",
+        "fn_node_id": "915.v117-o156",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "568",
+        "obj_name": "915.module.exports-o168",
+        "prop_name": "latest",
+        "fn_node_id": "915.exports.latest-o144",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

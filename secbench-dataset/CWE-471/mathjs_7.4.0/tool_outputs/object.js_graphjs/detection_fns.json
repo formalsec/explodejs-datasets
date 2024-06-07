@@ -1,0 +1,226 @@
+[
+    {
+        "exported_fn_id": "2278",
+        "obj_name": "3577.exports-o413",
+        "prop_name": "clone",
+        "fn_node_id": "3577.clone-o412",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2066",
+        "obj_name": "3577.exports-o413",
+        "prop_name": "clone",
+        "fn_node_id": "3577.clone-o412",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2432",
+        "obj_name": "3577.exports-o416",
+        "prop_name": "mapObject",
+        "fn_node_id": "3577.mapObject-o415",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2072",
+        "obj_name": "3577.exports-o416",
+        "prop_name": "mapObject",
+        "fn_node_id": "3577.mapObject-o415",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2468",
+        "obj_name": "3577.exports-o419",
+        "prop_name": "extend",
+        "fn_node_id": "3577.extend-o418",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2078",
+        "obj_name": "3577.exports-o419",
+        "prop_name": "extend",
+        "fn_node_id": "3577.extend-o418",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2498",
+        "obj_name": "3577.exports-o422",
+        "prop_name": "deepExtend",
+        "fn_node_id": "3577.deepExtend-o421",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2084",
+        "obj_name": "3577.exports-o422",
+        "prop_name": "deepExtend",
+        "fn_node_id": "3577.deepExtend-o421",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2655",
+        "obj_name": "3577.exports-o425",
+        "prop_name": "deepStrictEqual",
+        "fn_node_id": "3577.deepStrictEqual-o424",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2090",
+        "obj_name": "3577.exports-o425",
+        "prop_name": "deepStrictEqual",
+        "fn_node_id": "3577.deepStrictEqual-o424",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2879",
+        "obj_name": "3577.exports-o428",
+        "prop_name": "deepFlatten",
+        "fn_node_id": "3577.deepFlatten-o427",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2096",
+        "obj_name": "3577.exports-o428",
+        "prop_name": "deepFlatten",
+        "fn_node_id": "3577.deepFlatten-o427",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2949",
+        "obj_name": "3577.exports-o431",
+        "prop_name": "canDefineProperty",
+        "fn_node_id": "3577.canDefineProperty-o430",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2102",
+        "obj_name": "3577.exports-o431",
+        "prop_name": "canDefineProperty",
+        "fn_node_id": "3577.canDefineProperty-o430",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2988",
+        "obj_name": "3577.exports-o434",
+        "prop_name": "lazy",
+        "fn_node_id": "3577.lazy-o433",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2108",
+        "obj_name": "3577.exports-o434",
+        "prop_name": "lazy",
+        "fn_node_id": "3577.lazy-o433",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3050",
+        "obj_name": "3577.exports-o437",
+        "prop_name": "traverse",
+        "fn_node_id": "3577.traverse-o436",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2114",
+        "obj_name": "3577.exports-o437",
+        "prop_name": "traverse",
+        "fn_node_id": "3577.traverse-o436",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3139",
+        "obj_name": "3577.exports-o440",
+        "prop_name": "hasOwnProperty",
+        "fn_node_id": "3577.hasOwnProperty-o439",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2120",
+        "obj_name": "3577.exports-o440",
+        "prop_name": "hasOwnProperty",
+        "fn_node_id": "3577.hasOwnProperty-o439",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3161",
+        "obj_name": "3577.exports-o443",
+        "prop_name": "isLegacyFactory",
+        "fn_node_id": "3577.isLegacyFactory-o442",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2126",
+        "obj_name": "3577.exports-o443",
+        "prop_name": "isLegacyFactory",
+        "fn_node_id": "3577.isLegacyFactory-o442",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3182",
+        "obj_name": "3577.exports-o446",
+        "prop_name": "get",
+        "fn_node_id": "3577.get-o445",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2132",
+        "obj_name": "3577.exports-o446",
+        "prop_name": "get",
+        "fn_node_id": "3577.get-o445",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3270",
+        "obj_name": "3577.exports-o449",
+        "prop_name": "set",
+        "fn_node_id": "3577.set-o448",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2138",
+        "obj_name": "3577.exports-o449",
+        "prop_name": "set",
+        "fn_node_id": "3577.set-o448",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3404",
+        "obj_name": "3577.exports-o452",
+        "prop_name": "pick",
+        "fn_node_id": "3577.pick-o451",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2144",
+        "obj_name": "3577.exports-o452",
+        "prop_name": "pick",
+        "fn_node_id": "3577.pick-o451",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3478",
+        "obj_name": "3577.exports-o455",
+        "prop_name": "pickShallow",
+        "fn_node_id": "3577.pickShallow-o454",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2150",
+        "obj_name": "3577.exports-o455",
+        "prop_name": "pickShallow",
+        "fn_node_id": "3577.pickShallow-o454",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "3530",
+        "obj_name": "3577.exports-o458",
+        "prop_name": "values",
+        "fn_node_id": "3577.values-o457",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2156",
+        "obj_name": "3577.exports-o458",
+        "prop_name": "values",
+        "fn_node_id": "3577.values-o457",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

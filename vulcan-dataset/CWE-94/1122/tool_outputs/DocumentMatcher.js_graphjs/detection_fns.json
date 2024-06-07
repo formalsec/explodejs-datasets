@@ -1,0 +1,86 @@
+[
+    {
+        "exported_fn_id": "6538",
+        "obj_name": "10974.exports-o1370",
+        "prop_name": "DocumentMatcher",
+        "fn_node_id": "10974.undefined-o1369",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "7648",
+        "obj_name": "10974.exports-o1375",
+        "prop_name": "regexpElementMatcher",
+        "fn_node_id": "10974.regexpElementMatcher-o1374",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "6552",
+        "obj_name": "10974.exports-o1375",
+        "prop_name": "regexpElementMatcher",
+        "fn_node_id": "10974.regexpElementMatcher-o1374",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "7705",
+        "obj_name": "10974.exports-o1378",
+        "prop_name": "equalityElementMatcher",
+        "fn_node_id": "10974.equalityElementMatcher-o1377",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "6558",
+        "obj_name": "10974.exports-o1378",
+        "prop_name": "equalityElementMatcher",
+        "fn_node_id": "10974.equalityElementMatcher-o1377",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10178",
+        "obj_name": "10974.exports-o1381",
+        "prop_name": "makeLookupFunction",
+        "fn_node_id": "10974.makeLookupFunction-o1380",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "6564",
+        "obj_name": "10974.exports-o1381",
+        "prop_name": "makeLookupFunction",
+        "fn_node_id": "10974.makeLookupFunction-o1380",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10620",
+        "obj_name": "10974.exports-o1384",
+        "prop_name": "expandArraysInBranches",
+        "fn_node_id": "10974.expandArraysInBranches-o1383",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "6570",
+        "obj_name": "10974.exports-o1384",
+        "prop_name": "expandArraysInBranches",
+        "fn_node_id": "10974.expandArraysInBranches-o1383",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "7221",
+        "obj_name": "10974.exports-o1435",
+        "prop_name": "DocumentMatcher",
+        "fn_node_id": "10974.v781-o1434",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "6707",
+        "obj_name": "10974.exports-o1437",
+        "prop_name": "default",
+        "fn_node_id": "10974.exports.DocumentMatcher-o1436",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "7224",
+        "obj_name": "10974.exports-o1437",
+        "prop_name": "default",
+        "fn_node_id": "10974.exports.DocumentMatcher-o1436",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

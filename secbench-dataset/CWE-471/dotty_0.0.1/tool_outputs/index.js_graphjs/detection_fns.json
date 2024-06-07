@@ -1,0 +1,30 @@
+[
+    {
+        "exported_fn_id": "1352",
+        "obj_name": "1522.v173-o182",
+        "prop_name": "put",
+        "fn_node_id": "1522.put-o181",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "1120",
+        "obj_name": "1522.v137-o175",
+        "prop_name": "search",
+        "fn_node_id": "1522.search-o174",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "994",
+        "obj_name": "1522.v119-o169",
+        "prop_name": "get",
+        "fn_node_id": "1522.get-o168",
+        "type": "get_functions_exported_via_module_prop"
+    },
+    {
+        "exported_fn_id": "862",
+        "obj_name": "1522.v100-o163",
+        "prop_name": "exists",
+        "fn_node_id": "1522.exists-o162",
+        "type": "get_functions_exported_via_module_prop"
+    }
+]

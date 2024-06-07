@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "580",
+        "obj_name": "1002.v154-o112",
+        "prop_name": "publish",
+        "fn_node_id": "1002.v153-o110",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "580",
+        "obj_name": "1002.module.exports-o115",
+        "prop_name": "publish",
+        "fn_node_id": "1002.v153-o110",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

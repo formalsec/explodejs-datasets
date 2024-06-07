@@ -1,0 +1,23 @@
+[
+    {
+        "exported_fn_id": "520",
+        "obj_name": "894.exports-o87",
+        "prop_name": "getDeep",
+        "fn_node_id": "894.v45-o86",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "538",
+        "obj_name": "894.exports-o97",
+        "prop_name": "getDeep",
+        "fn_node_id": "894.getDeep-o96",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "701",
+        "obj_name": "894.exports-o105",
+        "prop_name": "setDeep",
+        "fn_node_id": "894.setDeep-o104",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

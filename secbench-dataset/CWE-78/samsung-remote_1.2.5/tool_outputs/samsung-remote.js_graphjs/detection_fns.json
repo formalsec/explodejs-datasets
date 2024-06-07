@@ -1,0 +1,23 @@
+[
+    {
+        "exported_fn_id": "1010",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "1696.Remote-o237",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "1415",
+        "obj_name": "1700.this-o273",
+        "prop_name": "send",
+        "fn_node_id": "1700.v247-o272",
+        "type": "get_functions_exported_via_this_property"
+    },
+    {
+        "exported_fn_id": "1636",
+        "obj_name": "1700.this-o278",
+        "prop_name": "isAlive",
+        "fn_node_id": "1700.v254-o277",
+        "type": "get_functions_exported_via_this_property"
+    }
+]

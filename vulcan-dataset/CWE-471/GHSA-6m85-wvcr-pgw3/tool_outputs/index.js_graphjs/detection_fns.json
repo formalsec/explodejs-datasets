@@ -1,0 +1,37 @@
+[
+    {
+        "exported_fn_id": "3469",
+        "obj_name": "3886.safeCall-o670",
+        "prop_name": "unset",
+        "fn_node_id": "3886.unset-o603",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3268",
+        "obj_name": "3886.safeCall-o668",
+        "prop_name": "set",
+        "fn_node_id": "3886.set-o599",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3126",
+        "obj_name": "3886.safeCall-o666",
+        "prop_name": "query",
+        "fn_node_id": "3886.query-o594",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3040",
+        "obj_name": "3886.safeCall-o659",
+        "prop_name": "require",
+        "fn_node_id": "3886.safeRequire-o585",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2311",
+        "obj_name": "3886.safeCall-o604",
+        "prop_name": "safeCall",
+        "fn_node_id": "3886.safeCall-o541",
+        "type": "get_functions_exported_via_module_obj"
+    }
+]

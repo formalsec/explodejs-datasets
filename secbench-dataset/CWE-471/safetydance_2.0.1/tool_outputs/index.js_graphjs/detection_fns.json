@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "2502",
+        "obj_name": "4033.exports-o700",
+        "prop_name": "error",
+        "fn_node_id": "4033.e-o699",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2399",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "4029.safe-o559",
+        "type": "get_functions_exported_directly"
+    }
+]

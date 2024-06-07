@@ -1,0 +1,247 @@
+[
+    {
+        "exported_fn_id": "6247",
+        "obj_name": "11056.exports-o1175",
+        "prop_name": "clone",
+        "fn_node_id": "11056.v679-o1174",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "6505",
+        "obj_name": "11056.exports-o1183",
+        "prop_name": "merge",
+        "fn_node_id": "11056.v732-o1182",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "6848",
+        "obj_name": "11056.exports-o1190",
+        "prop_name": "applyToDefaults",
+        "fn_node_id": "11056.v748-o1189",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "6949",
+        "obj_name": "11056.exports-o1196",
+        "prop_name": "cloneWithShallow",
+        "fn_node_id": "11056.v754-o1195",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "7220",
+        "obj_name": "11056.exports-o1223",
+        "prop_name": "applyToDefaultsWithShallow",
+        "fn_node_id": "11056.v794-o1222",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "7356",
+        "obj_name": "11056.exports-o1231",
+        "prop_name": "deepEqual",
+        "fn_node_id": "11056.v887-o1230",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "7956",
+        "obj_name": "11056.exports-o1237",
+        "prop_name": "unique",
+        "fn_node_id": "11056.v895-o1236",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "8037",
+        "obj_name": "11056.exports-o1243",
+        "prop_name": "mapToObject",
+        "fn_node_id": "11056.v905-o1242",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "8121",
+        "obj_name": "11056.exports-o1250",
+        "prop_name": "intersect",
+        "fn_node_id": "11056.v926-o1249",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "8273",
+        "obj_name": "11056.exports-o1257",
+        "prop_name": "contain",
+        "fn_node_id": "11056.v1026-o1256",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "8999",
+        "obj_name": "11056.exports-o1263",
+        "prop_name": "flatten",
+        "fn_node_id": "11056.v1037-o1262",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "9079",
+        "obj_name": "11056.exports-o1270",
+        "prop_name": "reach",
+        "fn_node_id": "11056.v1090-o1269",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "9391",
+        "obj_name": "11056.exports-o1277",
+        "prop_name": "reachTemplate",
+        "fn_node_id": "11056.v1097-o1276",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "9452",
+        "obj_name": "11056.exports-o1282",
+        "prop_name": "formatStack",
+        "fn_node_id": "11056.v1108-o1281",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "9532",
+        "obj_name": "11056.exports-o1287",
+        "prop_name": "formatTrace",
+        "fn_node_id": "11056.v1127-o1286",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "9645",
+        "obj_name": "11056.exports-o1292",
+        "prop_name": "callStack",
+        "fn_node_id": "11056.v1132-o1291",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "9711",
+        "obj_name": "11056.exports-o1297",
+        "prop_name": "displayStack",
+        "fn_node_id": "11056.v1137-o1296",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "9762",
+        "obj_name": "11056.exports-o1305",
+        "prop_name": "abort",
+        "fn_node_id": "11056.v1153-o1304",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "9860",
+        "obj_name": "11056.exports-o1311",
+        "prop_name": "assert",
+        "fn_node_id": "11056.v1176-o1310",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10019",
+        "obj_name": "11056.exports-o1315",
+        "prop_name": "Bench",
+        "fn_node_id": "11056.v1178-o1314",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10149",
+        "obj_name": "11056.exports-o1333",
+        "prop_name": "escapeRegex",
+        "fn_node_id": "11056.v1199-o1332",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10168",
+        "obj_name": "11056.exports-o1339",
+        "prop_name": "base64urlEncode",
+        "fn_node_id": "11056.v1212-o1338",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10262",
+        "obj_name": "11056.exports-o1345",
+        "prop_name": "base64urlDecode",
+        "fn_node_id": "11056.v1223-o1344",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10341",
+        "obj_name": "11056.exports-o1350",
+        "prop_name": "escapeHeaderAttribute",
+        "fn_node_id": "11056.v1230-o1349",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10390",
+        "obj_name": "11056.exports-o1355",
+        "prop_name": "escapeHtml",
+        "fn_node_id": "11056.v1232-o1354",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10408",
+        "obj_name": "11056.exports-o1360",
+        "prop_name": "escapeJavaScript",
+        "fn_node_id": "11056.v1234-o1359",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10426",
+        "obj_name": "11056.exports-o1365",
+        "prop_name": "escapeJson",
+        "fn_node_id": "11056.v1236-o1364",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10444",
+        "obj_name": "11056.exports-o1370",
+        "prop_name": "once",
+        "fn_node_id": "11056.v1240-o1369",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10507",
+        "obj_name": "11056.exports-o1378",
+        "prop_name": "ignore",
+        "fn_node_id": "11056.v1242-o1377",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10536",
+        "obj_name": "11056.exports-o1391",
+        "prop_name": "transform",
+        "fn_node_id": "11056.v1279-o1390",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10815",
+        "obj_name": "11056.exports-o1397",
+        "prop_name": "uniqueFilename",
+        "fn_node_id": "11056.v1290-o1396",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10911",
+        "obj_name": "11056.exports-o1402",
+        "prop_name": "stringify",
+        "fn_node_id": "11056.v1296-o1401",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "10954",
+        "obj_name": "11056.exports-o1407",
+        "prop_name": "shallow",
+        "fn_node_id": "11056.v1301-o1406",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "11010",
+        "obj_name": "11056.exports-o1412",
+        "prop_name": "wait",
+        "fn_node_id": "11056.v1305-o1411",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "11037",
+        "obj_name": "11056.exports-o1416",
+        "prop_name": "block",
+        "fn_node_id": "11056.v1308-o1415",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

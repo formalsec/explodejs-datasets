@@ -1,0 +1,177 @@
+[
+    {
+        "exported_fn_id": "3451",
+        "obj_name": "4262.v398-o688",
+        "prop_name": "set",
+        "fn_node_id": "4262.set-o596",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3400",
+        "obj_name": "4262.v398-o686",
+        "prop_name": "get",
+        "fn_node_id": "4262.get-o591",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3166",
+        "obj_name": "4262.v398-o684",
+        "prop_name": "last",
+        "fn_node_id": "4262.last-o575",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3277",
+        "obj_name": "4262.v398-o682",
+        "prop_name": "once",
+        "fn_node_id": "4262.once-o584",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2849",
+        "obj_name": "4262.v398-o680",
+        "prop_name": "omit",
+        "fn_node_id": "4262.omit-o556",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3621",
+        "obj_name": "4262.v398-o676",
+        "prop_name": "chunk",
+        "fn_node_id": "4262.chunk-o604",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2977",
+        "obj_name": "4262.v398-o674",
+        "prop_name": "union",
+        "fn_node_id": "4262.union-o564",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3209",
+        "obj_name": "4262.v398-o672",
+        "prop_name": "values",
+        "fn_node_id": "4262.values-o581",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2703",
+        "obj_name": "4262.v398-o670",
+        "prop_name": "uniqBy",
+        "fn_node_id": "4262.uniqBy-o548",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2780",
+        "obj_name": "4262.v398-o668",
+        "prop_name": "groupBy",
+        "fn_node_id": "4262.groupBy-o552",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3312",
+        "obj_name": "4262.v398-o666",
+        "prop_name": "flatten",
+        "fn_node_id": "4262.flatten-o587",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2646",
+        "obj_name": "4262.v398-o664",
+        "prop_name": "asArray",
+        "fn_node_id": "4262.asArray-o541",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2674",
+        "obj_name": "4262.v398-o662",
+        "prop_name": "asSingle",
+        "fn_node_id": "4262.asSingle-o544",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3576",
+        "obj_name": "4262.v398-o658",
+        "prop_name": "zipObject",
+        "fn_node_id": "4262.zipObject-o600",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3184",
+        "obj_name": "4262.v398-o656",
+        "prop_name": "upperFirst",
+        "fn_node_id": "4262.upperFirst-o578",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2918",
+        "obj_name": "4262.v398-o654",
+        "prop_name": "difference",
+        "fn_node_id": "4262.difference-o560",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2533",
+        "obj_name": "4262.v398-o652",
+        "prop_name": "isPlainObject",
+        "fn_node_id": "4262.isPlainObject-o526",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3721",
+        "obj_name": "4262.v398-o650",
+        "prop_name": "jsonEquals",
+        "fn_node_id": "4262.jsonEquals-o608",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2597",
+        "obj_name": "4262.v398-o648",
+        "prop_name": "isFunction",
+        "fn_node_id": "4262.isFunction-o529",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2633",
+        "obj_name": "4262.v398-o646",
+        "prop_name": "isNumber",
+        "fn_node_id": "4262.isNumber-o538",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2512",
+        "obj_name": "4262.v398-o644",
+        "prop_name": "isObject",
+        "fn_node_id": "4262.isObject-o523",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2610",
+        "obj_name": "4262.v398-o642",
+        "prop_name": "isRegExp",
+        "fn_node_id": "4262.isRegExp-o532",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2620",
+        "obj_name": "4262.v398-o640",
+        "prop_name": "isString",
+        "fn_node_id": "4262.isString-o535",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "2462",
+        "obj_name": "4262.v398-o638",
+        "prop_name": "isEmpty",
+        "fn_node_id": "4262.isEmpty-o520",
+        "type": "get_functions_exported_via_module_obj"
+    },
+    {
+        "exported_fn_id": "3451",
+        "obj_name": "4262.module.exports-o691",
+        "prop_name": "set",
+        "fn_node_id": "4262.set-o596",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

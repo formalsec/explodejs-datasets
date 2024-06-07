@@ -1,0 +1,16 @@
+[
+    {
+        "exported_fn_id": "1220",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "2095.api-o266",
+        "type": "get_functions_exported_directly"
+    },
+    {
+        "exported_fn_id": "1214",
+        "obj_name": "None",
+        "prop_name": "None",
+        "fn_node_id": "2095.api-o266",
+        "type": "get_functions_exported_directly"
+    }
+]

@@ -1,0 +1,121 @@
+[
+    {
+        "exported_fn_id": "1630",
+        "obj_name": "2842.exports-o313",
+        "prop_name": "clone",
+        "fn_node_id": "2842.clone-o312",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1973",
+        "obj_name": "2842.exports-o319",
+        "prop_name": "cloneObject",
+        "fn_node_id": "2842.cloneObject-o318",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2062",
+        "obj_name": "2842.exports-o325",
+        "prop_name": "cloneArray",
+        "fn_node_id": "2842.cloneArray-o324",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2116",
+        "obj_name": "2842.exports-o330",
+        "prop_name": "tick",
+        "fn_node_id": "2842.tick-o329",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2162",
+        "obj_name": "2842.exports-o336",
+        "prop_name": "merge",
+        "fn_node_id": "2842.merge-o335",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2265",
+        "obj_name": "2842.exports-o342",
+        "prop_name": "mergeClone",
+        "fn_node_id": "2842.mergeClone-o341",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2376",
+        "obj_name": "2842.exports-o347",
+        "prop_name": "readPref",
+        "fn_node_id": "2842.readPref-o346",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2425",
+        "obj_name": "2842.exports-o352",
+        "prop_name": "readConcern",
+        "fn_node_id": "2842.readConcern-o351",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2506",
+        "obj_name": "2842.exports-o360",
+        "prop_name": "toString",
+        "fn_node_id": "2842.v257-o359",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2524",
+        "obj_name": "2842.exports-o365",
+        "prop_name": "isObject",
+        "fn_node_id": "2842.v260-o364",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2550",
+        "obj_name": "2842.exports-o370",
+        "prop_name": "isArray",
+        "fn_node_id": "2842.v268-o369",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2597",
+        "obj_name": "2842.exports-o376",
+        "prop_name": "keys",
+        "fn_node_id": "2842.v272-o375",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2650",
+        "obj_name": "2842.exports-o381",
+        "prop_name": "create",
+        "fn_node_id": "2842.v277-o380",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2704",
+        "obj_name": "2842.exports-o390",
+        "prop_name": "inherits",
+        "fn_node_id": "2842.v285-o389",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2752",
+        "obj_name": "2842.exports-o396",
+        "prop_name": "soon",
+        "fn_node_id": "2842.v289-o395",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2775",
+        "obj_name": "2842.exports-o401",
+        "prop_name": "cloneBuffer",
+        "fn_node_id": "2842.v293-o400",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2812",
+        "obj_name": "2842.exports-o406",
+        "prop_name": "isArgumentsObject",
+        "fn_node_id": "2842.v298-o405",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]

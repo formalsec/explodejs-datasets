@@ -1,0 +1,30 @@
+[
+    {
+        "exported_fn_id": "1575",
+        "obj_name": "2846.exports-o244",
+        "prop_name": "get",
+        "fn_node_id": "2846.v199-o243",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1862",
+        "obj_name": "2846.exports-o250",
+        "prop_name": "has",
+        "fn_node_id": "2846.v217-o249",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "1988",
+        "obj_name": "2846.exports-o256",
+        "prop_name": "unset",
+        "fn_node_id": "2846.v244-o255",
+        "type": "get_functions_exported_via_export_prop"
+    },
+    {
+        "exported_fn_id": "2164",
+        "obj_name": "2846.exports-o266",
+        "prop_name": "set",
+        "fn_node_id": "2846.v330-o265",
+        "type": "get_functions_exported_via_export_prop"
+    }
+]
