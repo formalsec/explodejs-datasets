@@ -2,8 +2,10 @@
     {
         "exported_fn_id": "3059",
         "obj_name": "3084.mpv-o370",
-        "prop_name": "prototype",
+        "prop_name": [
+            "prototype"
+        ],
         "fn_node_id": "3084.v348-o369",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     }
 ]

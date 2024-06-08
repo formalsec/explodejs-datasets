@@ -2,43 +2,55 @@
     {
         "exported_fn_id": "1211",
         "obj_name": "None",
-        "prop_name": "None",
+        "prop_name": [
+            "None"
+        ],
         "fn_node_id": "2043.v141-o258",
-        "type": "get_functions_exported_directly"
+        "type": "direct"
     },
     {
         "exported_fn_id": "1842",
         "obj_name": "2043.v221-o290",
-        "prop_name": "cmdVersion",
+        "prop_name": [
+            "cmdVersion"
+        ],
         "fn_node_id": "2043.v250-o289",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     },
     {
         "exported_fn_id": "1645",
         "obj_name": "2043.v189-o283",
-        "prop_name": "cmd",
+        "prop_name": [
+            "cmd"
+        ],
         "fn_node_id": "2043.v220-o282",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     },
     {
         "exported_fn_id": "1565",
         "obj_name": "2043.v177-o277",
-        "prop_name": "path",
+        "prop_name": [
+            "path"
+        ],
         "fn_node_id": "2043.v188-o276",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     },
     {
         "exported_fn_id": "1465",
         "obj_name": "2043.v166-o271",
-        "prop_name": "resize",
+        "prop_name": [
+            "resize"
+        ],
         "fn_node_id": "2043.v176-o270",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     },
     {
         "exported_fn_id": "1290",
         "obj_name": "2043.v142-o265",
-        "prop_name": "crop",
+        "prop_name": [
+            "crop"
+        ],
         "fn_node_id": "2043.v165-o264",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     }
 ]

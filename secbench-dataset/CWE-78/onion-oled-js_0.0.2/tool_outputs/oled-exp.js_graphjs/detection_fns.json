@@ -2,71 +2,82 @@
     {
         "exported_fn_id": "609",
         "obj_name": "689.OLEDExpr-o155",
-        "prop_name": "scroll",
+        "prop_name": [
+            "scroll"
+        ],
         "fn_node_id": "689.v84-o137",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "544",
         "obj_name": "689.OLEDExpr-o153",
-        "prop_name": "write",
+        "prop_name": [
+            "write"
+        ],
         "fn_node_id": "689.v80-o134",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "526",
         "obj_name": "689.OLEDExpr-o151",
-        "prop_name": "invert",
+        "prop_name": [
+            "invert"
+        ],
         "fn_node_id": "689.v68-o129",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "499",
         "obj_name": "689.OLEDExpr-o149",
-        "prop_name": "cursor",
+        "prop_name": [
+            "cursor"
+        ],
         "fn_node_id": "689.v64-o126",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "488",
         "obj_name": "689.OLEDExpr-o147",
-        "prop_name": "powerOff",
+        "prop_name": [
+            "powerOff"
+        ],
         "fn_node_id": "689.v58-o122",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "477",
         "obj_name": "689.OLEDExpr-o145",
-        "prop_name": "powerOn",
+        "prop_name": [
+            "powerOn"
+        ],
         "fn_node_id": "689.v56-o120",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "459",
         "obj_name": "689.OLEDExpr-o143",
-        "prop_name": "power",
+        "prop_name": [
+            "power"
+        ],
         "fn_node_id": "689.v54-o118",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "446",
         "obj_name": "689.OLEDExpr-o141",
-        "prop_name": "clear",
+        "prop_name": [
+            "clear"
+        ],
         "fn_node_id": "689.v50-o115",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "433",
         "obj_name": "689.OLEDExpr-o139",
-        "prop_name": "initialize",
+        "prop_name": [
+            "initialize"
+        ],
         "fn_node_id": "689.v47-o113",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "609",
-        "obj_name": "689.module.exports-o158",
-        "prop_name": "scroll",
-        "fn_node_id": "689.v84-o137",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

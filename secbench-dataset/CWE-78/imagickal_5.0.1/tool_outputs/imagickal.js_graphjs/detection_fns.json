@@ -2,36 +2,46 @@
     {
         "exported_fn_id": "1720",
         "obj_name": "2647.exports-o375",
-        "prop_name": "dimensions",
+        "prop_name": [
+            "dimensions"
+        ],
         "fn_node_id": "2647.v191-o374",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1879",
         "obj_name": "2647.exports-o382",
-        "prop_name": "identify",
+        "prop_name": [
+            "identify"
+        ],
         "fn_node_id": "2647.v237-o381",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2282",
         "obj_name": "2647.exports-o390",
-        "prop_name": "commands",
+        "prop_name": [
+            "commands"
+        ],
         "fn_node_id": "2647.v253-o389",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2519",
         "obj_name": "2647.exports-o408",
-        "prop_name": "transform",
+        "prop_name": [
+            "transform"
+        ],
         "fn_node_id": "2647.v305-o407",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2633",
         "obj_name": "2647.exports-o413",
-        "prop_name": "setDefaults",
+        "prop_name": [
+            "setDefaults"
+        ],
         "fn_node_id": "2647.v306-o412",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

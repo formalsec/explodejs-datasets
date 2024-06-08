@@ -2,113 +2,118 @@
     {
         "exported_fn_id": "923",
         "obj_name": "1565.exports-o215",
-        "prop_name": "Param",
+        "prop_name": [
+            "Param"
+        ],
         "fn_node_id": "1565.undefined-o214",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1093",
         "obj_name": "1565.exports-o222",
-        "prop_name": "handler",
+        "prop_name": [
+            "handler"
+        ],
         "fn_node_id": "1565.handler-o221",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "945",
         "obj_name": "1565.exports-o222",
-        "prop_name": "handler",
+        "prop_name": [
+            "handler"
+        ],
         "fn_node_id": "1565.handler-o221",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1130",
         "obj_name": "1565.exports-o225",
-        "prop_name": "parser",
+        "prop_name": [
+            "parser"
+        ],
         "fn_node_id": "1565.parser-o224",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "951",
         "obj_name": "1565.exports-o225",
-        "prop_name": "parser",
+        "prop_name": [
+            "parser"
+        ],
         "fn_node_id": "1565.parser-o224",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1167",
         "obj_name": "1565.exports-o228",
-        "prop_name": "formatter",
+        "prop_name": [
+            "formatter"
+        ],
         "fn_node_id": "1565.formatter-o227",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "957",
         "obj_name": "1565.exports-o228",
-        "prop_name": "formatter",
+        "prop_name": [
+            "formatter"
+        ],
         "fn_node_id": "1565.formatter-o227",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1204",
         "obj_name": "1565.exports-o231",
-        "prop_name": "validator",
+        "prop_name": [
+            "validator"
+        ],
         "fn_node_id": "1565.validator-o230",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "963",
         "obj_name": "1565.exports-o231",
-        "prop_name": "validator",
+        "prop_name": [
+            "validator"
+        ],
         "fn_node_id": "1565.validator-o230",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1241",
         "obj_name": "1565.exports-o234",
-        "prop_name": "middleware",
+        "prop_name": [
+            "middleware"
+        ],
         "fn_node_id": "1565.middleware-o233",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "969",
         "obj_name": "1565.exports-o234",
-        "prop_name": "middleware",
+        "prop_name": [
+            "middleware"
+        ],
         "fn_node_id": "1565.middleware-o233",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1435",
         "obj_name": "1565.exports-o237",
-        "prop_name": "errorHandler",
+        "prop_name": [
+            "errorHandler"
+        ],
         "fn_node_id": "1565.errorHandler-o236",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "975",
         "obj_name": "1565.exports-o237",
-        "prop_name": "errorHandler",
+        "prop_name": [
+            "errorHandler"
+        ],
         "fn_node_id": "1565.errorHandler-o236",
-        "type": "get_functions_exported_via_export_prop"
-    },
-    {
-        "exported_fn_id": "1061",
-        "obj_name": "1565.exports.handlers-o271",
-        "prop_name": "validators",
-        "fn_node_id": "1565.v86-o262",
-        "type": "get_functions_exported_via_export_prop"
-    },
-    {
-        "exported_fn_id": "1435",
-        "obj_name": "1565.exports.default-o309",
-        "prop_name": "errorHandler",
-        "fn_node_id": "1565.errorHandler-o236",
-        "type": "get_functions_exported_via_export_prop"
-    },
-    {
-        "exported_fn_id": "975",
-        "obj_name": "1565.exports.default-o309",
-        "prop_name": "errorHandler",
-        "fn_node_id": "1565.errorHandler-o236",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

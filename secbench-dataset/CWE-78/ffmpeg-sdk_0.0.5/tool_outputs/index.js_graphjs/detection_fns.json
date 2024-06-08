@@ -2,57 +2,64 @@
     {
         "exported_fn_id": "862",
         "obj_name": "927.v104-o190",
-        "prop_name": "parseAudioLowQuality",
+        "prop_name": [
+            "parseAudioLowQuality"
+        ],
         "fn_node_id": "927.parseAudioLowQuality-o176",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "603",
         "obj_name": "927.v104-o188",
-        "prop_name": "timeInMilliSeconds",
+        "prop_name": [
+            "timeInMilliSeconds"
+        ],
         "fn_node_id": "927.timeInMilliSeconds-o154",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "689",
         "obj_name": "927.v104-o186",
-        "prop_name": "formattedTime",
+        "prop_name": [
+            "formattedTime"
+        ],
         "fn_node_id": "927.formattedTime-o157",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "847",
         "obj_name": "927.v104-o184",
-        "prop_name": "parseAudio",
+        "prop_name": [
+            "parseAudio"
+        ],
         "fn_node_id": "927.parseAudio-o172",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "772",
         "obj_name": "927.v104-o182",
-        "prop_name": "split",
+        "prop_name": [
+            "split"
+        ],
         "fn_node_id": "927.split-o168",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "741",
         "obj_name": "927.v104-o180",
-        "prop_name": "clip",
+        "prop_name": [
+            "clip"
+        ],
         "fn_node_id": "927.clip-o163",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "559",
         "obj_name": "927.v104-o178",
-        "prop_name": "execute",
+        "prop_name": [
+            "execute"
+        ],
         "fn_node_id": "927.execute-o151",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "862",
-        "obj_name": "927.module.exports-o193",
-        "prop_name": "parseAudioLowQuality",
-        "fn_node_id": "927.parseAudioLowQuality-o176",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

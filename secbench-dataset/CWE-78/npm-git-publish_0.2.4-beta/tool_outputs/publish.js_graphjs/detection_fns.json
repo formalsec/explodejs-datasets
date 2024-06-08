@@ -2,29 +2,37 @@
     {
         "exported_fn_id": "2292",
         "obj_name": "3803.exports-o558",
-        "prop_name": "default",
+        "prop_name": [
+            "default"
+        ],
         "fn_node_id": "3803.publish-o557",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2286",
         "obj_name": "3803.exports-o558",
-        "prop_name": "default",
+        "prop_name": [
+            "default"
+        ],
         "fn_node_id": "3803.publish-o557",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2292",
         "obj_name": "3803.exports-o568",
-        "prop_name": "publish",
+        "prop_name": [
+            "publish"
+        ],
         "fn_node_id": "3803.publish-o557",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2286",
         "obj_name": "3803.exports-o568",
-        "prop_name": "publish",
+        "prop_name": [
+            "publish"
+        ],
         "fn_node_id": "3803.publish-o557",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

@@ -2,43 +2,37 @@
     {
         "exported_fn_id": "661",
         "obj_name": "878.v47-o119",
-        "prop_name": "setPath",
+        "prop_name": [
+            "setPath"
+        ],
         "fn_node_id": "878.setPath-o118",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "520",
         "obj_name": "878.v47-o119",
-        "prop_name": "setPath",
+        "prop_name": [
+            "setPath"
+        ],
         "fn_node_id": "878.setPath-o118",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "532",
         "obj_name": "878.v47-o116",
-        "prop_name": "evaluatePath",
+        "prop_name": [
+            "evaluatePath"
+        ],
         "fn_node_id": "878.evaluatePath-o115",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "514",
         "obj_name": "878.v47-o116",
-        "prop_name": "evaluatePath",
+        "prop_name": [
+            "evaluatePath"
+        ],
         "fn_node_id": "878.evaluatePath-o115",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "661",
-        "obj_name": "878.module.exports-o122",
-        "prop_name": "setPath",
-        "fn_node_id": "878.setPath-o118",
-        "type": "get_functions_exported_via_export_prop"
-    },
-    {
-        "exported_fn_id": "520",
-        "obj_name": "878.module.exports-o122",
-        "prop_name": "setPath",
-        "fn_node_id": "878.setPath-o118",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

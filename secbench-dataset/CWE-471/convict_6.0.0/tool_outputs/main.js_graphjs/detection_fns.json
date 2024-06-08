@@ -2,22 +2,28 @@
     {
         "exported_fn_id": "8794",
         "obj_name": "8978.convict-o1227",
-        "prop_name": "addParser",
+        "prop_name": [
+            "addParser"
+        ],
         "fn_node_id": "8978.v1070-o1226",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "8740",
         "obj_name": "8978.convict-o1222",
-        "prop_name": "addFormats",
+        "prop_name": [
+            "addFormats"
+        ],
         "fn_node_id": "8978.v1041-o1221",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "8630",
         "obj_name": "8978.convict-o1217",
-        "prop_name": "addFormat",
+        "prop_name": [
+            "addFormat"
+        ],
         "fn_node_id": "8978.v1032-o1216",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     }
 ]

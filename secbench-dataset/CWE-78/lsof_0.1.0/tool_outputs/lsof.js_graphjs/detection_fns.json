@@ -2,29 +2,37 @@
     {
         "exported_fn_id": "1011",
         "obj_name": "1739.exports-o227",
-        "prop_name": "raw",
+        "prop_name": [
+            "raw"
+        ],
         "fn_node_id": "1739.v118-o226",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1209",
         "obj_name": "1739.exports-o233",
-        "prop_name": "rawTcpPort",
+        "prop_name": [
+            "rawTcpPort"
+        ],
         "fn_node_id": "1739.v145-o232",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1415",
         "obj_name": "1739.exports-o239",
-        "prop_name": "rawUdpPort",
+        "prop_name": [
+            "rawUdpPort"
+        ],
         "fn_node_id": "1739.v166-o238",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1577",
         "obj_name": "1739.exports-o245",
-        "prop_name": "counters",
+        "prop_name": [
+            "counters"
+        ],
         "fn_node_id": "1739.v184-o244",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

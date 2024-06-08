@@ -2,99 +2,127 @@
     {
         "exported_fn_id": "1162",
         "obj_name": "1962.exports-o205",
-        "prop_name": "deleteProps",
+        "prop_name": [
+            "deleteProps"
+        ],
         "fn_node_id": "1962.deleteProps-o204",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1116",
         "obj_name": "1962.exports-o205",
-        "prop_name": "deleteProps",
+        "prop_name": [
+            "deleteProps"
+        ],
         "fn_node_id": "1962.deleteProps-o204",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1211",
         "obj_name": "1962.exports-o208",
-        "prop_name": "nextTick",
+        "prop_name": [
+            "nextTick"
+        ],
         "fn_node_id": "1962.nextTick-o207",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1122",
         "obj_name": "1962.exports-o208",
-        "prop_name": "nextTick",
+        "prop_name": [
+            "nextTick"
+        ],
         "fn_node_id": "1962.nextTick-o207",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1237",
         "obj_name": "1962.exports-o211",
-        "prop_name": "now",
+        "prop_name": [
+            "now"
+        ],
         "fn_node_id": "1962.now-o210",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1128",
         "obj_name": "1962.exports-o211",
-        "prop_name": "now",
+        "prop_name": [
+            "now"
+        ],
         "fn_node_id": "1962.now-o210",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1247",
         "obj_name": "1962.exports-o214",
-        "prop_name": "getTranslate",
+        "prop_name": [
+            "getTranslate"
+        ],
         "fn_node_id": "1962.getTranslate-o213",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1134",
         "obj_name": "1962.exports-o214",
-        "prop_name": "getTranslate",
+        "prop_name": [
+            "getTranslate"
+        ],
         "fn_node_id": "1962.getTranslate-o213",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1562",
         "obj_name": "1962.exports-o217",
-        "prop_name": "isObject",
+        "prop_name": [
+            "isObject"
+        ],
         "fn_node_id": "1962.isObject-o216",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1140",
         "obj_name": "1962.exports-o217",
-        "prop_name": "isObject",
+        "prop_name": [
+            "isObject"
+        ],
         "fn_node_id": "1962.isObject-o216",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1603",
         "obj_name": "1962.exports-o220",
-        "prop_name": "extend",
+        "prop_name": [
+            "extend"
+        ],
         "fn_node_id": "1962.extend-o219",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1146",
         "obj_name": "1962.exports-o220",
-        "prop_name": "extend",
+        "prop_name": [
+            "extend"
+        ],
         "fn_node_id": "1962.extend-o219",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1858",
         "obj_name": "1962.exports-o223",
-        "prop_name": "bindModuleMethods",
+        "prop_name": [
+            "bindModuleMethods"
+        ],
         "fn_node_id": "1962.bindModuleMethods-o222",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1152",
         "obj_name": "1962.exports-o223",
-        "prop_name": "bindModuleMethods",
+        "prop_name": [
+            "bindModuleMethods"
+        ],
         "fn_node_id": "1962.bindModuleMethods-o222",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

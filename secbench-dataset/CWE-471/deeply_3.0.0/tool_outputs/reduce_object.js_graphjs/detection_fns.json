@@ -2,15 +2,10 @@
     {
         "exported_fn_id": "93",
         "obj_name": "None",
-        "prop_name": "None",
+        "prop_name": [
+            "None"
+        ],
         "fn_node_id": "142.reduceObject-o24",
-        "type": "get_functions_exported_directly"
-    },
-    {
-        "exported_fn_id": "87",
-        "obj_name": "None",
-        "prop_name": "None",
-        "fn_node_id": "142.reduceObject-o24",
-        "type": "get_functions_exported_directly"
+        "type": "direct"
     }
 ]

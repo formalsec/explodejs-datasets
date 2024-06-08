@@ -2,43 +2,55 @@
     {
         "exported_fn_id": "1663",
         "obj_name": "None",
-        "prop_name": "None",
+        "prop_name": [
+            "None"
+        ],
         "fn_node_id": "1809.zip-o264",
-        "type": "get_functions_exported_directly"
+        "type": "direct"
     },
     {
         "exported_fn_id": "1083",
         "obj_name": "1809.v164-o275",
-        "prop_name": "hasNativeZip",
+        "prop_name": [
+            "hasNativeZip"
+        ],
         "fn_node_id": "1809.hasNativeZip-o255",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     },
     {
         "exported_fn_id": "1663",
         "obj_name": "1809.v163-o273",
-        "prop_name": "bestzip",
+        "prop_name": [
+            "bestzip"
+        ],
         "fn_node_id": "1809.zip-o264",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     },
     {
         "exported_fn_id": "1104",
         "obj_name": "1809.v162-o271",
-        "prop_name": "nativeZip",
+        "prop_name": [
+            "nativeZip"
+        ],
         "fn_node_id": "1809.nativeZip-o258",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     },
     {
         "exported_fn_id": "1244",
         "obj_name": "1809.v161-o269",
-        "prop_name": "nodeZip",
+        "prop_name": [
+            "nodeZip"
+        ],
         "fn_node_id": "1809.nodeZip-o261",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     },
     {
         "exported_fn_id": "1663",
         "obj_name": "1809.v160-o267",
-        "prop_name": "zip",
+        "prop_name": [
+            "zip"
+        ],
         "fn_node_id": "1809.zip-o264",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     }
 ]

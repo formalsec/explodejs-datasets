@@ -2,36 +2,46 @@
     {
         "exported_fn_id": "3262",
         "obj_name": "5553.exports-o704",
-        "prop_name": "treatImages",
+        "prop_name": [
+            "treatImages"
+        ],
         "fn_node_id": "5553.v396-o703",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3490",
         "obj_name": "5553.exports-o711",
-        "prop_name": "getImagesSizes",
+        "prop_name": [
+            "getImagesSizes"
+        ],
         "fn_node_id": "5553.v475-o710",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3982",
         "obj_name": "5553.exports-o718",
-        "prop_name": "determineCanvasSize",
+        "prop_name": [
+            "determineCanvasSize"
+        ],
         "fn_node_id": "5553.v494-o717",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4131",
         "obj_name": "5553.exports-o725",
-        "prop_name": "generateImage",
+        "prop_name": [
+            "generateImage"
+        ],
         "fn_node_id": "5553.v588-o724",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4708",
         "obj_name": "5553.exports-o732",
-        "prop_name": "generateData",
+        "prop_name": [
+            "generateData"
+        ],
         "fn_node_id": "5553.v713-o731",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

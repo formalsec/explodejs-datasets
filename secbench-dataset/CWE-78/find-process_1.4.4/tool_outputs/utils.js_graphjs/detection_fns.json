@@ -2,50 +2,55 @@
     {
         "exported_fn_id": "1022",
         "obj_name": "1292.utils-o217",
-        "prop_name": "parseTable",
+        "prop_name": [
+            "parseTable"
+        ],
         "fn_node_id": "1292.v126-o205",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "926",
         "obj_name": "1292.utils-o215",
-        "prop_name": "extractColumns",
+        "prop_name": [
+            "extractColumns"
+        ],
         "fn_node_id": "1292.v96-o202",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "875",
         "obj_name": "1292.utils-o213",
-        "prop_name": "split",
+        "prop_name": [
+            "split"
+        ],
         "fn_node_id": "1292.v84-o197",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "807",
         "obj_name": "1292.utils-o211",
-        "prop_name": "stripLine",
+        "prop_name": [
+            "stripLine"
+        ],
         "fn_node_id": "1292.v76-o193",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "791",
         "obj_name": "1292.utils-o209",
-        "prop_name": "spawn",
+        "prop_name": [
+            "spawn"
+        ],
         "fn_node_id": "1292.v69-o189",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "764",
         "obj_name": "1292.utils-o207",
-        "prop_name": "exec",
+        "prop_name": [
+            "exec"
+        ],
         "fn_node_id": "1292.v67-o184",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "1022",
-        "obj_name": "1292.module.exports-o220",
-        "prop_name": "parseTable",
-        "fn_node_id": "1292.v126-o205",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

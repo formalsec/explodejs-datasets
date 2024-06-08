@@ -2,8 +2,10 @@
     {
         "exported_fn_id": "16452",
         "obj_name": "28298.util-o3115",
-        "prop_name": "isNodejs",
+        "prop_name": [
+            "isNodejs"
+        ],
         "fn_node_id": "28298.v1785-o3113",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     }
 ]

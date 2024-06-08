@@ -2,36 +2,37 @@
     {
         "exported_fn_id": "4290",
         "obj_name": "6380.v936-o826",
-        "prop_name": "sendToCodecovV3",
+        "prop_name": [
+            "sendToCodecovV3"
+        ],
         "fn_node_id": "6380.sendToCodecovV3-o813",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "4112",
         "obj_name": "6380.v936-o824",
-        "prop_name": "sendToCodecovV2",
+        "prop_name": [
+            "sendToCodecovV2"
+        ],
         "fn_node_id": "6380.sendToCodecovV2-o806",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "3614",
         "obj_name": "6380.v936-o822",
-        "prop_name": "version",
+        "prop_name": [
+            "version"
+        ],
         "fn_node_id": "6380.version-o678",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "4471",
         "obj_name": "6380.v936-o820",
-        "prop_name": "upload",
+        "prop_name": [
+            "upload"
+        ],
         "fn_node_id": "6380.upload-o818",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "4290",
-        "obj_name": "6380.module.exports-o829",
-        "prop_name": "sendToCodecovV3",
-        "fn_node_id": "6380.sendToCodecovV3-o813",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

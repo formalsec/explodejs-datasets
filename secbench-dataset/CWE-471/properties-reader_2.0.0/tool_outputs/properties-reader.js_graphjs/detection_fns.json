@@ -2,141 +2,181 @@
     {
         "exported_fn_id": "2017",
         "obj_name": "None",
-        "prop_name": "None",
+        "prop_name": [
+            "None"
+        ],
         "fn_node_id": "3513.PropertiesReader-o416",
-        "type": "get_functions_exported_directly"
+        "type": "direct"
     },
     {
         "exported_fn_id": "3393",
         "obj_name": "3513.v401-o505",
-        "prop_name": "save",
+        "prop_name": [
+            "save"
+        ],
         "fn_node_id": "3513.v416-o504",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "3276",
         "obj_name": "3513.v386-o499",
-        "prop_name": "_stringifyProperties",
+        "prop_name": [
+            "_stringifyProperties"
+        ],
         "fn_node_id": "3513.v400-o498",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "3048",
         "obj_name": "3513.v358-o495",
-        "prop_name": "bindToExpress",
+        "prop_name": [
+            "bindToExpress"
+        ],
         "fn_node_id": "3513.v385-o494",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2947",
         "obj_name": "3513.v343-o488",
-        "prop_name": "getByRoot",
+        "prop_name": [
+            "getByRoot"
+        ],
         "fn_node_id": "3513.v357-o487",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2915",
         "obj_name": "3513.v339-o483",
-        "prop_name": "clone",
+        "prop_name": [
+            "clone"
+        ],
         "fn_node_id": "3513.v342-o482",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2879",
         "obj_name": "3513.v335-o479",
-        "prop_name": "getAllProperties",
+        "prop_name": [
+            "getAllProperties"
+        ],
         "fn_node_id": "3513.v338-o478",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2860",
         "obj_name": "3513.v332-o475",
-        "prop_name": "path",
+        "prop_name": [
+            "path"
+        ],
         "fn_node_id": "3513.v334-o474",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2666",
         "obj_name": "3513.v305-o471",
-        "prop_name": "set",
+        "prop_name": [
+            "set"
+        ],
         "fn_node_id": "3513.v331-o470",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2619",
         "obj_name": "3513.v298-o465",
-        "prop_name": "getRaw",
+        "prop_name": [
+            "getRaw"
+        ],
         "fn_node_id": "3513.v304-o464",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2591",
         "obj_name": "3513.v294-o460",
-        "prop_name": "get",
+        "prop_name": [
+            "get"
+        ],
         "fn_node_id": "3513.v297-o459",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2474",
         "obj_name": "3513.v276-o455",
-        "prop_name": "_parsed",
+        "prop_name": [
+            "_parsed"
+        ],
         "fn_node_id": "3513.v293-o454",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2413",
         "obj_name": "3513.v267-o450",
-        "prop_name": "each",
+        "prop_name": [
+            "each"
+        ],
         "fn_node_id": "3513.v275-o449",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2294",
         "obj_name": "3513.v251-o444",
-        "prop_name": "_readLine",
+        "prop_name": [
+            "_readLine"
+        ],
         "fn_node_id": "3513.v266-o443",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2246",
         "obj_name": "3513.v243-o439",
-        "prop_name": "read",
+        "prop_name": [
+            "read"
+        ],
         "fn_node_id": "3513.v250-o438",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2192",
         "obj_name": "3513.v234-o434",
-        "prop_name": "append",
+        "prop_name": [
+            "append"
+        ],
         "fn_node_id": "3513.v242-o433",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2139",
         "obj_name": "3513.v227-o428",
-        "prop_name": "appender",
+        "prop_name": [
+            "appender"
+        ],
         "fn_node_id": "3513.v233-o427",
-        "type": "get_functions_exported_via_prototype"
+        "type": "prototype"
     },
     {
         "exported_fn_id": "2029",
         "obj_name": "3515.this-o511",
-        "prop_name": "_encoding",
+        "prop_name": [
+            "_encoding"
+        ],
         "fn_node_id": "3515.v212-o510",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "2041",
         "obj_name": "3515.this-o514",
-        "prop_name": "_properties",
+        "prop_name": [
+            "_properties"
+        ],
         "fn_node_id": "3515.v213-o513",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "2049",
         "obj_name": "3515.this-o517",
-        "prop_name": "_propertiesExpanded",
+        "prop_name": [
+            "_propertiesExpanded"
+        ],
         "fn_node_id": "3515.v214-o516",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     }
 ]

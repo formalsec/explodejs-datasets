@@ -2,64 +2,73 @@
     {
         "exported_fn_id": "5438",
         "obj_name": "5522.v522-o822",
-        "prop_name": "run",
+        "prop_name": [
+            "run"
+        ],
         "fn_node_id": "5522.v521-o806",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "5102",
         "obj_name": "5522.v522-o820",
-        "prop_name": "ICONS",
+        "prop_name": [
+            "ICONS"
+        ],
         "fn_node_id": "5522.ICONS-o779",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "4880",
         "obj_name": "5522.v522-o818",
-        "prop_name": "utils",
+        "prop_name": [
+            "utils"
+        ],
         "fn_node_id": "5522.Utils-o775",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "3822",
         "obj_name": "5522.v522-o816",
-        "prop_name": "Item",
+        "prop_name": [
+            "Item"
+        ],
         "fn_node_id": "5522.Item-o758",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "4392",
         "obj_name": "5522.v522-o814",
-        "prop_name": "settings",
+        "prop_name": [
+            "settings"
+        ],
         "fn_node_id": "5522.Settings-o771",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "3819",
         "obj_name": "5522.v522-o812",
-        "prop_name": "actionHandler",
+        "prop_name": [
+            "actionHandler"
+        ],
         "fn_node_id": "5522.ActionHandler-o755",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "3600",
         "obj_name": "5522.v522-o810",
-        "prop_name": "workflow",
+        "prop_name": [
+            "workflow"
+        ],
         "fn_node_id": "5522.Workflow-o751",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "4187",
         "obj_name": "5522.v522-o808",
-        "prop_name": "storage",
+        "prop_name": [
+            "storage"
+        ],
         "fn_node_id": "5522.Storage-o767",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "5438",
-        "obj_name": "5522.module.exports-o825",
-        "prop_name": "run",
-        "fn_node_id": "5522.v521-o806",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

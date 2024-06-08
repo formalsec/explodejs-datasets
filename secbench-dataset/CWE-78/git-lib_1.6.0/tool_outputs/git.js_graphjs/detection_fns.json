@@ -2,106 +2,137 @@
     {
         "exported_fn_id": "3156",
         "obj_name": "3369.v342-o617",
-        "prop_name": "deleteBranches",
+        "prop_name": [
+            "deleteBranches"
+        ],
         "fn_node_id": "3369.deleteBranches-o587",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "3111",
         "obj_name": "3369.v342-o615",
-        "prop_name": "deleteBranch",
+        "prop_name": [
+            "deleteBranch"
+        ],
         "fn_node_id": "3369.deleteBranch-o584",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2320",
         "obj_name": "3369.v342-o613",
-        "prop_name": "getFilesCached",
+        "prop_name": [
+            "getFilesCached"
+        ],
         "fn_node_id": "3369.getFilesCached-o544",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "3018",
         "obj_name": "3369.v342-o611",
-        "prop_name": "checkout",
+        "prop_name": [
+            "checkout"
+        ],
         "fn_node_id": "3369.checkout-o578",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "3065",
         "obj_name": "3369.v342-o609",
-        "prop_name": "newBranch",
+        "prop_name": [
+            "newBranch"
+        ],
         "fn_node_id": "3369.newBranch-o581",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
+    },
+    {
+        "exported_fn_id": "2948",
+        "obj_name": "3369.v342-o607",
+        "prop_name": [
+            "getBranches",
+            "all"
+        ],
+        "fn_node_id": "3369.v301-o570",
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2674",
         "obj_name": "3369.v342-o605",
-        "prop_name": "isGitSync",
+        "prop_name": [
+            "isGitSync"
+        ],
         "fn_node_id": "3369.isGitSync-o555",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2618",
         "obj_name": "3369.v342-o603",
-        "prop_name": "isGit",
+        "prop_name": [
+            "isGit"
+        ],
         "fn_node_id": "3369.isGit-o553",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2518",
         "obj_name": "3369.v342-o601",
-        "prop_name": "revert",
+        "prop_name": [
+            "revert"
+        ],
         "fn_node_id": "3369.revert-o551",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2108",
         "obj_name": "3369.v342-o599",
-        "prop_name": "commit",
+        "prop_name": [
+            "commit"
+        ],
         "fn_node_id": "3369.commit-o538",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2459",
         "obj_name": "3369.v342-o597",
-        "prop_name": "showFilesModified",
+        "prop_name": [
+            "showFilesModified"
+        ],
         "fn_node_id": "3369.showFilesModified-o548",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2226",
         "obj_name": "3369.v342-o595",
-        "prop_name": "showFilesAdded",
+        "prop_name": [
+            "showFilesAdded"
+        ],
         "fn_node_id": "3369.showFilesAdded-o542",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2172",
         "obj_name": "3369.v342-o593",
-        "prop_name": "getCurrentBranch",
+        "prop_name": [
+            "getCurrentBranch"
+        ],
         "fn_node_id": "3369.getCurrentBranch-o540",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2063",
         "obj_name": "3369.v342-o591",
-        "prop_name": "add",
+        "prop_name": [
+            "add"
+        ],
         "fn_node_id": "3369.add-o534",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2375",
         "obj_name": "3369.v342-o589",
-        "prop_name": "haveFilesToCommit",
+        "prop_name": [
+            "haveFilesToCommit"
+        ],
         "fn_node_id": "3369.haveFilesToCommit-o546",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "3156",
-        "obj_name": "3369.module.exports-o620",
-        "prop_name": "deleteBranches",
-        "fn_node_id": "3369.deleteBranches-o587",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

@@ -2,8 +2,10 @@
     {
         "exported_fn_id": "11983",
         "obj_name": "12012.Parser-o1439",
-        "prop_name": "detailed",
+        "prop_name": [
+            "detailed"
+        ],
         "fn_node_id": "12012.v1578-o1438",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     }
 ]

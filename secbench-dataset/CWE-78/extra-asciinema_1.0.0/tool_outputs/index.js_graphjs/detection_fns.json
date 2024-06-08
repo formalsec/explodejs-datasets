@@ -2,64 +2,82 @@
     {
         "exported_fn_id": "1412",
         "obj_name": "2429.exports-o363",
-        "prop_name": "cat",
+        "prop_name": [
+            "cat"
+        ],
         "fn_node_id": "2429.cat-o301",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1501",
         "obj_name": "2429.exports-o365",
-        "prop_name": "catSync",
+        "prop_name": [
+            "catSync"
+        ],
         "fn_node_id": "2429.catSync-o306",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1731",
         "obj_name": "2429.exports-o367",
-        "prop_name": "rec",
+        "prop_name": [
+            "rec"
+        ],
         "fn_node_id": "2429.rec-o323",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1863",
         "obj_name": "2429.exports-o369",
-        "prop_name": "recSync",
+        "prop_name": [
+            "recSync"
+        ],
         "fn_node_id": "2429.recSync-o335",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2179",
         "obj_name": "2429.exports-o371",
-        "prop_name": "retime",
+        "prop_name": [
+            "retime"
+        ],
         "fn_node_id": "2429.retime-o345",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1918",
         "obj_name": "2429.exports-o373",
-        "prop_name": "retimeData",
+        "prop_name": [
+            "retimeData"
+        ],
         "fn_node_id": "2429.retimeData-o339",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2219",
         "obj_name": "2429.exports-o375",
-        "prop_name": "retimeSync",
+        "prop_name": [
+            "retimeSync"
+        ],
         "fn_node_id": "2429.retimeSync-o351",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2251",
         "obj_name": "2429.exports-o377",
-        "prop_name": "upload",
+        "prop_name": [
+            "upload"
+        ],
         "fn_node_id": "2429.upload-o357",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2347",
         "obj_name": "2429.exports-o379",
-        "prop_name": "uploadSync",
+        "prop_name": [
+            "uploadSync"
+        ],
         "fn_node_id": "2429.uploadSync-o362",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

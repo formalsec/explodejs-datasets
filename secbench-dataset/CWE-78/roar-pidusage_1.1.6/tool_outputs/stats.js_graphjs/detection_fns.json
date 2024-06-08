@@ -2,43 +2,46 @@
     {
         "exported_fn_id": "2391",
         "obj_name": "2934.stats-o393",
-        "prop_name": "win",
+        "prop_name": [
+            "win"
+        ],
         "fn_node_id": "2934.v336-o381",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "2260",
         "obj_name": "2934.stats-o391",
-        "prop_name": "ps",
+        "prop_name": [
+            "ps"
+        ],
         "fn_node_id": "2934.v270-o376",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1851",
         "obj_name": "2934.stats-o389",
-        "prop_name": "proc_calc",
+        "prop_name": [
+            "proc_calc"
+        ],
         "fn_node_id": "2934.v251-o371",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1710",
         "obj_name": "2934.stats-o387",
-        "prop_name": "proc",
+        "prop_name": [
+            "proc"
+        ],
         "fn_node_id": "2934.v190-o366",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1708",
         "obj_name": "2934.stats-o383",
-        "prop_name": "history",
+        "prop_name": [
+            "history"
+        ],
         "fn_node_id": "2934.v172-o361",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "2391",
-        "obj_name": "2934.module.exports-o396",
-        "prop_name": "win",
-        "fn_node_id": "2934.v336-o381",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

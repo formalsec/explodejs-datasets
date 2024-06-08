@@ -2,15 +2,10 @@
     {
         "exported_fn_id": "325",
         "obj_name": "566.XAssign-o66",
-        "prop_name": "assign",
+        "prop_name": [
+            "assign"
+        ],
         "fn_node_id": "566.v66-o64",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "325",
-        "obj_name": "566.module.exports-o69",
-        "prop_name": "assign",
-        "fn_node_id": "566.v66-o64",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

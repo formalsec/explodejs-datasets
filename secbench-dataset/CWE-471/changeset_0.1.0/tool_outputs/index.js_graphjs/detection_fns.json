@@ -2,29 +2,28 @@
     {
         "exported_fn_id": "758",
         "obj_name": "None",
-        "prop_name": "None",
+        "prop_name": [
+            "None"
+        ],
         "fn_node_id": "1308.diff-o151",
-        "type": "get_functions_exported_directly"
-    },
-    {
-        "exported_fn_id": "752",
-        "obj_name": "None",
-        "prop_name": "None",
-        "fn_node_id": "1308.diff-o151",
-        "type": "get_functions_exported_directly"
+        "type": "direct"
     },
     {
         "exported_fn_id": "1084",
         "obj_name": "1308.v102-o167",
-        "prop_name": "apply",
+        "prop_name": [
+            "apply"
+        ],
         "fn_node_id": "1308.apply-o166",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     },
     {
         "exported_fn_id": "1078",
         "obj_name": "1308.v102-o167",
-        "prop_name": "apply",
+        "prop_name": [
+            "apply"
+        ],
         "fn_node_id": "1308.apply-o166",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     }
 ]

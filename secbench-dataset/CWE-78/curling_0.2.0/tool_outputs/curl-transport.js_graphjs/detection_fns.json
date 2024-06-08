@@ -2,15 +2,19 @@
     {
         "exported_fn_id": "1363",
         "obj_name": "1763.exports-o249",
-        "prop_name": "run",
+        "prop_name": [
+            "run"
+        ],
         "fn_node_id": "1763.v139-o248",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "1428",
         "obj_name": "1763.exports-o254",
-        "prop_name": "connect",
+        "prop_name": [
+            "connect"
+        ],
         "fn_node_id": "1763.v176-o253",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

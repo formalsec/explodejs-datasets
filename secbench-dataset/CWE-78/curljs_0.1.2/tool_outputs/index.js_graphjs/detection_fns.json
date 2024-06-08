@@ -2,15 +2,19 @@
     {
         "exported_fn_id": "880",
         "obj_name": "None",
-        "prop_name": "None",
+        "prop_name": [
+            "None"
+        ],
         "fn_node_id": "1495.curl-o205",
-        "type": "get_functions_exported_directly"
+        "type": "direct"
     },
     {
         "exported_fn_id": "1476",
         "obj_name": "1495.v124-o214",
-        "prop_name": "opts",
+        "prop_name": [
+            "opts"
+        ],
         "fn_node_id": "1495.opts-o211",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     }
 ]

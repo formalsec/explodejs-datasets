@@ -2,8 +2,10 @@
     {
         "exported_fn_id": "110",
         "obj_name": "163.v16-o35",
-        "prop_name": "kill",
+        "prop_name": [
+            "kill"
+        ],
         "fn_node_id": "163.kill-o32",
-        "type": "get_functions_exported_via_module_prop"
+        "type": "module_prop"
     }
 ]

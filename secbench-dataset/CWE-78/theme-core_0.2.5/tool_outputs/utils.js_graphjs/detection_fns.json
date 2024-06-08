@@ -2,85 +2,100 @@
     {
         "exported_fn_id": "1228",
         "obj_name": "1322.v118-o249",
-        "prop_name": "writeYamlFileSync",
+        "prop_name": [
+            "writeYamlFileSync"
+        ],
         "fn_node_id": "1322.writeYamlFileSync-o227",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1195",
         "obj_name": "1322.v118-o247",
-        "prop_name": "writeYamlFile",
+        "prop_name": [
+            "writeYamlFile"
+        ],
         "fn_node_id": "1322.writeYamlFile-o223",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1176",
         "obj_name": "1322.v118-o245",
-        "prop_name": "readYamlFileSync",
+        "prop_name": [
+            "readYamlFileSync"
+        ],
         "fn_node_id": "1322.readYamlFileSync-o218",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1139",
         "obj_name": "1322.v118-o243",
-        "prop_name": "readYamlFile",
+        "prop_name": [
+            "readYamlFile"
+        ],
         "fn_node_id": "1322.readYamlFile-o215",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1115",
         "obj_name": "1322.v118-o241",
-        "prop_name": "toYaml",
+        "prop_name": [
+            "toYaml"
+        ],
         "fn_node_id": "1322.toYaml-o208",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1127",
         "obj_name": "1322.v118-o239",
-        "prop_name": "fromYaml",
+        "prop_name": [
+            "fromYaml"
+        ],
         "fn_node_id": "1322.fromYaml-o211",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "789",
         "obj_name": "1322.v118-o237",
-        "prop_name": "merge",
+        "prop_name": [
+            "merge"
+        ],
         "fn_node_id": "1322.merge-o185",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1099",
         "obj_name": "1322.v118-o235",
-        "prop_name": "error",
+        "prop_name": [
+            "error"
+        ],
         "fn_node_id": "1322.error-o205",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1022",
         "obj_name": "1322.v118-o233",
-        "prop_name": "uniqueArray",
+        "prop_name": [
+            "uniqueArray"
+        ],
         "fn_node_id": "1322.uniqueArray-o202",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "1001",
         "obj_name": "1322.v118-o231",
-        "prop_name": "flattenArray",
+        "prop_name": [
+            "flattenArray"
+        ],
         "fn_node_id": "1322.flattenArray-o199",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "805",
         "obj_name": "1322.v118-o229",
-        "prop_name": "sh",
+        "prop_name": [
+            "sh"
+        ],
         "fn_node_id": "1322.sh-o196",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "1228",
-        "obj_name": "1322.module.exports-o252",
-        "prop_name": "writeYamlFileSync",
-        "fn_node_id": "1322.writeYamlFileSync-o227",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

@@ -2,120 +2,154 @@
     {
         "exported_fn_id": "26703",
         "obj_name": "27432.NodeClam-o2791",
-        "prop_name": "scan_stream",
+        "prop_name": [
+            "scan_stream"
+        ],
         "fn_node_id": "27432.scan_stream-o2790",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "24998",
         "obj_name": "27432.NodeClam-o2785",
-        "prop_name": "scan_dir",
+        "prop_name": [
+            "scan_dir"
+        ],
         "fn_node_id": "27432.scan_dir-o2784",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "22453",
         "obj_name": "27432.NodeClam-o2778",
-        "prop_name": "scan_files",
+        "prop_name": [
+            "scan_files"
+        ],
         "fn_node_id": "27432.scan_files-o2777",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "22433",
         "obj_name": "27432.NodeClam-o2771",
-        "prop_name": "scan_file",
+        "prop_name": [
+            "scan_file"
+        ],
         "fn_node_id": "27432.scan_file-o2770",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "21456",
         "obj_name": "27432.NodeClam-o2765",
-        "prop_name": "passthrough",
+        "prop_name": [
+            "passthrough"
+        ],
         "fn_node_id": "27432.passthrough-o2764",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "20166",
         "obj_name": "27432.NodeClam-o2761",
-        "prop_name": "is_infected",
+        "prop_name": [
+            "is_infected"
+        ],
         "fn_node_id": "27432.is_infected-o2760",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "19621",
         "obj_name": "27432.NodeClam-o2755",
-        "prop_name": "get_version",
+        "prop_name": [
+            "get_version"
+        ],
         "fn_node_id": "27432.get_version-o2754",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "19135",
         "obj_name": "27432.NodeClam-o2750",
-        "prop_name": "_process_result",
+        "prop_name": [
+            "_process_result"
+        ],
         "fn_node_id": "27432._process_result-o2749",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "18895",
         "obj_name": "27432.NodeClam-o2744",
-        "prop_name": "_ping",
+        "prop_name": [
+            "_ping"
+        ],
         "fn_node_id": "27432._ping-o2743",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "18838",
         "obj_name": "27432.NodeClam-o2739",
-        "prop_name": "_is_readable_stream",
+        "prop_name": [
+            "_is_readable_stream"
+        ],
         "fn_node_id": "27432._is_readable_stream-o2738",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "18799",
         "obj_name": "27432.NodeClam-o2734",
-        "prop_name": "_is_localhost",
+        "prop_name": [
+            "_is_localhost"
+        ],
         "fn_node_id": "27432._is_localhost-o2733",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "18613",
         "obj_name": "27432.NodeClam-o2730",
-        "prop_name": "_is_clamav_binary",
+        "prop_name": [
+            "_is_clamav_binary"
+        ],
         "fn_node_id": "27432._is_clamav_binary-o2729",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "18085",
         "obj_name": "27432.NodeClam-o2725",
-        "prop_name": "_init_socket",
+        "prop_name": [
+            "_init_socket"
+        ],
         "fn_node_id": "27432._init_socket-o2724",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "17571",
         "obj_name": "27432.NodeClam-o2721",
-        "prop_name": "_build_clam_flags",
+        "prop_name": [
+            "_build_clam_flags"
+        ],
         "fn_node_id": "27432._build_clam_flags-o2720",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "17515",
         "obj_name": "27432.NodeClam-o2715",
-        "prop_name": "_build_clam_args",
+        "prop_name": [
+            "_build_clam_args"
+        ],
         "fn_node_id": "27432._build_clam_args-o2714",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "17367",
         "obj_name": "27432.NodeClam-o2710",
-        "prop_name": "reset",
+        "prop_name": [
+            "reset"
+        ],
         "fn_node_id": "27432.reset-o2709",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "15664",
         "obj_name": "27432.NodeClam-o2704",
-        "prop_name": "init",
+        "prop_name": [
+            "init"
+        ],
         "fn_node_id": "27432.init-o2703",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     }
 ]

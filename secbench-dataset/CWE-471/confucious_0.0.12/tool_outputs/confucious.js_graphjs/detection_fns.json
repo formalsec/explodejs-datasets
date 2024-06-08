@@ -2,92 +2,118 @@
     {
         "exported_fn_id": "877",
         "obj_name": "None",
-        "prop_name": "None",
+        "prop_name": [
+            "None"
+        ],
         "fn_node_id": "1517.v152-o183",
-        "type": "get_functions_exported_directly"
+        "type": "direct"
     },
     {
         "exported_fn_id": "917",
         "obj_name": "1519.this-o202",
-        "prop_name": "getValueStackCopy",
+        "prop_name": [
+            "getValueStackCopy"
+        ],
         "fn_node_id": "1519.v82-o201",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "936",
         "obj_name": "1519.this-o208",
-        "prop_name": "set",
+        "prop_name": [
+            "set"
+        ],
         "fn_node_id": "1519.v96-o207",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1064",
         "obj_name": "1519.this-o213",
-        "prop_name": "clear",
+        "prop_name": [
+            "clear"
+        ],
         "fn_node_id": "1519.v108-o212",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1160",
         "obj_name": "1519.this-o219",
-        "prop_name": "setGlobal",
+        "prop_name": [
+            "setGlobal"
+        ],
         "fn_node_id": "1519.v109-o218",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1177",
         "obj_name": "1519.this-o224",
-        "prop_name": "clearGlobal",
+        "prop_name": [
+            "clearGlobal"
+        ],
         "fn_node_id": "1519.v112-o223",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1292",
         "obj_name": "1519.this-o237",
-        "prop_name": "get",
+        "prop_name": [
+            "get"
+        ],
         "fn_node_id": "1519.v131-o236",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1355",
         "obj_name": "1519.this-o242",
-        "prop_name": "push",
+        "prop_name": [
+            "push"
+        ],
         "fn_node_id": "1519.v135-o241",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1381",
         "obj_name": "1519.this-o246",
-        "prop_name": "pop",
+        "prop_name": [
+            "pop"
+        ],
         "fn_node_id": "1519.v139-o245",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1409",
         "obj_name": "1519.this-o251",
-        "prop_name": "pushJsonFile",
+        "prop_name": [
+            "pushJsonFile"
+        ],
         "fn_node_id": "1519.v143-o250",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1440",
         "obj_name": "1519.this-o255",
-        "prop_name": "pushArgv",
+        "prop_name": [
+            "pushArgv"
+        ],
         "fn_node_id": "1519.v145-o254",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1457",
         "obj_name": "1519.this-o259",
-        "prop_name": "pushEnv",
+        "prop_name": [
+            "pushEnv"
+        ],
         "fn_node_id": "1519.v148-o258",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     },
     {
         "exported_fn_id": "1478",
         "obj_name": "1519.this-o263",
-        "prop_name": "toObject",
+        "prop_name": [
+            "toObject"
+        ],
         "fn_node_id": "1519.v151-o262",
-        "type": "get_functions_exported_via_this_property"
+        "type": "this"
     }
 ]

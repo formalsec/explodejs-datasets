@@ -2,176 +2,226 @@
     {
         "exported_fn_id": "2695",
         "obj_name": "4609.exports-o720",
-        "prop_name": "is",
+        "prop_name": [
+            "is"
+        ],
         "fn_node_id": "4609.is-o610",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2720",
         "obj_name": "4609.exports-o722",
-        "prop_name": "own",
+        "prop_name": [
+            "own"
+        ],
         "fn_node_id": "4609.own-o614",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2734",
         "obj_name": "4609.exports-o724",
-        "prop_name": "isPOJO",
+        "prop_name": [
+            "isPOJO"
+        ],
         "fn_node_id": "4609.isPOJO-o617",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2774",
         "obj_name": "4609.exports-o726",
-        "prop_name": "isIterable",
+        "prop_name": [
+            "isIterable"
+        ],
         "fn_node_id": "4609.isIterable-o620",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2787",
         "obj_name": "4609.exports-o728",
-        "prop_name": "isPrimitive",
+        "prop_name": [
+            "isPrimitive"
+        ],
         "fn_node_id": "4609.isPrimitive-o623",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2819",
         "obj_name": "4609.exports-o730",
-        "prop_name": "deepIt",
+        "prop_name": [
+            "deepIt"
+        ],
         "fn_node_id": "4609.deepIt-o630",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "2984",
         "obj_name": "4609.exports-o732",
-        "prop_name": "forEach",
+        "prop_name": [
+            "forEach"
+        ],
         "fn_node_id": "4609.forEach-o634",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3033",
         "obj_name": "4609.exports-o734",
-        "prop_name": "map",
+        "prop_name": [
+            "map"
+        ],
         "fn_node_id": "4609.map-o638",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3066",
         "obj_name": "4609.exports-o736",
-        "prop_name": "some",
+        "prop_name": [
+            "some"
+        ],
         "fn_node_id": "4609.some-o642",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3099",
         "obj_name": "4609.exports-o738",
-        "prop_name": "every",
+        "prop_name": [
+            "every"
+        ],
         "fn_node_id": "4609.every-o646",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3156",
         "obj_name": "4609.exports-o740",
-        "prop_name": "get",
+        "prop_name": [
+            "get"
+        ],
         "fn_node_id": "4609.get-o654",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3598",
         "obj_name": "4609.exports-o742",
-        "prop_name": "got",
+        "prop_name": [
+            "got"
+        ],
         "fn_node_id": "4609.got-o675",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3394",
         "obj_name": "4609.exports-o744",
-        "prop_name": "set",
+        "prop_name": [
+            "set"
+        ],
         "fn_node_id": "4609.set-o670",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3307",
         "obj_name": "4609.exports-o746",
-        "prop_name": "unset",
+        "prop_name": [
+            "unset"
+        ],
         "fn_node_id": "4609.unset-o664",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3265",
         "obj_name": "4609.exports-o748",
-        "prop_name": "ensure",
+        "prop_name": [
+            "ensure"
+        ],
         "fn_node_id": "4609.ensure-o660",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3716",
         "obj_name": "4609.exports-o750",
-        "prop_name": "invert",
+        "prop_name": [
+            "invert"
+        ],
         "fn_node_id": "4609.invert-o682",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3818",
         "obj_name": "4609.exports-o752",
-        "prop_name": "assign",
+        "prop_name": [
+            "assign"
+        ],
         "fn_node_id": "4609.assign-o691",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3818",
         "obj_name": "4609.exports-o754",
-        "prop_name": "extend",
+        "prop_name": [
+            "extend"
+        ],
         "fn_node_id": "4609.assign-o691",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3850",
         "obj_name": "4609.exports-o756",
-        "prop_name": "merge",
+        "prop_name": [
+            "merge"
+        ],
         "fn_node_id": "4609.merge-o695",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4067",
         "obj_name": "4609.exports-o758",
-        "prop_name": "remove",
+        "prop_name": [
+            "remove"
+        ],
         "fn_node_id": "4609.remove-o708",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4119",
         "obj_name": "4609.exports-o760",
-        "prop_name": "pick",
+        "prop_name": [
+            "pick"
+        ],
         "fn_node_id": "4609.pick-o713",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3950",
         "obj_name": "4609.exports-o762",
-        "prop_name": "defaults",
+        "prop_name": [
+            "defaults"
+        ],
         "fn_node_id": "4609.defaults-o699",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4291",
         "obj_name": "4609.exports-o764",
-        "prop_name": "isEqual",
+        "prop_name": [
+            "isEqual"
+        ],
         "fn_node_id": "4609.isEqual-o719",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3672",
         "obj_name": "4609.exports-o766",
-        "prop_name": "visit",
+        "prop_name": [
+            "visit"
+        ],
         "fn_node_id": "4609.visit-o679",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3998",
         "obj_name": "4609.exports-o768",
-        "prop_name": "filter",
+        "prop_name": [
+            "filter"
+        ],
         "fn_node_id": "4609.filter-o703",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

@@ -2,15 +2,19 @@
     {
         "exported_fn_id": "7145",
         "obj_name": "7238.ION-o797",
-        "prop_name": "parseFile",
+        "prop_name": [
+            "parseFile"
+        ],
         "fn_node_id": "7238.v724-o796",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "4084",
         "obj_name": "7238.ION-o791",
-        "prop_name": "parse",
+        "prop_name": [
+            "parse"
+        ],
         "fn_node_id": "7238.parse-o707",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     }
 ]

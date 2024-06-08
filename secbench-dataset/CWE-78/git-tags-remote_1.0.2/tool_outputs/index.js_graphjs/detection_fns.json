@@ -2,22 +2,19 @@
     {
         "exported_fn_id": "761",
         "obj_name": "838.v104-o164",
-        "prop_name": "latest",
+        "prop_name": [
+            "latest"
+        ],
         "fn_node_id": "838.latest-o160",
-        "type": "get_functions_exported_via_module_obj"
+        "type": "module_obj"
     },
     {
         "exported_fn_id": "714",
         "obj_name": "838.v104-o162",
-        "prop_name": "get",
+        "prop_name": [
+            "get"
+        ],
         "fn_node_id": "838.get-o157",
-        "type": "get_functions_exported_via_module_obj"
-    },
-    {
-        "exported_fn_id": "761",
-        "obj_name": "838.module.exports-o167",
-        "prop_name": "latest",
-        "fn_node_id": "838.latest-o160",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "module_obj"
     }
 ]

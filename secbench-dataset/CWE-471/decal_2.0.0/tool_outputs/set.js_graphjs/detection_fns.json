@@ -2,8 +2,10 @@
     {
         "exported_fn_id": "330",
         "obj_name": "None",
-        "prop_name": "None",
+        "prop_name": [
+            "None"
+        ],
         "fn_node_id": "546.set-o73",
-        "type": "get_functions_exported_directly"
+        "type": "direct"
     }
 ]

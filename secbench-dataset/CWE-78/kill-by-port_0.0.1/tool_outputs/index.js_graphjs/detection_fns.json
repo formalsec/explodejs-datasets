@@ -2,8 +2,10 @@
     {
         "exported_fn_id": "89",
         "obj_name": "131.exports-o22",
-        "prop_name": "killByPort",
+        "prop_name": [
+            "killByPort"
+        ],
         "fn_node_id": "131.v12-o21",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

@@ -2,15 +2,19 @@
     {
         "exported_fn_id": "347",
         "obj_name": "578.exports-o60",
-        "prop_name": "default",
+        "prop_name": [
+            "default"
+        ],
         "fn_node_id": "578.merge-o59",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "341",
         "obj_name": "578.exports-o60",
-        "prop_name": "default",
+        "prop_name": [
+            "default"
+        ],
         "fn_node_id": "578.merge-o59",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

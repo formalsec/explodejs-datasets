@@ -2,176 +2,226 @@
     {
         "exported_fn_id": "3181",
         "obj_name": "5008.exports-o771",
-        "prop_name": "isObject",
+        "prop_name": [
+            "isObject"
+        ],
         "fn_node_id": "5008.v207-o770",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3203",
         "obj_name": "5008.exports-o776",
-        "prop_name": "isInt",
+        "prop_name": [
+            "isInt"
+        ],
         "fn_node_id": "5008.isInt-o775",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3246",
         "obj_name": "5008.exports-o782",
-        "prop_name": "promisify",
+        "prop_name": [
+            "promisify"
+        ],
         "fn_node_id": "5008.promisify-o781",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3316",
         "obj_name": "5008.exports-o788",
-        "prop_name": "extend",
+        "prop_name": [
+            "extend"
+        ],
         "fn_node_id": "5008.extend-o787",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3504",
         "obj_name": "5008.exports-o793",
-        "prop_name": "camelCase",
+        "prop_name": [
+            "camelCase"
+        ],
         "fn_node_id": "5008.camelCase-o792",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3553",
         "obj_name": "5008.exports-o798",
-        "prop_name": "snakeCase",
+        "prop_name": [
+            "snakeCase"
+        ],
         "fn_node_id": "5008.snakeCase-o797",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3594",
         "obj_name": "5008.exports-o803",
-        "prop_name": "isNumberString",
+        "prop_name": [
+            "isNumberString"
+        ],
         "fn_node_id": "5008.isNumberString-o802",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3620",
         "obj_name": "5008.exports-o808",
-        "prop_name": "isTrueEmpty",
+        "prop_name": [
+            "isTrueEmpty"
+        ],
         "fn_node_id": "5008.isTrueEmpty-o807",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3676",
         "obj_name": "5008.exports-o813",
-        "prop_name": "isEmpty",
+        "prop_name": [
+            "isEmpty"
+        ],
         "fn_node_id": "5008.isEmpty-o812",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3826",
         "obj_name": "5008.exports-o817",
-        "prop_name": "defer",
+        "prop_name": [
+            "defer"
+        ],
         "fn_node_id": "5008.defer-o816",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3864",
         "obj_name": "5008.exports-o822",
-        "prop_name": "md5",
+        "prop_name": [
+            "md5"
+        ],
         "fn_node_id": "5008.md5-o821",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3899",
         "obj_name": "5008.exports-o827",
-        "prop_name": "timeout",
+        "prop_name": [
+            "timeout"
+        ],
         "fn_node_id": "5008.timeout-o826",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3926",
         "obj_name": "5008.exports-o832",
-        "prop_name": "escapeHtml",
+        "prop_name": [
+            "escapeHtml"
+        ],
         "fn_node_id": "5008.escapeHtml-o831",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3971",
         "obj_name": "5008.exports-o838",
-        "prop_name": "datetime",
+        "prop_name": [
+            "datetime"
+        ],
         "fn_node_id": "5008.datetime-o837",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4136",
         "obj_name": "5008.exports-o843",
-        "prop_name": "uuid",
+        "prop_name": [
+            "uuid"
+        ],
         "fn_node_id": "5008.v311-o842",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4167",
         "obj_name": "5008.exports-o849",
-        "prop_name": "parseAdapterConfig",
+        "prop_name": [
+            "parseAdapterConfig"
+        ],
         "fn_node_id": "5008.v334-o848",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4409",
         "obj_name": "5008.exports-o854",
-        "prop_name": "ms",
+        "prop_name": [
+            "ms"
+        ],
         "fn_node_id": "5008.v339-o853",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4451",
         "obj_name": "5008.exports-o860",
-        "prop_name": "omit",
+        "prop_name": [
+            "omit"
+        ],
         "fn_node_id": "5008.v347-o859",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4527",
         "obj_name": "5008.exports-o865",
-        "prop_name": "isExist",
+        "prop_name": [
+            "isExist"
+        ],
         "fn_node_id": "5008.isExist-o864",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4567",
         "obj_name": "5008.exports-o870",
-        "prop_name": "isFile",
+        "prop_name": [
+            "isFile"
+        ],
         "fn_node_id": "5008.isFile-o869",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4609",
         "obj_name": "5008.exports-o875",
-        "prop_name": "isDirectory",
+        "prop_name": [
+            "isDirectory"
+        ],
         "fn_node_id": "5008.isDirectory-o874",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4651",
         "obj_name": "5008.exports-o881",
-        "prop_name": "chmod",
+        "prop_name": [
+            "chmod"
+        ],
         "fn_node_id": "5008.chmod-o880",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4692",
         "obj_name": "5008.exports-o887",
-        "prop_name": "mkdir",
+        "prop_name": [
+            "mkdir"
+        ],
         "fn_node_id": "5008.mkdir-o886",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4765",
         "obj_name": "5008.exports-o893",
-        "prop_name": "getdirFiles",
+        "prop_name": [
+            "getdirFiles"
+        ],
         "fn_node_id": "5008.getdirFiles-o892",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4888",
         "obj_name": "5008.exports-o899",
-        "prop_name": "rmdir",
+        "prop_name": [
+            "rmdir"
+        ],
         "fn_node_id": "5008.rmdir-o898",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]

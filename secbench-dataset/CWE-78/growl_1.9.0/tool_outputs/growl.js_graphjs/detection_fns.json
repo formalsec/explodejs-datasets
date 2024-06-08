@@ -2,15 +2,10 @@
     {
         "exported_fn_id": "2425",
         "obj_name": "None",
-        "prop_name": "None",
+        "prop_name": [
+            "None"
+        ],
         "fn_node_id": "3410.growl-o454",
-        "type": "get_functions_exported_directly"
-    },
-    {
-        "exported_fn_id": "2407",
-        "obj_name": "None",
-        "prop_name": "None",
-        "fn_node_id": "3410.growl-o454",
-        "type": "get_functions_exported_directly"
+        "type": "direct"
     }
 ]

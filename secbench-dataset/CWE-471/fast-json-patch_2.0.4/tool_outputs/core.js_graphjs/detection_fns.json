@@ -2,43 +2,55 @@
     {
         "exported_fn_id": "3282",
         "obj_name": "4856.exports-o608",
-        "prop_name": "getValueByPointer",
+        "prop_name": [
+            "getValueByPointer"
+        ],
         "fn_node_id": "4856.getValueByPointer-o607",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "3329",
         "obj_name": "4856.exports-o616",
-        "prop_name": "applyOperation",
+        "prop_name": [
+            "applyOperation"
+        ],
         "fn_node_id": "4856.applyOperation-o615",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4050",
         "obj_name": "4856.exports-o623",
-        "prop_name": "applyPatch",
+        "prop_name": [
+            "applyPatch"
+        ],
         "fn_node_id": "4856.applyPatch-o622",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4150",
         "obj_name": "4856.exports-o629",
-        "prop_name": "applyReducer",
+        "prop_name": [
+            "applyReducer"
+        ],
         "fn_node_id": "4856.applyReducer-o628",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4195",
         "obj_name": "4856.exports-o637",
-        "prop_name": "validator",
+        "prop_name": [
+            "validator"
+        ],
         "fn_node_id": "4856.validator-o636",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     },
     {
         "exported_fn_id": "4733",
         "obj_name": "4856.exports-o644",
-        "prop_name": "validate",
+        "prop_name": [
+            "validate"
+        ],
         "fn_node_id": "4856.validate-o643",
-        "type": "get_functions_exported_via_export_prop"
+        "type": "export_prop"
     }
 ]
