@@ -5,7 +5,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/144/index.js",
+        "filename": "vulcan-dataset/CWE-94/144/src/index.js",
         "lineno": 75
       }
     ]
@@ -16,7 +16,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/37/index.js",
+        "filename": "vulcan-dataset/CWE-94/37/src/index.js",
         "lineno": 7
       }
     ]
@@ -27,7 +27,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1120/index.js",
+        "filename": "vulcan-dataset/CWE-94/1120/src/index.js",
         "lineno": 207
       }
     ]
@@ -38,7 +38,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1122/DocumentMatcher.js",
+        "filename": "vulcan-dataset/CWE-94/1122/src/DocumentMatcher.js",
         "lineno": 419
       }
     ]
@@ -49,7 +49,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-fw2f-7f87-5r6c/encode.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-fw2f-7f87-5r6c/src/encode.js",
         "lineno": 6
       }
     ]
@@ -60,12 +60,12 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/index.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/src/index.js",
         "lineno": 17
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/index.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/src/index.js",
         "lineno": 33
       }
     ]
@@ -76,7 +76,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-v756-4whv-48vc/messenger-node.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-v756-4whv-48vc/src/messenger-node.js",
         "lineno": 71
       }
     ]
@@ -87,22 +87,22 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1499/node-rules.js",
+        "filename": "vulcan-dataset/CWE-94/1499/src/node-rules.js",
         "lineno": 152
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1499/node-rules.js",
+        "filename": "vulcan-dataset/CWE-94/1499/src/node-rules.js",
         "lineno": 153
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1499/node-rules.js",
+        "filename": "vulcan-dataset/CWE-94/1499/src/node-rules.js",
         "lineno": 157
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1499/node-rules.js",
+        "filename": "vulcan-dataset/CWE-94/1499/src/node-rules.js",
         "lineno": 158
       }
     ]
@@ -113,7 +113,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-cg42-4wrc-gp47/extend.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-cg42-4wrc-gp47/src/extend.js",
         "lineno": 31
       }
     ]
@@ -124,17 +124,17 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/doT.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/src/doT.js",
         "lineno": 133
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/doT.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/src/doT.js",
         "lineno": 69
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/doT.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/src/doT.js",
         "lineno": 83
       }
     ]
@@ -145,7 +145,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/552/typed-function.js",
+        "filename": "vulcan-dataset/CWE-94/552/src/typed-function.js",
         "lineno": 1116
       }
     ]
@@ -156,12 +156,12 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1021/index.js",
+        "filename": "vulcan-dataset/CWE-94/1021/src/index.js",
         "lineno": 47
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1021/browser.js",
+        "filename": "vulcan-dataset/CWE-94/1021/src/browser.js",
         "lineno": 49
       }
     ]
@@ -172,7 +172,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1/batch.js",
+        "filename": "vulcan-dataset/CWE-94/1/src/batch.js",
         "lineno": 152
       }
     ]
@@ -183,7 +183,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/317/resize.js",
+        "filename": "vulcan-dataset/CWE-94/317/src/resize.js",
         "lineno": 31
       }
     ]
@@ -194,22 +194,22 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/node-rules.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
         "lineno": 236
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/node-rules.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
         "lineno": 237
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/node-rules.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
         "lineno": 244
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/node-rules.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
         "lineno": 245
       }
     ]
@@ -220,12 +220,12 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-7fm6-gxqg-2pwr/utils.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-7fm6-gxqg-2pwr/src/utils.js",
         "lineno": 6628
       },
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-7fm6-gxqg-2pwr/utils.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-7fm6-gxqg-2pwr/src/utils.js",
         "lineno": 6647
       }
     ]
@@ -236,7 +236,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-8m2f-74r2-x3f2/compile.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-8m2f-74r2-x3f2/src/compile.js",
         "lineno": 6
       }
     ]
@@ -247,7 +247,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-x949-7cm6-fm6p/md-to-pdf.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-x949-7cm6-fm6p/src/md-to-pdf.js",
         "lineno": 23
       }
     ]
@@ -258,7 +258,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/736/index.js",
+        "filename": "vulcan-dataset/CWE-94/736/src/index.js",
         "lineno": 391
       }
     ]
@@ -269,7 +269,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-cf4h-3jhx-xvhq/underscore.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-cf4h-3jhx-xvhq/src/underscore.js",
         "lineno": 981
       }
     ]
@@ -280,7 +280,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/GHSA-j665-rvj7-2jv9/mosc.js",
+        "filename": "vulcan-dataset/CWE-94/GHSA-j665-rvj7-2jv9/src/mosc.js",
         "lineno": 50
       }
     ]
@@ -291,7 +291,7 @@
     "vulns": [
       {
         "cwe": "CWE-94",
-        "filename": "vulcan-dataset/CWE-94/1439/grammar-parser.js",
+        "filename": "vulcan-dataset/CWE-94/1439/src/grammar-parser.js",
         "lineno": 258
       }
     ]
@@ -302,7 +302,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/893/merge.js",
+        "filename": "vulcan-dataset/CWE-471/893/src/merge.js",
         "lineno": 156
       }
     ]
@@ -313,17 +313,17 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1014/index.js",
+        "filename": "vulcan-dataset/CWE-471/1014/src/index.js",
         "lineno": 44
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1014/index.js",
+        "filename": "vulcan-dataset/CWE-471/1014/src/index.js",
         "lineno": 46
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1014/index.js",
+        "filename": "vulcan-dataset/CWE-471/1014/src/index.js",
         "lineno": 48
       }
     ]
@@ -334,7 +334,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1480/index.js",
+        "filename": "vulcan-dataset/CWE-471/1480/src/index.js",
         "lineno": 242
       }
     ]
@@ -345,7 +345,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/995/index.js",
+        "filename": "vulcan-dataset/CWE-471/995/src/index.js",
         "lineno": 15
       }
     ]
@@ -356,7 +356,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1502/index.js",
+        "filename": "vulcan-dataset/CWE-471/1502/src/index.js",
         "lineno": 46
       }
     ]
@@ -367,7 +367,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-wwg2-2crq-6grr/main.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-wwg2-2crq-6grr/src/main.js",
         "lineno": 11
       }
     ]
@@ -378,17 +378,17 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/580/index.js",
+        "filename": "vulcan-dataset/CWE-471/580/src/index.js",
         "lineno": 41
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/580/index.js",
+        "filename": "vulcan-dataset/CWE-471/580/src/index.js",
         "lineno": 43
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/580/index.js",
+        "filename": "vulcan-dataset/CWE-471/580/src/index.js",
         "lineno": 45
       }
     ]
@@ -399,7 +399,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/722/merge.js",
+        "filename": "vulcan-dataset/CWE-471/722/src/merge.js",
         "lineno": 94
       }
     ]
@@ -410,7 +410,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-p23c-p8w2-ww5v/index.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-p23c-p8w2-ww5v/src/index.js",
         "lineno": 48
       }
     ]
@@ -421,7 +421,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-jjf5-wx3j-3fv7/main.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-jjf5-wx3j-3fv7/src/main.js",
         "lineno": 581
       }
     ]
@@ -432,7 +432,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-g954-5hwp-pp24/util.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-g954-5hwp-pp24/src/util.js",
         "lineno": "176-197"
       }
     ]
@@ -443,12 +443,12 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1179/index.js",
+        "filename": "vulcan-dataset/CWE-471/1179/src/index.js",
         "lineno": 79
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1179/index.js",
+        "filename": "vulcan-dataset/CWE-471/1179/src/index.js",
         "lineno": 85
       }
     ]
@@ -459,27 +459,27 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/612/deep-extend",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
         "lineno": 117
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/612/deep-extend",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
         "lineno": 122
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/612/deep-extend",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
         "lineno": 127
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/612/deep-extend",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
         "lineno": 132
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/612/deep-extend",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
         "lineno": 137
       }
     ]
@@ -490,7 +490,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1508/index.js",
+        "filename": "vulcan-dataset/CWE-471/1508/src/index.js",
         "lineno": 14
       }
     ]
@@ -501,7 +501,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1506/set.js",
+        "filename": "vulcan-dataset/CWE-471/1506/src/set.js",
         "lineno": 38
       }
     ]
@@ -512,7 +512,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-8v9x-9xqg-r8mr/apply.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-8v9x-9xqg-r8mr/src/apply.js",
         "lineno": 28
       }
     ]
@@ -523,7 +523,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1333/index.js",
+        "filename": "vulcan-dataset/CWE-471/1333/src/index.js",
         "lineno": 35
       }
     ]
@@ -534,7 +534,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-6m85-wvcr-pgw3/index.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-6m85-wvcr-pgw3/src/index.js",
         "lineno": 210
       }
     ]
@@ -545,7 +545,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/739/index.js",
+        "filename": "vulcan-dataset/CWE-471/739/src/index.js",
         "lineno": 39
       }
     ]
@@ -556,17 +556,17 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/566/index.js",
+        "filename": "vulcan-dataset/CWE-471/566/src/index.js",
         "lineno": 129
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/566/index.js",
+        "filename": "vulcan-dataset/CWE-471/566/src/index.js",
         "lineno": 139
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/566/index.js",
+        "filename": "vulcan-dataset/CWE-471/566/src/index.js",
         "lineno": 142
       }
     ]
@@ -577,27 +577,27 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/717/index.js",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
         "lineno": 60
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/717/index.js",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
         "lineno": 50
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/717/index.js",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
         "lineno": 75
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/717/index.js",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
         "lineno": 105
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/717/index.js",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
         "lineno": 107
       }
     ]
@@ -608,17 +608,17 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/extend.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
         "lineno": 42
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/extend.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
         "lineno": 37
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/extend.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
         "lineno": 39
       }
     ]
@@ -629,17 +629,17 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/716/merge-objects.js",
+        "filename": "vulcan-dataset/CWE-471/716/src/merge-objects.js",
         "lineno": 28
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/716/merge-objects.js",
+        "filename": "vulcan-dataset/CWE-471/716/src/merge-objects.js",
         "lineno": 31
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/716/merge-objects.js",
+        "filename": "vulcan-dataset/CWE-471/716/src/merge-objects.js",
         "lineno": 33
       }
     ]
@@ -650,7 +650,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/780/index.js",
+        "filename": "vulcan-dataset/CWE-471/780/src/index.js",
         "lineno": 52
       }
     ]
@@ -661,7 +661,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1067/index.js",
+        "filename": "vulcan-dataset/CWE-471/1067/src/index.js",
         "lineno": 856
       }
     ]
@@ -672,7 +672,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1469/utils.js",
+        "filename": "vulcan-dataset/CWE-471/1469/src/utils.js",
         "lineno": 55
       }
     ]
@@ -683,7 +683,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1070/index.js",
+        "filename": "vulcan-dataset/CWE-471/1070/src/index.js",
         "lineno": 856
       }
     ]
@@ -694,7 +694,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-vhxc-fhm5-qcp9/index.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-vhxc-fhm5-qcp9/src/index.js",
         "lineno": 44
       }
     ]
@@ -705,12 +705,12 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-p3pg-64pv-v7jg/jsgui-lang-essentials.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-p3pg-64pv-v7jg/src/jsgui-lang-essentials.js",
         "lineno": 1435
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-p3pg-64pv-v7jg/jsgui-lang-essentials.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-p3pg-64pv-v7jg/src/jsgui-lang-essentials.js",
         "lineno": 1442
       }
     ]
@@ -721,17 +721,17 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/579/index.js",
+        "filename": "vulcan-dataset/CWE-471/579/src/index.js",
         "lineno": 44
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/579/index.js",
+        "filename": "vulcan-dataset/CWE-471/579/src/index.js",
         "lineno": 46
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/579/index.js",
+        "filename": "vulcan-dataset/CWE-471/579/src/index.js",
         "lineno": 48
       }
     ]
@@ -742,7 +742,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/781/extend.js",
+        "filename": "vulcan-dataset/CWE-471/781/src/extend.js",
         "lineno": 65
       }
     ]
@@ -753,7 +753,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-3829-mgmw-jcg4/deepAssign.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-3829-mgmw-jcg4/src/deep-merge.js",
         "lineno": 23
       }
     ]
@@ -764,7 +764,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/996/index.js",
+        "filename": "vulcan-dataset/CWE-471/996/src/index.js",
         "lineno": 77
       }
     ]
@@ -775,7 +775,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1065/lodash.js",
+        "filename": "vulcan-dataset/CWE-471/1065/src/lodash.js",
         "lineno": 2559
       }
     ]
@@ -786,7 +786,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1094/parse.js",
+        "filename": "vulcan-dataset/CWE-471/1094/src/parse.js",
         "lineno": 32
       }
     ]
@@ -797,7 +797,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1068/index.js",
+        "filename": "vulcan-dataset/CWE-471/1068/src/index.js",
         "lineno": 856
       }
     ]
@@ -808,12 +808,12 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-vvv8-xw5f-3f88/deepFillIn.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-vvv8-xw5f-3f88/src/deepFillIn.js",
         "lineno": 18
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-vvv8-xw5f-3f88/deepMixIn.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-vvv8-xw5f-3f88/src/deepMixIn.js",
         "lineno": 27
       }
     ]
@@ -824,7 +824,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-mjjj-6p43-vhhv/index.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-mjjj-6p43-vhhv/src/index.js",
         "lineno": 35
       }
     ]
@@ -835,7 +835,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1213/index.js",
+        "filename": "vulcan-dataset/CWE-471/1213/src/index.js",
         "lineno": 70
       }
     ]
@@ -846,7 +846,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1069/index.js",
+        "filename": "vulcan-dataset/CWE-471/1069/src/index.js",
         "lineno": 856
       }
     ]
@@ -857,7 +857,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/581/index.js",
+        "filename": "vulcan-dataset/CWE-471/581/src/index.js",
         "lineno": 22
       }
     ]
@@ -868,7 +868,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-8g4m-cjm2-96wq/index.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-8g4m-cjm2-96wq/src/index.js",
         "lineno": 290
       }
     ]
@@ -879,7 +879,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-ph28-wwfj-fv7f/set.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-ph28-wwfj-fv7f/src/set.js",
         "lineno": 42
       }
     ]
@@ -890,12 +890,12 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1012/index.js",
+        "filename": "vulcan-dataset/CWE-471/1012/src/index.js",
         "lineno": 59
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1012/index.js",
+        "filename": "vulcan-dataset/CWE-471/1012/src/index.js",
         "lineno": 57
       }
     ]
@@ -906,7 +906,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1463/klona.js",
+        "filename": "vulcan-dataset/CWE-471/1463/src/klona.js",
         "lineno": 9
       }
     ]
@@ -917,22 +917,22 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/715/index.js",
+        "filename": "vulcan-dataset/CWE-471/715/src/index.js",
         "lineno": 66
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/715/index.js",
+        "filename": "vulcan-dataset/CWE-471/715/src/index.js",
         "lineno": 7
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/715/index.js",
+        "filename": "vulcan-dataset/CWE-471/715/src/index.js",
         "lineno": 18
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/715/index.js",
+        "filename": "vulcan-dataset/CWE-471/715/src/index.js",
         "lineno": 66
       }
     ]
@@ -943,7 +943,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-x5m8-2r8v-8f97/index.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-x5m8-2r8v-8f97/src/index.js",
         "lineno": 27
       }
     ]
@@ -954,7 +954,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/779/index.js",
+        "filename": "vulcan-dataset/CWE-471/779/src/index.js",
         "lineno": 269
       }
     ]
@@ -965,7 +965,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1071/index.js",
+        "filename": "vulcan-dataset/CWE-471/1071/src/index.js",
         "lineno": 817
       }
     ]
@@ -976,7 +976,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/611/deap.js",
+        "filename": "vulcan-dataset/CWE-471/611/src/deap.js",
         "lineno": 117
       }
     ]
@@ -987,12 +987,12 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/index.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
         "lineno": 5
       },
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/index.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
         "lineno": 9
       }
     ]
@@ -1003,7 +1003,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/577/lodash.js",
+        "filename": "vulcan-dataset/CWE-471/577/src/lodash.js",
         "lineno": 3645
       }
     ]
@@ -1014,7 +1014,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1332/index.js",
+        "filename": "vulcan-dataset/CWE-471/1332/src/index.js",
         "lineno": 41
       }
     ]
@@ -1025,7 +1025,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-6xwr-q98w-rvg7/memory.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-6xwr-q98w-rvg7/src/memory.js",
         "lineno": 107
       }
     ]
@@ -1036,7 +1036,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-pfv6-prqm-85q8/utils.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-pfv6-prqm-85q8/src/utils.js",
         "lineno": 80
       }
     ]
@@ -1047,7 +1047,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/917/deepMerge.ts",
+        "filename": "vulcan-dataset/CWE-471/917/src/deepMerge.js",
         "lineno": 14
       }
     ]
@@ -1058,7 +1058,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1331/index.js",
+        "filename": "vulcan-dataset/CWE-471/1331/src/index.js",
         "lineno": 22
       }
     ]
@@ -1069,7 +1069,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/801/smart-extend.js",
+        "filename": "vulcan-dataset/CWE-471/801/src/smart-extend.js",
         "lineno": 79
       }
     ]
@@ -1080,7 +1080,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/778/index.js",
+        "filename": "vulcan-dataset/CWE-471/778/src/index.js",
         "lineno": 26
       }
     ]
@@ -1091,7 +1091,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/dexie.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
         "lineno": 198
       }
     ]
@@ -1102,7 +1102,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1343/angular.js",
+        "filename": "vulcan-dataset/CWE-471/1343/src/angular.js",
         "lineno": 488
       }
     ]
@@ -1113,7 +1113,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1312/chartkick.js",
+        "filename": "vulcan-dataset/CWE-471/1312/src/chartkick.js",
         "lineno": 40
       }
     ]
@@ -1124,7 +1124,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1334/index.js",
+        "filename": "vulcan-dataset/CWE-471/1334/src/index.js",
         "lineno": 74
       }
     ]
@@ -1135,7 +1135,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/GHSA-6956-83fg-5wc5/index.js",
+        "filename": "vulcan-dataset/CWE-471/GHSA-6956-83fg-5wc5/src/index.js",
         "lineno": 50
       }
     ]
@@ -1146,7 +1146,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/578/index.js",
+        "filename": "vulcan-dataset/CWE-471/578/src/index.js",
         "lineno": 30
       }
     ]
@@ -1157,7 +1157,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1336/index.js",
+        "filename": "vulcan-dataset/CWE-471/1336/src/index.js",
         "lineno": 14
       }
     ]
@@ -1168,7 +1168,7 @@
     "vulns": [
       {
         "cwe": "CWE-471",
-        "filename": "vulcan-dataset/CWE-471/1327/index.js",
+        "filename": "vulcan-dataset/CWE-471/1327/src/index.js",
         "lineno": 193
       }
     ]
@@ -1179,7 +1179,7 @@
     "vulns": [
       {
         "cwe": "CWE-22",
-        "filename": "vulcan-dataset/CWE-22/452/index.js",
+        "filename": "vulcan-dataset/CWE-22/452/src/index.js",
         "lineno": 172
       }
     ]
@@ -1190,7 +1190,7 @@
     "vulns": [
       {
         "cwe": "CWE-22",
-        "filename": "vulcan-dataset/CWE-22/1156/index.js",
+        "filename": "vulcan-dataset/CWE-22/1156/src/index.js",
         "lineno": 215
       }
     ]
@@ -1201,7 +1201,7 @@
     "vulns": [
       {
         "cwe": "CWE-22",
-        "filename": "vulcan-dataset/CWE-22/GHSA-hj3m-v758-jwx5/file-system.js",
+        "filename": "vulcan-dataset/CWE-22/GHSA-hj3m-v758-jwx5/src/file-system.js",
         "lineno": 13
       }
     ]
@@ -1212,7 +1212,7 @@
     "vulns": [
       {
         "cwe": "CWE-22",
-        "filename": "vulcan-dataset/CWE-22/GHSA-4448-rc82-fcr7/read-file.js",
+        "filename": "vulcan-dataset/CWE-22/GHSA-4448-rc82-fcr7/src/read-file.js",
         "lineno": 11
       }
     ]
@@ -1223,7 +1223,7 @@
     "vulns": [
       {
         "cwe": "CWE-22",
-        "filename": "vulcan-dataset/CWE-22/374/index.js",
+        "filename": "vulcan-dataset/CWE-22/374/src/index.js",
         "lineno": 10
       }
     ]
@@ -1234,7 +1234,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/40/git.js",
+        "filename": "vulcan-dataset/CWE-78/40/src/git.js",
         "lineno": 57
       }
     ]
@@ -1245,22 +1245,22 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/659/command-exists.js",
+        "filename": "vulcan-dataset/CWE-78/659/src/command-exists.js",
         "lineno": 49
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/659/command-exists.js",
+        "filename": "vulcan-dataset/CWE-78/659/src/command-exists.js",
         "lineno": 64
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/659/command-exists.js",
+        "filename": "vulcan-dataset/CWE-78/659/src/command-exists.js",
         "lineno": 78
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/659/command-exists.js",
+        "filename": "vulcan-dataset/CWE-78/659/src/command-exists.js",
         "lineno": 94
       }
     ]
@@ -1271,12 +1271,12 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/966/index.js",
+        "filename": "vulcan-dataset/CWE-78/966/src/index.js",
         "lineno": 11
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/966/index.js",
+        "filename": "vulcan-dataset/CWE-78/966/src/index.js",
         "lineno": 16
       }
     ]
@@ -1287,7 +1287,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/728/index.js",
+        "filename": "vulcan-dataset/CWE-78/728/src/index.js",
         "lineno": 8
       }
     ]
@@ -1298,7 +1298,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/797/index.js",
+        "filename": "vulcan-dataset/CWE-78/797/src/index.js",
         "lineno": 76
       }
     ]
@@ -1309,7 +1309,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-6hr9-4692-fch9/helper.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-6hr9-4692-fch9/src/helper.js",
         "lineno": 24
       }
     ]
@@ -1320,7 +1320,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/977/wizard-sync.js",
+        "filename": "vulcan-dataset/CWE-78/977/src/wizard-sync.js",
         "lineno": 56
       }
     ]
@@ -1331,7 +1331,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1457/meta-git-clone",
+        "filename": "vulcan-dataset/CWE-78/1457/src/meta-git-clone.js",
         "lineno": 20
       }
     ]
@@ -1342,7 +1342,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1492/controller.js",
+        "filename": "vulcan-dataset/CWE-78/1492/src/controller.js",
         "lineno": 140
       }
     ]
@@ -1353,7 +1353,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/695/launchEditor.js",
+        "filename": "vulcan-dataset/CWE-78/695/src/launchEditor.js",
         "lineno": 334
       }
     ]
@@ -1364,17 +1364,17 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1446/git.js",
+        "filename": "vulcan-dataset/CWE-78/1446/src/git.js",
         "lineno": 195
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1446/git.js",
+        "filename": "vulcan-dataset/CWE-78/1446/src/git.js",
         "lineno": 208
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1446/git.js",
+        "filename": "vulcan-dataset/CWE-78/1446/src/git.js",
         "lineno": 223
       }
     ]
@@ -1385,7 +1385,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/727/ascii-art",
+        "filename": "vulcan-dataset/CWE-78/727/src/ascii-art.js",
         "lineno": 210
       }
     ]
@@ -1396,7 +1396,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1004/index.js",
+        "filename": "vulcan-dataset/CWE-78/1004/src/index.js",
         "lineno": 37
       }
     ]
@@ -1407,7 +1407,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/graph.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "lineno": 28
       }
     ]
@@ -1418,7 +1418,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/719/tools.js",
+        "filename": "vulcan-dataset/CWE-78/719/src/tools.js",
         "lineno": 114
       }
     ]
@@ -1429,7 +1429,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/958/routes.js",
+        "filename": "vulcan-dataset/CWE-78/958/src/routes.js",
         "lineno": 67
       }
     ]
@@ -1440,7 +1440,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1432/index.js",
+        "filename": "vulcan-dataset/CWE-78/1432/src/index.js",
         "lineno": 20
       }
     ]
@@ -1451,7 +1451,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-gwp3-f7mr-qpfv/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-gwp3-f7mr-qpfv/src/index.js",
         "lineno": 36
       }
     ]
@@ -1462,7 +1462,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/git.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
         "lineno": 232
       }
     ]
@@ -1473,7 +1473,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/998/index.js",
+        "filename": "vulcan-dataset/CWE-78/998/src/index.js",
         "lineno": 7
       }
     ]
@@ -1484,7 +1484,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/789/find-opencv.js",
+        "filename": "vulcan-dataset/CWE-78/789/src/find-opencv.js",
         "lineno": 16
       }
     ]
@@ -1495,12 +1495,12 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/generate.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "lineno": 110
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/generate.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "lineno": 140
       }
     ]
@@ -1511,17 +1511,17 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/654/macosx.js",
+        "filename": "vulcan-dataset/CWE-78/654/src/macosx.js",
         "lineno": 4
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/654/linux.js",
+        "filename": "vulcan-dataset/CWE-78/654/src/linux.js",
         "lineno": 4
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/654/unix.js",
+        "filename": "vulcan-dataset/CWE-78/654/src/unix.js",
         "lineno": 4
       }
     ]
@@ -1532,12 +1532,12 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/670/index.js",
+        "filename": "vulcan-dataset/CWE-78/670/src/index.js",
         "lineno": 43
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/670/index.js",
+        "filename": "vulcan-dataset/CWE-78/670/src/index.js",
         "lineno": 104
       }
     ]
@@ -1548,7 +1548,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/54/compare.js",
+        "filename": "vulcan-dataset/CWE-78/54/src/compare.js",
         "lineno": 72
       }
     ]
@@ -1559,7 +1559,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/523/dns-sync.js",
+        "filename": "vulcan-dataset/CWE-78/523/src/dns-sync.js",
         "lineno": 21
       }
     ]
@@ -1570,7 +1570,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/356/stats.js",
+        "filename": "vulcan-dataset/CWE-78/356/src/stats.js",
         "lineno": 103
       }
     ]
@@ -1581,7 +1581,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/153/dns-sync.js",
+        "filename": "vulcan-dataset/CWE-78/153/src/dns-sync.js",
         "lineno": 21
       }
     ]
@@ -1592,7 +1592,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-3x62-x456-q2vm/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-3x62-x456-q2vm/src/index.js",
         "lineno": 52
       }
     ]
@@ -1603,7 +1603,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/336/index.js",
+        "filename": "vulcan-dataset/CWE-78/336/src/index.js",
         "lineno": 82
       }
     ]
@@ -1614,7 +1614,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
         "lineno": 70
       }
     ]
@@ -1625,7 +1625,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1431/index.js",
+        "filename": "vulcan-dataset/CWE-78/1431/src/index.js",
         "lineno": 41
       }
     ]
@@ -1636,12 +1636,12 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/git.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/git.js",
         "lineno": 24
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/svn.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/svn.js",
         "lineno": 38
       }
     ]
@@ -1652,17 +1652,17 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "lineno": 225
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "lineno": 228
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "lineno": 232
       }
     ]
@@ -1673,7 +1673,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-4v9w-pvwr-38h3/server.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-4v9w-pvwr-38h3/src/server.js",
         "lineno": 65
       }
     ]
@@ -1684,7 +1684,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-h9v8-rm3m-5h5f/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-h9v8-rm3m-5h5f/src/index.js",
         "lineno": 21
       }
     ]
@@ -1695,12 +1695,12 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/953/expressfs.server.js",
+        "filename": "vulcan-dataset/CWE-78/953/src/expressfs.server.js",
         "lineno": 33
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/953/expressfs.server.js",
+        "filename": "vulcan-dataset/CWE-78/953/src/expressfs.server.js",
         "lineno": 204
       }
     ]
@@ -1711,7 +1711,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1517/index.js",
+        "filename": "vulcan-dataset/CWE-78/1517/src/index.js",
         "lineno": 1
       }
     ]
@@ -1722,7 +1722,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-6m4r-m3gc-h4r5/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-6m4r-m3gc-h4r5/src/index.js",
         "lineno": 82
       }
     ]
@@ -1733,7 +1733,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1174/gitlabhook.js",
+        "filename": "vulcan-dataset/CWE-78/1174/src/gitlabhook.js",
         "lineno": 146
       }
     ]
@@ -1744,7 +1744,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/643/pdfinfo.js",
+        "filename": "vulcan-dataset/CWE-78/643/src/pdfinfo.js",
         "lineno": 36
       }
     ]
@@ -1755,7 +1755,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/954/server.js",
+        "filename": "vulcan-dataset/CWE-78/954/src/server.js",
         "lineno": 21
       }
     ]
@@ -1766,7 +1766,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-pf8j-vhg8-xmc3/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-pf8j-vhg8-xmc3/src/index.js",
         "lineno": 100
       }
     ]
@@ -1777,7 +1777,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/773/pi_video_recording.js.js",
+        "filename": "vulcan-dataset/CWE-78/773/src/pi_video_recording.js",
         "lineno": 48
       }
     ]
@@ -1788,7 +1788,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-chj3-f7xw-367m/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-chj3-f7xw-367m/src/index.js",
         "lineno": 34
       }
     ]
@@ -1799,7 +1799,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/googleIt.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
         "lineno": 59
       }
     ]
@@ -1810,7 +1810,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-9v73-x562-wv5x/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-9v73-x562-wv5x/src/index.js",
         "lineno": 8
       }
     ]
@@ -1821,7 +1821,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-qffw-8wg7-h665/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-qffw-8wg7-h665/src/index.js",
         "lineno": 27
       }
     ]
@@ -1832,7 +1832,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/663/open.js",
+        "filename": "vulcan-dataset/CWE-78/663/src/open.js",
         "lineno": 58
       }
     ]
@@ -1843,7 +1843,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/667/mid-php.js",
+        "filename": "vulcan-dataset/CWE-78/667/src/mid-php.js",
         "lineno": 22
       }
     ]
@@ -1854,7 +1854,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-4xrw-wvmq-8jmh/key-sender.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-4xrw-wvmq-8jmh/src/key-sender.js",
         "lineno": 117
       }
     ]
@@ -1865,7 +1865,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-rphm-c8gw-3r38/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-rphm-c8gw-3r38/src/index.js",
         "lineno": 16
       }
     ]
@@ -1876,17 +1876,17 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/src/index.js",
         "lineno": 17
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/src/index.js",
         "lineno": 46
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/src/index.js",
         "lineno": 59
       }
     ]
@@ -1897,7 +1897,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1512/unmount.js",
+        "filename": "vulcan-dataset/CWE-78/1512/src/umount.js",
         "lineno": 52
       }
     ]
@@ -1908,7 +1908,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/694/start.js",
+        "filename": "vulcan-dataset/CWE-78/694/src/start.js",
         "lineno": 235
       }
     ]
@@ -1919,7 +1919,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/360/index.js",
+        "filename": "vulcan-dataset/CWE-78/360/src/index.js",
         "lineno": 56
       }
     ]
@@ -1930,7 +1930,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-3269-x4pw-vffg/posix.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-3269-x4pw-vffg/src/posix.js",
         "lineno": 11
       }
     ]
@@ -1941,7 +1941,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-cr6m-62pq-hmqh/getLockfile.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-cr6m-62pq-hmqh/src/getLockfile.js",
         "lineno": 42
       }
     ]
@@ -1952,7 +1952,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/jscover.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
         "lineno": 59
       }
     ]
@@ -1963,7 +1963,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1465/traceroute.js",
+        "filename": "vulcan-dataset/CWE-78/1465/src/traceroute.js",
         "lineno": 29
       }
     ]
@@ -1974,17 +1974,17 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1507/index.js",
+        "filename": "vulcan-dataset/CWE-78/1507/src/index.js",
         "lineno": 18
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1507/index.js",
+        "filename": "vulcan-dataset/CWE-78/1507/src/index.js",
         "lineno": 47
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1507/index.js",
+        "filename": "vulcan-dataset/CWE-78/1507/src/index.js",
         "lineno": 71
       }
     ]
@@ -1995,22 +1995,22 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/604/index.js",
+        "filename": "vulcan-dataset/CWE-78/604/src/index.js",
         "lineno": 8
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/604/index.js",
+        "filename": "vulcan-dataset/CWE-78/604/src/index.js",
         "lineno": 4
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/604/index.js",
+        "filename": "vulcan-dataset/CWE-78/604/src/index.js",
         "lineno": 10
       },
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/604/index.js",
+        "filename": "vulcan-dataset/CWE-78/604/src/index.js",
         "lineno": 12
       }
     ]
@@ -2021,7 +2021,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/960/wx.js",
+        "filename": "vulcan-dataset/CWE-78/960/src/wx.js",
         "lineno": 123
       }
     ]
@@ -2032,7 +2032,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/1433/index.js",
+        "filename": "vulcan-dataset/CWE-78/1433/src/index.js",
         "lineno": 32
       }
     ]
@@ -2043,7 +2043,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-926x-m6m5-3mmp/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-926x-m6m5-3mmp/src/index.js",
         "lineno": 202
       }
     ]
@@ -2054,7 +2054,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-xp4x-j9vh-c3wf/killer.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-xp4x-j9vh-c3wf/src/killer.js",
         "lineno": 47
       }
     ]
