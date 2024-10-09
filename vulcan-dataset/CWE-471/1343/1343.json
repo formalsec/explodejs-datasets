@@ -4,7 +4,7 @@
         "cwe": "CWE-471"
     },
     "correct_cwe": "CWE-471",
-    "correct_package_link": "https://github.com/angular/angular.js/archive/v1.7.8.tar.gz",
+    "correct_package_link": "https://registry.npmjs.org/angular/-/angular-1.7.8.tgz",
     "vulnerability": {
         "vulnerability_location": [
             {

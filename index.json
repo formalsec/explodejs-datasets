@@ -1,0 +1,6890 @@
+[
+  {
+    "package": "reduce-css-calc",
+    "version": "1.2.4",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/144/src/index.js",
+        "lineno": 75,
+        "id": 0
+      }
+    ]
+  },
+  {
+    "package": "syntax-error",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/37/src/index.js",
+        "lineno": 7,
+        "id": 1
+      }
+    ]
+  },
+  {
+    "package": "larvitbase-api",
+    "version": "0.5.2",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1120/src/index.js",
+        "lineno": 207,
+        "id": 2
+      }
+    ]
+  },
+  {
+    "package": "marsdb",
+    "version": "0.6.11",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1122/src/DocumentMatcher.js",
+        "lineno": 419,
+        "id": 3
+      }
+    ]
+  },
+  {
+    "package": "access-policy",
+    "version": "3.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-fw2f-7f87-5r6c/src/encode.js",
+        "lineno": 6,
+        "id": 4
+      }
+    ]
+  },
+  {
+    "package": "thenify",
+    "version": "3.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/src/index.js",
+        "lineno": 17,
+        "id": 5
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/src/index.js",
+        "lineno": 33,
+        "id": 6
+      }
+    ]
+  },
+  {
+    "package": "cd-messenger",
+    "version": "2.7.26",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-v756-4whv-48vc/src/messenger-node.js",
+        "lineno": 71,
+        "id": 7
+      }
+    ]
+  },
+  {
+    "package": "node-rules",
+    "version": "4.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1499/src/node-rules.js",
+        "lineno": 152,
+        "id": 8
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1499/src/node-rules.js",
+        "lineno": 153,
+        "id": 9
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1499/src/node-rules.js",
+        "lineno": 157,
+        "id": 10
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1499/src/node-rules.js",
+        "lineno": 158,
+        "id": 11
+      }
+    ]
+  },
+  {
+    "package": "node-extend",
+    "version": "0.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-cg42-4wrc-gp47/src/extend.js",
+        "lineno": 31,
+        "id": 12
+      }
+    ]
+  },
+  {
+    "package": "dot",
+    "version": "1.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/src/doT.js",
+        "lineno": 133,
+        "id": 13
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/src/doT.js",
+        "lineno": 69,
+        "id": 14
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/src/doT.js",
+        "lineno": 83,
+        "id": 15
+      }
+    ]
+  },
+  {
+    "package": "mathjs",
+    "version": "3.16.5",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/552/src/typed-function.js",
+        "lineno": 1116,
+        "id": 16
+      }
+    ]
+  },
+  {
+    "package": "safer-eval",
+    "version": "1.3.3",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1021/src/index.js",
+        "lineno": 47,
+        "id": 17
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1021/src/browser.js",
+        "lineno": 49,
+        "id": 18
+      }
+    ]
+  },
+  {
+    "package": "bassmaster",
+    "version": "1.5.1",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1/src/batch.js",
+        "lineno": 152,
+        "id": 19
+      }
+    ]
+  },
+  {
+    "package": "mobile-icon-resizer",
+    "version": "0.4.2",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/317/src/resize.js",
+        "lineno": 31,
+        "id": 20
+      }
+    ]
+  },
+  {
+    "package": "node-rules",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "lineno": 236,
+        "id": 21
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "lineno": 237,
+        "id": 22
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "lineno": 244,
+        "id": 23
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "lineno": 245,
+        "id": 24
+      }
+    ]
+  },
+  {
+    "package": "js",
+    "version": "3.4.8",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-7fm6-gxqg-2pwr/src/utils.js",
+        "lineno": 6628,
+        "id": 25
+      },
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-7fm6-gxqg-2pwr/src/utils.js",
+        "lineno": 6647,
+        "id": 26
+      }
+    ]
+  },
+  {
+    "package": "accesslog",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-8m2f-74r2-x3f2/src/compile.js",
+        "lineno": 6,
+        "id": 27
+      }
+    ]
+  },
+  {
+    "package": "md-to-pdf",
+    "version": "4.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-x949-7cm6-fm6p/src/md-to-pdf.js",
+        "lineno": 23,
+        "id": 28
+      }
+    ]
+  },
+  {
+    "package": "morgan",
+    "version": "1.9.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/736/src/index.js",
+        "lineno": 391,
+        "id": 29
+      }
+    ]
+  },
+  {
+    "package": "underscore",
+    "version": "1.3.2",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-cf4h-3jhx-xvhq/src/underscore.js",
+        "lineno": 981,
+        "id": 30
+      }
+    ]
+  },
+  {
+    "package": "mosc",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/GHSA-j665-rvj7-2jv9/src/mosc.js",
+        "lineno": 50,
+        "id": 31
+      }
+    ]
+  },
+  {
+    "package": "hot-formula-parser",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "vulcan-dataset/CWE-94/1439/src/grammar-parser.js",
+        "lineno": 258,
+        "id": 32
+      }
+    ]
+  },
+  {
+    "package": "lutils-merge",
+    "version": "0.2.6",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/893/src/merge.js",
+        "lineno": 156,
+        "id": 33
+      }
+    ]
+  },
+  {
+    "package": "assign-deep",
+    "version": "0.4.8",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1014/src/index.js",
+        "lineno": 44,
+        "id": 34
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1014/src/index.js",
+        "lineno": 46,
+        "id": 35
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1014/src/index.js",
+        "lineno": 48,
+        "id": 36
+      }
+    ]
+  },
+  {
+    "package": "subtext",
+    "version": "7.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1480/src/index.js",
+        "lineno": 242,
+        "id": 37
+      }
+    ]
+  },
+  {
+    "package": "mergify",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/995/src/index.js",
+        "lineno": 15,
+        "id": 38
+      }
+    ]
+  },
+  {
+    "package": "utils-extend",
+    "version": "1.0.8",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1502/src/index.js",
+        "lineno": 46,
+        "id": 39
+      }
+    ]
+  },
+  {
+    "package": "set",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-wwg2-2crq-6grr/src/main.js",
+        "lineno": 11,
+        "id": 40
+      }
+    ]
+  },
+  {
+    "package": "merge-deep",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/580/src/index.js",
+        "lineno": 41,
+        "id": 41
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/580/src/index.js",
+        "lineno": 43,
+        "id": 42
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/580/src/index.js",
+        "lineno": 45,
+        "id": 43
+      }
+    ]
+  },
+  {
+    "package": "merge",
+    "version": "1.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/722/src/merge.js",
+        "lineno": 94,
+        "id": 44
+      }
+    ]
+  },
+  {
+    "package": "querymen",
+    "version": "2.1.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-p23c-p8w2-ww5v/src/index.js",
+        "lineno": 48,
+        "id": 45
+      }
+    ]
+  },
+  {
+    "package": "convict",
+    "version": "6.2.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-jjf5-wx3j-3fv7/src/main.js",
+        "lineno": 581,
+        "id": 46
+      }
+    ]
+  },
+  {
+    "package": "protobufjs",
+    "version": "6.11.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-g954-5hwp-pp24/src/util.js",
+        "lineno": "176-197",
+        "id": 47
+      }
+    ]
+  },
+  {
+    "package": "minimist",
+    "version": "1.2.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1179/src/index.js",
+        "lineno": 79,
+        "id": 48
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1179/src/index.js",
+        "lineno": 85,
+        "id": 49
+      }
+    ]
+  },
+  {
+    "package": "deep-extend",
+    "version": "0.5.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
+        "lineno": 117,
+        "id": 50
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
+        "lineno": 122,
+        "id": 51
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
+        "lineno": 127,
+        "id": 52
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
+        "lineno": 132,
+        "id": 53
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/612/src/deep-extend.js",
+        "lineno": 137,
+        "id": 54
+      }
+    ]
+  },
+  {
+    "package": "ini-parser",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1508/src/index.js",
+        "lineno": 14,
+        "id": 55
+      }
+    ]
+  },
+  {
+    "package": "sds",
+    "version": "3.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1506/src/set.js",
+        "lineno": 38,
+        "id": 56
+      }
+    ]
+  },
+  {
+    "package": "json8-merge-patch",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-8v9x-9xqg-r8mr/src/apply.js",
+        "lineno": 28,
+        "id": 57
+      }
+    ]
+  },
+  {
+    "package": "deep-setter",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1333/src/index.js",
+        "lineno": 35,
+        "id": 58
+      }
+    ]
+  },
+  {
+    "package": "safetydance",
+    "version": "1.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-6m85-wvcr-pgw3/src/index.js",
+        "lineno": 210,
+        "id": 59
+      }
+    ]
+  },
+  {
+    "package": "cached-path-relative",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/739/src/index.js",
+        "lineno": 39,
+        "id": 60
+      }
+    ]
+  },
+  {
+    "package": "hoek",
+    "version": "5.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/566/src/index.js",
+        "lineno": 129,
+        "id": 61
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/566/src/index.js",
+        "lineno": 139,
+        "id": 62
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/566/src/index.js",
+        "lineno": 142,
+        "id": 63
+      }
+    ]
+  },
+  {
+    "package": "merge-options",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
+        "lineno": 60,
+        "id": 64
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
+        "lineno": 50,
+        "id": 65
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
+        "lineno": 75,
+        "id": 66
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
+        "lineno": 105,
+        "id": 67
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/717/src/index.js",
+        "lineno": 107,
+        "id": 68
+      }
+    ]
+  },
+  {
+    "package": "object-extend",
+    "version": "0.5.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
+        "lineno": 42,
+        "id": 69
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
+        "lineno": 37,
+        "id": 70
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
+        "lineno": 39,
+        "id": 71
+      }
+    ]
+  },
+  {
+    "package": "merge-objects",
+    "version": "1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/716/src/merge-objects.js",
+        "lineno": 28,
+        "id": 72
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/716/src/merge-objects.js",
+        "lineno": 31,
+        "id": 73
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/716/src/merge-objects.js",
+        "lineno": 33,
+        "id": 74
+      }
+    ]
+  },
+  {
+    "package": "just-extend",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/780/src/index.js",
+        "lineno": 52,
+        "id": 75
+      }
+    ]
+  },
+  {
+    "package": "merge",
+    "version": "4.6.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1067/src/index.js",
+        "lineno": 856,
+        "id": 76
+      }
+    ]
+  },
+  {
+    "package": "qs",
+    "version": "6.2.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1469/src/utils.js",
+        "lineno": 55,
+        "id": 77
+      }
+    ]
+  },
+  {
+    "package": "defaultsdeep",
+    "version": "4.6.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1070/src/index.js",
+        "lineno": 856,
+        "id": 78
+      }
+    ]
+  },
+  {
+    "package": "bodymen",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-vhxc-fhm5-qcp9/src/index.js",
+        "lineno": 44,
+        "id": 79
+      }
+    ]
+  },
+  {
+    "package": "jsgui-lang-essentials",
+    "version": "0.4.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-p3pg-64pv-v7jg/src/jsgui-lang-essentials.js",
+        "lineno": 1435,
+        "id": 80
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-p3pg-64pv-v7jg/src/jsgui-lang-essentials.js",
+        "lineno": 1442,
+        "id": 81
+      }
+    ]
+  },
+  {
+    "package": "assign-deep",
+    "version": "0.4.6",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/579/src/index.js",
+        "lineno": 44,
+        "id": 82
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/579/src/index.js",
+        "lineno": 46,
+        "id": 83
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/579/src/index.js",
+        "lineno": 48,
+        "id": 84
+      }
+    ]
+  },
+  {
+    "package": "extend",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/781/src/extend.js",
+        "lineno": 65,
+        "id": 85
+      }
+    ]
+  },
+  {
+    "package": "assign",
+    "version": "0.0.0-alpha.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-3829-mgmw-jcg4/src/deep-merge.js",
+        "lineno": 23,
+        "id": 86
+      }
+    ]
+  },
+  {
+    "package": "extend",
+    "version": "3.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/996/src/index.js",
+        "lineno": 77,
+        "id": 87
+      }
+    ]
+  },
+  {
+    "package": "lodash",
+    "version": "4.17.11",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1065/src/lodash.js",
+        "lineno": 2559,
+        "id": 88
+      }
+    ]
+  },
+  {
+    "package": "mithril",
+    "version": "2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1094/src/parse.js",
+        "lineno": 32,
+        "id": 89
+      }
+    ]
+  },
+  {
+    "package": "defaultsdeep",
+    "version": "4.6.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1068/src/index.js",
+        "lineno": 856,
+        "id": 90
+      }
+    ]
+  },
+  {
+    "package": "mout",
+    "version": "1.2.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-vvv8-xw5f-3f88/src/deepFillIn.js",
+        "lineno": 18,
+        "id": 91
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-vvv8-xw5f-3f88/src/deepMixIn.js",
+        "lineno": 27,
+        "id": 92
+      }
+    ]
+  },
+  {
+    "package": "deep-get-set",
+    "version": "1.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-mjjj-6p43-vhhv/src/index.js",
+        "lineno": 35,
+        "id": 93
+      }
+    ]
+  },
+  {
+    "package": "dot-prop",
+    "version": "4.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1213/src/index.js",
+        "lineno": 70,
+        "id": 94
+      }
+    ]
+  },
+  {
+    "package": "mergewith",
+    "version": "4.6.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1069/src/index.js",
+        "lineno": 856,
+        "id": 95
+      }
+    ]
+  },
+  {
+    "package": "defaults-deep",
+    "version": "0.2.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/581/src/index.js",
+        "lineno": 22,
+        "id": 96
+      }
+    ]
+  },
+  {
+    "package": "notevil",
+    "version": "1.3.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-8g4m-cjm2-96wq/src/index.js",
+        "lineno": 290,
+        "id": 97
+      }
+    ]
+  },
+  {
+    "package": "sds",
+    "version": "4.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-ph28-wwfj-fv7f/src/set.js",
+        "lineno": 42,
+        "id": 98
+      }
+    ]
+  },
+  {
+    "package": "set-value",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1012/src/index.js",
+        "lineno": 59,
+        "id": 99
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1012/src/index.js",
+        "lineno": 57,
+        "id": 100
+      }
+    ]
+  },
+  {
+    "package": "klona",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1463/src/klona.js",
+        "lineno": 9,
+        "id": 101
+      }
+    ]
+  },
+  {
+    "package": "merge-recursive",
+    "version": "0.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/715/src/index.js",
+        "lineno": 66,
+        "id": 102
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/715/src/index.js",
+        "lineno": 7,
+        "id": 103
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/715/src/index.js",
+        "lineno": 18,
+        "id": 104
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/715/src/index.js",
+        "lineno": 66,
+        "id": 105
+      }
+    ]
+  },
+  {
+    "package": "libnested",
+    "version": "1.5.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-x5m8-2r8v-8f97/src/index.js",
+        "lineno": 27,
+        "id": 106
+      }
+    ]
+  },
+  {
+    "package": "mpath",
+    "version": "0.4.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/779/src/index.js",
+        "lineno": 269,
+        "id": 107
+      }
+    ]
+  },
+  {
+    "package": "mergewith",
+    "version": "4.6.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1071/src/index.js",
+        "lineno": 817,
+        "id": 108
+      }
+    ]
+  },
+  {
+    "package": "deap",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/611/src/deap.js",
+        "lineno": 117,
+        "id": 109
+      }
+    ]
+  },
+  {
+    "package": "dset",
+    "version": "3.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
+        "lineno": 5,
+        "id": 110
+      },
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
+        "lineno": 9,
+        "id": 111
+      }
+    ]
+  },
+  {
+    "package": "lodash",
+    "version": "4.17.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/577/src/lodash.js",
+        "lineno": 3645,
+        "id": 112
+      }
+    ]
+  },
+  {
+    "package": "get-setter",
+    "version": "0.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1332/src/index.js",
+        "lineno": 41,
+        "id": 113
+      }
+    ]
+  },
+  {
+    "package": "nconf",
+    "version": "0.11.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-6xwr-q98w-rvg7/src/memory.js",
+        "lineno": 107,
+        "id": 114
+      }
+    ]
+  },
+  {
+    "package": "madlib-object-utils",
+    "version": "0.1.7",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-pfv6-prqm-85q8/src/utils.js",
+        "lineno": 80,
+        "id": 115
+      }
+    ]
+  },
+  {
+    "package": "gateway",
+    "version": "0.6.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/917/src/deepMerge.js",
+        "lineno": 14,
+        "id": 116
+      }
+    ]
+  },
+  {
+    "package": "reggae",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1331/src/index.js",
+        "lineno": 22,
+        "id": 117
+      }
+    ]
+  },
+  {
+    "package": "smart-extend",
+    "version": "1.7.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/801/src/smart-extend.js",
+        "lineno": 79,
+        "id": 118
+      }
+    ]
+  },
+  {
+    "package": "defaults-deep",
+    "version": "0.2.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/778/src/index.js",
+        "lineno": 26,
+        "id": 119
+      }
+    ]
+  },
+  {
+    "package": "dexie",
+    "version": "3.2.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
+        "lineno": 198,
+        "id": 120
+      }
+    ]
+  },
+  {
+    "package": "angular",
+    "version": "1.7.8",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1343/src/angular.js",
+        "lineno": 488,
+        "id": 121
+      }
+    ]
+  },
+  {
+    "package": "chartkick",
+    "version": "3.1.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1312/src/chartkick.js",
+        "lineno": 40,
+        "id": 122
+      }
+    ]
+  },
+  {
+    "package": "getsetdeep",
+    "version": "4.12.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1334/src/index.js",
+        "lineno": 74,
+        "id": 123
+      }
+    ]
+  },
+  {
+    "package": "set-in",
+    "version": "2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/GHSA-6956-83fg-5wc5/src/index.js",
+        "lineno": 50,
+        "id": 124
+      }
+    ]
+  },
+  {
+    "package": "mixin-deep",
+    "version": "1.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/578/src/index.js",
+        "lineno": 30,
+        "id": 125
+      }
+    ]
+  },
+  {
+    "package": "sahmat",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1336/src/index.js",
+        "lineno": 14,
+        "id": 126
+      }
+    ]
+  },
+  {
+    "package": "flat-wrap",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "vulcan-dataset/CWE-471/1327/src/index.js",
+        "lineno": 193,
+        "id": 127
+      }
+    ]
+  },
+  {
+    "package": "simple-npm-registry",
+    "version": "0.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "vulcan-dataset/CWE-22/452/src/index.js",
+        "lineno": 172,
+        "id": 128
+      }
+    ]
+  },
+  {
+    "package": "larvitbase-www",
+    "version": "0.7.5",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "vulcan-dataset/CWE-22/1156/src/index.js",
+        "lineno": 215,
+        "id": 129
+      }
+    ]
+  },
+  {
+    "package": "http-server-node",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "vulcan-dataset/CWE-22/GHSA-hj3m-v758-jwx5/src/file-system.js",
+        "lineno": 13,
+        "id": 130
+      }
+    ]
+  },
+  {
+    "package": "serve-here",
+    "version": "3.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "vulcan-dataset/CWE-22/GHSA-4448-rc82-fcr7/src/read-file.js",
+        "lineno": 11,
+        "id": 131
+      }
+    ]
+  },
+  {
+    "package": "wangguojing123",
+    "version": "1.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "vulcan-dataset/CWE-22/374/src/index.js",
+        "lineno": 10,
+        "id": 132
+      }
+    ]
+  },
+  {
+    "package": "ungit",
+    "version": "0.8.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/40/src/git.js",
+        "lineno": 57,
+        "id": 133
+      }
+    ]
+  },
+  {
+    "package": "command-exists",
+    "version": "1.2.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/659/src/command-exists.js",
+        "lineno": 49,
+        "id": 134
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/659/src/command-exists.js",
+        "lineno": 64,
+        "id": 135
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/659/src/command-exists.js",
+        "lineno": 78,
+        "id": 136
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/659/src/command-exists.js",
+        "lineno": 94,
+        "id": 137
+      }
+    ]
+  },
+  {
+    "package": "kill-port",
+    "version": "1.3.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/966/src/index.js",
+        "lineno": 11,
+        "id": 138
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/966/src/index.js",
+        "lineno": 16,
+        "id": 139
+      }
+    ]
+  },
+  {
+    "package": "ps",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/728/src/index.js",
+        "lineno": 8,
+        "id": 140
+      }
+    ]
+  },
+  {
+    "package": "tomato",
+    "version": "0.0.7",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/797/src/index.js",
+        "lineno": 76,
+        "id": 141
+      }
+    ]
+  },
+  {
+    "package": "effect",
+    "version": "1.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-6hr9-4692-fch9/src/helper.js",
+        "lineno": 24,
+        "id": 142
+      }
+    ]
+  },
+  {
+    "package": "wizard-syncronizer",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/977/src/wizard-sync.js",
+        "lineno": 56,
+        "id": 143
+      }
+    ]
+  },
+  {
+    "package": "meta-git",
+    "version": "1.1.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1457/src/meta-git-clone.js",
+        "lineno": 20,
+        "id": 144
+      }
+    ]
+  },
+  {
+    "package": "priest-runner",
+    "version": "0.3.12",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1492/src/controller.js",
+        "lineno": 140,
+        "id": 145
+      }
+    ]
+  },
+  {
+    "package": "react-dev-utils",
+    "version": "5.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/695/src/launchEditor.js",
+        "lineno": 334,
+        "id": 146
+      }
+    ]
+  },
+  {
+    "package": "giting",
+    "version": "0.0.8",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1446/src/git.js",
+        "lineno": 195,
+        "id": 147
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1446/src/git.js",
+        "lineno": 208,
+        "id": 148
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1446/src/git.js",
+        "lineno": 223,
+        "id": 149
+      }
+    ]
+  },
+  {
+    "package": "ascii-art",
+    "version": "1.4.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/727/src/ascii-art.js",
+        "lineno": 210,
+        "id": 150
+      }
+    ]
+  },
+  {
+    "package": "pullit",
+    "version": "1.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1004/src/index.js",
+        "lineno": 37,
+        "id": 151
+      }
+    ]
+  },
+  {
+    "package": "madge",
+    "version": "4.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
+        "lineno": 28,
+        "id": 152
+      }
+    ]
+  },
+  {
+    "package": "libnmap",
+    "version": "0.4.15",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/719/src/tools.js",
+        "lineno": 114,
+        "id": 153
+      }
+    ]
+  },
+  {
+    "package": "soletta-dev-app",
+    "version": "0.0.7",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/958/src/routes.js",
+        "lineno": 67,
+        "id": 154
+      }
+    ]
+  },
+  {
+    "package": "tree-kill",
+    "version": "1.2.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1432/src/index.js",
+        "lineno": 20,
+        "id": 155
+      }
+    ]
+  },
+  {
+    "package": "s3-uploader",
+    "version": "2.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-gwp3-f7mr-qpfv/src/index.js",
+        "lineno": 36,
+        "id": 156
+      }
+    ]
+  },
+  {
+    "package": "git",
+    "version": "0.1.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-9gqr-xp86-f87h/src/git.js",
+        "lineno": 232,
+        "id": 157
+      }
+    ]
+  },
+  {
+    "package": "entitlements",
+    "version": "1.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/998/src/index.js",
+        "lineno": 7,
+        "id": 158
+      }
+    ]
+  },
+  {
+    "package": "opencv",
+    "version": "6.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/789/src/find-opencv.js",
+        "lineno": 16,
+        "id": 159
+      }
+    ]
+  },
+  {
+    "package": "google-it",
+    "version": "1.6.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "lineno": 110,
+        "id": 160
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "lineno": 140,
+        "id": 161
+      }
+    ]
+  },
+  {
+    "package": "macaddress",
+    "version": "0.2.8",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/654/src/macosx.js",
+        "lineno": 4,
+        "id": 162
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/654/src/linux.js",
+        "lineno": 4,
+        "id": 163
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/654/src/unix.js",
+        "lineno": 4,
+        "id": 164
+      }
+    ]
+  },
+  {
+    "package": "pdf-image",
+    "version": "1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/670/src/index.js",
+        "lineno": 43,
+        "id": 165
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/670/src/index.js",
+        "lineno": 104,
+        "id": 166
+      }
+    ]
+  },
+  {
+    "package": "gm",
+    "version": "1.20.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/54/src/compare.js",
+        "lineno": 72,
+        "id": 167
+      }
+    ]
+  },
+  {
+    "package": "dns-sync",
+    "version": "0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/523/src/dns-sync.js",
+        "lineno": 21,
+        "id": 168
+      }
+    ]
+  },
+  {
+    "package": "pidusage",
+    "version": "1.1.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/356/src/stats.js",
+        "lineno": 103,
+        "id": 169
+      }
+    ]
+  },
+  {
+    "package": "dns-sync",
+    "version": "0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/153/src/dns-sync.js",
+        "lineno": 21,
+        "id": 170
+      }
+    ]
+  },
+  {
+    "package": "git-pull-or-clone",
+    "version": "2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-3x62-x456-q2vm/src/index.js",
+        "lineno": 52,
+        "id": 171
+      }
+    ]
+  },
+  {
+    "package": "windows-cpu",
+    "version": "0.1.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/336/src/index.js",
+        "lineno": 82,
+        "id": 172
+      }
+    ]
+  },
+  {
+    "package": "op-browser",
+    "version": "1.0.9",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
+        "lineno": 70,
+        "id": 173
+      }
+    ]
+  },
+  {
+    "package": "node-df",
+    "version": "0.1.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1431/src/index.js",
+        "lineno": 41,
+        "id": 174
+      }
+    ]
+  },
+  {
+    "package": "blamer",
+    "version": "0.1.13",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/git.js",
+        "lineno": 24,
+        "id": 175
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/svn.js",
+        "lineno": 38,
+        "id": 176
+      }
+    ]
+  },
+  {
+    "package": "gnuplot",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
+        "lineno": 225,
+        "id": 177
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
+        "lineno": 228,
+        "id": 178
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
+        "lineno": 232,
+        "id": 179
+      }
+    ]
+  },
+  {
+    "package": "strong-nginx-controller",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-4v9w-pvwr-38h3/src/server.js",
+        "lineno": 65,
+        "id": 180
+      }
+    ]
+  },
+  {
+    "package": "git-add-remote",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-h9v8-rm3m-5h5f/src/index.js",
+        "lineno": 21,
+        "id": 181
+      }
+    ]
+  },
+  {
+    "package": "expressfs",
+    "version": "0.2.10",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/953/src/expressfs.server.js",
+        "lineno": 33,
+        "id": 182
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/953/src/expressfs.server.js",
+        "lineno": 204,
+        "id": 183
+      }
+    ]
+  },
+  {
+    "package": "git-tags-remote",
+    "version": "1.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1517/src/index.js",
+        "lineno": 1,
+        "id": 184
+      }
+    ]
+  },
+  {
+    "package": "install-package",
+    "version": "0.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-6m4r-m3gc-h4r5/src/index.js",
+        "lineno": 82,
+        "id": 185
+      }
+    ]
+  },
+  {
+    "package": "gitlabhook",
+    "version": "0.0.17",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1174/src/gitlabhook.js",
+        "lineno": 146,
+        "id": 186
+      }
+    ]
+  },
+  {
+    "package": "pdfinfojs",
+    "version": "0.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/643/src/pdfinfo.js",
+        "lineno": 36,
+        "id": 187
+      }
+    ]
+  },
+  {
+    "package": "addax",
+    "version": "1.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/954/src/server.js",
+        "lineno": 21,
+        "id": 188
+      }
+    ]
+  },
+  {
+    "package": "karma-mojo",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-pf8j-vhg8-xmc3/src/index.js",
+        "lineno": 100,
+        "id": 189
+      }
+    ]
+  },
+  {
+    "package": "recording",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/773/src/pi_video_recording.js",
+        "lineno": 48,
+        "id": 190
+      }
+    ]
+  },
+  {
+    "package": "git-promise",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-chj3-f7xw-367m/src/index.js",
+        "lineno": 34,
+        "id": 191
+      }
+    ]
+  },
+  {
+    "package": "google-it",
+    "version": "1.6.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
+        "lineno": 59,
+        "id": 192
+      }
+    ]
+  },
+  {
+    "package": "gitsome",
+    "version": "0.2.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-9v73-x562-wv5x/src/index.js",
+        "lineno": 8,
+        "id": 193
+      }
+    ]
+  },
+  {
+    "package": "git-interface",
+    "version": "2.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-qffw-8wg7-h665/src/index.js",
+        "lineno": 27,
+        "id": 194
+      }
+    ]
+  },
+  {
+    "package": "open",
+    "version": "0.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/663/src/open.js",
+        "lineno": 58,
+        "id": 195
+      }
+    ]
+  },
+  {
+    "package": "buttle",
+    "version": "0.3.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/667/src/mid-php.js",
+        "lineno": 22,
+        "id": 196
+      }
+    ]
+  },
+  {
+    "package": "node-key-sender",
+    "version": "1.0.11",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-4xrw-wvmq-8jmh/src/key-sender.js",
+        "lineno": 117,
+        "id": 197
+      }
+    ]
+  },
+  {
+    "package": "lifion-verify-deps",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-rphm-c8gw-3r38/src/index.js",
+        "lineno": 16,
+        "id": 198
+      }
+    ]
+  },
+  {
+    "package": "proctree",
+    "version": "0.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/src/index.js",
+        "lineno": 17,
+        "id": 199
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/src/index.js",
+        "lineno": 46,
+        "id": 200
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-cv76-rv4h-4mqc/src/index.js",
+        "lineno": 59,
+        "id": 201
+      }
+    ]
+  },
+  {
+    "package": "umount",
+    "version": "1.1.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1512/src/umount.js",
+        "lineno": 52,
+        "id": 202
+      }
+    ]
+  },
+  {
+    "package": "egg-scripts",
+    "version": "2.8.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/694/src/start.js",
+        "lineno": 235,
+        "id": 203
+      }
+    ]
+  },
+  {
+    "package": "fs-git",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/360/src/index.js",
+        "lineno": 56,
+        "id": 204
+      }
+    ]
+  },
+  {
+    "package": "diskusage-ng",
+    "version": "0.2.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-3269-x4pw-vffg/src/posix.js",
+        "lineno": 11,
+        "id": 205
+      }
+    ]
+  },
+  {
+    "package": "npm-lockfile",
+    "version": "2.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-cr6m-62pq-hmqh/src/getLockfile.js",
+        "lineno": 42,
+        "id": 206
+      }
+    ]
+  },
+  {
+    "package": "jscover",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
+        "lineno": 59,
+        "id": 207
+      }
+    ]
+  },
+  {
+    "package": "traceroute",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1465/src/traceroute.js",
+        "lineno": 29,
+        "id": 208
+      }
+    ]
+  },
+  {
+    "package": "npm-programmatic",
+    "version": "0.0.12",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1507/src/index.js",
+        "lineno": 18,
+        "id": 209
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1507/src/index.js",
+        "lineno": 47,
+        "id": 210
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1507/src/index.js",
+        "lineno": 71,
+        "id": 211
+      }
+    ]
+  },
+  {
+    "package": "whereis",
+    "version": "0.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/604/src/index.js",
+        "lineno": 8,
+        "id": 212
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/604/src/index.js",
+        "lineno": 4,
+        "id": 213
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/604/src/index.js",
+        "lineno": 10,
+        "id": 214
+      },
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/604/src/index.js",
+        "lineno": 12,
+        "id": 215
+      }
+    ]
+  },
+  {
+    "package": "wxchangba",
+    "version": "1.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/960/src/wx.js",
+        "lineno": 123,
+        "id": 216
+      }
+    ]
+  },
+  {
+    "package": "treekill",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/1433/src/index.js",
+        "lineno": 32,
+        "id": 217
+      }
+    ]
+  },
+  {
+    "package": "push-dir",
+    "version": "0.4.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-926x-m6m5-3mmp/src/index.js",
+        "lineno": 202,
+        "id": 218
+      }
+    ]
+  },
+  {
+    "package": "kill-port-process",
+    "version": "2.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "vulcan-dataset/CWE-78/GHSA-xp4x-j9vh-c3wf/src/killer.js",
+        "lineno": 47,
+        "id": 219
+      }
+    ]
+  },
+  {
+    "package": "veval",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/veval_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 220
+      }
+    ]
+  },
+  {
+    "package": "modjs",
+    "version": "0.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/modjs_0.4.0/src/sea.js",
+        "lineno": "??",
+        "id": 221
+      }
+    ]
+  },
+  {
+    "package": "safe-eval",
+    "version": "0.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/safe-eval_0.2.0/src/index.js",
+        "lineno": "??",
+        "id": 222
+      }
+    ]
+  },
+  {
+    "package": "value-censorship",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/value-censorship_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 223
+      }
+    ]
+  },
+  {
+    "package": "underscore",
+    "version": "1.13.0-0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/underscore_1.13.0-0/src/template.js",
+        "lineno": "??",
+        "id": 224
+      }
+    ]
+  },
+  {
+    "package": "pixl-class",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "lineno": "??",
+        "id": 225
+      }
+    ]
+  },
+  {
+    "package": "mol-proto",
+    "version": "0.1.3",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/mol-proto_0.1.3/src/proto_function.js",
+        "lineno": "??",
+        "id": 226
+      }
+    ]
+  },
+  {
+    "package": "js-yaml",
+    "version": "3.13.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/js-yaml_3.13.0/src/function.js",
+        "lineno": "??",
+        "id": 227
+      }
+    ]
+  },
+  {
+    "package": "static-eval",
+    "version": "1.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/static-eval_1.1.1/src/index.js",
+        "lineno": "??",
+        "id": 228
+      }
+    ]
+  },
+  {
+    "package": "reduce-css-calc",
+    "version": "1.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/reduce-css-calc_1.2.0/src/index.js",
+        "lineno": "??",
+        "id": 229
+      }
+    ]
+  },
+  {
+    "package": "kmc",
+    "version": "1.2.2",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/kmc_1.2.2/src/index.js",
+        "lineno": "??",
+        "id": 230
+      }
+    ]
+  },
+  {
+    "package": "mongoosemask",
+    "version": "0.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/mongoosemask_0.0.6/src/index.js",
+        "lineno": "??",
+        "id": 231
+      }
+    ]
+  },
+  {
+    "package": "djv",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/djv_2.0.0/src/template.js",
+        "lineno": "??",
+        "id": 232
+      }
+    ]
+  },
+  {
+    "package": "local-devices",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/local-devices_2.0.0/src/index.js",
+        "lineno": "??",
+        "id": 233
+      }
+    ]
+  },
+  {
+    "package": "wifiscanner",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/wifiscanner_1.0.1/src/wifiscanner.js",
+        "lineno": "??",
+        "id": 234
+      }
+    ]
+  },
+  {
+    "package": "cd-messenger",
+    "version": "2.7.24",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/cd-messenger_2.7.24/src/messenger-node.js",
+        "lineno": "??",
+        "id": 235
+      }
+    ]
+  },
+  {
+    "package": "node-serialize",
+    "version": "0.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "lineno": "??",
+        "id": 236
+      }
+    ]
+  },
+  {
+    "package": "modulify",
+    "version": "0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/modulify_0.1.0/src/modulify.js",
+        "lineno": "??",
+        "id": 237
+      }
+    ]
+  },
+  {
+    "package": "safer-eval",
+    "version": "1.3.1",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/safer-eval_1.3.1/src/index.js",
+        "lineno": "??",
+        "id": 238
+      }
+    ]
+  },
+  {
+    "package": "m-log",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/m-log_0.0.1/src/log.js",
+        "lineno": "??",
+        "id": 239
+      }
+    ]
+  },
+  {
+    "package": "hot-formula-parser",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "secbench-dataset/CWE-94/hot-formula-parser_3.0.0/src/grammar-parser.js",
+        "lineno": "??",
+        "id": 240
+      }
+    ]
+  },
+  {
+    "package": "predefine",
+    "version": "0.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/predefine_0.1.2/src/index.js",
+        "lineno": "??",
+        "id": 241
+      }
+    ]
+  },
+  {
+    "package": "lodash",
+    "version": "4.17.9",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/lodash_4.17.9/src/lodash.js",
+        "lineno": "??",
+        "id": 242
+      }
+    ]
+  },
+  {
+    "package": "minimist",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/minimist_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 243
+      }
+    ]
+  },
+  {
+    "package": "pathval",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/pathval_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 244
+      }
+    ]
+  },
+  {
+    "package": "rfc6902",
+    "version": "4.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/rfc6902_4.0.2/src/patch.js",
+        "lineno": "??",
+        "id": 245
+      }
+    ]
+  },
+  {
+    "package": "deep-override",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/deep-override_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 246
+      }
+    ]
+  },
+  {
+    "package": "mixin-deep",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/mixin-deep_2.0.0/src/index.js",
+        "lineno": "??",
+        "id": 247
+      }
+    ]
+  },
+  {
+    "package": "deepref",
+    "version": "1.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/deepref_1.1.1/src/index.js",
+        "lineno": "??",
+        "id": 248
+      }
+    ]
+  },
+  {
+    "package": "getsetdeep",
+    "version": "4.15.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/getsetdeep_4.15.0/src/index.js",
+        "lineno": "??",
+        "id": 249
+      }
+    ]
+  },
+  {
+    "package": "flat",
+    "version": "5.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/flat_5.0.0/src/index.js",
+        "lineno": "??",
+        "id": 250
+      }
+    ]
+  },
+  {
+    "package": "keyget",
+    "version": "2.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
+        "lineno": "??",
+        "id": 251
+      }
+    ]
+  },
+  {
+    "package": "mathjs",
+    "version": "7.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
+        "lineno": "??",
+        "id": 252
+      }
+    ]
+  },
+  {
+    "package": "patchmerge",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/patchmerge_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 253
+      }
+    ]
+  },
+  {
+    "package": "undefsafe",
+    "version": "2.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/undefsafe_2.0.2/src/undefsafe.js",
+        "lineno": "??",
+        "id": 254
+      }
+    ]
+  },
+  {
+    "package": "gedi",
+    "version": "1.6.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/gedi_1.6.3/src/gedi.js",
+        "lineno": "??",
+        "id": 255
+      }
+    ]
+  },
+  {
+    "package": "gammautils",
+    "version": "0.0.81",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
+        "lineno": "??",
+        "id": 256
+      }
+    ]
+  },
+  {
+    "package": "decal",
+    "version": "2.1.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/decal_2.1.3/src/extend.js",
+        "lineno": "??",
+        "id": 257
+      }
+    ]
+  },
+  {
+    "package": "getobject",
+    "version": "0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/getobject_0.1.0/src/getobject.js",
+        "lineno": "??",
+        "id": 258
+      }
+    ]
+  },
+  {
+    "package": "nestie",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/nestie_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 259
+      }
+    ]
+  },
+  {
+    "package": "nodee-utils",
+    "version": "1.2.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/nodee-utils_1.2.2/src/object.js",
+        "lineno": "??",
+        "id": 260
+      }
+    ]
+  },
+  {
+    "package": "patchmerge",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/patchmerge_1.0.1/src/index.js",
+        "lineno": "??",
+        "id": 261
+      }
+    ]
+  },
+  {
+    "package": "plain-object-merge",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
+        "lineno": "??",
+        "id": 262
+      }
+    ]
+  },
+  {
+    "package": "phpjs",
+    "version": "1.3.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/phpjs_1.3.2/src/npm.js",
+        "lineno": "??",
+        "id": 263
+      }
+    ]
+  },
+  {
+    "package": "confucious",
+    "version": "0.0.12",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
+        "lineno": "??",
+        "id": 264
+      }
+    ]
+  },
+  {
+    "package": "merge",
+    "version": "2.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/merge_2.1.0/src/index.js",
+        "lineno": "??",
+        "id": 265
+      }
+    ]
+  },
+  {
+    "package": "swiper",
+    "version": "6.5.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/swiper_6.5.0/src/utils.js",
+        "lineno": "??",
+        "id": 266
+      }
+    ]
+  },
+  {
+    "package": "dotty",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/dotty_0.0.1/src/index.js",
+        "lineno": "??",
+        "id": 267
+      }
+    ]
+  },
+  {
+    "package": "safe-obj",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/safe-obj_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 268
+      }
+    ]
+  },
+  {
+    "package": "objnest",
+    "version": "5.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/objnest_5.0.0/src/objnest.js",
+        "lineno": "??",
+        "id": 269
+      }
+    ]
+  },
+  {
+    "package": "object-path",
+    "version": "0.11.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/object-path_0.11.4/src/index.js",
+        "lineno": "??",
+        "id": 270
+      }
+    ]
+  },
+  {
+    "package": "keyd",
+    "version": "1.3.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/keyd_1.3.4/src/index.js",
+        "lineno": "??",
+        "id": 271
+      }
+    ]
+  },
+  {
+    "package": "aurelia-path",
+    "version": "1.1.7",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/aurelia-path_1.1.7/src/aurelia-path.js",
+        "lineno": "??",
+        "id": 272
+      }
+    ]
+  },
+  {
+    "package": "json-ptr",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/json-ptr_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 273
+      }
+    ]
+  },
+  {
+    "package": "property-expr",
+    "version": "2.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/property-expr_2.0.2/src/index.js",
+        "lineno": "??",
+        "id": 274
+      }
+    ]
+  },
+  {
+    "package": "merge-change",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/merge-change_1.0.1/src/utils.js",
+        "lineno": "??",
+        "id": 275
+      }
+    ]
+  },
+  {
+    "package": "deephas",
+    "version": "1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/deephas_1.0.5/src/deepHas.js",
+        "lineno": "??",
+        "id": 276
+      }
+    ]
+  },
+  {
+    "package": "paypal-adaptive",
+    "version": "0.4.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
+        "lineno": "??",
+        "id": 277
+      }
+    ]
+  },
+  {
+    "package": "merge-objects",
+    "version": "1.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/merge-objects_1.0.3/src/merge-objects.js",
+        "lineno": "??",
+        "id": 278
+      }
+    ]
+  },
+  {
+    "package": "inireader",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
+        "lineno": "??",
+        "id": 279
+      }
+    ]
+  },
+  {
+    "package": "changeset",
+    "version": "0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/changeset_0.1.0/src/index.js",
+        "lineno": "??",
+        "id": 280
+      }
+    ]
+  },
+  {
+    "package": "iniparserjs",
+    "version": "1.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
+        "lineno": "??",
+        "id": 281
+      }
+    ]
+  },
+  {
+    "package": "deeply",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/deeply_3.0.0/src/reduce_object.js",
+        "lineno": "??",
+        "id": 282
+      }
+    ]
+  },
+  {
+    "package": "madlib-object-utils",
+    "version": "0.1.6",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/madlib-object-utils_0.1.6/src/utils.js",
+        "lineno": "??",
+        "id": 283
+      }
+    ]
+  },
+  {
+    "package": "mout",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/mout_1.0.0/src/set.js",
+        "lineno": "??",
+        "id": 284
+      }
+    ]
+  },
+  {
+    "package": "arr-flatten-unflatten",
+    "version": "1.1.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/arr-flatten-unflatten_1.1.4/src/unflatten.js",
+        "lineno": "??",
+        "id": 285
+      }
+    ]
+  },
+  {
+    "package": "assign-deep",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/assign-deep_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 286
+      }
+    ]
+  },
+  {
+    "package": "js-extend",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/js-extend_0.0.1/src/extend.js",
+        "lineno": "??",
+        "id": 287
+      }
+    ]
+  },
+  {
+    "package": "think-config",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/think-config_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 288
+      }
+    ]
+  },
+  {
+    "package": "field",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/field_1.0.1/src/field.js",
+        "lineno": "??",
+        "id": 289
+      }
+    ]
+  },
+  {
+    "package": "deep-get-set",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/deep-get-set_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 290
+      }
+    ]
+  },
+  {
+    "package": "json-pointer",
+    "version": "0.6.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/json-pointer_0.6.1/src/index.js",
+        "lineno": "??",
+        "id": 291
+      }
+    ]
+  },
+  {
+    "package": "deep-defaults",
+    "version": "1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/deep-defaults_1.0.5/src/index.js",
+        "lineno": "??",
+        "id": 292
+      }
+    ]
+  },
+  {
+    "package": "mithril",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
+        "lineno": "??",
+        "id": 293
+      }
+    ]
+  },
+  {
+    "package": "querymen",
+    "version": "2.1.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/querymen_2.1.3/src/index.js",
+        "lineno": "??",
+        "id": 294
+      }
+    ]
+  },
+  {
+    "package": "lodash",
+    "version": "4.17.10",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/lodash_4.17.10/src/lodash.js",
+        "lineno": "??",
+        "id": 295
+      }
+    ]
+  },
+  {
+    "package": "libnested",
+    "version": "1.5.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/libnested_1.5.0/src/index.js",
+        "lineno": "??",
+        "id": 296
+      }
+    ]
+  },
+  {
+    "package": "set-deep-prop",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/set-deep-prop_1.0.0/src/set-deep-prop.js",
+        "lineno": "??",
+        "id": 297
+      }
+    ]
+  },
+  {
+    "package": "rdf-graph-array",
+    "version": "0.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/rdf-graph-array_0.3.0/src/index.js",
+        "lineno": "??",
+        "id": 298
+      }
+    ]
+  },
+  {
+    "package": "defaults-deep",
+    "version": "0.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/defaults-deep_0.2.0/src/index.js",
+        "lineno": "??",
+        "id": 299
+      }
+    ]
+  },
+  {
+    "package": "json-schema",
+    "version": "0.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/json-schema_0.3.0/src/validate.js",
+        "lineno": "??",
+        "id": 300
+      }
+    ]
+  },
+  {
+    "package": "decal",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/decal_2.0.0/src/set.js",
+        "lineno": "??",
+        "id": 301
+      }
+    ]
+  },
+  {
+    "package": "vega-util",
+    "version": "1.13.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/vega-util_1.13.0/src/vega-util.js",
+        "lineno": "??",
+        "id": 302
+      }
+    ]
+  },
+  {
+    "package": "eivindfjeldstad-dot",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/eivindfjeldstad-dot_0.0.1/src/index.js",
+        "lineno": "??",
+        "id": 303
+      }
+    ]
+  },
+  {
+    "package": "dot-object",
+    "version": "2.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/dot-object_2.1.2/src/index.js",
+        "lineno": "??",
+        "id": 304
+      }
+    ]
+  },
+  {
+    "package": "bmoor",
+    "version": "0.8.11",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/bmoor_0.8.11/src/core.js",
+        "lineno": "??",
+        "id": 305
+      }
+    ]
+  },
+  {
+    "package": "linux-cmdline",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/linux-cmdline_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 306
+      }
+    ]
+  },
+  {
+    "package": "expand-hash",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/expand-hash_1.0.1/src/index.js",
+        "lineno": "??",
+        "id": 307
+      }
+    ]
+  },
+  {
+    "package": "component-flatten",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/component-flatten_1.0.1/src/index.js",
+        "lineno": "??",
+        "id": 308
+      }
+    ]
+  },
+  {
+    "package": "set-object-value",
+    "version": "0.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/set-object-value_0.0.5/src/index.js",
+        "lineno": "??",
+        "id": 309
+      }
+    ]
+  },
+  {
+    "package": "json8-merge-patch",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/json8-merge-patch_1.0.1/src/apply.js",
+        "lineno": "??",
+        "id": 310
+      }
+    ]
+  },
+  {
+    "package": "mootools",
+    "version": "1.5.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
+        "lineno": "??",
+        "id": 311
+      }
+    ]
+  },
+  {
+    "package": "simpl-schema",
+    "version": "1.10.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/simpl-schema_1.10.0/src/merge.js",
+        "lineno": "??",
+        "id": 312
+      }
+    ]
+  },
+  {
+    "package": "deep-set",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/deep-set_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 313
+      }
+    ]
+  },
+  {
+    "package": "copy-props",
+    "version": "2.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/copy-props_2.0.4/src/index.js",
+        "lineno": "??",
+        "id": 314
+      }
+    ]
+  },
+  {
+    "package": "safe-flat",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/safe-flat_2.0.0/src/index.js",
+        "lineno": "??",
+        "id": 315
+      }
+    ]
+  },
+  {
+    "package": "dot-notes",
+    "version": "3.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/dot-notes_3.2.0/src/create.js",
+        "lineno": "??",
+        "id": 316
+      }
+    ]
+  },
+  {
+    "package": "promisehelpers",
+    "version": "0.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/promisehelpers_0.0.5/src/index.js",
+        "lineno": "??",
+        "id": 317
+      }
+    ]
+  },
+  {
+    "package": "fast-json-patch",
+    "version": "2.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/fast-json-patch_2.0.4/src/core.js",
+        "lineno": "??",
+        "id": 318
+      }
+    ]
+  },
+  {
+    "package": "jsonpointer",
+    "version": "4.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/jsonpointer_4.0.0/src/jsonpointer.js",
+        "lineno": "??",
+        "id": 319
+      }
+    ]
+  },
+  {
+    "package": "node-forge",
+    "version": "0.9.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/node-forge_0.9.0/src/util.js",
+        "lineno": "??",
+        "id": 320
+      }
+    ]
+  },
+  {
+    "package": "jquery",
+    "version": "1.11.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/jquery_1.11.0/src/jquery.js",
+        "lineno": "??",
+        "id": 321
+      }
+    ]
+  },
+  {
+    "package": "yargs-parser",
+    "version": "6.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/yargs-parser_6.0.0/src/index.js",
+        "lineno": "??",
+        "id": 322
+      }
+    ]
+  },
+  {
+    "package": "object-path",
+    "version": "0.11.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/object-path_0.11.0/src/index.js",
+        "lineno": "??",
+        "id": 323
+      }
+    ]
+  },
+  {
+    "package": "doc-path",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/doc-path_2.0.0/src/path.js",
+        "lineno": "??",
+        "id": 324
+      }
+    ]
+  },
+  {
+    "package": "ion-parser",
+    "version": "0.5.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/ion-parser_0.5.2/src/parser.js",
+        "lineno": "??",
+        "id": 325
+      }
+    ]
+  },
+  {
+    "package": "y18n",
+    "version": "3.2.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/y18n_3.2.1/src/index.js",
+        "lineno": "??",
+        "id": 326
+      }
+    ]
+  },
+  {
+    "package": "node-extend",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/node-extend_1.0.0/src/extend.js",
+        "lineno": "??",
+        "id": 327
+      }
+    ]
+  },
+  {
+    "package": "object-path-set",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/object-path-set_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 328
+      }
+    ]
+  },
+  {
+    "package": "js",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/asciitable.js_1.0.2/src/asciitable.umd.js",
+        "lineno": "??",
+        "id": 329
+      }
+    ]
+  },
+  {
+    "package": "hoek",
+    "version": "5.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
+        "lineno": "??",
+        "id": 330
+      }
+    ]
+  },
+  {
+    "package": "deepmergefn",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/deepmergefn_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 331
+      }
+    ]
+  },
+  {
+    "package": "safetydance",
+    "version": "2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/safetydance_2.0.1/src/index.js",
+        "lineno": "??",
+        "id": 332
+      }
+    ]
+  },
+  {
+    "package": "node-dig",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/node-dig_1.0.1/src/index.js",
+        "lineno": "??",
+        "id": 333
+      }
+    ]
+  },
+  {
+    "package": "mquery",
+    "version": "3.2.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
+        "lineno": "??",
+        "id": 334
+      }
+    ]
+  },
+  {
+    "package": "node-oojs",
+    "version": "1.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/node-oojs_1.4.0/src/oojs.js",
+        "lineno": "??",
+        "id": 335
+      }
+    ]
+  },
+  {
+    "package": "properties-reader",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/properties-reader_2.0.0/src/properties-reader.js",
+        "lineno": "??",
+        "id": 336
+      }
+    ]
+  },
+  {
+    "package": "style-dictionary",
+    "version": "2.10.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/style-dictionary_2.10.2/src/deepExtend.js",
+        "lineno": "??",
+        "id": 337
+      }
+    ]
+  },
+  {
+    "package": "supermixer",
+    "version": "1.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/supermixer_1.0.3/src/mixer.js",
+        "lineno": "??",
+        "id": 338
+      }
+    ]
+  },
+  {
+    "package": "nis-utils",
+    "version": "0.6.10",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/nis-utils_0.6.10/src/object.js",
+        "lineno": "??",
+        "id": 339
+      }
+    ]
+  },
+  {
+    "package": "ini",
+    "version": "1.3.5",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/ini_1.3.5/src/ini.js",
+        "lineno": "??",
+        "id": 340
+      }
+    ]
+  },
+  {
+    "package": "objtools",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
+        "lineno": "??",
+        "id": 341
+      }
+    ]
+  },
+  {
+    "package": "x-assign",
+    "version": "0.1.4",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/x-assign_0.1.4/src/index.js",
+        "lineno": "??",
+        "id": 342
+      }
+    ]
+  },
+  {
+    "package": "objection",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/objection_2.0.0/src/objectUtils.js",
+        "lineno": "??",
+        "id": 343
+      }
+    ]
+  },
+  {
+    "package": "lodash",
+    "version": "4.17.15",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/lodash_4.17.15/src/lodash.js",
+        "lineno": "??",
+        "id": 344
+      }
+    ]
+  },
+  {
+    "package": "algoliasearch-helper",
+    "version": "3.6.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/algoliasearch-helper_3.6.0/src/merge.js",
+        "lineno": "??",
+        "id": 345
+      }
+    ]
+  },
+  {
+    "package": "merge-deep2",
+    "version": "3.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/merge-deep2_3.0.5/src/index.js",
+        "lineno": "??",
+        "id": 346
+      }
+    ]
+  },
+  {
+    "package": "extend-merge",
+    "version": "1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/extend-merge_1.0.5/src/base-extend.js",
+        "lineno": "??",
+        "id": 347
+      }
+    ]
+  },
+  {
+    "package": "grunt-util-property",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/grunt-util-property_0.0.2/src/main.js",
+        "lineno": "??",
+        "id": 348
+      }
+    ]
+  },
+  {
+    "package": "dot-prop",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/dot-prop_2.0.0/src/index.js",
+        "lineno": "??",
+        "id": 349
+      }
+    ]
+  },
+  {
+    "package": "tiny-conf",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/tiny-conf_1.1.0/src/tiny-conf.js",
+        "lineno": "??",
+        "id": 350
+      }
+    ]
+  },
+  {
+    "package": "just-safe-set",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/just-safe-set_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 351
+      }
+    ]
+  },
+  {
+    "package": "json-pointer",
+    "version": "0.6.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/json-pointer_0.6.0/src/index.js",
+        "lineno": "??",
+        "id": 352
+      }
+    ]
+  },
+  {
+    "package": "shvl",
+    "version": "2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/shvl_2.0.1/src/index.js",
+        "lineno": "??",
+        "id": 353
+      }
+    ]
+  },
+  {
+    "package": "deeps",
+    "version": "1.4.5",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/deeps_1.4.5/src/index.js",
+        "lineno": "??",
+        "id": 354
+      }
+    ]
+  },
+  {
+    "package": "think-helper",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/think-helper_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 355
+      }
+    ]
+  },
+  {
+    "package": "convict",
+    "version": "6.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/convict_6.0.0/src/main.js",
+        "lineno": "??",
+        "id": 356
+      }
+    ]
+  },
+  {
+    "package": "dset",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/dset_1.0.0/src/dset.js",
+        "lineno": "??",
+        "id": 357
+      }
+    ]
+  },
+  {
+    "package": "objutil",
+    "version": "2.17.3",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/objutil_2.17.3/src/objutil.cjs.js",
+        "lineno": "??",
+        "id": 358
+      }
+    ]
+  },
+  {
+    "package": "worksmith",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/worksmith_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 359
+      }
+    ]
+  },
+  {
+    "package": "putil-merge",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-471",
+        "filename": "secbench-dataset/CWE-471/putil-merge_3.0.0/src/merge.js",
+        "lineno": "??",
+        "id": 360
+      }
+    ]
+  },
+  {
+    "package": "lihuini",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/lihuini_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 361
+      }
+    ]
+  },
+  {
+    "package": "caihong",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/caihong_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 362
+      }
+    ]
+  },
+  {
+    "package": "crud-file-server",
+    "version": "0.7.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
+        "lineno": "??",
+        "id": 363
+      }
+    ]
+  },
+  {
+    "package": "infraserver",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/infraserver_0.0.1/src/Infra.data.js",
+        "lineno": "??",
+        "id": 364
+      }
+    ]
+  },
+  {
+    "package": "node-staticserver",
+    "version": "1.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/node-staticserver_1.0.3/src/server.js",
+        "lineno": "??",
+        "id": 365
+      }
+    ]
+  },
+  {
+    "package": "susu-sum",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/susu-sum_1.0.0/src/node.js",
+        "lineno": "??",
+        "id": 366
+      }
+    ]
+  },
+  {
+    "package": "angular-http-server",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/angular-http-server_1.0.0/src/angular-http-server.js",
+        "lineno": "??",
+        "id": 367
+      }
+    ]
+  },
+  {
+    "package": "der-server",
+    "version": "0.0.9",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/der-server_0.0.9/src/der-server.js",
+        "lineno": "??",
+        "id": 368
+      }
+    ]
+  },
+  {
+    "package": "m-server",
+    "version": "1.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/m-server_1.4.0/src/index.js",
+        "lineno": "??",
+        "id": 369
+      }
+    ]
+  },
+  {
+    "package": "gfm-srv",
+    "version": "1.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/gfm-srv_1.1.2/src/server.js",
+        "lineno": "??",
+        "id": 370
+      }
+    ]
+  },
+  {
+    "package": "wenluhong11",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wenluhong11_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 371
+      }
+    ]
+  },
+  {
+    "package": "zhangranbigman",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/zhangranbigman_0.0.1/src/static.js",
+        "lineno": "??",
+        "id": 372
+      }
+    ]
+  },
+  {
+    "package": "yzt",
+    "version": "1.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/yzt_1.4.0/src/node.js",
+        "lineno": "??",
+        "id": 373
+      }
+    ]
+  },
+  {
+    "package": "caolilinode",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/caolilinode_1.0.0/src/caolili.js",
+        "lineno": "??",
+        "id": 374
+      }
+    ]
+  },
+  {
+    "package": "wffserve",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wffserve_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 375
+      }
+    ]
+  },
+  {
+    "package": "wenluhong1",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wenluhong1_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 376
+      }
+    ]
+  },
+  {
+    "package": "intsol-package",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/intsol-package_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 377
+      }
+    ]
+  },
+  {
+    "package": "fbr-client",
+    "version": "1.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/fbr-client_1.0.3/src/server.js",
+        "lineno": "??",
+        "id": 378
+      }
+    ]
+  },
+  {
+    "package": "ex-http-frame",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/ex-http-frame_1.0.2/src/res.js",
+        "lineno": "??",
+        "id": 379
+      }
+    ]
+  },
+  {
+    "package": "songcaihong",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/songcaihong_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 380
+      }
+    ]
+  },
+  {
+    "package": "fsk-server",
+    "version": "0.2.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/fsk-server_0.2.1/src/index.js",
+        "lineno": "??",
+        "id": 381
+      }
+    ]
+  },
+  {
+    "package": "http-file-server",
+    "version": "0.2.6",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/http-file-server_0.2.6/src/http-file-server.js",
+        "lineno": "??",
+        "id": 382
+      }
+    ]
+  },
+  {
+    "package": "serverzyqzyq",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverzyqzyq_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 383
+      }
+    ]
+  },
+  {
+    "package": "cuciuci",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/cuciuci_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 384
+      }
+    ]
+  },
+  {
+    "package": "wuzhuangserver",
+    "version": "1.8.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wuzhuangserver_1.8.0/src/index.js",
+        "lineno": "??",
+        "id": 385
+      }
+    ]
+  },
+  {
+    "package": "lzl123",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/lzl123_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 386
+      }
+    ]
+  },
+  {
+    "package": "nitro-server",
+    "version": "1.3.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/nitro-server_1.3.3/src/server.js",
+        "lineno": "??",
+        "id": 387
+      }
+    ]
+  },
+  {
+    "package": "serverhuwenhui",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverhuwenhui_1.1.0/src/node.js",
+        "lineno": "??",
+        "id": 388
+      }
+    ]
+  },
+  {
+    "package": "serve46",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serve46_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 389
+      }
+    ]
+  },
+  {
+    "package": "servey",
+    "version": "2.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/servey_2.2.0/src/index.js",
+        "lineno": "??",
+        "id": 390
+      }
+    ]
+  },
+  {
+    "package": "vivaxy-here",
+    "version": "3.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/@vivaxy-here_3.1.0/src/read-file.js",
+        "lineno": "??",
+        "id": 391
+      }
+    ]
+  },
+  {
+    "package": "node-http-server",
+    "version": "8.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/node-http-server_8.1.2/src/Server.js",
+        "lineno": "??",
+        "id": 392
+      }
+    ]
+  },
+  {
+    "package": "easy-node-server",
+    "version": "1.2.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/easy-node-server_1.2.1/src/index.js",
+        "lineno": "??",
+        "id": 393
+      }
+    ]
+  },
+  {
+    "package": "server12311",
+    "version": "1.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/server12311_1.2.0/src/index.js",
+        "lineno": "??",
+        "id": 394
+      }
+    ]
+  },
+  {
+    "package": "mfrserver",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/mfrserver_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 395
+      }
+    ]
+  },
+  {
+    "package": "hftp",
+    "version": "0.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/hftp_0.0.6/src/static_server.js",
+        "lineno": "??",
+        "id": 396
+      }
+    ]
+  },
+  {
+    "package": "js",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/ltt.js_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 397
+      }
+    ]
+  },
+  {
+    "package": "looppake",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/looppake_3.0.0/src/index.js",
+        "lineno": "??",
+        "id": 398
+      }
+    ]
+  },
+  {
+    "package": "tinyserver2",
+    "version": "0.5.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/tinyserver2_0.5.2/src/tinyserver.js",
+        "lineno": "??",
+        "id": 399
+      }
+    ]
+  },
+  {
+    "package": "wintiwebdev",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wintiwebdev_1.0.0/src/app.js",
+        "lineno": "??",
+        "id": 400
+      }
+    ]
+  },
+  {
+    "package": "liuyaserver",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/liuyaserver_1.0.0/src/node.js",
+        "lineno": "??",
+        "id": 401
+      }
+    ]
+  },
+  {
+    "package": "api-proxy",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/api-proxy_0.0.2/src/static.js",
+        "lineno": "??",
+        "id": 402
+      }
+    ]
+  },
+  {
+    "package": "uekw1511server",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/uekw1511server_1.0.1/src/index.js",
+        "lineno": "??",
+        "id": 403
+      }
+    ]
+  },
+  {
+    "package": "shenliru3",
+    "version": "1.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/shenliru3_1.3.0/src/index.js",
+        "lineno": "??",
+        "id": 404
+      }
+    ]
+  },
+  {
+    "package": "caolilinode1",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/caolilinode1_1.0.0/src/caolili.js",
+        "lineno": "??",
+        "id": 405
+      }
+    ]
+  },
+  {
+    "package": "xxf11",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/xxf11_1.0.1/src/index.js",
+        "lineno": "??",
+        "id": 406
+      }
+    ]
+  },
+  {
+    "package": "myserve111",
+    "version": "1.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/myserve111_1.1.2/src/index.js",
+        "lineno": "??",
+        "id": 407
+      }
+    ]
+  },
+  {
+    "package": "augustine",
+    "version": "0.2.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/augustine_0.2.3/src/index.js",
+        "lineno": "??",
+        "id": 408
+      }
+    ]
+  },
+  {
+    "package": "paopao613",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/paopao613_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 409
+      }
+    ]
+  },
+  {
+    "package": "wangshuai",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wangshuai_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 410
+      }
+    ]
+  },
+  {
+    "package": "peiserver",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/peiserver_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 411
+      }
+    ]
+  },
+  {
+    "package": "lander",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/lander_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 412
+      }
+    ]
+  },
+  {
+    "package": "rtcmulticonnection-client",
+    "version": "1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/rtcmulticonnection-client_1.0.5/src/server.js",
+        "lineno": "??",
+        "id": 413
+      }
+    ]
+  },
+  {
+    "package": "express-blinker",
+    "version": "0.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/express-blinker_0.0.6/src/index.js",
+        "lineno": "??",
+        "id": 414
+      }
+    ]
+  },
+  {
+    "package": "serverfff",
+    "version": "1.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverfff_1.1.1/src/index.js",
+        "lineno": "??",
+        "id": 415
+      }
+    ]
+  },
+  {
+    "package": "serverliujiayi1",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverliujiayi1_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 416
+      }
+    ]
+  },
+  {
+    "package": "ussasasa",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/ussasasa_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 417
+      }
+    ]
+  },
+  {
+    "package": "fakelearnnodejs",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/fakelearnnodejs_0.0.1/src/app.js",
+        "lineno": "??",
+        "id": 418
+      }
+    ]
+  },
+  {
+    "package": "mfrs",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/mfrs_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 419
+      }
+    ]
+  },
+  {
+    "package": "node-simple-router",
+    "version": "0.10.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
+        "lineno": "??",
+        "id": 420
+      }
+    ]
+  },
+  {
+    "package": "node-srv",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/node-srv_2.0.0/src/server.js",
+        "lineno": "??",
+        "id": 421
+      }
+    ]
+  },
+  {
+    "package": "gaoxuyan",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/gaoxuyan_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 422
+      }
+    ]
+  },
+  {
+    "package": "hostr",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/hostr_2.0.0/src/static.js",
+        "lineno": "??",
+        "id": 423
+      }
+    ]
+  },
+  {
+    "package": "shit-server",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/shit-server_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 424
+      }
+    ]
+  },
+  {
+    "package": "node-cxc",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/node-cxc_1.0.0/src/app.js",
+        "lineno": "??",
+        "id": 425
+      }
+    ]
+  },
+  {
+    "package": "datachannel-client",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/datachannel-client_1.0.2/src/server.js",
+        "lineno": "??",
+        "id": 426
+      }
+    ]
+  },
+  {
+    "package": "zwserver",
+    "version": "0.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/zwserver_0.1.1/src/server.js",
+        "lineno": "??",
+        "id": 427
+      }
+    ]
+  },
+  {
+    "package": "serverzyy",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverzyy_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 428
+      }
+    ]
+  },
+  {
+    "package": "myprolyz",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/myprolyz_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 429
+      }
+    ]
+  },
+  {
+    "package": "tinyserver",
+    "version": "0.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/tinyserver_0.1.1/src/main.js",
+        "lineno": "??",
+        "id": 430
+      }
+    ]
+  },
+  {
+    "package": "sgqserve",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/sgqserve_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 431
+      }
+    ]
+  },
+  {
+    "package": "severzlt",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/severzlt_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 432
+      }
+    ]
+  },
+  {
+    "package": "yyooopack",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/yyooopack_3.0.0/src/node.js",
+        "lineno": "??",
+        "id": 433
+      }
+    ]
+  },
+  {
+    "package": "xbhxbh",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/xbhxbh_1.1.0/src/xbh.js",
+        "lineno": "??",
+        "id": 434
+      }
+    ]
+  },
+  {
+    "package": "yjmyjmyjm",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/yjmyjmyjm_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 435
+      }
+    ]
+  },
+  {
+    "package": "rollup-plugin-server",
+    "version": "0.7.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
+        "lineno": "??",
+        "id": 436
+      }
+    ]
+  },
+  {
+    "package": "ptest",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/ptest_1.0.0/src/server.js",
+        "lineno": "??",
+        "id": 437
+      }
+    ]
+  },
+  {
+    "package": "dcdcdcdcdc",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/dcdcdcdcdc_1.0.0/src/node.js",
+        "lineno": "??",
+        "id": 438
+      }
+    ]
+  },
+  {
+    "package": "rollup-plugin-serve-favicon",
+    "version": "0.4.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/rollup-plugin-serve-favicon_0.4.2/src/index.cjs.js",
+        "lineno": "??",
+        "id": 439
+      }
+    ]
+  },
+  {
+    "package": "rjpserver",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/rjpserver_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 440
+      }
+    ]
+  },
+  {
+    "package": "servershuai",
+    "version": "1.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/servershuai_1.2.0/src/index.js",
+        "lineno": "??",
+        "id": 441
+      }
+    ]
+  },
+  {
+    "package": "js",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serve-here.js_1.1.0/src/server.js",
+        "lineno": "??",
+        "id": 442
+      }
+    ]
+  },
+  {
+    "package": "simple-mock-server",
+    "version": "0.2.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/simple-mock-server_0.2.1/src/simple-mock-server.js",
+        "lineno": "??",
+        "id": 443
+      }
+    ]
+  },
+  {
+    "package": "webrepl",
+    "version": "0.4.7",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/webrepl_0.4.7/src/webrepl.js",
+        "lineno": "??",
+        "id": 444
+      }
+    ]
+  },
+  {
+    "package": "fast-http",
+    "version": "0.1.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/fast-http_0.1.3/src/index.js",
+        "lineno": "??",
+        "id": 445
+      }
+    ]
+  },
+  {
+    "package": "nodeaaaaa",
+    "version": "1.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/nodeaaaaa_1.3.0/src/index.js",
+        "lineno": "??",
+        "id": 446
+      }
+    ]
+  },
+  {
+    "package": "stattic",
+    "version": "0.2.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/stattic_0.2.3/src/index.js",
+        "lineno": "??",
+        "id": 447
+      }
+    ]
+  },
+  {
+    "package": "server",
+    "version": "0.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
+        "lineno": "??",
+        "id": 448
+      }
+    ]
+  },
+  {
+    "package": "wind-mvc",
+    "version": "0.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js",
+        "lineno": "??",
+        "id": 449
+      }
+    ]
+  },
+  {
+    "package": "glance",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/glance_3.0.0/src/index.js",
+        "lineno": "??",
+        "id": 450
+      }
+    ]
+  },
+  {
+    "package": "wuzhuang",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wuzhuang_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 451
+      }
+    ]
+  },
+  {
+    "package": "static-html-server",
+    "version": "0.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/static-html-server_0.1.2/src/static-html-server.js",
+        "lineno": "??",
+        "id": 452
+      }
+    ]
+  },
+  {
+    "package": "gamebutler",
+    "version": "1.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/gamebutler_1.0.4/src/gamebutler.js",
+        "lineno": "??",
+        "id": 453
+      }
+    ]
+  },
+  {
+    "package": "rollup-plugin-serve",
+    "version": "0.4.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/rollup-plugin-serve_0.4.2/src/index.cjs.js",
+        "lineno": "??",
+        "id": 454
+      }
+    ]
+  },
+  {
+    "package": "nodejsccc",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/nodejsccc_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 455
+      }
+    ]
+  },
+  {
+    "package": "lessindex",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/lessindex_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 456
+      }
+    ]
+  },
+  {
+    "package": "serverlyj333",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverlyj333_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 457
+      }
+    ]
+  },
+  {
+    "package": "dilu",
+    "version": "0.1.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/dilu_0.1.3/src/get.js",
+        "lineno": "??",
+        "id": 458
+      }
+    ]
+  },
+  {
+    "package": "serverxh",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverxh_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 459
+      }
+    ]
+  },
+  {
+    "package": "cyber-js",
+    "version": "1.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/cyber-js_1.0.6/src/app.js",
+        "lineno": "??",
+        "id": 460
+      }
+    ]
+  },
+  {
+    "package": "serversyysyy",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serversyysyy_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 461
+      }
+    ]
+  },
+  {
+    "package": "my-sn",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/my-sn_1.0.1/src/server.js",
+        "lineno": "??",
+        "id": 462
+      }
+    ]
+  },
+  {
+    "package": "welcomyzt",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/welcomyzt_1.1.0/src/node.js",
+        "lineno": "??",
+        "id": 463
+      }
+    ]
+  },
+  {
+    "package": "asset-cache",
+    "version": "0.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/asset-cache_0.0.6/src/asset-cache.js",
+        "lineno": "??",
+        "id": 464
+      }
+    ]
+  },
+  {
+    "package": "canvas-designer",
+    "version": "1.2.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/canvas-designer_1.2.1/src/server.js",
+        "lineno": "??",
+        "id": 465
+      }
+    ]
+  },
+  {
+    "package": "pytservce",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 466
+      }
+    ]
+  },
+  {
+    "package": "hdsdhhksjd",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/hdsdhhksjd_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 467
+      }
+    ]
+  },
+  {
+    "package": "pico-static-server",
+    "version": "2.3.4",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/pico-static-server_2.3.4/src/index.js",
+        "lineno": "??",
+        "id": 468
+      }
+    ]
+  },
+  {
+    "package": "cxy",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/cxy_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 469
+      }
+    ]
+  },
+  {
+    "package": "basic-static",
+    "version": "2.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/basic-static_2.0.2/src/basic-static.js",
+        "lineno": "??",
+        "id": 470
+      }
+    ]
+  },
+  {
+    "package": "shenliru",
+    "version": "1.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/shenliru_1.2.0/src/index.js",
+        "lineno": "??",
+        "id": 471
+      }
+    ]
+  },
+  {
+    "package": "node-static-webserver",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/node-static-webserver_0.0.1/src/node-static-webserver.js",
+        "lineno": "??",
+        "id": 472
+      }
+    ]
+  },
+  {
+    "package": "zs123",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/zs123_1.0.0/src/node.js",
+        "lineno": "??",
+        "id": 473
+      }
+    ]
+  },
+  {
+    "package": "ltt",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/ltt_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 474
+      }
+    ]
+  },
+  {
+    "package": "cuiaiguang",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/cuiaiguang_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 475
+      }
+    ]
+  },
+  {
+    "package": "hangersteak",
+    "version": "0.2.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/hangersteak_0.2.2/src/hangersteak.js",
+        "lineno": "??",
+        "id": 476
+      }
+    ]
+  },
+  {
+    "package": "zxyserver",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/zxyserver_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 477
+      }
+    ]
+  },
+  {
+    "package": "serveryaozeyan",
+    "version": "1.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serveryaozeyan_1.0.4/src/index.js",
+        "lineno": "??",
+        "id": 478
+      }
+    ]
+  },
+  {
+    "package": "zhaolei1111",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/zhaolei1111_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 479
+      }
+    ]
+  },
+  {
+    "package": "yxxserver",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/yxxserver_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 480
+      }
+    ]
+  },
+  {
+    "package": "serverabc",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverabc_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 481
+      }
+    ]
+  },
+  {
+    "package": "srverqq",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/srverqq_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 482
+      }
+    ]
+  },
+  {
+    "package": "ljjnodeserve",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/ljjnodeserve_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 483
+      }
+    ]
+  },
+  {
+    "package": "rollup-plugin-dev-server",
+    "version": "0.4.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/rollup-plugin-dev-server_0.4.3/src/index.cjs.js",
+        "lineno": "??",
+        "id": 484
+      }
+    ]
+  },
+  {
+    "package": "bitty",
+    "version": "0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/bitty_0.1.0/src/index.js",
+        "lineno": "??",
+        "id": 485
+      }
+    ]
+  },
+  {
+    "package": "liyujing",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/liyujing_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 486
+      }
+    ]
+  },
+  {
+    "package": "xingbaohai",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/xingbaohai_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 487
+      }
+    ]
+  },
+  {
+    "package": "mcstatic",
+    "version": "0.0.20",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/mcstatic_0.0.20/src/responseHandlers.js",
+        "lineno": "??",
+        "id": 488
+      }
+    ]
+  },
+  {
+    "package": "ritp",
+    "version": "1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/ritp_1.0.5/src/index.js",
+        "lineno": "??",
+        "id": 489
+      }
+    ]
+  },
+  {
+    "package": "cypserver",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/cypserver_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 490
+      }
+    ]
+  },
+  {
+    "package": "serveryyl",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serveryyl_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 491
+      }
+    ]
+  },
+  {
+    "package": "run-this-place",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/run-this-place_1.0.2/src/index.js",
+        "lineno": "??",
+        "id": 492
+      }
+    ]
+  },
+  {
+    "package": "dylmomo",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/dylmomo_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 493
+      }
+    ]
+  },
+  {
+    "package": "gyfserver",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/gyfserver_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 494
+      }
+    ]
+  },
+  {
+    "package": "servergmf",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/servergmf_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 495
+      }
+    ]
+  },
+  {
+    "package": "serverxxx",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverxxx_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 496
+      }
+    ]
+  },
+  {
+    "package": "httpea",
+    "version": "3.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/httpea_3.0.4/src/index.js",
+        "lineno": "??",
+        "id": 497
+      }
+    ]
+  },
+  {
+    "package": "11xiaoli",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/11xiaoli_1.1.0/src/dome.js",
+        "lineno": "??",
+        "id": 498
+      }
+    ]
+  },
+  {
+    "package": "servewuqianqianqian",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/servewuqianqianqian_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 499
+      }
+    ]
+  },
+  {
+    "package": "serveryztyzt",
+    "version": "1.4.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serveryztyzt_1.4.0/src/node.js",
+        "lineno": "??",
+        "id": 500
+      }
+    ]
+  },
+  {
+    "package": "getstats",
+    "version": "1.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/getstats_1.0.6/src/server.js",
+        "lineno": "??",
+        "id": 501
+      }
+    ]
+  },
+  {
+    "package": "wenluhong111",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wenluhong111_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 502
+      }
+    ]
+  },
+  {
+    "package": "wrlc",
+    "version": "0.2.5",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
+        "lineno": "??",
+        "id": 503
+      }
+    ]
+  },
+  {
+    "package": "statichttpserver",
+    "version": "0.9.7",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/statichttpserver_0.9.7/src/respond.js",
+        "lineno": "??",
+        "id": 504
+      }
+    ]
+  },
+  {
+    "package": "file-static-server",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/file-static-server_1.0.2/src/file.js",
+        "lineno": "??",
+        "id": 505
+      }
+    ]
+  },
+  {
+    "package": "open-device",
+    "version": "4.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/open-device_4.0.1/src/server-accessible.js",
+        "lineno": "??",
+        "id": 506
+      }
+    ]
+  },
+  {
+    "package": "exxxxxxxxxxx",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/exxxxxxxxxxx_1.0.2/src/res.js",
+        "lineno": "??",
+        "id": 507
+      }
+    ]
+  },
+  {
+    "package": "serverwzl",
+    "version": "1.3.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverwzl_1.3.1/src/index.js",
+        "lineno": "??",
+        "id": 508
+      }
+    ]
+  },
+  {
+    "package": "serverlyr",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverlyr_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 509
+      }
+    ]
+  },
+  {
+    "package": "goserv",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/goserv_1.0.0/src/goserv.js",
+        "lineno": "??",
+        "id": 510
+      }
+    ]
+  },
+  {
+    "package": "zhanglina",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/zhanglina_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 511
+      }
+    ]
+  },
+  {
+    "package": "static-server-gx",
+    "version": "1.2.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/static-server-gx_1.2.1/src/server.js",
+        "lineno": "??",
+        "id": 512
+      }
+    ]
+  },
+  {
+    "package": "22lixian",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/22lixian_1.0.0/src/demo.js",
+        "lineno": "??",
+        "id": 513
+      }
+    ]
+  },
+  {
+    "package": "yypsulie11",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/yypsulie11_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 514
+      }
+    ]
+  },
+  {
+    "package": "gaoxiaotingtingting",
+    "version": "1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/gaoxiaotingtingting_1.1.0/src/index.js",
+        "lineno": "??",
+        "id": 515
+      }
+    ]
+  },
+  {
+    "package": "zjjserver",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 516
+      }
+    ]
+  },
+  {
+    "package": "serverwg",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/serverwg_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 517
+      }
+    ]
+  },
+  {
+    "package": "web-node-server",
+    "version": "0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/web-node-server_0.1.0/src/nodeserver.js",
+        "lineno": "??",
+        "id": 518
+      }
+    ]
+  },
+  {
+    "package": "statics-server",
+    "version": "0.0.9",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/statics-server_0.0.9/src/index.js",
+        "lineno": "??",
+        "id": 519
+      }
+    ]
+  },
+  {
+    "package": "isv-http",
+    "version": "0.0.9",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/isv-http_0.0.9/src/index.js",
+        "lineno": "??",
+        "id": 520
+      }
+    ]
+  },
+  {
+    "package": "proxey",
+    "version": "0.4.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "secbench-dataset/CWE-22/proxey_0.4.2/src/proxey.js",
+        "lineno": "??",
+        "id": 521
+      }
+    ]
+  },
+  {
+    "package": "freespace",
+    "version": "1.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/freespace_1.0.4/src/index.js",
+        "lineno": "??",
+        "id": 522
+      }
+    ]
+  },
+  {
+    "package": "node-unrar",
+    "version": "0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/node-unrar_0.1.0/src/index.js",
+        "lineno": "??",
+        "id": 523
+      }
+    ]
+  },
+  {
+    "package": "get-npm-package-version",
+    "version": "1.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/get-npm-package-version_1.0.6/src/index.js",
+        "lineno": "??",
+        "id": 524
+      }
+    ]
+  },
+  {
+    "package": "ts-process-promises",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
+        "lineno": "??",
+        "id": 525
+      }
+    ]
+  },
+  {
+    "package": "compass-compile",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/compass-compile_0.0.1/src/compass.js",
+        "lineno": "??",
+        "id": 526
+      }
+    ]
+  },
+  {
+    "package": "extra-asciinema",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 527
+      }
+    ]
+  },
+  {
+    "package": "async-git",
+    "version": "1.13.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/async-git_1.13.1/src/index.js",
+        "lineno": "??",
+        "id": 528
+      }
+    ]
+  },
+  {
+    "package": "gitblame",
+    "version": "0.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/gitblame_0.1.1/src/gitblame.js",
+        "lineno": "??",
+        "id": 529
+      }
+    ]
+  },
+  {
+    "package": "git-lib",
+    "version": "1.6.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/git-lib_1.6.0/src/git.js",
+        "lineno": "??",
+        "id": 530
+      }
+    ]
+  },
+  {
+    "package": "lsof",
+    "version": "0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
+        "lineno": "??",
+        "id": 531
+      }
+    ]
+  },
+  {
+    "package": "im-resize",
+    "version": "2.3.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/im-resize_2.3.2/src/index.js",
+        "lineno": "??",
+        "id": 532
+      }
+    ]
+  },
+  {
+    "package": "strider-git",
+    "version": "1.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/strider-git_1.0.3/src/index.js",
+        "lineno": "??",
+        "id": 533
+      }
+    ]
+  },
+  {
+    "package": "js",
+    "version": "3.4.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "lineno": "??",
+        "id": 534
+      }
+    ]
+  },
+  {
+    "package": "theme-core",
+    "version": "0.2.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
+        "lineno": "??",
+        "id": 535
+      }
+    ]
+  },
+  {
+    "package": "xopen",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/xopen_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 536
+      }
+    ]
+  },
+  {
+    "package": "find-process",
+    "version": "1.4.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/find-process_1.4.4/src/utils.js",
+        "lineno": "??",
+        "id": 537
+      }
+    ]
+  },
+  {
+    "package": "macfromip",
+    "version": "1.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/macfromip_1.1.1/src/macfromip.js",
+        "lineno": "??",
+        "id": 538
+      }
+    ]
+  },
+  {
+    "package": "apiconnect-cli-plugins",
+    "version": "6.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "lineno": "??",
+        "id": 539
+      }
+    ]
+  },
+  {
+    "package": "im-metadata",
+    "version": "3.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/im-metadata_3.0.1/src/index.js",
+        "lineno": "??",
+        "id": 540
+      }
+    ]
+  },
+  {
+    "package": "wincred",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/wincred_1.0.2/src/index.js",
+        "lineno": "??",
+        "id": 541
+      }
+    ]
+  },
+  {
+    "package": "bestzip",
+    "version": "2.1.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/bestzip_2.1.6/src/bestzip.js",
+        "lineno": "??",
+        "id": 542
+      }
+    ]
+  },
+  {
+    "package": "kill-process-by-name",
+    "version": "1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/kill-process-by-name_1.0.5/src/index.js",
+        "lineno": "??",
+        "id": 543
+      }
+    ]
+  },
+  {
+    "package": "node-ps",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/node-ps_0.0.2/src/index.js",
+        "lineno": "??",
+        "id": 544
+      }
+    ]
+  },
+  {
+    "package": "libnmap",
+    "version": "0.4.11",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/libnmap_0.4.11/src/tools.js",
+        "lineno": "??",
+        "id": 545
+      }
+    ]
+  },
+  {
+    "package": "portprocesses",
+    "version": "1.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/portprocesses_1.0.4/src/exec.js",
+        "lineno": "??",
+        "id": 546
+      }
+    ]
+  },
+  {
+    "package": "scp",
+    "version": "0.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/scp_0.0.3/src/scp.js",
+        "lineno": "??",
+        "id": 547
+      }
+    ]
+  },
+  {
+    "package": "pdf-image",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
+        "lineno": "??",
+        "id": 548
+      }
+    ]
+  },
+  {
+    "package": "ffmpeg-sdk",
+    "version": "0.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/ffmpeg-sdk_0.0.5/src/index.js",
+        "lineno": "??",
+        "id": 549
+      }
+    ]
+  },
+  {
+    "package": "node-latex-pdf",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/node-latex-pdf_0.0.2/src/node-latex-pdf.js",
+        "lineno": "??",
+        "id": 550
+      }
+    ]
+  },
+  {
+    "package": "curling",
+    "version": "0.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/curling_0.2.0/src/curl-transport.js",
+        "lineno": "??",
+        "id": 551
+      }
+    ]
+  },
+  {
+    "package": "connection-tester",
+    "version": "0.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/connection-tester_0.2.0/src/index.js",
+        "lineno": "??",
+        "id": 552
+      }
+    ]
+  },
+  {
+    "package": "growl",
+    "version": "1.9.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/growl_1.9.0/src/growl.js",
+        "lineno": "??",
+        "id": 553
+      }
+    ]
+  },
+  {
+    "package": "buns",
+    "version": "1.1.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/buns_1.1.6/src/index.js",
+        "lineno": "??",
+        "id": 554
+      }
+    ]
+  },
+  {
+    "package": "killport",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/killport_1.0.1/src/index.js",
+        "lineno": "??",
+        "id": 555
+      }
+    ]
+  },
+  {
+    "package": "deferred-exec",
+    "version": "0.3.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "lineno": "??",
+        "id": 556
+      }
+    ]
+  },
+  {
+    "package": "ng-egf",
+    "version": "0.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/thi.ng-egf_0.3.0/src/index.js",
+        "lineno": "??",
+        "id": 557
+      }
+    ]
+  },
+  {
+    "package": "xps",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/xps_1.0.2/src/utils.js",
+        "lineno": "??",
+        "id": 558
+      }
+    ]
+  },
+  {
+    "package": "wc-cmd",
+    "version": "1.0.9",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/wc-cmd_1.0.9/src/index.js",
+        "lineno": "??",
+        "id": 559
+      }
+    ]
+  },
+  {
+    "package": "geojson2kml",
+    "version": "0.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/geojson2kml_0.1.1/src/index.js",
+        "lineno": "??",
+        "id": 560
+      }
+    ]
+  },
+  {
+    "package": "ffmpegdotjs",
+    "version": "0.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "lineno": "??",
+        "id": 561
+      }
+    ]
+  },
+  {
+    "package": "git-tags-remote",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/git-tags-remote_1.0.2/src/index.js",
+        "lineno": "??",
+        "id": 562
+      }
+    ]
+  },
+  {
+    "package": "node-mpv",
+    "version": "0.12.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/node-mpv_0.12.2/src/mpv.js",
+        "lineno": "??",
+        "id": 563
+      }
+    ]
+  },
+  {
+    "package": "npm-help",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/npm-help_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 564
+      }
+    ]
+  },
+  {
+    "package": "npm-git-publish",
+    "version": "0.2.4-beta",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
+        "lineno": "??",
+        "id": 565
+      }
+    ]
+  },
+  {
+    "package": "eslint-fixer",
+    "version": "0.1.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/eslint-fixer_0.1.5/src/index.js",
+        "lineno": "??",
+        "id": 566
+      }
+    ]
+  },
+  {
+    "package": "gry",
+    "version": "5.0.8",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/gry_5.0.8/src/index.js",
+        "lineno": "??",
+        "id": 567
+      }
+    ]
+  },
+  {
+    "package": "google-cloudstorage-commands",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/google-cloudstorage-commands_0.0.1/src/index.js",
+        "lineno": "??",
+        "id": 568
+      }
+    ]
+  },
+  {
+    "package": "ps-kill",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/ps-kill_1.0.0/src/index.js",
+        "lineno": "??",
+        "id": 569
+      }
+    ]
+  },
+  {
+    "package": "react-dev-utils",
+    "version": "11.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
+        "lineno": "??",
+        "id": 570
+      }
+    ]
+  },
+  {
+    "package": "giting",
+    "version": "0.0.7",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/giting_0.0.7/src/git.js",
+        "lineno": "??",
+        "id": 571
+      }
+    ]
+  },
+  {
+    "package": "curljs",
+    "version": "0.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/curljs_0.1.2/src/index.js",
+        "lineno": "??",
+        "id": 572
+      }
+    ]
+  },
+  {
+    "package": "kill-port-process",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/kill-port-process_0.0.1/src/index.js",
+        "lineno": "??",
+        "id": 573
+      }
+    ]
+  },
+  {
+    "package": "psnode",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/psnode_0.0.1/src/index.js",
+        "lineno": "??",
+        "id": 574
+      }
+    ]
+  },
+  {
+    "package": "port-killer",
+    "version": "1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/port-killer_1.0.1/src/index.js",
+        "lineno": "??",
+        "id": 575
+      }
+    ]
+  },
+  {
+    "package": "apex-publish-static-files",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/apex-publish-static-files_2.0.0/src/index.js",
+        "lineno": "??",
+        "id": 576
+      }
+    ]
+  },
+  {
+    "package": "onion-oled-js",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
+        "lineno": "??",
+        "id": 577
+      }
+    ]
+  },
+  {
+    "package": "arpping",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/arpping_2.0.0/src/index.js",
+        "lineno": "??",
+        "id": 578
+      }
+    ]
+  },
+  {
+    "package": "diskusage-ng",
+    "version": "0.2.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/diskusage-ng_0.2.6/src/posix.js",
+        "lineno": "??",
+        "id": 579
+      }
+    ]
+  },
+  {
+    "package": "adb-driver",
+    "version": "0.1.8",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/adb-driver_0.1.8/src/AdbDriver.js",
+        "lineno": "??",
+        "id": 580
+      }
+    ]
+  },
+  {
+    "package": "pidusage",
+    "version": "1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
+        "lineno": "??",
+        "id": 581
+      }
+    ]
+  },
+  {
+    "package": "local-devices",
+    "version": "2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/local-devices_2.0.0/src/index.js",
+        "lineno": "??",
+        "id": 582
+      }
+    ]
+  },
+  {
+    "package": "roar-pidusage",
+    "version": "1.1.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/roar-pidusage_1.1.6/src/stats.js",
+        "lineno": "??",
+        "id": 583
+      }
+    ]
+  },
+  {
+    "package": "diskstats",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/diskstats_0.0.2/src/stat.js",
+        "lineno": "??",
+        "id": 584
+      }
+    ]
+  },
+  {
+    "package": "ps-visitor",
+    "version": "0.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
+        "lineno": "??",
+        "id": 585
+      }
+    ]
+  },
+  {
+    "package": "portkiller",
+    "version": "1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/portkiller_1.0.2/src/index.js",
+        "lineno": "??",
+        "id": 586
+      }
+    ]
+  },
+  {
+    "package": "alfred-workflow-nodejs",
+    "version": "2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/alfred-workflow-nodejs_2.0.1/src/alfredNode.js",
+        "lineno": "??",
+        "id": 587
+      }
+    ]
+  },
+  {
+    "package": "monorepo-build",
+    "version": "0.1.9",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/monorepo-build_0.1.9/src/exec.js",
+        "lineno": "??",
+        "id": 588
+      }
+    ]
+  },
+  {
+    "package": "imagickal",
+    "version": "5.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
+        "lineno": "??",
+        "id": 589
+      }
+    ]
+  },
+  {
+    "package": "enpeem",
+    "version": "2.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/enpeem_2.2.0/src/index.js",
+        "lineno": "??",
+        "id": 590
+      }
+    ]
+  },
+  {
+    "package": "samsung-remote",
+    "version": "1.2.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/samsung-remote_1.2.5/src/samsung-remote.js",
+        "lineno": "??",
+        "id": 591
+      }
+    ]
+  },
+  {
+    "package": "kill-by-port",
+    "version": "0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/kill-by-port_0.0.1/src/index.js",
+        "lineno": "??",
+        "id": 592
+      }
+    ]
+  },
+  {
+    "package": "pdfinfojs",
+    "version": "0.3.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/pdfinfojs_0.3.6/src/pdfinfo.js",
+        "lineno": "??",
+        "id": 593
+      }
+    ]
+  },
+  {
+    "package": "clamscan",
+    "version": "1.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/clamscan_1.2.0/src/index.js",
+        "lineno": "??",
+        "id": 594
+      }
+    ]
+  },
+  {
+    "package": "lycwed-spritesheetjs",
+    "version": "1.2.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "lineno": "??",
+        "id": 595
+      }
+    ]
+  },
+  {
+    "package": "js",
+    "version": "1.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/vboxmanage.js_1.0.6/src/index.js",
+        "lineno": "??",
+        "id": 596
+      }
+    ]
+  },
+  {
+    "package": "hot-formula-parser",
+    "version": "3.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/hot-formula-parser_3.0.0/src/grammar-parser.js",
+        "lineno": "??",
+        "id": 597
+      }
+    ]
+  },
+  {
+    "package": "gity",
+    "version": "1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/gity_1.0.5/src/index.js",
+        "lineno": "??",
+        "id": 598
+      }
+    ]
+  },
+  {
+    "package": "codecov",
+    "version": "3.6.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
+        "lineno": "??",
+        "id": 599
+      }
+    ]
+  },
+  {
+    "package": "command-exists",
+    "version": "1.2.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
+        "lineno": "??",
+        "id": 600
+      }
+    ]
+  },
+  {
+    "package": "killing",
+    "version": "1.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/killing_1.0.6/src/killing.js",
+        "lineno": "??",
+        "id": 601
+      }
+    ]
+  },
+  {
+    "package": "git-dummy-commit",
+    "version": "1.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/git-dummy-commit_1.3.0/src/index.js",
+        "lineno": "??",
+        "id": 602
+      }
+    ]
+  },
+  {
+    "package": "heroku-env",
+    "version": "0.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "secbench-dataset/CWE-78/heroku-env_0.2.0/src/get.js",
+        "lineno": "??",
+        "id": 603
+      }
+    ]
+  }
+]

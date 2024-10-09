@@ -4,7 +4,7 @@
         "cwe": "CWE-471"
     },
     "correct_cwe": "CWE-471",
-    "correct_package_link": "https://github.com/sindresorhus/dot-prop/archive/v5.1.0.tar.gz",
+    "correct_package_link": "https://registry.npmjs.org/dot-prop/-/dot-prop-4.2.0.tgz",
     "vulnerability": {
         "vulnerability_location": [
             {
