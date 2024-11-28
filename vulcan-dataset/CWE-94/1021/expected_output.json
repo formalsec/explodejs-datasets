@@ -1,0 +1,34 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return vm.runInContext('(function () {\"use strict\"; ' + src + '})()',",
+        "sink_lineno": 47,
+        "source": "module.exports",
+        "tainted_params": [
+            "code",
+            "context"
+        ],
+        "params_types": {
+            "code": "string",
+            "context": "object"
+        }
+    },
+    {
+        "type": "VFunExported",
+        "filename": "./src/browser.js",
+        "vuln_type": "code-injection",
+        "sink": "return Function('__context', src).call(null, __context) // eslint-disable-line",
+        "sink_lineno": 49,
+        "source": "module.exports",
+        "tainted_params": [
+            "code",
+            "context"
+        ],
+        "params_types": {
+            "code": "string",
+            "context": "object"
+        }
+    }
+]

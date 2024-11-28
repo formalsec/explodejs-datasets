@@ -1,0 +1,18 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/compile.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function('tokens, req, res', js).bind(context);",
+        "sink_lineno": 6,
+        "source": "module.exports",
+        "tainted_params": [
+            "format",
+            "context"
+        ],
+        "params_types": {
+            "format": "string",
+            "context": "any"
+        }
+    }
+]

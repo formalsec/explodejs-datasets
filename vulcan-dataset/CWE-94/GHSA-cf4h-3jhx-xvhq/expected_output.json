@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "./src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "var render = new Function(settings.variable || 'obj', '_', source);",
+        "sink_lineno": 391,
+        "source": "module.exports.template",
+        "tainted_params": [
+            "text",
+            "data",
+            "settings"
+        ],
+        "params_types": {
+            "text": "string",
+            "data" : "any",
+            "settings" : "object"
+        }
+    }
+]

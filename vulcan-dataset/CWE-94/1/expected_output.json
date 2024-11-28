@@ -1,0 +1,28 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/batch.js",
+        "vuln_type": "code-injection",
+        "sink": "eval('value = ref.' + parts[i].value + ';');",
+        "sink_lineno": 152,
+        "source": "internals.batch",
+        "tainted_params": [
+            "batchRequest",
+            "resultsData",
+            "pos",
+            "parts",
+            "callback"
+        ],
+        "params_types": {
+            "batchRequest": "any",
+            "resultsData": [ "string" ],
+            "pos" : "any",
+            "parts" : [{
+              "type" : "string",
+              "index" : "number",
+              "value": "string"
+            }],
+            "callback" : "function"
+        }
+    }
+]

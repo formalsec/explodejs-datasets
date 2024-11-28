@@ -1,0 +1,38 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return eval(createWrapper($$__fn__$$.name, options))",
+        "sink_lineno": 17,
+        "source": "module.exports",
+        "tainted_params": [
+            "$$__fn__$$",
+            "options"
+        ],
+        "params_types": {
+            "$$__fn__$$": {
+                "name": "string"
+            },
+            "options": "any"
+        }
+    },
+    {
+        "type": "VFunExported",
+        "filename": "./src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return eval(createWrapper($$__fn__$$.name, options))",
+        "sink_lineno": 33,
+        "source": "module.exports.withCallback",
+        "tainted_params": [
+            "$$__fn__$$",
+            "options"
+        ],
+        "params_types": {
+            "$$__fn__$$": {
+                "name": "string"
+            },
+            "options": "any"
+        }
+    }
+]
