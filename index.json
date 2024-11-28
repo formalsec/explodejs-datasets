@@ -2286,7 +2286,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/veval_1.0.0/src/index.js",
-        "lineno": "??",
+        "lineno": 13,
         "id": 220
       }
     ]
@@ -2298,7 +2298,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/modjs_0.4.0/src/sea.js",
-        "lineno": "??",
+        "lineno": 284,
         "id": 221
       }
     ]
@@ -2310,7 +2310,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/safe-eval_0.2.0/src/index.js",
-        "lineno": "??",
+        "lineno": 13,
         "id": 222
       }
     ]
@@ -2322,7 +2322,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/value-censorship_1.1.0/src/index.js",
-        "lineno": "??",
+        "lineno": 22,
         "id": 223
       }
     ]
@@ -2334,7 +2334,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/underscore_1.13.0-0/src/template.js",
-        "lineno": "??",
+        "lineno": 71,
         "id": 224
       }
     ]
@@ -2346,7 +2346,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
-        "lineno": "??",
+        "lineno": 26,
         "id": 225
       }
     ]
@@ -2358,7 +2358,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/mol-proto_0.1.3/src/proto_function.js",
-        "lineno": "??",
+        "lineno": 70,
         "id": 226
       }
     ]
@@ -2370,7 +2370,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/js-yaml_3.13.0/src/function.js",
-        "lineno": "??",
+        "lineno": 70,
         "id": 227
       }
     ]
@@ -2382,7 +2382,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/static-eval_1.1.1/src/index.js",
-        "lineno": "??",
+        "lineno": 118,
         "id": 228
       }
     ]
@@ -2394,7 +2394,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/reduce-css-calc_1.2.0/src/index.js",
-        "lineno": "??",
+        "lineno": 73,
         "id": 229
       }
     ]
@@ -2406,7 +2406,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/kmc_1.2.2/src/index.js",
-        "lineno": "??",
+        "lineno": 164,
         "id": 230
       }
     ]
@@ -2418,7 +2418,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/mongoosemask_0.0.6/src/index.js",
-        "lineno": "??",
+        "lineno": 170,
         "id": 231
       }
     ]
@@ -2430,7 +2430,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/djv_2.0.0/src/template.js",
-        "lineno": "??",
+        "lineno": 110,
         "id": 232
       }
     ]
@@ -2442,7 +2442,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/local-devices_2.0.0/src/index.js",
-        "lineno": "??",
+        "lineno": 114,
         "id": 233
       }
     ]
@@ -2454,7 +2454,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/wifiscanner_1.0.1/src/wifiscanner.js",
-        "lineno": "??",
+        "lineno": 12,
         "id": 234
       }
     ]
@@ -2466,7 +2466,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/cd-messenger_2.7.24/src/messenger-node.js",
-        "lineno": "??",
+        "lineno": 70,
         "id": 235
       }
     ]
@@ -2478,7 +2478,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
-        "lineno": "??",
+        "lineno": 75,
         "id": 236
       }
     ]
@@ -2490,7 +2490,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/modulify_0.1.0/src/modulify.js",
-        "lineno": "??",
+        "lineno": 74,
         "id": 237
       }
     ]
@@ -2502,7 +2502,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/safer-eval_1.3.1/src/index.js",
-        "lineno": "??",
+        "lineno": 60,
         "id": 238
       }
     ]
@@ -2514,7 +2514,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/m-log_0.0.1/src/log.js",
-        "lineno": "??",
+        "lineno": 24,
         "id": 239
       }
     ]
@@ -2526,7 +2526,7 @@
       {
         "cwe": "CWE-94",
         "filename": "secbench-dataset/CWE-94/hot-formula-parser_3.0.0/src/grammar-parser.js",
-        "lineno": "??",
+        "lineno": 258,
         "id": 240
       }
     ]

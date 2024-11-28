@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "./src/modulify.js",
+    "vuln_type": "code-injection",
+    "sink": "eval(src);",
+    "sink_lineno": 74,
+    "source": "modulify.utils.evaluator",
+    "tainted_params": [
+      "src"
+    ],
+    "params_types": {
+      "src" : "string"
+    }
+  }
+]

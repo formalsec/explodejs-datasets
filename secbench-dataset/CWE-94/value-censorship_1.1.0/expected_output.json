@@ -1,0 +1,14 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return (0, eval)('(__censorFn => {' + escodegen.generate(parsed) + '})')(censorFn)",
+        "sink_lineno": 22,
+        "source": "module.exports",
+        "tainted_params": [ "code" ],
+        "params_types": {
+            "code": "string"
+        }
+    }
+]

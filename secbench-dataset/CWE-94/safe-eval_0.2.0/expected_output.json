@@ -1,0 +1,15 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "vm.runInNewContext(code, sandbox)",
+        "sink_lineno": 13,
+        "source": "module.exports",
+        "tainted_params": [ "code", "context" ],
+        "params_types": {
+            "code": "string",
+            "context": "object"
+        }
+    }
+]

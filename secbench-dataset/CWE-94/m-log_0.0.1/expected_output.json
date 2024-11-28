@@ -1,0 +1,16 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "./src/log.js",
+    "vuln_type": "code-injection",
+    "sink": "eval('colors.setTheme({' + i + ':' + theme + '});');",
+    "sink_lineno": 24,
+    "source": "module.exports.setColorTheme",
+    "tainted_params": [
+      "colorTheme"
+    ],
+    "params_types": {
+      "colorTheme" : [ "string" ]
+    }
+  }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return vm.runInContext('(function () {\"use strict\"; return ' + code + '})()', this._context, this._options);",
+        "sink_lineno": 60,
+        "source": "module.exports",
+        "tainted_params": [ "code", "context" ],
+        "params_types": {
+            "code": "string",
+            "context": "object"
+        }
+    }
+]

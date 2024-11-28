@@ -1,0 +1,15 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return Function(keys.join(', '), 'return ' + unparse(node)).apply(null, vals);",
+        "sink_lineno": 118,
+        "source": "module.exports",
+        "tainted_params": [ "ast", "vars"],
+        "params_types": {
+          "ast": "object",
+          "vars": "object"
+        }
+    }
+]

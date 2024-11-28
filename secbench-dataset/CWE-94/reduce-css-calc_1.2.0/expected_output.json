@@ -1,0 +1,15 @@
+[
+  {
+    "type": "VFunExported",
+    "filename" : "./src/index.js",
+    "vuln_type": "code-injection",
+    "sink": "result = eval(toEvaluate)",
+    "sink_lineno": 73,
+    "source": "module.exports",
+    "tainted_params" : [ "value", "decimalPrecision" ],
+    "params_types" : {
+      "value" : "string",
+      "decimalPrecision": "number"
+    }
+  }
+]
