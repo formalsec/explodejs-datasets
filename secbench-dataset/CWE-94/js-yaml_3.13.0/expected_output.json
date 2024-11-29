@@ -1,0 +1,14 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "./src/function.js",
+    "vuln_type": "code-injection",
+    "sink": "return new Function(params, source.slice(body[0] + 1, body[1] - 1));",
+    "sink_lineno": 70,
+    "source": "module.exports.construct",
+    "tainted_params": [ "data" ],
+    "params_types": {
+      "data" : "string"
+    }
+  }
+]

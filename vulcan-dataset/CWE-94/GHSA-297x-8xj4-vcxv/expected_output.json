@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/doT.js",
+        "vuln_type": "code-injection",
+        "sink": "var v = new Function(\"def\", \"return \" + code)(def);",
+        "sink_lineno": 31,
+        "source": "module.exports.template",
+        "tainted_params": [
+            "tmpl",
+            "c",
+            "def"
+        ],
+        "params_types": {
+            "tmpl": "string",
+            "c": "object",
+            "def": "object"
+        }
+    }
+]

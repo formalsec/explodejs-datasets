@@ -1,0 +1,19 @@
+[
+  {
+    "type": "VNewCall",
+    "filename" : "./src/grammar-parser.js",
+    "vuln_type": "code-injection",
+    "sink": "var arr = eval(\"[\" + yytext + \"]\");",
+    "sink_lineno": 258,
+    "source": "new module.exports.Parser",
+    "tainted_params": [],
+    "params_types": {},
+    "returns": {
+      "source": ".parse",
+      "tainted_params": [ "x" ],
+      "params_types": {
+        "x": "string"
+      }
+    }
+  }
+]

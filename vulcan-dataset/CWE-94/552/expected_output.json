@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/typed-function.js",
+        "vuln_type": "code-injection",
+        "sink": "var factory = (new Function(refs.name, 'createError', body));",
+        "sink_lineno": 1115,
+        "source": "module.exports",
+        "tainted_params": [
+            "name",
+            "signatures"
+        ],
+        "params_types": {
+            "name": "string",
+            "signatures": {
+              "arg0" : "function"
+            }
+        }
+    }
+]

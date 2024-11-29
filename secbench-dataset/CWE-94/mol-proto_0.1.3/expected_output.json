@@ -1,0 +1,20 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename": "./src/proto_function.js",
+    "vuln_type": "code-injection",
+    "sink": "eval(code);",
+    "sink_lineno": 70,
+    "source": "module.exports.makeFunction",
+    "tainted_params": [
+      "arg1",
+      "arg2",
+      "funcBody"
+    ],
+    "params_types": {
+      "arg1" : "string",
+      "arg2" : "string",
+      "funcBody" : "string"
+    }
+  }
+]

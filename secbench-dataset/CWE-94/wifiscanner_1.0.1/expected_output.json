@@ -1,0 +1,26 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/wifiscanner.js",
+        "vuln_type": "command-injection",
+        "sink": "childProcess.exec(this.command,  (error, standardOut, standardError) => {",
+        "sink_lineno": 12,
+        "source": "new module.exports",
+        "tainted_params": [
+            "options",
+            "parser"
+        ],
+        "params_types": {
+            "options": {
+              "binaryPath" : "string",
+              "args" : "string"
+            },
+            "parser" : "any"
+        },
+        "returns": {
+          "source": "scan",
+          "tainted_params": [],
+          "params_types": {}
+        }
+    }
+]

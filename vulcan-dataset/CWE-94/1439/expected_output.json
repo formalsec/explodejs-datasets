@@ -1,0 +1,28 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "./src/grammar-parser.js",
+        "vuln_type": "code-injection",
+        "sink": "var arr = eval(\"[\" + yytext + \"]\");",
+        "sink_lineno": 258,
+        "source": "exports.parse.performAction",
+        "tainted_params": [
+            "yytext",
+            "yyleng",
+            "yylineno",
+            "yy",
+            "yystate",
+            "$$",
+            "_$"
+        ],
+        "params_types": {
+            "yytext" : "string",
+            "yyleng" : "any",
+            "yylineno" : "any",
+            "yy" : "any",
+            "yystate" : "number",
+            "$$" : "array",
+            "_$" : "any"
+       }
+    }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "./src/serialize.js",
+    "vuln_type": "code-injection",
+    "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
+    "sink_lineno": 75,
+    "source": "module.exports.unserialize",
+    "tainted_params": [ "obj", "originObj" ],
+    "params_types": {
+      "obj": {
+        "saucisse" : "string"
+      },
+      "originObj": "any"
+    }
+  }
+]

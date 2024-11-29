@@ -1,0 +1,16 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/template.js",
+        "vuln_type": "code-injection",
+        "sink": "render = new Function(settings.variable || 'obj', '_', source);",
+        "sink_lineno": 71,
+        "source": "template",
+        "tainted_params": [ "text", "settings", "oldSettings" ],
+        "params_types": {
+            "text": "string",
+            "settings": "object",
+            "oldSettings" : "object"
+        }
+    }
+]

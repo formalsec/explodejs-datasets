@@ -1,0 +1,18 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename": "./src/class.js",
+    "vuln_type": "code-injection",
+    "sink": "eval('constructor = function ('+args+') {'+inner_code+'};');",
+    "sink_lineno": 26,
+    "source": "exports.create",
+    "tainted_params" : [
+      "members"
+    ],
+    "params_types" : {
+      "members" : {
+        "__parent" : "string"
+      }
+    }
+  }
+]

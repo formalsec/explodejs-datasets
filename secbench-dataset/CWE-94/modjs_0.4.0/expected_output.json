@@ -1,0 +1,14 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/sea.js",
+        "vuln_type": "code-injection",
+        "sink": "output = vm.runInContext(scr, context);",
+        "sink_lineno": 284,
+        "source": "exports.findSeajsConfig",
+        "tainted_params": [ "fileContents" ],
+        "params_types": {
+          "fileContents": "string"
+        }
+    }
+]

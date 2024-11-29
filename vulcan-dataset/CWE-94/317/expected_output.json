@@ -1,0 +1,19 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/resize.js",
+        "vuln_type": "code-injection",
+        "sink": "var ratio = eval(options.ratio); // Yeah, eval... Deal with it!",
+        "sink_lineno": 31,
+        "source": "getSizeFromRatio",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+          "option": {
+            "ratio" : "string",
+            "size" : "number"
+          }
+        }
+    }
+]

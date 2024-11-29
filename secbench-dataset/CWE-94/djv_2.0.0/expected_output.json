@@ -1,0 +1,18 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "template.js",
+    "vuln_type": "code-injection",
+    "sink": "const tpl = new Function('schema', source)(schema);",
+    "sink_lineno": 110,
+    "source": "module.exports.restore",
+    "tainted_params": [
+      "source",
+      "schema"
+    ],
+    "params_types": {
+      "source": "string",
+      "schema": "string"
+    }
+  }
+]

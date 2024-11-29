@@ -1,0 +1,14 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "./src/index.js",
+    "vuln_type": "code-injection",
+    "sink": "var requiredModules = eval('(' + requires[i]).requires;",
+    "sink_lineno": 164,
+    "source": "ModuleCompiler.analyze",
+    "tainted_params": [ "data" ],
+    "params_types": {
+      "data" : "string"
+    }
+  }
+]
