@@ -10,6 +10,6 @@ node_modules/
 package-lock.json
 
 # Explode-js stuff
+_results/
 res*
 results.db
-explode-out
