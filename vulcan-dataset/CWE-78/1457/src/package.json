@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "commander": "latest",
+    "debug": "latest",
+    "get-meta-file": "latest",
+    "meta-exec": "latest"
+  }
+}

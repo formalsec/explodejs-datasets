@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "ignore-walk": "latest",
+    "js-yaml": "latest",
+    "teeny-request": "latest",
+    "urlgrey": "latest",
+    "validator": "latest"
+  }
+}

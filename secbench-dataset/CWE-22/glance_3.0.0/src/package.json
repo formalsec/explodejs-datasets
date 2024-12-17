@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "events": "latest",
+    "filed": "latest",
+    "html-ls": "latest",
+    "xtend": "latest"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "co": "latest",
+    "util_extend_exclude": "latest",
+    "ws": "latest"
+  }
+}

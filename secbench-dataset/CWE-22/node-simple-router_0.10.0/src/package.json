@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "domain": "latest",
+    "net": "latest",
+    "querystring": "latest"
+  }
+}

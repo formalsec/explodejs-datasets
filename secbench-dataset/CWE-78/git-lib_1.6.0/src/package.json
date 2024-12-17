@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "colors": "latest",
+    "lodash": "latest",
+    "promise": "latest",
+    "xcept": "latest"
+  }
+}

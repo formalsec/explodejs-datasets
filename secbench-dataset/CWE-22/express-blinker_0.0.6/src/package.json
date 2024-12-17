@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "debug": "latest",
+    "md5-file": "latest",
+    "mime": "latest"
+  }
+}

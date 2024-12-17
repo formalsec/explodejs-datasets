@@ -1,0 +1,3 @@
+{
+  "dependencies": { "debug": "latest", "net": "latest", "shelljs": "latest" }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "debug": "latest",
+    "fs-extra": "latest",
+    "ndir": "latest"
+  }
+}

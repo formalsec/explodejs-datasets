@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "github": "latest",
+    "parse-github-repo-url": "latest",
+    "terminal-menu": "latest"
+  }
+}

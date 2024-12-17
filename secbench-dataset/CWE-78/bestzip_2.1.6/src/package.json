@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "archiver": "latest",
+    "async": "latest",
+    "glob": "latest",
+    "which": "latest"
+  }
+}

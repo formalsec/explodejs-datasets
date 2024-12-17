@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "events": "latest",
+    "fuzzy": "latest",
+    "keychain": "latest",
+    "node-osascript": "latest",
+    "node-persist": "latest",
+    "underscore": "latest"
+  }
+}

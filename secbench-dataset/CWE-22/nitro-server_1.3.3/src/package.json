@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "colors": "latest",
+    "livereload": "latest",
+    "mime": "latest",
+    "opn": "latest"
+  }
+}

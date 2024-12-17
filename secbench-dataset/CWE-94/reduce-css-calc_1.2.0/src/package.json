@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "balanced-match": "latest",
+    "reduce-function-call": "latest"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "chalk": "latest",
+    "fs-copy-file": "latest",
+    "object-inspect": "latest"
+  }
+}

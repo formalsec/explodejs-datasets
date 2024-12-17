@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "events": "latest",
+    "underscore": "latest"
+  }
+}

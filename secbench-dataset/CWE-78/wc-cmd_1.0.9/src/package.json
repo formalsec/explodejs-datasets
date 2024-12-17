@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bufferhelper": "latest",
+    "iconv-lite": "latest",
+    "jquery": "latest"
+  }
+}

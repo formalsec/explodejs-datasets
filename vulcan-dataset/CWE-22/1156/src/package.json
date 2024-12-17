@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "ejs": "latest",
+    "larvitbase": "latest",
+    "larvitreqparser": "latest",
+    "larvitrouter": "latest",
+    "larvitutils": "latest",
+    "lodash": "latest",
+    "send": "latest"
+  }
+}

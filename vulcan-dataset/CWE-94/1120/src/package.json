@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "larvitbase": "latest",
+    "larvitfs": "latest",
+    "larvitreqparser": "latest",
+    "larvitrouter": "latest",
+    "larvitutils": "latest",
+    "semver": "latest"
+  }
+}

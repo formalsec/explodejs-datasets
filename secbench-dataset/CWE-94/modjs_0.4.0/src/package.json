@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "cmd-util": "latest",
+    "esprima": "latest",
+    "underscore": "latest"
+  }
+}

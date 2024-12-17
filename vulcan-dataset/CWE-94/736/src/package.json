@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "basic-auth": "latest",
+    "debug": "latest",
+    "depd": "latest",
+    "on-finished": "latest",
+    "on-headers": "latest"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "abs": "latest",
+    "exec-limiter": "latest",
+    "ul": "latest"
+  }
+}

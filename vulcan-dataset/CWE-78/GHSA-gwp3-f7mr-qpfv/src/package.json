@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "aws-sdk": "latest",
+    "im-metadata": "latest",
+    "im-resize": "latest",
+    "uuid": "latest"
+  }
+}

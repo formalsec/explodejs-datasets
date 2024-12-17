@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "crypto": "latest",
+    "dns": "latest",
+    "events": "latest",
+    "https": "latest",
+    "querystring": "latest",
+    "tls": "latest",
+    "zlib": "latest"
+  }
+}

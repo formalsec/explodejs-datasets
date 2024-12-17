@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "accepts": "latest",
+    "compressible": "latest",
+    "mime-types": "latest",
+    "vary": "latest",
+    "zlib": "latest"
+  }
+}

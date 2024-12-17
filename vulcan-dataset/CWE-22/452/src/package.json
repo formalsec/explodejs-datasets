@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "colors": "latest",
+    "crypto": "latest",
+    "express": "latest",
+    "lodash": "latest",
+    "minimist": "latest",
+    "request": "latest"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "jsftp": "latest",
+    "request": "latest",
+    "yargs": "latest"
+  }
+}

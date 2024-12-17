@@ -1,0 +1,3 @@
+{
+  "dependencies": { "dargs": "latest", "merge": "latest", "rsvp": "latest" }
+}

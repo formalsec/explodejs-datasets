@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "deepmerge": "latest",
+    "events": "latest",
+    "stack-trace": "latest"
+  }
+}

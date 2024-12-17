@@ -1,0 +1,3 @@
+{
+  "dependencies": { "https": "latest", "mime": "latest", "opener": "latest" }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "https": "latest",
+    "node-http-server": "latest",
+    "querystring": "latest"
+  }
+}

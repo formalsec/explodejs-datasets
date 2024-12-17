@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "basic": "latest",
+    "crypto": "latest",
+    "debug": "latest",
+    "events": "latest",
+    "mkdirp": "latest",
+    "pushover-giting": "latest"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "pify": "latest",
+    "read-pkg": "latest",
+    "unique-temp-dir": "latest"
+  }
+}

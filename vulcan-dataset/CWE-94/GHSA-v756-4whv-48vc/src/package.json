@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "chalk": "latest",
+    "chalkline": "latest",
+    "cli-table": "latest"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "apiconnect-config": "latest",
+    "bluebird": "latest",
+    "debug": "latest",
+    "fs-extra": "latest",
+    "lodash": "latest",
+    "mkdirp": "latest",
+    "shelljs": "latest",
+    "strong-globalize": "latest"
+  }
+}

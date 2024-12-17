@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "debug": "latest",
+    "gitane": "latest",
+    "shell-escape": "latest",
+    "strider-docker-gitane-camo": "latest"
+  }
+}

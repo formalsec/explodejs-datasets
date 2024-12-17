@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "babel-core": "latest",
+    "browser-sync": "latest",
+    "esprima": "latest",
+    "esprima-walk": "latest",
+    "uglify-js": "latest"
+  }
+}

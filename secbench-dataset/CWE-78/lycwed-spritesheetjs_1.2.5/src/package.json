@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "crypto": "latest",
+    "mustache": "latest",
+    "ora": "latest",
+    "platform-command": "latest",
+    "tinify": "latest"
+  }
+}

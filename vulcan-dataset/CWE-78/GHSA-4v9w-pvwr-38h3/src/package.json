@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "debug": "latest",
+    "loopback": "latest",
+    "loopback-boot": "latest"
+  }
+}

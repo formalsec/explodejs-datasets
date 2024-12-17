@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "crypto": "latest",
+    "lodash": "latest",
+    "mime-types": "latest",
+    "needle": "latest",
+    "request": "latest"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "dirtospace": "latest",
+    "mkdirp": "latest",
+    "underscore": "latest"
+  }
+}
