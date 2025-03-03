@@ -1,0 +1,112 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-j665-rvj7-2jv9/src/mosc.js",
+        "vuln_type": "code-injection",
+        "sink": "propertyBase[property_parts[0]] = eval(get_eval_string(pvalue));",
+        "sink_lineno": 50,
+        "source": "new module.exports",
+        "tainted_params": [
+            "evaluation_context_dictionary"
+        ],
+        "params_types": {
+            "evaluation_context_dictionary": "any"
+        },
+        "returns": {
+            "source": ".parse_properties",
+            "params_types": {
+                "key": {
+                    "length": "any",
+                    "*": "any"
+                },
+                "properties": {
+                    "length": "any",
+                    "*": "any"
+                },
+                "baseObject": {
+                    "*": {
+                        "*": "any"
+                    }
+                },
+                "eval_dict": "any"
+            },
+            "tainted_params": [
+                "key",
+                "properties",
+                "baseObject",
+                "eval_dict"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1248.MoscBase-o139",
+                "fn_id": "708",
+                "source_fn_id": "708"
+            },
+            {
+                "type": "Method",
+                "prop": "parse_properties",
+                "fn_name": "1250.v96-o158",
+                "fn_id": "759",
+                "source_fn_id": "759"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-j665-rvj7-2jv9/src/mosc.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "propertyBase[property_parts[0]] = pvalue;",
+        "sink_lineno": 44,
+        "source": "new module.exports",
+        "tainted_params": [
+            "evaluation_context_dictionary"
+        ],
+        "params_types": {
+            "evaluation_context_dictionary": "any"
+        },
+        "returns": {
+            "source": ".parse_properties",
+            "params_types": {
+                "key": {
+                    "_union": [
+                        "object",
+                        "array",
+                        "string"
+                    ]
+                },
+                "properties": {
+                    "_union": [
+                        "object",
+                        "array",
+                        "string"
+                    ]
+                },
+                "baseObject": "object",
+                "eval_dict": "any"
+            },
+            "tainted_params": [
+                "key",
+                "properties",
+                "baseObject",
+                "eval_dict"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1248.MoscBase-o139",
+                "fn_id": "708",
+                "source_fn_id": "708"
+            },
+            {
+                "type": "Method",
+                "prop": "parse_properties",
+                "fn_name": "1250.v96-o158",
+                "fn_id": "759",
+                "source_fn_id": "759"
+            }
+        ]
+    }
+]

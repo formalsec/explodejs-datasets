@@ -1,0 +1,175 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "res[segment] = exports.reach(source, sourcePath, options);",
+        "sink_lineno": 902,
+        "source": "module.exports.transform",
+        "tainted_params": [
+            "source",
+            "transform",
+            "options"
+        ],
+        "params_types": {
+            "source": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "transform": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
+            "options": {
+                "separator": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "transform",
+                "fn_name": "11056.v1279-o1390",
+                "fn_id": "10536",
+                "source_fn_id": "10536"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "newObj[key] = exports.clone(obj[key], seen);",
+        "sink_lineno": 80,
+        "source": "module.exports.clone",
+        "tainted_params": [
+            "obj",
+            "seen"
+        ],
+        "params_types": {
+            "obj": "object",
+            "seen": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "clone",
+                "fn_name": "11056.v679-o1174",
+                "fn_id": "6247",
+                "source_fn_id": "6247"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = value;",
+        "sink_lineno": 142,
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "source",
+            "isNullOverride",
+            "isMergeArrays"
+        ],
+        "params_types": {
+            "target": "object",
+            "source": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            },
+            "isNullOverride": "bool",
+            "isMergeArrays": "bool"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "11056.v732-o1182",
+                "fn_id": "6505",
+                "source_fn_id": "6505"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = value;",
+        "sink_lineno": 139,
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "source",
+            "isNullOverride",
+            "isMergeArrays"
+        ],
+        "params_types": {
+            "target": "object",
+            "source": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            },
+            "isNullOverride": "bool",
+            "isMergeArrays": "bool"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "11056.v732-o1182",
+                "fn_id": "6505",
+                "source_fn_id": "6505"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = exports.clone(value);",
+        "sink_lineno": 129,
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "source",
+            "isNullOverride",
+            "isMergeArrays"
+        ],
+        "params_types": {
+            "target": "object",
+            "source": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "isNullOverride": "bool",
+            "isMergeArrays": "bool"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "merge",
+                "fn_name": "11056.v732-o1182",
+                "fn_id": "6505",
+                "source_fn_id": "6505"
+            }
+        ]
+    }
+]
