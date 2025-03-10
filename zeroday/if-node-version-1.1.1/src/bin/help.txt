@@ -1,0 +1,35 @@
+
+Usage:
+    $ if-node-version <VersionRange> <Command> [...args]
+
+        Run a shell command if it's on the node of specified versions.
+        Otherwise, do nothing.
+
+        Exit code is the exit code of the <Command>.
+
+    $ if-node-version <VersionRange>
+
+        Check if it's on the node of specified versions.
+
+        Exit code is 0 if it's on the node of specified versions.
+        Otherwise, exit code is 1.
+
+    $ if-node-version --help
+
+        Show this help text.
+
+    $ if-node-version --version
+
+        Show the version number of `if-node-version` command.
+
+Parameters:
+    <VersionRange> .... A text which specifies the version range of Node.js
+                        This text format is defined by node-semver module:
+                        https://www.npmjs.com/package/semver#ranges
+    <Command> ......... A shell command.
+    [...args] ......... Parameters of the shell command.
+
+Examples:
+    $ if-node-version ">=4" eslint lib test
+    $ if-node-version "<6" node ./scripts/fallback.js
+

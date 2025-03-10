@@ -1,0 +1,27 @@
+<script type="text/javascript">
+  if (typeof Windows !== "undefined") {
+
+    // The gamepadInputEmulation is a string property that exists in JavaScript UWAs and in WebViews in UWAs.
+    if (window.navigator && typeof window.navigator.gamepadInputEmulation === "string") {
+      window.navigator.gamepadInputEmulation = "keyboard";
+    }
+
+    // Disable scaling
+    Windows.UI.ViewManagement.ApplicationViewScaling.trySetDisableLayoutScaling(true);
+
+    // Disable overscan border, allowing our app to draw to the edge of the screen
+    Windows.UI.ViewManagement.ApplicationView.getForCurrentView().setDesiredBoundsMode(Windows.UI.ViewManagement.ApplicationViewBoundsMode.useCoreWindow);
+
+    // Map any activated events to message events
+    Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (args) {
+      if (typeof window.postMessage === 'function') {
+        var data = {
+          kind: args && args.kind,
+          rawUri: args.detail.length && args.detail[0] && args.detail[0].uri && args.detail[0].uri.rawUri
+        };
+
+        window.postMessage(data, '*');
+      }
+    });
+  }
+</script>

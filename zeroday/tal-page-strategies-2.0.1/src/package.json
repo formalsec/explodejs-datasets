@@ -1,0 +1,38 @@
+{
+  "name": "tal-page-strategies",
+  "version": "2.0.1",
+  "description": "Page Strategies for BBC TAL",
+  "main": "index.js",
+  "directories": {
+    "default": "./default",
+    "hbbtv": "./hbbtv",
+    "hbbtv141": "./hbbtv141",
+    "html5hbbtvhybrid": "./html5hbbtvhybrid",
+    "htmlbroadcastvideo": "./htmlbroadcastvideo",
+    "samsungmaple": "./samsungmaple"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbc/tal-page-strategies"
+  },
+  "keywords": [
+    "BBC",
+    "TAL",
+    "Page",
+    "strategies"
+  ],
+  "author": "British Broadcasting Corporation",
+  "license": "Apache v2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/tal-page-strategies/issues"
+  },
+  "homepage": "https://github.com/bbc/tal-page-strategies",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bump": "^0.8.0",
+    "grunt-cli": "*"
+  }
+}

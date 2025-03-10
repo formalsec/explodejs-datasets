@@ -1,0 +1,31 @@
+{
+  "name": "dotenv-yaml",
+  "version": "0.1.4",
+  "description": "Minimal YAML .env.yml file loader",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lvidarte/dotenv-yaml.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lvidarte/dotenv-yaml/issues"
+  },
+  "homepage": "https://github.com/lvidarte/dotenv-yaml#readme",
+  "dependencies": {
+    "js-yaml": "^3.8.4"
+  },
+  "keywords": [
+    "dotenv",
+    "env",
+    ".env",
+    "yaml",
+    "environment",
+    "variables",
+    "config",
+    "settings"
+  ],
+  "readme": "README.md",
+  "engines": {
+    "node": ">=4.6.0"
+  }
+}

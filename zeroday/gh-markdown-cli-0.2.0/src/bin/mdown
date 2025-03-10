@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+
+var _cli = require('commander'),
+    _mdown = require('../mdown');
+
+
+_cli
+    .version('0.2.0')
+    .description('Batch convert markdown files into HTML.')
+    .option('-o, --output <name>', 'Output directory or output file name if using stdin for input.')
+    .option('-i, --input <glob>', 'Glob used for inclusion. Eg: "**/*.md" will convert all the ".md" files inside current folder and all its child folders.')
+    .option('--exclude <globs>', 'Comma separated list of globs used for exclusion. Defaults to "node_modules/**"', 'node_modules/**')
+    .option('--header <path>', 'Path to HTML file used as header on all documents.')
+    .option('--footer <path>', 'Path to HTML file used as footer on all documents.')
+    .option('--encoding <encoding>', 'File encoding. Defaults to "utf-8".', 'utf-8');
+
+
+_cli.parse(process.argv);
+
+
+if (_cli.input) {
+    _mdown.batchProcess(_cli);
+} else {
+    processStdIn();
+}
+
+
+function processStdIn(){
+    var buf = '';
+
+    process.stdin.setEncoding(_cli.encoding);
+
+    process.stdin.on('data', function(chunk){
+        buf += chunk;
+    });
+
+    process.stdin.on('end', function(){
+        var html = _mdown.toHTML(buf, _cli);
+        if (_cli.output) {
+            require('fs').writeFileSync(_cli.output, html, _cli.encoding);
+        } else {
+            console.log(html);
+        }
+    });
+
+    process.stdin.resume();
+}

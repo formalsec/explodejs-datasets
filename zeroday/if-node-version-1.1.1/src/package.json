@@ -1,0 +1,70 @@
+{
+  "name": "if-node-version",
+  "version": "1.1.1",
+  "description": "Run commands if on specified node version.",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "main": "lib/index.js",
+  "bin": "bin/index.js",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rimraf .nyc_output coverage",
+    "lint": "node bin/index.js \">=4\" eslint bin lib test",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags",
+    "pretest": "run-s clean lint",
+    "test": "nyc mocha \"test/*.js\" --timeout 30000 --compilers js:babel-register",
+    "coverage": "nyc report -r lcov && opener coverage/lcov-report/index.html",
+    "watch": "mocha \"test/*.js\" --timeout 30000 --compilers js:babel-register --watch --growl",
+    "codecov": "nyc report -r lcovonly && codecov"
+  },
+  "dependencies": {
+    "cross-spawn": "^5.0.1",
+    "semver": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-register": "^6.9.0",
+    "chokidar-cli": "^1.2.0",
+    "codecov": "^1.0.1",
+    "eslint": "^3.10.0",
+    "eslint-config-mysticatea": "^7.0.1",
+    "mocha": "^3.0.2",
+    "npm-run-all": "^3.1.0",
+    "nyc": "^8.3.0",
+    "opener": "^1.4.1",
+    "pinkie-promise": "^2.0.1",
+    "power-assert": "^1.4.1",
+    "rimraf": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysticatea/if-node-version.git"
+  },
+  "keywords": [
+    "node",
+    "version",
+    "semver",
+    "range",
+    "check",
+    "compare",
+    "conditional",
+    "less",
+    "greater",
+    "than",
+    "run",
+    "execute",
+    "command",
+    "cli"
+  ],
+  "author": "Toru Nagashima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mysticatea/if-node-version/issues"
+  },
+  "homepage": "https://github.com/mysticatea/if-node-version#readme"
+}
