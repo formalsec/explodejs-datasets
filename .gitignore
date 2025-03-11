@@ -13,3 +13,4 @@ package-lock.json
 _results/
 res*
 results.db
+import.report
