@@ -1,13 +1,13 @@
 [
   {
-    "filename": "./src/node.js",
+    "filename": "src/node.js",
     "vuln_type": "path-traversal",
     "source": "",
     "tainted_params": [],
     "params_types": {},
     "client": {
       "type": "GET",
-      "port": "8888"
+      "port": 8888
     }
   }
 ]
