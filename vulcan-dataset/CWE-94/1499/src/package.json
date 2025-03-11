@@ -1,1 +1,6 @@
-{ "dependencies": {} }
+{ "dependencies": {
+  "lodash.isequal" : "latest",
+  "lodash.filter" : "latest",
+  "lodash.clonedeep" : "latest",
+  "lodash.matches" : "latest"
+} }
