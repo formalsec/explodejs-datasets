@@ -66,7 +66,7 @@ const messenger = {
     }
   },
   line: color => {
-    if (color.length > 0) {
+    if (color != "") {
       try {
         eval(`cl.${color}()`); // eslint-disable-line
       }
