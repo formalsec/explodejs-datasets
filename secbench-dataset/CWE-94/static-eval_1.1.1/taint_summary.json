@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-94/static-eval_1.1.1/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return Function(keys.join(', '), 'return ' + unparse(node)).apply(null, vals);",
+        "sink_lineno": 118,
+        "source": "module.exports",
+        "tainted_params": [
+            "ast",
+            "vars"
+        ],
+        "params_types": {
+            "ast": "any",
+            "vars": {
+                "*": "any",
+                "'this'": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "2851.v370-o276",
+                "fn_id": 1604,
+                "source_fn_id": 1604
+            }
+        ]
+    }
+]

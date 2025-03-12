@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-94/cd-messenger_2.7.24/src/messenger-node.js",
+        "vuln_type": "code-injection",
+        "sink": "eval(`cl.${color}()`); // eslint-disable-line",
+        "sink_lineno": 70,
+        "source": "module.exports.line",
+        "tainted_params": [
+            "color"
+        ],
+        "params_types": {
+            "color": {
+                "length": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "line",
+                "fn_name": "1127.v106-o192",
+                "fn_id": "989",
+                "source_fn_id": "989"
+            }
+        ]
+    }
+]
