@@ -1,5 +1,7 @@
 const { exec, execSync } = require('child_process');
-const utils = require('./utils');
+// Summary utils
+// const utils = require('./utils');
+const utils = { parse : (data) => { return "";}}
 
 function pdfinfo (filename, options) {
   this.options = options || {};

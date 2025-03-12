@@ -1,0 +1,28 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/1431/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, function(err, stdout, stderr) {",
+        "sink_lineno": 43,
+        "source": "module.exports",
+        "tainted_params": [
+            "aOptions",
+            "aCallback"
+        ],
+        "params_types": {
+            "aOptions": {
+                "file": "any"
+            },
+            "aCallback": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "371.df-o53",
+                "fn_id": "232",
+                "source_fn_id": "232"
+            }
+        ]
+    }
+]

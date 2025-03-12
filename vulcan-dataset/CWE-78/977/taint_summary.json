@@ -1,0 +1,32 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/977/src/wizard-sync.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(command, {}, function(err, stdout, stderr) {",
+        "sink_lineno": 56,
+        "source": "module.exports.sync",
+        "tainted_params": [
+            "options",
+            "cb"
+        ],
+        "params_types": {
+            "options": {
+                "widgetName": "string",
+                "env": "string",
+                "comment": "any",
+                "branch": "string"
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "sync",
+                "fn_name": "1313.v126-o179",
+                "fn_id": 787,
+                "source_fn_id": 787
+            }
+        ]
+    }
+]

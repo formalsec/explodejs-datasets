@@ -1,13 +1,14 @@
 'use strict'
 
 const sh = require('execa').shell
+const skip = true;
 
 module.exports = function (port) {
   if (!Number.parseInt(port)) {
     return Promise.reject(new Error('Invalid argument provided for port'))
   }
 
-  if (process.platform === 'win32') {
+  if (process.platform === 'win32' && !skip) {
     return sh(
       `Stop-Process -Id (Get-NetTCPConnection -LocalPort ${port}).OwningProcess -Force`
     )

@@ -1,6 +1,7 @@
  [
       {
           "vuln_type": "command-injection",
+          "filename" : "./src/tools.js",
           "source": "module.exports.funcs",
           "source_lineno": 57,
           "sink": "exec",
@@ -14,9 +15,9 @@
                   "verbose": "any"
               }
           },
-          "return" : {
+          "returns" : {
             "vuln_type" : "command-injection",
-            "source": ".*",
+            "source": "",
             "sink": "exec",
             "tainted_params": [
                 "callback"

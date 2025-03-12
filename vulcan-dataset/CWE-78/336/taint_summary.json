@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/336/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function (error, res, stderr) {",
+        "sink_lineno": 82,
+        "source": "module.exports.findLoad",
+        "tainted_params": [
+            "arg",
+            "cb"
+        ],
+        "params_types": {
+            "arg": "string",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "findLoad",
+                "fn_name": "2053.findLoad-o295",
+                "fn_id": "1323",
+                "source_fn_id": "1323"
+            }
+        ]
+    }
+]

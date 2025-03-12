@@ -6,7 +6,12 @@ module.exports = function (docroot, phpBin) {
 
   phpBin = phpBin || 'php'
 
-  var fs = require('fs')
+  // fs.exists summary
+  // var fs = require('fs')
+  var fs = { exists : (file, cb) => {
+    // assume it does:
+    return cb(true);
+  }}
 
   var join = require('path').join
 

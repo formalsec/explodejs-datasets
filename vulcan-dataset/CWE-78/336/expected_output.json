@@ -1,7 +1,8 @@
 [
     {
         "vuln_type": "command-injection",
-        "source": "exports.findLoad",
+        "filename" : "./src/index.js",
+        "source": "module.exports.findLoad",
         "sink": "exec",
         "tainted_params": [
             "arg",

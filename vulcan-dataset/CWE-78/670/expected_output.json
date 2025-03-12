@@ -1,9 +1,9 @@
 [
   {
     "type" : "VFunPropOfExportedObj",
-    "filename": "package/index.js",
+    "filename": "src/index.js",
     "vuln_type": "command-injection",
-    "source": "new PDFImage",
+    "source": "new module.exports",
     "sink": "exec",
     "tainted_params": [ "pdfFilePath", "options" ],
     "params_types": {
@@ -15,7 +15,7 @@
         "outputDirectory" : "string"
       }
     },
-    "return" : {
+    "returns" : {
       "vuln_type": "command-injection",
       "source": ".convertPage",
       "sink": "exec",
@@ -27,16 +27,16 @@
   },
   {
     "type" : "VFunPropOfExportedObj",
-    "filename": "package/index.js",
+    "filename": "src/index.js",
     "vuln_type": "command-injection",
-    "source": "new PDFImage",
+    "source": "new module.exports",
     "sink": "exec",
     "tainted_params": [ "pdfFilePath", "options" ],
     "params_types": {
       "pdfFilePath" : "string",
       "options" : "object"
     },
-    "return" : {
+    "returns" : {
       "vuln_type": "command-injection",
       "source": ".getInfo",
       "sink": "exec",

@@ -1,0 +1,56 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/966/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return sh(",
+        "sink_lineno": 12,
+        "source": "module.exports",
+        "tainted_params": [
+            "port"
+        ],
+        "params_types": {
+            "port": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "203.v28-o33",
+                "fn_id": "133",
+                "source_fn_id": "133"
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/966/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return sh(",
+        "sink_lineno": 17,
+        "source": "module.exports",
+        "tainted_params": [
+            "port"
+        ],
+        "params_types": {
+            "port": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "203.v28-o33",
+                "fn_id": "133",
+                "source_fn_id": "133"
+            }
+        ]
+    }
+]

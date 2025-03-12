@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-pf8j-vhg8-xmc3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(outPath, '');",
+        "sink_lineno": 146
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-pf8j-vhg8-xmc3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 58
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-pf8j-vhg8-xmc3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var cache = JSON.parse(fs.readFileSync(config.cachePath, 'utf-8'));",
+        "sink_lineno": 68
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-pf8j-vhg8-xmc3/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('egrep -rl \"describe\\\\([\\'\\\\\"].*' + config.grep + '\" ' + config.grepDir, {",
+        "sink_lineno": 100
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-pf8j-vhg8-xmc3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(config.cachePath, JSON.stringify(testFiles, null, 2));",
+        "sink_lineno": 188
+    }
+]

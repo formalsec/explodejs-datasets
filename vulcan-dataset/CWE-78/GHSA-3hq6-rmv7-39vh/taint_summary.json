@@ -1,0 +1,81 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "childProcess.execFile(path.resolve(browserPath), commandOptions, {maxBuffer: 50000 * 1024}, function (err) {",
+        "sink_lineno": 70,
+        "source": "module.exports.open",
+        "tainted_params": [
+            "browser",
+            "url",
+            "proxyURL",
+            "pacFileURL",
+            "dataDir",
+            "bypassList"
+        ],
+        "params_types": {
+            "browser": "string",
+            "url": "any",
+            "proxyURL": "any",
+            "pacFileURL": "any",
+            "dataDir": "any",
+            "bypassList": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "open",
+                "fn_name": "1224.v71-o217",
+                "fn_id": 842,
+                "source_fn_id": 842
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "result = childProcess.execSync(cmd).toString().trim();",
+        "sink_lineno": 107,
+        "source": "module.exports.detect",
+        "tainted_params": [
+            "name"
+        ],
+        "params_types": {
+            "name": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "detect",
+                "fn_name": "1224.v95-o220",
+                "fn_id": 986,
+                "source_fn_id": 986
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "result = childProcess.execSync(cmd).toString().trim();",
+        "sink_lineno": 124,
+        "source": "module.exports.detect",
+        "tainted_params": [
+            "name"
+        ],
+        "params_types": {
+            "name": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "detect",
+                "fn_name": "1224.v95-o220",
+                "fn_id": 986,
+                "source_fn_id": 986
+            }
+        ]
+    }
+]

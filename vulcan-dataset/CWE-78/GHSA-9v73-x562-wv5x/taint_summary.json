@@ -1,0 +1,41 @@
+[
+    {
+        "type": "VFunRetByExport",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-9v73-x562-wv5x/src/run_index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(params.join(' '), { encoding, cwd: path }).toString(encoding)",
+        "sink_lineno": 8,
+        "source": "module.exports",
+        "tainted_params": [
+            "path",
+            "encoding"
+        ],
+        "params_types": {
+            "path": "any",
+            "encoding": "any"
+        },
+        "returns": {
+            "source": "",
+            "params_types": {
+                "params": "array"
+            },
+            "tainted_params": [
+                "params"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "177.RunModule-o30",
+                "fn_id": "116",
+                "source_fn_id": "116"
+            },
+            {
+                "type": "Call",
+                "fn_name": "179.v16-o35",
+                "fn_id": "125",
+                "source_fn_id": "116"
+            }
+        ]
+    }
+]

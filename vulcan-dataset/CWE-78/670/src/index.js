@@ -1,6 +1,7 @@
 // node-pdf
 
-var Promise = require("es6-promise").Promise;
+// We support es6 promises
+// var Promise = require("es6-promise").Promise;
 
 var path = require("path");
 var fs   = require("fs");
@@ -155,4 +156,5 @@ PDFImage.prototype = {
   }
 };
 
-exports.PDFImage = PDFImage;
+// We need to export it here
+module.exports = PDFImage;

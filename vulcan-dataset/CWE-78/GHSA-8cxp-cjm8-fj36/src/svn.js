@@ -1,6 +1,5 @@
 var exec = require('child_process').exec;
 var path = require('path');
-var Promise = require('bluebird');
 var xml2js = require("xml2js");
 
 

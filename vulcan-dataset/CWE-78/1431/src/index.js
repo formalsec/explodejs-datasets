@@ -1,5 +1,7 @@
 var exec = require('child_process').exec
-var parse = require('./parse')
+// var parse = require('./parse')
+// Summary parse:
+var parse = (stdout, opts) => { return undefined; };
 
 module.exports = function df(aOptions, aCallback) {
     var options

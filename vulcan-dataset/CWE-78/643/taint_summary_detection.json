@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/643/src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "let data = execSync('pdfinfo ' + self.options.additional.join(' ')).toString('utf8');",
+        "sink_lineno": 28
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/643/src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "let child = exec('pdfinfo ' + self.options.additional.join(' '), function(error, stdout, stderr) {",
+        "sink_lineno": 38
+    }
+]

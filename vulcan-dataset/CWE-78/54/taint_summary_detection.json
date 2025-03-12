@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/54/src/compare.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(execCmd, function (err, stdout, stderr) {",
+        "sink_lineno": 72
+    }
+]

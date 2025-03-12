@@ -1,0 +1,114 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd)",
+        "sink_lineno": 28,
+        "source": "module.exports.svg",
+        "tainted_params": [
+            "modules",
+            "circular",
+            "config"
+        ],
+        "params_types": {
+            "modules": "object",
+            "circular": "array",
+            "config": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "svg",
+                "fn_name": "1859.v199-o295",
+                "fn_id": 1645,
+                "source_fn_id": 1645
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd)",
+        "sink_lineno": 28,
+        "source": "module.exports.image",
+        "tainted_params": [
+            "modules",
+            "circular",
+            "imagePath",
+            "config"
+        ],
+        "params_types": {
+            "modules": "object",
+            "circular": "array",
+            "imagePath": "string",
+            "config": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "image",
+                "fn_name": "1859.v213-o303",
+                "fn_id": 1695,
+                "source_fn_id": 1695
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd)",
+        "sink_lineno": 28,
+        "source": "module.exports.dot",
+        "tainted_params": [
+            "modules",
+            "circular",
+            "config"
+        ],
+        "params_types": {
+            "modules": "object",
+            "circular": "array",
+            "config": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "dot",
+                "fn_name": "1859.v222-o310",
+                "fn_id": 1795,
+                "source_fn_id": 1795
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
+        "vuln_type": "path-traversal",
+        "sink": ".then((image) => writeFile(imagePath, image))",
+        "sink_lineno": 150,
+        "source": "module.exports.image",
+        "tainted_params": [
+            "modules",
+            "circular",
+            "imagePath",
+            "config"
+        ],
+        "params_types": {
+            "modules": "object",
+            "circular": "array",
+            "imagePath": "string",
+            "config": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "image",
+                "fn_name": "1859.v213-o303",
+                "fn_id": 1695,
+                "source_fn_id": 1695
+            }
+        ]
+    }
+]

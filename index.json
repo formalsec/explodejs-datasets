@@ -2075,7 +2075,7 @@
     "vulns": [
       {
         "cwe": "CWE-78",
-        "filename": "vulcan-dataset/CWE-78/GHSA-9v73-x562-wv5x/src/index.js",
+        "filename": "vulcan-dataset/CWE-78/GHSA-9v73-x562-wv5x/src/run_index.js",
         "lineno": 8,
         "id": 193
       }

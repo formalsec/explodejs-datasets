@@ -1,0 +1,77 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process_1.exec(`touch ${filePath}`);",
+        "sink_lineno": 40,
+        "source": "module.exports.plot",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "finish": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "plot",
+                "fn_name": "878.plot-o116",
+                "fn_id": 792,
+                "source_fn_id": 792
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "gnuplot = child_process_1.exec(`gnuplot | ps2pdf - ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
+        "sink_lineno": 43,
+        "source": "module.exports.plot",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "finish": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "plot",
+                "fn_name": "878.plot-o116",
+                "fn_id": 792,
+                "source_fn_id": 792
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "gnuplot = child_process_1.exec(`gnuplot > ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
+        "sink_lineno": 47,
+        "source": "module.exports.plot",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "finish": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "plot",
+                "fn_name": "878.plot-o116",
+                "fn_id": 792,
+                "source_fn_id": 792
+            }
+        ]
+    }
+]

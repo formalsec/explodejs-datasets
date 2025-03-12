@@ -214,5 +214,6 @@ function greet(log) {
 
 Mojo.$inject = [ 'emitter', 'config.mojo', 'executor', 'logger' ];
 
-module.exports = { 'reporter:mojo': [ 'type', Mojo ] };
-module.exports.defaults = defaults;
+// module.exports = { 'reporter:mojo': [ 'type', Mojo ] };
+// module.exports.defaults = defaults;
+module.exports = Mojo;

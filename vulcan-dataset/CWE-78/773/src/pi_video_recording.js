@@ -5,7 +5,16 @@
 const childProcess = require('child_process');
 const fs = require('fs');
 const treeKill = require('tree-kill');
-const globalConf = require('./config.json');
+// Global-conf summary
+// const globalConf = require('./config.json');
+const globalConf = {
+  writePath: "./",
+  livePort: "8888",
+  size : {
+    width: 80,
+    height: 240
+  }
+}
 const execSync = childProcess.execSync;
 
 const writePath = globalConf.writePath;
@@ -31,7 +40,7 @@ const writeLogs = function (fileName) {
 module.exports = {
   startLive: function () {
     proc =
-      childProcess.exec(`raspivid -o - -t 0 -ih -n -pf high -ISO 800 -ex night -vs -drc high -fps 30 -w ${width} -h ${height} -r ${hostname} 
+      childProcess.exec(`raspivid -o - -t 0 -ih -n -pf high -ISO 800 -ex night -vs -drc high -fps 30 -w ${width} -h ${height} -r ${hostname}
       | cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:${livePort}}' --demux=h264 --h264-fps=30.0000`);
     proc.title = 'live';
     writeLogs("live");
@@ -50,7 +59,7 @@ module.exports = {
                          ["-o", file + ".h264", "-t", "0", "-ih", "-pf", "high", "-ISO", "800",
                            "-ex", "night", "-drc", "high", "-n", "-fps", "30", "-w", `${width}`, "-h",
                            `${height}`, "-r", "90", "-b", "8000000", "-r", hostname]);
-    
+
     proc.title = 'record';
     writeLogs("record");
   },

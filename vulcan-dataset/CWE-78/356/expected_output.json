@@ -1,7 +1,7 @@
 [
     {
         "type" : "VFunPropOfExportedObj",
-        "filename" : "package/stats.js",
+        "filename" : "./src/stats.js",
         "vuln_type": "command-injection",
         "source": "module.exports.ps",
         "sink": "exec",

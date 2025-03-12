@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-const exec = require('meta-exec');
+// We don't have summary for meta-exec
+const exec = require('child_process').exec;
 const fs = require('fs');
 const debug = require('debug')('meta-git-clone');
 const getMetaFile = require('get-meta-file');
@@ -17,7 +18,7 @@ const dirname = path.basename(repoUrl).replace('.git', '');
 
 console.log(`meta git cloning into \'${repoUrl}\' at ${dirname}`);
 
-exec({ cmd: `git clone ${repoUrl} ${dirname}`, displayDir: dirname }, (err, result) => {
+exec(`git clone ${repoUrl} ${dirname}`, (err, result) => {
   if (err) throw err;
 
   const newDir = path.resolve(dirname);
@@ -42,11 +43,7 @@ exec({ cmd: `git clone ${repoUrl} ${dirname}`, displayDir: dirname }, (err, resu
 
     const gitUrl = projects[folder];
 
-    exec(
-      {
-        cmd: `git clone ${gitUrl} ${folder}`,
-        displayDir: path.join(newDir, folder),
-      },
+    exec(`git clone ${gitUrl} ${folder}`,
       err => {
         if (err) throw err;
 

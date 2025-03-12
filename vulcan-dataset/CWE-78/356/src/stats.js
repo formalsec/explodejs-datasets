@@ -3,7 +3,9 @@ var fs = require('fs')
 var p = require('path')
 var exec = require('child_process').exec
 var spawn = require('child_process').spawn
-var helpers = require('./helpers')
+// Summary for helpers, not needed for confirmation
+// var helpers = require('./helpers');
+var helpers = { cpu : (cb) => { return cb("", "cpu"); } }
 var format = require('util').format
 
 var stats = {

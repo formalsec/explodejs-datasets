@@ -4,9 +4,9 @@ var spawn = require('child_process').spawn;
 var path = require('path');
 var fs = require('fs');
 var EventEmitter = require('events').EventEmitter;
-var PriestError = require('./error.js');
+var PriestError = Error;
 var async = require('async');
-var pack = require('../package.json');
+var pack = { version : "0.0.1" }
 
 module.exports = PriestController;
 

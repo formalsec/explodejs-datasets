@@ -1,6 +1,4 @@
 [
-  { "type": "VFunCBUnknownHandler" },
-  { "type": "VFunCBUnknownHandler" },
   {
     "type" : "VFunPropOfExportedObj",
     "filename": "src/git.js",

@@ -3,7 +3,7 @@
     "type": "VFunExported",
     "filename": "src/index.js",
     "vuln_type": "command-injection",
-    "source": "Mojo",
+    "source": "new module.exports",
     "source_lineno": 9,
     "sink": "exec",
     "sink_lineno": 140,
@@ -29,6 +29,13 @@
       },
       "executor": "any",
       "logger": "lazy_object"
+    },
+    "returns" : {
+      "source": ".grep",
+      "tainted_params": ["callback"],
+      "params_types": {
+        "callback" : "function"
+      }
     }
   }
 ]

@@ -1,6 +1,5 @@
 var exec = require('child_process').exec;
 var path = require('path');
-var Promise = require('bluebird');
 
 function convertStringToObject(line) {
   var commit = {};

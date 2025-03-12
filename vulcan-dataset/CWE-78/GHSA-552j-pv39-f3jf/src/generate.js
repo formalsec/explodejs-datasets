@@ -3,7 +3,9 @@
 
 var fs   = require('fs');
 var exec = require('child_process').exec;
-var tmp  = require('tmp');
+var tmp  = {
+  file: (opts, cb) => { return cb("",""); }
+}
 
 /*
  * Create a certificate request extensions file.

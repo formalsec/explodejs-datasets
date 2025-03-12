@@ -22,7 +22,7 @@ function plotCallack(options) {
     if (!options.data || !options.filename) {
         throw new Error("The options object must have 'data' and 'filename' properties!");
     }
-    const data = castDataTypeInput2SeriesDataType(options.data);
+    // const data = castDataTypeInput2SeriesDataType(options.data);
     /* Defaults */
     if (!options.style) {
         options.style = "lines"; /* Default to lines */

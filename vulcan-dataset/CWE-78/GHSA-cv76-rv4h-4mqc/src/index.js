@@ -32,7 +32,7 @@ let PsTree = {
     processObj.children.forEach(child => output += this._txtProcessTree(child));
     return output;
   },
-  
+
   getPids(processObj, pidsByLevel = []) {
     (typeof processObj === 'number') && (processObj = this.getProcessTree(processObj));
     pidsByLevel[processObj.level] = pidsByLevel[processObj.level] || [];

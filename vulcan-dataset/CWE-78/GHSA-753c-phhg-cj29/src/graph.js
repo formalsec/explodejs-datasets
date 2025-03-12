@@ -1,11 +1,12 @@
 'use strict';
 
 const path = require('path');
-const {promisify} = require('util');
+// No support for promisify
+// const {promisify} = require('util');
 const graphviz = require('graphviz');
 
-const exec = promisify(require('child_process').exec);
-const writeFile = promisify(require('fs').writeFile);
+const exec = require('child_process').exec;
+const writeFile = require('fs').writeFile;
 
 /**
  * Set color on a node.

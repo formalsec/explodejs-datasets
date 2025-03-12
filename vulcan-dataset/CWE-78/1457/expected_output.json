@@ -1,0 +1,13 @@
+[
+  {
+    "type" : "VFunPropOfExportedObj",
+    "filename": "src/meta-git-clone.js",
+    "vuln_type": "command-injection",
+    "source": "",
+    "sink": "",
+    "tainted_params": [
+    ],
+    "params_types": {
+    }
+  }
+]

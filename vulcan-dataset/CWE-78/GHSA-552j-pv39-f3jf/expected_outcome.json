@@ -1,0 +1,35 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "./src/generate.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function execCb (err) {",
+        "sink_lineno": 140,
+        "source": "exports.createCert",
+        "tainted_params": [
+            "opts",
+            "reqPath",
+            "caKeyPath",
+            "caCertPath",
+            "extPath",
+            "cb"
+        ],
+        "params_types": {
+            "opts": "any",
+            "reqPath": "string",
+            "caKeyPath": "string",
+            "caCertPath": "string",
+            "extPath": "string",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "createCert",
+                "fn_name": "2530.createCert-o404",
+                "fn_id": 1927,
+                "source_fn_id": 1927
+            }
+        ]
+    }
+]

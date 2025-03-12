@@ -1,6 +1,7 @@
 [
     {
         "type": "VFunExported",
+        "filename" : "./src/launchEditor.js",
         "vuln_type": "command-injection",
         "source": "module.exports",
         "source_lineno": 326,

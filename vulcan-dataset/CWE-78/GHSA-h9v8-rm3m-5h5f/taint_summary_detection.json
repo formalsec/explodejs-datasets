@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-h9v8-rm3m-5h5f/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('git remote add ' + name + ' ' + url, {cwd: cwd}, cb);",
+        "sink_lineno": 21
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-h9v8-rm3m-5h5f/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.execSync('git remote add ' + name + ' ' + url, {cwd: cwd});",
+        "sink_lineno": 31
+    }
+]

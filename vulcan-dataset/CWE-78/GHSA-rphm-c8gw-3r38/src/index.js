@@ -8,12 +8,13 @@ const { blue, bold, green, red } = require('chalk');
 const path = require('path');
 const semver = require('semver');
 const { exec } = require('child_process');
-const { promisify } = require('util');
+// Unsupported util promisify
+// const { promisify } = require('util');
 
-const execAsync = promisify(exec);
+const execAsync = exec;
 
-async function getLatestVersions(name) {
-  const { stdout } = await execAsync(`npm view ${name} versions --json`);
+function getLatestVersions(name) {
+  const { stdout } = execAsync(`npm view ${name} versions --json`);
   try {
     return JSON.parse(stdout);
   } catch (err) {
@@ -21,8 +22,8 @@ async function getLatestVersions(name) {
   }
 }
 
-async function getLatestVersion(name, wanted) {
-  const versions = await getLatestVersions(name);
+function getLatestVersion(name, wanted) {
+  const versions = getLatestVersions(name);
   const applicableVersions = versions.filter(i => semver.satisfies(i, wanted));
   applicableVersions.sort((a, b) => semver.rcompare(a, b));
   return applicableVersions[0];
@@ -37,11 +38,11 @@ function getInstalledVersion(currentDir, name) {
 }
 
 function pushPkgs({ dir, logger, deps = {}, type, pkgs }) {
-  return Object.keys(deps).map(async name => {
+  return Object.keys(deps).map(name => {
     let wanted = deps[name];
     if (!wanted.startsWith('^')) wanted = `^${wanted}`;
     const installed = getInstalledVersion(dir, name);
-    const latest = await getLatestVersion(name, wanted);
+    const latest = getLatestVersion(name, wanted);
     const wantedFixed = wanted.slice(1);
     const shouldBeInstalled =
       installed === null || wantedFixed !== installed || installed !== latest;
@@ -71,11 +72,11 @@ function getPkgIds(filteredPkgs) {
  * @param {string} [options.dir] - The path where to look for the package.json file.
  * @param {object} [options.logger] - A logger instance, with a similar API as the console object.
  */
-async function verifyDeps({ autoUpgrade = false, dir, logger = console } = {}) {
-  const { dependencies, devDependencies } = require(path.join(dir, 'package.json'));
+function verifyDeps({ autoUpgrade = false, dir, logger = console } = {}) {
+  const { dependencies, devDependencies } = require(dir + '/package.json');
   logger.info(blue('Verifying dependencies…\n'));
   const pkgs = [];
-  await Promise.all([
+  Promise.all([
     ...pushPkgs({ deps: dependencies, dir, logger, pkgs, type: 'prod' }),
     ...pushPkgs({ deps: devDependencies, dir, logger, pkgs, type: 'dev' })
   ]);
@@ -94,8 +95,8 @@ async function verifyDeps({ autoUpgrade = false, dir, logger = console } = {}) {
     if (autoUpgrade) {
       logger.info('UPGRADING…');
       logger.info(upgradePackages);
-      const prodResult = await execAsync(`npm i ${getPkgIds(prodPkgs)}`);
-      const devResult = await execAsync(`npm i -D ${getPkgIds(devPkgs)}`);
+      const prodResult = execAsync(`npm i ${getPkgIds(prodPkgs)}`);
+      const devResult = execAsync(`npm i -D ${getPkgIds(devPkgs)}`);
       logger.info(`${green(`${bold('Upgraded dependencies:\n')}${prodResult.stdout}`)}`);
       logger.info(`${green(`${bold('Upgraded development dependencies:\n')}${devResult.stdout}`)}`);
     } else {

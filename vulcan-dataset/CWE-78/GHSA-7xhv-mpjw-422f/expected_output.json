@@ -3,7 +3,7 @@
     "type" : "VFunExported",
     "filename": "src/lib_googleIt.js",
     "vuln_type": "command-injection",
-    "source": "openInBrowser",
+    "source": "module.exports.openInBrowser",
     "source_lineno": 129,
     "sink": "exec",
     "sink_lineno": 136,

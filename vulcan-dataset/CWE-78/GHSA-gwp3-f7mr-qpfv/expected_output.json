@@ -19,7 +19,7 @@
         "opts": "object"
       }
     },
-    "return" : {
+    "returns" : {
       "vuln_type": "command-injection",
       "source": ".getMetadata",
       "source_lineno": 66,

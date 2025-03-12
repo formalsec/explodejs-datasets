@@ -4,7 +4,7 @@
  * @version 0.1.4
  * @author Kyle Ross <kylerross1324@gmail.com>
  * @license MIT License
- * 
+ *
  * @requires os
  * @requires child_process
  *
@@ -21,7 +21,7 @@
         wmic     = platform === 'win32'? path.join(process.env.SystemRoot, 'System32', 'wbem', 'wmic.exe') : null,
         emptyFn  = function(){},
         findLoad;
-    
+
     /*
      * Checks current platform to ensure we are running on `win32`.
      * @private
@@ -35,7 +35,7 @@
         }
         return true;
     }
-    
+
     /*
      * Proper checking to see if variable is a function.
      * @private
@@ -46,7 +46,7 @@
         var getType = {};
         return fn && getType.toString.call(fn) === '[object Function]';
     }
-    
+
     /**
      * Gets the total load in percent for process(es) by a specific search parameter.
      * @param {string|number} arg Specific search parameter. Can be a Process ID or Process Name.
@@ -77,12 +77,12 @@
     findLoad = exports.findLoad = function findLoad(arg, cb) {
         if(!isFunction(cb)) cb = emptyFn;
         if(!checkPlatform(cb)) return;
-        
+
         var cmd = "wmic path Win32_PerfFormattedData_PerfProc_Process get Name,PercentProcessorTime,IDProcess | findstr /i /c:" + arg;
         exec(cmd, function (error, res, stderr) {
             if(error !== null || stderr) return cb(error || stderr);
             if(!res) return cb('Cannot find results for provided arg: ' + arg, { load: 0, results: [] });
-            
+
             var found = res.replace(/[^\S\n]+/g, ':').replace(/\:\s/g, '|').split('|').filter(function(v) {
                 return !!v;
             }).map(function(v) {
@@ -93,22 +93,22 @@
                     load: +data[2]
                 };
             });
-            
+
             var totalLoad = 0;
-            
+
             found.forEach(function(obj) {
                 totalLoad += obj.load;
             });
-            
+
             var output = {
                 load: totalLoad,
                 found: found
             };
-            
+
             cb(null, output);
         });
     };
-    
+
     /**
      * Gets the total load in percent for all processes running on the current machine per CPU.
      * @param {function} cb A callback function to handle the results (error, results).
@@ -132,18 +132,18 @@
     exports.totalLoad = function totalLoad(cb) {
         if (!isFunction(cb)) cb = emptyFn;
         if (!checkPlatform(cb)) return;
-        
+
         execFile(wmic, ['cpu', 'get', 'loadpercentage'], function (error, res, stderr) {
             if(error !== null || stderr) return cb(error || stderr);
-            
-            var cpus = (res.match(/\d+/g) || []).map(function(x) { 
-                return +(x.trim()); 
+
+            var cpus = (res.match(/\d+/g) || []).map(function(x) {
+                return +(x.trim());
             });
-            
+
             cb(null, cpus);
         });
     };
-    
+
     /**
      * Gets the total load in percent for all Node.js processes running on the current machine.
      * @param {function} cb A callback function to handle the results (error, results).
@@ -173,7 +173,7 @@
     exports.nodeLoad = function nodeLoad(cb) {
         findLoad('node', cb);
     };
-    
+
     /**
      * Gets the total load in percent for all processes running on the current machine per CPU.
      * @param {function} cb A callback function to handle the results (error, results).
@@ -201,7 +201,7 @@
     exports.processLoad = function processLoad(cb) {
         findLoad(process.pid, cb);
     };
-    
+
     /**
      * Gets the name of each processor in the machine.
      * @param {function} cb A callback function to handle the results (error, results).
@@ -227,14 +227,14 @@
     exports.cpuInfo = function cpuInfo(cb) {
         if(!isFunction(cb)) cb = emptyFn;
         if(!checkPlatform(cb)) return;
-        
+
         execFile(wmic, ['cpu', 'get', 'Name'], function (error, res, stderr) {
             if(error !== null || stderr) return cb(error || stderr);
-            
+
             var cpus = res.match(/[^\r\n]+/g).map(function(v) {
                 return v.trim();
             });
-            
+
             cpus.shift();
             cb(null, cpus);
         });
@@ -254,10 +254,10 @@
      *      }
      *
      *      // results =>
-     *      // { 
+     *      // {
      *      //    usageInKb: 3236244,
      *      //    usageInMb: 3160.39453125,
-     *      //    usageInGb: 3.086322784423828 
+     *      //    usageInGb: 3.086322784423828
      *      // }
      *
      *      console.log('Total Memory Usage: ', result);
@@ -266,22 +266,22 @@
     exports.totalMemoryUsage = function totalMemoryUsage(cb) {
         if (!isFunction(cb)) cb = emptyFn;
         if (!checkPlatform(cb)) return;
-        
+
         var cmd = "tasklist /FO csv /nh";
         exec(cmd, function (error, res, stderr) {
             if(error !== null || stderr) return cb(error || stderr);
             var results = { usageInKb: 0 , usageInMb: 0 , usageInGb: 0 };
-            
+
             results.usageInKb = res.match(/[^\r\n]+/g).map(function(v) {
                 var amt = +v.split('","')[4].replace(/[^\d]/g, '');
                 return (!isNaN(amt) && typeof amt === 'number')? amt : 0;
             }).reduce(function(prev, current) {
                 return prev + current;
             });
-            
+
             results.usageInMb = results.usageInKb / 1024;
             results.usageInGb = results.usageInMb / 1024;
-            
+
             cb(null, results);
         });
     };

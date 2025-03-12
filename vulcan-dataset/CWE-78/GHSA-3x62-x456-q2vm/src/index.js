@@ -1,9 +1,15 @@
 /*! git-pull-or-clone. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 module.exports = gitPullOrClone
 
-const crossSpawn = require('cross-spawn')
+// const crossSpawn = require('cross-spawn')
+// Summary for spawn
+const crossSpawn = function(cmd, args, opts) {
+  return require("child_process").exec(cmd + args.join(" "), opts)
+}
 const debug = require('debug')('git-pull-or-clone')
-const fs = require('fs')
+// const fs = require('fs')
+// Summary for fs
+const fs = { access : (outPath, expected, cb) => { cb(true); cb(false); return } };
 
 function gitPullOrClone (url, outPath, opts, cb) {
   if (typeof opts === 'function') {
@@ -14,7 +20,9 @@ function gitPullOrClone (url, outPath, opts, cb) {
   const depth = opts.depth == null ? 1 : opts.depth
 
   if (depth <= 0) {
-    throw new RangeError('The "depth" option must be greater than 0')
+    // Unsupported RangeError
+    // throw new RangeError('The "depth" option must be greater than 0')
+    return;
   }
 
   fs.access(outPath, fs.R_OK | fs.W_OK, function (err) {
