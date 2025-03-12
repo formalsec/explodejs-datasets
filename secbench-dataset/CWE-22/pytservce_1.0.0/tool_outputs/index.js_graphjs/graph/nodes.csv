@@ -12,16 +12,16 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 196¿CallExpression¿¿¿¿¿{"start":{"line":3,"column":7},"end":{"line":3,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 197¿Identifier¿¿require¿¿¿{"start":{"line":3,"column":7},"end":{"line":3,"column":14},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 198¿Literal¿string¿¿'fs'¿¿{"start":{"line":3,"column":15},"end":{"line":3,"column":19},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Literal
-199¿VariableDeclarator¿¿v30¿¿¿¿¿VariableDeclarator
+199¿VariableDeclarator¿¿v30¿¿¿{"start":{"line":5,"column":18},"end":{"line":27,"column":1},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 200¿FunctionExpression¿¿anon¿¿¿{"start":{"line":5,"column":18},"end":{"line":27,"column":1},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿FunctionExpression
 201¿Identifier¿¿request¿¿¿{"start":{"line":5,"column":27},"end":{"line":5,"column":34},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 202¿Identifier¿¿response¿¿¿{"start":{"line":5,"column":35},"end":{"line":5,"column":43},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
-203¿VariableDeclarator¿¿v17¿¿¿¿¿VariableDeclarator
+203¿VariableDeclarator¿¿v17¿¿¿{"start":{"line":8,"column":29},"end":{"line":8,"column":57},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 204¿ObjectExpression¿¿¿¿¿{"start":{"line":8,"column":29},"end":{"line":8,"column":57},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿ObjectExpression
 205¿Property¿¿¿¿¿{"start":{"line":8,"column":30},"end":{"line":8,"column":56},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Property
 206¿Literal¿string¿¿'content-type'¿¿{"start":{"line":8,"column":30},"end":{"line":8,"column":44},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Literal
 207¿Literal¿string¿¿'text/html'¿¿{"start":{"line":8,"column":45},"end":{"line":8,"column":56},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Literal
-208¿VariableDeclarator¿¿v18¿¿¿¿¿VariableDeclarator
+208¿VariableDeclarator¿¿v18¿¿¿{"start":{"line":8,"column":4},"end":{"line":8,"column":58},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 209¿CallExpression¿¿¿¿¿{"start":{"line":8,"column":4},"end":{"line":8,"column":58},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 210¿MemberExpression¿¿¿¿¿{"start":{"line":8,"column":4},"end":{"line":8,"column":22},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 211¿Identifier¿¿response¿¿¿{"start":{"line":8,"column":4},"end":{"line":8,"column":12},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
@@ -30,7 +30,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 214¿Identifier¿¿v17¿¿¿¿¿Identifier
 215¿ExpressionStatement¿¿¿¿¿{"start":{"line":8,"column":4},"end":{"line":8,"column":59},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿ExpressionStatement
 216¿Identifier¿¿v18¿¿¿¿¿Identifier
-217¿VariableDeclarator¿¿v19¿¿¿¿¿VariableDeclarator
+217¿VariableDeclarator¿¿v19¿¿¿{"start":{"line":10,"column":4},"end":{"line":10,"column":44},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 218¿CallExpression¿¿¿¿¿{"start":{"line":10,"column":4},"end":{"line":10,"column":44},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 219¿MemberExpression¿¿¿¿¿{"start":{"line":10,"column":4},"end":{"line":10,"column":18},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 220¿Identifier¿¿response¿¿¿{"start":{"line":10,"column":4},"end":{"line":10,"column":12},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
@@ -38,17 +38,17 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 222¿Literal¿string¿¿'<meta charset='utf-8'>'¿¿{"start":{"line":10,"column":19},"end":{"line":10,"column":43},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Literal
 223¿ExpressionStatement¿¿¿¿¿{"start":{"line":10,"column":4},"end":{"line":10,"column":45},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿ExpressionStatement
 224¿Identifier¿¿v19¿¿¿¿¿Identifier
-225¿VariableDeclarator¿¿v20¿¿¿¿¿VariableDeclarator
+225¿VariableDeclarator¿¿v20¿¿¿{"start":{"line":11,"column":27},"end":{"line":11,"column":38},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 226¿MemberExpression¿¿¿¿¿{"start":{"line":11,"column":27},"end":{"line":11,"column":38},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 227¿Identifier¿¿request¿¿¿{"start":{"line":11,"column":27},"end":{"line":11,"column":34},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 228¿Identifier¿¿url¿¿¿{"start":{"line":11,"column":35},"end":{"line":11,"column":38},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
-229¿VariableDeclarator¿¿v21¿¿¿¿¿VariableDeclarator
+229¿VariableDeclarator¿¿v21¿¿¿{"start":{"line":11,"column":17},"end":{"line":11,"column":39},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 230¿CallExpression¿¿¿¿¿{"start":{"line":11,"column":17},"end":{"line":11,"column":39},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 231¿MemberExpression¿¿¿¿¿{"start":{"line":11,"column":17},"end":{"line":11,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 232¿Identifier¿¿url¿¿¿{"start":{"line":11,"column":17},"end":{"line":11,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 233¿Identifier¿¿parse¿¿¿{"start":{"line":11,"column":21},"end":{"line":11,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 234¿Identifier¿¿v20¿¿¿¿¿Identifier
-235¿VariableDeclarator¿¿v22¿¿¿¿¿VariableDeclarator
+235¿VariableDeclarator¿¿v22¿¿¿{"start":{"line":11,"column":17},"end":{"line":11,"column":48},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 236¿MemberExpression¿¿¿¿¿{"start":{"line":11,"column":17},"end":{"line":11,"column":48},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 237¿Identifier¿¿v21¿¿¿¿¿Identifier
 238¿Identifier¿¿pathname¿¿¿{"start":{"line":11,"column":40},"end":{"line":11,"column":48},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
@@ -58,13 +58,13 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 242¿Identifier¿¿v22¿¿¿¿¿Identifier
 243¿VariableDeclarator¿¿file¿¿¿{"start":{"line":12,"column":8},"end":{"line":12,"column":23},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 244¿Literal¿string¿¿'asmdlkas'¿¿{"start":{"line":12,"column":13},"end":{"line":12,"column":23},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Literal
-245¿VariableDeclarator¿¿v28¿¿¿¿¿VariableDeclarator
+245¿VariableDeclarator¿¿v28¿¿¿{"start":{"line":13,"column":21},"end":{"line":22,"column":5},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 246¿FunctionExpression¿¿anon¿¿¿{"start":{"line":13,"column":21},"end":{"line":22,"column":5},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿FunctionExpression
 247¿Identifier¿¿error¿¿¿{"start":{"line":13,"column":30},"end":{"line":13,"column":35},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 248¿Identifier¿¿data¿¿¿{"start":{"line":13,"column":36},"end":{"line":13,"column":40},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 249¿IfStatement¿¿¿¿¿{"start":{"line":14,"column":8},"end":{"line":21,"column":9},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿IfStatement
 250¿Identifier¿¿error¿¿¿{"start":{"line":14,"column":11},"end":{"line":14,"column":16},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
-251¿VariableDeclarator¿¿v23¿¿¿¿¿VariableDeclarator
+251¿VariableDeclarator¿¿v23¿¿¿{"start":{"line":15,"column":12},"end":{"line":15,"column":52},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 252¿CallExpression¿¿¿¿¿{"start":{"line":15,"column":12},"end":{"line":15,"column":52},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 253¿MemberExpression¿¿¿¿¿{"start":{"line":15,"column":12},"end":{"line":15,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 254¿Identifier¿¿response¿¿¿{"start":{"line":15,"column":12},"end":{"line":15,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
@@ -72,7 +72,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 256¿Literal¿string¿¿'<meta charset='utf-8'>'¿¿{"start":{"line":15,"column":27},"end":{"line":15,"column":51},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Literal
 257¿ExpressionStatement¿¿¿¿¿{"start":{"line":15,"column":12},"end":{"line":15,"column":53},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿ExpressionStatement
 258¿Identifier¿¿v23¿¿¿¿¿Identifier
-259¿VariableDeclarator¿¿v24¿¿¿¿¿VariableDeclarator
+259¿VariableDeclarator¿¿v24¿¿¿{"start":{"line":16,"column":12},"end":{"line":16,"column":35},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 260¿CallExpression¿¿¿¿¿{"start":{"line":16,"column":12},"end":{"line":16,"column":35},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 261¿MemberExpression¿¿¿¿¿{"start":{"line":16,"column":12},"end":{"line":16,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 262¿Identifier¿¿response¿¿¿{"start":{"line":16,"column":12},"end":{"line":16,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
@@ -80,7 +80,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 264¿Literal¿string¿¿'文件不存在'¿¿{"start":{"line":16,"column":27},"end":{"line":16,"column":34},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Literal
 265¿ExpressionStatement¿¿¿¿¿{"start":{"line":16,"column":12},"end":{"line":16,"column":36},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿ExpressionStatement
 266¿Identifier¿¿v24¿¿¿¿¿Identifier
-267¿VariableDeclarator¿¿v25¿¿¿¿¿VariableDeclarator
+267¿VariableDeclarator¿¿v25¿¿¿{"start":{"line":17,"column":12},"end":{"line":17,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 268¿CallExpression¿¿¿¿¿{"start":{"line":17,"column":12},"end":{"line":17,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 269¿MemberExpression¿¿¿¿¿{"start":{"line":17,"column":12},"end":{"line":17,"column":24},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 270¿Identifier¿¿response¿¿¿{"start":{"line":17,"column":12},"end":{"line":17,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
@@ -88,7 +88,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 272¿ExpressionStatement¿¿¿¿¿{"start":{"line":17,"column":12},"end":{"line":17,"column":27},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿ExpressionStatement
 273¿Identifier¿¿v25¿¿¿¿¿Identifier
 274¿BlockStatement¿¿¿¿¿{"start":{"line":14,"column":17},"end":{"line":18,"column":9},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿BlockStatement
-275¿VariableDeclarator¿¿v26¿¿¿¿¿VariableDeclarator
+275¿VariableDeclarator¿¿v26¿¿¿{"start":{"line":19,"column":12},"end":{"line":19,"column":32},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 276¿CallExpression¿¿¿¿¿{"start":{"line":19,"column":12},"end":{"line":19,"column":32},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 277¿MemberExpression¿¿¿¿¿{"start":{"line":19,"column":12},"end":{"line":19,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 278¿Identifier¿¿response¿¿¿{"start":{"line":19,"column":12},"end":{"line":19,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
@@ -96,7 +96,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 280¿Identifier¿¿data¿¿¿{"start":{"line":19,"column":27},"end":{"line":19,"column":31},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 281¿ExpressionStatement¿¿¿¿¿{"start":{"line":19,"column":12},"end":{"line":19,"column":33},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿ExpressionStatement
 282¿Identifier¿¿v26¿¿¿¿¿Identifier
-283¿VariableDeclarator¿¿v27¿¿¿¿¿VariableDeclarator
+283¿VariableDeclarator¿¿v27¿¿¿{"start":{"line":20,"column":12},"end":{"line":20,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 284¿CallExpression¿¿¿¿¿{"start":{"line":20,"column":12},"end":{"line":20,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 285¿MemberExpression¿¿¿¿¿{"start":{"line":20,"column":12},"end":{"line":20,"column":24},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 286¿Identifier¿¿response¿¿¿{"start":{"line":20,"column":12},"end":{"line":20,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
@@ -105,7 +105,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 289¿Identifier¿¿v27¿¿¿¿¿Identifier
 290¿BlockStatement¿¿¿¿¿{"start":{"line":18,"column":14},"end":{"line":21,"column":9},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿BlockStatement
 291¿BlockStatement¿¿¿¿¿{"start":{"line":13,"column":41},"end":{"line":22,"column":5},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿BlockStatement
-292¿VariableDeclarator¿¿v29¿¿¿¿¿VariableDeclarator
+292¿VariableDeclarator¿¿v29¿¿¿{"start":{"line":13,"column":4},"end":{"line":22,"column":6},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 293¿CallExpression¿¿¿¿¿{"start":{"line":13,"column":4},"end":{"line":22,"column":6},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 294¿MemberExpression¿¿¿¿¿{"start":{"line":13,"column":4},"end":{"line":13,"column":15},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 295¿Identifier¿¿fs¿¿¿{"start":{"line":13,"column":4},"end":{"line":13,"column":6},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
@@ -115,13 +115,13 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 299¿ExpressionStatement¿¿¿¿¿{"start":{"line":13,"column":4},"end":{"line":22,"column":6},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿ExpressionStatement
 300¿Identifier¿¿v29¿¿¿¿¿Identifier
 301¿BlockStatement¿¿¿¿¿{"start":{"line":5,"column":44},"end":{"line":27,"column":1},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿BlockStatement
-302¿VariableDeclarator¿¿v31¿¿¿¿¿VariableDeclarator
+302¿VariableDeclarator¿¿v31¿¿¿{"start":{"line":5,"column":0},"end":{"line":27,"column":2},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 303¿CallExpression¿¿¿¿¿{"start":{"line":5,"column":0},"end":{"line":27,"column":2},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 304¿MemberExpression¿¿¿¿¿{"start":{"line":5,"column":0},"end":{"line":5,"column":17},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 305¿Identifier¿¿http¿¿¿{"start":{"line":5,"column":0},"end":{"line":5,"column":4},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 306¿Identifier¿¿createServer¿¿¿{"start":{"line":5,"column":5},"end":{"line":5,"column":17},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿Identifier
 307¿Identifier¿¿v30¿¿¿¿¿Identifier
-308¿VariableDeclarator¿¿v32¿¿¿¿¿VariableDeclarator
+308¿VariableDeclarator¿¿v32¿¿¿{"start":{"line":5,"column":0},"end":{"line":27,"column":15},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿VariableDeclarator
 309¿CallExpression¿¿¿¿¿{"start":{"line":5,"column":0},"end":{"line":27,"column":15},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿CallExpression
 310¿MemberExpression¿¿¿¿¿{"start":{"line":5,"column":0},"end":{"line":27,"column":9},"fname":"/datasets/secbench-dataset/CWE-22/pytservce_1.0.0/src/index.js"}¿¿MemberExpression
 311¿Identifier¿¿v31¿¿¿¿¿Identifier

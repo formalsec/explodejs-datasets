@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "type": "VServerInitialization",
+        "filename": "/datasets/secbench-dataset/CWE-22/22lixian_1.0.0/src/demo.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path,function",
+        "sink_lineno": 6,
+        "source": "",
+        "tainted_params": [],
+        "params_types": {},
+        "client": {
+            "type": "GET",
+            "port": 8888
+        },
+        "call_paths": [
+            {
+                "type": "ServerInitialization",
+                "port": 8888,
+                "fn_name": "/datasets/secbench-dataset/CWE-22/22lixian_1.0.0/src/demo.js"
+            }
+        ]
+    }
+]

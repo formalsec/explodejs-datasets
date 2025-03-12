@@ -4,11 +4,11 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 45¿CallExpression¿¿¿¿¿{"start":{"line":1,"column":10},"end":{"line":1,"column":23},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿CallExpression
 46¿Identifier¿¿require¿¿¿{"start":{"line":1,"column":10},"end":{"line":1,"column":17},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿Identifier
 47¿Literal¿string¿¿'fs'¿¿{"start":{"line":1,"column":18},"end":{"line":1,"column":22},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿Literal
-48¿VariableDeclarator¿exported¿v4¿¿¿¿¿VariableDeclarator
+48¿VariableDeclarator¿exported¿v4¿¿¿{"start":{"line":6,"column":0},"end":{"line":8,"column":1},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿VariableDeclarator
 49¿FunctionExpression¿¿anon¿¿¿{"start":{"line":6,"column":24},"end":{"line":8,"column":1},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿FunctionExpression
 50¿Identifier¿¿path¿¿¿{"start":{"line":6,"column":34},"end":{"line":6,"column":38},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿Identifier
 51¿Identifier¿¿callback¿¿¿{"start":{"line":6,"column":40},"end":{"line":6,"column":48},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿Identifier
-52¿VariableDeclarator¿¿v3¿¿¿¿¿VariableDeclarator
+52¿VariableDeclarator¿¿v3¿¿¿{"start":{"line":7,"column":1},"end":{"line":7,"column":38},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿VariableDeclarator
 53¿CallExpression¿¿¿¿¿{"start":{"line":7,"column":1},"end":{"line":7,"column":38},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿CallExpression
 54¿MemberExpression¿¿¿¿¿{"start":{"line":7,"column":1},"end":{"line":7,"column":12},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿MemberExpression
 55¿Identifier¿¿fs¿¿¿{"start":{"line":7,"column":1},"end":{"line":7,"column":3},"fname":"/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js"}¿¿Identifier

@@ -12,21 +12,21 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 194¿CallExpression¿¿¿¿¿{"start":{"line":13,"column":7},"end":{"line":13,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 195¿Identifier¿¿require¿¿¿{"start":{"line":13,"column":7},"end":{"line":13,"column":14},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 196¿Literal¿string¿¿'fs'¿¿{"start":{"line":13,"column":15},"end":{"line":13,"column":19},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Literal
-197¿VariableDeclarator¿¿v30¿¿¿¿¿VariableDeclarator
+197¿VariableDeclarator¿¿v30¿¿¿{"start":{"line":14,"column":18},"end":{"line":29,"column":1},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 198¿FunctionExpression¿¿anon¿¿¿{"start":{"line":14,"column":18},"end":{"line":29,"column":1},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿FunctionExpression
 199¿Identifier¿¿request¿¿¿{"start":{"line":14,"column":27},"end":{"line":14,"column":34},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 200¿Identifier¿¿response¿¿¿{"start":{"line":14,"column":35},"end":{"line":14,"column":43},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
-201¿VariableDeclarator¿¿v17¿¿¿¿¿VariableDeclarator
+201¿VariableDeclarator¿¿v17¿¿¿{"start":{"line":15,"column":27},"end":{"line":15,"column":38},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 202¿MemberExpression¿¿¿¿¿{"start":{"line":15,"column":27},"end":{"line":15,"column":38},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 203¿Identifier¿¿request¿¿¿{"start":{"line":15,"column":27},"end":{"line":15,"column":34},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 204¿Identifier¿¿url¿¿¿{"start":{"line":15,"column":35},"end":{"line":15,"column":38},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
-205¿VariableDeclarator¿¿v18¿¿¿¿¿VariableDeclarator
+205¿VariableDeclarator¿¿v18¿¿¿{"start":{"line":15,"column":17},"end":{"line":15,"column":39},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 206¿CallExpression¿¿¿¿¿{"start":{"line":15,"column":17},"end":{"line":15,"column":39},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 207¿MemberExpression¿¿¿¿¿{"start":{"line":15,"column":17},"end":{"line":15,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 208¿Identifier¿¿url¿¿¿{"start":{"line":15,"column":17},"end":{"line":15,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 209¿Identifier¿¿parse¿¿¿{"start":{"line":15,"column":21},"end":{"line":15,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 210¿Identifier¿¿v17¿¿¿¿¿Identifier
-211¿VariableDeclarator¿¿v19¿¿¿¿¿VariableDeclarator
+211¿VariableDeclarator¿¿v19¿¿¿{"start":{"line":15,"column":17},"end":{"line":15,"column":48},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 212¿MemberExpression¿¿¿¿¿{"start":{"line":15,"column":17},"end":{"line":15,"column":48},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 213¿Identifier¿¿v18¿¿¿¿¿Identifier
 214¿Identifier¿¿pathname¿¿¿{"start":{"line":15,"column":40},"end":{"line":15,"column":48},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
@@ -34,12 +34,12 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 216¿BinaryExpression¿+¿¿¿¿{"start":{"line":15,"column":13},"end":{"line":15,"column":48},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿BinaryExpression
 217¿Literal¿string¿¿'.'¿¿{"start":{"line":15,"column":13},"end":{"line":15,"column":16},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Literal
 218¿Identifier¿¿v19¿¿¿¿¿Identifier
-219¿VariableDeclarator¿¿v20¿¿¿¿¿VariableDeclarator
+219¿VariableDeclarator¿¿v20¿¿¿{"start":{"line":16,"column":29},"end":{"line":16,"column":57},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 220¿ObjectExpression¿¿¿¿¿{"start":{"line":16,"column":29},"end":{"line":16,"column":57},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿ObjectExpression
 221¿Property¿¿¿¿¿{"start":{"line":16,"column":30},"end":{"line":16,"column":56},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Property
 222¿Literal¿string¿¿'content-type'¿¿{"start":{"line":16,"column":30},"end":{"line":16,"column":44},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Literal
 223¿Literal¿string¿¿'text/html'¿¿{"start":{"line":16,"column":45},"end":{"line":16,"column":56},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Literal
-224¿VariableDeclarator¿¿v21¿¿¿¿¿VariableDeclarator
+224¿VariableDeclarator¿¿v21¿¿¿{"start":{"line":16,"column":4},"end":{"line":16,"column":58},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 225¿CallExpression¿¿¿¿¿{"start":{"line":16,"column":4},"end":{"line":16,"column":58},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 226¿MemberExpression¿¿¿¿¿{"start":{"line":16,"column":4},"end":{"line":16,"column":22},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 227¿Identifier¿¿response¿¿¿{"start":{"line":16,"column":4},"end":{"line":16,"column":12},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
@@ -48,7 +48,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 230¿Identifier¿¿v20¿¿¿¿¿Identifier
 231¿ExpressionStatement¿¿¿¿¿{"start":{"line":16,"column":4},"end":{"line":16,"column":59},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿ExpressionStatement
 232¿Identifier¿¿v21¿¿¿¿¿Identifier
-233¿VariableDeclarator¿¿v22¿¿¿¿¿VariableDeclarator
+233¿VariableDeclarator¿¿v22¿¿¿{"start":{"line":17,"column":4},"end":{"line":17,"column":44},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 234¿CallExpression¿¿¿¿¿{"start":{"line":17,"column":4},"end":{"line":17,"column":44},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 235¿MemberExpression¿¿¿¿¿{"start":{"line":17,"column":4},"end":{"line":17,"column":18},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 236¿Identifier¿¿response¿¿¿{"start":{"line":17,"column":4},"end":{"line":17,"column":12},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
@@ -56,13 +56,13 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 238¿Literal¿string¿¿'<meta charset='utf-8'>'¿¿{"start":{"line":17,"column":19},"end":{"line":17,"column":43},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Literal
 239¿ExpressionStatement¿¿¿¿¿{"start":{"line":17,"column":4},"end":{"line":17,"column":45},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿ExpressionStatement
 240¿Identifier¿¿v22¿¿¿¿¿Identifier
-241¿VariableDeclarator¿¿v28¿¿¿¿¿VariableDeclarator
+241¿VariableDeclarator¿¿v28¿¿¿{"start":{"line":19,"column":21},"end":{"line":28,"column":5},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 242¿FunctionExpression¿¿anon¿¿¿{"start":{"line":19,"column":21},"end":{"line":28,"column":5},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿FunctionExpression
 243¿Identifier¿¿error¿¿¿{"start":{"line":19,"column":30},"end":{"line":19,"column":35},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 244¿Identifier¿¿file¿¿¿{"start":{"line":19,"column":36},"end":{"line":19,"column":40},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 245¿IfStatement¿¿¿¿¿{"start":{"line":20,"column":8},"end":{"line":27,"column":9},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿IfStatement
 246¿Identifier¿¿error¿¿¿{"start":{"line":20,"column":11},"end":{"line":20,"column":16},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
-247¿VariableDeclarator¿¿v23¿¿¿¿¿VariableDeclarator
+247¿VariableDeclarator¿¿v23¿¿¿{"start":{"line":21,"column":12},"end":{"line":21,"column":52},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 248¿CallExpression¿¿¿¿¿{"start":{"line":21,"column":12},"end":{"line":21,"column":52},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 249¿MemberExpression¿¿¿¿¿{"start":{"line":21,"column":12},"end":{"line":21,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 250¿Identifier¿¿response¿¿¿{"start":{"line":21,"column":12},"end":{"line":21,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
@@ -70,7 +70,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 252¿Literal¿string¿¿'<meta charset='UTF-8'>'¿¿{"start":{"line":21,"column":27},"end":{"line":21,"column":51},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Literal
 253¿ExpressionStatement¿¿¿¿¿{"start":{"line":21,"column":12},"end":{"line":21,"column":53},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿ExpressionStatement
 254¿Identifier¿¿v23¿¿¿¿¿Identifier
-255¿VariableDeclarator¿¿v24¿¿¿¿¿VariableDeclarator
+255¿VariableDeclarator¿¿v24¿¿¿{"start":{"line":22,"column":12},"end":{"line":22,"column":52},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 256¿CallExpression¿¿¿¿¿{"start":{"line":22,"column":12},"end":{"line":22,"column":52},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 257¿MemberExpression¿¿¿¿¿{"start":{"line":22,"column":12},"end":{"line":22,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 258¿Identifier¿¿response¿¿¿{"start":{"line":22,"column":12},"end":{"line":22,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
@@ -78,7 +78,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 260¿Literal¿string¿¿'<strong>文件不存在</strong>'¿¿{"start":{"line":22,"column":27},"end":{"line":22,"column":51},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Literal
 261¿ExpressionStatement¿¿¿¿¿{"start":{"line":22,"column":12},"end":{"line":22,"column":52},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿ExpressionStatement
 262¿Identifier¿¿v24¿¿¿¿¿Identifier
-263¿VariableDeclarator¿¿v25¿¿¿¿¿VariableDeclarator
+263¿VariableDeclarator¿¿v25¿¿¿{"start":{"line":23,"column":12},"end":{"line":23,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 264¿CallExpression¿¿¿¿¿{"start":{"line":23,"column":12},"end":{"line":23,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 265¿MemberExpression¿¿¿¿¿{"start":{"line":23,"column":12},"end":{"line":23,"column":24},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 266¿Identifier¿¿response¿¿¿{"start":{"line":23,"column":12},"end":{"line":23,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
@@ -86,7 +86,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 268¿ExpressionStatement¿¿¿¿¿{"start":{"line":23,"column":12},"end":{"line":23,"column":27},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿ExpressionStatement
 269¿Identifier¿¿v25¿¿¿¿¿Identifier
 270¿BlockStatement¿¿¿¿¿{"start":{"line":20,"column":17},"end":{"line":24,"column":9},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿BlockStatement
-271¿VariableDeclarator¿¿v26¿¿¿¿¿VariableDeclarator
+271¿VariableDeclarator¿¿v26¿¿¿{"start":{"line":25,"column":12},"end":{"line":25,"column":32},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 272¿CallExpression¿¿¿¿¿{"start":{"line":25,"column":12},"end":{"line":25,"column":32},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 273¿MemberExpression¿¿¿¿¿{"start":{"line":25,"column":12},"end":{"line":25,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 274¿Identifier¿¿response¿¿¿{"start":{"line":25,"column":12},"end":{"line":25,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
@@ -94,7 +94,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 276¿Identifier¿¿file¿¿¿{"start":{"line":25,"column":27},"end":{"line":25,"column":31},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 277¿ExpressionStatement¿¿¿¿¿{"start":{"line":25,"column":12},"end":{"line":25,"column":33},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿ExpressionStatement
 278¿Identifier¿¿v26¿¿¿¿¿Identifier
-279¿VariableDeclarator¿¿v27¿¿¿¿¿VariableDeclarator
+279¿VariableDeclarator¿¿v27¿¿¿{"start":{"line":26,"column":12},"end":{"line":26,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 280¿CallExpression¿¿¿¿¿{"start":{"line":26,"column":12},"end":{"line":26,"column":26},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 281¿MemberExpression¿¿¿¿¿{"start":{"line":26,"column":12},"end":{"line":26,"column":24},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 282¿Identifier¿¿response¿¿¿{"start":{"line":26,"column":12},"end":{"line":26,"column":20},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
@@ -103,7 +103,7 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 285¿Identifier¿¿v27¿¿¿¿¿Identifier
 286¿BlockStatement¿¿¿¿¿{"start":{"line":24,"column":13},"end":{"line":27,"column":9},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿BlockStatement
 287¿BlockStatement¿¿¿¿¿{"start":{"line":19,"column":41},"end":{"line":28,"column":5},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿BlockStatement
-288¿VariableDeclarator¿¿v29¿¿¿¿¿VariableDeclarator
+288¿VariableDeclarator¿¿v29¿¿¿{"start":{"line":19,"column":4},"end":{"line":28,"column":6},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 289¿CallExpression¿¿¿¿¿{"start":{"line":19,"column":4},"end":{"line":28,"column":6},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 290¿MemberExpression¿¿¿¿¿{"start":{"line":19,"column":4},"end":{"line":19,"column":15},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 291¿Identifier¿¿fs¿¿¿{"start":{"line":19,"column":4},"end":{"line":19,"column":6},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
@@ -113,13 +113,13 @@ Id:ID¿Type¿SubType¿IdentifierName¿Raw¿InternalStructure¿Location¿Code¿La
 295¿ExpressionStatement¿¿¿¿¿{"start":{"line":19,"column":4},"end":{"line":28,"column":6},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿ExpressionStatement
 296¿Identifier¿¿v29¿¿¿¿¿Identifier
 297¿BlockStatement¿¿¿¿¿{"start":{"line":14,"column":44},"end":{"line":29,"column":1},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿BlockStatement
-298¿VariableDeclarator¿¿v31¿¿¿¿¿VariableDeclarator
+298¿VariableDeclarator¿¿v31¿¿¿{"start":{"line":14,"column":0},"end":{"line":29,"column":2},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 299¿CallExpression¿¿¿¿¿{"start":{"line":14,"column":0},"end":{"line":29,"column":2},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 300¿MemberExpression¿¿¿¿¿{"start":{"line":14,"column":0},"end":{"line":14,"column":17},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 301¿Identifier¿¿http¿¿¿{"start":{"line":14,"column":0},"end":{"line":14,"column":4},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 302¿Identifier¿¿createServer¿¿¿{"start":{"line":14,"column":5},"end":{"line":14,"column":17},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿Identifier
 303¿Identifier¿¿v30¿¿¿¿¿Identifier
-304¿VariableDeclarator¿¿v32¿¿¿¿¿VariableDeclarator
+304¿VariableDeclarator¿¿v32¿¿¿{"start":{"line":14,"column":0},"end":{"line":29,"column":15},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿VariableDeclarator
 305¿CallExpression¿¿¿¿¿{"start":{"line":14,"column":0},"end":{"line":29,"column":15},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿CallExpression
 306¿MemberExpression¿¿¿¿¿{"start":{"line":14,"column":0},"end":{"line":29,"column":9},"fname":"/datasets/secbench-dataset/CWE-22/zjjserver_1.0.0/src/index.js"}¿¿MemberExpression
 307¿Identifier¿¿v31¿¿¿¿¿Identifier

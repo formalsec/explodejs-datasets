@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "type": "VServerInitialization",
+        "filename": "/datasets/secbench-dataset/CWE-22/sgqserve_1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(path,function (error,file) {",
+        "sink_lineno": 22,
+        "source": "",
+        "tainted_params": [],
+        "params_types": {},
+        "client": {
+            "type": "GET",
+            "port": 8888
+        },
+        "call_paths": [
+            {
+                "type": "ServerInitialization",
+                "port": 8888,
+                "fn_name": "/datasets/secbench-dataset/CWE-22/sgqserve_1.0.0/src/index.js"
+            }
+        ]
+    }
+]

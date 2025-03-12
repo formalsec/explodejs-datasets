@@ -11,15 +11,15 @@ Relationships:
 
 
 Available resources:
-  Total machine memory: 7.657GiB
-  Free machine memory: 6.526GiB
-  Max heap memory : 1.703GiB
-  Max worker threads: 8
-  Configured max memory: 4.391GiB
+  Total machine memory: 157.0GiB
+  Free machine memory: 121.6GiB
+  Max heap memory : 26.67GiB
+  Max worker threads: 104
+  Configured max memory: 85.51GiB
   High parallel IO: true
 
 
-Import starting 2024-05-31 21:22:31.351+0000
+Import starting 2025-03-12 15:00:32.464+0000
   Estimated number of nodes: 0.00 
   Estimated number of node properties: 0.00 
   Estimated number of relationships: 0.00 
@@ -27,49 +27,49 @@ Import starting 2024-05-31 21:22:31.351+0000
   Estimated disk space usage: 0B
   Estimated required memory usage: 1020MiB
 
-(1/4) Node import 2024-05-31 21:22:31.356+0000
+(1/4) Node import 2025-03-12 15:00:32.475+0000
   Estimated number of nodes: 0.00 
   Estimated disk space usage: 0B
   Estimated required memory usage: 1020MiB
-Node import COMPLETED in 86ms
+Node import COMPLETED in 188ms
 
-(2/4) Relationship import 2024-05-31 21:22:31.442+0000
+(2/4) Relationship import 2025-03-12 15:00:32.666+0000
   Estimated number of relationships: 0.00 
   Estimated disk space usage: 0B
   Estimated required memory usage: 1020MiB
-Relationship import COMPLETED in 15ms
+Relationship import COMPLETED in 96ms
 
-(3/4) Relationship linking 2024-05-31 21:22:31.459+0000
+(3/4) Relationship linking 2025-03-12 15:00:32.762+0000
   Estimated required memory usage: 1020MiB
-Relationship linking COMPLETED in 24ms
+Relationship linking COMPLETED in 47ms
 
-(4/4) Post processing 2024-05-31 21:22:31.484+0000
+(4/4) Post processing 2025-03-12 15:00:32.810+0000
   Estimated required memory usage: 1020MiB
--......... .......... .......... .......... ..........   5% ∆15ms
+-......... .......... .......... .......... ..........   5% ∆14ms
 .......... .......... .......... .......... ..........  10% ∆1ms
 .......... .......... .......... .......... ..........  15% ∆0ms
 .......... .......... .......... .......... ..........  20% ∆1ms
-.......... .......... .......... .......... ..........  25% ∆0ms
+.......... .......... .......... .......... ..........  25% ∆1ms
 .......... .......... .......... .......... ..........  30% ∆0ms
 .......... .......... .......... .......... ..........  35% ∆1ms
-.......... .......... .......... .......... ..........  40% ∆0ms
-.......... .......... .......... .......... ..........  45% ∆1ms
-.......... .......... .......... .......... ..........  50% ∆0ms
-.......... .......... .......... .......... ..........  55% ∆1ms
+.......... .......... .......... .......... ..........  40% ∆1ms
+.......... .......... .......... .......... ..........  45% ∆0ms
+.......... .......... .......... .......... ..........  50% ∆1ms
+.......... .......... .......... .......... ..........  55% ∆0ms
 .......... .......... .......... .......... ..........  60% ∆0ms
-.......... .......... .......... .......... ..........  65% ∆0ms
-.......... .......... .......... .......... ..........  70% ∆1ms
-.......... .......... .......... .......... ..........  75% ∆0ms
+.......... .......... .......... .......... ..........  65% ∆1ms
+.......... .......... .......... .......... ..........  70% ∆0ms
+.......... .......... .......... .......... ..........  75% ∆1ms
 .......... .......... .......... .......... ..........  80% ∆0ms
 .......... .......... .......... .......... ..........  85% ∆0ms
-.......... .......... .......... .......... ..........  90% ∆0ms
-.......... .......... .......... .......... ..........  95% ∆1ms
-.......... .......... .......... .......... .......... 100% ∆0ms
+.......... .......... .......... .......... ..........  90% ∆1ms
+.......... .......... .......... .......... ..........  95% ∆0ms
+.......... .......... .......... .......... .......... 100% ∆1ms
 
-Post processing COMPLETED in 292ms
+Post processing COMPLETED in 428ms
 
 
-IMPORT DONE in 467ms. 
+IMPORT DONE in 888ms. 
 Imported:
   0 nodes
   0 relationships
