@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/npm-help_1.0.0/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var latestVersion = execSync('tnpm view ' + module + ' version').toString();",
+        "sink_lineno": 13,
+        "source": "module.exports.latestVersion",
+        "tainted_params": [
+            "module"
+        ],
+        "params_types": {
+            "module": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "latestVersion",
+                "fn_name": "186.v12-o37",
+                "fn_id": "126",
+                "source_fn_id": "126"
+            }
+        ]
+    }
+]

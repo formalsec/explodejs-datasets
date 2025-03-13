@@ -1,0 +1,89 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 55,
+        "source": "module.exports.ps",
+        "tainted_params": [
+            "condition",
+            "extra",
+            "keywords",
+            "filterWaste"
+        ],
+        "params_types": {
+            "condition": "object",
+            "extra": "string",
+            "keywords": "array",
+            "filterWaste": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "ps",
+                "fn_name": "4508.ps-o674",
+                "fn_id": 3304,
+                "source_fn_id": 3304
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 403,
+        "source": "module.exports.kill",
+        "tainted_params": [
+            "pid",
+            "signal"
+        ],
+        "params_types": {
+            "pid": "string",
+            "signal": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "kill",
+                "fn_name": "4508.kill-o690",
+                "fn_id": "4220",
+                "source_fn_id": "4220"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 443,
+        "source": "module.exports.getSignalRaw",
+        "tainted_params": [
+            "signal"
+        ],
+        "params_types": {
+            "signal": {
+                "_union": [
+                    "number",
+                    "string"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getSignalRaw",
+                "fn_name": "4508.getSignalRaw-o696",
+                "fn_id": "4400",
+                "source_fn_id": "4400"
+            }
+        ]
+    }
+]

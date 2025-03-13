@@ -1,5 +1,4 @@
 'use strict';
-const Promise = require('bluebird');
 const exec = require('child_process').exec;
 const printf = require('util').format;
 const stream = require('stream');

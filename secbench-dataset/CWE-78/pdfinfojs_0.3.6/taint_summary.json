@@ -1,0 +1,120 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/pdfinfojs_0.3.6/src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '));",
+        "sink_lineno": 28,
+        "source": "new module.exports",
+        "tainted_params": [
+            "filename",
+            "options"
+        ],
+        "params_types": {
+            "filename": "string",
+            "options": {
+                "additional": "any"
+            }
+        },
+        "returns": {
+            "source": ".getInfoSync",
+            "params_types": {},
+            "tainted_params": []
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1523.v124-o196",
+                "fn_id": "884",
+                "source_fn_id": "884"
+            },
+            {
+                "type": "Method",
+                "prop": "getInfoSync",
+                "fn_name": "1523.v139-o195",
+                "fn_id": "1026",
+                "source_fn_id": "1026"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/pdfinfojs_0.3.6/src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
+        "sink_lineno": 47,
+        "source": "new module.exports",
+        "tainted_params": [
+            "filename",
+            "options"
+        ],
+        "params_types": {
+            "filename": "string",
+            "options": {
+                "additional": "any"
+            }
+        },
+        "returns": {
+            "source": ".getInfo",
+            "params_types": {
+                "cb": "function"
+            },
+            "tainted_params": [
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1523.v144-o205",
+                "fn_id": "884",
+                "source_fn_id": "884"
+            },
+            {
+                "type": "Method",
+                "prop": "getInfo",
+                "fn_name": "1523.v165-o204",
+                "fn_id": "1149",
+                "source_fn_id": "1149"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/pdfinfojs_0.3.6/src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
+        "sink_lineno": 72,
+        "source": "new module.exports",
+        "tainted_params": [
+            "filename",
+            "options"
+        ],
+        "params_types": {
+            "filename": "string",
+            "options": {
+                "additional": "any"
+            }
+        },
+        "returns": {
+            "source": ".get",
+            "params_types": {},
+            "tainted_params": []
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "fn_name": "1523.v166-o209",
+                "fn_id": "884",
+                "source_fn_id": "884"
+            },
+            {
+                "type": "Method",
+                "prop": "get",
+                "fn_name": "1523.v196-o208",
+                "fn_id": "1297",
+                "source_fn_id": "1297"
+            }
+        ]
+    }
+]

@@ -1,11 +1,10 @@
-var Promise = require('es6-promise').Promise;
 var async = require('async');
 var cp = require('child_process');
 var notEmpty = function(x) {return x};
 
 module.exports = function killport(port) {
   return (new Promise(function(resolve, reject) {
-    var cmd = 'lsof -i:' + port; 
+    var cmd = 'lsof -i:' + port;
     cp.exec(cmd, function(err, stdout, stderr){
       // do not check `err`, if no process found
       // err will be an instance of Error

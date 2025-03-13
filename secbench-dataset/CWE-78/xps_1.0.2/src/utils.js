@@ -5,7 +5,6 @@
 'use strict';
 
 // -- Dependencies -----------------------------------------------------
-var Task    = require('data.task');
 var exec    = require('child_process').exec;
 var compose = require('core.lambda').compose;
 var unary   = require('core.arity').unary;
@@ -24,7 +23,7 @@ var escapeArg = JSON.stringify;
 exports.shell = shell;
 function shell(cmd, args) {
   var command = cmd + ' ' + args.map(unary(compose(escapeArg)(String))).join(' ');
-  return new Task(function(reject, resolve) {
+  return new Promise(function(reject, resolve) {
     exec(command, function(error, stdout, stderr) {
       if (error)  reject(error);
       else        resolve({ output: stdout, error: stderr });

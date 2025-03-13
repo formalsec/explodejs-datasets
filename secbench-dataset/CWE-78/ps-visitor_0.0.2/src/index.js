@@ -5,8 +5,7 @@
 'use strict';
 
 const os = require('os');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const exec = require('child_process').exec;
 
 const PS_HEADER_OSX = 'USERPID%CPU%MEMVSZRSSTTSTATSTARTEDTIMECOMMAND';
 const PS_HEADER_LINUX = 'USERPID%CPU%MEMVSZRSSTTYSTATSTARTTIMECOMMAND';

@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/diskusage-ng_0.2.6/src/posix.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('df -k \"' + path + '\"', function(err, stdout) {",
+        "sink_lineno": 13
+    }
+]

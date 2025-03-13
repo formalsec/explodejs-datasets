@@ -1,0 +1,68 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 8
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 27
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 46
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 65
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 83
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 101
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 119
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 137
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 155
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 173
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 191
+    }
+]

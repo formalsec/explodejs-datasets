@@ -8,7 +8,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.plot = void 0;
 const child_process_1 = require("child_process");
-const lodash_1 = __importDefault(require("lodash"));
+const lodash_1 = require("lodash");
+
 /*
  * Performs a n-point moving average on array.
  */
@@ -22,17 +23,17 @@ function plotCallack(options) {
     if (!options.data || !options.filename) {
         throw new Error("The options object must have 'data' and 'filename' properties!");
     }
-    // const data = castDataTypeInput2SeriesDataType(options.data);
+    const data = lodash_1.castDataTypeInput2SeriesDataType(options.data);
     /* Defaults */
     if (!options.style) {
         options.style = "lines"; /* Default to lines */
     }
     /* Apply moving averages and maximums */
     if (options.moving_avg) {
-        options.data = apply_moving_filter(data, moving_average, options.moving_avg);
+        options.data = lodash_1.apply_moving_filter(data, options.moving_avg, options.moving_avg);
     }
     if (options.moving_max) {
-        options.data = apply_moving_filter(data, moving_maximum, options.moving_max);
+        options.data = lodash_1.apply_moving_filter(data, options.moving_max, options.moving_max);
     }
     /* Execute Gnuplot specifing a function to be called when it terminates */
     var gnuplot;

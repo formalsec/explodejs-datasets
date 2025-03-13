@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // We don't have summary for meta-exec
 const exec = require('child_process').exec;
 const fs = require('fs');

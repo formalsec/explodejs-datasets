@@ -83,11 +83,11 @@ module.exports = {
             return testAsync(host, port, SOCKET_TIMEOUT, callbackOrConnectTimeout);
         }
         if (typeof callbackOrConnectTimeout === 'number') {
-            if (callback) {
-                return testAsync(host, port, callbackOrConnectTimeout, callback);
-            } else {
+            // if (callback) {
+            //     return testAsync(host, port, callbackOrConnectTimeout, callback);
+            // } else {
                 return testSync(host, port, callbackOrConnectTimeout);
-            }
+            // }
         }
         if (callbackOrConnectTimeout === undefined) {
             return testSync(host, port, SOCKET_TIMEOUT);

@@ -221,7 +221,7 @@ Git.prototype.pull = function(repo, cb) {
 	var cmd = ['git', 'pull', 'file://' + path.resolve(self.repoDir, repo.organization, repo.name), repo.branch].join(' ');
 	debug('Git.pull ' + dir + ': ' + cmd);
 	child.exec(cmd, {
-		cwd : dir
+		// cwd : dir
 	}, function(err) {
 		debug('Git.pull ' + dir + ' done: ' + err);
 		if (err)

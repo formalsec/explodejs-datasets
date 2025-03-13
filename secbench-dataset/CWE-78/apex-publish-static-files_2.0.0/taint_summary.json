@@ -1,0 +1,37 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/apex-publish-static-files_2.0.0/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const childProcess = execSync(",
+        "sink_lineno": 54,
+        "source": "module.exports.publish",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": {
+                "_union": [
+                    {
+                        "connectString": "string",
+                        "directory": "string",
+                        "appID": "string",
+                        "destination": "string",
+                        "pluginName": "string",
+                        "sqlclPath": "string"
+                    },
+                    "lazy_object"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "publish",
+                "fn_name": "1002.v153-o110",
+                "fn_id": "580",
+                "source_fn_id": "580"
+            }
+        ]
+    }
+]

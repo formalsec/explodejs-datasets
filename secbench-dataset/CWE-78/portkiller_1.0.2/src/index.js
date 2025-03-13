@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const exec = require('child_process').exec,
 	  port = process.argv[2]
 
@@ -9,7 +7,7 @@ const killer = (port) => {
 
     exec(`lsof -n -i4TCP:${port} | grep LISTEN`, (err, out, stderr) => {
       const match = out.split(' ').filter(m => m.length)
-      
+
       if ( match.length) {
         resolve(match[1])
       } else {
@@ -18,7 +16,7 @@ const killer = (port) => {
     })
 
   }).then(pid => {
-    
+
     exec(`kill ${pid}`,(err, out, stderr) => {
       if( err ) throw err
 

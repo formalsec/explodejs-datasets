@@ -4,23 +4,28 @@
         "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.exec(`touch ${filePath}`);",
-        "sink_lineno": 40,
+        "sink_lineno": 41,
         "source": "module.exports.plot",
         "tainted_params": [
             "options"
         ],
         "params_types": {
             "options": {
-                "finish": "any"
+                "_union": [
+                    {
+                        "finish": "any"
+                    },
+                    "lazy_object"
+                ]
             }
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "plot",
-                "fn_name": "878.plot-o116",
-                "fn_id": 792,
-                "source_fn_id": 792
+                "fn_name": "914.plot-o114",
+                "fn_id": 828,
+                "source_fn_id": 828
             }
         ]
     },
@@ -29,23 +34,28 @@
         "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "vuln_type": "command-injection",
         "sink": "gnuplot = child_process_1.exec(`gnuplot | ps2pdf - ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
-        "sink_lineno": 43,
+        "sink_lineno": 44,
         "source": "module.exports.plot",
         "tainted_params": [
             "options"
         ],
         "params_types": {
             "options": {
-                "finish": "any"
+                "_union": [
+                    {
+                        "finish": "any"
+                    },
+                    "lazy_object"
+                ]
             }
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "plot",
-                "fn_name": "878.plot-o116",
-                "fn_id": 792,
-                "source_fn_id": 792
+                "fn_name": "914.plot-o114",
+                "fn_id": 828,
+                "source_fn_id": 828
             }
         ]
     },
@@ -54,23 +64,28 @@
         "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "vuln_type": "command-injection",
         "sink": "gnuplot = child_process_1.exec(`gnuplot > ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
-        "sink_lineno": 47,
+        "sink_lineno": 48,
         "source": "module.exports.plot",
         "tainted_params": [
             "options"
         ],
         "params_types": {
             "options": {
-                "finish": "any"
+                "_union": [
+                    {
+                        "finish": "any"
+                    },
+                    "lazy_object"
+                ]
             }
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "plot",
-                "fn_name": "878.plot-o116",
-                "fn_id": 792,
-                "source_fn_id": 792
+                "fn_name": "914.plot-o114",
+                "fn_id": 828,
+                "source_fn_id": 828
             }
         ]
     }

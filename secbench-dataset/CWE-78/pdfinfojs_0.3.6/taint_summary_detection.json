@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/pdfinfojs_0.3.6/src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '));",
+        "sink_lineno": 28
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/pdfinfojs_0.3.6/src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
+        "sink_lineno": 47
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/pdfinfojs_0.3.6/src/pdfinfo.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
+        "sink_lineno": 72
+    }
+]

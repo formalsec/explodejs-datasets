@@ -1,8 +1,10 @@
 var shell = require('shelljs');
-var utils = require('./utils');
+// var utils = require('./utils');
+// Utils summary
+var utils = { parse: (data) => { return data; } };
 
 // shelljs only supports silent globally due to a bug
-shell.config.silent = true;
+// shell.config.silent = true;
 
 function pdfinfo (filename, options) {
   this.options = options || {};
@@ -71,7 +73,7 @@ function pdfinfo (filename, options) {
     var self = this;
     var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {
       if (code === 0) {
-        if (self.options.success 
+        if (self.options.success
             && typeof self.options.success === "function") {
           self.options.success(utils.parse(data));
         }
@@ -80,7 +82,7 @@ function pdfinfo (filename, options) {
         if (!shell.which('pdfinfo')) {
           echo('Sorry, this script requires pdfinfo.');
         }
-        if (self.options.error 
+        if (self.options.error
             && typeof self.options.error === "function") {
           self.options.error(data);
         }
@@ -101,6 +103,4 @@ function pdfinfo (filename, options) {
 }
 
 // module exports
-exports = module.exports = function(filename, args) {
-  return new pdfinfo(filename, args);
-};
+module.exports = pdfinfo;

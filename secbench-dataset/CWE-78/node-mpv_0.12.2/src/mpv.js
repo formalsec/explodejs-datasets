@@ -6,7 +6,49 @@ var eventEmitter = require('events').EventEmitter;
 
 
 // Lodash for some nice stuff
-var _ = require('lodash');
+var _ = {
+  defaults: function (obj, source) {
+    for (var key in source) {
+      if (source.hasOwnProperty(key) && obj[key] === undefined) {
+        obj[key] = source[key];
+      }
+    }
+    return obj;
+  },
+
+  concat: function (array, values) {
+    return array.concat(values);
+  },
+
+  merge: function (object, source) {
+    for (var key in source) {
+      if (source.hasOwnProperty(key)) {
+        if (typeof object[key] === 'object' && typeof source[key] === 'object') {
+          this.merge(object[key], source[key]);
+        } else {
+          object[key] = source[key];
+        }
+      }
+    }
+    return object;
+  },
+
+  union: function (array1, array2) {
+    return Array.from(new Set(array1.concat(array2)));
+  },
+
+  extend: function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (source.hasOwnProperty(key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  }
+};
 
 
 // the modules with all the member functions

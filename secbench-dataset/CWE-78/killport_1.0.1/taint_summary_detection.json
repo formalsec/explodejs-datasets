@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/killport_1.0.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(cmd, function(err, stdout, stderr){",
+        "sink_lineno": 8
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/killport_1.0.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec('kill ' + pid, function (err, stdout, stderr) {",
+        "sink_lineno": 28
+    }
+]

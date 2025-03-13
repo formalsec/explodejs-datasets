@@ -3,7 +3,7 @@ var fs = require('fs')
 var p = require('path')
 var exec = require('child_process').exec
 var spawn = require('child_process').spawn
-var helpers = require('./helpers')
+var helpers = { cpu: (cb) => { return cb("", "intel"); } }
 var format = require('util').format
 
 var stats = {

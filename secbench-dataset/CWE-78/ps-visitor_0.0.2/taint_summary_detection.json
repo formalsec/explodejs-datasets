@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 55
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 403
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(cmd).then((result) => {",
+        "sink_lineno": 443
+    }
+]

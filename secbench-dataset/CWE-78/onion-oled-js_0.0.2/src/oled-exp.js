@@ -1,5 +1,4 @@
-var Promise = require('promise');
-var exec = Promise.denodeify(require('child_process').exec);
+var exec = require('child_process').exec;
 
 var oledExecutable = '/usr/sbin/oled-exp';
 

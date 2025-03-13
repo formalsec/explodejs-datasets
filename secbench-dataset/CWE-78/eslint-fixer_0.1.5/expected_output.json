@@ -1,0 +1,20 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "./src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "childProcess.exec(cmd, (error, stdout, stderr) => {",
+        "sink_lineno": 24,
+        "source": "module.exports",
+        "tainted_params": [
+            "filePath",
+            "options"
+        ],
+        "params_types": {
+            "filePath": {
+              "_union": ["string", "array"]
+            },
+            "options": "object"
+        }
+    }
+]

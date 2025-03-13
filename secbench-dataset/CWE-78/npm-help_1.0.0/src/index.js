@@ -9,13 +9,13 @@ var semver = require('semver');
  * @param module
  * @returns {string}
  */
-exports.latestVersion = function (module) {
-	var latestVersion = execSync('tnpm view ' + module + ' version').toString();
+exports.latestVersion = function (module_) {
+	var latestVersion = execSync('tnpm view ' + module_ + ' version').toString();
 	return latestVersion;
 }
 
-exports.checkLatestVersion = function (module, version) {
-	var latestVersion = this.latestVersion(module);
+exports.checkLatestVersion = function (module_, version) {
+	var latestVersion = this.latestVersion(module_);
 	if (semver.lt(version, latestVersion)) {
 		return false;
 	}

@@ -919,7 +919,10 @@ var buns = {
     }
 }
 
-//Exporting module
-for(var methods in buns) {
-    exports[methods] = buns[methods];
-}
+
+// Stupid exports!
+////Exporting module
+//for(var methods in buns) {
+//    exports[methods] = buns[methods];
+//}
+module.exports = buns;

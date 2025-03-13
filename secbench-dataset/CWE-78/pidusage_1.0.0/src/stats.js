@@ -3,7 +3,9 @@ var os = require('os')
   , p = require('path')
   , exec = require('child_process').exec
   , spawn = require('child_process').spawn
-  , helpers = require('./helpers')
+  // , helpers = require('./helpers')
+  // Summary for helpers
+  , helpers = (cb) => { return cb("", "intel"); }
 
 var stats = {
   history: {},
@@ -15,7 +17,7 @@ var stats = {
       fs.readFile('/proc/uptime', 'utf8', function(err, uptime) {
         if(err)
           return done(err, null)
-        
+
         if(uptime === undefined) {
           console.error("We couldn't find uptime from /proc/uptime")
           self.cpu.uptime = os.uptime()
@@ -131,7 +133,7 @@ var stats = {
 
       // Ref:
       // https://msdn.microsoft.com/en-us/library/aa394277(v=vs.85).aspx
-    
+
       // What we get is really a small bunch of data, so exec is better here.
       var cmd = 'wmic path Win32_PerfFormattedData_PerfProc_Process WHERE IDProcess=' + pid + ' get PercentProcessorTime, WorkingSet'
 
@@ -140,14 +142,14 @@ var stats = {
           return done(err, null)
 
         stdout = stdout.trim()
-        
+
         if(!stdout)
           return done(new Error(pid + ' does not exist', null))
 
         // The new line in Windows is '\r\r\n'
         var lines = stdout.split(/\r?\r\n/)
         // We might need the titles someday.
-        //var titles = lines[0].trim().split( / +/ ) 
+        //var titles = lines[0].trim().split( / +/ )
         var values = lines[1].trim().split(/ +/)
         var cpuPercent = parseFloat(values[0])
         var memUsage   = parseFloat(values[1])

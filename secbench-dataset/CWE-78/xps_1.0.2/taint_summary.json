@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/xps_1.0.2/src/utils.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, function(error, stdout, stderr) {",
+        "sink_lineno": 27,
+        "source": "module.exports.shell",
+        "tainted_params": [
+            "cmd",
+            "args"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "args": "array"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "shell",
+                "fn_name": "306.shell-o60",
+                "fn_id": 221,
+                "source_fn_id": 221
+            }
+        ]
+    }
+]

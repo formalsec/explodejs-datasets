@@ -3,7 +3,7 @@
     "type" : "VFunPropOfExportedObj",
     "filename": "src/index.js",
     "vuln_type": "command-injection",
-    "source": "new Image",
+    "source": "new module.exports.Image",
     "source_lineno": 66,
     "sink": "im-metadata",
     "sink_lineno": 74,

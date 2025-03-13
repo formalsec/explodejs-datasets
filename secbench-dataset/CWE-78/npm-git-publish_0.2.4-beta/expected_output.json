@@ -1,0 +1,15 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "./src/publish.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process_1.execSync(\"git clone --quiet --depth 1 \" + gitRemoteUrl + \" \\\"\" + gitRepoDir + \"\\\"\", { stdio: 'inherit' });",
+        "sink_lineno": 92,
+        "source": "module.exports.publish",
+        "tainted_params": [ "packageDir", "gitRemoteUrl" ],
+        "params_types": {
+            "packageDir": "string",
+            "gitRemoteUrl": "string"
+        }
+    }
+]

@@ -1,0 +1,306 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command, next);",
+        "sink_lineno": 85,
+        "source": "module.exports.treatImages",
+        "tainted_params": [
+            "files",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "files": "array",
+            "options": {
+                "scale": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "fuzz": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "trim": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "treatImages",
+                "fn_name": "5553.v396-o703",
+                "fn_id": 3262,
+                "source_fn_id": 3262
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"identify \" + filePaths.join(\" \"), function (err, stdout) {",
+        "sink_lineno": 102,
+        "source": "module.exports.getImagesSizes",
+        "tainted_params": [
+            "files",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "files": {
+                "*": {
+                    "width": "any",
+                    "height": "any",
+                    "area": "any",
+                    "trimmed": "any",
+                    "trim": {
+                        "x": "any",
+                        "y": "any",
+                        "width": "any",
+                        "height": "any"
+                    }
+                }
+            },
+            "options": {
+                "padding": "number",
+                "divisibleByTwo": "any",
+                "trim": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getImagesSizes",
+                "fn_name": "5553.v475-o710",
+                "fn_id": "3490",
+                "source_fn_id": "3490"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command.join(\" \"), function (err) {",
+        "sink_lineno": 196,
+        "source": "module.exports.generateImage",
+        "tainted_params": [
+            "files",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "files": {
+                "*": {
+                    "path": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "x": "string",
+                    "y": "string",
+                    "originalPath": "any"
+                }
+            },
+            "options": {
+                "width": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "height": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "path": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "name": "string",
+                "padding": "string",
+                "format": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "tinify": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "generateImage",
+                "fn_name": "5553.v588-o724",
+                "fn_id": "4131",
+                "source_fn_id": "4131"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"magick identify \" + filePath, function (err, stdout) {",
+        "sink_lineno": 204,
+        "source": "module.exports.generateImage",
+        "tainted_params": [
+            "files",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "files": {
+                "*": {
+                    "path": {
+                        "_union": [
+                            "array",
+                            "string"
+                        ]
+                    },
+                    "x": "string",
+                    "y": "string",
+                    "originalPath": "any"
+                }
+            },
+            "options": {
+                "width": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "height": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "path": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "name": "string",
+                "padding": "string",
+                "format": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "tinify": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "generateImage",
+                "fn_name": "5553.v588-o724",
+                "fn_id": 4131,
+                "source_fn_id": 4131
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "vuln_type": "path-traversal",
+        "sink": "var templateContent = fs.readFileSync(path, \"utf-8\");",
+        "sink_lineno": 301,
+        "source": "module.exports.generateData",
+        "tainted_params": [
+            "files",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "files": {
+                "*": {
+                    "cssPriority": "any"
+                }
+            },
+            "options": {
+                "customFormat": "any",
+                "format": "string",
+                "sort": "any",
+                "files": {
+                    "_union": [
+                        {
+                            "*": {
+                                "isLast": "any",
+                                "spritesheetWidth": "any",
+                                "spritesheetHeight": "any",
+                                "width": "number",
+                                "height": "number",
+                                "x": "any",
+                                "y": "any",
+                                "index": {
+                                    "_union": [
+                                        "number",
+                                        "string"
+                                    ]
+                                },
+                                "trim": {
+                                    "x": "number",
+                                    "frameX": "any",
+                                    "y": "number",
+                                    "frameY": "any",
+                                    "width": "number",
+                                    "height": "number"
+                                },
+                                "name": "any",
+                                "cssName": "string",
+                                "cssPriority": "any"
+                            },
+                            "length": "string"
+                        },
+                        "string",
+                        "array"
+                    ]
+                },
+                "cssOrder": "any",
+                "width": "any",
+                "height": "any",
+                "padding": "any",
+                "*": {
+                    "_union": [
+                        {
+                            "length": "any",
+                            "*": "any",
+                            "0": "any"
+                        },
+                        "string",
+                        "array"
+                    ]
+                }
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "generateData",
+                "fn_name": "5553.v713-o731",
+                "fn_id": 4708,
+                "source_fn_id": 4708
+            }
+        ]
+    }
+]
