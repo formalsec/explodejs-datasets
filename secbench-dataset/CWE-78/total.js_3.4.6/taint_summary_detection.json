@@ -1,0 +1,38 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = require('fs').createReadStream(self.filename, { start: 0, end: extension === '.jpg' ? 40000 : 24 });",
+        "sink_lineno": 177
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "vuln_type": "command-injection",
+        "sink": "var cmd = exec(command, function(err) {",
+        "sink_lineno": 231
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "vuln_type": "path-traversal",
+        "sink": "var reader = Fs.createReadStream(filename);",
+        "sink_lineno": 252
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "vuln_type": "command-injection",
+        "sink": "var cmd = spawn(CMD_CONVERT[self.cmdarg], self.arg(self.filename ? wrap(self.filename) : '-', (type ? type + ':' : '') + '-'), SPAWN_OPT);",
+        "sink_lineno": 291
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "vuln_type": "command-injection",
+        "sink": "var cmd = spawn(CMD_CONVERT[self.cmdarg], self.arg(self.filename ? wrap(self.filename) : '-', (type ? type + ':' : '') + '-'), SPAWN_OPT);",
+        "sink_lineno": 329
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "vuln_type": "command-injection",
+        "sink": "exec((self.cmdarg === 'gm' ? 'gm ' : '') + 'identify' + wrap(self.filename, true), function(err, stdout) {",
+        "sink_lineno": 408
+    }
+]

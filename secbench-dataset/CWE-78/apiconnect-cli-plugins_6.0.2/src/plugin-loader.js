@@ -10,7 +10,6 @@
  ********************************************************** {COPYRIGHT-END} **/
 // Node module: apiconnect-cli-plugins
 
-var Promise = require('bluebird');
 var _ = require('lodash');
 var d = require('debug')('apiconnect:lib:plugin-loader');
 var exec = require('child_process').exec;

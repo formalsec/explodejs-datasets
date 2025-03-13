@@ -1,0 +1,32 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-3269-x4pw-vffg/src/posix.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('df -k \"' + path + '\"', function(err, stdout) {",
+        "sink_lineno": 13,
+        "source": "module.exports.diskusage",
+        "tainted_params": [
+            "path",
+            "cb"
+        ],
+        "params_types": {
+            "path": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "diskusage",
+                "fn_name": "676.diskusage-o102",
+                "fn_id": "428",
+                "source_fn_id": "428"
+            }
+        ]
+    }
+]

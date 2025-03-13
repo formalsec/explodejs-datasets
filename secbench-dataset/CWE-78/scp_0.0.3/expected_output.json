@@ -1,0 +1,24 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "./src/scp.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command.join(' '), function (err, stdout, stderr) {",
+        "sink_lineno": 21,
+        "source": "module.exports.send",
+        "tainted_params": [
+            "options",
+            "cb"
+        ],
+        "params_types": {
+            "options": {
+                "port": "string",
+                "file": "string",
+                "user": "string",
+                "host": "string",
+                "path": "string"
+            },
+            "cb": "function"
+        }
+    }
+]

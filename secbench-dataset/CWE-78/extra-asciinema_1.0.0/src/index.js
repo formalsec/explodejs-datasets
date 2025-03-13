@@ -60,7 +60,7 @@ const path = require('path');
  * @param {boolean?} o.overwrite overwrite existing file (true)
  * @param {string?} o.command command to record (cat ${input} | node -i)
  * @param {string?} o.env environment variables
- * @param {string?} o.title file title 
+ * @param {string?} o.title file title
  * @param {number?} o.idleTimeLimit maximum idle tile
  * @param {function?} fn callback function (err, asciicast file)
  * @returns {string} asciicast file
@@ -90,7 +90,7 @@ const path4 = require('path');
  * @param {boolean?} o.overwrite overwrite existing file (true)
  * @param {string?} o.command command to record (cat ${input} | node -i)
  * @param {string?} o.env environment variables
- * @param {string?} o.title file title 
+ * @param {string?} o.title file title
  * @param {number?} o.idleTimeLimit maximum idle tile
  * @returns {string} asciicast file
  */
@@ -118,29 +118,29 @@ function retimeData(d, o) {
   var rate = [o.outputRate||0.1, o.inputRate||0.1];
   var delay = [o.outputDelay||0.1, o.inputDelay||1];
   var oldState = 0, state = 0;
-  for(var l of d.split(/\r?\n/g)) {
-    // skip first, last lines
-    if(l.startsWith('{') || l.trim()==='') { output += l+'\n'; continue; }
-    // line = [time, type, text]
-    var [,, x] = JSON.parse(l);
-    var x1 = x.replace(/\r*\n/g, '\n');
-    // if input given, track it
-    if(input) {
-      var i1 = input.substring(i, i+x1.length);
-      i += x1===i1? x1.length : 0;
-      state = x1===i1? 1 : 0;
-    }
-    // update time based on state
-    if(state!==oldState) t += delay[state];
-    output += JSON.stringify([t, 'o', x])+'\n';
-    t += rate[state];
-    oldState = state;
-    // if no input given, assume node.js
-    if(!input) {
-      if(x.endsWith('\u001b[3G')) state = 1;
-      else if(x==='\r\r\n') state = 0;
-    }
-  }
+  // for(var l of d.split(/\r?\n/g)) {
+  //   // skip first, last lines
+  //   if(l.startsWith('{') || l.trim()==='') { output += l+'\n'; continue; }
+  //   // line = [time, type, text]
+  //   var [,, x] = JSON.parse(l);
+  //   var x1 = x.replace(/\r*\n/g, '\n');
+  //   // if input given, track it
+  //   if(input) {
+  //     var i1 = input.substring(i, i+x1.length);
+  //     i += x1===i1? x1.length : 0;
+  //     state = x1===i1? 1 : 0;
+  //   }
+  //   // update time based on state
+  //   if(state!==oldState) t += delay[state];
+  //   output += JSON.stringify([t, 'o', x])+'\n';
+  //   t += rate[state];
+  //   oldState = state;
+  //   // if no input given, assume node.js
+  //   if(!input) {
+  //     if(x.endsWith('\u001b[3G')) state = 1;
+  //     else if(x==='\r\r\n') state = 0;
+  //   }
+  // }
   return output;
 }
 const fs6 = require('fs');
@@ -192,7 +192,7 @@ function upload(f, fn=null) {
   var p = new Promise((fres, frej) => {
     cp8.exec(`asciinema upload ${f}`, {encoding: 'utf8'}, (err, stdout) => {
       if(err) return frej(err);
-      fres(stdout.replace(/.*?(https?:\S+).*/s, '$1'));      
+      fres(stdout.replace(/.*?(https?:\S+).*/s, '$1'));
     });
   });
   return fn? p.then(a => fn(null, a), fn) : p;

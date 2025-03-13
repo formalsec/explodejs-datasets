@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/1512/src/umount.js",
+        "vuln_type": "command-injection",
+        "sink": "return child_process.exec(unmountCommand + \" \" + device, callback);",
+        "sink_lineno": 74,
+        "source": "module.exports.umount",
+        "tainted_params": [
+            "device",
+            "callback"
+        ],
+        "params_types": {
+            "device": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "umount",
+                "fn_name": "1117.v105-o191",
+                "fn_id": "797",
+                "source_fn_id": "797"
+            }
+        ]
+    }
+]

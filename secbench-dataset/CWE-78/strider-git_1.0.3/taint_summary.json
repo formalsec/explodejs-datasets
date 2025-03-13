@@ -1,0 +1,34 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/strider-git_1.0.3/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(`git ls-remote -h ${httpUrl(config)[0]}`, function (err, stdout) {",
+        "sink_lineno": 151,
+        "source": "module.exports.getBranches",
+        "tainted_params": [
+            "config",
+            "privkey",
+            "done"
+        ],
+        "params_types": {
+            "config": {
+                "auth": {
+                    "type": "any",
+                    "privkey": "any"
+                }
+            },
+            "privkey": "any",
+            "done": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getBranches",
+                "fn_name": "1961.getBranches-o281",
+                "fn_id": "1814",
+                "source_fn_id": "1814"
+            }
+        ]
+    }
+]

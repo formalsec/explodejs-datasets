@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.execFile( command, args, options, hollaback );",
+        "sink_lineno": 38
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec( command, hollaback );",
+        "sink_lineno": 42
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "var cp = child_process.spawn( command, args, options );",
+        "sink_lineno": 46
+    }
+]

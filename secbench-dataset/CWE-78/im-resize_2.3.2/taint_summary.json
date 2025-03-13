@@ -1,0 +1,30 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/im-resize_2.3.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, {timeout: 30000}, function(e, stdout, stderr) {",
+        "sink_lineno": 11,
+        "source": "module.exports",
+        "tainted_params": [
+            "image",
+            "output",
+            "cb"
+        ],
+        "params_types": {
+            "image": "any",
+            "output": {
+                "versions": "any"
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "2043.v141-o258",
+                "fn_id": "1211",
+                "source_fn_id": "1211"
+            }
+        ]
+    }
+]

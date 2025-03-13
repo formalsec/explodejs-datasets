@@ -1,0 +1,15 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "src/process-promises.js",
+        "vuln_type": "command-injection",
+        "sink": "var childProcess = cp.exec(command, options, function (err, stdout, stderr) {",
+        "sink_lineno": 45,
+        "source": "module.exports.exec",
+        "tainted_params": [ "command", "options" ],
+        "params_types": {
+          "command": "string",
+          "options": "object"
+        }
+    }
+]

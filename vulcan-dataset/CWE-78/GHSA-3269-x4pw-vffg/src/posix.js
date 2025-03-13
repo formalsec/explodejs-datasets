@@ -1,7 +1,9 @@
 'use strict';
 
 var exec = require('child_process').exec;
-var isDigits = require('./utils').isDigits;
+var isDigits = function (value) {
+    return typeof value === 'string' && /^[0-9]+$/.test(value);
+  };
 
 function diskusage(path, cb) {
     if (path.indexOf('"') !== -1) {

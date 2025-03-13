@@ -1,8 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const path = require("path");
-const util_1 = require("util");
-const exec = util_1.promisify(require('child_process').exec);
+const exec = require('child_process').exec;
 const appRoot = path.resolve(__dirname);
 function buildCredential(credStr) {
     const [username, password] = credStr.split(':');

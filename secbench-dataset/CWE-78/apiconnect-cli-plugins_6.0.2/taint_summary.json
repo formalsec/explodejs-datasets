@@ -1,0 +1,49 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "pluginInfo = require(path.join(pluginPath, 'package.json'));",
+        "sink_lineno": 47,
+        "source": "module.exports.validatePlugin",
+        "tainted_params": [
+            "pluginPath"
+        ],
+        "params_types": {
+            "pluginPath": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "validatePlugin",
+                "fn_name": "4152.validatePlugin-o579",
+                "fn_id": "2516",
+                "source_fn_id": "2516"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "vuln_type": "code-injection",
+        "sink": "maybePlugin = require(pluginPath);",
+        "sink_lineno": 62,
+        "source": "module.exports.validatePlugin",
+        "tainted_params": [
+            "pluginPath"
+        ],
+        "params_types": {
+            "pluginPath": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "validatePlugin",
+                "fn_name": "4152.validatePlugin-o579",
+                "fn_id": "2516",
+                "source_fn_id": "2516"
+            }
+        ]
+    }
+
+]

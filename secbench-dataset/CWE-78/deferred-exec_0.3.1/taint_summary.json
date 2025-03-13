@@ -1,0 +1,236 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.execFile( command, args, options, hollaback );",
+        "sink_lineno": 38,
+        "source": "module.exports",
+        "tainted_params": [
+            "command",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1098.v104-o158",
+                "fn_id": 1016,
+                "source_fn_id": 1016
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.execFile( command, args, options, hollaback );",
+        "sink_lineno": 38,
+        "source": "module.exports.file",
+        "tainted_params": [
+            "command",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "args": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "file",
+                "fn_name": "1098.v107-o165",
+                "fn_id": 1039,
+                "source_fn_id": 1039
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.execFile( command, args, options, hollaback );",
+        "sink_lineno": 38,
+        "source": "module.exports.spawn",
+        "tainted_params": [
+            "command",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "args": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "spawn",
+                "fn_name": "1098.v110-o172",
+                "fn_id": 1064,
+                "source_fn_id": 1064
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec( command, hollaback );",
+        "sink_lineno": 42,
+        "source": "module.exports",
+        "tainted_params": [
+            "command",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1098.v104-o158",
+                "fn_id": 1016,
+                "source_fn_id": 1016
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec( command, hollaback );",
+        "sink_lineno": 42,
+        "source": "module.exports.file",
+        "tainted_params": [
+            "command",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "args": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "file",
+                "fn_name": "1098.v107-o165",
+                "fn_id": 1039,
+                "source_fn_id": 1039
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec( command, hollaback );",
+        "sink_lineno": 42,
+        "source": "module.exports.spawn",
+        "tainted_params": [
+            "command",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "args": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "spawn",
+                "fn_name": "1098.v110-o172",
+                "fn_id": 1064,
+                "source_fn_id": 1064
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "var cp = child_process.spawn( command, args, options );",
+        "sink_lineno": 46,
+        "source": "module.exports",
+        "tainted_params": [
+            "command",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1098.v104-o158",
+                "fn_id": 1016,
+                "source_fn_id": 1016
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "var cp = child_process.spawn( command, args, options );",
+        "sink_lineno": 46,
+        "source": "module.exports.file",
+        "tainted_params": [
+            "command",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "args": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "file",
+                "fn_name": "1098.v107-o165",
+                "fn_id": 1039,
+                "source_fn_id": 1039
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/deferred-exec_0.3.1/src/deferred-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "var cp = child_process.spawn( command, args, options );",
+        "sink_lineno": 46,
+        "source": "module.exports.spawn",
+        "tainted_params": [
+            "command",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "args": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "spawn",
+                "fn_name": "1098.v110-o172",
+                "fn_id": 1064,
+                "source_fn_id": 1064
+            }
+        ]
+    }
+]

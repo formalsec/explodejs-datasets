@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-cr6m-62pq-hmqh/src/getLockfile.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 42
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-cr6m-62pq-hmqh/src/getLockfile.js",
+        "vuln_type": "path-traversal",
+        "sink": "return readFile(lockfile, { encoding: 'utf-8' });",
+        "sink_lineno": 62
+    }
+]

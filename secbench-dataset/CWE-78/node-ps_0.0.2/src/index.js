@@ -2,7 +2,7 @@ var childProcess = require('child_process');
 
 function _getTitles(titleLine) {
   var titles = [];
-  titleLine.split(/\s+/).forEach(function (title) {
+  titleLine.split(/\s+/).forEach(function(title) {
     if (title.trim() === '') {
       return;
     }
@@ -16,14 +16,14 @@ function _parse(input) {
   var lines = input.split('\n');
   var titles = _getTitles(lines.shift());
 
-  var objs = lines.filter(function (line) {
+  var objs = lines.filter(function(line) {
     return line.trim() !== '';
-  }).map(function (line) {
+  }).map(function(line) {
     var columns = line.trim().split(/\s+/);
     var obj = {};
     for (var i = 0; i < titles.length; i++) {
       if (i === titles.length - 1 &&
-          columns.length > 1) {
+        columns.length > 1) {
         obj[titles[i]] = columns.join(' ');
       } else {
         obj[titles[i]] = columns.shift();
@@ -69,7 +69,7 @@ function _ps(args, cb) {
     if (args) {
       cmd += ' ' + args.join(' ');
     }
-    childProcess.exec(cmd, function (err, stdout, stderr) {
+    childProcess.exec(cmd, function(err, stdout, stderr) {
       if (err || stderr)
         return cb(err || stderr.toString());
       return cb(null, _parse(stdout.toString()));
@@ -85,16 +85,11 @@ function lookup(query, cb) {
   });
 }
 
-if (process.env.NODE_ENV === 'test') {
-  module.exports = {
-    _getTitles: _getTitles,
-    _parse: _parse,
-    _filter: _filter,
-    _ps: _ps,
-    lookup: lookup
-  };
-} else {
-  module.exports = {
-    lookup: lookup
-  };
-}
+module.exports = {
+  _getTitles: _getTitles,
+  _parse: _parse,
+  _filter: _filter,
+  _ps: _ps,
+  lookup: lookup
+};
+

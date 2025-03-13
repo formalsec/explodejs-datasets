@@ -1,0 +1,92 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = exec(cmd, function (err, stdout, stderr) {",
+        "sink_lineno": 59,
+        "source": "module.exports",
+        "tainted_params": [
+            "source",
+            "target",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "source": "string",
+            "target": "string",
+            "options": {
+                "length": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1409.jscover-o210",
+                "fn_id": "907",
+                "source_fn_id": "907"
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
+        "vuln_type": "path-traversal",
+        "sink": "var content = fs.readFileSync(from);",
+        "sink_lineno": 95,
+        "source": "module.exports",
+        "tainted_params": [
+            "source",
+            "target",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "source": "string",
+            "target": "string",
+            "options": {
+                "length": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1409.jscover-o210",
+                "fn_id": 907,
+                "source_fn_id": 907
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(to, content);",
+        "sink_lineno": 99,
+        "source": "module.exports",
+        "tainted_params": [
+            "source",
+            "target",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "source": "string",
+            "target": "string",
+            "options": {
+                "length": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1409.jscover-o210",
+                "fn_id": 907,
+                "source_fn_id": 907
+            }
+        ]
+    }
+]

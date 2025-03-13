@@ -1,10 +1,32 @@
-var _, child_process, utils;
+const { isEmpty } = require('lodash');
 
-_ = require('lodash');
+var _, child_process, utils;
 
 child_process = require('child_process');
 
-utils = require('./utils');
+_ = {
+  isString: function (value) {
+    return typeof value === 'string';
+  },
+  isFunction: function (value) {
+    return typeof value === 'function';
+  },
+  isEmpty: function (value) {
+    return value === "";
+  }
+};
+
+utils = {
+  isWin32: function () {
+    return process.platform === 'win32';
+  },
+  isMacOSX: function () {
+    return process.platform === 'darwin';
+  },
+  isLinux: function () {
+    return process.platform === 'linux';
+  }
+};
 
 
 /**

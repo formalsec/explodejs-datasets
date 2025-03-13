@@ -1,7 +1,5 @@
 // node-pdf
 
-var Promise = require("es6-promise").Promise;
-
 var path = require("path");
 var fs   = require("fs");
 var util = require("util");

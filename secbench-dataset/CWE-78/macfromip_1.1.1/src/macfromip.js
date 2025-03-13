@@ -158,3 +158,5 @@ macfromip.getMac = function(ipAddress, callback) {
       break;
   }
 };
+
+module.exports = macfromip;

@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/async-git_1.13.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(`git reset ${JSON.stringify(destination)} ${hard ? '--hard' : ''}`);",
+        "sink_lineno": 13
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/async-git_1.13.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(`git reset HEAD~${Math.abs(destination)} ${hard ? '--hard' : ''}`);",
+        "sink_lineno": 17
+    }
+]

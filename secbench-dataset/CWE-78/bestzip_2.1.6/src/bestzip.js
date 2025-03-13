@@ -26,7 +26,6 @@ const nativeZip = options =>
     } ${sources}`;
     const zipProcess = cp.exec(command, {
       stdio: "inherit",
-      cwd: options.cwd
     });
     zipProcess.on("error", reject);
     zipProcess.on("close", exitCode => {

@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = exec(cmd, function (err, stdout, stderr) {",
+        "sink_lineno": 59
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
+        "vuln_type": "path-traversal",
+        "sink": "var content = fs.readFileSync(from);",
+        "sink_lineno": 95
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-c5hm-xc74-pqrg/src/jscover.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(to, content);",
+        "sink_lineno": 99
+    }
+]

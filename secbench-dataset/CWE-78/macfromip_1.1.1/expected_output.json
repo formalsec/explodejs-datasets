@@ -1,0 +1,33 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/macfromip_1.1.1/src/macfromip.js",
+        "vuln_type": "command-injection",
+        "sink": "var ls = cp.exec('ping  -c 1 ' + ipAddress,",
+        "sink_lineno": 66,
+        "source": "module.exports.getMacInLinux",
+        "tainted_params": [
+            "ipAddress",
+            "callback"
+        ],
+        "params_types": {
+            "ipAddress": {
+            "_union": [{
+                "length": "any
+            },
+            "string",
+            "array"
+            ],
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getMacInLinux",
+                "fn_name": "1818.v169-o257",
+                "fn_id": "1311",
+                "source_fn_id": "1311"
+            }
+        ]
+    }
+]

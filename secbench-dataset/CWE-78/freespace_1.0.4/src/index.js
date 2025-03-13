@@ -22,7 +22,7 @@ function getBytesFromOutput(output) {
     return bytes;
 }
 
-exports.check = function(driveOrMount, callback) {
+module.exports.check = function(driveOrMount, callback) {
     return new Promise(function(resolve, reject) {
         let cb = function(err, stdout, stderr) {
             console.log(stderr.toString());
@@ -54,7 +54,7 @@ exports.check = function(driveOrMount, callback) {
         .catch(function(err) { return Promise.reject(err) });
 };
 
-exports.checkSync = function(driveOrMount) {
+module.exports.checkSync = function(driveOrMount) {
     let output;
 
     if (!driveOrMountRegex.test(driveOrMount)) {

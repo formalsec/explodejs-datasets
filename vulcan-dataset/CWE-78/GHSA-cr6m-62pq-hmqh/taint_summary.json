@@ -1,0 +1,58 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-cr6m-62pq-hmqh/src/getLockfile.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(",
+        "sink_lineno": 42,
+        "source": "module.exports",
+        "tainted_params": [
+            "packageFile",
+            "date",
+            "undefined"
+        ],
+        "params_types": {
+            "packageFile": {
+                "length": "any"
+            },
+            "date": "string",
+            "undefined": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1164.getLockfile-o188",
+                "fn_id": 730,
+                "source_fn_id": 730
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-78/GHSA-cr6m-62pq-hmqh/src/getLockfile.js",
+        "vuln_type": "path-traversal",
+        "sink": "return readFile(lockfile, { encoding: 'utf-8' });",
+        "sink_lineno": 62,
+        "source": "module.exports",
+        "tainted_params": [
+            "packageFile",
+            "date",
+            "undefined"
+        ],
+        "params_types": {
+            "packageFile": {
+                "length": "any"
+            },
+            "date": "string",
+            "undefined": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1164.getLockfile-o188",
+                "fn_id": 730,
+                "source_fn_id": 730
+            }
+        ]
+    }
+]

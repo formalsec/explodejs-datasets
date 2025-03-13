@@ -1,5 +1,4 @@
 'use strict';
-var Promise = require('promise');
 var exec = require('child_process').exec;
 var async = require('async');
 var fs = require("fs");
@@ -17,7 +16,7 @@ var add = function(files){
             else {
                 resolve();
             }
-        }); 
+        });
     });
 };
 
@@ -44,7 +43,7 @@ var getCurrentBranch = function(){
             else {
                 resolve(result.split("\n").join(""));
             }
-        }); 
+        });
     });
 };
 
@@ -66,7 +65,7 @@ var showFilesAdded = function(){
             }
         });
     });
-}; 
+};
 
 var getFilesCached = function(){
     return new Promise(function(resolve, reject){
@@ -84,7 +83,7 @@ var getFilesCached = function(){
 };
 
 var haveFilesToCommit = function(){
-    return new Promise(function(resolve, reject){ 
+    return new Promise(function(resolve, reject){
         exec('git status', function(err, result){
             if (err){
                 reject(err);
@@ -117,7 +116,7 @@ var showFilesModified = function(){
             }
         });
     });
-}; 
+};
 
 var revert = function(files){
     files = Array.isArray(files) ? files : [files];
@@ -173,7 +172,7 @@ var parseBranches = {
             }
             else {
                 branches.push(branch);
-            } 
+            }
         });
         return branches;
     },
@@ -185,11 +184,11 @@ var parseBranches = {
             }
         });
         return branches;
-    } 
+    }
 };
 
 var getBranches = {
-    local: function(){ 
+    local: function(){
         return new Promise(function(resolve, reject){
             exec('git show-ref', function(err, result){
                 if(err){
@@ -240,9 +239,9 @@ var newBranch = function(newBranchName){
             else {
                 resolve(newBranchName);
             }
-        }); 
+        });
     });
-}; 
+};
 
 var deleteBranch = function(branch){
     return new Promise(function(resolve, reject){

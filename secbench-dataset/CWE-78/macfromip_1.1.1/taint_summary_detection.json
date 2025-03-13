@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/macfromip_1.1.1/src/macfromip.js",
+        "vuln_type": "command-injection",
+        "sink": "var ls = cp.exec('ping  -c 1 ' + ipAddress,",
+        "sink_lineno": 66
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-78/macfromip_1.1.1/src/macfromip.js",
+        "vuln_type": "command-injection",
+        "sink": "var ls = cp.exec('ping  ' + ipAddress + ' -n 1',",
+        "sink_lineno": 96
+    }
+]
