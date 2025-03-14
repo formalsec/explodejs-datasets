@@ -14,3 +14,12 @@ _results/
 res*
 results.db
 import.report
+
+# Graphjs stuff
+nodes.csv
+rels.csv
+graph_stats.json
+neo4j_import.txt
+neo4j_start.txt
+neo4j_stop.txt
+time_stats.txt

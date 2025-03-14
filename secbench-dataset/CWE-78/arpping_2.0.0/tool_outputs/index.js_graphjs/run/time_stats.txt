@@ -1,6 +1,0 @@
-graph: 3510.928347
-import: 2547
-injection_detection: 467.9684638977051
-injection_reconstruction: 17269.357204437256
-proto_pollution_detection: 489.88890647888184
-proto_pollution_reconstruction: 0.031948089599609375
