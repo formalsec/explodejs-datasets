@@ -2,7 +2,7 @@
     {
         "filename": "/datasets/secbench-dataset/CWE-78/npm-help_1.0.0/src/index.js",
         "vuln_type": "command-injection",
-        "sink": "var latestVersion = execSync('tnpm view ' + module + ' version').toString();",
+        "sink": "var latestVersion = execSync('tnpm view ' + module_ + ' version').toString();",
         "sink_lineno": 13
     }
 ]

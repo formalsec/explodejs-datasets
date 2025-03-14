@@ -4,7 +4,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/killport_1.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(cmd, function(err, stdout, stderr){",
-        "sink_lineno": 9,
+        "sink_lineno": 8,
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -15,9 +15,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "593.killport-o99",
-                "fn_id": 376,
-                "source_fn_id": 376
+                "fn_name": "573.killport-o93",
+                "fn_id": 356,
+                "source_fn_id": 356
             }
         ]
     },
@@ -26,7 +26,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/killport_1.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('kill ' + pid, function (err, stdout, stderr) {",
-        "sink_lineno": 29,
+        "sink_lineno": 28,
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -37,9 +37,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "593.killport-o99",
-                "fn_id": 376,
-                "source_fn_id": 376
+                "fn_name": "573.killport-o93",
+                "fn_id": 356,
+                "source_fn_id": 356
             }
         ]
     }

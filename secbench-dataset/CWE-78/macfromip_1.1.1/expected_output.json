@@ -12,12 +12,14 @@
         ],
         "params_types": {
             "ipAddress": {
-            "_union": [{
-                "length": "any
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
-            "string",
-            "array"
-            ],
             "callback": "function"
         },
         "call_paths": [

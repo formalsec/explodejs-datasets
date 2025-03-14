@@ -3,30 +3,30 @@
         "filename": "/datasets/secbench-dataset/CWE-78/node-mpv_0.12.2/src/mpv.js",
         "vuln_type": "command-injection",
         "sink": "var output = exec((options.binary ? options.binary + \" --version\" : \"mpv --version\"), {encoding: 'utf8'});",
-        "sink_lineno": 45
+        "sink_lineno": 87
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/node-mpv_0.12.2/src/mpv.js",
         "vuln_type": "command-injection",
         "sink": "this.mpvPlayer = spawn(options.binary, defaultArgs);",
-        "sink_lineno": 149
+        "sink_lineno": 191
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/node-mpv_0.12.2/src/mpv.js",
         "vuln_type": "command-injection",
         "sink": "this.mpvPlayer = spawn('mpv', defaultArgs);",
-        "sink_lineno": 153
+        "sink_lineno": 195
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/node-mpv_0.12.2/src/mpv.js",
         "vuln_type": "command-injection",
         "sink": "this.mpvPlayer = spawn(options.binary, defaultArgs);",
-        "sink_lineno": 199
+        "sink_lineno": 241
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/node-mpv_0.12.2/src/mpv.js",
         "vuln_type": "command-injection",
         "sink": "this.mpvPlayer = spawn('mpv', defaultArgs);",
-        "sink_lineno": 202
+        "sink_lineno": 244
     }
 ]

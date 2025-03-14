@@ -1,4 +1,3 @@
-var Promise = require('bluebird');
 var _ = require('lodash');
 const v259 = require('debug');
 var d = v259('apiconnect:lib:plugin-loader');

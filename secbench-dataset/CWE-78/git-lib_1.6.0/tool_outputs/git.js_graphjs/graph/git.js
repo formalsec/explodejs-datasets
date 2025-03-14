@@ -1,5 +1,4 @@
 'use strict';
-var Promise = require('promise');
 const v172 = require('child_process');
 var exec = v172.exec;
 var async = require('async');

@@ -424,7 +424,7 @@ const v466 = function (repo, cb) {
     const v455 = v454 + cmd;
     const v456 = debug(v455);
     v456;
-    const v457 = { cwd: dir };
+    const v457 = {};
     const v464 = function (err) {
         const v458 = 'Git.pull ' + dir;
         const v459 = v458 + ' done: ';

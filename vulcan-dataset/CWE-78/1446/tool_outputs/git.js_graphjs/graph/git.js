@@ -9,439 +9,436 @@ var events = require('events');
 var basic = require('basic');
 var mkdirp = require('mkdirp');
 var pushover = require('pushover-giting');
-const v237 = require('debug');
-var debug = v237('git');
+const v234 = require('debug');
+var debug = v234('git');
 module.exports = Git;
 const Git = function (opts) {
-    const v238 = this instanceof Git;
-    const v239 = !v238;
-    if (v239) {
-        const v240 = new Git(opts);
-        return v240;
+    const v235 = this instanceof Git;
+    const v236 = !v235;
+    if (v236) {
+        const v237 = new Git(opts);
+        return v237;
     }
-    const v241 = events.EventEmitter;
-    const v242 = v241.call(this);
-    v242;
+    const v238 = events.EventEmitter;
+    const v239 = v238.call(this);
+    v239;
     var self = this;
-    const v243 = {};
-    this.opts = opts || v243;
-    const v244 = opts.dir;
-    const v245 = !v244;
-    if (v245) {
-        const v246 = process.cwd();
-        opts.dir = v246;
+    const v240 = {};
+    this.opts = opts || v240;
+    const v241 = opts.dir;
+    const v242 = !v241;
+    if (v242) {
+        const v243 = process.cwd();
+        opts.dir = v243;
     }
-    const v247 = opts.repoDir;
+    const v244 = opts.repoDir;
+    const v245 = opts.dir;
+    const v246 = path.join(v245, 'repos');
+    this.repoDir = v244 || v246;
+    const v247 = opts.workDir;
     const v248 = opts.dir;
-    const v249 = path.join(v248, 'repos');
-    this.repoDir = v247 || v249;
-    const v250 = opts.workDir;
-    const v251 = opts.dir;
-    const v252 = path.join(v251, 'checkouts');
-    this.workDir = v250 || v252;
-    const v253 = this.repoDir;
-    const v254 = opts.autoCreate;
-    let v255;
-    if (v254) {
-        v255 = true;
+    const v249 = path.join(v248, 'checkouts');
+    this.workDir = v247 || v249;
+    const v250 = this.repoDir;
+    const v251 = opts.autoCreate;
+    let v252;
+    if (v251) {
+        v252 = true;
     } else {
-        v255 = false;
+        v252 = false;
     }
-    const v256 = { autoCreate: v255 };
-    const v257 = pushover(v253, v256);
-    this.repos = v257;
-    const v259 = function (repo) {
-        const v258 = repo.accept();
-        v258;
+    const v253 = { autoCreate: v252 };
+    const v254 = pushover(v250, v253);
+    this.repos = v254;
+    const v256 = function (repo) {
+        const v255 = repo.accept();
+        v255;
     };
-    this.onPerm = v259;
-    const v260 = this.repos;
-    const v261 = this.onRequest;
-    const v262 = v261.bind(this);
-    const v263 = v260.on('push', v262);
-    v263;
-    const v264 = this.repos;
-    const v265 = this.onRequest;
-    const v266 = v265.bind(this);
-    const v267 = v264.on('tag', v266);
-    v267;
-    const v268 = this.repos;
-    const v269 = this.onRequest;
-    const v270 = v269.bind(this);
-    const v271 = v268.on('fetch', v270);
-    v271;
-    const v272 = this.repos;
-    const v273 = this.onRequest;
-    const v274 = v273.bind(this);
-    const v275 = v272.on('info', v274);
-    v275;
-    const v276 = this.repos;
-    const v277 = this.onRequest;
-    const v278 = v277.bind(this);
-    const v279 = v276.on('head', v278);
-    v279;
-    const v280 = opts.auth;
-    const v281 = basic(v280);
-    this.auth = v281;
+    this.onPerm = v256;
+    const v257 = this.repos;
+    const v258 = this.onRequest;
+    const v259 = v258.bind(this);
+    const v260 = v257.on('push', v259);
+    v260;
+    const v261 = this.repos;
+    const v262 = this.onRequest;
+    const v263 = v262.bind(this);
+    const v264 = v261.on('tag', v263);
+    v264;
+    const v265 = this.repos;
+    const v266 = this.onRequest;
+    const v267 = v266.bind(this);
+    const v268 = v265.on('fetch', v267);
+    v268;
+    const v269 = this.repos;
+    const v270 = this.onRequest;
+    const v271 = v270.bind(this);
+    const v272 = v269.on('info', v271);
+    v272;
+    const v273 = this.repos;
+    const v274 = this.onRequest;
+    const v275 = v274.bind(this);
+    const v276 = v273.on('head', v275);
+    v276;
+    const v277 = opts.auth;
+    const v278 = basic(v277);
+    this.auth = v278;
 };
 ;
-const v282 = events.EventEmitter;
-const v283 = util.inherits(Git, v282);
-v283;
-const v284 = Git.prototype;
-const v315 = function (info) {
+const v279 = events.EventEmitter;
+const v280 = util.inherits(Git, v279);
+v280;
+const v281 = Git.prototype;
+const v312 = function (info) {
     var self = this;
-    const v285 = info.method;
-    const v286 = v285 == 'GET';
-    const v287 = info.method;
-    const v288 = v287 !== 'GET';
-    const v289 = info.req;
-    const v290 = v289.credentials;
-    const v291 = info.cwd;
-    const v292 = info.commit;
-    const v293 = info.branch;
-    const v294 = info.repo;
-    const v295 = v294.split('/');
-    const v296 = v295[1];
-    const v297 = v296.split('.');
+    const v282 = info.method;
+    const v283 = v282 == 'GET';
+    const v284 = info.method;
+    const v285 = v284 !== 'GET';
+    const v286 = info.req;
+    const v287 = v286.credentials;
+    const v288 = info.cwd;
+    const v289 = info.commit;
+    const v290 = info.branch;
+    const v291 = info.repo;
+    const v292 = v291.split('/');
+    const v293 = v292[1];
+    const v294 = v293.split('.');
+    const v295 = v294[0];
+    const v296 = info.repo;
+    const v297 = v296.split('/');
     const v298 = v297[0];
-    const v299 = info.repo;
-    const v300 = v299.split('/');
-    const v301 = v300[0];
-    const v302 = info.evName;
-    const v303 = v302 == 'push';
-    const v304 = info.evName;
-    const v311 = function () {
+    const v299 = info.evName;
+    const v300 = v299 == 'push';
+    const v301 = info.evName;
+    const v308 = function () {
         repo.accepted = true;
-        const v305 = repo.sidebandable;
-        if (v305) {
-            const v306 = info.sideband();
-            const v308 = function (sideband) {
+        const v302 = repo.sidebandable;
+        if (v302) {
+            const v303 = info.sideband();
+            const v305 = function (sideband) {
                 repo.sideband = sideband;
-                const v307 = self.handlePush(repo);
-                v307;
+                const v304 = self.handlePush(repo);
+                v304;
             };
-            const v309 = v306.once('sideband', v308);
-            v309;
+            const v306 = v303.once('sideband', v305);
+            v306;
         }
-        const v310 = info.accept();
-        v310;
+        const v307 = info.accept();
+        v307;
     };
-    const v313 = function () {
+    const v310 = function () {
         repo.rejected = true;
-        const v312 = info.reject();
-        v312;
+        const v309 = info.reject();
+        v309;
     };
     var repo = {};
-    repo.read = v286;
-    repo.write = v288;
-    repo.credentials = v290;
-    repo.cwd = v291;
-    repo.commit = v292;
-    repo.branch = v293;
-    repo.name = v298;
-    repo.organization = v301;
-    repo.sidebandable = v303;
-    repo.action = v304;
+    repo.read = v283;
+    repo.write = v285;
+    repo.credentials = v287;
+    repo.cwd = v288;
+    repo.commit = v289;
+    repo.branch = v290;
+    repo.name = v295;
+    repo.organization = v298;
+    repo.sidebandable = v300;
+    repo.action = v301;
     repo.accepted = false;
     repo.rejected = false;
     repo.sideband = null;
-    repo.accept = v311;
-    repo.reject = v313;
-    const v314 = this.onPerm(repo);
-    v314;
+    repo.accept = v308;
+    repo.reject = v310;
+    const v311 = this.onPerm(repo);
+    v311;
 };
-v284.onRequest = v315;
-const v316 = Git.prototype;
-const v320 = function (organization, name, cb) {
-    const v317 = this.repos;
-    const v318 = path.join(organization, name);
-    const v319 = v317.create(v318, cb);
-    v319;
+v281.onRequest = v312;
+const v313 = Git.prototype;
+const v317 = function (organization, name, cb) {
+    const v314 = this.repos;
+    const v315 = path.join(organization, name);
+    const v316 = v314.create(v315, cb);
+    v316;
 };
-v316.create = v320;
-const v321 = Git.prototype;
-const v322 = function (cb) {
+v313.create = v317;
+const v318 = Git.prototype;
+const v319 = function (cb) {
     this.onPerm = cb;
 };
-v321.perm = v322;
-const v323 = Git.prototype;
-const v351 = function (req, res) {
+v318.perm = v319;
+const v320 = Git.prototype;
+const v348 = function (req, res) {
     var self = this;
-    const v324 = req.headers;
-    const v325 = v324['x-forwarded-for'];
-    const v326 = req.connection;
+    const v321 = req.headers;
+    const v322 = v321['x-forwarded-for'];
+    const v323 = req.connection;
+    const v324 = v323.remoteAddress;
+    const v325 = v322 || v324;
+    const v326 = req.socket;
     const v327 = v326.remoteAddress;
     const v328 = v325 || v327;
-    const v329 = req.socket;
-    const v330 = v329.remoteAddress;
-    const v331 = v328 || v330;
-    const v332 = req.connection;
-    const v333 = v332.socket;
-    const v334 = v333.remoteAddress;
-    var ip = v331 || v334;
-    const v335 = 'Git.handle ' + ip;
+    const v329 = req.connection;
+    const v330 = v329.socket;
+    const v331 = v330.remoteAddress;
+    var ip = v328 || v331;
+    const v332 = 'Git.handle ' + ip;
+    const v333 = v332 + ' - ';
+    const v334 = req.method;
+    const v335 = v333 + v334;
     const v336 = v335 + ' - ';
-    const v337 = req.method;
+    const v337 = req.url;
     const v338 = v336 + v337;
-    const v339 = v338 + ' - ';
-    const v340 = req.url;
-    const v341 = v339 + v340;
-    const v342 = debug(v341);
-    v342;
-    const v349 = function (err, credentials) {
+    const v339 = debug(v338);
+    v339;
+    const v346 = function (err, credentials) {
         if (err) {
-            const v343 = debug('Git.handle auth invalid user/pass', ip);
-            v343;
+            const v340 = debug('Git.handle auth invalid user/pass', ip);
+            v340;
             res.statusCode = 401;
-            const v344 = res.setHeader('WWW-Authenticate', 'Basic realm="Secure Area"');
-            v344;
-            const v345 = res.end('<html><body>Need some creds son</body></html>');
-            return v345;
+            const v341 = res.setHeader('WWW-Authenticate', 'Basic realm="Secure Area"');
+            v341;
+            const v342 = res.end('<html><body>Need some creds son</body></html>');
+            return v342;
             return;
         }
         req.credentials = credentials;
-        const v346 = debug('Git.handle auth success, accepting request');
-        v346;
-        const v347 = self.repos;
-        const v348 = v347.handle(req, res);
-        v348;
+        const v343 = debug('Git.handle auth success, accepting request');
+        v343;
+        const v344 = self.repos;
+        const v345 = v344.handle(req, res);
+        v345;
     };
-    const v350 = this.auth(req, res, v349);
-    v350;
+    const v347 = this.auth(req, res, v346);
+    v347;
 };
-v323.handle = v351;
-const v352 = Git.prototype;
-const v363 = function (dir, cb) {
+v320.handle = v348;
+const v349 = Git.prototype;
+const v360 = function (dir, cb) {
     var self = this;
-    const v361 = function (exists) {
+    const v358 = function (exists) {
         if (exists) {
-            const v353 = cb();
-            return v353;
+            const v350 = cb();
+            return v350;
         }
-        const v359 = function (err) {
+        const v356 = function (err) {
             if (err) {
-                const v354 = cb(err);
-                return v354;
+                const v351 = cb(err);
+                return v351;
             }
-            const v355 = 'Git.init creating new bare repo in ' + dir;
-            const v356 = debug(v355);
-            v356;
-            const v357 = { cwd: dir };
-            const v358 = child.exec('git init --bare', v357, cb);
-            v358;
+            const v352 = 'Git.init creating new bare repo in ' + dir;
+            const v353 = debug(v352);
+            v353;
+            const v354 = { cwd: dir };
+            const v355 = child.exec('git init --bare', v354, cb);
+            v355;
         };
-        const v360 = mkdirp(dir, v359);
-        v360;
+        const v357 = mkdirp(dir, v356);
+        v357;
     };
-    const v362 = fs.exists(dir, v361);
-    v362;
+    const v359 = fs.exists(dir, v358);
+    v359;
 };
-v352.init = v363;
-const v364 = Git.prototype;
-const v379 = function (repo, cb) {
+v349.init = v360;
+const v361 = Git.prototype;
+const v376 = function (repo, cb) {
     var self = this;
-    const v365 = !cb;
-    if (v365) {
+    const v362 = !cb;
+    if (v362) {
         const noop = function () {
         };
         cb = noop;
     }
-    const v366 = repo.organization;
-    const v367 = repo.name;
-    var checkoutDir = self.checkoutDir(v366, v367);
-    const v377 = function (err) {
+    const v363 = repo.organization;
+    const v364 = repo.name;
+    var checkoutDir = self.checkoutDir(v363, v364);
+    const v374 = function (err) {
         if (err) {
-            const v368 = repo.sideband;
-            const v369 = err.message;
-            const v370 = 'checkout error ' + v369;
-            const v371 = v370 + '\n';
-            const v372 = v368.write(v371);
-            v372;
-            const v373 = 'Git.handlePush update err: ' + err;
-            const v374 = debug(v373);
-            v374;
-            const v375 = cb(err);
-            return v375;
+            const v365 = repo.sideband;
+            const v366 = err.message;
+            const v367 = 'checkout error ' + v366;
+            const v368 = v367 + '\n';
+            const v369 = v365.write(v368);
+            v369;
+            const v370 = 'Git.handlePush update err: ' + err;
+            const v371 = debug(v370);
+            v371;
+            const v372 = cb(err);
+            return v372;
         }
-        const v376 = self.emit('sideband', repo);
-        v376;
+        const v373 = self.emit('sideband', repo);
+        v373;
     };
-    const v378 = self.update(repo, v377);
-    v378;
+    const v375 = self.update(repo, v374);
+    v375;
 };
-v364.handlePush = v379;
-const v380 = Git.prototype;
-const v383 = function (organization, name) {
-    const v381 = this.workDir;
-    const v382 = path.join(v381, organization, name);
-    return v382;
+v361.handlePush = v376;
+const v377 = Git.prototype;
+const v380 = function (organization, name) {
+    const v378 = this.workDir;
+    const v379 = path.join(v378, organization, name);
+    return v379;
 };
-v380.checkoutDir = v383;
-const v384 = Git.prototype;
-const v397 = function (repo, cb) {
+v377.checkoutDir = v380;
+const v381 = Git.prototype;
+const v394 = function (repo, cb) {
     var self = this;
-    const v385 = repo.organization;
-    const v386 = repo.name;
-    const v387 = this.checkoutDir(v385, v386);
-    const v395 = function (exists) {
-        const v388 = repo.name;
-        const v389 = v388 + ' exists? ';
-        const v390 = v389 + exists;
-        const v391 = debug(v390);
+    const v382 = repo.organization;
+    const v383 = repo.name;
+    const v384 = this.checkoutDir(v382, v383);
+    const v392 = function (exists) {
+        const v385 = repo.name;
+        const v386 = v385 + ' exists? ';
+        const v387 = v386 + exists;
+        const v388 = debug(v387);
+        v388;
+        const v389 = !exists;
+        if (v389) {
+            const v390 = self.checkout(repo, cb);
+            return v390;
+        }
+        const v391 = self.pull(repo, cb);
         v391;
-        const v392 = !exists;
-        if (v392) {
-            const v393 = self.checkout(repo, cb);
-            return v393;
-        }
-        const v394 = self.pull(repo, cb);
-        v394;
     };
-    const v396 = fs.exists(v387, v395);
-    v396;
+    const v393 = fs.exists(v384, v392);
+    v393;
 };
-v384.update = v397;
-const v398 = Git.prototype;
-const v401 = function (organization, name, cb) {
-    const v399 = this.repoDir;
-    var dir = path.join(v399, organization, name);
-    const v400 = this.init(dir, cb);
-    v400;
+v381.update = v394;
+const v395 = Git.prototype;
+const v398 = function (organization, name, cb) {
+    const v396 = this.repoDir;
+    var dir = path.join(v396, organization, name);
+    const v397 = this.init(dir, cb);
+    v397;
 };
-v398.createDir = v401;
-const v402 = Git.prototype;
-const v444 = function (repo, cb) {
+v395.createDir = v398;
+const v399 = Git.prototype;
+const v439 = function (repo, cb) {
     var self = this;
-    const v403 = repo.organization;
-    const v404 = repo.name;
-    var dir = this.checkoutDir(v403, v404);
-    const v405 = mkdirp(dir, init);
-    v405;
+    const v400 = repo.organization;
+    const v401 = repo.name;
+    var dir = this.checkoutDir(v400, v401);
+    const v402 = mkdirp(dir, init);
+    v402;
     const init = function (err) {
         if (err) {
-            const v406 = 'mkdirp(' + dir;
-            const v407 = v406 + ') failed';
-            const v408 = cb(v407);
-            return v408;
+            const v403 = 'mkdirp(' + dir;
+            const v404 = v403 + ') failed';
+            const v405 = cb(v404);
+            return v405;
         }
-        const v409 = 'mkdirp() ' + dir;
-        const v410 = v409 + ' finished';
-        const v411 = debug(v410);
-        v411;
-        const v412 = { cwd: dir };
-        const v418 = function (err, stdo, stde) {
+        const v406 = 'mkdirp() ' + dir;
+        const v407 = v406 + ' finished';
+        const v408 = debug(v407);
+        v408;
+        const v409 = { cwd: dir };
+        const v415 = function (err, stdo, stde) {
             if (err) {
-                const v413 = cb(err);
-                return v413;
+                const v410 = cb(err);
+                return v410;
             }
-            const v414 = 'init() ' + dir;
-            const v415 = v414 + ' finished';
-            const v416 = debug(v415);
-            v416;
-            const v417 = fetch();
-            v417;
+            const v411 = 'init() ' + dir;
+            const v412 = v411 + ' finished';
+            const v413 = debug(v412);
+            v413;
+            const v414 = fetch();
+            v414;
         };
-        const v419 = child.exec('git init', v412, v418);
-        v419;
+        const v416 = child.exec('git init', v409, v415);
+        v416;
     };
     const fetch = function () {
-        const v420 = self.repoDir;
-        const v421 = repo.organization;
-        const v422 = repo.name;
-        const v423 = path.resolve(v420, v421, v422);
-        const v424 = 'file://' + v423;
-        const v425 = repo.branch;
-        const v426 = encodeURIComponent(v425);
-        const v427 = [
+        const v417 = self.repoDir;
+        const v418 = repo.organization;
+        const v419 = repo.name;
+        const v420 = path.resolve(v417, v418, v419);
+        const v421 = 'file://' + v420;
+        const v422 = repo.branch;
+        const v423 = [
             'git',
             'fetch',
-            v424,
-            v426
+            v421,
+            v422
         ];
-        var cmd = v427.join(' ');
-        const v428 = { cwd: dir };
-        const v434 = function (err) {
+        var cmd = v423.join(' ');
+        const v424 = { cwd: dir };
+        const v430 = function (err) {
             if (err) {
-                const v429 = cb(err);
-                return v429;
+                const v425 = cb(err);
+                return v425;
             }
-            const v430 = 'fetch() ' + dir;
-            const v431 = v430 + ' finished';
-            const v432 = debug(v431);
-            v432;
-            const v433 = checkout();
-            v433;
+            const v426 = 'fetch() ' + dir;
+            const v427 = v426 + ' finished';
+            const v428 = debug(v427);
+            v428;
+            const v429 = checkout();
+            v429;
         };
-        const v435 = child.exec(cmd, v428, v434);
-        v435;
+        const v431 = child.exec(cmd, v424, v430);
+        v431;
     };
     const checkout = function () {
-        const v436 = repo.branch;
-        const v437 = encodeURIComponent(v436);
-        const v438 = repo.commit;
-        const v439 = [
+        const v432 = repo.branch;
+        const v433 = repo.commit;
+        const v434 = [
             'git',
             'checkout',
             '-b',
-            v437,
-            v438
+            v432,
+            v433
         ];
-        var cmd = v439.join(' ');
-        const v440 = { cwd: dir };
-        const v442 = function (err, stdo, stde) {
-            const v441 = cb(err, stdo, stde);
-            v441;
+        var cmd = v434.join(' ');
+        const v435 = { cwd: dir };
+        const v437 = function (err, stdo, stde) {
+            const v436 = cb(err, stdo, stde);
+            v436;
         };
-        const v443 = child.exec(cmd, v440, v442);
-        v443;
+        const v438 = child.exec(cmd, v435, v437);
+        v438;
     };
 };
-v402.checkout = v444;
-const v445 = Git.prototype;
-const v472 = function (repo, cb) {
+v399.checkout = v439;
+const v440 = Git.prototype;
+const v466 = function (repo, cb) {
     var self = this;
-    const v446 = repo.organization;
-    const v447 = repo.name;
-    var dir = this.checkoutDir(v446, v447);
-    const v448 = repo.commit;
-    const v449 = v448 + '.';
-    const v450 = Date.now();
-    repo.id = v449 + v450;
-    const v451 = self.repoDir;
-    const v452 = repo.organization;
-    const v453 = repo.name;
-    const v454 = path.resolve(v451, v452, v453);
-    const v455 = 'file://' + v454;
-    const v456 = repo.branch;
-    const v457 = encodeURIComponent(v456);
-    const v458 = [
+    const v441 = repo.organization;
+    const v442 = repo.name;
+    var dir = this.checkoutDir(v441, v442);
+    const v443 = repo.commit;
+    const v444 = v443 + '.';
+    const v445 = Date.now();
+    repo.id = v444 + v445;
+    const v446 = self.repoDir;
+    const v447 = repo.organization;
+    const v448 = repo.name;
+    const v449 = path.resolve(v446, v447, v448);
+    const v450 = 'file://' + v449;
+    const v451 = repo.branch;
+    const v452 = [
         'git',
         'pull',
-        v455,
-        v457
+        v450,
+        v451
     ];
-    var cmd = v458.join(' ');
-    const v459 = 'Git.pull ' + dir;
-    const v460 = v459 + ': ';
-    const v461 = v460 + cmd;
-    const v462 = debug(v461);
-    v462;
-    const v463 = { cwd: dir };
-    const v470 = function (err) {
-        const v464 = 'Git.pull ' + dir;
-        const v465 = v464 + ' done: ';
-        const v466 = v465 + err;
-        const v467 = debug(v466);
-        v467;
+    var cmd = v452.join(' ');
+    const v453 = 'Git.pull ' + dir;
+    const v454 = v453 + ': ';
+    const v455 = v454 + cmd;
+    const v456 = debug(v455);
+    v456;
+    const v457 = { cwd: dir };
+    const v464 = function (err) {
+        const v458 = 'Git.pull ' + dir;
+        const v459 = v458 + ' done: ';
+        const v460 = v459 + err;
+        const v461 = debug(v460);
+        v461;
         if (err) {
-            const v468 = cb(err);
-            return v468;
+            const v462 = cb(err);
+            return v462;
         }
-        const v469 = cb(null);
-        v469;
+        const v463 = cb(null);
+        v463;
     };
-    const v471 = child.exec(cmd, v463, v470);
-    v471;
+    const v465 = child.exec(cmd, v457, v464);
+    v465;
 };
-v445.pull = v472;
+v440.pull = v466;

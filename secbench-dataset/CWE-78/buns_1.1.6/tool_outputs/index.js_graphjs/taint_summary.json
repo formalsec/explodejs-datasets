@@ -1,1 +1,140 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/buns_1.1.6/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var result = babel.transform(preprocess(file, fs.readFileSync(file,'utf-8')), {",
+        "sink_lineno": 381,
+        "source": "module.exports.build",
+        "tainted_params": [
+            "flag"
+        ],
+        "params_types": {
+            "flag": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "build",
+                "fn_name": "14814.v1666-o1779",
+                "fn_id": 11841,
+                "source_fn_id": 11841
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/buns_1.1.6/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(__tmp + parentDirs + DS + filename, result.code);",
+        "sink_lineno": 391,
+        "source": "module.exports.build",
+        "tainted_params": [
+            "flag"
+        ],
+        "params_types": {
+            "flag": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "build",
+                "fn_name": "14814.v1666-o1779",
+                "fn_id": 11841,
+                "source_fn_id": 11841
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/buns_1.1.6/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var temp = fs.readFileSync(file, 'utf-8');",
+        "sink_lineno": 394,
+        "source": "module.exports.build",
+        "tainted_params": [
+            "flag"
+        ],
+        "params_types": {
+            "flag": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "build",
+                "fn_name": "14814.v1666-o1779",
+                "fn_id": 11841,
+                "source_fn_id": 11841
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/buns_1.1.6/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var path = moduleDir + name + DS, moduleConf = JSON.parse(fs.readFileSync(path + 'package.json', 'utf-8')),",
+        "sink_lineno": 469,
+        "source": "module.exports.build",
+        "tainted_params": [
+            "flag"
+        ],
+        "params_types": {
+            "flag": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "build",
+                "fn_name": "14814.v1666-o1779",
+                "fn_id": 11841,
+                "source_fn_id": 11841
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/buns_1.1.6/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(command);",
+        "sink_lineno": 678,
+        "source": "module.exports.install",
+        "tainted_params": [
+            "requestedModule"
+        ],
+        "params_types": {
+            "requestedModule": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "install",
+                "fn_name": "14814.v1706-o1787",
+                "fn_id": "12979",
+                "source_fn_id": "12979"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-78/buns_1.1.6/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var conf = JSON.parse(fs.readFileSync(modulesPath + name + DS + 'package.json'));",
+        "sink_lineno": 681,
+        "source": "module.exports.install",
+        "tainted_params": [
+            "requestedModule"
+        ],
+        "params_types": {
+            "requestedModule": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "install",
+                "fn_name": "14814.v1706-o1787",
+                "fn_id": "12979",
+                "source_fn_id": "12979"
+            }
+        ]
+    }
+]

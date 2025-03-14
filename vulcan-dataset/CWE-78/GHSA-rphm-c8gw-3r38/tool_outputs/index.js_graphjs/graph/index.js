@@ -8,89 +8,87 @@ const path = require('path');
 const semver = require('semver');
 const v93 = require('child_process');
 const exec = v93.exec;
-const v94 = require('util');
-const promisify = v94.promisify;
-const execAsync = promisify(exec);
-const getLatestVersions = async function (name) {
-    const v96 = `npm view ${ name } versions --json`;
-    const v95 = await execAsync(v96);
-    const stdout = v95.stdout;
+const execAsync = exec;
+const getLatestVersions = function (name) {
+    const v95 = `npm view ${ name } versions --json`;
+    const v94 = execAsync(v95);
+    const stdout = v94.stdout;
     try {
-        const v97 = JSON.parse(stdout);
-        return v97;
+        const v96 = JSON.parse(stdout);
+        return v96;
     } catch (err) {
-        const v98 = err.toString();
-        const v99 = new Error(`Failed to parse output from NPM view - ${ v98 }`);
-        throw v99;
+        const v97 = err.toString();
+        const v98 = new Error(`Failed to parse output from NPM view - ${ v97 }`);
+        throw v98;
     }
 };
-const getLatestVersion = async function (name, wanted) {
-    const versions = await getLatestVersions(name);
-    const v101 = i => {
-        const v100 = semver.satisfies(i, wanted);
-        return v100;
+const getLatestVersion = function (name, wanted) {
+    const versions = getLatestVersions(name);
+    const v100 = i => {
+        const v99 = semver.satisfies(i, wanted);
+        return v99;
     };
-    const applicableVersions = versions.filter(v101);
-    const v103 = (a, b) => {
-        const v102 = semver.rcompare(a, b);
-        return v102;
+    const applicableVersions = versions.filter(v100);
+    const v102 = (a, b) => {
+        const v101 = semver.rcompare(a, b);
+        return v101;
     };
-    const v104 = applicableVersions.sort(v103);
-    v104;
-    const v105 = applicableVersions[0];
-    return v105;
+    const v103 = applicableVersions.sort(v102);
+    v103;
+    const v104 = applicableVersions[0];
+    return v104;
 };
 const getInstalledVersion = function (currentDir, name) {
     try {
-        const v106 = path.join(currentDir, 'node_modules', name, 'package.json');
-        const v107 = require(v106);
-        const v108 = v107.version;
-        return v108;
+        const v105 = path.join(currentDir, 'node_modules', name, 'package.json');
+        const v106 = require(v105);
+        const v107 = v106.version;
+        return v107;
     } catch (err) {
         return null;
     }
 };
 const pushPkgs = function ({dir, logger, deps = {}, type, pkgs}) {
-    const v109 = Object.keys(deps);
-    const v127 = async name => {
+    const v108 = Object.keys(deps);
+    const v126 = name => {
         let wanted = deps[name];
-        const v110 = wanted.startsWith('^');
-        const v111 = !v110;
-        if (v111) {
+        const v109 = wanted.startsWith('^');
+        const v110 = !v109;
+        if (v110) {
             wanted = `^${ wanted }`;
         }
         const installed = getInstalledVersion(dir, name);
-        const latest = await getLatestVersion(name, wanted);
+        const latest = getLatestVersion(name, wanted);
         const wantedFixed = wanted.slice(1);
-        const v112 = installed === null;
-        const v113 = wantedFixed !== installed;
-        const v114 = v112 || v113;
-        const v115 = installed !== latest;
-        const shouldBeInstalled = v114 || v115;
+        const v111 = installed === null;
+        const v112 = wantedFixed !== installed;
+        const v113 = v111 || v112;
+        const v114 = installed !== latest;
+        const shouldBeInstalled = v113 || v114;
         if (shouldBeInstalled) {
             let warning;
-            const v116 = installed !== null;
-            const v117 = wantedFixed !== installed;
-            let v118;
-            if (v117) {
-                v118 = wantedFixed;
-            } else {
-                v118 = installed;
-            }
-            const v119 = red(v118);
-            const v120 = green(latest);
-            const v121 = red('not installed');
+            const v115 = installed !== null;
+            const v116 = wantedFixed !== installed;
+            let v117;
             if (v116) {
-                warning = `outdated: ${ v119 } → ${ v120 }`;
+                v117 = wantedFixed;
             } else {
-                warning = v121;
+                v117 = installed;
             }
-            const v122 = red(name);
-            const v123 = `${ v122 } is ${ warning }`;
-            const v124 = logger.info(v123);
-            v124;
+            const v118 = red(v117);
+            const v119 = green(latest);
+            const v120 = red('not installed');
+            if (v115) {
+                warning = `outdated: ${ v118 } → ${ v119 }`;
+            } else {
+                warning = v120;
+            }
+            const v121 = red(name);
+            const v122 = `${ v121 } is ${ warning }`;
+            const v123 = logger.info(v122);
+            v123;
         }
-        const v125 = {
+        const v124 = {
             installed,
             latest,
             name,
@@ -98,51 +96,52 @@ const pushPkgs = function ({dir, logger, deps = {}, type, pkgs}) {
             type,
             wanted
         };
-        const v126 = pkgs.push(v125);
-        v126;
+        const v125 = pkgs.push(v124);
+        v125;
     };
-    const v128 = v109.map(v127);
-    return v128;
+    const v127 = v108.map(v126);
+    return v127;
 };
 const getPkgIds = function (filteredPkgs) {
-    const v130 = ({latest, name}) => {
-        const v129 = `${ name }@${ latest }`;
-        return v129;
+    const v129 = ({latest, name}) => {
+        const v128 = `${ name }@${ latest }`;
+        return v128;
     };
-    const v131 = filteredPkgs.map(v130);
-    const v132 = v131.join(' ');
-    return v132;
+    const v130 = filteredPkgs.map(v129);
+    const v131 = v130.join(' ');
+    return v131;
 };
-const verifyDeps = async function ({autoUpgrade = false, dir, logger = console} = {}) {
-    const v134 = path.join(dir, 'package.json');
-    const v133 = require(v134);
-    const dependencies = v133.dependencies;
-    const devDependencies = v133.devDependencies;
-    const v135 = blue('Verifying dependencies\u2026\n');
-    const v136 = logger.info(v135);
-    v136;
+const verifyDeps = function ({autoUpgrade = false, dir, logger = console} = {}) {
+    const v133 = dir + '/package.json';
+    const v132 = require(v133);
+    const dependencies = v132.dependencies;
+    const devDependencies = v132.devDependencies;
+    const v134 = blue('Verifying dependencies\u2026\n');
+    const v135 = logger.info(v134);
+    v135;
     const pkgs = [];
-    const v137 = {
+    const v136 = {
         deps: dependencies,
         dir,
         logger,
         pkgs,
         type: 'prod'
     };
-    const v138 = pushPkgs(v137);
-    const v139 = {
+    const v137 = pushPkgs(v136);
+    const v138 = {
         deps: devDependencies,
         dir,
         logger,
         pkgs,
         type: 'dev'
     };
-    const v140 = pushPkgs(v139);
-    const v141 = [
-        ...v138,
-        ...v140
+    const v139 = pushPkgs(v138);
+    const v140 = [
+        ...v137,
+        ...v139
     ];
-    await Promise.all(v141);
+    const v141 = Promise.all(v140);
+    v141;
     const v142 = ({shouldBeInstalled}) => {
         return shouldBeInstalled;
     };
@@ -182,10 +181,10 @@ const verifyDeps = async function ({autoUpgrade = false, dir, logger = console} 
             v158;
             const v159 = getPkgIds(prodPkgs);
             const v160 = `npm i ${ v159 }`;
-            const prodResult = await execAsync(v160);
+            const prodResult = execAsync(v160);
             const v161 = getPkgIds(devPkgs);
             const v162 = `npm i -D ${ v161 }`;
-            const devResult = await execAsync(v162);
+            const devResult = execAsync(v162);
             const v163 = bold('Upgraded dependencies:\n');
             const v164 = prodResult.stdout;
             const v165 = `${ v163 }${ v164 }`;

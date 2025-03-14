@@ -1,108 +1,147 @@
+const v67 = require('lodash');
+const isEmpty = v67.isEmpty;
 var _;
 var child_process;
 var utils;
-_ = require('lodash');
 child_process = require('child_process');
-utils = require('./utils');
-const v69 = function (device, callback) {
+const v70 = function (value) {
+    const v68 = typeof value;
+    const v69 = v68 === 'string';
+    return v69;
+};
+const v73 = function (value) {
+    const v71 = typeof value;
+    const v72 = v71 === 'function';
+    return v72;
+};
+const v75 = function (value) {
+    const v74 = value === '';
+    return v74;
+};
+_.isString = v70;
+_.isFunction = v73;
+_.isEmpty = v75;
+_ = {};
+_ = {};
+const v78 = function () {
+    const v76 = process.platform;
+    const v77 = v76 === 'win32';
+    return v77;
+};
+const v81 = function () {
+    const v79 = process.platform;
+    const v80 = v79 === 'darwin';
+    return v80;
+};
+const v84 = function () {
+    const v82 = process.platform;
+    const v83 = v82 === 'linux';
+    return v83;
+};
+utils.isWin32 = v78;
+utils.isMacOSX = v81;
+utils.isLinux = v84;
+utils = {};
+utils = {};
+const v105 = function (device, callback) {
     var unmountCommand;
-    const v49 = device == null;
-    if (v49) {
-        const v50 = new Error('Missing device');
-        throw v50;
+    const v85 = device == null;
+    if (v85) {
+        const v86 = new Error('Missing device');
+        throw v86;
     }
-    const v51 = _.isString(device);
-    const v52 = !v51;
-    if (v52) {
-        const v53 = 'Invalid device: ' + device;
-        const v54 = new Error(v53);
-        throw v54;
+    const v87 = _.isString(device);
+    const v88 = !v87;
+    if (v88) {
+        const v89 = 'Invalid device: ' + device;
+        const v90 = new Error(v89);
+        throw v90;
     }
-    const v55 = callback == null;
-    if (v55) {
-        const v56 = new Error('Missing callback');
-        throw v56;
+    const v91 = callback == null;
+    if (v91) {
+        const v92 = new Error('Missing callback');
+        throw v92;
     }
-    const v57 = _.isFunction(callback);
-    const v58 = !v57;
-    if (v58) {
-        const v59 = 'Invalid callback: ' + callback;
-        const v60 = new Error(v59);
-        throw v60;
+    const v93 = _.isFunction(callback);
+    const v94 = !v93;
+    if (v94) {
+        const v95 = 'Invalid callback: ' + callback;
+        const v96 = new Error(v95);
+        throw v96;
     }
-    const v61 = utils.isWin32();
-    if (v61) {
-        const v62 = callback(null, null, null);
-        return v62;
+    const v97 = utils.isWin32();
+    if (v97) {
+        const v98 = callback(null, null, null);
+        return v98;
     }
-    const v63 = utils.isMacOSX();
-    if (v63) {
+    const v99 = utils.isMacOSX();
+    if (v99) {
         unmountCommand = '/usr/sbin/diskutil unmountDisk force';
     } else {
         unmountCommand = 'umount';
     }
-    const v64 = '"' + device;
-    device = v64 + '"';
-    const v65 = utils.isLinux();
-    if (v65) {
+    const v100 = '"' + device;
+    device = v100 + '"';
+    const v101 = utils.isLinux();
+    if (v101) {
         device += '?* 2>/dev/null || /bin/true';
     }
-    const v66 = unmountCommand + ' ';
-    const v67 = v66 + device;
-    const v68 = child_process.exec(v67, callback);
-    return v68;
+    const v102 = unmountCommand + ' ';
+    const v103 = v102 + device;
+    const v104 = child_process.exec(v103, callback);
+    return v104;
 };
-exports.umount = v69;
-const v96 = function (device, callback) {
-    const v70 = device == null;
-    if (v70) {
-        const v71 = new Error('Missing device');
-        throw v71;
+exports.umount = v105;
+const v132 = function (device, callback) {
+    const v106 = device == null;
+    if (v106) {
+        const v107 = new Error('Missing device');
+        throw v107;
     }
-    const v72 = _.isString(device);
-    const v73 = !v72;
-    if (v73) {
-        const v74 = 'Invalid device: ' + device;
-        const v75 = new Error(v74);
-        throw v75;
+    const v108 = _.isString(device);
+    const v109 = !v108;
+    if (v109) {
+        const v110 = 'Invalid device: ' + device;
+        const v111 = new Error(v110);
+        throw v111;
     }
-    const v76 = callback == null;
-    if (v76) {
-        const v77 = new Error('Missing callback');
-        throw v77;
+    const v112 = callback == null;
+    if (v112) {
+        const v113 = new Error('Missing callback');
+        throw v113;
     }
-    const v78 = _.isFunction(callback);
-    const v79 = !v78;
-    if (v79) {
-        const v80 = 'Invalid callback: ' + callback;
-        const v81 = new Error(v80);
-        throw v81;
+    const v114 = _.isFunction(callback);
+    const v115 = !v114;
+    if (v115) {
+        const v116 = 'Invalid callback: ' + callback;
+        const v117 = new Error(v116);
+        throw v117;
     }
-    const v82 = utils.isWin32();
-    if (v82) {
-        const v83 = callback(null, true);
-        return v83;
+    const v118 = utils.isWin32();
+    if (v118) {
+        const v119 = callback(null, true);
+        return v119;
     }
-    const v94 = function (error, stdout, stderr) {
-        const v84 = error != null;
-        if (v84) {
-            const v85 = callback(error);
-            return v85;
+    const v130 = function (error, stdout, stderr) {
+        const v120 = error != null;
+        if (v120) {
+            const v121 = callback(error);
+            return v121;
         }
-        const v86 = _.isEmpty(stderr);
-        const v87 = !v86;
-        if (v87) {
-            const v88 = new Error(stderr);
-            const v89 = callback(v88);
-            return v89;
+        const v122 = _.isEmpty(stderr);
+        const v123 = !v122;
+        if (v123) {
+            const v124 = new Error(stderr);
+            const v125 = callback(v124);
+            return v125;
         }
-        const v90 = stdout.indexOf(device);
-        const v91 = -1;
-        const v92 = v90 !== v91;
-        const v93 = callback(null, v92);
-        return v93;
+        const v126 = stdout.indexOf(device);
+        const v127 = -1;
+        const v128 = v126 !== v127;
+        const v129 = callback(null, v128);
+        return v129;
     };
-    const v95 = child_process.exec('mount', v94);
-    return v95;
+    const v131 = child_process.exec('mount', v130);
+    return v131;
 };
-exports.isMounted = v96;
+exports.isMounted = v132;

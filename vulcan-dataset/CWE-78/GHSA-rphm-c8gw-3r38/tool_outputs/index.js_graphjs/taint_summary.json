@@ -4,7 +4,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-rphm-c8gw-3r38/src/index.js",
         "vuln_type": "code-injection",
         "sink": "return require(path.join(currentDir, 'node_modules', name, 'package.json')).version;",
-        "sink_lineno": 33,
+        "sink_lineno": 34,
         "source": "module.exports",
         "tainted_params": [
             "undefined"
@@ -15,9 +15,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1795.verifyDeps-o267",
-                "fn_id": 1437,
-                "source_fn_id": 1437
+                "fn_name": "1771.verifyDeps-o270",
+                "fn_id": 1417,
+                "source_fn_id": 1417
             }
         ]
     }

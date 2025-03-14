@@ -1,5 +1,4 @@
 'use strict';
-const Promise = require('bluebird');
 const v154 = require('child_process');
 const exec = v154.exec;
 const v155 = require('util');

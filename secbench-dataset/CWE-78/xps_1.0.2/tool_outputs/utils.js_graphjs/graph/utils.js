@@ -1,5 +1,4 @@
 'use strict';
-var Task = require('data.task');
 const v17 = require('child_process');
 var exec = v17.exec;
 const v18 = require('core.lambda');
@@ -33,6 +32,6 @@ const shell = function (cmd, args) {
         const v30 = exec(command, v29);
         v30;
     };
-    const v32 = new Task(v31);
+    const v32 = new Promise(v31);
     return v32;
 };

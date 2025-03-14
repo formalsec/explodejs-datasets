@@ -1,153 +1,144 @@
 var childProcess = require('child_process');
 const _getTitles = function (titleLine) {
     var titles = [];
-    const v69 = titleLine.split(/\s+/);
-    const v74 = function (title) {
-        const v70 = title.trim();
-        const v71 = v70 === '';
-        if (v71) {
+    const v65 = titleLine.split(/\s+/);
+    const v70 = function (title) {
+        const v66 = title.trim();
+        const v67 = v66 === '';
+        if (v67) {
             return;
         }
-        const v72 = title.trim();
-        const v73 = titles.push(v72);
-        v73;
+        const v68 = title.trim();
+        const v69 = titles.push(v68);
+        v69;
     };
-    const v75 = v69.forEach(v74);
-    v75;
+    const v71 = v65.forEach(v70);
+    v71;
     return titles;
 };
 const _parse = function (input) {
     var lines = input.split('\n');
-    const v76 = lines.shift();
-    var titles = _getTitles(v76);
-    const v79 = function (line) {
-        const v77 = line.trim();
-        const v78 = v77 !== '';
-        return v78;
+    const v72 = lines.shift();
+    var titles = _getTitles(v72);
+    const v75 = function (line) {
+        const v73 = line.trim();
+        const v74 = v73 !== '';
+        return v74;
     };
-    const v80 = lines.filter(v79);
-    const v95 = function (line) {
-        const v81 = line.trim();
-        var columns = v81.split(/\s+/);
+    const v76 = lines.filter(v75);
+    const v91 = function (line) {
+        const v77 = line.trim();
+        var columns = v77.split(/\s+/);
         var obj = {};
         var i = 0;
-        const v82 = titles.length;
-        let v83 = i < v82;
-        while (v83) {
-            const v85 = titles.length;
-            const v86 = v85 - 1;
-            const v87 = i === v86;
-            const v88 = columns.length;
-            const v89 = v88 > 1;
-            const v90 = v87 && v89;
-            if (v90) {
-                const v92 = columns.join(' ');
-                obj[v91] = v92;
+        const v78 = titles.length;
+        let v79 = i < v78;
+        while (v79) {
+            const v81 = titles.length;
+            const v82 = v81 - 1;
+            const v83 = i === v82;
+            const v84 = columns.length;
+            const v85 = v84 > 1;
+            const v86 = v83 && v85;
+            if (v86) {
+                const v88 = columns.join(' ');
+                obj[v87] = v88;
             } else {
-                const v94 = columns.shift();
-                obj[v93] = v94;
+                const v90 = columns.shift();
+                obj[v89] = v90;
             }
-            const v84 = i++;
-            v83 = i < v82;
+            const v80 = i++;
+            v79 = i < v78;
         }
         return obj;
     };
-    var objs = v80.map(v95);
+    var objs = v76.map(v91);
     return objs;
 };
 const _filter = function (query, processes) {
-    const v111 = function (proc) {
+    const v107 = function (proc) {
         var res = true;
-        const v96 = query.pid;
-        if (v96) {
+        const v92 = query.pid;
+        if (v92) {
             var pids = Object.create(null);
-            const v97 = query.pid;
-            const v98 = Array.isArray(v97);
-            if (v98) {
-                const v99 = query.pid;
-                const v100 = function (pid) {
+            const v93 = query.pid;
+            const v94 = Array.isArray(v93);
+            if (v94) {
+                const v95 = query.pid;
+                const v96 = function (pid) {
                     pids[pid] = true;
                 };
-                const v101 = v99.forEach(v100);
-                v101;
+                const v97 = v95.forEach(v96);
+                v97;
             } else {
-                const v102 = query.pid;
-                pids[v102] = true;
+                const v98 = query.pid;
+                pids[v98] = true;
             }
-            const v103 = proc.PID;
-            const v104 = v103 in pids;
-            res = res && v104;
+            const v99 = proc.PID;
+            const v100 = v99 in pids;
+            res = res && v100;
         }
-        const v105 = query.command;
-        if (v105) {
-            const v106 = proc.CMD;
-            const v107 = query.command;
-            const v108 = v106.search(v107);
-            const v109 = -1;
-            const v110 = v108 !== v109;
-            res = res && v110;
+        const v101 = query.command;
+        if (v101) {
+            const v102 = proc.CMD;
+            const v103 = query.command;
+            const v104 = v102.search(v103);
+            const v105 = -1;
+            const v106 = v104 !== v105;
+            res = res && v106;
         }
         return res;
     };
-    const v112 = processes.filter(v111);
-    return v112;
+    const v108 = processes.filter(v107);
+    return v108;
 };
 const _ps = function (args, cb) {
-    const v113 = process.platform;
-    const v114 = v113 === 'win32';
-    if (v114) {
-        const v115 = cb('Windows support not implemented yet.');
-        return v115;
+    const v109 = process.platform;
+    const v110 = v109 === 'win32';
+    if (v110) {
+        const v111 = cb('Windows support not implemented yet.');
+        return v111;
     } else {
         var cmd = 'ps';
         if (args) {
-            const v116 = args.join(' ');
-            cmd += ' ' + v116;
+            const v112 = args.join(' ');
+            cmd += ' ' + v112;
         }
-        const v124 = function (err, stdout, stderr) {
-            const v117 = err || stderr;
-            if (v117) {
-                const v118 = stderr.toString();
-                const v119 = err || v118;
-                const v120 = cb(v119);
-                return v120;
+        const v120 = function (err, stdout, stderr) {
+            const v113 = err || stderr;
+            if (v113) {
+                const v114 = stderr.toString();
+                const v115 = err || v114;
+                const v116 = cb(v115);
+                return v116;
             }
-            const v121 = stdout.toString();
-            const v122 = _parse(v121);
-            const v123 = cb(null, v122);
-            return v123;
+            const v117 = stdout.toString();
+            const v118 = _parse(v117);
+            const v119 = cb(null, v118);
+            return v119;
         };
-        const v125 = childProcess.exec(cmd, v124);
-        v125;
+        const v121 = childProcess.exec(cmd, v120);
+        v121;
     }
 };
 const lookup = function (query, cb) {
-    const v126 = query.psargs;
-    const v130 = function (err, results) {
+    const v122 = query.psargs;
+    const v126 = function (err, results) {
         if (err) {
-            const v127 = cb(err);
-            return v127;
+            const v123 = cb(err);
+            return v123;
         }
-        const v128 = _filter(query, results);
-        const v129 = cb(null, v128);
-        return v129;
+        const v124 = _filter(query, results);
+        const v125 = cb(null, v124);
+        return v125;
     };
-    const v131 = _ps(v126, v130);
-    v131;
+    const v127 = _ps(v122, v126);
+    v127;
 };
-const v132 = process.env;
-const v133 = v132.NODE_ENV;
-const v134 = v133 === 'test';
-if (v134) {
-    const v135 = {};
-    v135._getTitles = _getTitles;
-    v135._parse = _parse;
-    v135._filter = _filter;
-    v135._ps = _ps;
-    v135.lookup = lookup;
-    module.exports = v135;
-} else {
-    const v136 = {};
-    v136.lookup = lookup;
-    module.exports = v136;
-}
+const v128 = {};
+v128._getTitles = _getTitles;
+v128._parse = _parse;
+v128._filter = _filter;
+v128._ps = _ps;
+v128.lookup = lookup;
+module.exports = v128;

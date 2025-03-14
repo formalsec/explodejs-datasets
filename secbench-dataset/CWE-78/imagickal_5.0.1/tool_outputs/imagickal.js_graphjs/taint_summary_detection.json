@@ -3,12 +3,12 @@
         "filename": "/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
         "vuln_type": "command-injection",
         "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
-        "sink_lineno": 77
+        "sink_lineno": 76
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
         "vuln_type": "command-injection",
         "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
-        "sink_lineno": 127
+        "sink_lineno": 126
     }
 ]

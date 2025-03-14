@@ -233,3 +233,4 @@ const v216 = function (ipAddress, callback) {
     }
 };
 macfromip.getMac = v216;
+module.exports = macfromip;

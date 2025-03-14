@@ -1,37 +1,40 @@
-const exec = require('async-execute');
-const v30 = async function (destination, {
+const v19 = require('child_process');
+const exec = v19.exec;
+const v36 = function (destination, {
     hard = true
 } = {}) {
-    const v16 = typeof destination;
-    const v17 = v16 === 'string';
-    const v18 = destination && v17;
-    if (v18) {
-        const v19 = JSON.stringify(destination);
-        let v20;
+    const v20 = typeof destination;
+    const v21 = v20 === 'string';
+    const v22 = destination && v21;
+    if (v22) {
+        const v23 = JSON.stringify(destination);
+        let v24;
         if (hard) {
-            v20 = '--hard';
+            v24 = '--hard';
         } else {
-            v20 = '';
+            v24 = '';
         }
-        const v21 = `git reset ${ v19 } ${ v20 }`;
-        return await exec(v21);
+        const v25 = `git reset ${ v23 } ${ v24 }`;
+        const v26 = exec(v25);
+        return v26;
     }
-    const v22 = typeof destination;
-    const v23 = v22 === 'number';
-    const v24 = destination && v23;
-    if (v24) {
-        const v25 = Math.abs(destination);
-        let v26;
+    const v27 = typeof destination;
+    const v28 = v27 === 'number';
+    const v29 = destination && v28;
+    if (v29) {
+        const v30 = Math.abs(destination);
+        let v31;
         if (hard) {
-            v26 = '--hard';
+            v31 = '--hard';
         } else {
-            v26 = '';
+            v31 = '';
         }
-        const v27 = `git reset HEAD~${ v25 } ${ v26 }`;
-        return await exec(v27);
+        const v32 = `git reset HEAD~${ v30 } ${ v31 }`;
+        const v33 = exec(v32);
+        return v33;
     }
-    const v28 = typeof destination;
-    const v29 = new TypeError(`No case for handling destination ${ destination } (${ v28 })`);
-    throw v29;
+    const v34 = typeof destination;
+    const v35 = new TypeError(`No case for handling destination ${ destination } (${ v34 })`);
+    throw v35;
 };
-module.exports = v30;
+module.exports = v36;

@@ -4,7 +4,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
-        "sink_lineno": 28,
+        "sink_lineno": 29,
         "source": "module.exports.svg",
         "tainted_params": [
             "modules",
@@ -20,9 +20,9 @@
             {
                 "type": "Method",
                 "prop": "svg",
-                "fn_name": "1859.v199-o295",
-                "fn_id": 1645,
-                "source_fn_id": 1645
+                "fn_name": "1819.v193-o281",
+                "fn_id": 1605,
+                "source_fn_id": 1605
             }
         ]
     },
@@ -31,7 +31,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
-        "sink_lineno": 28,
+        "sink_lineno": 29,
         "source": "module.exports.image",
         "tainted_params": [
             "modules",
@@ -49,9 +49,9 @@
             {
                 "type": "Method",
                 "prop": "image",
-                "fn_name": "1859.v213-o303",
-                "fn_id": 1695,
-                "source_fn_id": 1695
+                "fn_name": "1819.v207-o289",
+                "fn_id": 1655,
+                "source_fn_id": 1655
             }
         ]
     },
@@ -60,7 +60,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
-        "sink_lineno": 28,
+        "sink_lineno": 29,
         "source": "module.exports.dot",
         "tainted_params": [
             "modules",
@@ -76,9 +76,9 @@
             {
                 "type": "Method",
                 "prop": "dot",
-                "fn_name": "1859.v222-o310",
-                "fn_id": 1795,
-                "source_fn_id": 1795
+                "fn_name": "1819.v216-o296",
+                "fn_id": 1755,
+                "source_fn_id": 1755
             }
         ]
     },
@@ -87,7 +87,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "path-traversal",
         "sink": ".then((image) => writeFile(imagePath, image))",
-        "sink_lineno": 150,
+        "sink_lineno": 151,
         "source": "module.exports.image",
         "tainted_params": [
             "modules",
@@ -105,9 +105,9 @@
             {
                 "type": "Method",
                 "prop": "image",
-                "fn_name": "1859.v213-o303",
-                "fn_id": 1695,
-                "source_fn_id": 1695
+                "fn_name": "1819.v207-o289",
+                "fn_id": 1655,
+                "source_fn_id": 1655
             }
         ]
     }

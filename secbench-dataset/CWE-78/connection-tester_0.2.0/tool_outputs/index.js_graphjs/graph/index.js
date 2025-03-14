@@ -8,14 +8,14 @@ const testSync = function (host, port, connectTimeout) {
     const nodeBinary = process.execPath;
     const scriptPath = path.join(__dirname, './scripts/connection-tester');
     const cmd = util.format('"%s" "%s" %s %s %s', nodeBinary, scriptPath, host, port, connectTimeout);
-    const v37 = shell.execSync(cmd);
-    const shellOut = v37.toString();
+    const v36 = shell.execSync(cmd);
+    const shellOut = v36.toString();
     const output = {};
     output.success = false;
     output.error = null;
     if (shellOut) {
-        const v38 = shellOut.match(/true/);
-        if (v38) {
+        const v37 = shellOut.match(/true/);
+        if (v37) {
             output.success = true;
         } else {
             output.error = shellOut;
@@ -30,78 +30,73 @@ const testAsync = function (host, port, connectTimeout, callback) {
     const output = {};
     output.success = false;
     output.error = null;
-    const v39 = socket.connect(port, host);
+    const v38 = socket.connect(port, host);
+    v38;
+    const v39 = socket.setTimeout(connectTimeout);
     v39;
-    const v40 = socket.setTimeout(connectTimeout);
-    v40;
-    const v43 = function () {
-        const v41 = socket.destroy();
-        v41;
+    const v42 = function () {
+        const v40 = socket.destroy();
+        v40;
         output.success = true;
-        const v42 = callback(null, output);
-        return v42;
+        const v41 = callback(null, output);
+        return v41;
     };
-    const v44 = socket.on('connect', v43);
-    v44;
-    const v49 = function (err) {
-        const v45 = socket.destroy();
-        v45;
-        const v46 = err.message;
-        const v47 = err && v46;
-        output.error = v47 || err;
-        const v48 = callback(err, output);
-        return v48;
+    const v43 = socket.on('connect', v42);
+    v43;
+    const v48 = function (err) {
+        const v44 = socket.destroy();
+        v44;
+        const v45 = err.message;
+        const v46 = err && v45;
+        output.error = v46 || err;
+        const v47 = callback(err, output);
+        return v47;
     };
-    const v50 = socket.on('error', v49);
-    v50;
-    const v56 = function (err) {
-        const v51 = socket.destroy();
-        v51;
-        const v52 = err.message;
-        const v53 = err && v52;
-        const v54 = v53 || err;
-        output.error = v54 || 'socket TIMEOUT';
-        const v55 = callback(err, output);
-        return v55;
+    const v49 = socket.on('error', v48);
+    v49;
+    const v55 = function (err) {
+        const v50 = socket.destroy();
+        v50;
+        const v51 = err.message;
+        const v52 = err && v51;
+        const v53 = v52 || err;
+        output.error = v53 || 'socket TIMEOUT';
+        const v54 = callback(err, output);
+        return v54;
     };
-    const v57 = socket.on('timeout', v56);
-    v57;
+    const v56 = socket.on('timeout', v55);
+    v56;
 };
-const v60 = function (socketTimeout) {
-    const v58 = !socketTimeout;
-    const v59 = !v58;
-    if (v59) {
+const v59 = function (socketTimeout) {
+    const v57 = !socketTimeout;
+    const v58 = !v57;
+    if (v58) {
         SOCKET_TIMEOUT = socketTimeout;
     }
     return SOCKET_TIMEOUT;
 };
-const v71 = function ConnectionTester(host, port, callbackOrConnectTimeout, callback) {
-    const v61 = typeof callbackOrConnectTimeout;
-    const v62 = v61 === 'function';
-    if (v62) {
-        const v63 = console.log('deprecated: Please migrate to the new interface ConnectionTester(host, port, timeout, callback)');
-        v63;
-        const v64 = testAsync(host, port, SOCKET_TIMEOUT, callbackOrConnectTimeout);
-        return v64;
+const v69 = function ConnectionTester(host, port, callbackOrConnectTimeout, callback) {
+    const v60 = typeof callbackOrConnectTimeout;
+    const v61 = v60 === 'function';
+    if (v61) {
+        const v62 = console.log('deprecated: Please migrate to the new interface ConnectionTester(host, port, timeout, callback)');
+        v62;
+        const v63 = testAsync(host, port, SOCKET_TIMEOUT, callbackOrConnectTimeout);
+        return v63;
     }
-    const v65 = typeof callbackOrConnectTimeout;
-    const v66 = v65 === 'number';
-    if (v66) {
-        if (callback) {
-            const v67 = testAsync(host, port, callbackOrConnectTimeout, callback);
-            return v67;
-        } else {
-            const v68 = testSync(host, port, callbackOrConnectTimeout);
-            return v68;
-        }
+    const v64 = typeof callbackOrConnectTimeout;
+    const v65 = v64 === 'number';
+    if (v65) {
+        const v66 = testSync(host, port, callbackOrConnectTimeout);
+        return v66;
     }
-    const v69 = callbackOrConnectTimeout === undefined;
-    if (v69) {
-        const v70 = testSync(host, port, SOCKET_TIMEOUT);
-        return v70;
+    const v67 = callbackOrConnectTimeout === undefined;
+    if (v67) {
+        const v68 = testSync(host, port, SOCKET_TIMEOUT);
+        return v68;
     }
 };
-const v72 = {};
-v72.timeout = v60;
-v72.test = v71;
-module.exports = v72;
+const v70 = {};
+v70.timeout = v59;
+v70.test = v69;
+module.exports = v70;

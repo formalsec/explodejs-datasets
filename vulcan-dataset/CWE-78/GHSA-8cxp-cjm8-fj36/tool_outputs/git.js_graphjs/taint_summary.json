@@ -4,7 +4,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec('git blame ' + args + ' ' + realFile, {",
-        "sink_lineno": 24,
+        "sink_lineno": 23,
         "source": "module.exports",
         "tainted_params": [
             "file",
@@ -17,9 +17,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "610.v52-o95",
-                "fn_id": 441,
-                "source_fn_id": 441
+                "fn_name": "599.v52-o91",
+                "fn_id": 430,
+                "source_fn_id": 430
             }
         ]
     }

@@ -4,7 +4,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
         "vuln_type": "command-injection",
         "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
-        "sink_lineno": 77,
+        "sink_lineno": 76,
         "source": "module.exports.dimensions",
         "tainted_params": [
             "path",
@@ -18,9 +18,9 @@
             {
                 "type": "Method",
                 "prop": "dimensions",
-                "fn_name": "2647.v191-o374",
-                "fn_id": 1720,
-                "source_fn_id": 1720
+                "fn_name": "2636.v191-o370",
+                "fn_id": 1709,
+                "source_fn_id": 1709
             }
         ]
     },
@@ -29,7 +29,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
         "vuln_type": "command-injection",
         "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
-        "sink_lineno": 127,
+        "sink_lineno": 126,
         "source": "module.exports.identify",
         "tainted_params": [
             "path",
@@ -48,9 +48,9 @@
             {
                 "type": "Method",
                 "prop": "identify",
-                "fn_name": "2647.v237-o381",
-                "fn_id": 1879,
-                "source_fn_id": 1879
+                "fn_name": "2636.v237-o377",
+                "fn_id": 1868,
+                "source_fn_id": 1868
             }
         ]
     }

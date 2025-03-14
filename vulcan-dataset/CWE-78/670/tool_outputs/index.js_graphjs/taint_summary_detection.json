@@ -3,12 +3,12 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/670/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(getInfoCommand, function (err, stdout, stderr) {",
-        "sink_lineno": 43
+        "sink_lineno": 44
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-78/670/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(convertCommand, function (err, stdout, stderr) {",
-        "sink_lineno": 104
+        "sink_lineno": 105
     }
 ]

@@ -4,7 +4,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(p.join('/proc', ''+pid, 'stat'), 'utf8', function(err, infos) {",
-        "sink_lineno": 44,
+        "sink_lineno": 46,
         "source": "module.exports.proc_calc",
         "tainted_params": [
             "pid",
@@ -27,9 +27,9 @@
             {
                 "type": "Method",
                 "prop": "proc_calc",
-                "fn_name": "2194.v211-o295",
-                "fn_id": "1431",
-                "source_fn_id": "1431"
+                "fn_name": "2213.v213-o300",
+                "fn_id": "1450",
+                "source_fn_id": "1450"
             }
         ]
     },
@@ -38,7 +38,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
-        "sink_lineno": 108,
+        "sink_lineno": 110,
         "source": "module.exports.ps",
         "tainted_params": [
             "pid",
@@ -54,9 +54,9 @@
             {
                 "type": "Method",
                 "prop": "ps",
-                "fn_name": "2194.v230-o300",
-                "fn_id": "1876",
-                "source_fn_id": "1876"
+                "fn_name": "2213.v232-o305",
+                "fn_id": "1895",
+                "source_fn_id": "1895"
             }
         ]
     },
@@ -65,7 +65,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function(err, stdout, stderr) {",
-        "sink_lineno": 138,
+        "sink_lineno": 140,
         "source": "module.exports.win",
         "tainted_params": [
             "pid",
@@ -81,9 +81,9 @@
             {
                 "type": "Method",
                 "prop": "win",
-                "fn_name": "2194.v250-o305",
-                "fn_id": "2007",
-                "source_fn_id": "2007"
+                "fn_name": "2213.v252-o310",
+                "fn_id": "2026",
+                "source_fn_id": "2026"
             }
         ]
     }

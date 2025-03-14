@@ -39,16 +39,16 @@
             {
                 "type": "New",
                 "prop": null,
-                "fn_name": "3873.v440-o592",
-                "fn_id": "2288",
-                "source_fn_id": "2288"
+                "fn_name": "3867.v440-o592",
+                "fn_id": "2285",
+                "source_fn_id": "2285"
             },
             {
                 "type": "Method",
                 "prop": "pull",
-                "fn_name": "3873.v466-o591",
-                "fn_id": "3714",
-                "source_fn_id": "3714"
+                "fn_name": "3867.v466-o591",
+                "fn_id": "3711",
+                "source_fn_id": "3711"
             }
         ]
     }

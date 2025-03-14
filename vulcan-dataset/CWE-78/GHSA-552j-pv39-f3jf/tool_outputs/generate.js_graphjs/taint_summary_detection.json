@@ -3,48 +3,48 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
-        "sink_lineno": 26
+        "sink_lineno": 28
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
-        "sink_lineno": 67
+        "sink_lineno": 69
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function execCb (err) {",
-        "sink_lineno": 86
+        "sink_lineno": 88
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function execCb (err) {",
-        "sink_lineno": 110
+        "sink_lineno": 112
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function execCb (err) {",
-        "sink_lineno": 140
+        "sink_lineno": 142
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd2, function statsCb (err, stdout) {",
-        "sink_lineno": 143
+        "sink_lineno": 145
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(certPath, function readCertCb (err, certBuf) {",
-        "sink_lineno": 217
+        "sink_lineno": 219
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(keyPath, function readKeyCb (err, keyBuf) {",
-        "sink_lineno": 219
+        "sink_lineno": 221
     }
 ]

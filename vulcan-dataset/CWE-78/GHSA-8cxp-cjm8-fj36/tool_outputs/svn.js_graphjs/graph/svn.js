@@ -1,7 +1,6 @@
 const v49 = require('child_process');
 var exec = v49.exec;
 var path = require('path');
-var Promise = require('bluebird');
 var xml2js = require('xml2js');
 const v96 = function (file, args) {
     const v50 = typeof args;

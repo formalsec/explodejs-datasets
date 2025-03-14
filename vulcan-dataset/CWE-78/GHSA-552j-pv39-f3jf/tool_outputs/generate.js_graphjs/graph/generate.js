@@ -1,41 +1,46 @@
 'use strict';
 var fs = require('fs');
-const v113 = require('child_process');
-var exec = v113.exec;
-var tmp = require('tmp');
+const v115 = require('child_process');
+var exec = v115.exec;
+const v117 = (opts, cb) => {
+    const v116 = cb('', '');
+    return v116;
+};
+var tmp = {};
+tmp.file = v117;
 const createExtensionsFile = function (opts, info, cb) {
     var s = '[v3_ca]\n';
-    const v114 = info.subjectaltname;
-    if (v114) {
-        const v115 = s + 'subjectAltName = ';
-        const v116 = info.subjectaltname;
-        const v117 = v115 + v116;
-        s = v117 + '\n';
+    const v118 = info.subjectaltname;
+    if (v118) {
+        const v119 = s + 'subjectAltName = ';
+        const v120 = info.subjectaltname;
+        const v121 = v119 + v120;
+        s = v121 + '\n';
     }
-    const v122 = function tmpFileCb(err, path) {
+    const v126 = function tmpFileCb(err, path) {
         if (err) {
-            const v118 = cb(err);
-            return v118;
+            const v122 = cb(err);
+            return v122;
         }
-        const v120 = function writeFileCb(err) {
-            const v119 = cb(err, path);
-            v119;
+        const v124 = function writeFileCb(err) {
+            const v123 = cb(err, path);
+            v123;
         };
-        const v121 = fs.writeFile(path, s, v120);
-        v121;
+        const v125 = fs.writeFile(path, s, v124);
+        v125;
     };
-    const v123 = tmp.file(opts, v122);
-    v123;
+    const v127 = tmp.file(opts, v126);
+    v127;
 };
 exports.createExtensionsFile = createExtensionsFile;
 var createExtensionsFile = exports.createExtensionsFile;
 const createCertRequestConfig = function (opts, info, cb) {
     var hash = info.subject;
-    const v124 = '[ req ]\n' + 'default_bits       = 2048\n';
-    const v125 = v124 + 'default_keyfile    = keyfile.pem\n';
-    const v126 = v125 + 'distinguished_name = req_distinguished_name\n';
-    const v127 = v126 + 'prompt             = no\n\n';
-    var s = v127 + '[ req_distinguished_name ]\n';
+    const v128 = '[ req ]\n' + 'default_bits       = 2048\n';
+    const v129 = v128 + 'default_keyfile    = keyfile.pem\n';
+    const v130 = v129 + 'distinguished_name = req_distinguished_name\n';
+    const v131 = v130 + 'prompt             = no\n\n';
+    var s = v131 + '[ req_distinguished_name ]\n';
     var allowableKeys = {};
     allowableKeys.C = 1;
     allowableKeys.ST = 1;
@@ -43,254 +48,254 @@ const createCertRequestConfig = function (opts, info, cb) {
     allowableKeys.O = 1;
     allowableKeys.OU = 1;
     allowableKeys.CN = 1;
-    const v128 = Object.keys(hash);
-    const v134 = function filterCertReqKeys(key) {
-        const v129 = key in allowableKeys;
-        if (v129) {
+    const v132 = Object.keys(hash);
+    const v138 = function filterCertReqKeys(key) {
+        const v133 = key in allowableKeys;
+        if (v133) {
             var val = hash[key];
-            const v130 = Array.isArray(val);
-            if (v130) {
+            const v134 = Array.isArray(val);
+            if (v134) {
                 val = val[0];
             }
-            const v131 = s + key;
-            const v132 = v131 + ' = ';
-            const v133 = v132 + val;
-            s = v133 + '\n';
+            const v135 = s + key;
+            const v136 = v135 + ' = ';
+            const v137 = v136 + val;
+            s = v137 + '\n';
         }
     };
-    const v135 = v128.forEach(v134);
-    v135;
-    const v140 = function tmpFileCb(err, path) {
+    const v139 = v132.forEach(v138);
+    v139;
+    const v144 = function tmpFileCb(err, path) {
         if (err) {
-            const v136 = cb(err);
-            return v136;
+            const v140 = cb(err);
+            return v140;
         }
-        const v138 = function writeFileCb(err) {
-            const v137 = cb(err, path);
-            v137;
+        const v142 = function writeFileCb(err) {
+            const v141 = cb(err, path);
+            v141;
         };
-        const v139 = fs.writeFile(path, s, v138);
-        v139;
+        const v143 = fs.writeFile(path, s, v142);
+        v143;
     };
-    const v141 = tmp.file(opts, v140);
-    v141;
+    const v145 = tmp.file(opts, v144);
+    v145;
 };
 exports.createCertRequestConfig = createCertRequestConfig;
 var createCertRequestConfig = exports.createCertRequestConfig;
 const createKeypair = function (opts, cb) {
-    const v147 = function tmpFileCb(err, path) {
+    const v151 = function tmpFileCb(err, path) {
         if (err) {
-            const v142 = cb(err);
-            return v142;
+            const v146 = cb(err);
+            return v146;
         }
-        const v143 = 'openssl genrsa -out ' + path;
-        var cmd = v143 + ' 2048';
-        const v145 = function execCb(err) {
-            const v144 = cb(err, path);
-            v144;
+        const v147 = 'openssl genrsa -out ' + path;
+        var cmd = v147 + ' 2048';
+        const v149 = function execCb(err) {
+            const v148 = cb(err, path);
+            v148;
         };
-        const v146 = exec(cmd, v145);
-        v146;
+        const v150 = exec(cmd, v149);
+        v150;
     };
-    const v148 = tmp.file(opts, v147);
-    v148;
+    const v152 = tmp.file(opts, v151);
+    v152;
 };
 exports.createKeypair = createKeypair;
 var createKeypair = exports.createKeypair;
 const createCertRequest = function (opts, keyPath, cfgPath, cb) {
-    const v157 = function tmpFileCb(err, path) {
+    const v161 = function tmpFileCb(err, path) {
         if (err) {
-            const v149 = cb(err);
-            return v149;
+            const v153 = cb(err);
+            return v153;
         }
-        const v150 = 'openssl req -new -key ' + keyPath;
-        const v151 = v150 + ' -config ';
-        const v152 = v151 + cfgPath;
-        const v153 = v152 + ' -out ';
-        var cmd = v153 + path;
-        const v155 = function execCb(err) {
-            const v154 = cb(err, path);
-            v154;
+        const v154 = 'openssl req -new -key ' + keyPath;
+        const v155 = v154 + ' -config ';
+        const v156 = v155 + cfgPath;
+        const v157 = v156 + ' -out ';
+        var cmd = v157 + path;
+        const v159 = function execCb(err) {
+            const v158 = cb(err, path);
+            v158;
         };
-        const v156 = exec(cmd, v155);
-        v156;
+        const v160 = exec(cmd, v159);
+        v160;
     };
-    const v158 = tmp.file(opts, v157);
-    v158;
+    const v162 = tmp.file(opts, v161);
+    v162;
 };
 exports.createCertRequest = createCertRequest;
 var createCertRequest = exports.createCertRequest;
 const createCert = function (opts, reqPath, caKeyPath, caCertPath, extPath, cb) {
-    const v183 = function tmpFileCb(err, path) {
+    const v187 = function tmpFileCb(err, path) {
         if (err) {
-            const v159 = cb(err);
-            return v159;
+            const v163 = cb(err);
+            return v163;
         }
         var setDays = '';
-        const v160 = parseInt(expiryDays, 10);
-        const v161 = expiryDays === v160;
-        const v162 = expiryDays && v161;
-        if (v162) {
+        const v164 = parseInt(expiryDays, 10);
+        const v165 = expiryDays === v164;
+        const v166 = expiryDays && v165;
+        if (v166) {
             setDays = ' -days ' + expiryDays;
         }
-        const v163 = 'openssl x509 -req -in ' + reqPath;
-        const v164 = v163 + ' -CAkey ';
-        const v165 = v164 + caKeyPath;
-        const v166 = v165 + ' -CA ';
-        const v167 = v166 + caCertPath;
-        const v168 = v167 + ' -out ';
-        const v169 = v168 + path;
-        const v170 = v169 + ' -CAcreateserial';
-        const v171 = v170 + ' -extensions v3_ca -extfile ';
-        const v172 = v171 + extPath;
-        var cmd = v172 + setDays;
-        const v181 = function execCb(err) {
+        const v167 = 'openssl x509 -req -in ' + reqPath;
+        const v168 = v167 + ' -CAkey ';
+        const v169 = v168 + caKeyPath;
+        const v170 = v169 + ' -CA ';
+        const v171 = v170 + caCertPath;
+        const v172 = v171 + ' -out ';
+        const v173 = v172 + path;
+        const v174 = v173 + ' -CAcreateserial';
+        const v175 = v174 + ' -extensions v3_ca -extfile ';
+        const v176 = v175 + extPath;
+        var cmd = v176 + setDays;
+        const v185 = function execCb(err) {
             if (err) {
-                const v173 = cb(err);
-                return v173;
+                const v177 = cb(err);
+                return v177;
             }
-            const v174 = 'openssl x509 -noout -in ' + path;
-            var cmd2 = v174 + ' -fingerprint -hash';
-            const v179 = function statsCb(err, stdout) {
-                const v175 = stdout.toString();
-                var output = v175.split(/\n/);
-                const v176 = output[0];
-                const v177 = output[1];
-                const v178 = cb(err, path, v176, v177);
-                v178;
+            const v178 = 'openssl x509 -noout -in ' + path;
+            var cmd2 = v178 + ' -fingerprint -hash';
+            const v183 = function statsCb(err, stdout) {
+                const v179 = stdout.toString();
+                var output = v179.split(/\n/);
+                const v180 = output[0];
+                const v181 = output[1];
+                const v182 = cb(err, path, v180, v181);
+                v182;
             };
-            const v180 = exec(cmd2, v179);
-            v180;
+            const v184 = exec(cmd2, v183);
+            v184;
         };
-        const v182 = exec(cmd, v181);
-        v182;
+        const v186 = exec(cmd, v185);
+        v186;
     };
-    const v184 = tmp.file(opts, v183);
-    v184;
+    const v188 = tmp.file(opts, v187);
+    v188;
 };
 exports.createCert = createCert;
 var createCert = exports.createCert;
 const generateCert = function (prefix, keepFiles, info, caKeyPath, caCertPath, cb) {
     var tmpFiles = [];
     prefix = prefix.replace(/\W/g, '');
-    const v185 = prefix + '-';
+    const v189 = prefix + '-';
     var opts = {};
-    opts.prefix = v185;
+    opts.prefix = v189;
     opts.postfix = '.pem';
-    const v207 = function createKeypairCb(err, keyPath) {
+    const v211 = function createKeypairCb(err, keyPath) {
         if (err) {
-            const v186 = cb(err);
-            return v186;
+            const v190 = cb(err);
+            return v190;
         }
         opts.postfix = '.cfg';
-        const v205 = function requestConfigCb(err, cfgPath) {
+        const v209 = function requestConfigCb(err, cfgPath) {
             if (err) {
-                const v187 = cb(err);
-                return v187;
+                const v191 = cb(err);
+                return v191;
             }
-            const v188 = tmpFiles.push(cfgPath);
-            v188;
+            const v192 = tmpFiles.push(cfgPath);
+            v192;
             opts.postfix = '.ext';
             opts.prefix = prefix + '-';
-            const v203 = function extensionsFileCb(err, extPath) {
+            const v207 = function extensionsFileCb(err, extPath) {
                 if (err) {
-                    const v189 = cb(err);
-                    return v189;
+                    const v193 = cb(err);
+                    return v193;
                 }
-                const v190 = tmpFiles.push(extPath);
-                v190;
+                const v194 = tmpFiles.push(extPath);
+                v194;
                 opts.postfix = '.pem';
                 opts.prefix = prefix + '-csr-';
-                const v201 = function certRequestCb(err, reqPath) {
+                const v205 = function certRequestCb(err, reqPath) {
                     if (err) {
-                        const v191 = cb(err);
-                        return v191;
+                        const v195 = cb(err);
+                        return v195;
                     }
-                    const v192 = tmpFiles.push(reqPath);
-                    v192;
+                    const v196 = tmpFiles.push(reqPath);
+                    v196;
                     opts.prefix = prefix + '-cert-';
                     const createCertCb = function (err, certPath, fingerprint, hash) {
-                        const v193 = !keepFiles;
-                        if (v193) {
-                            const v197 = function deleteTmpFiles(path) {
-                                const v195 = err => {
+                        const v197 = !keepFiles;
+                        if (v197) {
+                            const v201 = function deleteTmpFiles(path) {
+                                const v199 = err => {
                                     if (err) {
-                                        const v194 = cb(err);
-                                        return v194;
+                                        const v198 = cb(err);
+                                        return v198;
                                     }
                                 };
-                                const v196 = fs.unlink(path, v195);
-                                v196;
+                                const v200 = fs.unlink(path, v199);
+                                v200;
                             };
-                            const v198 = tmpFiles.forEach(v197);
-                            v198;
+                            const v202 = tmpFiles.forEach(v201);
+                            v202;
                         }
-                        const v199 = cb(err, keyPath, certPath, fingerprint, hash);
-                        v199;
+                        const v203 = cb(err, keyPath, certPath, fingerprint, hash);
+                        v203;
                     };
-                    const v200 = createCert(opts, reqPath, caKeyPath, caCertPath, extPath, createCertCb);
-                    v200;
+                    const v204 = createCert(opts, reqPath, caKeyPath, caCertPath, extPath, createCertCb);
+                    v204;
                 };
-                const v202 = createCertRequest(opts, keyPath, cfgPath, v201);
-                v202;
+                const v206 = createCertRequest(opts, keyPath, cfgPath, v205);
+                v206;
             };
-            const v204 = createExtensionsFile(opts, info, v203);
-            v204;
+            const v208 = createExtensionsFile(opts, info, v207);
+            v208;
         };
-        const v206 = createCertRequestConfig(opts, info, v205);
-        v206;
+        const v210 = createCertRequestConfig(opts, info, v209);
+        v210;
     };
-    const v208 = createKeypair(opts, v207);
-    v208;
+    const v212 = createKeypair(opts, v211);
+    v212;
 };
 exports.generateCert = generateCert;
 var generateCert = exports.generateCert;
 const generateCertBuf = function (prefix, keepFiles, info, caKeyPath, caCertPath, cb) {
     const generateCertCb = function (err, keyPath, certPath, fingerprint, hash) {
         if (err) {
-            const v209 = cb(err);
-            return v209;
+            const v213 = cb(err);
+            return v213;
         }
-        const v221 = function readCertCb(err, certBuf) {
+        const v225 = function readCertCb(err, certBuf) {
             if (err) {
-                const v210 = cb(err);
-                return v210;
+                const v214 = cb(err);
+                return v214;
             }
-            const v219 = function readKeyCb(err, keyBuf) {
-                const v211 = !keepFiles;
-                if (v211) {
-                    const v213 = err => {
+            const v223 = function readKeyCb(err, keyBuf) {
+                const v215 = !keepFiles;
+                if (v215) {
+                    const v217 = err => {
                         if (err) {
-                            const v212 = cb(err);
-                            return v212;
+                            const v216 = cb(err);
+                            return v216;
                         }
                     };
-                    const v214 = fs.unlink(certPath, v213);
-                    v214;
-                    const v216 = err => {
+                    const v218 = fs.unlink(certPath, v217);
+                    v218;
+                    const v220 = err => {
                         if (err) {
-                            const v215 = cb(err);
-                            return v215;
+                            const v219 = cb(err);
+                            return v219;
                         }
                     };
-                    const v217 = fs.unlink(keyPath, v216);
-                    v217;
+                    const v221 = fs.unlink(keyPath, v220);
+                    v221;
                 }
-                const v218 = cb(err, keyBuf, certBuf, fingerprint, hash);
-                v218;
+                const v222 = cb(err, keyBuf, certBuf, fingerprint, hash);
+                v222;
             };
-            const v220 = fs.readFile(keyPath, v219);
-            v220;
+            const v224 = fs.readFile(keyPath, v223);
+            v224;
         };
-        const v222 = fs.readFile(certPath, v221);
-        v222;
+        const v226 = fs.readFile(certPath, v225);
+        v226;
     };
-    const v223 = generateCert(prefix, keepFiles, info, caKeyPath, caCertPath, generateCertCb);
-    v223;
+    const v227 = generateCert(prefix, keepFiles, info, caKeyPath, caCertPath, generateCertCb);
+    v227;
 };
 exports.generateCertBuffer = generateCertBuf;
 var expiryDays;
-const v224 = function (val) {
+const v228 = function (val) {
     expiryDays = val;
 };
-exports.setExpiryDays = v224;
+exports.setExpiryDays = v228;

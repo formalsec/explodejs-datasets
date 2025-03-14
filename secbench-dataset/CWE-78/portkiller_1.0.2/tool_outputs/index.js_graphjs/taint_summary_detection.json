@@ -3,12 +3,12 @@
         "filename": "/datasets/secbench-dataset/CWE-78/portkiller_1.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`lsof -n -i4TCP:${port} | grep LISTEN`, (err, out, stderr) => {",
-        "sink_lineno": 10
+        "sink_lineno": 8
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/portkiller_1.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`kill ${pid}`,(err, out, stderr) => {",
-        "sink_lineno": 22
+        "sink_lineno": 20
     }
 ]

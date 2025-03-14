@@ -3,7 +3,7 @@
         "type": "VFunPropOfExportedObj",
         "filename": "/datasets/secbench-dataset/CWE-78/node-ps_0.0.2/src/index.js",
         "vuln_type": "command-injection",
-        "sink": "childProcess.exec(cmd, function (err, stdout, stderr) {",
+        "sink": "childProcess.exec(cmd, function(err, stdout, stderr) {",
         "sink_lineno": 72,
         "source": "module.exports._ps",
         "tainted_params": [
@@ -18,9 +18,9 @@
             {
                 "type": "Method",
                 "prop": "_ps",
-                "fn_name": "1269._ps-o189",
-                "fn_id": "1066",
-                "source_fn_id": "1066"
+                "fn_name": "1200._ps-o181",
+                "fn_id": "1027",
+                "source_fn_id": "1027"
             }
         ]
     }

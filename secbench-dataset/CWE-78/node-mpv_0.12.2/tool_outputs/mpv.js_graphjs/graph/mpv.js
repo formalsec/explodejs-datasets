@@ -1,10 +1,83 @@
-const v175 = require('child_process');
-var spawn = v175.spawn;
-const v176 = require('child_process');
-var exec = v176.execSync;
-const v177 = require('events');
-var eventEmitter = v177.EventEmitter;
-var _ = require('lodash');
+const v206 = require('child_process');
+var spawn = v206.spawn;
+const v207 = require('child_process');
+var exec = v207.execSync;
+const v208 = require('events');
+var eventEmitter = v208.EventEmitter;
+const v214 = function (obj, source) {
+    let key;
+    for (key in source) {
+        const v209 = source.hasOwnProperty(key);
+        const v210 = obj[key];
+        const v211 = v210 === undefined;
+        const v212 = v209 && v211;
+        if (v212) {
+            const v213 = source[key];
+            obj[key] = v213;
+        }
+    }
+    return obj;
+};
+const v216 = function (array, values) {
+    const v215 = array.concat(values);
+    return v215;
+};
+const v229 = function (object, source) {
+    let key;
+    for (key in source) {
+        const v217 = source.hasOwnProperty(key);
+        if (v217) {
+            const v218 = object[key];
+            const v219 = typeof v218;
+            const v220 = v219 === 'object';
+            const v221 = source[key];
+            const v222 = typeof v221;
+            const v223 = v222 === 'object';
+            const v224 = v220 && v223;
+            if (v224) {
+                const v225 = object[key];
+                const v226 = source[key];
+                const v227 = this.merge(v225, v226);
+                v227;
+            } else {
+                const v228 = source[key];
+                object[key] = v228;
+            }
+        }
+    }
+    return object;
+};
+const v233 = function (array1, array2) {
+    const v230 = array1.concat(array2);
+    const v231 = new Set(v230);
+    const v232 = Array.from(v231);
+    return v232;
+};
+const v239 = function (target) {
+    var i = 1;
+    const v234 = arguments.length;
+    let v235 = i < v234;
+    while (v235) {
+        var source = arguments[i];
+        let key;
+        for (key in source) {
+            const v237 = source.hasOwnProperty(key);
+            if (v237) {
+                const v238 = source[key];
+                target[key] = v238;
+            }
+        }
+        const v236 = i++;
+        v235 = i < v234;
+    }
+    return target;
+};
+var _ = {};
+_.defaults = v214;
+_.concat = v216;
+_.merge = v229;
+_.union = v233;
+_.extend = v239;
 var commandModule = require('./_commands');
 var controlModule = require('./_controls');
 var playlistModule = require('./_playlist');
@@ -13,51 +86,51 @@ var videoModule = require('./_video');
 var subtitleModule = require('./_subtitle');
 var socket = require('../ipcInterface');
 const mpv = function (options, mpv_args) {
-    const v178 = eventEmitter.call(this);
-    v178;
+    const v240 = eventEmitter.call(this);
+    v240;
     var ipcCommand = '';
-    const v179 = options.ipc_command;
-    if (v179) {
-        const v180 = options.ipc_command;
-        const v181 = v180 == '--input-ipc-server';
-        const v182 = options.ipc_command;
-        const v183 = v182 == '--input-unix-socket';
-        const v184 = v181 || v183;
-        const v185 = !v184;
-        if (v185) {
-            const v186 = console.log('Warning: ipcCommand was neither "--input-unix-socket" nor "--input-ipc-server"');
-            v186;
+    const v241 = options.ipc_command;
+    if (v241) {
+        const v242 = options.ipc_command;
+        const v243 = v242 == '--input-ipc-server';
+        const v244 = options.ipc_command;
+        const v245 = v244 == '--input-unix-socket';
+        const v246 = v243 || v245;
+        const v247 = !v246;
+        if (v247) {
+            const v248 = console.log('Warning: ipcCommand was neither "--input-unix-socket" nor "--input-ipc-server"');
+            v248;
         }
         ipcCommand = options.ipc_command;
     } else {
-        const v187 = options.binary;
-        const v188 = options.binary;
-        const v189 = v188 + ' --version';
-        let v190;
-        if (v187) {
-            v190 = v189;
+        const v249 = options.binary;
+        const v250 = options.binary;
+        const v251 = v250 + ' --version';
+        let v252;
+        if (v249) {
+            v252 = v251;
         } else {
-            v190 = 'mpv --version';
+            v252 = 'mpv --version';
         }
-        const v191 = { encoding: 'utf8' };
-        var output = exec(v190, v191);
-        const v192 = output.match(/UNKNOWN/);
-        const v193 = v192 == null;
-        if (v193) {
-            const v194 = output.match(/\d\.*\.*/);
-            var start = v194.index;
-            const v195 = output.match(/\(C\)/);
-            var end = v195.index;
-            const v196 = output.substr(start, end);
-            const v197 = v196.split('.');
-            const v198 = v197[1];
-            var versionNumber = parseInt(v198);
-            const v199 = isNaN(versionNumber);
-            if (v199) {
+        const v253 = { encoding: 'utf8' };
+        var output = exec(v252, v253);
+        const v254 = output.match(/UNKNOWN/);
+        const v255 = v254 == null;
+        if (v255) {
+            const v256 = output.match(/\d\.*\.*/);
+            var start = v256.index;
+            const v257 = output.match(/\(C\)/);
+            var end = v257.index;
+            const v258 = output.substr(start, end);
+            const v259 = v258.split('.');
+            const v260 = v259[1];
+            var versionNumber = parseInt(v260);
+            const v261 = isNaN(versionNumber);
+            if (v261) {
                 ipcCommand = '--input-unix-socket';
             } else {
-                const v200 = versionNumber >= 17;
-                if (v200) {
+                const v262 = versionNumber >= 17;
+                if (v262) {
                     ipcCommand = '--input-ipc-server';
                 } else {
                     ipcCommand = '--input-unix-socket';
@@ -67,323 +140,323 @@ const mpv = function (options, mpv_args) {
             ipcCommand = '--input-ipc-server';
         }
     }
-    const v201 = {};
-    v201['debug'] = false;
-    v201['verbose'] = false;
-    v201['socket'] = '/tmp/node-mpv.sock';
-    v201['audio_only'] = false;
-    v201['time_update'] = 1;
-    v201['binary'] = null;
-    this.options = v201;
-    const v202 = {};
-    const v203 = options || v202;
-    const v204 = this.options;
-    const v205 = _.defaults(v203, v204);
-    this.options = v205;
-    const v206 = {};
-    v206['mute'] = false;
-    v206['pause'] = false;
-    v206['duration'] = null;
-    v206['volume'] = 100;
-    v206['filename'] = null;
-    v206['path'] = null;
-    v206['media-title'] = null;
-    v206['playlist-pos'] = null;
-    v206['playlist-count'] = null;
-    v206['loop'] = 'no';
-    this.observed = v206;
+    const v263 = {};
+    v263['debug'] = false;
+    v263['verbose'] = false;
+    v263['socket'] = '/tmp/node-mpv.sock';
+    v263['audio_only'] = false;
+    v263['time_update'] = 1;
+    v263['binary'] = null;
+    this.options = v263;
+    const v264 = {};
+    const v265 = options || v264;
+    const v266 = this.options;
+    const v267 = _.defaults(v265, v266);
+    this.options = v267;
+    const v268 = {};
+    v268['mute'] = false;
+    v268['pause'] = false;
+    v268['duration'] = null;
+    v268['volume'] = 100;
+    v268['filename'] = null;
+    v268['path'] = null;
+    v268['media-title'] = null;
+    v268['playlist-pos'] = null;
+    v268['playlist-count'] = null;
+    v268['loop'] = 'no';
+    this.observed = v268;
     var observedVideo = {};
     observedVideo['fullscreen'] = false;
     observedVideo['sub-visibility'] = false;
-    const v207 = {};
-    this.observedIDs = v207;
+    const v269 = {};
+    this.observedIDs = v269;
     var currentTimePos = null;
-    const v208 = ipcCommand + '=';
-    const v209 = this.options;
-    const v210 = v209.socket;
-    const v211 = v208 + v210;
+    const v270 = ipcCommand + '=';
+    const v271 = this.options;
+    const v272 = v271.socket;
+    const v273 = v270 + v272;
     var defaultArgs = [
-        v211,
+        v273,
         '--idle',
         '--quiet'
     ];
-    const v212 = this.options;
-    const v213 = v212.audio_only;
-    if (v213) {
-        const v214 = [
+    const v274 = this.options;
+    const v275 = v274.audio_only;
+    if (v275) {
+        const v276 = [
             '--no-video',
             '--no-audio-display'
         ];
-        defaultArgs = _.concat(defaultArgs, v214);
+        defaultArgs = _.concat(defaultArgs, v276);
     } else {
-        const v215 = this.observed;
-        const v216 = _.merge(v215, observedVideo);
-        v216;
+        const v277 = this.observed;
+        const v278 = _.merge(v277, observedVideo);
+        v278;
     }
     if (mpv_args) {
         defaultArgs = _.union(defaultArgs, mpv_args);
     }
-    const v217 = options.binary;
-    if (v217) {
-        const v218 = options.binary;
-        const v219 = spawn(v218, defaultArgs);
-        this.mpvPlayer = v219;
+    const v279 = options.binary;
+    if (v279) {
+        const v280 = options.binary;
+        const v281 = spawn(v280, defaultArgs);
+        this.mpvPlayer = v281;
     } else {
-        const v220 = spawn('mpv', defaultArgs);
-        this.mpvPlayer = v220;
+        const v282 = spawn('mpv', defaultArgs);
+        this.mpvPlayer = v282;
     }
-    const v221 = this.options;
-    this.socket = new ipcInterface(v221);
-    const v222 = this.socket;
-    const v223 = [
+    const v283 = this.options;
+    this.socket = new ipcInterface(v283);
+    const v284 = this.socket;
+    const v285 = [
         0,
         'time-pos'
     ];
-    const v224 = v222.command('observe_property', v223);
-    v224;
-    const v234 = function () {
-        const v225 = this.observed;
-        const v226 = v225.filename;
-        const v227 = this.observed;
-        const v228 = v227.pause;
-        const v229 = !v228;
-        const v230 = v226 && v229;
-        const v231 = currentTimePos != null;
-        const v232 = v230 && v231;
-        if (v232) {
-            const v233 = this.emit('timeposition', currentTimePos);
-            v233;
+    const v286 = v284.command('observe_property', v285);
+    v286;
+    const v296 = function () {
+        const v287 = this.observed;
+        const v288 = v287.filename;
+        const v289 = this.observed;
+        const v290 = v289.pause;
+        const v291 = !v290;
+        const v292 = v288 && v291;
+        const v293 = currentTimePos != null;
+        const v294 = v292 && v293;
+        if (v294) {
+            const v295 = this.emit('timeposition', currentTimePos);
+            v295;
         }
     };
-    const v235 = v234.bind(this);
-    const v236 = this.options;
-    const v237 = v236.time_update;
-    const v238 = v237 * 1000;
-    const v239 = setInterval(v235, v238);
-    v239;
-    const v249 = function () {
+    const v297 = v296.bind(this);
+    const v298 = this.options;
+    const v299 = v298.time_update;
+    const v300 = v299 * 1000;
+    const v301 = setInterval(v297, v300);
+    v301;
+    const v311 = function () {
         var id = 1;
-        const v240 = this.observed;
-        const v241 = Object.keys(v240);
-        const v246 = function (property) {
-            const v242 = this.observed;
-            const v243 = v242.hasOwnProperty(property);
-            if (v243) {
-                const v244 = this.observeProperty(property, id);
-                v244;
-                const v245 = this.observedIDs;
-                v245[id] = property;
+        const v302 = this.observed;
+        const v303 = Object.keys(v302);
+        const v308 = function (property) {
+            const v304 = this.observed;
+            const v305 = v304.hasOwnProperty(property);
+            if (v305) {
+                const v306 = this.observeProperty(property, id);
+                v306;
+                const v307 = this.observedIDs;
+                v307[id] = property;
                 id += 1;
             }
         };
-        const v247 = v246.bind(this);
-        const v248 = v241.forEach(v247);
-        v248;
+        const v309 = v308.bind(this);
+        const v310 = v303.forEach(v309);
+        v310;
     };
-    var observeProperties = v249.bind(this);
-    const v250 = observeProperties();
-    v250;
-    const v251 = this.mpvPlayer;
-    const v266 = function () {
-        const v252 = this.options;
-        const v253 = v252.debug;
-        if (v253) {
-            const v254 = console.log('MPV Player seems to have died. Restarting...');
-            v254;
+    var observeProperties = v311.bind(this);
+    const v312 = observeProperties();
+    v312;
+    const v313 = this.mpvPlayer;
+    const v328 = function () {
+        const v314 = this.options;
+        const v315 = v314.debug;
+        if (v315) {
+            const v316 = console.log('MPV Player seems to have died. Restarting...');
+            v316;
         }
-        const v255 = options.binary;
-        if (v255) {
-            const v256 = options.binary;
-            const v257 = spawn(v256, defaultArgs);
-            this.mpvPlayer = v257;
+        const v317 = options.binary;
+        if (v317) {
+            const v318 = options.binary;
+            const v319 = spawn(v318, defaultArgs);
+            this.mpvPlayer = v319;
         } else {
-            const v258 = spawn('mpv', defaultArgs);
-            this.mpvPlayer = v258;
+            const v320 = spawn('mpv', defaultArgs);
+            this.mpvPlayer = v320;
         }
         currentTimePos = null;
-        const v263 = function () {
-            const v259 = observeProperties();
-            v259;
-            const v260 = this.socket;
-            const v261 = [
+        const v325 = function () {
+            const v321 = observeProperties();
+            v321;
+            const v322 = this.socket;
+            const v323 = [
                 0,
                 'time-pos'
             ];
-            const v262 = v260.command('observe_property', v261);
-            v262;
+            const v324 = v322.command('observe_property', v323);
+            v324;
         };
-        const v264 = v263.bind(this);
-        const v265 = setTimeout(v264, 1000);
-        v265;
+        const v326 = v325.bind(this);
+        const v327 = setTimeout(v326, 1000);
+        v327;
     };
-    const v267 = v266.bind(this);
-    const v268 = v251.on('close', v267);
-    v268;
-    const v269 = this.mpvPlayer;
-    const v273 = function (error) {
-        const v270 = this.options;
-        const v271 = v270.debug;
-        if (v271) {
-            const v272 = console.log(error);
-            v272;
+    const v329 = v328.bind(this);
+    const v330 = v313.on('close', v329);
+    v330;
+    const v331 = this.mpvPlayer;
+    const v335 = function (error) {
+        const v332 = this.options;
+        const v333 = v332.debug;
+        if (v333) {
+            const v334 = console.log(error);
+            v334;
         }
     };
-    const v274 = v273.bind(this);
-    const v275 = v269.on('error', v274);
-    v275;
-    const v276 = this.socket;
-    const v335 = function (data) {
-        const v277 = data.hasOwnProperty('event');
-        if (v277) {
-            const v278 = this.options;
-            const v279 = v278.verbose;
-            if (v279) {
-                const v280 = data.hasOwnProperty('event');
-                if (v280) {
-                    const v281 = data.event;
-                    const v282 = v281 === 'property-change';
-                    const v283 = !v282;
-                    if (v283) {
-                        const v284 = JSON.stringify(data);
-                        const v285 = 'Message received: ' + v284;
-                        const v286 = console.log(v285);
-                        v286;
+    const v336 = v335.bind(this);
+    const v337 = v331.on('error', v336);
+    v337;
+    const v338 = this.socket;
+    const v397 = function (data) {
+        const v339 = data.hasOwnProperty('event');
+        if (v339) {
+            const v340 = this.options;
+            const v341 = v340.verbose;
+            if (v341) {
+                const v342 = data.hasOwnProperty('event');
+                if (v342) {
+                    const v343 = data.event;
+                    const v344 = v343 === 'property-change';
+                    const v345 = !v344;
+                    if (v345) {
+                        const v346 = JSON.stringify(data);
+                        const v347 = 'Message received: ' + v346;
+                        const v348 = console.log(v347);
+                        v348;
                     }
                 } else {
-                    const v287 = JSON.stringify(data);
-                    const v288 = 'Message received: ' + v287;
-                    const v289 = console.log(v288);
-                    v289;
+                    const v349 = JSON.stringify(data);
+                    const v350 = 'Message received: ' + v349;
+                    const v351 = console.log(v350);
+                    v351;
                 }
             }
-            const v290 = data.event;
-            switch (v290) {
+            const v352 = data.event;
+            switch (v352) {
             case 'idle':
-                const v291 = this.options;
-                const v292 = v291.verbose;
-                if (v292) {
-                    const v293 = console.log('Event: stopped');
-                    v293;
+                const v353 = this.options;
+                const v354 = v353.verbose;
+                if (v354) {
+                    const v355 = console.log('Event: stopped');
+                    v355;
                 }
                 ;
-                const v294 = this.emit('stopped');
-                v294;
+                const v356 = this.emit('stopped');
+                v356;
                 break;
             case 'playback-restart':
-                const v295 = this.options;
-                const v296 = v295.verbose;
-                if (v296) {
-                    const v297 = console.log('Event: start');
-                    v297;
+                const v357 = this.options;
+                const v358 = v357.verbose;
+                if (v358) {
+                    const v359 = console.log('Event: start');
+                    v359;
                 }
                 ;
-                const v298 = this.emit('started');
-                v298;
+                const v360 = this.emit('started');
+                v360;
                 break;
             case 'pause':
-                const v299 = this.options;
-                const v300 = v299.verbose;
-                if (v300) {
-                    const v301 = console.log('Event: pause');
-                    v301;
+                const v361 = this.options;
+                const v362 = v361.verbose;
+                if (v362) {
+                    const v363 = console.log('Event: pause');
+                    v363;
                 }
                 ;
-                const v302 = this.emit('paused');
-                v302;
+                const v364 = this.emit('paused');
+                v364;
                 break;
             case 'unpause':
-                const v303 = this.options;
-                const v304 = v303.verbose;
-                if (v304) {
-                    const v305 = console.log('Event: unpause');
-                    v305;
+                const v365 = this.options;
+                const v366 = v365.verbose;
+                if (v366) {
+                    const v367 = console.log('Event: unpause');
+                    v367;
                 }
                 ;
-                const v306 = this.emit('resumed');
-                v306;
+                const v368 = this.emit('resumed');
+                v368;
                 break;
             case 'property-change':
-                const v307 = data.name;
-                const v308 = v307 === 'time-pos';
-                if (v308) {
+                const v369 = data.name;
+                const v370 = v369 === 'time-pos';
+                if (v370) {
                     currentTimePos = data.data;
                     break;
                 } else {
-                    const v309 = this.observed;
-                    const v310 = data.name;
-                    const v311 = data.data;
-                    v309[v310] = v311;
-                    const v312 = this.observed;
-                    const v313 = this.emit('statuschange', v312);
-                    v313;
-                    const v314 = this.options;
-                    const v315 = v314.verbose;
-                    if (v315) {
-                        const v316 = console.log('Event: statuschange');
-                        v316;
-                        const v317 = data.name;
-                        const v318 = 'Property change: ' + v317;
-                        const v319 = v318 + ' - ';
-                        const v320 = data.data;
-                        const v321 = v319 + v320;
-                        const v322 = console.log(v321);
-                        v322;
+                    const v371 = this.observed;
+                    const v372 = data.name;
+                    const v373 = data.data;
+                    v371[v372] = v373;
+                    const v374 = this.observed;
+                    const v375 = this.emit('statuschange', v374);
+                    v375;
+                    const v376 = this.options;
+                    const v377 = v376.verbose;
+                    if (v377) {
+                        const v378 = console.log('Event: statuschange');
+                        v378;
+                        const v379 = data.name;
+                        const v380 = 'Property change: ' + v379;
+                        const v381 = v380 + ' - ';
+                        const v382 = data.data;
+                        const v383 = v381 + v382;
+                        const v384 = console.log(v383);
+                        v384;
                     }
                     break;
                 }
             default:
             }
         } else {
-            const v323 = data.hasOwnProperty('request_id');
-            if (v323) {
-                const v324 = this.options;
-                const v325 = v324.verbose;
-                if (v325) {
-                    const v326 = data.request_id;
-                    const v327 = 'Get Request: ' + v326;
-                    const v328 = v327 + ' - ';
-                    const v329 = data.data;
-                    const v330 = v328 + v329;
-                    const v331 = console.log(v330);
-                    v331;
+            const v385 = data.hasOwnProperty('request_id');
+            if (v385) {
+                const v386 = this.options;
+                const v387 = v386.verbose;
+                if (v387) {
+                    const v388 = data.request_id;
+                    const v389 = 'Get Request: ' + v388;
+                    const v390 = v389 + ' - ';
+                    const v391 = data.data;
+                    const v392 = v390 + v391;
+                    const v393 = console.log(v392);
+                    v393;
                 }
-                const v332 = data.request_id;
-                const v333 = data.data;
-                const v334 = this.emit('getrequest', v332, v333);
-                v334;
+                const v394 = data.request_id;
+                const v395 = data.data;
+                const v396 = this.emit('getrequest', v394, v395);
+                v396;
             }
         }
     };
-    const v336 = v335.bind(this);
-    const v337 = v276.on('message', v336);
-    v337;
+    const v398 = v397.bind(this);
+    const v399 = v338.on('message', v398);
+    v399;
 };
-const v341 = function (file, mode) {
+const v403 = function (file, mode) {
     mode = mode || 'replace';
-    const v338 = this.socket;
-    const v339 = [
+    const v400 = this.socket;
+    const v401 = [
         file,
         mode
     ];
-    const v340 = v338.command('loadfile', v339);
-    v340;
+    const v402 = v400.command('loadfile', v401);
+    v402;
 };
-const v345 = function (url, mode) {
+const v407 = function (url, mode) {
     mode = mode || 'replace';
-    const v342 = this.socket;
-    const v343 = [
+    const v404 = this.socket;
+    const v405 = [
         url,
         mode
     ];
-    const v344 = v342.command('loadfile', v343);
-    v344;
+    const v406 = v404.command('loadfile', v405);
+    v406;
 };
-const v346 = {
+const v408 = {
     constructor: mpv,
-    loadFile: v341,
-    loadStream: v345
+    loadFile: v403,
+    loadStream: v407
 };
-const v347 = eventEmitter.prototype;
-const v348 = _.extend(v346, controlModule, commandModule, playlistModule, audioModule, videoModule, subtitleModule, v347);
-mpv.prototype = v348;
+const v409 = eventEmitter.prototype;
+const v410 = _.extend(v408, controlModule, commandModule, playlistModule, audioModule, videoModule, subtitleModule, v409);
+mpv.prototype = v410;
 module.exports = mpv;

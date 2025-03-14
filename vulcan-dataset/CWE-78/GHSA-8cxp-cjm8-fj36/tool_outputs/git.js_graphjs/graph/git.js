@@ -1,7 +1,6 @@
 const v27 = require('child_process');
 var exec = v27.exec;
 var path = require('path');
-var Promise = require('bluebird');
 const convertStringToObject = function (line) {
     var commit = {};
     var matches = line.match(/(.+)\s+\((.+)\s+(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} (\+|\-)\d{4})\s+(\d+)\)(.*)/);

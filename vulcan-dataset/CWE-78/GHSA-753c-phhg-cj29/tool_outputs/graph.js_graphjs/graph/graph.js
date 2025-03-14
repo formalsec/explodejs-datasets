@@ -1,212 +1,208 @@
 'use strict';
 const path = require('path');
-const v112 = require('util');
-const promisify = v112.promisify;
 const graphviz = require('graphviz');
-const v113 = require('child_process');
-const v114 = v113.exec;
-const exec = promisify(v114);
-const v115 = require('fs');
-const v116 = v115.writeFile;
-const writeFile = promisify(v116);
+const v109 = require('child_process');
+const exec = v109.exec;
+const v110 = require('fs');
+const writeFile = v110.writeFile;
 const setNodeColor = function (node, color) {
-    const v117 = node.set('color', color);
-    v117;
-    const v118 = node.set('fontcolor', color);
-    v118;
+    const v111 = node.set('color', color);
+    v111;
+    const v112 = node.set('fontcolor', color);
+    v112;
 };
 const checkGraphvizInstalled = function (config) {
-    const v119 = config.graphVizPath;
-    if (v119) {
-        const v120 = config.graphVizPath;
-        const cmd = path.join(v120, 'gvpr -V');
-        const v121 = exec(cmd);
-        const v124 = () => {
-            const v122 = 'Could not execute ' + cmd;
-            const v123 = new Error(v122);
-            throw v123;
+    const v113 = config.graphVizPath;
+    if (v113) {
+        const v114 = config.graphVizPath;
+        const cmd = path.join(v114, 'gvpr -V');
+        const v115 = exec(cmd);
+        const v118 = () => {
+            const v116 = 'Could not execute ' + cmd;
+            const v117 = new Error(v116);
+            throw v117;
         };
-        const v125 = v121.catch(v124);
-        return v125;
+        const v119 = v115.catch(v118);
+        return v119;
     }
-    const v126 = exec('gvpr -V');
-    const v129 = error => {
-        const v127 = 'Graphviz could not be found. Ensure that "gvpr" is in your $PATH.\n' + error;
-        const v128 = new Error(v127);
-        throw v128;
+    const v120 = exec('gvpr -V');
+    const v123 = error => {
+        const v121 = 'Graphviz could not be found. Ensure that "gvpr" is in your $PATH.\n' + error;
+        const v122 = new Error(v121);
+        throw v122;
     };
-    const v130 = v126.catch(v129);
-    return v130;
+    const v124 = v120.catch(v123);
+    return v124;
 };
 const createGraphvizOptions = function (config) {
-    const v131 = config.graphVizOptions;
-    const v132 = {};
-    const graphVizOptions = v131 || v132;
-    const v133 = config.rankdir;
-    const v134 = config.layout;
-    const v135 = config.backgroundColor;
-    const v136 = {
+    const v125 = config.graphVizOptions;
+    const v126 = {};
+    const graphVizOptions = v125 || v126;
+    const v127 = config.rankdir;
+    const v128 = config.layout;
+    const v129 = config.backgroundColor;
+    const v130 = {
         overlap: false,
         pad: 0.3,
-        rankdir: v133,
-        layout: v134,
-        bgcolor: v135
+        rankdir: v127,
+        layout: v128,
+        bgcolor: v129
     };
-    const v137 = graphVizOptions.G;
-    const v138 = Object.assign(v136, v137);
-    const v139 = config.edgeColor;
-    const v140 = { color: v139 };
-    const v141 = graphVizOptions.E;
-    const v142 = Object.assign(v140, v141);
-    const v143 = config.fontName;
-    const v144 = config.fontSize;
-    const v145 = config.nodeColor;
-    const v146 = config.nodeShape;
-    const v147 = config.nodeStyle;
-    const v148 = config.nodeColor;
-    const v149 = {
-        fontname: v143,
-        fontsize: v144,
-        color: v145,
-        shape: v146,
-        style: v147,
+    const v131 = graphVizOptions.G;
+    const v132 = Object.assign(v130, v131);
+    const v133 = config.edgeColor;
+    const v134 = { color: v133 };
+    const v135 = graphVizOptions.E;
+    const v136 = Object.assign(v134, v135);
+    const v137 = config.fontName;
+    const v138 = config.fontSize;
+    const v139 = config.nodeColor;
+    const v140 = config.nodeShape;
+    const v141 = config.nodeStyle;
+    const v142 = config.nodeColor;
+    const v143 = {
+        fontname: v137,
+        fontsize: v138,
+        color: v139,
+        shape: v140,
+        style: v141,
         height: 0,
-        fontcolor: v148
+        fontcolor: v142
     };
-    const v150 = graphVizOptions.N;
-    const v151 = Object.assign(v149, v150);
-    const v152 = {};
-    v152.G = v138;
-    v152.E = v142;
-    v152.N = v151;
-    return v152;
+    const v144 = graphVizOptions.N;
+    const v145 = Object.assign(v143, v144);
+    const v146 = {};
+    v146.G = v132;
+    v146.E = v136;
+    v146.N = v145;
+    return v146;
 };
 const createGraph = function (modules, circular, config, options) {
     const g = graphviz.digraph('G');
     const nodes = {};
-    const v154 = (a, b) => {
-        const v153 = a.concat(b);
-        return v153;
+    const v148 = (a, b) => {
+        const v147 = a.concat(b);
+        return v147;
     };
-    const v155 = [];
-    const cyclicModules = circular.reduce(v154, v155);
-    const v156 = config.graphVizPath;
-    if (v156) {
-        const v157 = config.graphVizPath;
-        const v158 = g.setGraphVizPath(v157);
-        v158;
+    const v149 = [];
+    const cyclicModules = circular.reduce(v148, v149);
+    const v150 = config.graphVizPath;
+    if (v150) {
+        const v151 = config.graphVizPath;
+        const v152 = g.setGraphVizPath(v151);
+        v152;
     }
-    const v159 = Object.keys(modules);
-    const v186 = id => {
-        const v160 = nodes[id];
-        const v161 = g.addNode(id);
-        nodes[id] = v160 || v161;
-        const v162 = modules[id];
-        const v163 = v162.length;
-        const v164 = !v163;
-        if (v164) {
-            const v165 = nodes[id];
-            const v166 = config.noDependencyColor;
-            const v167 = setNodeColor(v165, v166);
-            v167;
+    const v153 = Object.keys(modules);
+    const v180 = id => {
+        const v154 = nodes[id];
+        const v155 = g.addNode(id);
+        nodes[id] = v154 || v155;
+        const v156 = modules[id];
+        const v157 = v156.length;
+        const v158 = !v157;
+        if (v158) {
+            const v159 = nodes[id];
+            const v160 = config.noDependencyColor;
+            const v161 = setNodeColor(v159, v160);
+            v161;
         } else {
-            const v168 = cyclicModules.indexOf(id);
-            const v169 = v168 >= 0;
-            if (v169) {
-                const v170 = nodes[id];
-                const v171 = config.cyclicNodeColor;
-                const v172 = setNodeColor(v170, v171);
-                v172;
+            const v162 = cyclicModules.indexOf(id);
+            const v163 = v162 >= 0;
+            if (v163) {
+                const v164 = nodes[id];
+                const v165 = config.cyclicNodeColor;
+                const v166 = setNodeColor(v164, v165);
+                v166;
             }
         }
-        const v173 = modules[id];
-        const v184 = depId => {
-            const v174 = nodes[depId];
-            const v175 = g.addNode(depId);
-            nodes[depId] = v174 || v175;
-            const v176 = modules[depId];
-            const v177 = !v176;
-            if (v177) {
-                const v178 = nodes[depId];
-                const v179 = config.noDependencyColor;
-                const v180 = setNodeColor(v178, v179);
-                v180;
+        const v167 = modules[id];
+        const v178 = depId => {
+            const v168 = nodes[depId];
+            const v169 = g.addNode(depId);
+            nodes[depId] = v168 || v169;
+            const v170 = modules[depId];
+            const v171 = !v170;
+            if (v171) {
+                const v172 = nodes[depId];
+                const v173 = config.noDependencyColor;
+                const v174 = setNodeColor(v172, v173);
+                v174;
             }
-            const v181 = nodes[id];
-            const v182 = nodes[depId];
-            const v183 = g.addEdge(v181, v182);
+            const v175 = nodes[id];
+            const v176 = nodes[depId];
+            const v177 = g.addEdge(v175, v176);
+            v177;
+        };
+        const v179 = v167.forEach(v178);
+        v179;
+    };
+    const v181 = v153.forEach(v180);
+    v181;
+    const v186 = (resolve, reject) => {
+        const v184 = (code, out, err) => {
+            const v182 = new Error(err);
+            const v183 = reject(v182);
             v183;
         };
-        const v185 = v173.forEach(v184);
+        const v185 = g.output(options, resolve, v184);
         v185;
     };
-    const v187 = v159.forEach(v186);
-    v187;
-    const v192 = (resolve, reject) => {
-        const v190 = (code, out, err) => {
-            const v188 = new Error(err);
-            const v189 = reject(v188);
-            v189;
-        };
-        const v191 = g.output(options, resolve, v190);
-        v191;
-    };
-    const v193 = new Promise(v192);
-    return v193;
+    const v187 = new Promise(v186);
+    return v187;
 };
-const v194 = module.exports;
-const v199 = function (modules, circular, config) {
+const v188 = module.exports;
+const v193 = function (modules, circular, config) {
     const options = createGraphvizOptions(config);
     options.type = 'svg';
-    const v195 = checkGraphvizInstalled(config);
-    const v197 = () => {
-        const v196 = createGraph(modules, circular, config, options);
-        return v196;
+    const v189 = checkGraphvizInstalled(config);
+    const v191 = () => {
+        const v190 = createGraph(modules, circular, config, options);
+        return v190;
     };
-    const v198 = v195.then(v197);
-    return v198;
+    const v192 = v189.then(v191);
+    return v192;
 };
-v194.svg = v199;
-const v200 = module.exports;
-const v213 = function (modules, circular, imagePath, config) {
+v188.svg = v193;
+const v194 = module.exports;
+const v207 = function (modules, circular, imagePath, config) {
     const options = createGraphvizOptions(config);
-    const v201 = path.extname(imagePath);
-    const v202 = v201.replace('.', '');
-    options.type = v202 || 'png';
-    const v203 = checkGraphvizInstalled(config);
-    const v211 = () => {
-        const v204 = createGraph(modules, circular, config, options);
-        const v206 = image => {
-            const v205 = writeFile(imagePath, image);
-            return v205;
+    const v195 = path.extname(imagePath);
+    const v196 = v195.replace('.', '');
+    options.type = v196 || 'png';
+    const v197 = checkGraphvizInstalled(config);
+    const v205 = () => {
+        const v198 = createGraph(modules, circular, config, options);
+        const v200 = image => {
+            const v199 = writeFile(imagePath, image);
+            return v199;
         };
-        const v207 = v204.then(v206);
-        const v209 = () => {
-            const v208 = path.resolve(imagePath);
-            return v208;
+        const v201 = v198.then(v200);
+        const v203 = () => {
+            const v202 = path.resolve(imagePath);
+            return v202;
         };
-        const v210 = v207.then(v209);
-        return v210;
+        const v204 = v201.then(v203);
+        return v204;
     };
-    const v212 = v203.then(v211);
-    return v212;
+    const v206 = v197.then(v205);
+    return v206;
 };
-v200.image = v213;
-const v214 = module.exports;
-const v222 = function (modules, circular, config) {
+v194.image = v207;
+const v208 = module.exports;
+const v216 = function (modules, circular, config) {
     const options = createGraphvizOptions(config);
     options.type = 'dot';
-    const v215 = checkGraphvizInstalled(config);
-    const v217 = () => {
-        const v216 = createGraph(modules, circular, config, options);
-        return v216;
+    const v209 = checkGraphvizInstalled(config);
+    const v211 = () => {
+        const v210 = createGraph(modules, circular, config, options);
+        return v210;
     };
-    const v218 = v215.then(v217);
-    const v220 = output => {
-        const v219 = output.toString('utf8');
-        return v219;
+    const v212 = v209.then(v211);
+    const v214 = output => {
+        const v213 = output.toString('utf8');
+        return v213;
     };
-    const v221 = v218.then(v220);
-    return v221;
+    const v215 = v212.then(v214);
+    return v215;
 };
-v214.dot = v222;
+v208.dot = v216;

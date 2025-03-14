@@ -1,78 +1,83 @@
 'use strict';
-const v39 = require('child_process');
-var exec = v39.exec;
-const v40 = require('./utils');
-var isDigits = v40.isDigits;
+const v42 = require('child_process');
+var exec = v42.exec;
+var isDigits = function (value) {
+    const v43 = typeof value;
+    const v44 = v43 === 'string';
+    const v45 = /^[0-9]+$/.test(value);
+    const v46 = v44 && v45;
+    return v46;
+};
 const diskusage = function (path, cb) {
-    const v41 = path.indexOf('"');
-    const v42 = -1;
-    const v43 = v41 !== v42;
-    if (v43) {
-        const v44 = new Error('Paths with double quotes are not supported yet');
-        const v45 = cb(v44);
-        return v45;
+    const v47 = path.indexOf('"');
+    const v48 = -1;
+    const v49 = v47 !== v48;
+    if (v49) {
+        const v50 = new Error('Paths with double quotes are not supported yet');
+        const v51 = cb(v50);
+        return v51;
     }
-    const v46 = 'df -k "' + path;
-    const v47 = v46 + '"';
-    const v52 = function (err, stdout) {
+    const v52 = 'df -k "' + path;
+    const v53 = v52 + '"';
+    const v58 = function (err, stdout) {
         if (err) {
-            const v48 = cb(err);
-            return v48;
+            const v54 = cb(err);
+            return v54;
         }
         try {
-            const v49 = parse(stdout);
-            const v50 = cb(null, v49);
-            v50;
+            const v55 = parse(stdout);
+            const v56 = cb(null, v55);
+            v56;
         } catch (e) {
-            const v51 = cb(e);
-            v51;
+            const v57 = cb(e);
+            v57;
         }
     };
-    const v53 = exec(v47, v52);
-    v53;
+    const v59 = exec(v53, v58);
+    v59;
 };
 const parse = function (dusage) {
     var lines = dusage.split('\n');
-    const v54 = lines[1];
-    const v55 = !v54;
-    if (v55) {
-        const v56 = 'Unexpected df output: [' + dusage;
-        const v57 = v56 + ']';
-        const v58 = new Error(v57);
-        throw v58;
+    const v60 = lines[1];
+    const v61 = !v60;
+    if (v61) {
+        const v62 = 'Unexpected df output: [' + dusage;
+        const v63 = v62 + ']';
+        const v64 = new Error(v63);
+        throw v64;
     }
-    const v59 = lines[1];
-    const v60 = v59.split(' ');
-    const v62 = function (x) {
-        const v61 = x !== '';
-        return v61;
+    const v65 = lines[1];
+    const v66 = v65.split(' ');
+    const v68 = function (x) {
+        const v67 = x !== '';
+        return v67;
     };
-    var parts = v60.filter(v62);
+    var parts = v66.filter(v68);
     var total = parts[1];
     var used = parts[2];
     var available = parts[3];
-    const v63 = isDigits(total);
-    const v64 = isDigits(used);
-    const v65 = v63 && v64;
-    const v66 = isDigits(available);
-    const v67 = v65 && v66;
-    const v68 = !v67;
-    if (v68) {
-        const v69 = 'Unexpected df output: [' + dusage;
-        const v70 = v69 + ']';
-        const v71 = new Error(v70);
-        throw v71;
+    const v69 = isDigits(total);
+    const v70 = isDigits(used);
+    const v71 = v69 && v70;
+    const v72 = isDigits(available);
+    const v73 = v71 && v72;
+    const v74 = !v73;
+    if (v74) {
+        const v75 = 'Unexpected df output: [' + dusage;
+        const v76 = v75 + ']';
+        const v77 = new Error(v76);
+        throw v77;
     }
-    const v72 = total * 1024;
-    const v73 = used * 1024;
-    const v74 = available * 1024;
-    const v75 = {};
-    v75.total = v72;
-    v75.used = v73;
-    v75.available = v74;
-    return v75;
+    const v78 = total * 1024;
+    const v79 = used * 1024;
+    const v80 = available * 1024;
+    const v81 = {};
+    v81.total = v78;
+    v81.used = v79;
+    v81.available = v80;
+    return v81;
 };
-const v76 = {};
-v76.diskusage = diskusage;
-v76.parse = parse;
-module.exports = v76;
+const v82 = {};
+v82.diskusage = diskusage;
+v82.parse = parse;
+module.exports = v82;

@@ -2,7 +2,6 @@ const v20 = require('child_process');
 var exec = v20.exec;
 var merge = require('merge');
 var dargs = require('dargs');
-var RSVP = require('rsvp');
 var generateCommand = function (options) {
     var compassCommand = options.compassCommand;
     var excludes = ['compassCommand'];
@@ -50,7 +49,7 @@ const v38 = function (options) {
         const v35 = exec(command, v34);
         v35;
     };
-    const v37 = new RSVP.Promise(v36);
+    const v37 = new Promise(v36);
     return v37;
 };
 v25.compile = v38;

@@ -2,61 +2,67 @@
 const childProcess = require('child_process');
 const fs = require('fs');
 const treeKill = require('tree-kill');
-const globalConf = require('./config.json');
+const v39 = {};
+v39.width = 80;
+v39.height = 240;
+const globalConf = {};
+globalConf.writePath = './';
+globalConf.livePort = '8888';
+globalConf.size = v39;
 const execSync = childProcess.execSync;
 const writePath = globalConf.writePath;
 const livePort = globalConf.livePort;
-const v38 = globalConf.size;
-const width = v38.width;
-const v39 = globalConf.size;
-const height = v39.height;
-const v40 = execSync('hostname');
-let hostname = ` ${ v40 }`;
+const v40 = globalConf.size;
+const width = v40.width;
+const v41 = globalConf.size;
+const height = v41.height;
+const v42 = execSync('hostname');
+let hostname = ` ${ v42 }`;
 hostname = hostname.replace(/\s/g, '');
 let logStream;
 let proc;
 const writeLogs = function (fileName) {
     const logPath = `${ writePath }/${ hostname }_${ fileName }.log`;
-    const v41 = `Writing logs in ${ logPath }`;
-    const v42 = console.log(v41);
-    v42;
-    const v43 = { flags: 'a' };
-    logStream = fs.createWriteStream(logPath, v43);
-    const v44 = proc.stdout;
-    const v45 = v44.pipe(logStream);
-    v45;
-    const v46 = proc.stderr;
+    const v43 = `Writing logs in ${ logPath }`;
+    const v44 = console.log(v43);
+    v44;
+    const v45 = { flags: 'a' };
+    logStream = fs.createWriteStream(logPath, v45);
+    const v46 = proc.stdout;
     const v47 = v46.pipe(logStream);
     v47;
-};
-const v50 = function () {
-    const v48 = `raspivid -o - -t 0 -ih -n -pf high -ISO 800 -ex night -vs -drc high -fps 30 -w ${ width } -h ${ height } -r ${ hostname } 
-      | cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:${ livePort }}' --demux=h264 --h264-fps=30.0000`;
-    proc = childProcess.exec(v48);
-    proc.title = 'live';
-    const v49 = writeLogs('live');
+    const v48 = proc.stderr;
+    const v49 = v48.pipe(logStream);
     v49;
 };
-const v59 = function (callback) {
-    const v51 = proc.pid;
-    const v52 = 'killing pid : ' + v51;
-    const v53 = console.log(v52);
-    v53;
-    const v54 = proc.pid;
-    const v55 = treeKill(v54, 'SIGINT');
-    v55;
-    const v57 = function () {
-        const v56 = callback();
-        v56;
-    };
-    const v58 = setTimeout(v57, 2500);
-    v58;
+const v52 = function () {
+    const v50 = `raspivid -o - -t 0 -ih -n -pf high -ISO 800 -ex night -vs -drc high -fps 30 -w ${ width } -h ${ height } -r ${ hostname }
+      | cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:${ livePort }}' --demux=h264 --h264-fps=30.0000`;
+    proc = childProcess.exec(v50);
+    proc.title = 'live';
+    const v51 = writeLogs('live');
+    v51;
 };
-const v63 = function (file) {
-    const v60 = file + '.h264';
-    const v61 = [
+const v61 = function (callback) {
+    const v53 = proc.pid;
+    const v54 = 'killing pid : ' + v53;
+    const v55 = console.log(v54);
+    v55;
+    const v56 = proc.pid;
+    const v57 = treeKill(v56, 'SIGINT');
+    v57;
+    const v59 = function () {
+        const v58 = callback();
+        v58;
+    };
+    const v60 = setTimeout(v59, 2500);
+    v60;
+};
+const v65 = function (file) {
+    const v62 = file + '.h264';
+    const v63 = [
         '-o',
-        v60,
+        v62,
         '-t',
         '0',
         '-ih',
@@ -82,36 +88,36 @@ const v63 = function (file) {
         '-r',
         hostname
     ];
-    proc = childProcess.spawn('raspivid', v61);
+    proc = childProcess.spawn('raspivid', v63);
     proc.title = 'record';
-    const v62 = writeLogs('record');
-    v62;
-};
-const v69 = function (file, callback) {
-    const v64 = proc.kill('SIGINT');
+    const v64 = writeLogs('record');
     v64;
-    const parent = this;
-    const v67 = function () {
-        const v65 = parent.encodeRecord(file);
-        v65;
-        const v66 = callback();
-        v66;
-    };
-    const v68 = setTimeout(v67, 2500);
-    v68;
 };
-const v73 = function (file) {
-    const v70 = `Encoding file ${ file } from h264 to mp4 (also removing h264)`;
-    const v71 = console.log(v70);
-    v71;
-    const v72 = `avconv -r 30 -i ${ file }.h264 -threads 8 -y -loglevel quiet -vcodec copy ${ file }.mp4 && rm ${ file }.h264`;
-    const process = childProcess.exec(v72);
+const v71 = function (file, callback) {
+    const v66 = proc.kill('SIGINT');
+    v66;
+    const parent = this;
+    const v69 = function () {
+        const v67 = parent.encodeRecord(file);
+        v67;
+        const v68 = callback();
+        v68;
+    };
+    const v70 = setTimeout(v69, 2500);
+    v70;
+};
+const v75 = function (file) {
+    const v72 = `Encoding file ${ file } from h264 to mp4 (also removing h264)`;
+    const v73 = console.log(v72);
+    v73;
+    const v74 = `avconv -r 30 -i ${ file }.h264 -threads 8 -y -loglevel quiet -vcodec copy ${ file }.mp4 && rm ${ file }.h264`;
+    const process = childProcess.exec(v74);
     process.title = 'VIDEO_ENCODING';
 };
-const v74 = {};
-v74.startLive = v50;
-v74.stopLive = v59;
-v74.startRecord = v63;
-v74.stopRecord = v69;
-v74.encodeRecord = v73;
-module.exports = v74;
+const v76 = {};
+v76.startLive = v52;
+v76.stopLive = v61;
+v76.startRecord = v65;
+v76.stopRecord = v71;
+v76.encodeRecord = v75;
+module.exports = v76;

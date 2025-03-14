@@ -3,36 +3,36 @@
         "filename": "/datasets/secbench-dataset/CWE-78/git-lib_1.6.0/src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec('git add ' + files, function(err){",
-        "sink_lineno": 13
+        "sink_lineno": 12
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/git-lib_1.6.0/src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec('git commit ' + options + ' -m \\\"' + message + '\\\"', function(err){",
-        "sink_lineno": 27
+        "sink_lineno": 26
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/git-lib_1.6.0/src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec('git checkout -- ' + file, function(err){",
-        "sink_lineno": 126
+        "sink_lineno": 125
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/git-lib_1.6.0/src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec('git checkout ' + branch, function(err, result){",
-        "sink_lineno": 223
+        "sink_lineno": 222
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/git-lib_1.6.0/src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec('git checkout -b ' + newBranchName, function(err){",
-        "sink_lineno": 236
+        "sink_lineno": 235
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/git-lib_1.6.0/src/git.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"git branch -d \" + branch, function(err){",
-        "sink_lineno": 249
+        "sink_lineno": 248
     }
 ]

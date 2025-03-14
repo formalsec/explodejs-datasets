@@ -26,7 +26,7 @@
                     "name": "any",
                     "commit": "any",
                     "id": "any",
-                    "branch": "any"
+                    "branch": "array"
                 },
                 "cb": "function"
             },
@@ -39,16 +39,16 @@
             {
                 "type": "New",
                 "prop": null,
-                "fn_name": "3903.v445-o598",
-                "fn_id": "2306",
-                "source_fn_id": "2306"
+                "fn_name": "3873.v440-o592",
+                "fn_id": "2288",
+                "source_fn_id": "2288"
             },
             {
                 "type": "Method",
                 "prop": "pull",
-                "fn_name": "3903.v472-o597",
-                "fn_id": "3740",
-                "source_fn_id": "3740"
+                "fn_name": "3873.v466-o591",
+                "fn_id": "3714",
+                "source_fn_id": "3714"
             }
         ]
     }

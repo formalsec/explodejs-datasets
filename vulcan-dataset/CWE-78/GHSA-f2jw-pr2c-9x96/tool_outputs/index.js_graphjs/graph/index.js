@@ -1,27 +1,26 @@
 'use strict';
-const v57 = this.__importDefault;
-const v58 = this && v57;
-const v63 = function (mod) {
-    const v59 = mod.__esModule;
-    const v60 = mod && v59;
-    const v61 = { 'default': mod };
-    let v62;
-    if (v60) {
-        v62 = mod;
+const v58 = this.__importDefault;
+const v59 = this && v58;
+const v64 = function (mod) {
+    const v60 = mod.__esModule;
+    const v61 = mod && v60;
+    const v62 = { 'default': mod };
+    let v63;
+    if (v61) {
+        v63 = mod;
     } else {
-        v62 = v61;
+        v63 = v62;
     }
-    return v62;
+    return v63;
 };
-var __importDefault = v58 || v63;
-const v64 = { value: true };
-const v65 = Object.defineProperty(exports, '__esModule', v64);
-v65;
-const v66 = void 0;
-exports.plot = v66;
+var __importDefault = v59 || v64;
+const v65 = { value: true };
+const v66 = Object.defineProperty(exports, '__esModule', v65);
+v66;
+const v67 = void 0;
+exports.plot = v67;
 const child_process_1 = require('child_process');
-const v67 = require('lodash');
-const lodash_1 = __importDefault(v67);
+const lodash_1 = require('lodash');
 const plotCallack = function (options) {
     const v68 = options.data;
     const v69 = !v68;
@@ -33,7 +32,7 @@ const plotCallack = function (options) {
         throw v73;
     }
     const v74 = options.data;
-    const data = castDataTypeInput2SeriesDataType(v74);
+    const data = lodash_1.castDataTypeInput2SeriesDataType(v74);
     const v75 = options.style;
     const v76 = !v75;
     if (v76) {
@@ -42,76 +41,78 @@ const plotCallack = function (options) {
     const v77 = options.moving_avg;
     if (v77) {
         const v78 = options.moving_avg;
-        const v79 = apply_moving_filter(data, moving_average, v78);
-        options.data = v79;
+        const v79 = options.moving_avg;
+        const v80 = lodash_1.apply_moving_filter(data, v78, v79);
+        options.data = v80;
     }
-    const v80 = options.moving_max;
-    if (v80) {
-        const v81 = options.moving_max;
-        const v82 = apply_moving_filter(data, moving_maximum, v81);
-        options.data = v82;
+    const v81 = options.moving_max;
+    if (v81) {
+        const v82 = options.moving_max;
+        const v83 = options.moving_max;
+        const v84 = lodash_1.apply_moving_filter(data, v82, v83);
+        options.data = v84;
     }
     var gnuplot;
     const filePath = options.filename;
-    const v83 = `touch ${ filePath }`;
-    const v84 = child_process_1.exec(v83);
-    v84;
-    const v85 = options.format;
-    const v86 = v85 === 'pdf';
-    if (v86) {
-        const v87 = `gnuplot | ps2pdf - ${ filePath }`;
-        const v88 = options.exec;
-        const v89 = options.exec;
-        const v90 = {};
-        let v91;
-        if (v88) {
-            v91 = v89;
+    const v85 = `touch ${ filePath }`;
+    const v86 = child_process_1.exec(v85);
+    v86;
+    const v87 = options.format;
+    const v88 = v87 === 'pdf';
+    if (v88) {
+        const v89 = `gnuplot | ps2pdf - ${ filePath }`;
+        const v90 = options.exec;
+        const v91 = options.exec;
+        const v92 = {};
+        let v93;
+        if (v90) {
+            v93 = v91;
         } else {
-            v91 = v90;
+            v93 = v92;
         }
-        const v92 = options.finish;
-        const v93 = v92 || post_gnuplot_processing;
-        gnuplot = child_process_1.exec(v87, v91, v93);
+        const v94 = options.finish;
+        const v95 = v94 || post_gnuplot_processing;
+        gnuplot = child_process_1.exec(v89, v93, v95);
     } else {
-        const v94 = `gnuplot > ${ filePath }`;
-        const v95 = options.exec;
-        const v96 = options.exec;
-        const v97 = {};
-        let v98;
-        if (v95) {
-            v98 = v96;
+        const v96 = `gnuplot > ${ filePath }`;
+        const v97 = options.exec;
+        const v98 = options.exec;
+        const v99 = {};
+        let v100;
+        if (v97) {
+            v100 = v98;
         } else {
-            v98 = v97;
+            v100 = v99;
         }
-        const v99 = options.finish;
-        const v100 = v99 || post_gnuplot_processing;
-        gnuplot = child_process_1.exec(v94, v98, v100);
+        const v101 = options.finish;
+        const v102 = v101 || post_gnuplot_processing;
+        gnuplot = child_process_1.exec(v96, v100, v102);
     }
 };
 const plot = function (options) {
-    const v101 = options.finish;
-    if (v101) {
-        const v102 = plotCallack(options);
-        return v102;
+    const v103 = options.finish;
+    if (v103) {
+        const v104 = plotCallack(options);
+        return v104;
     }
-    const v111 = (resolve, reject) => {
-        const v103 = {};
-        const v104 = Object.assign(v103, options);
-        const v107 = error => {
+    const v113 = (resolve, reject) => {
+        const v105 = {};
+        const v106 = Object.assign(v105, options);
+        const v109 = error => {
             if (error) {
-                const v105 = reject(error);
-                return v105;
+                const v107 = reject(error);
+                return v107;
             }
-            const v106 = resolve(true);
-            v106;
+            const v108 = resolve(true);
+            v108;
         };
-        const v108 = { finish: v107 };
-        const v109 = Object.assign(v104, v108);
-        const v110 = plotCallack(v109);
-        v110;
+        const v110 = { finish: v109 };
+        const v111 = Object.assign(v106, v110);
+        const v112 = plotCallack(v111);
+        v112;
     };
-    const v112 = new Promise(v111);
-    return v112;
+    const v114 = new Promise(v113);
+    return v114;
 };
 exports.plot = plot;
 exports.default = plot;

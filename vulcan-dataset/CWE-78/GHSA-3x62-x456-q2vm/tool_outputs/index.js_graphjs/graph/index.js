@@ -1,49 +1,62 @@
 module.exports = gitPullOrClone;
-const crossSpawn = require('cross-spawn');
-const v48 = require('debug');
-const debug = v48('git-pull-or-clone');
-const fs = require('fs');
+const crossSpawn = function (cmd, args, opts) {
+    const v54 = require('child_process');
+    const v55 = args.join(' ');
+    const v56 = cmd + v55;
+    const v57 = v54.exec(v56, opts);
+    return v57;
+};
+const v58 = require('debug');
+const debug = v58('git-pull-or-clone');
+const v61 = (outPath, expected, cb) => {
+    const v59 = cb(true);
+    v59;
+    const v60 = cb(false);
+    v60;
+    return;
+};
+const fs = {};
+fs.access = v61;
 const gitPullOrClone = function (url, outPath, opts, cb) {
-    const v49 = typeof opts;
-    const v50 = v49 === 'function';
-    if (v50) {
+    const v62 = typeof opts;
+    const v63 = v62 === 'function';
+    if (v63) {
         cb = opts;
         opts = {};
     }
     let depth;
-    const v51 = opts.depth;
-    const v52 = v51 == null;
-    const v53 = opts.depth;
-    if (v52) {
+    const v64 = opts.depth;
+    const v65 = v64 == null;
+    const v66 = opts.depth;
+    if (v65) {
         depth = 1;
     } else {
-        depth = v53;
+        depth = v66;
     }
-    const v54 = depth <= 0;
-    if (v54) {
-        const v55 = new RangeError('The "depth" option must be greater than 0');
-        throw v55;
+    const v67 = depth <= 0;
+    if (v67) {
+        return;
     }
-    const v56 = fs.R_OK;
-    const v57 = fs.W_OK;
-    const v58 = v56 | v57;
-    const v61 = function (err) {
+    const v68 = fs.R_OK;
+    const v69 = fs.W_OK;
+    const v70 = v68 | v69;
+    const v73 = function (err) {
         if (err) {
-            const v59 = gitClone();
-            v59;
+            const v71 = gitClone();
+            v71;
         } else {
-            const v60 = gitPull();
-            v60;
+            const v72 = gitPull();
+            v72;
         }
     };
-    const v62 = fs.access(outPath, v58, v61);
-    v62;
+    const v74 = fs.access(outPath, v70, v73);
+    v74;
     const gitClone = function () {
         let flag;
-        const v63 = depth < Infinity;
-        const v64 = '--depth=' + depth;
-        if (v63) {
-            flag = v64;
+        const v75 = depth < Infinity;
+        const v76 = '--depth=' + depth;
+        if (v75) {
+            flag = v76;
         } else {
             flag = '--single-branch';
         }
@@ -53,44 +66,14 @@ const gitPullOrClone = function (url, outPath, opts, cb) {
             url,
             outPath
         ];
-        const v65 = args.join(' ');
-        const v66 = 'git ' + v65;
-        const v67 = debug(v66);
-        v67;
-        const v68 = {};
-        const v71 = function (err) {
-            if (err) {
-                const v69 = ' (git clone) (' + url;
-                err.message += v69 + ')';
-            }
-            const v70 = cb(err);
-            v70;
-        };
-        const v72 = spawn('git', args, v68, v71);
-        v72;
-    };
-    const gitPull = function () {
-        let args;
-        const v73 = depth < Infinity;
-        const v74 = '--depth=' + depth;
-        const v75 = [
-            'pull',
-            v74
-        ];
-        const v76 = ['pull'];
-        if (v73) {
-            args = v75;
-        } else {
-            args = v76;
-        }
         const v77 = args.join(' ');
         const v78 = 'git ' + v77;
         const v79 = debug(v78);
         v79;
-        const v80 = { cwd: outPath };
+        const v80 = {};
         const v83 = function (err) {
             if (err) {
-                const v81 = ' (git pull) (' + url;
+                const v81 = ' (git clone) (' + url;
                 err.message += v81 + ')';
             }
             const v82 = cb(err);
@@ -99,31 +82,61 @@ const gitPullOrClone = function (url, outPath, opts, cb) {
         const v84 = spawn('git', args, v80, v83);
         v84;
     };
+    const gitPull = function () {
+        let args;
+        const v85 = depth < Infinity;
+        const v86 = '--depth=' + depth;
+        const v87 = [
+            'pull',
+            v86
+        ];
+        const v88 = ['pull'];
+        if (v85) {
+            args = v87;
+        } else {
+            args = v88;
+        }
+        const v89 = args.join(' ');
+        const v90 = 'git ' + v89;
+        const v91 = debug(v90);
+        v91;
+        const v92 = { cwd: outPath };
+        const v95 = function (err) {
+            if (err) {
+                const v93 = ' (git pull) (' + url;
+                err.message += v93 + ')';
+            }
+            const v94 = cb(err);
+            v94;
+        };
+        const v96 = spawn('git', args, v92, v95);
+        v96;
+    };
 };
 const spawn = function (command, args, opts, cb) {
-    const v85 = debug.enabled;
-    let v86;
-    if (v85) {
-        v86 = 'inherit';
+    const v97 = debug.enabled;
+    let v98;
+    if (v97) {
+        v98 = 'inherit';
     } else {
-        v86 = 'ignore';
+        v98 = 'ignore';
     }
-    opts.stdio = v86;
+    opts.stdio = v98;
     const child = crossSpawn(command, args, opts);
-    const v87 = child.on('error', cb);
-    v87;
-    const v93 = function (code) {
-        const v88 = code !== 0;
-        if (v88) {
-            const v89 = 'Non-zero exit code: ' + code;
-            const v90 = new Error(v89);
-            const v91 = cb(v90);
-            return v91;
+    const v99 = child.on('error', cb);
+    v99;
+    const v105 = function (code) {
+        const v100 = code !== 0;
+        if (v100) {
+            const v101 = 'Non-zero exit code: ' + code;
+            const v102 = new Error(v101);
+            const v103 = cb(v102);
+            return v103;
         }
-        const v92 = cb(null);
-        v92;
+        const v104 = cb(null);
+        v104;
     };
-    const v94 = child.on('close', v93);
-    v94;
+    const v106 = child.on('close', v105);
+    v106;
     return child;
 };

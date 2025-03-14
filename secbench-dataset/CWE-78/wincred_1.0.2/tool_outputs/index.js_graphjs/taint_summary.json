@@ -4,7 +4,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/wincred_1.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(script)",
-        "sink_lineno": 16,
+        "sink_lineno": 15,
         "source": "module.exports.getCredential",
         "tainted_params": [
             "target",
@@ -18,9 +18,9 @@
             {
                 "type": "Method",
                 "prop": "getCredential",
-                "fn_name": "333.getCredential-o71",
-                "fn_id": "278",
-                "source_fn_id": "278"
+                "fn_name": "308.getCredential-o63",
+                "fn_id": "253",
+                "source_fn_id": "253"
             }
         ]
     }

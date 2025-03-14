@@ -20,9 +20,9 @@
             {
                 "type": "Method",
                 "prop": "nativeZip",
-                "fn_name": "1809.nativeZip-o258",
-                "fn_id": 1104,
-                "source_fn_id": 1104
+                "fn_name": "1795.nativeZip-o258",
+                "fn_id": 1097,
+                "source_fn_id": 1097
             }
         ]
     }

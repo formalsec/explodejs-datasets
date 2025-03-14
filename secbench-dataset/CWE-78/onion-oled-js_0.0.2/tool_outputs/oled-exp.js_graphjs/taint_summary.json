@@ -4,7 +4,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + ' power ' + mode);",
-        "sink_lineno": 34,
+        "sink_lineno": 33,
         "source": "module.exports.power",
         "tainted_params": [
             "mode"
@@ -16,9 +16,9 @@
             {
                 "type": "Method",
                 "prop": "power",
-                "fn_name": "689.v54-o118",
-                "fn_id": "459",
-                "source_fn_id": "459"
+                "fn_name": "664.v52-o110",
+                "fn_id": "434",
+                "source_fn_id": "434"
             }
         ]
     },
@@ -27,7 +27,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + ' cursor ' + row + ',' + col);",
-        "sink_lineno": 60,
+        "sink_lineno": 59,
         "source": "module.exports.cursor",
         "tainted_params": [
             "row",
@@ -41,9 +41,9 @@
             {
                 "type": "Method",
                 "prop": "cursor",
-                "fn_name": "689.v64-o126",
-                "fn_id": "499",
-                "source_fn_id": "499"
+                "fn_name": "664.v62-o118",
+                "fn_id": "474",
+                "source_fn_id": "474"
             }
         ]
     },
@@ -52,7 +52,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + ' invert ' + mode);",
-        "sink_lineno": 69,
+        "sink_lineno": 68,
         "source": "module.exports.invert",
         "tainted_params": [
             "mode"
@@ -64,9 +64,9 @@
             {
                 "type": "Method",
                 "prop": "invert",
-                "fn_name": "689.v68-o129",
-                "fn_id": "526",
-                "source_fn_id": "526"
+                "fn_name": "664.v66-o121",
+                "fn_id": "501",
+                "source_fn_id": "501"
             }
         ]
     },
@@ -75,7 +75,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + cursor + ' write \"' + string + '\"');",
-        "sink_lineno": 82,
+        "sink_lineno": 81,
         "source": "module.exports.write",
         "tainted_params": [
             "string",
@@ -91,9 +91,9 @@
             {
                 "type": "Method",
                 "prop": "write",
-                "fn_name": "689.v80-o134",
-                "fn_id": "544",
-                "source_fn_id": "544"
+                "fn_name": "664.v78-o126",
+                "fn_id": "519",
+                "source_fn_id": "519"
             }
         ]
     },
@@ -102,7 +102,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/onion-oled-js_0.0.2/src/oled-exp.js",
         "vuln_type": "command-injection",
         "sink": "return exec(oledExecutable + ' write ' + direction);",
-        "sink_lineno": 91,
+        "sink_lineno": 90,
         "source": "module.exports.scroll",
         "tainted_params": [
             "direction"
@@ -114,9 +114,9 @@
             {
                 "type": "Method",
                 "prop": "scroll",
-                "fn_name": "689.v84-o137",
-                "fn_id": "609",
-                "source_fn_id": "609"
+                "fn_name": "664.v82-o129",
+                "fn_id": "584",
+                "source_fn_id": "584"
             }
         ]
     }

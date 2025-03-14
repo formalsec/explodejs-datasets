@@ -4,7 +4,7 @@
         "filename": "/datasets/secbench-dataset/CWE-78/compass-compile_0.0.1/src/compass.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, function(error, stdout, stderr) {",
-        "sink_lineno": 25,
+        "sink_lineno": 24,
         "source": "new module.exports",
         "tainted_params": [],
         "params_types": {},
@@ -21,16 +21,16 @@
             {
                 "type": "New",
                 "prop": null,
-                "fn_name": "459.v25-o89",
-                "fn_id": "335",
-                "source_fn_id": "335"
+                "fn_name": "444.v25-o85",
+                "fn_id": "322",
+                "source_fn_id": "322"
             },
             {
                 "type": "Method",
                 "prop": "compile",
-                "fn_name": "459.v38-o88",
-                "fn_id": 356,
-                "source_fn_id": 356
+                "fn_name": "444.v38-o84",
+                "fn_id": 343,
+                "source_fn_id": 343
             }
         ]
     }

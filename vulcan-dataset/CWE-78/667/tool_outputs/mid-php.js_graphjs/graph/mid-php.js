@@ -1,57 +1,62 @@
-const v52 = function (docroot, phpBin) {
+const v56 = function (docroot, phpBin) {
     'use strict';
     phpBin = phpBin || 'php';
-    var fs = require('fs');
-    const v27 = require('path');
-    var join = v27.join;
-    const v28 = require('path');
-    var norm = v28.normalize;
-    const v51 = function (req, res, next) {
-        const v29 = req.url;
-        const v30 = /\.php$/i.test(v29);
-        if (v30) {
-            const v31 = req.url;
-            const v32 = join(docroot, v31);
-            var phpFile = norm(v32);
-            const v48 = function (exists) {
+    const v30 = (file, cb) => {
+        const v29 = cb(true);
+        return v29;
+    };
+    var fs = {};
+    fs.exists = v30;
+    const v31 = require('path');
+    var join = v31.join;
+    const v32 = require('path');
+    var norm = v32.normalize;
+    const v55 = function (req, res, next) {
+        const v33 = req.url;
+        const v34 = /\.php$/i.test(v33);
+        if (v34) {
+            const v35 = req.url;
+            const v36 = join(docroot, v35);
+            var phpFile = norm(v36);
+            const v52 = function (exists) {
                 if (exists) {
-                    const v33 = res.setHeader('Content-Type', 'text/html');
-                    v33;
-                    const v34 = require('child_process');
-                    const v35 = [phpFile];
-                    var cp = v34.spawn(phpBin, v35);
-                    const v36 = cp.stdout;
-                    const v38 = function (data) {
-                        const v37 = res.write(data);
-                        v37;
-                    };
-                    const v39 = v36.on('data', v38);
-                    v39;
-                    const v40 = cp.stderr;
+                    const v37 = res.setHeader('Content-Type', 'text/html');
+                    v37;
+                    const v38 = require('child_process');
+                    const v39 = [phpFile];
+                    var cp = v38.spawn(phpBin, v39);
+                    const v40 = cp.stdout;
                     const v42 = function (data) {
                         const v41 = res.write(data);
                         v41;
                     };
                     const v43 = v40.on('data', v42);
                     v43;
-                    const v45 = function () {
-                        const v44 = res.end('');
-                        v44;
+                    const v44 = cp.stderr;
+                    const v46 = function (data) {
+                        const v45 = res.write(data);
+                        v45;
                     };
-                    const v46 = cp.on('close', v45);
-                    v46;
-                } else {
-                    const v47 = next();
+                    const v47 = v44.on('data', v46);
                     v47;
+                    const v49 = function () {
+                        const v48 = res.end('');
+                        v48;
+                    };
+                    const v50 = cp.on('close', v49);
+                    v50;
+                } else {
+                    const v51 = next();
+                    v51;
                 }
             };
-            const v49 = fs.exists(phpFile, v48);
-            v49;
+            const v53 = fs.exists(phpFile, v52);
+            v53;
         } else {
-            const v50 = next();
-            v50;
+            const v54 = next();
+            v54;
         }
     };
-    return v51;
+    return v55;
 };
-module.exports = v52;
+module.exports = v56;

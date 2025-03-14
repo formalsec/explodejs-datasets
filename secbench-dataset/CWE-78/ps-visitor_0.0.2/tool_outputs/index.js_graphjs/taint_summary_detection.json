@@ -3,18 +3,18 @@
         "filename": "/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd).then((result) => {",
-        "sink_lineno": 56
+        "sink_lineno": 55
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd).then((result) => {",
-        "sink_lineno": 404
+        "sink_lineno": 403
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-78/ps-visitor_0.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd).then((result) => {",
-        "sink_lineno": 444
+        "sink_lineno": 443
     }
 ]

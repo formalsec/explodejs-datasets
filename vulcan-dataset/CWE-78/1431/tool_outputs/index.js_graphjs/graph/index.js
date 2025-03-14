@@ -1,6 +1,8 @@
 const v17 = require('child_process');
 var exec = v17.exec;
-var parse = require('./parse');
+var parse = (stdout, opts) => {
+    return undefined;
+};
 const df = function (aOptions, aCallback) {
     var options;
     var callback;

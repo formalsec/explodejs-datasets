@@ -1,191 +1,188 @@
 var shell = require('shelljs');
-var utils = require('./utils');
-const v104 = shell.config;
-v104.silent = true;
+const v102 = data => {
+    return data;
+};
+var utils = {};
+utils.parse = v102;
 const pdfinfo = function (filename, options) {
-    const v105 = {};
-    this.options = options || v105;
-    const v106 = this.options;
-    const v107 = '"' + filename;
-    const v108 = v107 + '"';
-    v106.additional = [v108];
-    const v109 = pdfinfo.prototype;
-    const v125 = function (optionArray) {
-        const v110 = optionArray.length;
-        const v111 = typeof v110;
-        const v112 = v111 !== undefined;
-        if (v112) {
+    const v103 = {};
+    this.options = options || v103;
+    const v104 = this.options;
+    const v105 = '"' + filename;
+    const v106 = v105 + '"';
+    v104.additional = [v106];
+    const v107 = pdfinfo.prototype;
+    const v123 = function (optionArray) {
+        const v108 = optionArray.length;
+        const v109 = typeof v108;
+        const v110 = v109 !== undefined;
+        if (v110) {
             var self = this;
-            const v123 = function (el) {
-                const v113 = el.indexOf(' ');
-                const v114 = v113 > 0;
-                if (v114) {
+            const v121 = function (el) {
+                const v111 = el.indexOf(' ');
+                const v112 = v111 > 0;
+                if (v112) {
                     var values = el.split(' ');
-                    const v115 = self.options;
-                    const v116 = v115.additional;
-                    const v117 = values[0];
-                    const v118 = values[1];
-                    const v119 = v116.push(v117, v118);
-                    v119;
+                    const v113 = self.options;
+                    const v114 = v113.additional;
+                    const v115 = values[0];
+                    const v116 = values[1];
+                    const v117 = v114.push(v115, v116);
+                    v117;
                 } else {
-                    const v120 = self.options;
-                    const v121 = v120.additional;
-                    const v122 = v121.push(el);
-                    v122;
+                    const v118 = self.options;
+                    const v119 = v118.additional;
+                    const v120 = v119.push(el);
+                    v120;
                 }
             };
-            const v124 = optionArray.forEach(v123);
-            v124;
+            const v122 = optionArray.forEach(v121);
+            v122;
         }
         return this;
     };
-    v109.add_options = v125;
-    const v126 = pdfinfo.prototype;
-    const v141 = function () {
+    v107.add_options = v123;
+    const v124 = pdfinfo.prototype;
+    const v139 = function () {
         var self = this;
-        const v127 = self.options;
-        const v128 = v127.additional;
-        const v129 = v128.join(' ');
-        const v130 = 'pdfinfo ' + v129;
-        var child = shell.exec(v130);
-        const v131 = child.code;
-        const v132 = v131 === 0;
-        if (v132) {
-            const v133 = child.stdout;
-            const v134 = utils.parse(v133);
-            return v134;
+        const v125 = self.options;
+        const v126 = v125.additional;
+        const v127 = v126.join(' ');
+        const v128 = 'pdfinfo ' + v127;
+        var child = shell.exec(v128);
+        const v129 = child.code;
+        const v130 = v129 === 0;
+        if (v130) {
+            const v131 = child.stdout;
+            const v132 = utils.parse(v131);
+            return v132;
         } else {
-            const v135 = shell.which('pdfinfo');
-            const v136 = !v135;
-            if (v136) {
-                const v137 = new Error('Sorry, this script requires pdfinfo.');
-                throw v137;
+            const v133 = shell.which('pdfinfo');
+            const v134 = !v133;
+            if (v134) {
+                const v135 = new Error('Sorry, this script requires pdfinfo.');
+                throw v135;
             }
-            const v138 = child.stdout;
-            const v139 = 'pdfinfo error: ' + v138;
-            const v140 = new Error(v139);
-            throw v140;
+            const v136 = child.stdout;
+            const v137 = 'pdfinfo error: ' + v136;
+            const v138 = new Error(v137);
+            throw v138;
         }
     };
-    v126.getInfoSync = v141;
-    const v142 = pdfinfo.prototype;
-    const v145 = function () {
-        const v143 = console.warn('\x1B[31m`getSync` is now obsolete please use `getInfoSync` instead. Eventually `getSync` will be soon removed.\x1B[0m');
-        v143;
-        const v144 = this.getInfoSync();
-        return v144;
+    v124.getInfoSync = v139;
+    const v140 = pdfinfo.prototype;
+    const v143 = function () {
+        const v141 = console.warn('\x1B[31m`getSync` is now obsolete please use `getInfoSync` instead. Eventually `getSync` will be soon removed.\x1B[0m');
+        v141;
+        const v142 = this.getInfoSync();
+        return v142;
     };
-    v142.getSync = v145;
-    const v146 = pdfinfo.prototype;
-    const v167 = function (cb) {
+    v140.getSync = v143;
+    const v144 = pdfinfo.prototype;
+    const v165 = function (cb) {
         var self = this;
-        const v147 = self.options;
-        const v148 = v147.additional;
-        const v149 = v148.join(' ');
-        const v150 = 'pdfinfo ' + v149;
-        const v166 = function (code, data) {
-            const v151 = code === 0;
-            if (v151) {
+        const v145 = self.options;
+        const v146 = v145.additional;
+        const v147 = v146.join(' ');
+        const v148 = 'pdfinfo ' + v147;
+        const v164 = function (code, data) {
+            const v149 = code === 0;
+            if (v149) {
                 data = utils.parse(data);
-                const v152 = typeof cb;
-                const v153 = v152 === 'function';
-                const v154 = cb && v153;
-                if (v154) {
-                    const v155 = self.options;
-                    const v156 = v155.additional;
-                    const v157 = cb(null, data, v156);
-                    v157;
+                const v150 = typeof cb;
+                const v151 = v150 === 'function';
+                const v152 = cb && v151;
+                if (v152) {
+                    const v153 = self.options;
+                    const v154 = v153.additional;
+                    const v155 = cb(null, data, v154);
+                    v155;
                 }
             } else {
                 var err;
-                const v158 = shell.which('pdfinfo');
-                const v159 = !v158;
-                if (v159) {
+                const v156 = shell.which('pdfinfo');
+                const v157 = !v156;
+                if (v157) {
                     err = new Error('pdfinfo (poppler-utils) is missing. Hint: sudo apt-get install poppler-utils');
                 } else {
                     err = new Error(data);
                 }
-                const v160 = typeof cb;
-                const v161 = v160 === 'function';
-                const v162 = cb && v161;
-                if (v162) {
-                    const v163 = self.options;
-                    const v164 = v163.addtional;
-                    const v165 = cb(err, null, v164);
-                    v165;
+                const v158 = typeof cb;
+                const v159 = v158 === 'function';
+                const v160 = cb && v159;
+                if (v160) {
+                    const v161 = self.options;
+                    const v162 = v161.addtional;
+                    const v163 = cb(err, null, v162);
+                    v163;
                 }
             }
         };
-        var child = shell.exec(v150, v166);
+        var child = shell.exec(v148, v164);
     };
-    v146.getInfo = v167;
-    const v168 = pdfinfo.prototype;
-    const v198 = function () {
-        const v169 = console.warn('\x1B[31m`get` is now obsolete please use `getInfo` instead. Eventually `get` will be soon removed.\x1B[0m');
-        v169;
+    v144.getInfo = v165;
+    const v166 = pdfinfo.prototype;
+    const v196 = function () {
+        const v167 = console.warn('\x1B[31m`get` is now obsolete please use `getInfo` instead. Eventually `get` will be soon removed.\x1B[0m');
+        v167;
         var self = this;
-        const v170 = self.options;
-        const v171 = v170.additional;
-        const v172 = v171.join(' ');
-        const v173 = 'pdfinfo ' + v172;
-        const v197 = function (code, data) {
-            const v174 = code === 0;
-            if (v174) {
+        const v168 = self.options;
+        const v169 = v168.additional;
+        const v170 = v169.join(' ');
+        const v171 = 'pdfinfo ' + v170;
+        const v195 = function (code, data) {
+            const v172 = code === 0;
+            if (v172) {
+                const v173 = self.options;
+                const v174 = v173.success;
                 const v175 = self.options;
                 const v176 = v175.success;
-                const v177 = self.options;
-                const v178 = v177.success;
-                const v179 = typeof v178;
-                const v180 = v179 === 'function';
-                const v181 = v176 && v180;
-                if (v181) {
-                    const v182 = self.options;
-                    const v183 = utils.parse(data);
-                    const v184 = v182.success(v183);
-                    v184;
+                const v177 = typeof v176;
+                const v178 = v177 === 'function';
+                const v179 = v174 && v178;
+                if (v179) {
+                    const v180 = self.options;
+                    const v181 = utils.parse(data);
+                    const v182 = v180.success(v181);
+                    v182;
                 }
             } else {
-                const v185 = shell.which('pdfinfo');
-                const v186 = !v185;
-                if (v186) {
-                    const v187 = echo('Sorry, this script requires pdfinfo.');
-                    v187;
+                const v183 = shell.which('pdfinfo');
+                const v184 = !v183;
+                if (v184) {
+                    const v185 = echo('Sorry, this script requires pdfinfo.');
+                    v185;
                 }
+                const v186 = self.options;
+                const v187 = v186.error;
                 const v188 = self.options;
                 const v189 = v188.error;
-                const v190 = self.options;
-                const v191 = v190.error;
-                const v192 = typeof v191;
-                const v193 = v192 === 'function';
-                const v194 = v189 && v193;
-                if (v194) {
-                    const v195 = self.options;
-                    const v196 = v195.error(data);
-                    v196;
+                const v190 = typeof v189;
+                const v191 = v190 === 'function';
+                const v192 = v187 && v191;
+                if (v192) {
+                    const v193 = self.options;
+                    const v194 = v193.error(data);
+                    v194;
                 }
             }
         };
-        var child = shell.exec(v173, v197);
+        var child = shell.exec(v171, v195);
     };
-    v168.get = v198;
-    const v199 = pdfinfo.prototype;
-    const v201 = function (callback) {
-        const v200 = this.options;
-        v200.error = callback;
+    v166.get = v196;
+    const v197 = pdfinfo.prototype;
+    const v199 = function (callback) {
+        const v198 = this.options;
+        v198.error = callback;
         return this;
     };
-    v199.error = v201;
-    const v202 = pdfinfo.prototype;
-    const v204 = function (callback) {
-        const v203 = this.options;
-        v203.success = callback;
+    v197.error = v199;
+    const v200 = pdfinfo.prototype;
+    const v202 = function (callback) {
+        const v201 = this.options;
+        v201.success = callback;
         return this;
     };
-    v202.success = v204;
+    v200.success = v202;
 };
-const v206 = function (filename, args) {
-    const v205 = new pdfinfo(filename, args);
-    return v205;
-};
-module.exports = v206;
-exports = module.exports;
+module.exports = pdfinfo;

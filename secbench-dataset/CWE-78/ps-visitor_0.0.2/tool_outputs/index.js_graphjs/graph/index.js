@@ -1,9 +1,7 @@
 'use strict';
 const os = require('os');
-const util = require('util');
-const v230 = require('child_process');
-const v231 = v230.exec;
-const exec = util.promisify(v231);
+const v229 = require('child_process');
+const exec = v229.exec;
 const PS_HEADER_OSX = 'USERPID%CPU%MEMVSZRSSTTSTATSTARTEDTIMECOMMAND';
 const PS_HEADER_LINUX = 'USERPID%CPU%MEMVSZRSSTTYSTATSTARTTIMECOMMAND';
 const USER = 'user';
@@ -119,348 +117,348 @@ const psRaw = (extra, keywords, filterWaste = true) => {
     if (extra) {
         cmd += ` | ${ extra }`;
     }
-    const v232 = exec(cmd);
-    const v275 = result => {
-        const v233 = result.stderr;
-        if (v233) {
-            const v234 = result.stderr;
-            const v235 = new Error(v234);
-            throw v235;
+    const v230 = exec(cmd);
+    const v273 = result => {
+        const v231 = result.stderr;
+        if (v231) {
+            const v232 = result.stderr;
+            const v233 = new Error(v232);
+            throw v233;
         }
-        const v236 = result.stdout;
-        if (v236) {
-            const v237 = result.stdout;
-            const tmp1 = v237.split(/(\r\n)|(\n\r)|\n|\r/);
-            const v238 = tmp1.length;
-            const v239 = v238 === 0;
-            if (v239) {
-                const v240 = [];
-                return v240;
+        const v234 = result.stdout;
+        if (v234) {
+            const v235 = result.stdout;
+            const tmp1 = v235.split(/(\r\n)|(\n\r)|\n|\r/);
+            const v236 = tmp1.length;
+            const v237 = v236 === 0;
+            if (v237) {
+                const v238 = [];
+                return v238;
             }
             const tmp2 = [];
-            const v243 = element => {
+            const v241 = element => {
                 if (element) {
                     const t = element.trim();
-                    const v241 = t !== '';
-                    if (v241) {
-                        const v242 = tmp2.push(t);
-                        v242;
+                    const v239 = t !== '';
+                    if (v239) {
+                        const v240 = tmp2.push(t);
+                        v240;
                     }
                 }
             };
-            const v244 = tmp1.forEach(v243);
-            v244;
-            const v245 = tmp2.length;
-            const v246 = v245 === 0;
-            if (v246) {
-                const v247 = [];
-                return v247;
+            const v242 = tmp1.forEach(v241);
+            v242;
+            const v243 = tmp2.length;
+            const v244 = v243 === 0;
+            if (v244) {
+                const v245 = [];
+                return v245;
             }
-            const v248 = tmp2[0];
-            const v249 = checkHeader(v248);
-            if (v249) {
-                const v250 = tmp2.shift();
-                v250;
+            const v246 = tmp2[0];
+            const v247 = checkHeader(v246);
+            if (v247) {
+                const v248 = tmp2.shift();
+                v248;
             }
-            const v251 = tmp2.length;
-            const v252 = v251 === 0;
-            if (v252) {
-                const v253 = [];
-                return v253;
+            const v249 = tmp2.length;
+            const v250 = v249 === 0;
+            if (v250) {
+                const v251 = [];
+                return v251;
             }
-            const v272 = value => {
+            const v270 = value => {
                 if (filterWaste) {
-                    const v254 = value.includes('ps aux');
-                    if (v254) {
+                    const v252 = value.includes('ps aux');
+                    if (v252) {
                         return false;
                     }
-                    const v255 = value.includes('grep');
-                    if (v255) {
+                    const v253 = value.includes('grep');
+                    if (v253) {
                         const t = parseLine(value);
-                        const v256 = t[COMMAND];
-                        const v257 = v256.trim();
-                        const v258 = v257.split(/\s+/);
-                        const v264 = value => {
-                            const v259 = value !== undefined;
-                            const v260 = value !== null;
+                        const v254 = t[COMMAND];
+                        const v255 = v254.trim();
+                        const v256 = v255.split(/\s+/);
+                        const v262 = value => {
+                            const v257 = value !== undefined;
+                            const v258 = value !== null;
+                            const v259 = v257 && v258;
+                            const v260 = value !== '';
                             const v261 = v259 && v260;
-                            const v262 = value !== '';
-                            const v263 = v261 && v262;
-                            return v263;
+                            return v261;
                         };
-                        const tCmd = v258.filter(v264);
-                        const v265 = tCmd[0];
-                        const v266 = v265 === 'grep';
-                        if (v266) {
+                        const tCmd = v256.filter(v262);
+                        const v263 = tCmd[0];
+                        const v264 = v263 === 'grep';
+                        if (v264) {
                             return false;
                         }
                     }
                 }
                 if (keywords) {
-                    const v267 = Array.isArray(keywords);
-                    if (v267) {
+                    const v265 = Array.isArray(keywords);
+                    if (v265) {
                         let element;
                         for (element of keywords) {
-                            const v268 = value.includes(element);
-                            const v269 = !v268;
-                            if (v269) {
+                            const v266 = value.includes(element);
+                            const v267 = !v266;
+                            if (v267) {
                                 return false;
                             }
                         }
                     } else {
-                        const v270 = value.includes(keywords);
-                        const v271 = !v270;
-                        if (v271) {
+                        const v268 = value.includes(keywords);
+                        const v269 = !v268;
+                        if (v269) {
                             return false;
                         }
                     }
                 }
                 return true;
             };
-            const v273 = tmp2.filter(v272);
-            return v273;
+            const v271 = tmp2.filter(v270);
+            return v271;
         }
-        const v274 = [];
-        return v274;
+        const v272 = [];
+        return v272;
     };
-    const v276 = v232.then(v275);
-    return v276;
+    const v274 = v230.then(v273);
+    return v274;
 };
 const checkHeader = line => {
     const tmp = line.replace(/\s/ig, '');
-    const v277 = os.platform();
-    const v278 = v277 === 'linux';
-    if (v278) {
-        const v279 = tmp === PS_HEADER_LINUX;
-        return v279;
+    const v275 = os.platform();
+    const v276 = v275 === 'linux';
+    if (v276) {
+        const v277 = tmp === PS_HEADER_LINUX;
+        return v277;
     } else {
-        const v280 = os.platform();
-        const v281 = v280 === 'darwin';
-        if (v281) {
-            const v282 = tmp === PS_HEADER_OSX;
-            return v282;
+        const v278 = os.platform();
+        const v279 = v278 === 'darwin';
+        if (v279) {
+            const v280 = tmp === PS_HEADER_OSX;
+            return v280;
         }
     }
     return false;
 };
 const parseLine = line => {
-    const v283 = line.split(/\s+/);
-    const v289 = value => {
-        const v284 = value !== undefined;
-        const v285 = value !== null;
+    const v281 = line.split(/\s+/);
+    const v287 = value => {
+        const v282 = value !== undefined;
+        const v283 = value !== null;
+        const v284 = v282 && v283;
+        const v285 = value !== '';
         const v286 = v284 && v285;
-        const v287 = value !== '';
-        const v288 = v286 && v287;
-        return v288;
+        return v286;
     };
-    const fields = v283.filter(v289);
+    const fields = v281.filter(v287);
     const info = {};
-    const v290 = fields[0];
-    info[USER] = v290;
-    const v291 = fields[1];
-    info[PID] = v291;
-    const v292 = fields[2];
-    info[CPU] = v292;
-    const v293 = fields[3];
-    info[MEM] = v293;
-    const v294 = fields[4];
-    info[VSZ] = v294;
-    const v295 = fields[5];
-    info[RSS] = v295;
-    const v296 = fields[6];
-    info[TT] = v296;
-    const v297 = fields[7];
-    info[STAT] = v297;
-    const v298 = fields[8];
-    info[STARTED] = v298;
-    const v299 = fields[9];
-    info[TIME] = v299;
-    const v300 = fields[10];
-    let cmd = v300.trim();
+    const v288 = fields[0];
+    info[USER] = v288;
+    const v289 = fields[1];
+    info[PID] = v289;
+    const v290 = fields[2];
+    info[CPU] = v290;
+    const v291 = fields[3];
+    info[MEM] = v291;
+    const v292 = fields[4];
+    info[VSZ] = v292;
+    const v293 = fields[5];
+    info[RSS] = v293;
+    const v294 = fields[6];
+    info[TT] = v294;
+    const v295 = fields[7];
+    info[STAT] = v295;
+    const v296 = fields[8];
+    info[STARTED] = v296;
+    const v297 = fields[9];
+    info[TIME] = v297;
+    const v298 = fields[10];
+    let cmd = v298.trim();
     let i = 11;
-    const v301 = fields.length;
-    let v302 = i < v301;
-    while (v302) {
-        const v304 = fields[i];
-        const v305 = v304.trim();
-        cmd += ` ${ v305 }`;
-        const v303 = i++;
-        v302 = i < v301;
+    const v299 = fields.length;
+    let v300 = i < v299;
+    while (v300) {
+        const v302 = fields[i];
+        const v303 = v302.trim();
+        cmd += ` ${ v303 }`;
+        const v301 = i++;
+        v300 = i < v299;
     }
     info[COMMAND] = cmd;
     return info;
 };
 const ps = (condition, extra, keywords, filterWaste = true) => {
-    const v306 = psRaw(extra, keywords, filterWaste);
-    const v323 = result => {
-        const v307 = result.length;
-        const v308 = v307 === 0;
-        if (v308) {
-            const v309 = [];
-            return v309;
+    const v304 = psRaw(extra, keywords, filterWaste);
+    const v321 = result => {
+        const v305 = result.length;
+        const v306 = v305 === 0;
+        if (v306) {
+            const v307 = [];
+            return v307;
         }
         const tmp1 = [];
-        const v312 = element => {
-            const v310 = parseLine(element);
-            const v311 = tmp1.push(v310);
-            v311;
+        const v310 = element => {
+            const v308 = parseLine(element);
+            const v309 = tmp1.push(v308);
+            v309;
         };
-        const v313 = result.forEach(v312);
-        v313;
-        const v321 = value => {
-            const v314 = typeof condition;
-            const v315 = v314 === 'object';
-            const v316 = Object.keys(condition);
-            const v317 = v316.length;
-            const v318 = v317 > 0;
-            const v319 = v315 && v318;
-            if (v319) {
-                const v320 = checkCondition(value, condition);
-                return v320;
+        const v311 = result.forEach(v310);
+        v311;
+        const v319 = value => {
+            const v312 = typeof condition;
+            const v313 = v312 === 'object';
+            const v314 = Object.keys(condition);
+            const v315 = v314.length;
+            const v316 = v315 > 0;
+            const v317 = v313 && v316;
+            if (v317) {
+                const v318 = checkCondition(value, condition);
+                return v318;
             }
             return true;
         };
-        const v322 = tmp1.filter(v321);
-        return v322;
+        const v320 = tmp1.filter(v319);
+        return v320;
     };
-    const v324 = v306.then(v323);
-    return v324;
+    const v322 = v304.then(v321);
+    return v322;
 };
 const checkCondition = (line, condition) => {
-    const v325 = !condition;
-    if (v325) {
+    const v323 = !condition;
+    if (v323) {
         return true;
     }
     const keys = Object.keys(condition);
-    const v326 = keys.length;
-    const v327 = v326 === 0;
-    if (v327) {
+    const v324 = keys.length;
+    const v325 = v324 === 0;
+    if (v325) {
         return true;
     }
-    const v328 = keys.includes(USER);
-    if (v328) {
-        const v329 = line[USER];
-        const v330 = condition[USER];
-        const v331 = stringCompare(v329, v330);
-        const v332 = !v331;
-        if (v332) {
+    const v326 = keys.includes(USER);
+    if (v326) {
+        const v327 = line[USER];
+        const v328 = condition[USER];
+        const v329 = stringCompare(v327, v328);
+        const v330 = !v329;
+        if (v330) {
             return false;
         }
     }
-    const v333 = keys.includes(PID);
-    if (v333) {
-        const v334 = condition[PID];
-        const v335 = v334.toString();
-        const v336 = v335.trim();
-        const v337 = line[PID];
-        const v338 = v336 !== v337;
-        if (v338) {
+    const v331 = keys.includes(PID);
+    if (v331) {
+        const v332 = condition[PID];
+        const v333 = v332.toString();
+        const v334 = v333.trim();
+        const v335 = line[PID];
+        const v336 = v334 !== v335;
+        if (v336) {
             return false;
         }
     }
-    const v339 = keys.includes(CPU);
-    if (v339) {
-        const v340 = line[CPU];
-        const v341 = condition[CPU];
-        const v342 = numberCompare(v340, v341);
-        const v343 = !v342;
-        if (v343) {
+    const v337 = keys.includes(CPU);
+    if (v337) {
+        const v338 = line[CPU];
+        const v339 = condition[CPU];
+        const v340 = numberCompare(v338, v339);
+        const v341 = !v340;
+        if (v341) {
             return false;
         }
     }
-    const v344 = keys.includes(MEM);
-    if (v344) {
-        const v345 = line[MEM];
-        const v346 = condition[MEM];
-        const v347 = numberCompare(v345, v346);
-        const v348 = !v347;
-        if (v348) {
+    const v342 = keys.includes(MEM);
+    if (v342) {
+        const v343 = line[MEM];
+        const v344 = condition[MEM];
+        const v345 = numberCompare(v343, v344);
+        const v346 = !v345;
+        if (v346) {
             return false;
         }
     }
-    const v349 = keys.includes(VSZ);
-    if (v349) {
-        const v350 = line[VSZ];
-        const v351 = condition[VSZ];
-        const v352 = numberCompare(v350, v351);
-        const v353 = !v352;
-        if (v353) {
+    const v347 = keys.includes(VSZ);
+    if (v347) {
+        const v348 = line[VSZ];
+        const v349 = condition[VSZ];
+        const v350 = numberCompare(v348, v349);
+        const v351 = !v350;
+        if (v351) {
             return false;
         }
     }
-    const v354 = keys.includes(RSS);
-    if (v354) {
-        const v355 = line[RSS];
-        const v356 = condition[RSS];
-        const v357 = numberCompare(v355, v356);
-        const v358 = !v357;
-        if (v358) {
+    const v352 = keys.includes(RSS);
+    if (v352) {
+        const v353 = line[RSS];
+        const v354 = condition[RSS];
+        const v355 = numberCompare(v353, v354);
+        const v356 = !v355;
+        if (v356) {
             return false;
         }
     }
-    const v359 = keys.includes(TT);
-    if (v359) {
-        const v360 = condition[TT];
-        const v361 = v360.toString();
-        const v362 = v361.trim();
-        const v363 = line[TT];
-        const v364 = v362 !== v363;
-        if (v364) {
+    const v357 = keys.includes(TT);
+    if (v357) {
+        const v358 = condition[TT];
+        const v359 = v358.toString();
+        const v360 = v359.trim();
+        const v361 = line[TT];
+        const v362 = v360 !== v361;
+        if (v362) {
             return false;
         }
     }
-    const v365 = keys.includes(STAT);
-    if (v365) {
-        const v366 = condition[STAT];
-        const v367 = v366.toString();
-        const v368 = v367.trim();
-        const v369 = line[STAT];
-        const v370 = v368 !== v369;
-        if (v370) {
+    const v363 = keys.includes(STAT);
+    if (v363) {
+        const v364 = condition[STAT];
+        const v365 = v364.toString();
+        const v366 = v365.trim();
+        const v367 = line[STAT];
+        const v368 = v366 !== v367;
+        if (v368) {
             return false;
         }
     }
-    const v371 = keys.includes(STARTED);
+    const v369 = keys.includes(STARTED);
+    if (v369) {
+    }
+    const v370 = keys.includes(TIME);
+    if (v370) {
+    }
+    const v371 = keys.includes(COMMAND);
     if (v371) {
-    }
-    const v372 = keys.includes(TIME);
-    if (v372) {
-    }
-    const v373 = keys.includes(COMMAND);
-    if (v373) {
-        const v374 = condition[COMMAND];
-        const v375 = v374.trim();
-        const cmd = v375.split(/\s+/);
-        const v376 = cmd.length;
-        const v377 = v376 === 1;
-        if (v377) {
-            const v378 = line[COMMAND];
-            const v379 = cmd[0];
-            const v380 = stringCompare(v378, v379);
-            const v381 = !v380;
-            if (v381) {
+        const v372 = condition[COMMAND];
+        const v373 = v372.trim();
+        const cmd = v373.split(/\s+/);
+        const v374 = cmd.length;
+        const v375 = v374 === 1;
+        if (v375) {
+            const v376 = line[COMMAND];
+            const v377 = cmd[0];
+            const v378 = stringCompare(v376, v377);
+            const v379 = !v378;
+            if (v379) {
                 return false;
             }
         } else {
-            const v382 = cmd.length;
-            const v383 = v382 > 1;
-            if (v383) {
+            const v380 = cmd.length;
+            const v381 = v380 > 1;
+            if (v381) {
                 let element;
                 for (element of cmd) {
                     let t = element.trim();
-                    const v384 = !t;
-                    if (v384) {
+                    const v382 = !t;
+                    if (v382) {
                         continue;
                     }
-                    const v385 = t.startsWith('~');
-                    const v386 = !v385;
-                    if (v386) {
+                    const v383 = t.startsWith('~');
+                    const v384 = !v383;
+                    if (v384) {
                         t = '~' + t;
                     }
-                    const v387 = line[COMMAND];
-                    const v388 = stringCompare(v387, t);
-                    const v389 = !v388;
-                    if (v389) {
+                    const v385 = line[COMMAND];
+                    const v386 = stringCompare(v385, t);
+                    const v387 = !v386;
+                    if (v387) {
                         return false;
                     }
                 }
@@ -470,104 +468,104 @@ const checkCondition = (line, condition) => {
     return true;
 };
 const numberCompare = (origin, compare) => {
-    const v390 = !origin;
-    if (v390) {
+    const v388 = !origin;
+    if (v388) {
         return false;
     }
-    const v391 = !compare;
-    if (v391) {
+    const v389 = !compare;
+    if (v389) {
         return true;
     }
     let originTmp = NaN;
-    const v392 = typeof origin;
-    const v393 = v392 === 'number';
-    if (v393) {
+    const v390 = typeof origin;
+    const v391 = v390 === 'number';
+    if (v391) {
         originTmp = origin;
     } else {
-        const v394 = origin.trim();
-        const v395 = +v394;
-        originTmp = v395;
+        const v392 = origin.trim();
+        const v393 = +v392;
+        originTmp = v393;
     }
-    const v396 = Number.isNaN(originTmp);
-    if (v396) {
+    const v394 = Number.isNaN(originTmp);
+    if (v394) {
         return false;
     }
-    const v397 = compare.trim();
-    const compareTmp = v397.split(/\s+/);
-    const v398 = compareTmp.length;
-    const v399 = v398 === 0;
-    if (v399) {
+    const v395 = compare.trim();
+    const compareTmp = v395.split(/\s+/);
+    const v396 = compareTmp.length;
+    const v397 = v396 === 0;
+    if (v397) {
         return true;
     }
     let element;
     for (element of compareTmp) {
         const tElement = element.trim();
-        const v400 = !tElement;
-        if (v400) {
+        const v398 = !tElement;
+        if (v398) {
             continue;
         }
-        const v401 = tElement.startsWith('>=');
-        if (v401) {
-            const v402 = tElement.slice(2);
-            const v403 = +v402;
-            const tCompare = v403;
+        const v399 = tElement.startsWith('>=');
+        if (v399) {
+            const v400 = tElement.slice(2);
+            const v401 = +v400;
+            const tCompare = v401;
             if (tCompare) {
-                const v404 = originTmp < tCompare;
-                if (v404) {
+                const v402 = originTmp < tCompare;
+                if (v402) {
                     return false;
                 }
             }
         } else {
-            const v405 = tElement.startsWith('<=');
-            if (v405) {
-                const v406 = tElement.slice(2);
-                const v407 = +v406;
-                const tCompare = v407;
+            const v403 = tElement.startsWith('<=');
+            if (v403) {
+                const v404 = tElement.slice(2);
+                const v405 = +v404;
+                const tCompare = v405;
                 if (tCompare) {
-                    const v408 = originTmp > tCompare;
-                    if (v408) {
+                    const v406 = originTmp > tCompare;
+                    if (v406) {
                         return false;
                     }
                 }
             } else {
-                const v409 = tElement.startsWith('>');
-                if (v409) {
-                    const v410 = tElement.slice(1);
-                    const v411 = +v410;
-                    const tCompare = v411;
+                const v407 = tElement.startsWith('>');
+                if (v407) {
+                    const v408 = tElement.slice(1);
+                    const v409 = +v408;
+                    const tCompare = v409;
                     if (tCompare) {
-                        const v412 = originTmp <= tCompare;
-                        if (v412) {
+                        const v410 = originTmp <= tCompare;
+                        if (v410) {
                             return false;
                         }
                     }
                 } else {
-                    const v413 = tElement.startsWith('<');
-                    if (v413) {
-                        const v414 = tElement.slice(1);
-                        const v415 = +v414;
-                        const tCompare = v415;
+                    const v411 = tElement.startsWith('<');
+                    if (v411) {
+                        const v412 = tElement.slice(1);
+                        const v413 = +v412;
+                        const tCompare = v413;
                         if (tCompare) {
-                            const v416 = originTmp >= tCompare;
-                            if (v416) {
+                            const v414 = originTmp >= tCompare;
+                            if (v414) {
                                 return false;
                             }
                         }
                     } else {
-                        const v417 = -1;
-                        let tCompare = v417;
-                        const v418 = tElement.startsWith('=');
-                        if (v418) {
-                            const v419 = tElement.slice(1);
-                            const v420 = +v419;
-                            tCompare = v420;
+                        const v415 = -1;
+                        let tCompare = v415;
+                        const v416 = tElement.startsWith('=');
+                        if (v416) {
+                            const v417 = tElement.slice(1);
+                            const v418 = +v417;
+                            tCompare = v418;
                         } else {
-                            const v421 = +tElement;
-                            tCompare = v421;
+                            const v419 = +tElement;
+                            tCompare = v419;
                         }
                         if (tCompare) {
-                            const v422 = originTmp !== tCompare;
-                            if (v422) {
+                            const v420 = originTmp !== tCompare;
+                            if (v420) {
                                 return false;
                             }
                         }
@@ -579,126 +577,126 @@ const numberCompare = (origin, compare) => {
     return true;
 };
 const stringCompare = (origin, compare) => {
-    const v423 = !origin;
-    if (v423) {
+    const v421 = !origin;
+    if (v421) {
         return false;
     }
-    const v424 = !compare;
-    if (v424) {
+    const v422 = !compare;
+    if (v422) {
         return true;
     }
     const originTmp = origin.trim();
-    const v425 = !originTmp;
-    if (v425) {
+    const v423 = !originTmp;
+    if (v423) {
         return false;
     }
     const compareTmp = compare.trim();
-    const v426 = !compareTmp;
-    if (v426) {
+    const v424 = !compareTmp;
+    if (v424) {
         return true;
     }
-    const v427 = compareTmp.startsWith('~');
-    if (v427) {
+    const v425 = compareTmp.startsWith('~');
+    if (v425) {
         const tCompare = compareTmp.slice(1);
-        const v428 = originTmp.includes(tCompare);
-        const v429 = !v428;
-        if (v429) {
+        const v426 = originTmp.includes(tCompare);
+        const v427 = !v426;
+        if (v427) {
             return false;
         }
     } else {
-        const v430 = originTmp !== compareTmp;
-        if (v430) {
+        const v428 = originTmp !== compareTmp;
+        if (v428) {
             return false;
         }
     }
     return true;
 };
 const kill = (pid, signal) => {
-    const v431 = -1;
-    let signalIndex = v431;
+    const v429 = -1;
+    let signalIndex = v429;
     if (signal) {
-        const v432 = Number.isInteger(signal);
-        if (v432) {
+        const v430 = Number.isInteger(signal);
+        if (v430) {
             signalIndex = signal;
         } else {
             signalIndex = getSignal(signal);
         }
     }
     let cmd = '';
-    const v433 = signalIndex < 0;
-    if (v433) {
+    const v431 = signalIndex < 0;
+    if (v431) {
         cmd = `kill ${ pid }`;
     } else {
         cmd = `kill -${ signalIndex } ${ pid }`;
     }
-    const v434 = exec(cmd);
-    const v439 = result => {
-        const v435 = result.stderr;
-        if (v435) {
-            const v436 = result.stderr;
-            const v437 = new Error(v436);
-            throw v437;
+    const v432 = exec(cmd);
+    const v437 = result => {
+        const v433 = result.stderr;
+        if (v433) {
+            const v434 = result.stderr;
+            const v435 = new Error(v434);
+            throw v435;
         }
-        const v438 = Promise.resolve();
-        return v438;
+        const v436 = Promise.resolve();
+        return v436;
     };
-    const v440 = v434.then(v439);
-    return v440;
+    const v438 = v432.then(v437);
+    return v438;
 };
 const getSignal = signal => {
     let tmp = signal.trim();
-    const v441 = tmp.startsWith('SIG');
-    const v442 = !v441;
-    if (v442) {
+    const v439 = tmp.startsWith('SIG');
+    const v440 = !v439;
+    if (v440) {
         tmp = 'SIG' + tmp;
     }
-    const v443 = -1;
-    let index = v443;
-    const v444 = os.platform();
-    const v445 = v444 === 'linux';
-    if (v445) {
+    const v441 = -1;
+    let index = v441;
+    const v442 = os.platform();
+    const v443 = v442 === 'linux';
+    if (v443) {
         index = KILL_SIGNAL_LINUX.indexOf(tmp);
     } else {
-        const v446 = os.platform();
-        const v447 = v446 === 'darwin';
-        if (v447) {
+        const v444 = os.platform();
+        const v445 = v444 === 'darwin';
+        if (v445) {
             index = KILL_SIGNAL_OSX.indexOf(tmp);
         }
     }
-    const v448 = index >= 0;
-    if (v448) {
+    const v446 = index >= 0;
+    if (v446) {
         index += 1;
     }
     return index;
 };
 const getSignalRaw = signal => {
     let tmp = signal.trim();
-    const v449 = tmp.startsWith('SIG');
-    if (v449) {
+    const v447 = tmp.startsWith('SIG');
+    if (v447) {
         tmp = tmp.slice(3);
     }
     const cmd = `kill -l ${ tmp }`;
-    const v450 = exec(cmd);
-    const v456 = result => {
-        const v451 = result.stderr;
-        if (v451) {
-            const v452 = result.stderr;
-            const v453 = new Error(v452);
-            throw v453;
+    const v448 = exec(cmd);
+    const v454 = result => {
+        const v449 = result.stderr;
+        if (v449) {
+            const v450 = result.stderr;
+            const v451 = new Error(v450);
+            throw v451;
         }
-        const v454 = result.stdout;
-        const tSignal = Number.parseInt(v454);
+        const v452 = result.stdout;
+        const tSignal = Number.parseInt(v452);
         if (tSignal) {
             return tSignal;
         }
-        const v455 = -1;
-        return v455;
+        const v453 = -1;
+        return v453;
     };
-    const v457 = v450.then(v456);
-    return v457;
+    const v455 = v448.then(v454);
+    return v455;
 };
-const v458 = {};
-v458.ps = ps;
-v458.kill = kill;
-v458.getSignalRaw = getSignalRaw;
-module.exports = v458;
+const v456 = {};
+v456.ps = ps;
+v456.kill = kill;
+v456.getSignalRaw = getSignalRaw;
+module.exports = v456;

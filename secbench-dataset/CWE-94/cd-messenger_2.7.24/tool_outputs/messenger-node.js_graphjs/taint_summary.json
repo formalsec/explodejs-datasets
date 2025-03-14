@@ -10,23 +10,15 @@
             "color"
         ],
         "params_types": {
-            "color": {
-                "_union": [
-                    {
-                        "length": "any"
-                    },
-                    "string",
-                    "array"
-                ]
-            }
+            "color": "string"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "line",
-                "fn_name": "1127.v106-o192",
-                "fn_id": "989",
-                "source_fn_id": "989"
+                "fn_name": "1118.v104-o191",
+                "fn_id": "984",
+                "source_fn_id": "984"
             }
         ]
     }

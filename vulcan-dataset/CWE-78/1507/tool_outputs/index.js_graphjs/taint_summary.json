@@ -4,7 +4,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/1507/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = exec(cmdString, {cwd: opts.cwd?opts.cwd:\"/\", maxBuffer: opts.maxBuffer?opts.maxBuffer:200 * 1024},(error, stdout, stderr) => {",
-        "sink_lineno": 18,
+        "sink_lineno": 17,
         "source": "module.exports.install",
         "tainted_params": [
             "packages",
@@ -37,9 +37,9 @@
             {
                 "type": "Method",
                 "prop": "install",
-                "fn_name": "2055.v178-o223",
-                "fn_id": 1180,
-                "source_fn_id": 1180
+                "fn_name": "2044.v178-o219",
+                "fn_id": 1169,
+                "source_fn_id": 1169
             }
         ]
     },
@@ -48,7 +48,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/1507/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = exec(cmdString, {cwd: opts.cwd?opts.cwd:\"/\"},(error, stdout, stderr) => {",
-        "sink_lineno": 47,
+        "sink_lineno": 46,
         "source": "module.exports.uninstall",
         "tainted_params": [
             "packages",
@@ -77,9 +77,9 @@
             {
                 "type": "Method",
                 "prop": "uninstall",
-                "fn_name": "2055.v218-o227",
-                "fn_id": 1529,
-                "source_fn_id": 1529
+                "fn_name": "2044.v218-o223",
+                "fn_id": 1518,
+                "source_fn_id": 1518
             }
         ]
     }

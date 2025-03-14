@@ -4,8 +4,8 @@
         "filename": "/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(convertCommand, function (err, stdout, stderr) {",
-        "sink_lineno": 170,
-        "source": "new module.exports",
+        "sink_lineno": 168,
+        "source": "new module.exports.PDFImage",
         "tainted_params": [
             "pdfFilePath",
             "options"
@@ -33,17 +33,17 @@
         "call_paths": [
             {
                 "type": "New",
-                "prop": null,
-                "fn_name": "2848.PDFImage.prototype-o490",
-                "fn_id": "1704",
-                "source_fn_id": "1704"
+                "prop": "PDFImage",
+                "fn_name": "2828.PDFImage.prototype-o484",
+                "fn_id": "1684",
+                "source_fn_id": "1684"
             },
             {
                 "type": "Method",
                 "prop": "convertPage",
-                "fn_name": "2848.v307-o457",
-                "fn_id": 2551,
-                "source_fn_id": 2551
+                "fn_name": "2828.v305-o451",
+                "fn_id": 2531,
+                "source_fn_id": 2531
             }
         ]
     }

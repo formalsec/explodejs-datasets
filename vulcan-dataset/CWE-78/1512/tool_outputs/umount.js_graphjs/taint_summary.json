@@ -4,7 +4,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/1512/src/umount.js",
         "vuln_type": "command-injection",
         "sink": "return child_process.exec(unmountCommand + \" \" + device, callback);",
-        "sink_lineno": 52,
+        "sink_lineno": 74,
         "source": "module.exports.umount",
         "tainted_params": [
             "device",
@@ -18,9 +18,9 @@
             {
                 "type": "Method",
                 "prop": "umount",
-                "fn_name": "812.v69-o113",
-                "fn_id": "492",
-                "source_fn_id": "492"
+                "fn_name": "1117.v105-o191",
+                "fn_id": "797",
+                "source_fn_id": "797"
             }
         ]
     }

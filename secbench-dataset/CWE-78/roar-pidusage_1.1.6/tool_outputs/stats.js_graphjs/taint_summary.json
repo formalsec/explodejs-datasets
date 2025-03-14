@@ -27,9 +27,9 @@
             {
                 "type": "Method",
                 "prop": "proc_calc",
-                "fn_name": "2934.v251-o371",
-                "fn_id": "1851",
-                "source_fn_id": "1851"
+                "fn_name": "2972.v255-o382",
+                "fn_id": "1889",
+                "source_fn_id": "1889"
             }
         ]
     },
@@ -54,9 +54,9 @@
             {
                 "type": "Method",
                 "prop": "ps",
-                "fn_name": "2934.v270-o376",
-                "fn_id": "2260",
-                "source_fn_id": "2260"
+                "fn_name": "2972.v274-o387",
+                "fn_id": "2298",
+                "source_fn_id": "2298"
             }
         ]
     },
@@ -81,9 +81,9 @@
             {
                 "type": "Method",
                 "prop": "win",
-                "fn_name": "2934.v336-o381",
-                "fn_id": "2391",
-                "source_fn_id": "2391"
+                "fn_name": "2972.v340-o392",
+                "fn_id": "2429",
+                "source_fn_id": "2429"
             }
         ]
     }

@@ -1,4 +1,3 @@
-const Promise = require('bluebird');
 const v126 = require('child_process');
 const exec = v126.exec;
 const v178 = function (packages, opts) {

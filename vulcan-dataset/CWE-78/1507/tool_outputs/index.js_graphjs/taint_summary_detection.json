@@ -3,12 +3,12 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/1507/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = exec(cmdString, {cwd: opts.cwd?opts.cwd:\"/\", maxBuffer: opts.maxBuffer?opts.maxBuffer:200 * 1024},(error, stdout, stderr) => {",
-        "sink_lineno": 18
+        "sink_lineno": 17
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-78/1507/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = exec(cmdString, {cwd: opts.cwd?opts.cwd:\"/\"},(error, stdout, stderr) => {",
-        "sink_lineno": 47
+        "sink_lineno": 46
     }
 ]

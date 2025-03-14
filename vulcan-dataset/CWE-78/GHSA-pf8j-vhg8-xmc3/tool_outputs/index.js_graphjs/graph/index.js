@@ -2,8 +2,8 @@ var fs = require('fs');
 var path = require('path');
 var chokidar = require('chokidar');
 var glob = require('glob');
-const v136 = require('child_process');
-var exec = v136.exec;
+const v133 = require('child_process');
+var exec = v133.exec;
 var defaults = require('./defaults');
 var root = process.cwd();
 const Mojo = function (emitter, config, executor, logger) {
@@ -11,38 +11,38 @@ const Mojo = function (emitter, config, executor, logger) {
     var outPath = config.runnerPath;
     var log = logger.create('Mojo');
     var testFiles = {};
-    const v137 = {
+    const v134 = {
         usePolling: true,
         ignorePermissionErrors: true,
         ignoreInitial: true,
         followSymlinks: false
     };
-    var watcher = new chokidar.FSWatcher(v137);
+    var watcher = new chokidar.FSWatcher(v134);
     const expandPath = function (filePath) {
-        const v138 = path.resolve(basePath, filePath);
-        return v138;
+        const v135 = path.resolve(basePath, filePath);
+        return v135;
     };
     const creep = function (filePath) {
-        const v139 = path.dirname(filePath);
-        const v140 = v139 + '/*.test.js';
-        const v141 = glob.sync(v140);
-        return v141;
+        const v136 = path.dirname(filePath);
+        const v137 = v136 + '/*.test.js';
+        const v138 = glob.sync(v137);
+        return v138;
     };
     const track = function (filePath) {
-        const v142 = testFiles.hasOwnProperty(filePath);
-        const v143 = !v142;
-        if (v143) {
-            const v144 = config.creep;
-            if (v144) {
-                const v145 = creep(filePath);
-                const v146 = function (siblingFilePath) {
+        const v139 = testFiles.hasOwnProperty(filePath);
+        const v140 = !v139;
+        if (v140) {
+            const v141 = config.creep;
+            if (v141) {
+                const v142 = creep(filePath);
+                const v143 = function (siblingFilePath) {
                     testFiles[siblingFilePath] = true;
                 };
-                const v147 = v145.forEach(v146);
-                v147;
+                const v144 = v142.forEach(v143);
+                v144;
             } else {
-                const v148 = config.focus;
-                if (v148) {
+                const v145 = config.focus;
+                if (v145) {
                     testFiles = {};
                 }
             }
@@ -53,60 +53,60 @@ const Mojo = function (emitter, config, executor, logger) {
         }
     };
     const untrack = function (filePath) {
-        const v149 = testFiles.hasOwnProperty(filePath);
-        if (v149) {
-            const v150 = testFiles[filePath];
-            const v151 = delete v150;
-            v151;
+        const v146 = testFiles.hasOwnProperty(filePath);
+        if (v146) {
+            const v147 = testFiles[filePath];
+            const v148 = delete v147;
+            v148;
             return true;
         } else {
             return false;
         }
     };
     const generateRunner = function () {
-        const v152 = Object.keys(testFiles);
-        const v153 = v152.sort();
-        const v156 = function (filePath) {
-            const v154 = 'require("' + filePath;
-            const v155 = v154 + '");';
-            return v155;
+        const v149 = Object.keys(testFiles);
+        const v150 = v149.sort();
+        const v153 = function (filePath) {
+            const v151 = 'require("' + filePath;
+            const v152 = v151 + '");';
+            return v152;
         };
-        const v157 = v153.map(v156);
-        const v158 = v157.join('\n');
-        const v159 = fs.writeFileSync(outPath, v158);
-        v159;
+        const v154 = v150.map(v153);
+        const v155 = v154.join('\n');
+        const v156 = fs.writeFileSync(outPath, v155);
+        v156;
     };
     const loadFromCache = function () {
-        const v160 = config.cachePath;
-        const v161 = fs.existsSync(v160);
-        if (v161) {
-            const v162 = config.cachePath;
-            const v163 = fs.readFileSync(v162, 'utf-8');
-            var cache = JSON.parse(v163);
+        const v157 = config.cachePath;
+        const v158 = fs.existsSync(v157);
+        if (v158) {
+            const v159 = config.cachePath;
+            const v160 = fs.readFileSync(v159, 'utf-8');
+            var cache = JSON.parse(v160);
             var cacheFiles = Object.keys(cache);
             var needsToRegenerate = false;
-            const v164 = cacheFiles.length;
-            const v165 = v164 > 0;
-            if (v165) {
-                const v167 = function (filePath) {
-                    const v166 = fs.existsSync(filePath);
-                    return v166;
+            const v161 = cacheFiles.length;
+            const v162 = v161 > 0;
+            if (v162) {
+                const v164 = function (filePath) {
+                    const v163 = fs.existsSync(filePath);
+                    return v163;
                 };
-                const v168 = cacheFiles.filter(v167);
-                const v171 = function (filePath) {
+                const v165 = cacheFiles.filter(v164);
+                const v168 = function (filePath) {
                     var wasTracked = track(filePath);
-                    const v169 = !needsToRegenerate;
-                    const v170 = v169 && wasTracked;
-                    if (v170) {
+                    const v166 = !needsToRegenerate;
+                    const v167 = v166 && wasTracked;
+                    if (v167) {
                         needsToRegenerate = true;
                     }
                 };
-                const v172 = v168.forEach(v171);
-                v172;
+                const v169 = v165.forEach(v168);
+                v169;
             }
             if (needsToRegenerate) {
-                const v173 = generateRunner();
-                v173;
+                const v170 = generateRunner();
+                v170;
                 return true;
             } else {
                 return false;
@@ -116,176 +116,176 @@ const Mojo = function (emitter, config, executor, logger) {
         }
     };
     const grep = function (callback) {
-        const v174 = config.grep;
-        const v175 = 'egrep -rl "describe\\([\'\\"].*' + v174;
-        const v176 = v175 + '" ';
-        const v177 = config.grepDir;
-        const v178 = v176 + v177;
-        const v179 = { cwd: root };
-        const v188 = function (error, stdout) {
-            const v180 = !error;
-            if (v180) {
-                const v181 = stdout.split('\n');
-                const v185 = function (fileName) {
-                    const v182 = fileName.indexOf('.test.js');
-                    const v183 = -1;
-                    const v184 = v182 > v183;
-                    return v184;
+        const v171 = config.grep;
+        const v172 = 'egrep -rl "describe\\([\'\\"].*' + v171;
+        const v173 = v172 + '" ';
+        const v174 = config.grepDir;
+        const v175 = v173 + v174;
+        const v176 = { cwd: root };
+        const v185 = function (error, stdout) {
+            const v177 = !error;
+            if (v177) {
+                const v178 = stdout.split('\n');
+                const v182 = function (fileName) {
+                    const v179 = fileName.indexOf('.test.js');
+                    const v180 = -1;
+                    const v181 = v179 > v180;
+                    return v181;
                 };
-                const v186 = v181.filter(v185);
-                const v187 = callback(v186);
-                v187;
+                const v183 = v178.filter(v182);
+                const v184 = callback(v183);
+                v184;
             }
         };
-        const v189 = exec(v178, v179, v188);
-        v189;
+        const v186 = exec(v175, v176, v185);
+        v186;
     };
     const run = function () {
-        const v190 = Object.keys(testFiles);
-        const v191 = v190.length;
+        const v187 = Object.keys(testFiles);
+        const v188 = v187.length;
+        if (v188) {
+            const v189 = executor.schedule();
+            v189;
+        }
+    };
+    const v196 = function (file) {
+        const v190 = expandPath(file);
+        const v191 = track(v190);
         if (v191) {
-            const v192 = executor.schedule();
-            v192;
+            const v192 = 'A test file was created, will now be tracking. (' + file;
+            const v193 = v192 + ')';
+            const v194 = log.info(v193);
+            v194;
+            const v195 = generateRunner();
+            v195;
         }
     };
-    const v199 = function (file) {
-        const v193 = expandPath(file);
-        const v194 = track(v193);
-        if (v194) {
-            const v195 = 'A test file was created, will now be tracking. (' + file;
-            const v196 = v195 + ')';
-            const v197 = log.info(v196);
-            v197;
-            const v198 = generateRunner();
-            v198;
+    const v197 = watcher.on('add', v196);
+    const v202 = function (file) {
+        const v198 = expandPath(file);
+        const v199 = track(v198);
+        if (v199) {
+            const v200 = log.info('A test file was modified, tracking:', file);
+            v200;
+            const v201 = generateRunner();
+            v201;
         }
     };
-    const v200 = watcher.on('add', v199);
-    const v205 = function (file) {
-        const v201 = expandPath(file);
-        const v202 = track(v201);
-        if (v202) {
-            const v203 = log.info('A test file was modified, tracking:', file);
-            v203;
-            const v204 = generateRunner();
-            v204;
+    const v203 = v197.on('change', v202);
+    const v208 = function (file) {
+        const v204 = expandPath(file);
+        const v205 = untrack(v204);
+        if (v205) {
+            const v206 = log.info('A test file is no longer tracked as it was deleted.');
+            v206;
+            const v207 = generateRunner();
+            v207;
         }
     };
-    const v206 = v200.on('change', v205);
-    const v211 = function (file) {
-        const v207 = expandPath(file);
-        const v208 = untrack(v207);
-        if (v208) {
-            const v209 = log.info('A test file is no longer tracked as it was deleted.');
-            v209;
-            const v210 = generateRunner();
-            v210;
-        }
+    const v209 = v203.on('unlink', v208);
+    const v211 = function (e) {
+        const v210 = log.debug(e);
+        v210;
     };
-    const v212 = v206.on('unlink', v211);
-    const v214 = function (e) {
-        const v213 = log.debug(e);
-        v213;
-    };
-    const v215 = v212.on('error', v214);
-    v215;
-    const v216 = fs.writeFileSync(outPath, '');
-    v216;
-    const v217 = config.continue;
-    if (v217) {
-        const v218 = loadFromCache();
-        if (v218) {
-            const v219 = log.info('Reloaded previously tracked test files.');
-            v219;
+    const v212 = v209.on('error', v211);
+    v212;
+    const v213 = fs.writeFileSync(outPath, '');
+    v213;
+    const v214 = config.continue;
+    if (v214) {
+        const v215 = loadFromCache();
+        if (v215) {
+            const v216 = log.info('Reloaded previously tracked test files.');
+            v216;
         }
     }
-    const v220 = config.grep;
-    const v221 = config.grep;
-    const v222 = v221.length;
-    const v223 = v220 && v222;
-    if (v223) {
-        const v228 = function (fileList) {
-            const v224 = log.info('Grepped:', fileList);
+    const v217 = config.grep;
+    const v218 = config.grep;
+    const v219 = v218.length;
+    const v220 = v217 && v219;
+    if (v220) {
+        const v225 = function (fileList) {
+            const v221 = log.info('Grepped:', fileList);
+            v221;
+            const v222 = fileList.map(expandPath);
+            const v223 = v222.forEach(track);
+            v223;
+            const v224 = generateRunner();
             v224;
-            const v225 = fileList.map(expandPath);
-            const v226 = v225.forEach(track);
-            v226;
-            const v227 = generateRunner();
-            v227;
         };
-        const v229 = grep(v228);
-        v229;
+        const v226 = grep(v225);
+        v226;
     }
     var installed = false;
-    const v236 = function () {
-        const v230 = !installed;
-        if (v230) {
-            const v231 = log.info('Capturing.');
-            v231;
+    const v233 = function () {
+        const v227 = !installed;
+        if (v227) {
+            const v228 = log.info('Capturing.');
+            v228;
             installed = true;
-            const v233 = function () {
-                const v232 = run();
-                v232;
+            const v230 = function () {
+                const v229 = run();
+                v229;
             };
-            const v234 = emitter.on('file_list_modified', v233);
-            v234;
-            const v235 = run();
-            v235;
+            const v231 = emitter.on('file_list_modified', v230);
+            v231;
+            const v232 = run();
+            v232;
         }
     };
-    const v237 = emitter.on('browsers_ready', v236);
-    v237;
-    const v247 = function (done) {
-        const v238 = fs.existsSync(outPath);
+    const v234 = emitter.on('browsers_ready', v233);
+    v234;
+    const v244 = function (done) {
+        const v235 = fs.existsSync(outPath);
+        if (v235) {
+            const v236 = fs.unlinkSync(outPath);
+            v236;
+        }
+        const v237 = config.noCache;
+        const v238 = !v237;
         if (v238) {
-            const v239 = fs.unlinkSync(outPath);
-            v239;
+            const v239 = config.cachePath;
+            const v240 = JSON.stringify(testFiles, null, 2);
+            const v241 = fs.writeFileSync(v239, v240);
+            v241;
         }
-        const v240 = config.noCache;
-        const v241 = !v240;
-        if (v241) {
-            const v242 = config.cachePath;
-            const v243 = JSON.stringify(testFiles, null, 2);
-            const v244 = fs.writeFileSync(v242, v243);
-            v244;
-        }
-        const v245 = watcher.close();
-        v245;
-        const v246 = done();
-        v246;
+        const v242 = watcher.close();
+        v242;
+        const v243 = done();
+        v243;
     };
-    const v248 = emitter.on('exit', v247);
-    v248;
-    const v249 = [];
-    const v250 = config.pattern;
-    const v251 = v249.concat(v250);
-    const v253 = function (x) {
-        const v252 = watcher.add(x);
-        v252;
+    const v245 = emitter.on('exit', v244);
+    v245;
+    const v246 = [];
+    const v247 = config.pattern;
+    const v248 = v246.concat(v247);
+    const v250 = function (x) {
+        const v249 = watcher.add(x);
+        v249;
     };
-    const v254 = v251.forEach(v253);
-    v254;
-    const v255 = config.rude;
-    const v256 = !v255;
-    if (v256) {
-        const v257 = greet(log);
-        v257;
+    const v251 = v248.forEach(v250);
+    v251;
+    const v252 = config.rude;
+    const v253 = !v252;
+    if (v253) {
+        const v254 = greet(log);
+        v254;
     }
 };
 const greet = function (log) {
-    const v258 = path.resolve(__dirname, 'greeting.txt');
-    var asdf = fs.readFileSync(v258, 'utf-8');
+    const v255 = path.resolve(__dirname, 'greeting.txt');
+    var asdf = fs.readFileSync(v255, 'utf-8');
     var greetings = asdf.split('[]');
-    const v259 = Math.random();
-    const v260 = greetings.length;
-    const v261 = v259 * v260;
-    const v262 = Math.floor(v261);
-    const v263 = greetings[v262];
-    const v264 = v263.trim();
-    const v265 = '\n' + v264;
-    const v266 = v265 + '\n';
-    const v267 = log.info(v266);
-    v267;
+    const v256 = Math.random();
+    const v257 = greetings.length;
+    const v258 = v256 * v257;
+    const v259 = Math.floor(v258);
+    const v260 = greetings[v259];
+    const v261 = v260.trim();
+    const v262 = '\n' + v261;
+    const v263 = v262 + '\n';
+    const v264 = log.info(v263);
+    v264;
 };
 Mojo.$inject = [
     'emitter',
@@ -293,12 +293,4 @@ Mojo.$inject = [
     'executor',
     'logger'
 ];
-const v268 = [
-    'type',
-    Mojo
-];
-const v269 = {};
-v269['reporter:mojo'] = v268;
-module.exports = v269;
-const v270 = module.exports;
-v270.defaults = defaults;
+module.exports = Mojo;

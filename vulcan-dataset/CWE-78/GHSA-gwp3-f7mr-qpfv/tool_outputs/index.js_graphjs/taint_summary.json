@@ -5,7 +5,7 @@
         "vuln_type": "command-injection",
         "sink": "metadata(src, {",
         "sink_lineno": 36,
-        "source": "new module.exports",
+        "source": "new module.exports.Image",
         "tainted_params": [
             "src",
             "opts",
@@ -30,7 +30,7 @@
         "call_paths": [
             {
                 "type": "New",
-                "prop": null,
+                "prop": "Image",
                 "fn_name": "3786.v298-o397",
                 "fn_id": "2165",
                 "source_fn_id": "2165"
@@ -50,7 +50,7 @@
         "vuln_type": "path-traversal",
         "sink": "Body: fs.createReadStream(version.path),",
         "sink_lineno": 95,
-        "source": "new module.exports",
+        "source": "new module.exports.Image",
         "tainted_params": [
             "src",
             "opts",
@@ -86,7 +86,7 @@
         "call_paths": [
             {
                 "type": "New",
-                "prop": null,
+                "prop": "Image",
                 "fn_name": "3786.v383-o427",
                 "fn_id": "2165",
                 "source_fn_id": "2165"

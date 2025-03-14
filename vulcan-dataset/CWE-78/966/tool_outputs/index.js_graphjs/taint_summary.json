@@ -4,7 +4,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/966/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return sh(",
-        "sink_lineno": 11,
+        "sink_lineno": 12,
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -20,9 +20,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "184.v24-o32",
-                "fn_id": "121",
-                "source_fn_id": "121"
+                "fn_name": "203.v28-o33",
+                "fn_id": "133",
+                "source_fn_id": "133"
             }
         ]
     },
@@ -31,7 +31,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-78/966/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return sh(",
-        "sink_lineno": 16,
+        "sink_lineno": 17,
         "source": "module.exports",
         "tainted_params": [
             "port"
@@ -47,9 +47,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "184.v24-o32",
-                "fn_id": "121",
-                "source_fn_id": "121"
+                "fn_name": "203.v28-o33",
+                "fn_id": "133",
+                "source_fn_id": "133"
             }
         ]
     }

@@ -1,55 +1,53 @@
-const exec = require('meta-exec');
+const v35 = require('child_process');
+const exec = v35.exec;
 const fs = require('fs');
-const v35 = require('debug');
-const debug = v35('meta-git-clone');
+const v36 = require('debug');
+const debug = v36('meta-git-clone');
 const getMetaFile = require('get-meta-file');
 const path = require('path');
 const program = require('commander');
 const util = require('util');
-const v36 = process.argv;
-const v37 = v36[2];
-const v38 = !v37;
-const v39 = process.argv;
-const v40 = v39[2];
-const v41 = v40 === '--help';
-const v42 = v38 || v41;
-if (v42) {
-    const v43 = `\n  usage:\n\n    meta git clone <metaRepoUrl>\n`;
-    const v44 = console.log(v43);
-    return v44;
+const v37 = process.argv;
+const v38 = v37[2];
+const v39 = !v38;
+const v40 = process.argv;
+const v41 = v40[2];
+const v42 = v41 === '--help';
+const v43 = v39 || v42;
+if (v43) {
+    const v44 = `\n  usage:\n\n    meta git clone <metaRepoUrl>\n`;
+    const v45 = console.log(v44);
+    return v45;
 }
 let repoUrl;
-const v45 = process.argv;
-const v46 = v45[2];
-const v47 = v46 === 'blank';
-const v48 = process.argv;
-const v49 = v48[3];
-const v50 = process.argv;
-const v51 = v50[2];
-if (v47) {
-    repoUrl = v49;
+const v46 = process.argv;
+const v47 = v46[2];
+const v48 = v47 === 'blank';
+const v49 = process.argv;
+const v50 = v49[3];
+const v51 = process.argv;
+const v52 = v51[2];
+if (v48) {
+    repoUrl = v50;
 } else {
-    repoUrl = v51;
+    repoUrl = v52;
 }
-const v52 = path.basename(repoUrl);
-const dirname = v52.replace('.git', '');
-const v53 = `meta git cloning into \'${ repoUrl }\' at ${ dirname }`;
-const v54 = console.log(v53);
-v54;
-const v55 = {
-    cmd: `git clone ${ repoUrl } ${ dirname }`,
-    displayDir: dirname
-};
+const v53 = path.basename(repoUrl);
+const dirname = v53.replace('.git', '');
+const v54 = `meta git cloning into \'${ repoUrl }\' at ${ dirname }`;
+const v55 = console.log(v54);
+v55;
+const v56 = `git clone ${ repoUrl } ${ dirname }`;
 const v67 = (err, result) => {
     if (err) {
         throw err;
     }
     const newDir = path.resolve(dirname);
-    const v56 = `chdir to ${ newDir }`;
-    const v57 = debug(v56);
-    v57;
-    const v58 = process.chdir(newDir);
+    const v57 = `chdir to ${ newDir }`;
+    const v58 = debug(v57);
     v58;
+    const v59 = process.chdir(newDir);
+    v59;
     const meta = getMetaFile();
     const projects = meta.projects;
     const folders = Object.keys(projects);
@@ -58,18 +56,14 @@ const v67 = (err, result) => {
         if (err) {
             throw err;
         }
-        const v59 = folders.length;
-        const v60 = !v59;
-        if (v60) {
+        const v60 = folders.length;
+        const v61 = !v60;
+        if (v61) {
             return 0;
         }
         folder = folders.pop();
         const gitUrl = projects[folder];
-        const v61 = path.join(newDir, folder);
-        const v62 = {
-            cmd: `git clone ${ gitUrl } ${ folder }`,
-            displayDir: v61
-        };
+        const v62 = `git clone ${ gitUrl } ${ folder }`;
         const v64 = err => {
             if (err) {
                 throw err;
@@ -83,5 +77,5 @@ const v67 = (err, result) => {
     const v66 = child();
     v66;
 };
-const v68 = exec(v55, v67);
+const v68 = exec(v56, v67);
 v68;

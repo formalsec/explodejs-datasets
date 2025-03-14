@@ -3,8 +3,8 @@
         "type": "VFunExported",
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3x62-x456-q2vm/src/index.js",
         "vuln_type": "command-injection",
-        "sink": "const child = crossSpawn(command, args, opts)",
-        "sink_lineno": 52,
+        "sink": "return require(\"child_process\").exec(cmd + args.join(\" \"), opts)",
+        "sink_lineno": 7,
         "source": "module.exports",
         "tainted_params": [
             "url",
@@ -34,9 +34,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "914.gitPullOrClone-o118",
-                "fn_id": 556,
-                "source_fn_id": 556
+                "fn_name": "1022.gitPullOrClone-o137",
+                "fn_id": 669,
+                "source_fn_id": 669
             }
         ]
     }

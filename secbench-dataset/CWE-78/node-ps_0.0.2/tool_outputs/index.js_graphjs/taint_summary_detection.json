@@ -2,7 +2,7 @@
     {
         "filename": "/datasets/secbench-dataset/CWE-78/node-ps_0.0.2/src/index.js",
         "vuln_type": "command-injection",
-        "sink": "childProcess.exec(cmd, function (err, stdout, stderr) {",
+        "sink": "childProcess.exec(cmd, function(err, stdout, stderr) {",
         "sink_lineno": 72
     }
 ]

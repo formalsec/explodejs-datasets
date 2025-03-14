@@ -1,355 +1,353 @@
-const v155 = require('es6-promise');
-var Promise = v155.Promise;
 var path = require('path');
 var fs = require('fs');
 var util = require('util');
-const v156 = require('child_process');
-var exec = v156.exec;
+const v154 = require('child_process');
+var exec = v154.exec;
 const PDFImage = function (pdfFilePath, options) {
-    const v157 = !options;
-    if (v157) {
+    const v155 = !options;
+    if (v155) {
         options = {};
     }
     this.pdfFilePath = pdfFilePath;
-    const v158 = options.pdfFileBaseName;
-    const v159 = this.setPdfFileBaseName(v158);
+    const v156 = options.pdfFileBaseName;
+    const v157 = this.setPdfFileBaseName(v156);
+    v157;
+    const v158 = options.convertOptions;
+    const v159 = this.setConvertOptions(v158);
     v159;
-    const v160 = options.convertOptions;
-    const v161 = this.setConvertOptions(v160);
+    const v160 = options.convertExtension;
+    const v161 = this.setConvertExtension(v160);
     v161;
-    const v162 = options.convertExtension;
-    const v163 = this.setConvertExtension(v162);
-    v163;
-    const v164 = options.graphicsMagick;
-    this.useGM = v164 || false;
-    const v165 = options.combinedImage;
-    this.combinedImage = v165 || false;
-    const v166 = options.outputDirectory;
-    const v167 = path.dirname(pdfFilePath);
-    this.outputDirectory = v166 || v167;
+    const v162 = options.graphicsMagick;
+    this.useGM = v162 || false;
+    const v163 = options.combinedImage;
+    this.combinedImage = v163 || false;
+    const v164 = options.outputDirectory;
+    const v165 = path.dirname(pdfFilePath);
+    this.outputDirectory = v164 || v165;
 };
-const v170 = function () {
-    const v168 = this.pdfFilePath;
-    const v169 = util.format('pdfinfo "%s"', v168);
-    return v169;
+const v168 = function () {
+    const v166 = this.pdfFilePath;
+    const v167 = util.format('pdfinfo "%s"', v166);
+    return v167;
 };
-const v177 = function (output) {
+const v175 = function (output) {
     var info = {};
-    const v171 = output.split('\n');
-    const v175 = function (line) {
-        const v172 = line.match(/^(.*?):[ \t]*(.*)$/);
-        if (v172) {
-            const v173 = RegExp.$1;
-            const v174 = RegExp.$2;
-            info[v173] = v174;
+    const v169 = output.split('\n');
+    const v173 = function (line) {
+        const v170 = line.match(/^(.*?):[ \t]*(.*)$/);
+        if (v170) {
+            const v171 = RegExp.$1;
+            const v172 = RegExp.$2;
+            info[v171] = v172;
         }
     };
-    const v176 = v171.forEach(v175);
-    v176;
+    const v174 = v169.forEach(v173);
+    v174;
     return info;
 };
-const v185 = function () {
+const v183 = function () {
     var self = this;
     var getInfoCommand = this.constructGetInfoCommand();
-    const v184 = function (resolve, reject) {
-        const v182 = function (err, stdout, stderr) {
+    const v182 = function (resolve, reject) {
+        const v180 = function (err, stdout, stderr) {
             if (err) {
-                const v178 = {
+                const v176 = {
                     message: 'Failed to get PDF\'S information',
                     error: err,
                     stdout: stdout,
                     stderr: stderr
                 };
-                const v179 = reject(v178);
-                return v179;
+                const v177 = reject(v176);
+                return v177;
             }
-            const v180 = self.parseGetInfoCommandOutput(stdout);
-            const v181 = resolve(v180);
-            return v181;
+            const v178 = self.parseGetInfoCommandOutput(stdout);
+            const v179 = resolve(v178);
+            return v179;
         };
-        const v183 = exec(getInfoCommand, v182);
-        v183;
+        const v181 = exec(getInfoCommand, v180);
+        v181;
     };
-    var promise = new Promise(v184);
+    var promise = new Promise(v182);
     return promise;
 };
-const v190 = function () {
-    const v186 = this.getInfo();
-    const v188 = function (info) {
-        const v187 = info['Pages'];
-        return v187;
+const v188 = function () {
+    const v184 = this.getInfo();
+    const v186 = function (info) {
+        const v185 = info['Pages'];
+        return v185;
     };
-    const v189 = v186.then(v188);
-    return v189;
+    const v187 = v184.then(v186);
+    return v187;
 };
-const v199 = function (pageNumber) {
-    const v191 = this.outputDirectory;
-    const v192 = this.pdfFileBaseName;
-    const v193 = v192 + '-';
-    const v194 = v193 + pageNumber;
-    const v195 = v194 + '.';
-    const v196 = this.convertExtension;
-    const v197 = v195 + v196;
-    const v198 = path.join(v191, v197);
-    return v198;
+const v197 = function (pageNumber) {
+    const v189 = this.outputDirectory;
+    const v190 = this.pdfFileBaseName;
+    const v191 = v190 + '-';
+    const v192 = v191 + pageNumber;
+    const v193 = v192 + '.';
+    const v194 = this.convertExtension;
+    const v195 = v193 + v194;
+    const v196 = path.join(v189, v195);
+    return v196;
 };
-const v206 = function () {
-    const v200 = this.outputDirectory;
-    const v201 = this.pdfFileBaseName;
-    const v202 = v201 + '.';
-    const v203 = this.convertExtension;
-    const v204 = v202 + v203;
-    const v205 = path.join(v200, v204);
-    return v205;
+const v204 = function () {
+    const v198 = this.outputDirectory;
+    const v199 = this.pdfFileBaseName;
+    const v200 = v199 + '.';
+    const v201 = this.convertExtension;
+    const v202 = v200 + v201;
+    const v203 = path.join(v198, v202);
+    return v203;
 };
-const v208 = function (convertOptions) {
-    const v207 = {};
-    this.convertOptions = convertOptions || v207;
+const v206 = function (convertOptions) {
+    const v205 = {};
+    this.convertOptions = convertOptions || v205;
 };
-const v211 = function (pdfFileBaseName) {
-    const v209 = this.pdfFilePath;
-    const v210 = path.basename(v209, '.pdf');
-    this.pdfFileBaseName = pdfFileBaseName || v210;
+const v209 = function (pdfFileBaseName) {
+    const v207 = this.pdfFilePath;
+    const v208 = path.basename(v207, '.pdf');
+    this.pdfFileBaseName = pdfFileBaseName || v208;
 };
-const v212 = function (convertExtension) {
+const v210 = function (convertExtension) {
     this.convertExtension = convertExtension || 'png';
 };
-const v218 = function (pageNumber) {
+const v216 = function (pageNumber) {
     var pdfFilePath = this.pdfFilePath;
     var outputImagePath = this.getOutputImagePathForPage(pageNumber);
     var convertOptionsString = this.constructConvertOptions();
-    const v213 = this.useGM;
+    const v211 = this.useGM;
+    let v212;
+    if (v211) {
+        v212 = 'gm convert';
+    } else {
+        v212 = 'convert';
+    }
+    const v213 = convertOptionsString + ' ';
     let v214;
-    if (v213) {
-        v214 = 'gm convert';
-    } else {
-        v214 = 'convert';
-    }
-    const v215 = convertOptionsString + ' ';
-    let v216;
     if (convertOptionsString) {
-        v216 = v215;
+        v214 = v213;
     } else {
-        v216 = '';
+        v214 = '';
     }
-    const v217 = util.format('%s %s"%s[%d]" "%s"', v214, v216, pdfFilePath, pageNumber, outputImagePath);
-    return v217;
+    const v215 = util.format('%s %s"%s[%d]" "%s"', v212, v214, pdfFilePath, pageNumber, outputImagePath);
+    return v215;
 };
-const v224 = function (imagePaths) {
-    const v219 = this.useGM;
-    let v220;
-    if (v219) {
-        v220 = 'gm convert';
+const v222 = function (imagePaths) {
+    const v217 = this.useGM;
+    let v218;
+    if (v217) {
+        v218 = 'gm convert';
     } else {
-        v220 = 'convert';
+        v218 = 'convert';
     }
-    const v221 = imagePaths.join(' ');
-    const v222 = this.getOutputImagePathForFile();
-    const v223 = util.format('%s -append %s "%s"', v220, v221, v222);
-    return v223;
+    const v219 = imagePaths.join(' ');
+    const v220 = this.getOutputImagePathForFile();
+    const v221 = util.format('%s -append %s "%s"', v218, v219, v220);
+    return v221;
 };
-const v238 = function () {
-    const v225 = this.convertOptions;
-    const v226 = Object.keys(v225);
-    const v227 = v226.sort();
-    const v235 = function (optionName) {
-        const v228 = this.convertOptions;
-        const v229 = v228[optionName];
-        const v230 = v229 !== null;
-        if (v230) {
-            const v231 = optionName + ' ';
-            const v232 = this.convertOptions;
-            const v233 = v232[optionName];
-            const v234 = v231 + v233;
-            return v234;
+const v236 = function () {
+    const v223 = this.convertOptions;
+    const v224 = Object.keys(v223);
+    const v225 = v224.sort();
+    const v233 = function (optionName) {
+        const v226 = this.convertOptions;
+        const v227 = v226[optionName];
+        const v228 = v227 !== null;
+        if (v228) {
+            const v229 = optionName + ' ';
+            const v230 = this.convertOptions;
+            const v231 = v230[optionName];
+            const v232 = v229 + v231;
+            return v232;
         } else {
             return optionName;
         }
     };
-    const v236 = v227.map(v235, this);
-    const v237 = v236.join(' ');
-    return v237;
+    const v234 = v225.map(v233, this);
+    const v235 = v234.join(' ');
+    return v235;
 };
-const v250 = function (imagePaths) {
+const v248 = function (imagePaths) {
     var pdfImage = this;
     var combineCommand = pdfImage.constructCombineCommandForFile(imagePaths);
-    const v248 = function (resolve, reject) {
-        const v246 = function (err, stdout, stderr) {
+    const v246 = function (resolve, reject) {
+        const v244 = function (err, stdout, stderr) {
             if (err) {
-                const v239 = {
+                const v237 = {
                     message: 'Failed to combine images',
                     error: err,
                     stdout: stdout,
                     stderr: stderr
                 };
-                const v240 = reject(v239);
-                return v240;
+                const v238 = reject(v237);
+                return v238;
             }
-            const v241 = imagePaths.join(' ');
-            const v242 = 'rm ' + v241;
-            const v243 = exec(v242);
-            v243;
-            const v244 = pdfImage.getOutputImagePathForFile();
-            const v245 = resolve(v244);
-            return v245;
+            const v239 = imagePaths.join(' ');
+            const v240 = 'rm ' + v239;
+            const v241 = exec(v240);
+            v241;
+            const v242 = pdfImage.getOutputImagePathForFile();
+            const v243 = resolve(v242);
+            return v243;
         };
-        const v247 = exec(combineCommand, v246);
-        v247;
+        const v245 = exec(combineCommand, v244);
+        v245;
     };
-    const v249 = new Promise(v248);
-    return v249;
+    const v247 = new Promise(v246);
+    return v247;
 };
-const v282 = function () {
+const v280 = function () {
     var pdfImage = this;
-    const v280 = function (resolve, reject) {
-        const v251 = pdfImage.numberOfPages();
-        const v278 = function (totalPages) {
-            const v266 = function (resolve, reject) {
+    const v278 = function (resolve, reject) {
+        const v249 = pdfImage.numberOfPages();
+        const v276 = function (totalPages) {
+            const v264 = function (resolve, reject) {
                 var imagePaths = [];
                 var i = 0;
-                let v252 = i < totalPages;
-                while (v252) {
-                    const v254 = pdfImage.convertPage(i);
-                    const v261 = function (imagePath) {
-                        const v255 = imagePaths.push(imagePath);
-                        v255;
-                        const v256 = imagePaths.length;
-                        const v257 = parseInt(totalPages);
-                        const v258 = v256 === v257;
-                        if (v258) {
-                            const v259 = imagePaths.sort();
-                            v259;
-                            const v260 = resolve(imagePaths);
-                            v260;
+                let v250 = i < totalPages;
+                while (v250) {
+                    const v252 = pdfImage.convertPage(i);
+                    const v259 = function (imagePath) {
+                        const v253 = imagePaths.push(imagePath);
+                        v253;
+                        const v254 = imagePaths.length;
+                        const v255 = parseInt(totalPages);
+                        const v256 = v254 === v255;
+                        if (v256) {
+                            const v257 = imagePaths.sort();
+                            v257;
+                            const v258 = resolve(imagePaths);
+                            v258;
                         }
                     };
-                    const v262 = v254.then(v261);
-                    const v264 = function (error) {
-                        const v263 = reject(error);
-                        v263;
+                    const v260 = v252.then(v259);
+                    const v262 = function (error) {
+                        const v261 = reject(error);
+                        v261;
                     };
-                    const v265 = v262.catch(v264);
-                    v265;
-                    const v253 = i++;
-                    v252 = i < totalPages;
+                    const v263 = v260.catch(v262);
+                    v263;
+                    const v251 = i++;
+                    v250 = i < totalPages;
                 }
             };
-            var convertPromise = new Promise(v266);
-            const v273 = function (imagePaths) {
-                const v267 = pdfImage.combinedImage;
-                if (v267) {
-                    const v268 = pdfImage.combineImages(imagePaths);
-                    const v270 = function (imagePath) {
-                        const v269 = resolve(imagePath);
-                        v269;
+            var convertPromise = new Promise(v264);
+            const v271 = function (imagePaths) {
+                const v265 = pdfImage.combinedImage;
+                if (v265) {
+                    const v266 = pdfImage.combineImages(imagePaths);
+                    const v268 = function (imagePath) {
+                        const v267 = resolve(imagePath);
+                        v267;
                     };
-                    const v271 = v268.then(v270);
-                    v271;
+                    const v269 = v266.then(v268);
+                    v269;
                 } else {
-                    const v272 = resolve(imagePaths);
-                    v272;
+                    const v270 = resolve(imagePaths);
+                    v270;
                 }
             };
-            const v274 = convertPromise.then(v273);
-            const v276 = function (error) {
-                const v275 = reject(error);
-                v275;
+            const v272 = convertPromise.then(v271);
+            const v274 = function (error) {
+                const v273 = reject(error);
+                v273;
             };
-            const v277 = v274.catch(v276);
-            v277;
+            const v275 = v272.catch(v274);
+            v275;
         };
-        const v279 = v251.then(v278);
-        v279;
+        const v277 = v249.then(v276);
+        v277;
     };
-    const v281 = new Promise(v280);
-    return v281;
+    const v279 = new Promise(v278);
+    return v279;
 };
-const v307 = function (pageNumber) {
+const v305 = function (pageNumber) {
     var pdfFilePath = this.pdfFilePath;
     var outputImagePath = this.getOutputImagePathForPage(pageNumber);
     var convertCommand = this.constructConvertCommandForPage(pageNumber);
-    const v306 = function (resolve, reject) {
+    const v304 = function (resolve, reject) {
         const convertPageToImage = function () {
-            const v286 = function (err, stdout, stderr) {
+            const v284 = function (err, stdout, stderr) {
                 if (err) {
-                    const v283 = {
+                    const v281 = {
                         message: 'Failed to convert page to image',
                         error: err,
                         stdout: stdout,
                         stderr: stderr
                     };
-                    const v284 = reject(v283);
-                    return v284;
+                    const v282 = reject(v281);
+                    return v282;
                 }
-                const v285 = resolve(outputImagePath);
-                return v285;
+                const v283 = resolve(outputImagePath);
+                return v283;
             };
-            const v287 = exec(convertCommand, v286);
-            v287;
+            const v285 = exec(convertCommand, v284);
+            v285;
         };
-        const v304 = function (err, imageFileStat) {
-            const v288 = err.code;
-            const v289 = v288 === 'ENOENT';
-            var imageNotExists = err && v289;
-            const v290 = !imageNotExists;
-            const v291 = v290 && err;
-            if (v291) {
-                const v292 = {
+        const v302 = function (err, imageFileStat) {
+            const v286 = err.code;
+            const v287 = v286 === 'ENOENT';
+            var imageNotExists = err && v287;
+            const v288 = !imageNotExists;
+            const v289 = v288 && err;
+            if (v289) {
+                const v290 = {
                     message: 'Failed to stat image file',
                     error: err
                 };
-                const v293 = reject(v292);
-                return v293;
+                const v291 = reject(v290);
+                return v291;
             }
             if (imageNotExists) {
-                const v294 = convertPageToImage();
-                v294;
+                const v292 = convertPageToImage();
+                v292;
                 return;
             }
-            const v302 = function (err, pdfFileStat) {
+            const v300 = function (err, pdfFileStat) {
                 if (err) {
-                    const v295 = {
+                    const v293 = {
                         message: 'Failed to stat PDF file',
                         error: err
                     };
-                    const v296 = reject(v295);
-                    return v296;
+                    const v294 = reject(v293);
+                    return v294;
                 }
-                const v297 = imageFileStat.mtime;
-                const v298 = pdfFileStat.mtime;
-                const v299 = v297 < v298;
-                if (v299) {
-                    const v300 = convertPageToImage();
-                    v300;
+                const v295 = imageFileStat.mtime;
+                const v296 = pdfFileStat.mtime;
+                const v297 = v295 < v296;
+                if (v297) {
+                    const v298 = convertPageToImage();
+                    v298;
                     return;
                 }
-                const v301 = resolve(outputImagePath);
-                return v301;
+                const v299 = resolve(outputImagePath);
+                return v299;
             };
-            const v303 = fs.stat(pdfFilePath, v302);
-            v303;
+            const v301 = fs.stat(pdfFilePath, v300);
+            v301;
         };
-        const v305 = fs.stat(outputImagePath, v304);
-        v305;
+        const v303 = fs.stat(outputImagePath, v302);
+        v303;
     };
-    var promise = new Promise(v306);
+    var promise = new Promise(v304);
     return promise;
 };
-const v308 = {};
-v308.constructGetInfoCommand = v170;
-v308.parseGetInfoCommandOutput = v177;
-v308.getInfo = v185;
-v308.numberOfPages = v190;
-v308.getOutputImagePathForPage = v199;
-v308.getOutputImagePathForFile = v206;
-v308.setConvertOptions = v208;
-v308.setPdfFileBaseName = v211;
-v308.setConvertExtension = v212;
-v308.constructConvertCommandForPage = v218;
-v308.constructCombineCommandForFile = v224;
-v308.constructConvertOptions = v238;
-v308.combineImages = v250;
-v308.convertFile = v282;
-v308.convertPage = v307;
-PDFImage.prototype = v308;
+const v306 = {};
+v306.constructGetInfoCommand = v168;
+v306.parseGetInfoCommandOutput = v175;
+v306.getInfo = v183;
+v306.numberOfPages = v188;
+v306.getOutputImagePathForPage = v197;
+v306.getOutputImagePathForFile = v204;
+v306.setConvertOptions = v206;
+v306.setPdfFileBaseName = v209;
+v306.setConvertExtension = v210;
+v306.constructConvertCommandForPage = v216;
+v306.constructCombineCommandForFile = v222;
+v306.constructConvertOptions = v236;
+v306.combineImages = v248;
+v306.convertFile = v280;
+v306.convertPage = v305;
+PDFImage.prototype = v306;
 exports.PDFImage = PDFImage;

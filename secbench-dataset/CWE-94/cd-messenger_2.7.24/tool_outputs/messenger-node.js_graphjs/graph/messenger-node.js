@@ -6,125 +6,124 @@ const CLI_ICON_FAIL = '\u2718';
 const CLI_ICON_PASS = '\u2713';
 const CLI_ICON_WARN = '\u267A';
 const CLI_ICON_NOTE = '\u270F︎';
-const v56 = () => {
-    const v55 = pkgInfo.version;
-    return v55;
+const v55 = () => {
+    const v54 = pkgInfo.version;
+    return v54;
 };
-const v58 = () => {
-    const v57 = pkgInfo.name;
-    return v57;
+const v57 = () => {
+    const v56 = pkgInfo.name;
+    return v56;
 };
-const v60 = (...params) => {
-    const v59 = console.log(...params);
-    v59;
+const v59 = (...params) => {
+    const v58 = console.log(...params);
+    v58;
     return params;
 };
-const v64 = (...params) => {
-    const v61 = chalk.cyan;
-    const v62 = v61.bold(CLI_ICON_NOTE, ...params);
-    const v63 = console.log(v62);
-    v63;
+const v63 = (...params) => {
+    const v60 = chalk.cyan;
+    const v61 = v60.bold(CLI_ICON_NOTE, ...params);
+    const v62 = console.log(v61);
+    v62;
     return params;
 };
-const v66 = (msg, ...params) => {
-    const v65 = console.log(msg, ...params);
-    v65;
+const v65 = (msg, ...params) => {
+    const v64 = console.log(msg, ...params);
+    v64;
     return params;
 };
-const v70 = (...params) => {
-    const v67 = chalk.green;
-    const v68 = v67.bold(CLI_ICON_PASS, ...params);
-    const v69 = console.log(v68);
-    v69;
+const v69 = (...params) => {
+    const v66 = chalk.green;
+    const v67 = v66.bold(CLI_ICON_PASS, ...params);
+    const v68 = console.log(v67);
+    v68;
     return params;
 };
-const v74 = (...params) => {
-    const v71 = chalk.yellow;
-    const v72 = v71.bold(CLI_ICON_WARN, ...params);
-    const v73 = console.log(v72);
-    v73;
+const v73 = (...params) => {
+    const v70 = chalk.yellow;
+    const v71 = v70.bold(CLI_ICON_WARN, ...params);
+    const v72 = console.log(v71);
+    v72;
     return params;
 };
-const v78 = (...params) => {
-    const v75 = chalk.red;
-    const v76 = v75.bold(CLI_ICON_FAIL, ...params);
-    const v77 = console.log(v76);
-    v77;
+const v77 = (...params) => {
+    const v74 = chalk.red;
+    const v75 = v74.bold(CLI_ICON_FAIL, ...params);
+    const v76 = console.log(v75);
+    v76;
     return params;
 };
-const v97 = data => {
+const v96 = data => {
     let table;
     let head = [];
-    const v79 = data.length;
-    const v80 = v79 > 0;
-    if (v80) {
-        const v81 = data[0];
-        const v82 = Array.isArray(v81);
-        if (v82) {
+    const v78 = data.length;
+    const v79 = v78 > 0;
+    if (v79) {
+        const v80 = data[0];
+        const v81 = Array.isArray(v80);
+        if (v81) {
             header = data[0];
-            const v83 = data.splice(0, 1);
-            v83;
+            const v82 = data.splice(0, 1);
+            v82;
         } else {
-            const v84 = data[0];
-            header = Object.keys(v84);
+            const v83 = data[0];
+            header = Object.keys(v83);
         }
-        const v87 = function (item) {
-            const v85 = chalk.cyan;
-            const v86 = v85.bold(item);
-            return v86;
+        const v86 = function (item) {
+            const v84 = chalk.cyan;
+            const v85 = v84.bold(item);
+            return v85;
         };
-        header = header.map(v87);
-        const v88 = { head: header };
-        table = new Table(v88);
-        const v93 = item => {
-            const v89 = Object.keys(item);
-            const v91 = key => {
-                const v90 = item[key];
-                return v90;
+        header = header.map(v86);
+        const v87 = { head: header };
+        table = new Table(v87);
+        const v92 = item => {
+            const v88 = Object.keys(item);
+            const v90 = key => {
+                const v89 = item[key];
+                return v89;
             };
-            let values = v89.map(v91);
-            const v92 = table.push(values);
-            v92;
+            let values = v88.map(v90);
+            const v91 = table.push(values);
+            v91;
         };
-        const v94 = data.map(v93);
-        v94;
-        const v95 = table.toString();
-        const v96 = console.log(v95);
-        v96;
+        const v93 = data.map(v92);
+        v93;
+        const v94 = table.toString();
+        const v95 = console.log(v94);
+        v95;
     }
 };
-const v106 = color => {
-    const v98 = color.length;
-    const v99 = v98 > 0;
-    if (v99) {
+const v104 = color => {
+    const v97 = color != '';
+    if (v97) {
         try {
-            const v100 = `cl.${ color }()`;
-            const v101 = eval(v100);
-            v101;
+            const v98 = `cl.${ color }()`;
+            const v99 = eval(v98);
+            v99;
         } catch (e) {
-            const v102 = chalk.bgRed;
-            const v103 = `Invalid Color: ${ color }`;
-            const v104 = v102.bold(v103);
-            const v105 = console.error(v104);
-            v105;
+            const v100 = chalk.bgRed;
+            const v101 = `Invalid Color: ${ color }`;
+            const v102 = v100.bold(v101);
+            const v103 = console.error(v102);
+            v103;
         }
     }
 };
-const v108 = data => {
-    const v107 = console.dir(data);
-    v107;
+const v106 = data => {
+    const v105 = console.dir(data);
+    v105;
     return data;
 };
 const messenger = {};
-messenger.version = v56;
-messenger.name = v58;
-messenger.log = v60;
-messenger.info = v64;
-messenger.note = v66;
-messenger.success = v70;
-messenger.warning = v74;
-messenger.error = v78;
-messenger.table = v97;
-messenger.line = v106;
-messenger.dir = v108;
+messenger.version = v55;
+messenger.name = v57;
+messenger.log = v59;
+messenger.info = v63;
+messenger.note = v65;
+messenger.success = v69;
+messenger.warning = v73;
+messenger.error = v77;
+messenger.table = v96;
+messenger.line = v104;
+messenger.dir = v106;
 module.exports = messenger;
