@@ -1,0 +1,30 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/if-node-version-1.1.1/src/lib/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return spawn(command, args, options)",
+        "sink_lineno": 30,
+        "source": "module.exports",
+        "tainted_params": [
+            "versionRange",
+            "command",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "versionRange": "any",
+            "command": "string",
+            "args": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "273.spawnIfNodeVersionSatisfies-o56",
+                "fn_id": "197",
+                "source_fn_id": "197"
+            }
+        ]
+    }
+]

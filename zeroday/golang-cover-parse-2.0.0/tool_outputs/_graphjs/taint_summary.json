@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/golang-cover-parse-2.0.0/src/source/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile( file, \"utf8\", function ( err, content )",
+        "sink_lineno": 102,
+        "source": "module.exports.parseFile",
+        "tainted_params": [
+            "file",
+            "cb"
+        ],
+        "params_types": {
+            "file": "string",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parseFile",
+                "fn_name": "1263.v152-o162",
+                "fn_id": "1213",
+                "source_fn_id": "1213"
+            }
+        ]
+    }
+]

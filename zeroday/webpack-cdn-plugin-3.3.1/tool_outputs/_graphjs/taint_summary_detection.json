@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/webpack-cdn-plugin-3.3.1/src/module.js",
+        "vuln_type": "code-injection",
+        "sink": "return require(path.join(pathToNodeModules, 'node_modules', name, packageJson)).version;",
+        "sink_lineno": 172
+    }
+]

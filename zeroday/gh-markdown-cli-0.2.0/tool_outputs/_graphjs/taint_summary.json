@@ -1,0 +1,116 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/gh-markdown-cli-0.2.0/src/mdown.js",
+        "vuln_type": "path-traversal",
+        "sink": "var content = exports.toHTML(_fs.readFileSync(filePath, opts.encoding), opts);",
+        "sink_lineno": 24,
+        "source": "module.exports.batchProcess",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": {
+                "encoding": "any",
+                "input": "any",
+                "exclude": "string",
+                "output": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "batchProcess",
+                "fn_name": "1121.v65-o169",
+                "fn_id": 687,
+                "source_fn_id": 687
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/gh-markdown-cli-0.2.0/src/mdown.js",
+        "vuln_type": "path-traversal",
+        "sink": "_fs.writeFileSync(distPath, content, opts.encoding);",
+        "sink_lineno": 58,
+        "source": "module.exports.batchProcess",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": {
+                "encoding": "any",
+                "input": "any",
+                "exclude": "string",
+                "output": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "batchProcess",
+                "fn_name": "1121.v65-o169",
+                "fn_id": 687,
+                "source_fn_id": 687
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/gh-markdown-cli-0.2.0/src/mdown.js",
+        "vuln_type": "path-traversal",
+        "sink": "header = opts.header? _fs.readFileSync(opts.header, opts.encoding) : '';",
+        "sink_lineno": 66,
+        "source": "module.exports.toHTML",
+        "tainted_params": [
+            "content",
+            "opts"
+        ],
+        "params_types": {
+            "content": "any",
+            "opts": {
+                "header": "any",
+                "encoding": "any",
+                "footer": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "toHTML",
+                "fn_name": "1121.v93-o184",
+                "fn_id": "935",
+                "source_fn_id": "935"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/gh-markdown-cli-0.2.0/src/mdown.js",
+        "vuln_type": "path-traversal",
+        "sink": "footer = opts.footer? _fs.readFileSync(opts.footer, opts.encoding) : '';",
+        "sink_lineno": 67,
+        "source": "module.exports.toHTML",
+        "tainted_params": [
+            "content",
+            "opts"
+        ],
+        "params_types": {
+            "content": "any",
+            "opts": {
+                "header": "any",
+                "encoding": "any",
+                "footer": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "toHTML",
+                "fn_name": "1121.v93-o184",
+                "fn_id": "935",
+                "source_fn_id": "935"
+            }
+        ]
+    }
+]

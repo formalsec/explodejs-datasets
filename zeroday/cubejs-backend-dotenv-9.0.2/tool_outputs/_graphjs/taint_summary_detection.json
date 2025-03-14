@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/cubejs-backend-dotenv-9.0.2/src/lib/main.js",
+        "vuln_type": "path-traversal",
+        "sink": "const parsed = DotEnvModule.parse(fs.readFileSync(dotenvPath, { encoding }), { debug, multiline })",
+        "sink_lineno": 128
+    }
+]

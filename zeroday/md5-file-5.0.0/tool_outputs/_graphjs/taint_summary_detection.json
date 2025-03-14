@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/md5-file-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const input = fs.createReadStream(path)",
+        "sink_lineno": 28
+    }
+]

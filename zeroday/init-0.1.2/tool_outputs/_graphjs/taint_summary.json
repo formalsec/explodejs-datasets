@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/init-0.1.2/src/init.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.readFile(pidfile, 'utf8', function(err, data) {",
+        "sink_lineno": 21,
+        "source": "module.exports.status",
+        "tainted_params": [
+            "pidfile",
+            "cb"
+        ],
+        "params_types": {
+            "pidfile": "string",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "status",
+                "fn_name": "2551.v143-o356",
+                "fn_id": "1582",
+                "source_fn_id": "1582"
+            }
+        ]
+    }
+]

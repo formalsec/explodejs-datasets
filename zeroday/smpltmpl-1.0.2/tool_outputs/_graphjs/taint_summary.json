@@ -1,0 +1,54 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/smpltmpl-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.readFileSync(filename, 'utf8');",
+        "sink_lineno": 18,
+        "source": "module.exports.templateFromFile",
+        "tainted_params": [
+            "filename",
+            "context"
+        ],
+        "params_types": {
+            "filename": "string",
+            "context": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "templateFromFile",
+                "fn_name": "690.templateFromFile-o123",
+                "fn_id": 647,
+                "source_fn_id": 647
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/smpltmpl-1.0.2/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return vm.runInNewContext('`' + tmpl + '`', context);",
+        "sink_lineno": 68,
+        "source": "module.exports.template",
+        "tainted_params": [
+            "tmpl",
+            "context",
+            "filename"
+        ],
+        "params_types": {
+            "tmpl": "string",
+            "context": "any",
+            "filename": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "template",
+                "fn_name": "690.template-o119",
+                "fn_id": "592",
+                "source_fn_id": "592"
+            }
+        ]
+    }
+]

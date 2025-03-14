@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/repl.history-0.1.4/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "repl.rli.history = fs.readFileSync(file, 'utf-8').split('\\n').reverse();",
+        "sink_lineno": 6
+    }
+]

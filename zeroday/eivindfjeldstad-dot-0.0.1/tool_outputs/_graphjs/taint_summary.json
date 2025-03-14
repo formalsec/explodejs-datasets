@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/eivindfjeldstad-dot-0.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[attr] = val;",
+        "sink_lineno": 20,
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "val"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": "string",
+            "val": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "342.v19-o43",
+                "fn_id": "196",
+                "source_fn_id": "196"
+            }
+        ]
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/heimdalljs-graph-1.0.0/src/dist/cjs/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var json = JSON.parse(fs.readFileSync(path, 'UTF8'));",
+        "sink_lineno": 1385,
+        "source": "module.exports.loadFromFile",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "loadFromFile",
+                "fn_name": "13542.loadFromFile-o1584",
+                "fn_id": "13477",
+                "source_fn_id": "13477"
+            }
+        ]
+    }
+]

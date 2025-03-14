@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/gradle-to-js-2.0.1/src/lib/parser.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = fs.createReadStream(path);",
+        "sink_lineno": 667
+    }
+]

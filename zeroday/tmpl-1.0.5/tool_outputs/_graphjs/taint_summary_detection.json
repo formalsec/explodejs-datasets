@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/tmpl-1.0.5/src/lib/tmpl.js",
+        "vuln_type": "code-injection",
+        "sink": "var func = new Function('obj', tmpl)",
+        "sink_lineno": 15
+    }
+]

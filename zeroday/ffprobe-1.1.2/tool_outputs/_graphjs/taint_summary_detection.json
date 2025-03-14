@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/ffprobe-1.1.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "var ffprobe = spawn(opts.path, params);",
+        "sink_lineno": 16
+    }
+]

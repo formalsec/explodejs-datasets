@@ -1,0 +1,50 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/mecab-async-0.1.2/src/mecab.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(this._shellCommand(str), this.options, (err, result) => {",
+        "sink_lineno": 49,
+        "source": "module.exports.parse",
+        "tainted_params": [
+            "str",
+            "callback"
+        ],
+        "params_types": {
+            "str": "any",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parse",
+                "fn_name": "1552.v140-o249",
+                "fn_id": 1185,
+                "source_fn_id": 1185
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/mecab-async-0.1.2/src/mecab.js",
+        "vuln_type": "command-injection",
+        "sink": "const result = execSync(this._shellCommand(str), this.options);",
+        "sink_lineno": 56,
+        "source": "module.exports.parseSync",
+        "tainted_params": [
+            "str"
+        ],
+        "params_types": {
+            "str": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parseSync",
+                "fn_name": "1552.v147-o252",
+                "fn_id": "1256",
+                "source_fn_id": "1256"
+            }
+        ]
+    }
+]

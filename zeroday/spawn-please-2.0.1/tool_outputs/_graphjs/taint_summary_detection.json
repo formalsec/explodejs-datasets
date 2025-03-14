@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/spawn-please-2.0.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const child = spawn(command, args, options)",
+        "sink_lineno": 18
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/graphql-mesh-plugin-snapshot-0.95.1/src/cjs/index.js",
+        "vuln_type": "code-injection",
+        "sink": "if (!new Function('env', 'return ' + pluginOptions.if)(cross_helpers_1.process.env)) {",
+        "sink_lineno": 22
+    }
+]

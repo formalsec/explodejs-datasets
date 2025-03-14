@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/node-phantom-simple-2.2.4/src/node-phantom-simple.js",
+        "vuln_type": "command-injection",
+        "sink": "var phantom = spawn(options.path, args);",
+        "sink_lineno": 139
+    },
+    {
+        "filename": "/datasets/zeroday/node-phantom-simple-2.2.4/src/node-phantom-simple.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(phantom_pid_command, function (err, stdout /*, stderr*/) {",
+        "sink_lineno": 252
+    }
+]

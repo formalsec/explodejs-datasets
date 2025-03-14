@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/node-exiftool-2.3.0/src/src/lib.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(`taskkill /t /F /PID ${proc.pid}`)",
+        "sink_lineno": 208
+    },
+    {
+        "filename": "/datasets/zeroday/node-exiftool-2.3.0/src/src/lib.js",
+        "vuln_type": "command-injection",
+        "sink": "const proc = cp.spawn(bin, ['-echo2', echoString, '-stay_open', 'True', '-@', '-'], options)",
+        "sink_lineno": 159
+    }
+]

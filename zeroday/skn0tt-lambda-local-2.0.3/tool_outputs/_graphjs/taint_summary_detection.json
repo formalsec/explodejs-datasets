@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/skn0tt-lambda-local-2.0.3/src/build/lambdalocal.js",
+        "vuln_type": "code-injection",
+        "sink": "lambdaFunc = require(lambdaPath);",
+        "sink_lineno": 295
+    },
+    {
+        "filename": "/datasets/zeroday/skn0tt-lambda-local-2.0.3/src/build/lib/utils.js",
+        "vuln_type": "path-traversal",
+        "sink": "var dataRaw = fs.readFileSync(getAbsolutePath(path)), data = dataRaw.toString();",
+        "sink_lineno": 136
+    }
+]

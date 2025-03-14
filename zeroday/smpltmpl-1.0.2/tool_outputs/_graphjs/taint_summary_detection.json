@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/smpltmpl-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.readFileSync(filename, 'utf8');",
+        "sink_lineno": 18
+    },
+    {
+        "filename": "/datasets/zeroday/smpltmpl-1.0.2/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return vm.runInNewContext('`' + tmpl + '`', context);",
+        "sink_lineno": 68
+    }
+]

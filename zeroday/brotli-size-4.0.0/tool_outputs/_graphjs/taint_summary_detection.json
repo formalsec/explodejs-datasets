@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/brotli-size-4.0.0/src/dist/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const file = fs_1.readFileSync(path);",
+        "sink_lineno": 86
+    }
+]

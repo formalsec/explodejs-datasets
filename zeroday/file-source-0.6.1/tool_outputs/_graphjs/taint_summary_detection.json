@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/file-source-0.6.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var f = fs.createReadStream(path, {highWaterMark: highWaterMark});",
+        "sink_lineno": 8
+    }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/jest-transform-file-1.1.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const data = base64(filename, fs.readFileSync(filename));",
+        "sink_lineno": 38,
+        "source": "module.exports.process",
+        "tainted_params": [
+            "src",
+            "filename",
+            "config",
+            "options"
+        ],
+        "params_types": {
+            "src": "any",
+            "filename": "string",
+            "config": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "process",
+                "fn_name": "525.v47-o99",
+                "fn_id": "476",
+                "source_fn_id": "476"
+            }
+        ]
+    }
+]

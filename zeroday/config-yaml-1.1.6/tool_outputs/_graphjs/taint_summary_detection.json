@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/config-yaml-1.1.6/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "let content = fs.readFileSync(filePath, encoding);",
+        "sink_lineno": 41
+    }
+]

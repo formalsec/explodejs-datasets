@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "view = JSON.parse(fs.readFileSync(view, 'utf8'))",
+        "sink_lineno": 24
+    },
+    {
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "partial = fs.readFileSync(partialPath, 'utf8')",
+        "sink_lineno": 95
+    },
+    {
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "partial = fs.readFileSync(partialPath, 'utf8')",
+        "sink_lineno": 104
+    },
+    {
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "partial = fs.readFileSync(partialPath, 'utf8')",
+        "sink_lineno": 118
+    },
+    {
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "partial = fs.readFileSync(partialPath, 'utf8')",
+        "sink_lineno": 131
+    }
+]

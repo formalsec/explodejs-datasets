@@ -1,0 +1,26 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/rcinfo-0.1.3/src/lib/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child = execFile(executable, args, options, function(error, stdout, stderr){",
+        "sink_lineno": 20,
+        "source": "module.exports",
+        "tainted_params": [
+            "winfile",
+            "callback"
+        ],
+        "params_types": {
+            "winfile": "array",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "538.v38-o89",
+                "fn_id": "335",
+                "source_fn_id": "335"
+            }
+        ]
+    }
+]

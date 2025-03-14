@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/base64topdf-1.1.8/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var bitmap = fs.readFileSync(file);",
+        "sink_lineno": 13
+    },
+    {
+        "filename": "/datasets/zeroday/base64topdf-1.1.8/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(file, bitmap);",
+        "sink_lineno": 26
+    }
+]

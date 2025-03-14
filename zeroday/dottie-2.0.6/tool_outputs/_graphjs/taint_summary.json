@@ -1,0 +1,96 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/dottie-2.0.6/src/dottie.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "current[piece] = value;",
+        "sink_lineno": 108,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".set",
+            "params_types": {
+                "object": {
+                    "_union": [
+                        "object",
+                        "array"
+                    ]
+                },
+                "path": [
+                    "any"
+                ],
+                "value": "object",
+                "options": {
+                    "force": "any"
+                }
+            },
+            "tainted_params": [
+                "object",
+                "path",
+                "value",
+                "options"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "2823.Dottie-o352",
+                "fn_id": "1659",
+                "source_fn_id": "1659"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "2823.v237-o351",
+                "fn_id": "1980",
+                "source_fn_id": "1980"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/dottie-2.0.6/src/dottie.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "current[piece] = object[key];",
+        "sink_lineno": 157,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".transform",
+            "params_types": {
+                "object": {
+                    "_union": [
+                        "polluted_object2",
+                        "polluted_object3"
+                    ]
+                },
+                "options": {
+                    "delimiter": "any"
+                }
+            },
+            "tainted_params": [
+                "object",
+                "options"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "2823.Dottie-o365",
+                "fn_id": "1659",
+                "source_fn_id": "1659"
+            },
+            {
+                "type": "Method",
+                "prop": "transform",
+                "fn_name": "2823.Dottie$transformfunction-o364",
+                "fn_id": "2259",
+                "source_fn_id": "2259"
+            }
+        ]
+    }
+]

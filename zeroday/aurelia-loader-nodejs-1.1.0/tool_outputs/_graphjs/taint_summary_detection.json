@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/aurelia-loader-nodejs-1.1.0/src/dist/commonjs/aurelia-loader-nodejs.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.readFile(filePath, 'utf-8', function (err, text) { return err ? reject(err) : resolve(text); });",
+        "sink_lineno": 57
+    },
+    {
+        "filename": "/datasets/zeroday/aurelia-loader-nodejs-1.1.0/src/dist/commonjs/aurelia-loader-nodejs.js",
+        "vuln_type": "code-injection",
+        "sink": "return Promise.resolve(require(filePath));",
+        "sink_lineno": 78
+    }
+]

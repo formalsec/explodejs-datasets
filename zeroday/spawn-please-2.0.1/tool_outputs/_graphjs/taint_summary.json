@@ -1,0 +1,38 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/spawn-please-2.0.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const child = spawn(command, args, options)",
+        "sink_lineno": 18,
+        "source": "module.exports",
+        "tainted_params": [
+            "command",
+            "args",
+            "stdin",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "args": "any",
+            "stdin": {
+                "rejectOnError": "any",
+                "stdout": "string",
+                "stderr": "any"
+            },
+            "options": {
+                "rejectOnError": "any",
+                "stdout": "string",
+                "stderr": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "600.spawnPlease-o73",
+                "fn_id": "349",
+                "source_fn_id": "349"
+            }
+        ]
+    }
+]

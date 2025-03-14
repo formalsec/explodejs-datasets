@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/dotenv-flow-3.2.0/src/lib/dotenv-flow.js",
+        "vuln_type": "path-traversal",
+        "sink": "return dotenv.parse(fs.readFileSync(filenames, options));",
+        "sink_lineno": 42
+    },
+    {
+        "filename": "/datasets/zeroday/dotenv-flow-3.2.0/src/lib/dotenv-flow.js",
+        "vuln_type": "path-traversal",
+        "sink": "return Object.assign(parsed, dotenv.parse(fs.readFileSync(filename, options)));",
+        "sink_lineno": 46
+    }
+]

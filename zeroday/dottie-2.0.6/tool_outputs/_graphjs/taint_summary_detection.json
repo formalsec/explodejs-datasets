@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/dottie-2.0.6/src/dottie.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "current[piece] = value;",
+        "sink_lineno": 108
+    },
+    {
+        "filename": "/datasets/zeroday/dottie-2.0.6/src/dottie.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "current[piece] = object[key];",
+        "sink_lineno": 157
+    }
+]

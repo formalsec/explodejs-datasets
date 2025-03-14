@@ -1,0 +1,50 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/iniparser-1.0.5/src/lib/node-iniparser.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(file, 'utf8', function(err, data){",
+        "sink_lineno": 28,
+        "source": "module.exports.parse",
+        "tainted_params": [
+            "file",
+            "callback"
+        ],
+        "params_types": {
+            "file": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parse",
+                "fn_name": "672.v41-o94",
+                "fn_id": "416",
+                "source_fn_id": "416"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/iniparser-1.0.5/src/lib/node-iniparser.js",
+        "vuln_type": "path-traversal",
+        "sink": "return parse(fs.readFileSync(file, 'utf8'));",
+        "sink_lineno": 38,
+        "source": "module.exports.parseSync",
+        "tainted_params": [
+            "file"
+        ],
+        "params_types": {
+            "file": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parseSync",
+                "fn_name": "672.v45-o99",
+                "fn_id": "474",
+                "source_fn_id": "474"
+            }
+        ]
+    }
+]

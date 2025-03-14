@@ -1,0 +1,33 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/first-base-1.3.0/src/dist/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child = normalSpawn(cmd, args, options);",
+        "sink_lineno": 144,
+        "source": "module.exports.spawn",
+        "tainted_params": [
+            "cmd",
+            "argsOrOptions",
+            "passedOptions"
+        ],
+        "params_types": {
+            "cmd": "any",
+            "argsOrOptions": {
+                "pty": "any"
+            },
+            "passedOptions": {
+                "pty": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "spawn",
+                "fn_name": "2341.spawn-o296",
+                "fn_id": "1475",
+                "source_fn_id": "1475"
+            }
+        ]
+    }
+]

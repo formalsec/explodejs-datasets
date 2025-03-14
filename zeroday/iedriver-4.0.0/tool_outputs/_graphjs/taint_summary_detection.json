@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/iedriver-4.0.0/src/lib/iedriver.js",
+        "vuln_type": "command-injection",
+        "sink": "exports.defaultInstance = require('child_process').execFile(exports.path, args);",
+        "sink_lineno": 9
+    }
+]

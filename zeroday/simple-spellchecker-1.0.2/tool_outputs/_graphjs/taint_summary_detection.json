@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "/datasets/zeroday/simple-spellchecker-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(file_path, 'utf8', function(err, text) {",
+        "sink_lineno": 71
+    },
+    {
+        "filename": "/datasets/zeroday/simple-spellchecker-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var text = fs.readFileSync(file_path, 'utf8')",
+        "sink_lineno": 93
+    },
+    {
+        "filename": "/datasets/zeroday/simple-spellchecker-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(inputPath, 'utf8', function(err, content) {",
+        "sink_lineno": 186
+    },
+    {
+        "filename": "/datasets/zeroday/simple-spellchecker-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(outputPath, newContent, 'utf8', function(err) {",
+        "sink_lineno": 210
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/first-base-1.3.0/src/dist/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child = normalSpawn(cmd, args, options);",
+        "sink_lineno": 144
+    }
+]

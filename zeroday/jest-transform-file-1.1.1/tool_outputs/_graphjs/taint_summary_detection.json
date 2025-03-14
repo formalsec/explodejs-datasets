@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/jest-transform-file-1.1.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const data = base64(filename, fs.readFileSync(filename));",
+        "sink_lineno": 38
+    }
+]

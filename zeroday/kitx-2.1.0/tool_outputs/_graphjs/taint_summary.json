@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/kitx-2.1.0/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var content = fs.readFileSync(filename, 'utf8');",
+        "sink_lineno": 15,
+        "source": "module.exports.loadJSONSync",
+        "tainted_params": [
+            "filename"
+        ],
+        "params_types": {
+            "filename": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "loadJSONSync",
+                "fn_name": "2072.v107-o285",
+                "fn_id": "1221",
+                "source_fn_id": "1221"
+            }
+        ]
+    }
+]

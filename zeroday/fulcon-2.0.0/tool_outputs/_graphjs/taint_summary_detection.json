@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/fulcon-2.0.0/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return Function('source', 'return function ' + source.name.replace(/^bound /, '') + '(' + Array(source.length + 1).join('a').split('').join(',') + '){ return source.apply(this, arguments); }')(source);",
+        "sink_lineno": 14
+    }
+]

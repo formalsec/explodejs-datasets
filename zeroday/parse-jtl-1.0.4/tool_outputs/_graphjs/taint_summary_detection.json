@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/parse-jtl-1.0.4/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const text = fs.readFileSync(path.join(cwd, jtl_file_path), { encoding: 'utf8' });",
+        "sink_lineno": 7
+    }
+]

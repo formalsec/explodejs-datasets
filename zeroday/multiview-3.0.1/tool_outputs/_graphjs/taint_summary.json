@@ -1,0 +1,55 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/multiview-3.0.1/src/main.js",
+        "vuln_type": "command-injection",
+        "sink": "spawnedProcess = childProcess.spawn(command, args, options);",
+        "sink_lineno": 17,
+        "source": "new module.exports",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": "any"
+        },
+        "returns": {
+            "source": ".spawn",
+            "params_types": {
+                "command": "string",
+                "args": {
+                    "stdout": "any",
+                    "name": "any",
+                    "silent": "any",
+                    "stream": "any"
+                },
+                "opts": {
+                    "stdout": "any",
+                    "name": "any",
+                    "silent": "any",
+                    "stream": "any"
+                }
+            },
+            "tainted_params": [
+                "command",
+                "args",
+                "opts"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "1650.v122-o292",
+                "fn_id": "1352",
+                "source_fn_id": "1352"
+            },
+            {
+                "type": "Method",
+                "prop": "spawn",
+                "fn_name": "1650.v143-o291",
+                "fn_id": 1406,
+                "source_fn_id": 1406
+            }
+        ]
+    }
+]

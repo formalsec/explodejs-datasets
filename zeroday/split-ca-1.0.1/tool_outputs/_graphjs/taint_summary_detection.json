@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/split-ca-1.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var chain = fs.readFileSync(filepath, encoding);",
+        "sink_lineno": 8
+    }
+]

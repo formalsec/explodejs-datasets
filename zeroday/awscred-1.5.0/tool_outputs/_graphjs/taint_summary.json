@@ -1,0 +1,118 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/awscred-1.5.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filename, 'utf8', function(err, data) {",
+        "sink_lineno": 252,
+        "source": "module.exports.loadProfileFromIniFile",
+        "tainted_params": [
+            "options",
+            "defaultFilename",
+            "cb"
+        ],
+        "params_types": {
+            "options": {
+                "filename": "string",
+                "profile": "string"
+            },
+            "defaultFilename": "any",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "loadProfileFromIniFile",
+                "fn_name": "5321.loadProfileFromIniFile-o710",
+                "fn_id": "4512",
+                "source_fn_id": "4512"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/awscred-1.5.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "data = fs.readFileSync(filename, 'utf8')",
+        "sink_lineno": 266,
+        "source": "module.exports.loadProfileFromIniFileSync",
+        "tainted_params": [
+            "options",
+            "defaultFilename"
+        ],
+        "params_types": {
+            "options": {
+                "filename": "string",
+                "profile": "string"
+            },
+            "defaultFilename": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "loadProfileFromIniFileSync",
+                "fn_name": "5321.loadProfileFromIniFileSync-o713",
+                "fn_id": "4629",
+                "source_fn_id": "4629"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/awscred-1.5.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "out[section][match[2]] = match[3]",
+        "sink_lineno": 333,
+        "source": "module.exports.loadProfileFromIniFile",
+        "tainted_params": [
+            "options",
+            "defaultFilename",
+            "cb"
+        ],
+        "params_types": {
+            "options": {
+                "filename": "string",
+                "profile": "string"
+            },
+            "defaultFilename": "any",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "loadProfileFromIniFile",
+                "fn_name": "5321.loadProfileFromIniFile-o710",
+                "fn_id": 4512,
+                "source_fn_id": 4512
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/awscred-1.5.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "out[section][match[2]] = match[3]",
+        "sink_lineno": 333,
+        "source": "module.exports.loadProfileFromIniFileSync",
+        "tainted_params": [
+            "options",
+            "defaultFilename"
+        ],
+        "params_types": {
+            "options": {
+                "filename": "string",
+                "profile": "string"
+            },
+            "defaultFilename": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "loadProfileFromIniFileSync",
+                "fn_name": "5321.loadProfileFromIniFileSync-o713",
+                "fn_id": 4629,
+                "source_fn_id": 4629
+            }
+        ]
+    }
+]

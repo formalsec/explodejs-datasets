@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/dotenv-yaml-0.1.4/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const result = yaml.load(fs.readFileSync(path, { encoding: encoding }));",
+        "sink_lineno": 7
+    }
+]

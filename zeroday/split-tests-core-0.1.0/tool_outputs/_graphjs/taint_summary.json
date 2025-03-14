@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/split-tests-core-0.1.0/src/index.cjs.js",
+        "vuln_type": "path-traversal",
+        "sink": "const junitRaw = fs.readFileSync(file, \"utf-8\");",
+        "sink_lineno": 36,
+        "source": "module.exports.loadXML",
+        "tainted_params": [
+            "file"
+        ],
+        "params_types": {
+            "file": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "loadXML",
+                "fn_name": "1339.loadXML-o193",
+                "fn_id": "1040",
+                "source_fn_id": "1040"
+            }
+        ]
+    }
+]

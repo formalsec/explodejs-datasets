@@ -1,0 +1,200 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/viralify-0.4.2/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "var pack = require(packfile);",
+        "sink_lineno": 19,
+        "source": "module.exports",
+        "tainted_params": [
+            "root",
+            "packages",
+            "transform",
+            "front",
+            "cb"
+        ],
+        "params_types": {
+            "root": "any",
+            "packages": {
+                "0": "any"
+            },
+            "transform": {
+                "0": "any"
+            },
+            "front": "function",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1808.viralify-o240",
+                "fn_id": 1487,
+                "source_fn_id": 1487
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/viralify-0.4.2/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "var pack = require(packfile);",
+        "sink_lineno": 19,
+        "source": "module.exports.sync",
+        "tainted_params": [
+            "root",
+            "packages",
+            "transform",
+            "front"
+        ],
+        "params_types": {
+            "root": "any",
+            "packages": {
+                "0": "any"
+            },
+            "transform": {
+                "0": "any"
+            },
+            "front": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "sync",
+                "fn_name": "1808.sync-o248",
+                "fn_id": 1692,
+                "source_fn_id": 1692
+            }
+        ]
+    },
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/zeroday/viralify-0.4.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(p.file, JSON.stringify(p.pack, null, 2), 'utf8', cb);",
+        "sink_lineno": 102,
+        "source": "module.exports",
+        "tainted_params": [
+            "root",
+            "packages",
+            "transform",
+            "front",
+            "cb"
+        ],
+        "params_types": {
+            "root": "any",
+            "packages": {
+                "0": "any"
+            },
+            "transform": {
+                "0": "any"
+            },
+            "front": "function",
+            "cb": "function"
+        },
+        "returns": {
+            "source": "",
+            "params_types": {
+                "cb": "function"
+            },
+            "tainted_params": [
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1808.viralify-o240",
+                "fn_id": 1487,
+                "source_fn_id": 1487
+            },
+            {
+                "type": "Call",
+                "fn_name": "1845.v191-o381",
+                "fn_id": "1616",
+                "source_fn_id": "1613"
+            }
+        ]
+    },
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/zeroday/viralify-0.4.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(p.file, JSON.stringify(p.pack, null, 2), 'utf8', cb);",
+        "sink_lineno": 102,
+        "source": "module.exports",
+        "tainted_params": [
+            "root",
+            "packages",
+            "transform",
+            "front",
+            "cb"
+        ],
+        "params_types": {
+            "root": "any",
+            "packages": {
+                "0": "any"
+            },
+            "transform": {
+                "0": "any"
+            },
+            "front": "function",
+            "cb": "function"
+        },
+        "returns": {
+            "source": "",
+            "params_types": {
+                "cb": "function"
+            },
+            "tainted_params": [
+                "cb"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1808.viralify-o240",
+                "fn_id": "1487",
+                "source_fn_id": "1487"
+            },
+            {
+                "type": "Call",
+                "fn_name": "1845.v191-o381",
+                "fn_id": "1616",
+                "source_fn_id": "1487"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/viralify-0.4.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(p.file, JSON.stringify(p.pack, null, 2), 'utf8');",
+        "sink_lineno": 134,
+        "source": "module.exports.sync",
+        "tainted_params": [
+            "root",
+            "packages",
+            "transform",
+            "front"
+        ],
+        "params_types": {
+            "root": "any",
+            "packages": {
+                "0": "any"
+            },
+            "transform": {
+                "0": "any"
+            },
+            "front": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "sync",
+                "fn_name": "1808.sync-o248",
+                "fn_id": 1692,
+                "source_fn_id": 1692
+            }
+        ]
+    }
+]

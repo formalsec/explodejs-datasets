@@ -1,0 +1,60 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/bump-file-2.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, 'utf8', (err, data) => {",
+        "sink_lineno": 14,
+        "source": "module.exports",
+        "tainted_params": [
+            "filePath",
+            "options"
+        ],
+        "params_types": {
+            "filePath": "string",
+            "options": {
+                "increment": "string",
+                "preId": "any",
+                "get": "function",
+                "set": "function"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "949.incrementFile-o152",
+                "fn_id": 701,
+                "source_fn_id": 701
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/bump-file-2.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(filePath, Buffer.from(JSON.stringify(json, null, indent) + '\\n'), err => {",
+        "sink_lineno": 48,
+        "source": "module.exports",
+        "tainted_params": [
+            "filePath",
+            "options"
+        ],
+        "params_types": {
+            "filePath": "string",
+            "options": {
+                "increment": "string",
+                "preId": "any",
+                "get": "function",
+                "set": "function"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "949.incrementFile-o152",
+                "fn_id": 701,
+                "source_fn_id": 701
+            }
+        ]
+    }
+]

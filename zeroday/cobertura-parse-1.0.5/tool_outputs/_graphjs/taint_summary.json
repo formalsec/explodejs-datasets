@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/cobertura-parse-1.0.5/src/source/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile( file, \"utf8\", function ( err, content )",
+        "sink_lineno": 138,
+        "source": "module.exports.parseFile",
+        "tainted_params": [
+            "file",
+            "cb"
+        ],
+        "params_types": {
+            "file": "string",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parseFile",
+                "fn_name": "2342.v320-o287",
+                "fn_id": "2292",
+                "source_fn_id": "2292"
+            }
+        ]
+    }
+]

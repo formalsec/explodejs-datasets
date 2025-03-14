@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/electron-winstaller-5.1.0/src/lib/spawn-promise.js",
+        "vuln_type": "command-injection",
+        "sink": "proc = child_process_1.spawn(exe, params, opts);",
+        "sink_lineno": 21
+    },
+    {
+        "filename": "/datasets/zeroday/electron-winstaller-5.1.0/src/lib/spawn-promise.js",
+        "vuln_type": "command-injection",
+        "sink": "proc = child_process_1.spawn(exe, params);",
+        "sink_lineno": 18
+    }
+]

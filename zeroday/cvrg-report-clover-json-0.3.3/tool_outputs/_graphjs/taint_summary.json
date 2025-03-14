@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/cvrg-report-clover-json-0.3.3/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, \"utf8\", function (err, content) {",
+        "sink_lineno": 109,
+        "source": "module.exports.parseFile",
+        "tainted_params": [
+            "filePath"
+        ],
+        "params_types": {
+            "filePath": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parseFile",
+                "fn_name": "1913.v234-o256",
+                "fn_id": 1822,
+                "source_fn_id": 1822
+            }
+        ]
+    }
+]

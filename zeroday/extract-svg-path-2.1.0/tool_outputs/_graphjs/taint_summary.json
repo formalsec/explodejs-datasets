@@ -1,0 +1,28 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/extract-svg-path-2.1.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var contents = fs.readFileSync(file, opt.encoding)",
+        "sink_lineno": 21,
+        "source": "module.exports",
+        "tainted_params": [
+            "file",
+            "opt"
+        ],
+        "params_types": {
+            "file": "string",
+            "opt": {
+                "encoding": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "391.v32-o65",
+                "fn_id": "318",
+                "source_fn_id": "318"
+            }
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/find-config-1.0.0/src/src/find-config.js",
+        "vuln_type": "path-traversal",
+        "sink": "return filepath && fsReadFileSync(filepath, {",
+        "sink_lineno": 118,
+        "source": "module.exports.read",
+        "tainted_params": [
+            "filename",
+            "options"
+        ],
+        "params_types": {
+            "filename": "string",
+            "options": {
+                "encoding": "any",
+                "flag": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "read",
+                "fn_name": "1181.findConfigRead-o166",
+                "fn_id": "1046",
+                "source_fn_id": "1046"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/find-config-1.0.0/src/src/find-config.js",
+        "vuln_type": "code-injection",
+        "sink": "return filepath && require(filepath);",
+        "sink_lineno": 134,
+        "source": "module.exports.require",
+        "tainted_params": [
+            "filename",
+            "options"
+        ],
+        "params_types": {
+            "filename": "string",
+            "options": {
+                "module": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "require",
+                "fn_name": "1181.findConfigRequire-o170",
+                "fn_id": "1103",
+                "source_fn_id": "1103"
+            }
+        ]
+    }
+]

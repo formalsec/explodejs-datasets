@@ -1,0 +1,186 @@
+[
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 79,
+        "source": "module.exports",
+        "tainted_params": [
+            "context",
+            "options"
+        ],
+        "params_types": {
+            "context": "any",
+            "options": {
+                "languages": "any"
+            }
+        },
+        "returns": {
+            "source": ".postBuild",
+            "params_types": {
+                "routesPaths": "array",
+                "outDir": "any",
+                "baseUrl": "string"
+            },
+            "tainted_params": [
+                "routesPaths",
+                "outDir",
+                "baseUrl"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "2770.v239-o421",
+                "fn_id": "1906",
+                "source_fn_id": "1906"
+            },
+            {
+                "type": "Method",
+                "fn_name": "2772.v237-o451",
+                "fn_id": "2009",
+                "prop": "postBuild",
+                "source_fn_id": "1906"
+            }
+        ]
+    },
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 84,
+        "source": "module.exports",
+        "tainted_params": [
+            "context",
+            "options"
+        ],
+        "params_types": {
+            "context": "any",
+            "options": {
+                "languages": "any"
+            }
+        },
+        "returns": {
+            "source": ".postBuild",
+            "params_types": {
+                "routesPaths": "array",
+                "outDir": "any",
+                "baseUrl": "string"
+            },
+            "tainted_params": [
+                "routesPaths",
+                "outDir",
+                "baseUrl"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "2770.v239-o421",
+                "fn_id": "1906",
+                "source_fn_id": "1906"
+            },
+            {
+                "type": "Method",
+                "fn_name": "2772.v237-o451",
+                "fn_id": "2009",
+                "prop": "postBuild",
+                "source_fn_id": "1906"
+            }
+        ]
+    },
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 92,
+        "source": "module.exports",
+        "tainted_params": [
+            "context",
+            "options"
+        ],
+        "params_types": {
+            "context": "any",
+            "options": {
+                "languages": "any"
+            }
+        },
+        "returns": {
+            "source": ".postBuild",
+            "params_types": {
+                "routesPaths": "array",
+                "outDir": "any",
+                "baseUrl": "string"
+            },
+            "tainted_params": [
+                "routesPaths",
+                "outDir",
+                "baseUrl"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "2770.v239-o421",
+                "fn_id": "1906",
+                "source_fn_id": "1906"
+            },
+            {
+                "type": "Method",
+                "fn_name": "2772.v237-o451",
+                "fn_id": "2009",
+                "prop": "postBuild",
+                "source_fn_id": "1906"
+            }
+        ]
+    },
+    {
+        "type": "VFunRetByExport",
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 97,
+        "source": "module.exports",
+        "tainted_params": [
+            "context",
+            "options"
+        ],
+        "params_types": {
+            "context": "any",
+            "options": {
+                "languages": "any"
+            }
+        },
+        "returns": {
+            "source": ".postBuild",
+            "params_types": {
+                "routesPaths": "array",
+                "outDir": "any",
+                "baseUrl": "string"
+            },
+            "tainted_params": [
+                "routesPaths",
+                "outDir",
+                "baseUrl"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "2770.v239-o421",
+                "fn_id": "1906",
+                "source_fn_id": "1906"
+            },
+            {
+                "type": "Method",
+                "fn_name": "2772.v237-o451",
+                "fn_id": "2009",
+                "prop": "postBuild",
+                "source_fn_id": "1906"
+            }
+        ]
+    }
+]

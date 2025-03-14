@@ -1,0 +1,52 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/skn0tt-lambda-local-2.0.3/src/build/lambdalocal.js",
+        "vuln_type": "code-injection",
+        "sink": "lambdaFunc = require(lambdaPath);",
+        "sink_lineno": 295,
+        "source": "module.exports.execute",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": {
+                "callback": "function"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "execute",
+                "fn_name": "11439.execute-o1876",
+                "fn_id": 9991,
+                "source_fn_id": 9991
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/skn0tt-lambda-local-2.0.3/src/build/lambdalocal.js",
+        "vuln_type": "path-traversal",
+        "sink": "var dataRaw = fs.readFileSync(getAbsolutePath(path)), data = dataRaw.toString();",
+        "sink_lineno": 136,
+        "source": "module.exports.execute",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": {
+                "callback": "function"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "execute",
+                "fn_name": "11439.execute-o1876",
+                "fn_id": 9991,
+                "source_fn_id": 9991
+            }
+        ]
+    }
+]

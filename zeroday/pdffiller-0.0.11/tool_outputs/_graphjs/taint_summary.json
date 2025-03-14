@@ -1,0 +1,67 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/pdffiller-0.0.11/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "execFile( \"pdftk\", [sourceFile, \"dump_data_fields_utf8\"], function (error, stdout, stderr) {",
+        "sink_lineno": 60,
+        "source": "module.exports.generateFieldJson",
+        "tainted_params": [
+            "sourceFile",
+            "nameRegex",
+            "callback"
+        ],
+        "params_types": {
+            "sourceFile": "any",
+            "nameRegex": "object",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "generateFieldJson",
+                "fn_name": "1672.v109-o269",
+                "fn_id": "1116",
+                "source_fn_id": "1116"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/pdffiller-0.0.11/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "execFile( \"pdftk\", args, function (error, stdout, stderr) {",
+        "sink_lineno": 120,
+        "source": "module.exports.fillFormWithOptions",
+        "tainted_params": [
+            "sourceFile",
+            "destinationFile",
+            "fieldValues",
+            "shouldFlatten",
+            "tempFDFPath",
+            "callback"
+        ],
+        "params_types": {
+            "sourceFile": "array",
+            "destinationFile": "array",
+            "fieldValues": "any",
+            "shouldFlatten": "any",
+            "tempFDFPath": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "fillFormWithOptions",
+                "fn_name": "1672.v138-o282",
+                "fn_id": "1413",
+                "source_fn_id": "1413"
+            }
+        ]
+    }
+]

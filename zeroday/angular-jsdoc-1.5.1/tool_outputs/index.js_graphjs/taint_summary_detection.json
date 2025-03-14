@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/angular-jsdoc-1.5.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "? spawn(\"cmd\", [\"/C\", cmd + \" \" + args.join(\" \")], { cwd: process.env.PWD, env: process.env})",
+        "sink_lineno": 20
+    },
+    {
+        "filename": "/datasets/zeroday/angular-jsdoc-1.5.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": ": spawn(cmd, args);",
+        "sink_lineno": 21
+    }
+]

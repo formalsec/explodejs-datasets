@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/datasets/zeroday/win-fork-1.1.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return cSpawn(command, args, options);",
+        "sink_lineno": 51
+    },
+    {
+        "filename": "/datasets/zeroday/win-fork-1.1.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var content = fs.readFileSync(file, 'utf8').toString();",
+        "sink_lineno": 84
+    },
+    {
+        "filename": "/datasets/zeroday/win-fork-1.1.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "if (!options.preview) fs.writeFileSync(file, content.replace(/\\r\\n/g, '\\n'), 'utf8');",
+        "sink_lineno": 87
+    }
+]

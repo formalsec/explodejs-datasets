@@ -1,0 +1,50 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/base64topdf-1.1.8/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var bitmap = fs.readFileSync(file);",
+        "sink_lineno": 13,
+        "source": "module.exports.base64Encode",
+        "tainted_params": [
+            "file"
+        ],
+        "params_types": {
+            "file": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "base64Encode",
+                "fn_name": "437.v20-o74",
+                "fn_id": "269",
+                "source_fn_id": "269"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/base64topdf-1.1.8/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(file, bitmap);",
+        "sink_lineno": 26,
+        "source": "module.exports.base64Decode",
+        "tainted_params": [
+            "base64str",
+            "file"
+        ],
+        "params_types": {
+            "base64str": "any",
+            "file": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "base64Decode",
+                "fn_name": "437.v22-o78",
+                "fn_id": "291",
+                "source_fn_id": "291"
+            }
+        ]
+    }
+]

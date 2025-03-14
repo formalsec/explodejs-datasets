@@ -1,0 +1,30 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/filter-css-1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.readFileSync(file, {encoding: 'utf8'});",
+        "sink_lineno": 20,
+        "source": "module.exports",
+        "tainted_params": [
+            "stylesheet",
+            "ignore",
+            "opts"
+        ],
+        "params_types": {
+            "stylesheet": "any",
+            "ignore": {
+                "0": "any"
+            },
+            "opts": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1477.api-o234",
+                "fn_id": 1373,
+                "source_fn_id": 1373
+            }
+        ]
+    }
+]

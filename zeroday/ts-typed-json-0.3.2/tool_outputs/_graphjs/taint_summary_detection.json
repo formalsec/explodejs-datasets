@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/ts-typed-json-0.3.2/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "return parse(fs.readFileSync(path, encoding));",
+        "sink_lineno": 135
+    }
+]

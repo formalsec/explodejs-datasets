@@ -1,0 +1,48 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/aurelia-loader-nodejs-1.1.0/src/dist/commonjs/aurelia-loader-nodejs.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.readFile(filePath, 'utf-8', function (err, text) { return err ? reject(err) : resolve(text); });",
+        "sink_lineno": 57,
+        "source": "module.exports.TextHandler",
+        "tainted_params": [
+            "filePath"
+        ],
+        "params_types": {
+            "filePath": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "TextHandler",
+                "fn_name": "6296.TextHandler-o812",
+                "fn_id": 4686,
+                "source_fn_id": 4686
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/aurelia-loader-nodejs-1.1.0/src/dist/commonjs/aurelia-loader-nodejs.js",
+        "vuln_type": "code-injection",
+        "sink": "return Promise.resolve(require(filePath));",
+        "sink_lineno": 78,
+        "source": "module.exports.advancedRequire",
+        "tainted_params": [
+            "filePath"
+        ],
+        "params_types": {
+            "filePath": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "advancedRequire",
+                "fn_name": "6296.advancedRequire-o836",
+                "fn_id": "4817",
+                "source_fn_id": "4817"
+            }
+        ]
+    }
+]

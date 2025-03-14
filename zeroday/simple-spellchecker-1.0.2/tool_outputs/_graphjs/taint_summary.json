@@ -1,0 +1,100 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simple-spellchecker-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(file_path, 'utf8', function(err, text) {",
+        "sink_lineno": 71,
+        "source": "module.exports._readFile",
+        "tainted_params": [
+            "file_path",
+            "callback"
+        ],
+        "params_types": {
+            "file_path": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "_readFile",
+                "fn_name": "3129.v261-o451",
+                "fn_id": "2484",
+                "source_fn_id": "2484"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simple-spellchecker-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var text = fs.readFileSync(file_path, 'utf8')",
+        "sink_lineno": 93,
+        "source": "module.exports._readFileSync",
+        "tainted_params": [
+            "file_path"
+        ],
+        "params_types": {
+            "file_path": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "_readFileSync",
+                "fn_name": "3129.v267-o454",
+                "fn_id": "2539",
+                "source_fn_id": "2539"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simple-spellchecker-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(inputPath, 'utf8', function(err, content) {",
+        "sink_lineno": 186,
+        "source": "module.exports.normalizeDictionary",
+        "tainted_params": [
+            "inputPath",
+            "outputPath"
+        ],
+        "params_types": {
+            "inputPath": "string",
+            "outputPath": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "normalizeDictionary",
+                "fn_name": "3129.v330-o466",
+                "fn_id": 2801,
+                "source_fn_id": 2801
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simple-spellchecker-1.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(outputPath, newContent, 'utf8', function(err) {",
+        "sink_lineno": 210,
+        "source": "module.exports.normalizeDictionary",
+        "tainted_params": [
+            "inputPath",
+            "outputPath"
+        ],
+        "params_types": {
+            "inputPath": "string",
+            "outputPath": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "normalizeDictionary",
+                "fn_name": "3129.v330-o466",
+                "fn_id": 2801,
+                "source_fn_id": 2801
+            }
+        ]
+    }
+]

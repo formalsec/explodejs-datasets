@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/firstline-2.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const rs = fs.createReadStream(path, {encoding: opts.encoding});",
+        "sink_lineno": 12
+    }
+]

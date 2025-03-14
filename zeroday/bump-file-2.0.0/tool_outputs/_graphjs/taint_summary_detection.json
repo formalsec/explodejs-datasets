@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/bump-file-2.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, 'utf8', (err, data) => {",
+        "sink_lineno": 14
+    },
+    {
+        "filename": "/datasets/zeroday/bump-file-2.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(filePath, Buffer.from(JSON.stringify(json, null, indent) + '\\n'), err => {",
+        "sink_lineno": 48
+    }
+]

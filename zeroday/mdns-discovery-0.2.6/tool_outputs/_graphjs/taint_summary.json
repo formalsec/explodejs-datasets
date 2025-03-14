@@ -1,0 +1,104 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/mdns-discovery-0.2.6/src/mdns-discovery.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (opts[prop] === undefined) opts[prop] = def[prop];",
+        "sink_lineno": 55,
+        "source": "new module.exports",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": "object"
+        },
+        "returns": {
+            "source": ".setOptions",
+            "params_types": {
+                "opts": {
+                    "q": {
+                        "name": "any"
+                    },
+                    "name": "any",
+                    "timeout": {
+                        "_union": [
+                            "function",
+                            "number"
+                        ]
+                    },
+                    "find": "any"
+                }
+            },
+            "tainted_params": [
+                "opts"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "5625.v393-o638",
+                "fn_id": "3296",
+                "source_fn_id": "3296"
+            },
+            {
+                "type": "Method",
+                "prop": "setOptions",
+                "fn_name": "5625.v406-o637",
+                "fn_id": 3479,
+                "source_fn_id": 3479
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/mdns-discovery-0.2.6/src/mdns-discovery.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (!opts[prop]) opts[prop] = [].concat(def[prop]);",
+        "sink_lineno": 48,
+        "source": "new module.exports",
+        "tainted_params": [
+            "opts"
+        ],
+        "params_types": {
+            "opts": "object"
+        },
+        "returns": {
+            "source": ".setOptions",
+            "params_types": {
+                "opts": {
+                    "q": {
+                        "name": "any"
+                    },
+                    "name": "any",
+                    "timeout": {
+                        "_union": [
+                            "function",
+                            "number"
+                        ]
+                    },
+                    "find": "any"
+                }
+            },
+            "tainted_params": [
+                "opts"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "5625.v393-o638",
+                "fn_id": "3296",
+                "source_fn_id": "3296"
+            },
+            {
+                "type": "Method",
+                "prop": "setOptions",
+                "fn_name": "5625.v406-o637",
+                "fn_id": 3479,
+                "source_fn_id": 3479
+            }
+        ]
+    }
+]

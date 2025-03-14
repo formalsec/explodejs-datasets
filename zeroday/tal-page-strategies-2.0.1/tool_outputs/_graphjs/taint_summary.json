@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/tal-page-strategies-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "data: fs.readFileSync(pageStrategyPath).toString()",
+        "sink_lineno": 11,
+        "source": "module.exports.getPageStrategyElement",
+        "tainted_params": [
+            "pageStrategy",
+            "element"
+        ],
+        "params_types": {
+            "pageStrategy": "string",
+            "element": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getPageStrategyElement",
+                "fn_name": "364.getPageStrategyElement-o57",
+                "fn_id": "218",
+                "source_fn_id": "218"
+            }
+        ]
+    }
+]

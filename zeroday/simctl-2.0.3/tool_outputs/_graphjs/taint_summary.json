@@ -1,0 +1,418 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 58,
+        "source": "module.exports.create",
+        "tainted_params": [
+            "name",
+            "deviceTypeId",
+            "runtimeId"
+        ],
+        "params_types": {
+            "name": "any",
+            "deviceTypeId": "any",
+            "runtimeId": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "create",
+                "fn_name": "2588.v124-o411",
+                "fn_id": "1853",
+                "source_fn_id": "1853"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 63,
+        "source": "module.exports.del",
+        "tainted_params": [
+            "device"
+        ],
+        "params_types": {
+            "device": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "del",
+                "fn_name": "2588.v126-o414",
+                "fn_id": "1876",
+                "source_fn_id": "1876"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 68,
+        "source": "module.exports.erase",
+        "tainted_params": [
+            "device"
+        ],
+        "params_types": {
+            "device": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "erase",
+                "fn_name": "2588.v128-o417",
+                "fn_id": "1895",
+                "source_fn_id": "1895"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 73,
+        "source": "module.exports.boot",
+        "tainted_params": [
+            "device"
+        ],
+        "params_types": {
+            "device": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "boot",
+                "fn_name": "2588.v130-o420",
+                "fn_id": "1914",
+                "source_fn_id": "1914"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 78,
+        "source": "module.exports.shutdown",
+        "tainted_params": [
+            "device"
+        ],
+        "params_types": {
+            "device": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "shutdown",
+                "fn_name": "2588.v132-o423",
+                "fn_id": "1933",
+                "source_fn_id": "1933"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 83,
+        "source": "module.exports.rename",
+        "tainted_params": [
+            "device",
+            "name"
+        ],
+        "params_types": {
+            "device": "any",
+            "name": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "rename",
+                "fn_name": "2588.v134-o427",
+                "fn_id": "1952",
+                "source_fn_id": "1952"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 88,
+        "source": "module.exports.getenv",
+        "tainted_params": [
+            "device",
+            "variableName"
+        ],
+        "params_types": {
+            "device": "any",
+            "variableName": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getenv",
+                "fn_name": "2588.v136-o431",
+                "fn_id": "1973",
+                "source_fn_id": "1973"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 93,
+        "source": "module.exports.openurl",
+        "tainted_params": [
+            "device",
+            "url"
+        ],
+        "params_types": {
+            "device": "any",
+            "url": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "openurl",
+                "fn_name": "2588.v138-o435",
+                "fn_id": "1994",
+                "source_fn_id": "1994"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 98,
+        "source": "module.exports.addphoto",
+        "tainted_params": [
+            "device",
+            "path"
+        ],
+        "params_types": {
+            "device": "any",
+            "path": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "addphoto",
+                "fn_name": "2588.v140-o439",
+                "fn_id": "2015",
+                "source_fn_id": "2015"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 103,
+        "source": "module.exports.install",
+        "tainted_params": [
+            "device",
+            "path"
+        ],
+        "params_types": {
+            "device": "any",
+            "path": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "install",
+                "fn_name": "2588.v142-o443",
+                "fn_id": "2036",
+                "source_fn_id": "2036"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 108,
+        "source": "module.exports.uninstall",
+        "tainted_params": [
+            "device",
+            "appIdentifier"
+        ],
+        "params_types": {
+            "device": "any",
+            "appIdentifier": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "uninstall",
+                "fn_name": "2588.v144-o447",
+                "fn_id": "2057",
+                "source_fn_id": "2057"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 126,
+        "source": "module.exports.launch",
+        "tainted_params": [
+            "waitForDebugger",
+            "device",
+            "appIdentifier",
+            "argv"
+        ],
+        "params_types": {
+            "waitForDebugger": "any",
+            "device": "any",
+            "appIdentifier": "any",
+            "argv": {
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "launch",
+                "fn_name": "2588.v152-o453",
+                "fn_id": "2078",
+                "source_fn_id": "2078"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 149,
+        "source": "module.exports.spawn",
+        "tainted_params": [
+            "waitForDebugger",
+            "arch",
+            "device",
+            "pathToExecutable",
+            "argv"
+        ],
+        "params_types": {
+            "waitForDebugger": "any",
+            "arch": "any",
+            "device": "any",
+            "pathToExecutable": "any",
+            "argv": {
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "spawn",
+                "fn_name": "2588.v160-o460",
+                "fn_id": "2153",
+                "source_fn_id": "2153"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 182,
+        "source": "module.exports.notify_post",
+        "tainted_params": [
+            "device",
+            "notificationName"
+        ],
+        "params_types": {
+            "device": "any",
+            "notificationName": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "notify_post",
+                "fn_name": "2588.v176-o467",
+                "fn_id": "2374",
+                "source_fn_id": "2374"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 187,
+        "source": "module.exports.icloud_sync",
+        "tainted_params": [
+            "device"
+        ],
+        "params_types": {
+            "device": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "icloud_sync",
+                "fn_name": "2588.v178-o470",
+                "fn_id": "2395",
+                "source_fn_id": "2395"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 192,
+        "source": "module.exports.help",
+        "tainted_params": [
+            "subcommand"
+        ],
+        "params_types": {
+            "subcommand": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "help",
+                "fn_name": "2588.v180-o473",
+                "fn_id": "2414",
+                "source_fn_id": "2414"
+            }
+        ]
+    }
+]

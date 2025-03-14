@@ -1,0 +1,33 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/os-utils-0.0.14/src/lib/osutils.js",
+        "vuln_type": "command-injection",
+        "sink": "require('child_process').exec(command, function(error, stdout, stderr) {",
+        "sink_lineno": 102,
+        "source": "module.exports.getProcesses",
+        "tainted_params": [
+            "nProcess",
+            "callback"
+        ],
+        "params_types": {
+            "nProcess": {
+                "_union": [
+                    "function",
+                    "number",
+                    "string"
+                ]
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getProcesses",
+                "fn_name": "2322.v202-o340",
+                "fn_id": "1747",
+                "source_fn_id": "1747"
+            }
+        ]
+    }
+]

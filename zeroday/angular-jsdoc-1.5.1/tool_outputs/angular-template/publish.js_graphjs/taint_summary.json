@@ -1,0 +1,122 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/angular-jsdoc-1.5.1/src/angular-template/publish.js",
+        "vuln_type": "path-traversal",
+        "sink": "var sourceCode = require('fs').readFileSync(path.join(el.path, el.filename), 'utf8');",
+        "sink_lineno": 96,
+        "source": "module.exports.publish",
+        "tainted_params": [
+            "data",
+            "opts",
+            "tutorials"
+        ],
+        "params_types": {
+            "data": "function",
+            "opts": {
+                "template": "any",
+                "readme": "any"
+            },
+            "tutorials": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "publish",
+                "fn_name": "4768.v490-o652",
+                "fn_id": 3860,
+                "source_fn_id": 3860
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/angular-jsdoc-1.5.1/src/angular-template/publish.js",
+        "vuln_type": "path-traversal",
+        "sink": "var templateHtml = require('fs').readFileSync(el.filePath, 'utf8');",
+        "sink_lineno": 119,
+        "source": "module.exports.publish",
+        "tainted_params": [
+            "data",
+            "opts",
+            "tutorials"
+        ],
+        "params_types": {
+            "data": "function",
+            "opts": {
+                "template": "any",
+                "readme": "any"
+            },
+            "tutorials": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "publish",
+                "fn_name": "4768.v490-o652",
+                "fn_id": 3860,
+                "source_fn_id": 3860
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/angular-jsdoc-1.5.1/src/angular-template/publish.js",
+        "vuln_type": "path-traversal",
+        "sink": "var markdown = require('fs').readFileSync(el, 'utf8');",
+        "sink_lineno": 143,
+        "source": "module.exports.publish",
+        "tainted_params": [
+            "data",
+            "opts",
+            "tutorials"
+        ],
+        "params_types": {
+            "data": "function",
+            "opts": {
+                "template": "any",
+                "readme": "any"
+            },
+            "tutorials": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "publish",
+                "fn_name": "4768.v490-o652",
+                "fn_id": 3860,
+                "source_fn_id": 3860
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/angular-jsdoc-1.5.1/src/angular-template/publish.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "nav.module[module][group] = nav.module[module][group] || {};",
+        "sink_lineno": 295,
+        "source": "module.exports.publish",
+        "tainted_params": [
+            "data",
+            "opts",
+            "tutorials"
+        ],
+        "params_types": {
+            "data": "function",
+            "opts": {
+                "template": "any",
+                "readme": "any"
+            },
+            "tutorials": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "publish",
+                "fn_name": "4768.v490-o652",
+                "fn_id": 3860,
+                "source_fn_id": 3860
+            }
+        ]
+    }
+]

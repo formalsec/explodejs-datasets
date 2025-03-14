@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/datasets/zeroday/git-node-fs-1.0.0/src/lib/node-fs.js",
+        "vuln_type": "path-traversal",
+        "sink": "nodeFs.readFile(path, function (err, binary) {",
+        "sink_lineno": 18
+    },
+    {
+        "filename": "/datasets/zeroday/git-node-fs-1.0.0/src/lib/node-fs.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = nodeFs.createReadStream(path, {",
+        "sink_lineno": 34
+    },
+    {
+        "filename": "/datasets/zeroday/git-node-fs-1.0.0/src/lib/node-fs.js",
+        "vuln_type": "path-traversal",
+        "sink": "nodeFs.writeFile(path, binary, callback);",
+        "sink_lineno": 96
+    }
+]

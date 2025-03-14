@@ -1,0 +1,28 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/find-git-exec-0.0.4/src/lib/find-git-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = cp.spawn(path, Array.isArray(command) ? command : [command]);",
+        "sink_lineno": 116,
+        "source": "module.exports.default",
+        "tainted_params": [
+            "_a"
+        ],
+        "params_types": {
+            "_a": {
+                "hint": "any",
+                "onLookup": "function"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "default",
+                "fn_name": "4744.default_1-o631",
+                "fn_id": 3680,
+                "source_fn_id": 3680
+            }
+        ]
+    }
+]

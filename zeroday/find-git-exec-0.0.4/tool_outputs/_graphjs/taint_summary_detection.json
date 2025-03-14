@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/find-git-exec-0.0.4/src/lib/find-git-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "var child = cp.spawn(path, Array.isArray(command) ? command : [command]);",
+        "sink_lineno": 116
+    }
+]

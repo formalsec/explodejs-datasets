@@ -1,0 +1,32 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/blakeembrey-template-1.1.0/src/dist/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function(`return (${body});`)();",
+        "sink_lineno": 59,
+        "source": "module.exports.template",
+        "tainted_params": [
+            "value",
+            "displayName"
+        ],
+        "params_types": {
+            "value": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "displayName": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "template",
+                "fn_name": "769.template-o80",
+                "fn_id": "743",
+                "source_fn_id": "743"
+            }
+        ]
+    }
+]

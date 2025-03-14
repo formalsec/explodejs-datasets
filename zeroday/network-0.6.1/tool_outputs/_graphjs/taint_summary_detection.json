@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/network-0.6.1/src/lib/darwin.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function(err, out) {",
+        "sink_lineno": 11
+    }
+]

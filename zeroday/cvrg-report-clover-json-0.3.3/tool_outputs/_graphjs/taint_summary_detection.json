@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/cvrg-report-clover-json-0.3.3/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filePath, \"utf8\", function (err, content) {",
+        "sink_lineno": 109
+    }
+]

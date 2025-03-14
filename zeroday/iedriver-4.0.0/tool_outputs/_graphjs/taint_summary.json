@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/iedriver-4.0.0/src/lib/iedriver.js",
+        "vuln_type": "command-injection",
+        "sink": "exports.defaultInstance = require('child_process').execFile(exports.path, args);",
+        "sink_lineno": 9,
+        "source": "module.exports.start",
+        "tainted_params": [
+            "args"
+        ],
+        "params_types": {
+            "args": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "start",
+                "fn_name": "430.v35-o82",
+                "fn_id": "350",
+                "source_fn_id": "350"
+            }
+        ]
+    }
+]

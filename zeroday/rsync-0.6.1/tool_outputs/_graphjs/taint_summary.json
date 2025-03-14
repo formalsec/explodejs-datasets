@@ -1,0 +1,96 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/rsync-0.6.1/src/rsync.js",
+        "vuln_type": "command-injection",
+        "sink": "cmdProc = spawn('cmd.exe', ['/s', '/c', '\"' + this.command() + '\"'],",
+        "sink_lineno": 502,
+        "source": "new module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": {
+                "executable": "any",
+                "executableShell": "any",
+                "debug": "function"
+            }
+        },
+        "returns": {
+            "source": ".execute",
+            "params_types": {
+                "callback": "function",
+                "stdoutHandler": "any",
+                "stderrHandler": "any"
+            },
+            "tainted_params": [
+                "callback",
+                "stdoutHandler",
+                "stderrHandler"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "6539.v587-o838",
+                "fn_id": "3740",
+                "source_fn_id": "3740"
+            },
+            {
+                "type": "Method",
+                "prop": "execute",
+                "fn_name": "6539.v629-o837",
+                "fn_id": "5335",
+                "source_fn_id": "5335"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/rsync-0.6.1/src/rsync.js",
+        "vuln_type": "command-injection",
+        "sink": "cmdProc = spawn(this._executableShell, ['-c', this.command()],",
+        "sink_lineno": 506,
+        "source": "new module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": {
+                "executable": "any",
+                "executableShell": "any",
+                "debug": "function"
+            }
+        },
+        "returns": {
+            "source": ".execute",
+            "params_types": {
+                "callback": "function",
+                "stdoutHandler": "any",
+                "stderrHandler": "any"
+            },
+            "tainted_params": [
+                "callback",
+                "stdoutHandler",
+                "stderrHandler"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "6539.v587-o838",
+                "fn_id": "3740",
+                "source_fn_id": "3740"
+            },
+            {
+                "type": "Method",
+                "prop": "execute",
+                "fn_name": "6539.v629-o837",
+                "fn_id": "5335",
+                "source_fn_id": "5335"
+            }
+        ]
+    }
+]

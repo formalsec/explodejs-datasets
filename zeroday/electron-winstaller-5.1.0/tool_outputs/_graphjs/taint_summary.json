@@ -1,0 +1,94 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/electron-winstaller-5.1.0/src/lib/index.js",
+        "vuln_type": "command-injection",
+        "sink": "proc = child_process_1.spawn(exe, params, opts);",
+        "sink_lineno": 21,
+        "source": "module.exports.createWindowsInstaller",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "setupIcon": "array",
+                "appDirectory": "array",
+                "remoteReleases": "array",
+                "outputDirectory": "array",
+                "loadingGif": "array",
+                "skipUpdateIcon": "any",
+                "certificateFile": "any",
+                "certificatePassword": "string",
+                "signWithParams": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "remoteToken": "any",
+                "usePackageJson": "any",
+                "noMsi": "any",
+                "noDelta": "any",
+                "frameworkVersion": "any",
+                "fixUpPaths": "any",
+                "setupExe": "any",
+                "setupMsi": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "createWindowsInstaller",
+                "fn_name": "7359.createWindowsInstaller-o928",
+                "fn_id": 5513,
+                "source_fn_id": 5513
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/electron-winstaller-5.1.0/src/lib/index.js",
+        "vuln_type": "command-injection",
+        "sink": "proc = child_process_1.spawn(exe, params);",
+        "sink_lineno": 18,
+        "source": "module.exports.createWindowsInstaller",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "setupIcon": "array",
+                "appDirectory": "array",
+                "remoteReleases": "array",
+                "outputDirectory": "array",
+                "loadingGif": "array",
+                "skipUpdateIcon": "any",
+                "certificateFile": "any",
+                "certificatePassword": "string",
+                "signWithParams": {
+                    "_union": [
+                        "array",
+                        "string"
+                    ]
+                },
+                "remoteToken": "any",
+                "usePackageJson": "any",
+                "noMsi": "any",
+                "noDelta": "any",
+                "frameworkVersion": "any",
+                "fixUpPaths": "any",
+                "setupExe": "any",
+                "setupMsi": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "createWindowsInstaller",
+                "fn_name": "7359.createWindowsInstaller-o928",
+                "fn_id": 5513,
+                "source_fn_id": 5513
+            }
+        ]
+    }
+]

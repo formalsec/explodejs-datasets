@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/rsync-0.6.1/src/rsync.js",
+        "vuln_type": "command-injection",
+        "sink": "cmdProc = spawn('cmd.exe', ['/s', '/c', '\"' + this.command() + '\"'],",
+        "sink_lineno": 502
+    },
+    {
+        "filename": "/datasets/zeroday/rsync-0.6.1/src/rsync.js",
+        "vuln_type": "command-injection",
+        "sink": "cmdProc = spawn(this._executableShell, ['-c', this.command()],",
+        "sink_lineno": 506
+    }
+]

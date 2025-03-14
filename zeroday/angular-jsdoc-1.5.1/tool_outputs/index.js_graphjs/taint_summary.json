@@ -1,0 +1,70 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/angular-jsdoc-1.5.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "? spawn(\"cmd\", [\"/C\", cmd + \" \" + args.join(\" \")], { cwd: process.env.PWD, env: process.env})",
+        "sink_lineno": 20,
+        "source": "module.exports",
+        "tainted_params": [
+            "dirs",
+            "optionsArg",
+            "callback"
+        ],
+        "params_types": {
+            "dirs": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "optionsArg": {
+                "command": "any",
+                "template": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "995.angularJsdoc-o145",
+                "fn_id": 785,
+                "source_fn_id": 785
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/angular-jsdoc-1.5.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": ": spawn(cmd, args);",
+        "sink_lineno": 21,
+        "source": "module.exports",
+        "tainted_params": [
+            "dirs",
+            "optionsArg",
+            "callback"
+        ],
+        "params_types": {
+            "dirs": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "optionsArg": {
+                "command": "any",
+                "template": "any"
+            },
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "995.angularJsdoc-o145",
+                "fn_id": 785,
+                "source_fn_id": 785
+            }
+        ]
+    }
+]

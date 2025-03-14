@@ -1,0 +1,48 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/nx-js-compiler-util-2.0.0/src/dist/cjs.es5.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function('context', 'tempVars', // eslint-disable-line",
+        "sink_lineno": 35,
+        "source": "module.exports.compileRawExpression",
+        "tainted_params": [
+            "src"
+        ],
+        "params_types": {
+            "src": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "compileRawExpression",
+                "fn_name": "2777.compileRawExpression-o344",
+                "fn_id": "1751",
+                "source_fn_id": "1751"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/nx-js-compiler-util-2.0.0/src/dist/cjs.es5.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function('context', 'tempVars', // eslint-disable-line",
+        "sink_lineno": 40,
+        "source": "module.exports.compileRawCode",
+        "tainted_params": [
+            "src"
+        ],
+        "params_types": {
+            "src": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "compileRawCode",
+                "fn_name": "2777.compileRawCode-o347",
+                "fn_id": "1771",
+                "source_fn_id": "1771"
+            }
+        ]
+    }
+]

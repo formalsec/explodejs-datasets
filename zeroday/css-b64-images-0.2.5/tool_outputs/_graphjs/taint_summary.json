@@ -1,0 +1,69 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/css-b64-images-0.2.5/src/lib/css-b64-images.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(cssFile, function(err, css){",
+        "sink_lineno": 71,
+        "source": "module.exports.fromFile",
+        "tainted_params": [
+            "cssFile",
+            "root",
+            "options",
+            "cb"
+        ],
+        "params_types": {
+            "cssFile": "string",
+            "root": "any",
+            "options": {
+                "maxSize": "any"
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "fromFile",
+                "fn_name": "1572.fromFile-o247",
+                "fn_id": "1252",
+                "source_fn_id": "1252"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/css-b64-images-0.2.5/src/lib/css-b64-images.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(imagePath, 'base64', function(err, img){",
+        "sink_lineno": 84,
+        "source": "module.exports.fromString",
+        "tainted_params": [
+            "css",
+            "relativePath",
+            "rootPath",
+            "options",
+            "cb"
+        ],
+        "params_types": {
+            "css": {
+                "replace": "any",
+                "toString": "any"
+            },
+            "relativePath": "any",
+            "rootPath": "any",
+            "options": {
+                "maxSize": "any"
+            },
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "fromString",
+                "fn_name": "1572.fromString-o250",
+                "fn_id": 1033,
+                "source_fn_id": 1033
+            }
+        ]
+    }
+]

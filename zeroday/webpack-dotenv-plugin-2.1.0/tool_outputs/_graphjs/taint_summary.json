@@ -1,0 +1,52 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/webpack-dotenv-plugin-2.1.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.example = dotenv.parse(fs.readFileSync(options.sample));",
+        "sink_lineno": 14,
+        "source": "module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "sample": "any",
+                "path": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "592.DotenvPlugin-o85",
+                "fn_id": "367",
+                "source_fn_id": "367"
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/webpack-dotenv-plugin-2.1.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.env = dotenv.parse(fs.readFileSync(options.path));",
+        "sink_lineno": 17,
+        "source": "module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "sample": "any",
+                "path": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "592.DotenvPlugin-o85",
+                "fn_id": "367",
+                "source_fn_id": "367"
+            }
+        ]
+    }
+]

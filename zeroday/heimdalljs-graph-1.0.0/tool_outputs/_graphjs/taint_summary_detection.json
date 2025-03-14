@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/heimdalljs-graph-1.0.0/src/dist/cjs/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var json = JSON.parse(fs.readFileSync(path, 'UTF8'));",
+        "sink_lineno": 1385
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/webpack-dotenv-plugin-2.1.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.example = dotenv.parse(fs.readFileSync(options.sample));",
+        "sink_lineno": 14
+    },
+    {
+        "filename": "/datasets/zeroday/webpack-dotenv-plugin-2.1.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "this.env = dotenv.parse(fs.readFileSync(options.path));",
+        "sink_lineno": 17
+    }
+]

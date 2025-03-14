@@ -1,0 +1,88 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/win-fork-1.1.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return cSpawn(command, args, options);",
+        "sink_lineno": 51,
+        "source": "module.exports",
+        "tainted_params": [
+            "command",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "args": {
+                "0": "any"
+            },
+            "options": {
+                "env": {
+                    "*": "any"
+                }
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1298.spawn-o154",
+                "fn_id": "772",
+                "source_fn_id": "772"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/win-fork-1.1.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var content = fs.readFileSync(file, 'utf8').toString();",
+        "sink_lineno": 84,
+        "source": "module.exports.transform",
+        "tainted_params": [
+            "file",
+            "options"
+        ],
+        "params_types": {
+            "file": "string",
+            "options": {
+                "preview": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "transform",
+                "fn_name": "1298.transform-o175",
+                "fn_id": "1225",
+                "source_fn_id": "1225"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/win-fork-1.1.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "if (!options.preview) fs.writeFileSync(file, content.replace(/\\r\\n/g, '\\n'), 'utf8');",
+        "sink_lineno": 87,
+        "source": "module.exports.transform",
+        "tainted_params": [
+            "file",
+            "options"
+        ],
+        "params_types": {
+            "file": "string",
+            "options": {
+                "preview": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "transform",
+                "fn_name": "1298.transform-o175",
+                "fn_id": "1225",
+                "source_fn_id": "1225"
+            }
+        ]
+    }
+]

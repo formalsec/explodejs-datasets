@@ -1,0 +1,28 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/config-yaml-1.1.6/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "let content = fs.readFileSync(filePath, encoding);",
+        "sink_lineno": 41,
+        "source": "module.exports",
+        "tainted_params": [
+            "filePath",
+            "options"
+        ],
+        "params_types": {
+            "filePath": "string",
+            "options": {
+                "encoding": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "846.loadConfigurationYaml-o97",
+                "fn_id": "496",
+                "source_fn_id": "496"
+            }
+        ]
+    }
+]

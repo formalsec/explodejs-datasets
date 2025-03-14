@@ -1,0 +1,145 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/broccoli-sri-hash-2.1.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "assetSource = fs.readFileSync(dirname + '/' + file, 'utf8');",
+        "sink_lineno": 117,
+        "source": "new module.exports",
+        "tainted_params": [
+            "inputNodes",
+            "options"
+        ],
+        "params_types": {
+            "inputNodes": {
+                "0": "any"
+            },
+            "options": {
+                "context": "any"
+            }
+        },
+        "returns": {
+            "source": ".readFile",
+            "params_types": {
+                "dirname": "string",
+                "file": "string"
+            },
+            "tainted_params": [
+                "dirname",
+                "file"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "3112.v232-o405",
+                "fn_id": "1840",
+                "source_fn_id": "1840"
+            },
+            {
+                "type": "Method",
+                "prop": "readFile",
+                "fn_name": "3112.readFile-o404",
+                "fn_id": "2295",
+                "source_fn_id": "2295"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/broccoli-sri-hash-2.1.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fileContent = this.addSRI(fs.readFileSync(entry.fullPath, 'utf8'), srcDir);",
+        "sink_lineno": 233,
+        "source": "new module.exports",
+        "tainted_params": [
+            "inputNodes",
+            "options"
+        ],
+        "params_types": {
+            "inputNodes": {
+                "0": "any"
+            },
+            "options": {
+                "context": "any"
+            }
+        },
+        "returns": {
+            "source": ".processHTMLFile",
+            "params_types": {
+                "entry": {
+                    "fullPath": "string",
+                    "relativePath": "string"
+                }
+            },
+            "tainted_params": [
+                "entry"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "3112.v297-o437",
+                "fn_id": "1840",
+                "source_fn_id": "1840"
+            },
+            {
+                "type": "Method",
+                "prop": "processHTMLFile",
+                "fn_name": "3112.processFile-o436",
+                "fn_id": "2854",
+                "source_fn_id": "2854"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/broccoli-sri-hash-2.1.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(fullPath, fileContent);",
+        "sink_lineno": 238,
+        "source": "new module.exports",
+        "tainted_params": [
+            "inputNodes",
+            "options"
+        ],
+        "params_types": {
+            "inputNodes": {
+                "0": "any"
+            },
+            "options": {
+                "context": "any"
+            }
+        },
+        "returns": {
+            "source": ".processHTMLFile",
+            "params_types": {
+                "entry": {
+                    "fullPath": "string",
+                    "relativePath": "string"
+                }
+            },
+            "tainted_params": [
+                "entry"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "3112.v297-o437",
+                "fn_id": "1840",
+                "source_fn_id": "1840"
+            },
+            {
+                "type": "Method",
+                "prop": "processHTMLFile",
+                "fn_name": "3112.processFile-o436",
+                "fn_id": "2854",
+                "source_fn_id": "2854"
+            }
+        ]
+    }
+]

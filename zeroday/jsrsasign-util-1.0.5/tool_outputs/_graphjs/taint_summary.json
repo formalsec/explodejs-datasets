@@ -1,0 +1,192 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/jsrsasign-util-1.0.5/src/lib/jsrsasign-util.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fs=require(\"fs\");var JSONC=require(\"jsonc-parser\");var rs=require(\"jsrsasign\");function readFileUTF8(a){return require(\"fs\").readFileSync(a,\"utf8\")}function readFileHexByBin(a){return rs.rstrtohex(fs.readFileSync(a,\"binary\"))}function readFile(a){return fs.readFileSync(a,\"binary\")}function saveFile(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"binary\")}function saveFileUTF8(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"utf8\")}function saveFileBinByHex(c,a){var b=rs.hextorstr(a);fs.writeFileSync(c,b,\"binary\")}function readJSON(b){var a=fs.readFileSync(b,\"utf8\");var c=JSON.parse(a);return c}function readJSONC(b){var a=fs.readFileSync(b,\"utf8\");var c=JSONC.parse(a);return c}function saveFileJSON(a,b){var c=JSON.stringify(b,null,\"  \");saveFileUTF8(a,c)}function printJSON(a,c){var b=\"\";if(c!=undefined){b=c}console.log(b+JSON.stringify(a,null,\"  \"))};",
+        "sink_lineno": 3,
+        "source": "module.exports.readFileUTF8",
+        "tainted_params": [
+            "a"
+        ],
+        "params_types": {
+            "a": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "readFileUTF8",
+                "fn_name": "700.readFileUTF8-o115",
+                "fn_id": "435",
+                "source_fn_id": "435"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/jsrsasign-util-1.0.5/src/lib/jsrsasign-util.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fs=require(\"fs\");var JSONC=require(\"jsonc-parser\");var rs=require(\"jsrsasign\");function readFileUTF8(a){return require(\"fs\").readFileSync(a,\"utf8\")}function readFileHexByBin(a){return rs.rstrtohex(fs.readFileSync(a,\"binary\"))}function readFile(a){return fs.readFileSync(a,\"binary\")}function saveFile(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"binary\")}function saveFileUTF8(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"utf8\")}function saveFileBinByHex(c,a){var b=rs.hextorstr(a);fs.writeFileSync(c,b,\"binary\")}function readJSON(b){var a=fs.readFileSync(b,\"utf8\");var c=JSON.parse(a);return c}function readJSONC(b){var a=fs.readFileSync(b,\"utf8\");var c=JSONC.parse(a);return c}function saveFileJSON(a,b){var c=JSON.stringify(b,null,\"  \");saveFileUTF8(a,c)}function printJSON(a,c){var b=\"\";if(c!=undefined){b=c}console.log(b+JSON.stringify(a,null,\"  \"))};",
+        "sink_lineno": 3,
+        "source": "module.exports.readFileHexByBin",
+        "tainted_params": [
+            "a"
+        ],
+        "params_types": {
+            "a": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "readFileHexByBin",
+                "fn_name": "700.readFileHexByBin-o118",
+                "fn_id": "452",
+                "source_fn_id": "452"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/jsrsasign-util-1.0.5/src/lib/jsrsasign-util.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fs=require(\"fs\");var JSONC=require(\"jsonc-parser\");var rs=require(\"jsrsasign\");function readFileUTF8(a){return require(\"fs\").readFileSync(a,\"utf8\")}function readFileHexByBin(a){return rs.rstrtohex(fs.readFileSync(a,\"binary\"))}function readFile(a){return fs.readFileSync(a,\"binary\")}function saveFile(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"binary\")}function saveFileUTF8(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"utf8\")}function saveFileBinByHex(c,a){var b=rs.hextorstr(a);fs.writeFileSync(c,b,\"binary\")}function readJSON(b){var a=fs.readFileSync(b,\"utf8\");var c=JSON.parse(a);return c}function readJSONC(b){var a=fs.readFileSync(b,\"utf8\");var c=JSONC.parse(a);return c}function saveFileJSON(a,b){var c=JSON.stringify(b,null,\"  \");saveFileUTF8(a,c)}function printJSON(a,c){var b=\"\";if(c!=undefined){b=c}console.log(b+JSON.stringify(a,null,\"  \"))};",
+        "sink_lineno": 3,
+        "source": "module.exports.readFile",
+        "tainted_params": [
+            "a"
+        ],
+        "params_types": {
+            "a": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "readFile",
+                "fn_name": "700.readFile-o121",
+                "fn_id": "471",
+                "source_fn_id": "471"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/jsrsasign-util-1.0.5/src/lib/jsrsasign-util.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fs=require(\"fs\");var JSONC=require(\"jsonc-parser\");var rs=require(\"jsrsasign\");function readFileUTF8(a){return require(\"fs\").readFileSync(a,\"utf8\")}function readFileHexByBin(a){return rs.rstrtohex(fs.readFileSync(a,\"binary\"))}function readFile(a){return fs.readFileSync(a,\"binary\")}function saveFile(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"binary\")}function saveFileUTF8(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"utf8\")}function saveFileBinByHex(c,a){var b=rs.hextorstr(a);fs.writeFileSync(c,b,\"binary\")}function readJSON(b){var a=fs.readFileSync(b,\"utf8\");var c=JSON.parse(a);return c}function readJSONC(b){var a=fs.readFileSync(b,\"utf8\");var c=JSONC.parse(a);return c}function saveFileJSON(a,b){var c=JSON.stringify(b,null,\"  \");saveFileUTF8(a,c)}function printJSON(a,c){var b=\"\";if(c!=undefined){b=c}console.log(b+JSON.stringify(a,null,\"  \"))};",
+        "sink_lineno": 3,
+        "source": "module.exports.saveFile",
+        "tainted_params": [
+            "c",
+            "b"
+        ],
+        "params_types": {
+            "c": "string",
+            "b": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "saveFile",
+                "fn_name": "700.saveFile-o125",
+                "fn_id": "484",
+                "source_fn_id": "484"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/jsrsasign-util-1.0.5/src/lib/jsrsasign-util.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fs=require(\"fs\");var JSONC=require(\"jsonc-parser\");var rs=require(\"jsrsasign\");function readFileUTF8(a){return require(\"fs\").readFileSync(a,\"utf8\")}function readFileHexByBin(a){return rs.rstrtohex(fs.readFileSync(a,\"binary\"))}function readFile(a){return fs.readFileSync(a,\"binary\")}function saveFile(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"binary\")}function saveFileUTF8(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"utf8\")}function saveFileBinByHex(c,a){var b=rs.hextorstr(a);fs.writeFileSync(c,b,\"binary\")}function readJSON(b){var a=fs.readFileSync(b,\"utf8\");var c=JSON.parse(a);return c}function readJSONC(b){var a=fs.readFileSync(b,\"utf8\");var c=JSONC.parse(a);return c}function saveFileJSON(a,b){var c=JSON.stringify(b,null,\"  \");saveFileUTF8(a,c)}function printJSON(a,c){var b=\"\";if(c!=undefined){b=c}console.log(b+JSON.stringify(a,null,\"  \"))};",
+        "sink_lineno": 3,
+        "source": "module.exports.saveFileUTF8",
+        "tainted_params": [
+            "c",
+            "b"
+        ],
+        "params_types": {
+            "c": "string",
+            "b": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "saveFileUTF8",
+                "fn_name": "700.saveFileUTF8-o129",
+                "fn_id": "503",
+                "source_fn_id": "503"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/jsrsasign-util-1.0.5/src/lib/jsrsasign-util.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fs=require(\"fs\");var JSONC=require(\"jsonc-parser\");var rs=require(\"jsrsasign\");function readFileUTF8(a){return require(\"fs\").readFileSync(a,\"utf8\")}function readFileHexByBin(a){return rs.rstrtohex(fs.readFileSync(a,\"binary\"))}function readFile(a){return fs.readFileSync(a,\"binary\")}function saveFile(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"binary\")}function saveFileUTF8(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"utf8\")}function saveFileBinByHex(c,a){var b=rs.hextorstr(a);fs.writeFileSync(c,b,\"binary\")}function readJSON(b){var a=fs.readFileSync(b,\"utf8\");var c=JSON.parse(a);return c}function readJSONC(b){var a=fs.readFileSync(b,\"utf8\");var c=JSONC.parse(a);return c}function saveFileJSON(a,b){var c=JSON.stringify(b,null,\"  \");saveFileUTF8(a,c)}function printJSON(a,c){var b=\"\";if(c!=undefined){b=c}console.log(b+JSON.stringify(a,null,\"  \"))};",
+        "sink_lineno": 3,
+        "source": "module.exports.saveFileBinByHex",
+        "tainted_params": [
+            "c",
+            "a"
+        ],
+        "params_types": {
+            "c": "string",
+            "a": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "saveFileBinByHex",
+                "fn_name": "700.saveFileBinByHex-o133",
+                "fn_id": "522",
+                "source_fn_id": "522"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/jsrsasign-util-1.0.5/src/lib/jsrsasign-util.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fs=require(\"fs\");var JSONC=require(\"jsonc-parser\");var rs=require(\"jsrsasign\");function readFileUTF8(a){return require(\"fs\").readFileSync(a,\"utf8\")}function readFileHexByBin(a){return rs.rstrtohex(fs.readFileSync(a,\"binary\"))}function readFile(a){return fs.readFileSync(a,\"binary\")}function saveFile(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"binary\")}function saveFileUTF8(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"utf8\")}function saveFileBinByHex(c,a){var b=rs.hextorstr(a);fs.writeFileSync(c,b,\"binary\")}function readJSON(b){var a=fs.readFileSync(b,\"utf8\");var c=JSON.parse(a);return c}function readJSONC(b){var a=fs.readFileSync(b,\"utf8\");var c=JSONC.parse(a);return c}function saveFileJSON(a,b){var c=JSON.stringify(b,null,\"  \");saveFileUTF8(a,c)}function printJSON(a,c){var b=\"\";if(c!=undefined){b=c}console.log(b+JSON.stringify(a,null,\"  \"))};",
+        "sink_lineno": 3,
+        "source": "module.exports.readJSON",
+        "tainted_params": [
+            "b"
+        ],
+        "params_types": {
+            "b": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "readJSON",
+                "fn_name": "700.readJSON-o136",
+                "fn_id": "543",
+                "source_fn_id": "543"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/jsrsasign-util-1.0.5/src/lib/jsrsasign-util.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fs=require(\"fs\");var JSONC=require(\"jsonc-parser\");var rs=require(\"jsrsasign\");function readFileUTF8(a){return require(\"fs\").readFileSync(a,\"utf8\")}function readFileHexByBin(a){return rs.rstrtohex(fs.readFileSync(a,\"binary\"))}function readFile(a){return fs.readFileSync(a,\"binary\")}function saveFile(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"binary\")}function saveFileUTF8(c,b){var a=require(\"fs\");a.writeFileSync(c,b,\"utf8\")}function saveFileBinByHex(c,a){var b=rs.hextorstr(a);fs.writeFileSync(c,b,\"binary\")}function readJSON(b){var a=fs.readFileSync(b,\"utf8\");var c=JSON.parse(a);return c}function readJSONC(b){var a=fs.readFileSync(b,\"utf8\");var c=JSONC.parse(a);return c}function saveFileJSON(a,b){var c=JSON.stringify(b,null,\"  \");saveFileUTF8(a,c)}function printJSON(a,c){var b=\"\";if(c!=undefined){b=c}console.log(b+JSON.stringify(a,null,\"  \"))};",
+        "sink_lineno": 3,
+        "source": "module.exports.readJSONC",
+        "tainted_params": [
+            "b"
+        ],
+        "params_types": {
+            "b": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "readJSONC",
+                "fn_name": "700.readJSONC-o139",
+                "fn_id": "562",
+                "source_fn_id": "562"
+            }
+        ]
+    }
+]

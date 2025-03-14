@@ -1,0 +1,30 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/graphql-mesh-plugin-snapshot-0.95.1/src/cjs/index.js",
+        "vuln_type": "code-injection",
+        "sink": "if (!new Function('env', 'return ' + pluginOptions.if)(cross_helpers_1.process.env)) {",
+        "sink_lineno": 22,
+        "source": "module.exports.default",
+        "tainted_params": [
+            "pluginOptions"
+        ],
+        "params_types": {
+            "pluginOptions": {
+                "if": "any",
+                "apply": "any",
+                "outputDir": "any",
+                "baseDir": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "default",
+                "fn_name": "1158.useSnapshot-o156",
+                "fn_id": "727",
+                "source_fn_id": "727"
+            }
+        ]
+    }
+]

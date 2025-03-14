@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "/datasets/zeroday/prepend-file-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "await pipeline(fs.createReadStream(filename), checkStripBomTransformer, fs.createWriteStream(temporaryFile, {flags: 'a'}));",
+        "sink_lineno": 56
+    },
+    {
+        "filename": "/datasets/zeroday/prepend-file-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fileData = fs.readFileSync(filename);",
+        "sink_lineno": 73
+    },
+    {
+        "filename": "/datasets/zeroday/prepend-file-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(filename, Buffer.concat([Buffer.from(data), Buffer.from(fileData)]));",
+        "sink_lineno": 86
+    },
+    {
+        "filename": "/datasets/zeroday/prepend-file-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(filename, data);",
+        "sink_lineno": 76
+    }
+]

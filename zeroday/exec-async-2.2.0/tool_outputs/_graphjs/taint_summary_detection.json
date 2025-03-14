@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/exec-async-2.2.0/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.execFile(cmd, argsListFromObject(args, opts), opts, function (err, result) {",
+        "sink_lineno": 71
+    }
+]

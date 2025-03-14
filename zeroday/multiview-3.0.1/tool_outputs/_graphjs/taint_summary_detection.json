@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/multiview-3.0.1/src/lib/Spawn.js",
+        "vuln_type": "command-injection",
+        "sink": "spawnedProcess = childProcess.spawn(command, args, options);",
+        "sink_lineno": 17
+    }
+]

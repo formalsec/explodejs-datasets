@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/tal-page-strategies-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "data: fs.readFileSync(pageStrategyPath).toString()",
+        "sink_lineno": 11
+    }
+]

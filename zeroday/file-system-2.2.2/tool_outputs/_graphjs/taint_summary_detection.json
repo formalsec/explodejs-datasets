@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(filename, data, options, callback);",
+        "sink_lineno": 132
+    },
+    {
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(filename, data, options);",
+        "sink_lineno": 144
+    },
+    {
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(srcpath, {",
+        "sink_lineno": 163
+    },
+    {
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "contents = fs.readFileSync(srcpath, options);",
+        "sink_lineno": 190
+    },
+    {
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "contents = fs.readFileSync(srcpath);",
+        "sink_lineno": 200
+    }
+]

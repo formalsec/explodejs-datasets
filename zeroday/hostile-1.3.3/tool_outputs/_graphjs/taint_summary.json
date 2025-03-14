@@ -1,0 +1,56 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/hostile-1.3.3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFileSync(filePath, { encoding: 'utf8' }).split(/\\r?\\n/).forEach(online)",
+        "sink_lineno": 29,
+        "source": "module.exports.getFile",
+        "tainted_params": [
+            "filePath",
+            "preserveFormatting",
+            "cb"
+        ],
+        "params_types": {
+            "filePath": "string",
+            "preserveFormatting": "any",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getFile",
+                "fn_name": "1998.v135-o279",
+                "fn_id": "1220",
+                "source_fn_id": "1220"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/hostile-1.3.3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.createReadStream(filePath, { encoding: 'utf8' })",
+        "sink_lineno": 34,
+        "source": "module.exports.getFile",
+        "tainted_params": [
+            "filePath",
+            "preserveFormatting",
+            "cb"
+        ],
+        "params_types": {
+            "filePath": "string",
+            "preserveFormatting": "any",
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getFile",
+                "fn_name": "1998.v135-o279",
+                "fn_id": "1220",
+                "source_fn_id": "1220"
+            }
+        ]
+    }
+]

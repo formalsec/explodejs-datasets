@@ -1,0 +1,166 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/sync-exec-0.6.2/src/js/sync-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(cmd, options, function() {});",
+        "sink_lineno": 44,
+        "source": "module.exports",
+        "tainted_params": [
+            "cmd",
+            "max_wait",
+            "options"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "max_wait": {
+                "_union": [
+                    "number",
+                    "object"
+                ]
+            },
+            "options": {
+                "encoding": "any",
+                "timeout": "function",
+                "max_wait": {
+                    "_union": [
+                        "number",
+                        "object"
+                    ]
+                },
+                "forceEmulation": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1728.v160-o288",
+                "fn_id": "1430",
+                "source_fn_id": "1430"
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/sync-exec-0.6.2/src/js/sync-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "stdout = child_process.execSync(cmd, options);",
+        "sink_lineno": 16,
+        "source": "module.exports",
+        "tainted_params": [
+            "cmd",
+            "max_wait",
+            "options"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "max_wait": {
+                "_union": [
+                    "number",
+                    "object"
+                ]
+            },
+            "options": {
+                "encoding": "any",
+                "timeout": "function",
+                "max_wait": {
+                    "_union": [
+                        "number",
+                        "object"
+                    ]
+                },
+                "forceEmulation": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1728.v160-o288",
+                "fn_id": 1430,
+                "source_fn_id": 1430
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/sync-exec-0.6.2/src/js/sync-exec.js",
+        "vuln_type": "path-traversal",
+        "sink": "result[pipe] = fs.readFileSync(dir + '/' + pipe, {",
+        "sink_lineno": 31,
+        "source": "module.exports",
+        "tainted_params": [
+            "cmd",
+            "max_wait",
+            "options"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "max_wait": {
+                "_union": [
+                    "number",
+                    "object"
+                ]
+            },
+            "options": {
+                "encoding": "any",
+                "timeout": "function",
+                "max_wait": {
+                    "_union": [
+                        "number",
+                        "object"
+                    ]
+                },
+                "forceEmulation": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1728.v160-o288",
+                "fn_id": 1430,
+                "source_fn_id": 1430
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/sync-exec-0.6.2/src/js/sync-exec.js",
+        "vuln_type": "path-traversal",
+        "sink": "if (fs.readFileSync(dir + '/done').length) {",
+        "sink_lineno": 14,
+        "source": "module.exports",
+        "tainted_params": [
+            "cmd",
+            "max_wait",
+            "options"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "max_wait": {
+                "_union": [
+                    "number",
+                    "object"
+                ]
+            },
+            "options": {
+                "encoding": "any",
+                "timeout": "function",
+                "max_wait": {
+                    "_union": [
+                        "number",
+                        "object"
+                    ]
+                },
+                "forceEmulation": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1728.v160-o288",
+                "fn_id": 1430,
+                "source_fn_id": 1430
+            }
+        ]
+    }
+]

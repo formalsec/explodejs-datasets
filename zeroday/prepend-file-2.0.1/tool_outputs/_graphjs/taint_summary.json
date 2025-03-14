@@ -1,0 +1,101 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/prepend-file-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "await pipeline(fs.createReadStream(filename), checkStripBomTransformer, fs.createWriteStream(temporaryFile, {flags: 'a'}));",
+        "sink_lineno": 56,
+        "source": "module.exports",
+        "tainted_params": [
+            "filename",
+            "data"
+        ],
+        "params_types": {
+            "filename": "string",
+            "data": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1071.v84-o157",
+                "fn_id": "707",
+                "source_fn_id": "707"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/prepend-file-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fileData = fs.readFileSync(filename);",
+        "sink_lineno": 73,
+        "source": "module.exports.sync",
+        "tainted_params": [
+            "filename",
+            "data"
+        ],
+        "params_types": {
+            "filename": "string",
+            "data": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "sync",
+                "fn_name": "1071.v98-o163",
+                "fn_id": "952",
+                "source_fn_id": "952"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/prepend-file-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(filename, Buffer.concat([Buffer.from(data), Buffer.from(fileData)]));",
+        "sink_lineno": 86,
+        "source": "module.exports.sync",
+        "tainted_params": [
+            "filename",
+            "data"
+        ],
+        "params_types": {
+            "filename": "string",
+            "data": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "sync",
+                "fn_name": "1071.v98-o163",
+                "fn_id": "952",
+                "source_fn_id": "952"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/prepend-file-2.0.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(filename, data);",
+        "sink_lineno": 76,
+        "source": "module.exports.sync",
+        "tainted_params": [
+            "filename",
+            "data"
+        ],
+        "params_types": {
+            "filename": "string",
+            "data": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "sync",
+                "fn_name": "1071.v98-o163",
+                "fn_id": "952",
+                "source_fn_id": "952"
+            }
+        ]
+    }
+]

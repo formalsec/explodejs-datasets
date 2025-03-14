@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/kitx-2.1.0/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var content = fs.readFileSync(filename, 'utf8');",
+        "sink_lineno": 15
+    }
+]

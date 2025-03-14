@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "/datasets/zeroday/gh-markdown-cli-0.2.0/src/mdown.js",
+        "vuln_type": "path-traversal",
+        "sink": "var content = exports.toHTML(_fs.readFileSync(filePath, opts.encoding), opts);",
+        "sink_lineno": 24
+    },
+    {
+        "filename": "/datasets/zeroday/gh-markdown-cli-0.2.0/src/mdown.js",
+        "vuln_type": "path-traversal",
+        "sink": "_fs.writeFileSync(distPath, content, opts.encoding);",
+        "sink_lineno": 58
+    },
+    {
+        "filename": "/datasets/zeroday/gh-markdown-cli-0.2.0/src/mdown.js",
+        "vuln_type": "path-traversal",
+        "sink": "header = opts.header? _fs.readFileSync(opts.header, opts.encoding) : '';",
+        "sink_lineno": 66
+    },
+    {
+        "filename": "/datasets/zeroday/gh-markdown-cli-0.2.0/src/mdown.js",
+        "vuln_type": "path-traversal",
+        "sink": "footer = opts.footer? _fs.readFileSync(opts.footer, opts.encoding) : '';",
+        "sink_lineno": 67
+    }
+]

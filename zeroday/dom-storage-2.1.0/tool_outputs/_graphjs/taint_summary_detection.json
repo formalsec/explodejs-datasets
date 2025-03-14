@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/dom-storage-2.1.0/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "db = JSON.parse(fs.readFileSync(path));",
+        "sink_lineno": 38
+    },
+    {
+        "filename": "/datasets/zeroday/dom-storage-2.1.0/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(",
+        "sink_lineno": 108
+    }
+]

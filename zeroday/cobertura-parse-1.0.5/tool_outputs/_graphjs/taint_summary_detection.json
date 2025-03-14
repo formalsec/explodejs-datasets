@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/cobertura-parse-1.0.5/src/source/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile( file, \"utf8\", function ( err, content )",
+        "sink_lineno": 138
+    }
+]

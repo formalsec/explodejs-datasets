@@ -1,0 +1,84 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/node-exiftool-2.3.0/src/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.exec(`taskkill /t /F /PID ${proc.pid}`)",
+        "sink_lineno": 208,
+        "source": "new module.exports",
+        "tainted_params": [
+            "bin"
+        ],
+        "params_types": {
+            "bin": "string"
+        },
+        "returns": {
+            "source": ".open",
+            "params_types": {
+                "encoding": "any",
+                "options": "any"
+            },
+            "tainted_params": [
+                "encoding",
+                "options"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "4176.ExiftoolProcess-o817",
+                "fn_id": "3399",
+                "source_fn_id": "3399"
+            },
+            {
+                "type": "Method",
+                "prop": "open",
+                "fn_name": "4176.open-o816",
+                "fn_id": 3535,
+                "source_fn_id": 3535
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/node-exiftool-2.3.0/src/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "const proc = cp.spawn(bin, ['-echo2', echoString, '-stay_open', 'True', '-@', '-'], options)",
+        "sink_lineno": 159,
+        "source": "new module.exports",
+        "tainted_params": [
+            "bin"
+        ],
+        "params_types": {
+            "bin": "string"
+        },
+        "returns": {
+            "source": ".open",
+            "params_types": {
+                "encoding": "any",
+                "options": "any"
+            },
+            "tainted_params": [
+                "encoding",
+                "options"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "4176.ExiftoolProcess-o817",
+                "fn_id": "3399",
+                "source_fn_id": "3399"
+            },
+            {
+                "type": "Method",
+                "prop": "open",
+                "fn_name": "4176.open-o816",
+                "fn_id": 3535,
+                "source_fn_id": 3535
+            }
+        ]
+    }
+]

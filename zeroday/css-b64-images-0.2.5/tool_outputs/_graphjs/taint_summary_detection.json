@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/css-b64-images-0.2.5/src/lib/css-b64-images.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(cssFile, function(err, css){",
+        "sink_lineno": 71
+    },
+    {
+        "filename": "/datasets/zeroday/css-b64-images-0.2.5/src/lib/css-b64-images.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(imagePath, 'base64', function(err, img){",
+        "sink_lineno": 84
+    }
+]

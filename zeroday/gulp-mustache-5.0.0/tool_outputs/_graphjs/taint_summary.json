@@ -1,0 +1,157 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "view = JSON.parse(fs.readFileSync(view, 'utf8'))",
+        "sink_lineno": 24,
+        "source": "module.exports",
+        "tainted_params": [
+            "view",
+            "options",
+            "partials"
+        ],
+        "params_types": {
+            "view": "string",
+            "options": {
+                "tags": "any",
+                "extension": "any"
+            },
+            "partials": {
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1395.v133-o170",
+                "fn_id": "825",
+                "source_fn_id": "825"
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "partial = fs.readFileSync(partialPath, 'utf8')",
+        "sink_lineno": 95,
+        "source": "module.exports",
+        "tainted_params": [
+            "view",
+            "options",
+            "partials"
+        ],
+        "params_types": {
+            "view": "string",
+            "options": {
+                "tags": "any",
+                "extension": "any"
+            },
+            "partials": {
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1395.v133-o170",
+                "fn_id": 825,
+                "source_fn_id": 825
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "partial = fs.readFileSync(partialPath, 'utf8')",
+        "sink_lineno": 104,
+        "source": "module.exports",
+        "tainted_params": [
+            "view",
+            "options",
+            "partials"
+        ],
+        "params_types": {
+            "view": "string",
+            "options": {
+                "tags": "any",
+                "extension": "any"
+            },
+            "partials": {
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1395.v133-o170",
+                "fn_id": 825,
+                "source_fn_id": 825
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "partial = fs.readFileSync(partialPath, 'utf8')",
+        "sink_lineno": 118,
+        "source": "module.exports",
+        "tainted_params": [
+            "view",
+            "options",
+            "partials"
+        ],
+        "params_types": {
+            "view": "string",
+            "options": {
+                "tags": "any",
+                "extension": "any"
+            },
+            "partials": {
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1395.v133-o170",
+                "fn_id": 825,
+                "source_fn_id": 825
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/gulp-mustache-5.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "partial = fs.readFileSync(partialPath, 'utf8')",
+        "sink_lineno": 131,
+        "source": "module.exports",
+        "tainted_params": [
+            "view",
+            "options",
+            "partials"
+        ],
+        "params_types": {
+            "view": "string",
+            "options": {
+                "tags": "any",
+                "extension": "any"
+            },
+            "partials": {
+                "*": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1395.v133-o170",
+                "fn_id": 825,
+                "source_fn_id": 825
+            }
+        ]
+    }
+]

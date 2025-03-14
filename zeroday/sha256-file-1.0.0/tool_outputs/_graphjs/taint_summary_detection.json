@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/sha256-file-1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fileStream = fs.createReadStream(filename);",
+        "sink_lineno": 9
+    },
+    {
+        "filename": "/datasets/zeroday/sha256-file-1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "sum.update(fs.readFileSync(filename));",
+        "sink_lineno": 24
+    }
+]

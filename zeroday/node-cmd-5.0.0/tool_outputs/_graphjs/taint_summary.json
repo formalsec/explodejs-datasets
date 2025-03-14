@@ -1,0 +1,50 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/node-cmd-5.0.0/src/cmd.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(",
+        "sink_lineno": 10,
+        "source": "module.exports.run",
+        "tainted_params": [
+            "command",
+            "callback"
+        ],
+        "params_types": {
+            "command": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "run",
+                "fn_name": "385.runCommand-o65",
+                "fn_id": "257",
+                "source_fn_id": "257"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/node-cmd-5.0.0/src/cmd.js",
+        "vuln_type": "command-injection",
+        "sink": "data:   execSync(command).toString(), ",
+        "sink_lineno": 28,
+        "source": "module.exports.runSync",
+        "tainted_params": [
+            "command"
+        ],
+        "params_types": {
+            "command": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "runSync",
+                "fn_name": "385.runSync-o68",
+                "fn_id": "299",
+                "source_fn_id": "299"
+            }
+        ]
+    }
+]

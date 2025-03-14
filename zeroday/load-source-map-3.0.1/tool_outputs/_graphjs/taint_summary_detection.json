@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/load-source-map-3.0.1/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filename, READ_FILE_OPTS, function (err, sourceFile) {",
+        "sink_lineno": 12
+    },
+    {
+        "filename": "/datasets/zeroday/load-source-map-3.0.1/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(sourceMapUrl, READ_FILE_OPTS, onMapRead)",
+        "sink_lineno": 29
+    }
+]

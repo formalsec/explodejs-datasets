@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/executioner-2.0.1/src/lib/execute.js",
+        "vuln_type": "command-injection",
+        "sink": "collector._process = exec(cmd, options, function(err, stdout, stderr)",
+        "sink_lineno": 17
+    }
+]

@@ -1,0 +1,284 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/toggle-array-1.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "ele[prop] = !init;",
+        "sink_lineno": 19,
+        "source": "new module.exports",
+        "tainted_params": [
+            "arr",
+            "prop",
+            "idx"
+        ],
+        "params_types": {
+            "arr": "object",
+            "prop": "string",
+            "idx": "string"
+        },
+        "returns": {
+            "source": ".enable",
+            "params_types": {
+                "arr": "object",
+                "prop": "string",
+                "i": "string"
+            },
+            "tainted_params": [
+                "arr",
+                "prop",
+                "i"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "466.toggle-o72",
+                "fn_id": "278",
+                "source_fn_id": "278"
+            },
+            {
+                "type": "Method",
+                "prop": "enable",
+                "fn_name": "466.v32-o71",
+                "fn_id": 382,
+                "source_fn_id": 382
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/toggle-array-1.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "ele[prop] = !init;",
+        "sink_lineno": 19,
+        "source": "new module.exports",
+        "tainted_params": [
+            "arr",
+            "prop",
+            "idx"
+        ],
+        "params_types": {
+            "arr": "object",
+            "prop": "string",
+            "idx": "string"
+        },
+        "returns": {
+            "source": ".disable",
+            "params_types": {
+                "arr": "object",
+                "prop": "string",
+                "i": "string"
+            },
+            "tainted_params": [
+                "arr",
+                "prop",
+                "i"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "466.toggle-o79",
+                "fn_id": "278",
+                "source_fn_id": "278"
+            },
+            {
+                "type": "Method",
+                "prop": "disable",
+                "fn_name": "466.v34-o78",
+                "fn_id": 403,
+                "source_fn_id": 403
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/toggle-array-1.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "ele[prop] = !!init;",
+        "sink_lineno": 17,
+        "source": "new module.exports",
+        "tainted_params": [
+            "arr",
+            "prop",
+            "idx"
+        ],
+        "params_types": {
+            "arr": "object",
+            "prop": "string",
+            "idx": "string"
+        },
+        "returns": {
+            "source": ".enable",
+            "params_types": {
+                "arr": "object",
+                "prop": "string",
+                "i": "string"
+            },
+            "tainted_params": [
+                "arr",
+                "prop",
+                "i"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "466.toggle-o72",
+                "fn_id": "278",
+                "source_fn_id": "278"
+            },
+            {
+                "type": "Method",
+                "prop": "enable",
+                "fn_name": "466.v32-o71",
+                "fn_id": 382,
+                "source_fn_id": 382
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/toggle-array-1.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "ele[prop] = !!init;",
+        "sink_lineno": 17,
+        "source": "new module.exports",
+        "tainted_params": [
+            "arr",
+            "prop",
+            "idx"
+        ],
+        "params_types": {
+            "arr": "object",
+            "prop": "string",
+            "idx": "string"
+        },
+        "returns": {
+            "source": ".disable",
+            "params_types": {
+                "arr": "object",
+                "prop": "string",
+                "i": "string"
+            },
+            "tainted_params": [
+                "arr",
+                "prop",
+                "i"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "466.toggle-o79",
+                "fn_id": "278",
+                "source_fn_id": "278"
+            },
+            {
+                "type": "Method",
+                "prop": "disable",
+                "fn_name": "466.v34-o78",
+                "fn_id": 403,
+                "source_fn_id": 403
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/toggle-array-1.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (isObject(arr[i])) arr[i][prop] = init;",
+        "sink_lineno": 34,
+        "source": "new module.exports",
+        "tainted_params": [
+            "arr",
+            "prop",
+            "idx"
+        ],
+        "params_types": {
+            "arr": "object",
+            "prop": "string",
+            "idx": "string"
+        },
+        "returns": {
+            "source": ".enable",
+            "params_types": {
+                "arr": "object",
+                "prop": "string",
+                "i": "string"
+            },
+            "tainted_params": [
+                "arr",
+                "prop",
+                "i"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "466.toggle-o72",
+                "fn_id": "278",
+                "source_fn_id": "278"
+            },
+            {
+                "type": "Method",
+                "prop": "enable",
+                "fn_name": "466.v32-o71",
+                "fn_id": 382,
+                "source_fn_id": 382
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/toggle-array-1.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (isObject(arr[i])) arr[i][prop] = init;",
+        "sink_lineno": 34,
+        "source": "new module.exports",
+        "tainted_params": [
+            "arr",
+            "prop",
+            "idx"
+        ],
+        "params_types": {
+            "arr": "object",
+            "prop": "string",
+            "idx": "string"
+        },
+        "returns": {
+            "source": ".disable",
+            "params_types": {
+                "arr": "object",
+                "prop": "string",
+                "i": "string"
+            },
+            "tainted_params": [
+                "arr",
+                "prop",
+                "i"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "466.toggle-o79",
+                "fn_id": "278",
+                "source_fn_id": "278"
+            },
+            {
+                "type": "Method",
+                "prop": "disable",
+                "fn_name": "466.v34-o78",
+                "fn_id": 403,
+                "source_fn_id": 403
+            }
+        ]
+    }
+]

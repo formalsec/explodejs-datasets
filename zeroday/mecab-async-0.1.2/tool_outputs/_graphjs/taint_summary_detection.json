@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/mecab-async-0.1.2/src/mecab.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(this._shellCommand(str), this.options, (err, result) => {",
+        "sink_lineno": 49
+    },
+    {
+        "filename": "/datasets/zeroday/mecab-async-0.1.2/src/mecab.js",
+        "vuln_type": "command-injection",
+        "sink": "const result = execSync(this._shellCommand(str), this.options);",
+        "sink_lineno": 56
+    }
+]

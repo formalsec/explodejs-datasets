@@ -1,0 +1,149 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(filename, data, options, callback);",
+        "sink_lineno": 132,
+        "source": "module.exports.writeFile",
+        "tainted_params": [
+            "filename",
+            "data",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "filename": "string",
+            "data": "any",
+            "options": "any",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "writeFile",
+                "fn_name": "2819.v152-o397",
+                "fn_id": 2016,
+                "source_fn_id": 2016
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(filename, data, options);",
+        "sink_lineno": 144,
+        "source": "module.exports.writeFileSync",
+        "tainted_params": [
+            "filename",
+            "data",
+            "options"
+        ],
+        "params_types": {
+            "filename": "string",
+            "data": "any",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "writeFileSync",
+                "fn_name": "2819.v155-o404",
+                "fn_id": "2075",
+                "source_fn_id": "2075"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(srcpath, {",
+        "sink_lineno": 163,
+        "source": "module.exports.copyFile",
+        "tainted_params": [
+            "srcpath",
+            "destpath",
+            "options"
+        ],
+        "params_types": {
+            "srcpath": "string",
+            "destpath": "string",
+            "options": {
+                "process": "any",
+                "encoding": "any",
+                "done": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "copyFile",
+                "fn_name": "2819.v170-o411",
+                "fn_id": "2111",
+                "source_fn_id": "2111"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "contents = fs.readFileSync(srcpath, options);",
+        "sink_lineno": 190,
+        "source": "module.exports.copyFileSync",
+        "tainted_params": [
+            "srcpath",
+            "destpath",
+            "options"
+        ],
+        "params_types": {
+            "srcpath": "string",
+            "destpath": "string",
+            "options": {
+                "process": "any",
+                "relative": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "copyFileSync",
+                "fn_name": "2819.v181-o418",
+                "fn_id": "2231",
+                "source_fn_id": "2231"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/file-system-2.2.2/src/file-system.js",
+        "vuln_type": "path-traversal",
+        "sink": "contents = fs.readFileSync(srcpath);",
+        "sink_lineno": 200,
+        "source": "module.exports.copyFileSync",
+        "tainted_params": [
+            "srcpath",
+            "destpath",
+            "options"
+        ],
+        "params_types": {
+            "srcpath": "string",
+            "destpath": "string",
+            "options": {
+                "process": "any",
+                "relative": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "copyFileSync",
+                "fn_name": "2819.v181-o418",
+                "fn_id": "2231",
+                "source_fn_id": "2231"
+            }
+        ]
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/os-utils-0.0.14/src/lib/osutils.js",
+        "vuln_type": "command-injection",
+        "sink": "require('child_process').exec(command, function(error, stdout, stderr) {",
+        "sink_lineno": 102
+    }
+]

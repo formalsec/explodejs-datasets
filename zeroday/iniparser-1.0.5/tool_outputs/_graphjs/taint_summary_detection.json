@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/iniparser-1.0.5/src/lib/node-iniparser.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(file, 'utf8', function(err, data){",
+        "sink_lineno": 28
+    },
+    {
+        "filename": "/datasets/zeroday/iniparser-1.0.5/src/lib/node-iniparser.js",
+        "vuln_type": "path-traversal",
+        "sink": "return parse(fs.readFileSync(file, 'utf8'));",
+        "sink_lineno": 38
+    }
+]

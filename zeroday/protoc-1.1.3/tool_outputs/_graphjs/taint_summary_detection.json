@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/protoc-1.1.3/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.execFile(protoc, args, options, callback);",
+        "sink_lineno": 11
+    },
+    {
+        "filename": "/datasets/zeroday/protoc-1.1.3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "\"contents\": fs.readFileSync(path.join(jsFile, match))",
+        "sink_lineno": 112
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 79
+    },
+    {
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 84
+    },
+    {
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 92
+    },
+    {
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 97
+    },
+    {
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/utils.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFileSync(lunrClientPath, lunrClient);",
+        "sink_lineno": 43
+    },
+    {
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/utils.js",
+        "vuln_type": "code-injection",
+        "sink": "require(`lunr-languages/lunr.${language}`)(lunr);",
+        "sink_lineno": 36
+    },
+    {
+        "filename": "/datasets/zeroday/docusaurus-lunr-search-2.3.2/src/src/utils.js",
+        "vuln_type": "code-injection",
+        "sink": "require(`lunr-languages/lunr.${code}`)(lunr);",
+        "sink_lineno": 30
+    }
+]

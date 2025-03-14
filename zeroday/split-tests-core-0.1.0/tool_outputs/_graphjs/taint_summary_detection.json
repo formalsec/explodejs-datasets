@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/split-tests-core-0.1.0/src/index.cjs.js",
+        "vuln_type": "path-traversal",
+        "sink": "const junitRaw = fs.readFileSync(file, \"utf-8\");",
+        "sink_lineno": 36
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/network-0.6.1/src/lib/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function(err, out) {",
+        "sink_lineno": 11,
+        "source": "module.exports.get_active_interface",
+        "tainted_params": [
+            "cb"
+        ],
+        "params_types": {
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "get_active_interface",
+                "fn_name": "4558.v482-o905",
+                "fn_id": 4378,
+                "source_fn_id": 4378
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/network-0.6.1/src/lib/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function(err, out) {",
+        "sink_lineno": 11,
+        "source": "module.exports.get_gateway_ip",
+        "tainted_params": [
+            "cb"
+        ],
+        "params_types": {
+            "cb": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "get_gateway_ip",
+                "fn_name": "4558.v459-o900",
+                "fn_id": 4253,
+                "source_fn_id": 4253
+            }
+        ]
+    }
+]

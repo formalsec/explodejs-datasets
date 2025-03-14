@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/hostile-1.3.3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFileSync(filePath, { encoding: 'utf8' }).split(/\\r?\\n/).forEach(online)",
+        "sink_lineno": 29
+    },
+    {
+        "filename": "/datasets/zeroday/hostile-1.3.3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.createReadStream(filePath, { encoding: 'utf8' })",
+        "sink_lineno": 34
+    }
+]

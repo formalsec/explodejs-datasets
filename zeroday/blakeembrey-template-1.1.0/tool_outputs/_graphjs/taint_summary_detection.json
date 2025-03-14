@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/blakeembrey-template-1.1.0/src/dist/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function(`return (${body});`)();",
+        "sink_lineno": 59
+    }
+]

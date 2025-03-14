@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/can-npm-publish-1.3.6/src/lib/can-npm-publish.js",
+        "vuln_type": "code-injection",
+        "sink": "return Promise.resolve(require(filePathOrDirPath));",
+        "sink_lineno": 16
+    },
+    {
+        "filename": "/datasets/zeroday/can-npm-publish-1.3.6/src/lib/can-npm-publish.js",
+        "vuln_type": "command-injection",
+        "sink": "const view = spawn(\"npm\", [\"view\", packageName, \"versions\", \"--json\"].concat(registryArgs));",
+        "sink_lineno": 73
+    }
+]

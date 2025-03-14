@@ -1,0 +1,66 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/hull.js-1.0.3/src/src/hull.js",
+        "vuln_type": "code-injection",
+        "sink": "const _getObj = new Function('pt', 'const o = {}; o' + format[0] + '= pt[0]; o' + format[1] + '= pt[1]; return o;');",
+        "sink_lineno": 20,
+        "source": "module.exports",
+        "tainted_params": [
+            "pointset",
+            "concavity",
+            "format"
+        ],
+        "params_types": {
+            "pointset": {
+                "_union": [
+                    "Object",
+                    "array",
+                    "string"
+                ]
+            },
+            "concavity": "any",
+            "format": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "4967.hull-o741",
+                "fn_id": 4745,
+                "source_fn_id": 4745
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/hull.js-1.0.3/src/src/hull.js",
+        "vuln_type": "code-injection",
+        "sink": "const _getXY = new Function('pt', 'return [pt' + format[0] + ',' + 'pt' + format[1] + '];');",
+        "sink_lineno": 9,
+        "source": "module.exports",
+        "tainted_params": [
+            "pointset",
+            "concavity",
+            "format"
+        ],
+        "params_types": {
+            "pointset": {
+                "_union": [
+                    "Object",
+                    "array",
+                    "string"
+                ]
+            },
+            "concavity": "any",
+            "format": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "4967.hull-o741",
+                "fn_id": 4745,
+                "source_fn_id": 4745
+            }
+        ]
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/filter-css-1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "return fs.readFileSync(file, {encoding: 'utf8'});",
+        "sink_lineno": 20
+    }
+]

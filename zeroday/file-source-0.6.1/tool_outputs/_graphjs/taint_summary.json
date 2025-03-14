@@ -1,0 +1,28 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/file-source-0.6.1/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var f = fs.createReadStream(path, {highWaterMark: highWaterMark});",
+        "sink_lineno": 8,
+        "source": "module.exports",
+        "tainted_params": [
+            "path",
+            "options"
+        ],
+        "params_types": {
+            "path": "string",
+            "options": {
+                "highWaterMark": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "240.v24-o41",
+                "fn_id": 152,
+                "source_fn_id": 152
+            }
+        ]
+    }
+]

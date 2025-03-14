@@ -1,0 +1,79 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/dom-storage-2.1.0/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "db = JSON.parse(fs.readFileSync(path));",
+        "sink_lineno": 38,
+        "source": "module.exports",
+        "tainted_params": [
+            "path",
+            "opts"
+        ],
+        "params_types": {
+            "path": {
+                "_union": [
+                    "object",
+                    "string"
+                ]
+            },
+            "opts": {
+                "strict": "any",
+                "ws": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1453.Storage-o168",
+                "fn_id": "834",
+                "source_fn_id": "834"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/dom-storage-2.1.0/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.writeFile(",
+        "sink_lineno": 108,
+        "source": "new module.exports",
+        "tainted_params": [
+            "path",
+            "opts"
+        ],
+        "params_types": {
+            "path": {
+                "_union": [
+                    "object",
+                    "string"
+                ]
+            },
+            "opts": {
+                "strict": "any",
+                "ws": "any"
+            }
+        },
+        "returns": {
+            "source": ".___save___",
+            "params_types": {},
+            "tainted_params": []
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "1453.v137-o202",
+                "fn_id": "834",
+                "source_fn_id": "834"
+            },
+            {
+                "type": "Method",
+                "prop": "___save___",
+                "fn_name": "1453.v160-o201",
+                "fn_id": "1246",
+                "source_fn_id": "1246"
+            }
+        ]
+    }
+]

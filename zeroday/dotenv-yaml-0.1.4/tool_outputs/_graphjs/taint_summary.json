@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/dotenv-yaml-0.1.4/src/lib/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const result = yaml.load(fs.readFileSync(path, { encoding: encoding }));",
+        "sink_lineno": 7,
+        "source": "module.exports.parse",
+        "tainted_params": [
+            "path",
+            "encoding"
+        ],
+        "params_types": {
+            "path": "string",
+            "encoding": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parse",
+                "fn_name": "450.parse-o61",
+                "fn_id": "271",
+                "source_fn_id": "271"
+            }
+        ]
+    }
+]

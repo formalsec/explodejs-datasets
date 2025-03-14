@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/find-config-1.0.0/src/src/find-config.js",
+        "vuln_type": "path-traversal",
+        "sink": "return filepath && fsReadFileSync(filepath, {",
+        "sink_lineno": 118
+    },
+    {
+        "filename": "/datasets/zeroday/find-config-1.0.0/src/src/find-config.js",
+        "vuln_type": "code-injection",
+        "sink": "return filepath && require(filepath);",
+        "sink_lineno": 134
+    }
+]

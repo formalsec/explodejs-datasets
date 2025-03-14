@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/parse-jtl-1.0.4/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const text = fs.readFileSync(path.join(cwd, jtl_file_path), { encoding: 'utf8' });",
+        "sink_lineno": 7,
+        "source": "module.exports.parse",
+        "tainted_params": [
+            "jtl_file_path"
+        ],
+        "params_types": {
+            "jtl_file_path": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parse",
+                "fn_name": "4748.parse-o598",
+                "fn_id": "2711",
+                "source_fn_id": "2711"
+            }
+        ]
+    }
+]

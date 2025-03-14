@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/git-node-fs-1.0.0/src/lib/node-fs.js",
+        "vuln_type": "path-traversal",
+        "sink": "nodeFs.readFile(path, function (err, binary) {",
+        "sink_lineno": 18,
+        "source": "module.exports.readFile",
+        "tainted_params": [
+            "path",
+            "callback"
+        ],
+        "params_types": {
+            "path": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "readFile",
+                "fn_name": "1716.readFile-o254",
+                "fn_id": "1068",
+                "source_fn_id": "1068"
+            }
+        ]
+    }
+]

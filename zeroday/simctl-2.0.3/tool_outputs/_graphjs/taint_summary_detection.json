@@ -1,0 +1,98 @@
+[
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 58
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 63
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 68
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 73
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 78
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 83
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 88
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 93
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 98
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 103
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 108
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 126
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 149
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 182
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 187
+    },
+    {
+        "filename": "/datasets/zeroday/simctl-2.0.3/src/simctl.js",
+        "vuln_type": "command-injection",
+        "sink": "return shell.exec(command)",
+        "sink_lineno": 192
+    }
+]

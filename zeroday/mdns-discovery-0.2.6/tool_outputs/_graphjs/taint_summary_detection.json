@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/mdns-discovery-0.2.6/src/mdns-discovery.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (opts[prop] === undefined) opts[prop] = def[prop];",
+        "sink_lineno": 55
+    },
+    {
+        "filename": "/datasets/zeroday/mdns-discovery-0.2.6/src/mdns-discovery.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (!opts[prop]) opts[prop] = [].concat(def[prop]);",
+        "sink_lineno": 48
+    }
+]

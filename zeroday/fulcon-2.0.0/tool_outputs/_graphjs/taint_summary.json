@@ -1,0 +1,33 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/fulcon-2.0.0/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return Function('source', 'return function ' + source.name.replace(/^bound /, '') + '(' + Array(source.length + 1).join('a').split('').join(',') + '){ return source.apply(this, arguments); }')(source);",
+        "sink_lineno": 14,
+        "source": "module.exports",
+        "tainted_params": [
+            "source"
+        ],
+        "params_types": {
+            "source": {
+                "_union": [
+                    {
+                        "name": "any",
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "191.fulcon-o28",
+                "fn_id": "119",
+                "source_fn_id": "119"
+            }
+        ]
+    }
+]

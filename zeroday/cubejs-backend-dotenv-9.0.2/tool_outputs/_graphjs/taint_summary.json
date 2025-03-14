@@ -1,0 +1,31 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/cubejs-backend-dotenv-9.0.2/src/lib/main.js",
+        "vuln_type": "path-traversal",
+        "sink": "const parsed = DotEnvModule.parse(fs.readFileSync(dotenvPath, { encoding }), { debug, multiline })",
+        "sink_lineno": 128,
+        "source": "module.exports.config",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "path": "any",
+                "override": "any",
+                "encoding": "any",
+                "debug": "any",
+                "multiline": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "config",
+                "fn_name": "1451.config-o155",
+                "fn_id": "1195",
+                "source_fn_id": "1195"
+            }
+        ]
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/tmpl-1.0.5/src/lib/tmpl.js",
+        "vuln_type": "code-injection",
+        "sink": "var func = new Function('obj', tmpl)",
+        "sink_lineno": 15,
+        "source": "module.exports",
+        "tainted_params": [
+            "str",
+            "data"
+        ],
+        "params_types": {
+            "str": "string",
+            "data": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "273.v30-o40",
+                "fn_id": "162",
+                "source_fn_id": "162"
+            }
+        ]
+    }
+]

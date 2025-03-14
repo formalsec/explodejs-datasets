@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/datasets/zeroday/toggle-array-1.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "ele[prop] = !init;",
+        "sink_lineno": 19
+    },
+    {
+        "filename": "/datasets/zeroday/toggle-array-1.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "ele[prop] = !!init;",
+        "sink_lineno": 17
+    },
+    {
+        "filename": "/datasets/zeroday/toggle-array-1.0.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (isObject(arr[i])) arr[i][prop] = init;",
+        "sink_lineno": 34
+    }
+]

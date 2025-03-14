@@ -1,0 +1,59 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/zeroday/webpack-cdn-plugin-3.3.1/src/module.js",
+        "vuln_type": "code-injection",
+        "sink": "return require(path.join(pathToNodeModules, 'node_modules', name, packageJson)).version;",
+        "sink_lineno": 172,
+        "source": "new module.exports",
+        "tainted_params": [
+            "modules",
+            "prod",
+            "prodUrl",
+            "devUrl",
+            "publicPath",
+            "optimize",
+            "crossOrigin",
+            "sri",
+            "pathToNodeModules"
+        ],
+        "params_types": {
+            "modules": "array",
+            "prod": "any",
+            "prodUrl": "any",
+            "devUrl": "any",
+            "publicPath": "any",
+            "optimize": "any",
+            "crossOrigin": "any",
+            "sri": "any",
+            "pathToNodeModules": "any"
+        },
+        "returns": {
+            "source": ".getVersionInNodeModules",
+            "params_types": {
+                "name": "any",
+                "pathToNodeModules": "any"
+            },
+            "tainted_params": [
+                "name",
+                "pathToNodeModules"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "4443.WebpackCdnPlugin-o563",
+                "fn_id": "2572",
+                "source_fn_id": "2572"
+            },
+            {
+                "type": "Method",
+                "prop": "getVersionInNodeModules",
+                "fn_name": "4443.getVersionInNodeModules-o562",
+                "fn_id": "3745",
+                "source_fn_id": "3745"
+            }
+        ]
+    }
+]

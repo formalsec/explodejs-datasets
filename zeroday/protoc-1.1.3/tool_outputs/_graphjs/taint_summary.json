@@ -1,0 +1,54 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/protoc-1.1.3/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "cp.execFile(protoc, args, options, callback);",
+        "sink_lineno": 11,
+        "source": "module.exports.protoc",
+        "tainted_params": [
+            "args",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "args": "array",
+            "options": "any",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "protoc",
+                "fn_name": "1467.v79-o217",
+                "fn_id": "918",
+                "source_fn_id": "918"
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/protoc-1.1.3/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "\"contents\": fs.readFileSync(path.join(jsFile, match))",
+        "sink_lineno": 112,
+        "source": "module.exports.library",
+        "tainted_params": [
+            "files",
+            "callback"
+        ],
+        "params_types": {
+            "files": "any",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "library",
+                "fn_name": "1467.v149-o230",
+                "fn_id": 1154,
+                "source_fn_id": 1154
+            }
+        ]
+    }
+]

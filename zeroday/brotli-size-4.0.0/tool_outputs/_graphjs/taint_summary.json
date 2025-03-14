@@ -1,0 +1,27 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/brotli-size-4.0.0/src/dist/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const file = fs_1.readFileSync(path);",
+        "sink_lineno": 86,
+        "source": "module.exports.fileSync",
+        "tainted_params": [
+            "path",
+            "options"
+        ],
+        "params_types": {
+            "path": "string",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "fileSync",
+                "fn_name": "1169.fileSync-o209",
+                "fn_id": "1145",
+                "source_fn_id": "1145"
+            }
+        ]
+    }
+]

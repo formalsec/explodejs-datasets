@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/dot-access-1.0.0/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function('_', 'return _.' + path)(obj);",
+        "sink_lineno": 3
+    }
+]

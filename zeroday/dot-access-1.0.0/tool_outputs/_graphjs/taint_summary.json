@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/dot-access-1.0.0/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function('_', 'return _.' + path)(obj);",
+        "sink_lineno": 3,
+        "source": "module.exports.get",
+        "tainted_params": [
+            "obj",
+            "path"
+        ],
+        "params_types": {
+            "obj": {
+                "*": "any"
+            },
+            "path": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "get",
+                "fn_name": "296.v20-o44",
+                "fn_id": "175",
+                "source_fn_id": "175"
+            }
+        ]
+    }
+]

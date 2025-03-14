@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/lasso-caching-fs-1.0.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "pkgJSON = fs.readFileSync(path, FS_READ_OPTIONS);",
+        "sink_lineno": 81
+    }
+]

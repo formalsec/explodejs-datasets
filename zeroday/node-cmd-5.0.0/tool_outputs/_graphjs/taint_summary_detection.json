@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/datasets/zeroday/node-cmd-5.0.0/src/cmd.js",
+        "vuln_type": "command-injection",
+        "sink": "return exec(",
+        "sink_lineno": 10
+    },
+    {
+        "filename": "/datasets/zeroday/node-cmd-5.0.0/src/cmd.js",
+        "vuln_type": "command-injection",
+        "sink": "data:   execSync(command).toString(), ",
+        "sink_lineno": 28
+    }
+]

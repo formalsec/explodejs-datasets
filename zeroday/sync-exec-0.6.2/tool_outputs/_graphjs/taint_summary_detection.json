@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "/datasets/zeroday/sync-exec-0.6.2/src/js/sync-exec.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.exec(cmd, options, function() {});",
+        "sink_lineno": 44
+    },
+    {
+        "filename": "/datasets/zeroday/sync-exec-0.6.2/src/js/lib/proxy.js",
+        "vuln_type": "command-injection",
+        "sink": "stdout = child_process.execSync(cmd, options);",
+        "sink_lineno": 16
+    },
+    {
+        "filename": "/datasets/zeroday/sync-exec-0.6.2/src/js/lib/read-pipes.js",
+        "vuln_type": "path-traversal",
+        "sink": "result[pipe] = fs.readFileSync(dir + '/' + pipe, {",
+        "sink_lineno": 31
+    },
+    {
+        "filename": "/datasets/zeroday/sync-exec-0.6.2/src/js/lib/read-pipes.js",
+        "vuln_type": "path-traversal",
+        "sink": "if (fs.readFileSync(dir + '/done').length) {",
+        "sink_lineno": 14
+    }
+]

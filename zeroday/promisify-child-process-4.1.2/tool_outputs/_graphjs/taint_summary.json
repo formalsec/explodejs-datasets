@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/promisify-child-process-4.1.2/src/index.cjs",
+        "vuln_type": "command-injection",
+        "sink": "return promisifyChildProcess(child_process.spawn(command, args, options), Array.isArray(args) ? options : args);",
+        "sink_lineno": 134,
+        "source": "module.exports.spawn",
+        "tainted_params": [
+            "command",
+            "args",
+            "options"
+        ],
+        "params_types": {
+            "command": "string",
+            "args": "array",
+            "options": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "spawn",
+                "fn_name": "2153.spawn-o288",
+                "fn_id": "1889",
+                "source_fn_id": "1889"
+            }
+        ]
+    }
+]

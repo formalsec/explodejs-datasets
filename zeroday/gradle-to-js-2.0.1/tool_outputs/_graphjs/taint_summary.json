@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/gradle-to-js-2.0.1/src/lib/parser.js",
+        "vuln_type": "path-traversal",
+        "sink": "var stream = fs.createReadStream(path);",
+        "sink_lineno": 667,
+        "source": "module.exports.parseFile",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "parseFile",
+                "fn_name": "7504.parseFile-o908",
+                "fn_id": "7468",
+                "source_fn_id": "7468"
+            }
+        ]
+    }
+]

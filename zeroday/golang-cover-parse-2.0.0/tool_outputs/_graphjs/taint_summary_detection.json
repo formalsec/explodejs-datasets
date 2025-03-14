@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/golang-cover-parse-2.0.0/src/source/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile( file, \"utf8\", function ( err, content )",
+        "sink_lineno": 102
+    }
+]

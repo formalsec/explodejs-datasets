@@ -1,0 +1,26 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/firstline-2.0.2/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "const rs = fs.createReadStream(path, {encoding: opts.encoding});",
+        "sink_lineno": 12,
+        "source": "module.exports",
+        "tainted_params": [
+            "path",
+            "usrOpts"
+        ],
+        "params_types": {
+            "path": "string",
+            "usrOpts": "object"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "462.v44-o65",
+                "fn_id": 276,
+                "source_fn_id": 276
+            }
+        ]
+    }
+]

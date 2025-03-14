@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/datasets/zeroday/tree-kill-1.2.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec('taskkill /pid ' + pid + ' /T /F', callback);",
+        "sink_lineno": 29
+    },
+    {
+        "filename": "/datasets/zeroday/tree-kill-1.2.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return spawn('pgrep', ['-P', parentPid]);",
+        "sink_lineno": 33
+    },
+    {
+        "filename": "/datasets/zeroday/tree-kill-1.2.2/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "return spawn('ps', ['-o', 'pid', '--no-headers', '--ppid', parentPid]);",
+        "sink_lineno": 45
+    }
+]

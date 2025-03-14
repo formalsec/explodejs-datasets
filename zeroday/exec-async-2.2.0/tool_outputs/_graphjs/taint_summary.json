@@ -1,0 +1,33 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/exec-async-2.2.0/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "child_process.execFile(cmd, argsListFromObject(args, opts), opts, function (err, result) {",
+        "sink_lineno": 71,
+        "source": "module.exports",
+        "tainted_params": [
+            "cmd",
+            "args",
+            "opts"
+        ],
+        "params_types": {
+            "cmd": "string",
+            "args": {
+                "_union": [
+                    "array",
+                    "object"
+                ]
+            },
+            "opts": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1132.execAsync-o149",
+                "fn_id": 1042,
+                "source_fn_id": 1042
+            }
+        ]
+    }
+]

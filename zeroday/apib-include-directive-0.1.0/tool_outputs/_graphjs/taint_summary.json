@@ -1,0 +1,50 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/apib-include-directive-0.1.0/src/lib/main.js",
+        "vuln_type": "path-traversal",
+        "sink": "lines = fs.readFileSync(fullPath, 'utf-8').replace(/\\r\\n?/g, '\\n').split('\\n');",
+        "sink_lineno": 14,
+        "source": "module.exports.includeDirective",
+        "tainted_params": [
+            "includePath",
+            "input"
+        ],
+        "params_types": {
+            "includePath": "any",
+            "input": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "includeDirective",
+                "fn_name": "415.v26-o85",
+                "fn_id": 343,
+                "source_fn_id": 343
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/apib-include-directive-0.1.0/src/lib/main.js",
+        "vuln_type": "path-traversal",
+        "sink": "return includeDirective(path.dirname(file), fs.readFileSync(file, 'utf-8'));",
+        "sink_lineno": 26,
+        "source": "module.exports.expand",
+        "tainted_params": [
+            "file"
+        ],
+        "params_types": {
+            "file": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "expand",
+                "fn_name": "415.v30-o90",
+                "fn_id": "374",
+                "source_fn_id": "374"
+            }
+        ]
+    }
+]

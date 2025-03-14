@@ -1,0 +1,80 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/node-phantom-simple-2.2.4/src/node-phantom-simple.js",
+        "vuln_type": "command-injection",
+        "sink": "var phantom = spawn(options.path, args);",
+        "sink_lineno": 139,
+        "source": "module.exports.create",
+        "tainted_params": [
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "options": {
+                "phantomPath": "any",
+                "path": "array",
+                "parameters": {
+                    "*": "any"
+                },
+                "ignoreErrorPattern": "any"
+            },
+            "callback": {
+                "phantomPath": "any",
+                "path": "array",
+                "parameters": {
+                    "*": "any"
+                },
+                "ignoreErrorPattern": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "create",
+                "fn_name": "8011.v822-o1133",
+                "fn_id": 5080,
+                "source_fn_id": 5080
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/node-phantom-simple-2.2.4/src/node-phantom-simple.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(phantom_pid_command, function (err, stdout /*, stderr*/) {",
+        "sink_lineno": 252,
+        "source": "module.exports.create",
+        "tainted_params": [
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "options": {
+                "phantomPath": "any",
+                "path": "array",
+                "parameters": {
+                    "*": "any"
+                },
+                "ignoreErrorPattern": "any"
+            },
+            "callback": {
+                "phantomPath": "any",
+                "path": "array",
+                "parameters": {
+                    "*": "any"
+                },
+                "ignoreErrorPattern": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "create",
+                "fn_name": "8011.v822-o1133",
+                "fn_id": 5080,
+                "source_fn_id": 5080
+            }
+        ]
+    }
+]

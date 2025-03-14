@@ -1,0 +1,50 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/sha256-file-1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var fileStream = fs.createReadStream(filename);",
+        "sink_lineno": 9,
+        "source": "module.exports",
+        "tainted_params": [
+            "filename",
+            "callback"
+        ],
+        "params_types": {
+            "filename": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "365.v36-o58",
+                "fn_id": "227",
+                "source_fn_id": "227"
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/sha256-file-1.0.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "sum.update(fs.readFileSync(filename));",
+        "sink_lineno": 24,
+        "source": "module.exports",
+        "tainted_params": [
+            "filename",
+            "callback"
+        ],
+        "params_types": {
+            "filename": "string",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "365.v36-o58",
+                "fn_id": "227",
+                "source_fn_id": "227"
+            }
+        ]
+    }
+]

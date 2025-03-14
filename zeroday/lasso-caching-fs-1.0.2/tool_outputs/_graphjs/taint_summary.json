@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/zeroday/lasso-caching-fs-1.0.2/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "pkgJSON = fs.readFileSync(path, FS_READ_OPTIONS);",
+        "sink_lineno": 81,
+        "source": "module.exports.readPackageSync",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "readPackageSync",
+                "fn_name": "1349.readPackageSync-o230",
+                "fn_id": "1105",
+                "source_fn_id": "1105"
+            }
+        ]
+    }
+]

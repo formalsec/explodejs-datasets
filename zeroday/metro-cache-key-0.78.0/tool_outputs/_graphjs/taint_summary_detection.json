@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/metro-cache-key-0.78.0/src/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "(hash, file) => hash.update(\"\\0\", \"utf8\").update(fs.readFileSync(file)),",
+        "sink_lineno": 19
+    }
+]

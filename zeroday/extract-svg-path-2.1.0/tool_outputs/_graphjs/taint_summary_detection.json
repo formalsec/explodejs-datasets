@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/zeroday/extract-svg-path-2.1.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "var contents = fs.readFileSync(file, opt.encoding)",
+        "sink_lineno": 21
+    }
+]

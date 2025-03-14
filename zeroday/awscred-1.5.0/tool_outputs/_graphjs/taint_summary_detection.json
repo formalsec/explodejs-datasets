@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/datasets/zeroday/awscred-1.5.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "fs.readFile(filename, 'utf8', function(err, data) {",
+        "sink_lineno": 252
+    },
+    {
+        "filename": "/datasets/zeroday/awscred-1.5.0/src/index.js",
+        "vuln_type": "path-traversal",
+        "sink": "data = fs.readFileSync(filename, 'utf8')",
+        "sink_lineno": 266
+    },
+    {
+        "filename": "/datasets/zeroday/awscred-1.5.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "out[section][match[2]] = match[3]",
+        "sink_lineno": 333
+    }
+]

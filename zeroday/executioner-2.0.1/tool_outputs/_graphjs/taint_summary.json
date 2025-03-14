@@ -1,0 +1,32 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/zeroday/executioner-2.0.1/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "collector._process = exec(cmd, options, function(err, stdout, stderr)",
+        "sink_lineno": 17,
+        "source": "module.exports",
+        "tainted_params": [
+            "commands",
+            "params",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "commands": {
+                "0": "any"
+            },
+            "params": "object",
+            "options": "function",
+            "callback": "function"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "1271.executioner-o229",
+                "fn_id": 1124,
+                "source_fn_id": 1124
+            }
+        ]
+    }
+]
