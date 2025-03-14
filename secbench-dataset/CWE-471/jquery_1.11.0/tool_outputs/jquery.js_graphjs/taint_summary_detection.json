@@ -1,8 +1,0 @@
-[
-    {
-        "filename": "/datasets/secbench-dataset/CWE-471/jquery_1.11.0/src/jquery.js",
-        "vuln_type": "code-injection",
-        "sink": "( Function( \"return \" + str ) )() :",
-        "sink_lineno": 8550
-    }
-]

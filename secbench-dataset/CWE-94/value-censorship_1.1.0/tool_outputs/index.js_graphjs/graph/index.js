@@ -5,6 +5,7 @@ const escodegen = require('escodegen');
 const censorFn = require('./censorfn');
 const NoCatch = function NoCatch() {
 };
+NoCatch['is_class'] = true;
 const wrap = function (node) {
     const v34 = {};
     v34.type = 'Identifier';

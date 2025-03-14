@@ -1,42 +1,42 @@
 [
     {
-        "filename": "/input/serialize.js",
+        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "code-injection",
         "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
         "sink_lineno": 75
     },
     {
-        "filename": "/input/serialize.js",
+        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "outputObj[key] = obj[key];",
         "sink_lineno": 51
     },
     {
-        "filename": "/input/serialize.js",
+        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "outputObj[key] = FUNCFLAG + funcStr;",
         "sink_lineno": 49
     },
     {
-        "filename": "/input/serialize.js",
+        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "outputObj[key] = exports.serialize(obj[key], ignoreNativeFunc, outputObj[key], cache, path + KEYPATHSEPARATOR + key);",
         "sink_lineno": 38
     },
     {
-        "filename": "/input/serialize.js",
+        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = obj[key].substring(CIRCULARFLAG.length);",
         "sink_lineno": 77
     },
     {
-        "filename": "/input/serialize.js",
+        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
         "sink_lineno": 75
     },
     {
-        "filename": "/input/serialize.js",
+        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = exports.unserialize(obj[key], originObj);",
         "sink_lineno": 72

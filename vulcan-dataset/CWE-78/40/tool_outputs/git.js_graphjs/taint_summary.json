@@ -28,6 +28,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "7570.git-o1017",
                 "fn_id": "4403",
                 "source_fn_id": "4403"
@@ -74,6 +75,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "7570.git-o1044",
                 "fn_id": "4403",
                 "source_fn_id": "4403"
@@ -114,6 +116,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "7570.git-o1080",
                 "fn_id": "4403",
                 "source_fn_id": "4403"

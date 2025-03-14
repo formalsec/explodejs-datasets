@@ -11,7 +11,13 @@
         ],
         "params_types": {
             "color": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             }
         },
         "call_paths": [

@@ -18,6 +18,7 @@ const Process = function Process(pid, name, level = 0) {
         v103
     ];
 };
+Process['is_class'] = true;
 const v125 = function (processObj) {
     const v104 = typeof processObj;
     const v105 = v104 === 'number';

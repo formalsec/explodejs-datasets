@@ -22,16 +22,17 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "7238.ION-o797",
-                "fn_id": "7098",
-                "source_fn_id": "7098"
+                "prop": null,
+                "fn_name": "7252.ION-o801",
+                "fn_id": "7112",
+                "source_fn_id": "7112"
             },
             {
                 "type": "Method",
                 "prop": "parseFile",
-                "fn_name": "7238.v724-o796",
-                "fn_id": "7145",
-                "source_fn_id": "7145"
+                "fn_name": "7252.v724-o800",
+                "fn_id": "7159",
+                "source_fn_id": "7159"
             }
         ]
     },
@@ -58,16 +59,17 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "7238.ION-o797",
-                "fn_id": "7098",
-                "source_fn_id": "7098"
+                "prop": null,
+                "fn_name": "7252.ION-o801",
+                "fn_id": "7112",
+                "source_fn_id": "7112"
             },
             {
                 "type": "Method",
                 "prop": "parseFile",
-                "fn_name": "7238.v724-o796",
-                "fn_id": "7145",
-                "source_fn_id": "7145"
+                "fn_name": "7252.v724-o800",
+                "fn_id": "7159",
+                "source_fn_id": "7159"
             }
         ]
     }

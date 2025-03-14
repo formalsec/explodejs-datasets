@@ -39,7 +39,13 @@
                     "_timeout": "any",
                     "name": "string",
                     "log": {
-                        "length": "any"
+                        "_union": [
+                            {
+                                "length": "any"
+                            },
+                            "string",
+                            "array"
+                        ]
                     }
                 }
             },
@@ -50,6 +56,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "4273.v356-o561",
                 "fn_id": "2475",
                 "source_fn_id": "2475"

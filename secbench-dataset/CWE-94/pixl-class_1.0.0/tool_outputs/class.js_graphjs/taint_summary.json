@@ -23,15 +23,21 @@
                 },
                 "__events": "any",
                 "__mixins": {
-                    "length": "any",
-                    "*": {
-                        "prototype": {
-                            "*": "any"
+                    "_union": [
+                        {
+                            "length": "any",
+                            "*": {
+                                "prototype": {
+                                    "*": "any"
+                                },
+                                "__static": {
+                                    "*": "any"
+                                }
+                            }
                         },
-                        "__static": {
-                            "*": "any"
-                        }
-                    }
+                        "string",
+                        "array"
+                    ]
                 },
                 "*": "any"
             }

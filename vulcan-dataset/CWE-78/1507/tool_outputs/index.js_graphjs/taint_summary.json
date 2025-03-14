@@ -12,8 +12,14 @@
         ],
         "params_types": {
             "packages": {
-                "length": "any",
-                "0": "any"
+                "_union": [
+                    {
+                        "length": "any",
+                        "0": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "opts": {
                 "global": "any",
@@ -50,8 +56,14 @@
         ],
         "params_types": {
             "packages": {
-                "length": "any",
-                "0": "any"
+                "_union": [
+                    {
+                        "length": "any",
+                        "0": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "opts": {
                 "global": "any",

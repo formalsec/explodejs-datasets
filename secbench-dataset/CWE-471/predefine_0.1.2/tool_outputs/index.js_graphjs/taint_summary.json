@@ -38,6 +38,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "2525.predefine-o356",
                 "fn_id": "1663",
                 "source_fn_id": "1663"
@@ -90,6 +91,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "2525.predefine-o356",
                 "fn_id": "1663",
                 "source_fn_id": "1663"

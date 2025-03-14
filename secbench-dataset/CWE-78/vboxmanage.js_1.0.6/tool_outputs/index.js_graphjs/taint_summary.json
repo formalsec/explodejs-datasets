@@ -12,9 +12,15 @@
         ],
         "params_types": {
             "command": {
-                "0": "any",
-                "length": "any",
-                "*": "any"
+                "_union": [
+                    {
+                        "0": "any",
+                        "length": "any",
+                        "*": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "options": {
                 "*": "any"

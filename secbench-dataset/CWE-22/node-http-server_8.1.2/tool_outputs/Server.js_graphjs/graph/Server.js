@@ -42,6 +42,7 @@ const Server = function Server() {
     return Server;
 };
 Server.Server = Server;
+Server['is_class'] = true;
 const deploy = function (userConfig, readyCallback = function () {
 }) {
     const v340 = requestRecieved.bind(this);
@@ -444,6 +445,7 @@ const value = function value(value) {
     return v573;
 };
 RefString.value = value;
+RefString['is_class'] = true;
 const requestRecieved = function (request, response) {
     const v574 = this.config;
     const v575 = v574.log;

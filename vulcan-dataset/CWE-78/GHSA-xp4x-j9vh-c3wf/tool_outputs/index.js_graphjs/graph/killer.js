@@ -224,4 +224,5 @@ const unixKill = function unixKill(port) {
     return v108;
 };
 Killer.unixKill = unixKill;
+Killer['is_class'] = true;
 exports.Killer = Killer;

@@ -18,10 +18,22 @@
                     "name": "any"
                 },
                 "appString": {
-                    "length": "any"
+                    "_union": [
+                        {
+                            "length": "any"
+                        },
+                        "string",
+                        "array"
+                    ]
                 },
                 "tvAppString": {
-                    "length": "any"
+                    "_union": [
+                        {
+                            "length": "any"
+                        },
+                        "string",
+                        "array"
+                    ]
                 },
                 "port": "any",
                 "timeout": "any"
@@ -39,6 +51,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "1696.Remote-o237",
                 "fn_id": "1010",
                 "source_fn_id": "1010"

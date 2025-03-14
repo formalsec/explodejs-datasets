@@ -16,7 +16,13 @@
             "source": "string",
             "target": "string",
             "options": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "callback": "function"
         },
@@ -46,7 +52,13 @@
             "source": "string",
             "target": "string",
             "options": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "callback": "function"
         },
@@ -76,7 +88,13 @@
             "source": "string",
             "target": "string",
             "options": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "callback": "function"
         },

@@ -41,6 +41,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "2500.KeyPath-o345",
                 "fn_id": "1459",
                 "source_fn_id": "1459"

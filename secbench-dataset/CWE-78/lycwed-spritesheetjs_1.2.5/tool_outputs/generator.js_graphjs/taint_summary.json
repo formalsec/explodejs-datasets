@@ -241,42 +241,54 @@
                 "format": "string",
                 "sort": "any",
                 "files": {
-                    "*": {
-                        "isLast": "any",
-                        "spritesheetWidth": "any",
-                        "spritesheetHeight": "any",
-                        "width": "number",
-                        "height": "number",
-                        "x": "any",
-                        "y": "any",
-                        "index": {
-                            "_union": [
-                                "number",
-                                "string"
-                            ]
+                    "_union": [
+                        {
+                            "*": {
+                                "isLast": "any",
+                                "spritesheetWidth": "any",
+                                "spritesheetHeight": "any",
+                                "width": "number",
+                                "height": "number",
+                                "x": "any",
+                                "y": "any",
+                                "index": {
+                                    "_union": [
+                                        "number",
+                                        "string"
+                                    ]
+                                },
+                                "trim": {
+                                    "x": "number",
+                                    "frameX": "any",
+                                    "y": "number",
+                                    "frameY": "any",
+                                    "width": "number",
+                                    "height": "number"
+                                },
+                                "name": "any",
+                                "cssName": "string",
+                                "cssPriority": "any"
+                            },
+                            "length": "string"
                         },
-                        "trim": {
-                            "x": "number",
-                            "frameX": "any",
-                            "y": "number",
-                            "frameY": "any",
-                            "width": "number",
-                            "height": "number"
-                        },
-                        "name": "any",
-                        "cssName": "string",
-                        "cssPriority": "any"
-                    },
-                    "length": "string"
+                        "string",
+                        "array"
+                    ]
                 },
                 "cssOrder": "any",
                 "width": "any",
                 "height": "any",
                 "padding": "any",
                 "*": {
-                    "length": "any",
-                    "*": "any",
-                    "0": "any"
+                    "_union": [
+                        {
+                            "length": "any",
+                            "*": "any",
+                            "0": "any"
+                        },
+                        "string",
+                        "array"
+                    ]
                 }
             },
             "callback": "function"

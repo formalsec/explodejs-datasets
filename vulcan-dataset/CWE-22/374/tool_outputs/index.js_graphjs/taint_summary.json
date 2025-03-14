@@ -10,12 +10,12 @@
         "params_types": {},
         "client": {
             "type": "GET",
-            "port": "8888"
+            "port": 8888
         },
         "call_paths": [
             {
                 "type": "ServerInitialization",
-                "port": "8888",
+                "port": 8888,
                 "fn_name": "/datasets/vulcan-dataset/CWE-22/374/src/index.js"
             }
         ]

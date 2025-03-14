@@ -28,6 +28,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "4334.v449-o669",
                 "fn_id": "2645",
                 "source_fn_id": "2645"
@@ -81,6 +82,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "4334.v468-o675",
                 "fn_id": "2645",
                 "source_fn_id": "2645"
@@ -140,6 +142,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "4334.v468-o675",
                 "fn_id": "2645",
                 "source_fn_id": "2645"

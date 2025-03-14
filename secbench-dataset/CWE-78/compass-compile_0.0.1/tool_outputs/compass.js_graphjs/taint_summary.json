@@ -20,6 +20,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "459.v25-o89",
                 "fn_id": "335",
                 "source_fn_id": "335"

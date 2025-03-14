@@ -12,7 +12,13 @@
         ],
         "params_types": {
             "msg": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "silent": "any"
         },

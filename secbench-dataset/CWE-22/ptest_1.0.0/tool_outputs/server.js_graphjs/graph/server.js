@@ -303,6 +303,7 @@ const stop = function stop() {
     this.status = STOPPING;
 };
 EventPlayBack.stop = stop;
+EventPlayBack['is_class'] = true;
 var playBack = new EventPlayBack();
 const clientList = function () {
     const v272 = wss.clients;

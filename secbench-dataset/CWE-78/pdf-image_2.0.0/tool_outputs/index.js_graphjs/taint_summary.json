@@ -1,1 +1,50 @@
-[]
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(convertCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 170,
+        "source": "new module.exports",
+        "tainted_params": [
+            "pdfFilePath",
+            "options"
+        ],
+        "params_types": {
+            "pdfFilePath": "any",
+            "options": {
+                "pdfFileBaseName": "any",
+                "convertOptions": "any",
+                "convertExtension": "any",
+                "graphicsMagick": "any",
+                "combinedImage": "any",
+                "outputDirectory": "any"
+            }
+        },
+        "returns": {
+            "source": ".convertPage",
+            "params_types": {
+                "pageNumber": "any"
+            },
+            "tainted_params": [
+                "pageNumber"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "2848.PDFImage.prototype-o490",
+                "fn_id": "1704",
+                "source_fn_id": "1704"
+            },
+            {
+                "type": "Method",
+                "prop": "convertPage",
+                "fn_name": "2848.v307-o457",
+                "fn_id": 2551,
+                "source_fn_id": 2551
+            }
+        ]
+    }
+]

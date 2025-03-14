@@ -29,6 +29,7 @@ const runInContext = function runInContext(code) {
     return v27;
 };
 SaferEval.runInContext = runInContext;
+SaferEval['is_class'] = true;
 const saferEval = function (code, context) {
     const v28 = new SaferEval(context);
     const v29 = v28.runInContext(code);

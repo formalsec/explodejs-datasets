@@ -618,6 +618,7 @@ const exit = function exit() {
     }
 };
 Scope.exit = exit;
+Scope['is_class'] = true;
 const globalScope = raw => {
     const v599 = splitElements(raw);
     const v600 = {};

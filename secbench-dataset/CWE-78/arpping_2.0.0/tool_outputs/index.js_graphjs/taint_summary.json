@@ -16,7 +16,13 @@
             "source": ".ping",
             "params_types": {
                 "range": {
-                    "length": "any"
+                    "_union": [
+                        {
+                            "length": "any"
+                        },
+                        "string",
+                        "array"
+                    ]
                 }
             },
             "tainted_params": [
@@ -26,6 +32,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "4091.v347-o570",
                 "fn_id": "2440",
                 "source_fn_id": "2440"
@@ -56,9 +63,15 @@
             "source": ".arp",
             "params_types": {
                 "range": {
-                    "0": "any",
-                    "length": "any",
-                    "*": "string"
+                    "_union": [
+                        {
+                            "0": "any",
+                            "length": "any",
+                            "*": "string"
+                        },
+                        "string",
+                        "array"
+                    ]
                 }
             },
             "tainted_params": [
@@ -68,6 +81,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "4091.v378-o575",
                 "fn_id": "2440",
                 "source_fn_id": "2440"

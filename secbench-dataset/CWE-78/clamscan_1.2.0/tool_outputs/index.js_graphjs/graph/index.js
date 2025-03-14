@@ -48,6 +48,7 @@ const NodeClamError = function NodeClamError(data = {}, ...params) {
     this.data = data;
     this.date = new Date();
 };
+NodeClamError['is_class'] = true;
 const NodeClam = function NodeClam() {
     this.initialized = false;
     this.debug_label = 'node-clam';
@@ -3724,4 +3725,5 @@ const scan_stream = function scan_stream(stream, cb) {
     return v3784;
 };
 NodeClam.scan_stream = scan_stream;
+NodeClam['is_class'] = true;
 module.exports = NodeClam;

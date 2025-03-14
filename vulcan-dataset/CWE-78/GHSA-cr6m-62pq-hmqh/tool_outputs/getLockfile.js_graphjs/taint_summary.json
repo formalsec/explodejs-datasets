@@ -13,7 +13,13 @@
         ],
         "params_types": {
             "packageFile": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "date": "string",
             "undefined": "any"
@@ -41,7 +47,13 @@
         ],
         "params_types": {
             "packageFile": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "date": "string",
             "undefined": "any"

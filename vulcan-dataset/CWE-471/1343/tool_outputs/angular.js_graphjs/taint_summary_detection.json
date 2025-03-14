@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-mjjj-6p43-vhhv/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "*",
+        "sink_lineno": 35
+    }
+]

@@ -1,11 +1,11 @@
 [
     {
-        "type": "VFunPropOfExportedObj",
+        "type": "VNewCall",
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-gwp3-f7mr-qpfv/src/index.js",
         "vuln_type": "command-injection",
         "sink": "metadata(src, {",
         "sink_lineno": 36,
-        "source": "module.exports.Image",
+        "source": "new module.exports",
         "tainted_params": [
             "src",
             "opts",
@@ -16,23 +16,41 @@
             "opts": "any",
             "upload": "any"
         },
+        "returns": {
+            "source": ".getMetadata",
+            "params_types": {
+                "src": "any",
+                "cb": "function"
+            },
+            "tainted_params": [
+                "src",
+                "cb"
+            ]
+        },
         "call_paths": [
             {
+                "type": "New",
+                "prop": null,
+                "fn_name": "3786.v298-o397",
+                "fn_id": "2165",
+                "source_fn_id": "2165"
+            },
+            {
                 "type": "Method",
-                "prop": "Image",
-                "fn_name": "3786.Image-o386",
-                "fn_id": 2165,
-                "source_fn_id": 2165
+                "prop": "getMetadata",
+                "fn_name": "3786.getMetadata-o396",
+                "fn_id": "2322",
+                "source_fn_id": "2322"
             }
         ]
     },
     {
-        "type": "VFunPropOfExportedObj",
+        "type": "VNewCall",
         "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-gwp3-f7mr-qpfv/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "Body: fs.createReadStream(version.path),",
         "sink_lineno": 95,
-        "source": "module.exports.Image",
+        "source": "new module.exports",
         "tainted_params": [
             "src",
             "opts",
@@ -43,13 +61,42 @@
             "opts": "any",
             "upload": "any"
         },
+        "returns": {
+            "source": "._upload",
+            "params_types": {
+                "dest": "string",
+                "version": {
+                    "awsImageAcl": "any",
+                    "path": "any",
+                    "suffix": "any",
+                    "awsImageExpires": "any",
+                    "awsImageMaxAge": "any",
+                    "etag": "any",
+                    "key": "any",
+                    "url": "any"
+                },
+                "cb": "function"
+            },
+            "tainted_params": [
+                "dest",
+                "version",
+                "cb"
+            ]
+        },
         "call_paths": [
             {
+                "type": "New",
+                "prop": null,
+                "fn_name": "3786.v383-o427",
+                "fn_id": "2165",
+                "source_fn_id": "2165"
+            },
+            {
                 "type": "Method",
-                "prop": "Image",
-                "fn_name": "3786.Image-o386",
-                "fn_id": 2165,
-                "source_fn_id": 2165
+                "prop": "_upload",
+                "fn_name": "3786._upload-o426",
+                "fn_id": "2816",
+                "source_fn_id": "2816"
             }
         ]
     }

@@ -16,6 +16,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "1908.merge-o235",
                 "fn_id": "1097",
                 "source_fn_id": "1097"
@@ -46,6 +47,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "1908.merge-o239",
                 "fn_id": "1097",
                 "source_fn_id": "1097"
@@ -76,6 +78,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "1908.merge-o235",
                 "fn_id": "1097",
                 "source_fn_id": "1097"
@@ -106,6 +109,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "1908.merge-o239",
                 "fn_id": "1097",
                 "source_fn_id": "1097"

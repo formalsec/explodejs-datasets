@@ -133,4 +133,5 @@ const display = function display() {
     v136;
 };
 Pullit.display = display;
+Pullit['is_class'] = true;
 module.exports = Pullit;

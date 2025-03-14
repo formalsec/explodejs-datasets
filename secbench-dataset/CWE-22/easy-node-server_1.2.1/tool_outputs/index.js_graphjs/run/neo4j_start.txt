@@ -12,12 +12,12 @@ Starting Neo4j.
 WARNING! You are using an unsupported Java runtime.
 * Please use Oracle(R) Java(TM) 17, OpenJDK(TM) 17 to run Neo4j.
 * Please see https://neo4j.com/docs/ for Neo4j installation instructions.
-2025-03-12 14:51:34.313+0000 INFO  Starting...
-2025-03-12 14:51:35.717+0000 INFO  This instance is ServerId{e4386bf5} (e4386bf5-57be-4921-94df-a6d7d5aec7fb)
-2025-03-12 14:51:36.570+0000 INFO  ======== Neo4j 5.9.0 ========
-2025-03-12 14:51:38.309+0000 INFO  Bolt enabled on localhost:7687.
-2025-03-12 14:51:39.258+0000 INFO  Remote interface available at http://localhost:7474/
-2025-03-12 14:51:39.261+0000 INFO  id: 20AB0D2E5CEB151244A0F815A69F26CFC708C5C9EDC03DBE1F491BABF1500373
-2025-03-12 14:51:39.261+0000 INFO  name: system
-2025-03-12 14:51:39.261+0000 INFO  creationDate: 2025-03-10T17:42:31.302Z
-2025-03-12 14:51:39.262+0000 INFO  Started.
+2025-03-13 22:50:44.007+0000 INFO  Starting...
+2025-03-13 22:50:45.411+0000 INFO  This instance is ServerId{e4386bf5} (e4386bf5-57be-4921-94df-a6d7d5aec7fb)
+2025-03-13 22:50:46.252+0000 INFO  ======== Neo4j 5.9.0 ========
+2025-03-13 22:50:48.037+0000 INFO  Bolt enabled on localhost:7687.
+2025-03-13 22:50:49.072+0000 INFO  Remote interface available at http://localhost:7474/
+2025-03-13 22:50:49.076+0000 INFO  id: 20AB0D2E5CEB151244A0F815A69F26CFC708C5C9EDC03DBE1F491BABF1500373
+2025-03-13 22:50:49.076+0000 INFO  name: system
+2025-03-13 22:50:49.076+0000 INFO  creationDate: 2025-03-10T17:42:31.302Z
+2025-03-13 22:50:49.077+0000 INFO  Started.

@@ -41,6 +41,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "1572.v102-o218",
                 "fn_id": "923",
                 "source_fn_id": "923"

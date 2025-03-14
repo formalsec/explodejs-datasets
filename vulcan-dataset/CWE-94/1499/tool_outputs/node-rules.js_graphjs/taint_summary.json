@@ -37,6 +37,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "2675.v274-o391",
                 "fn_id": "1568",
                 "source_fn_id": "1568"
@@ -88,6 +89,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "2675.v274-o391",
                 "fn_id": "1568",
                 "source_fn_id": "1568"
@@ -139,6 +141,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "2675.v274-o391",
                 "fn_id": "1568",
                 "source_fn_id": "1568"
@@ -190,6 +193,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "2675.v274-o391",
                 "fn_id": "1568",
                 "source_fn_id": "1568"

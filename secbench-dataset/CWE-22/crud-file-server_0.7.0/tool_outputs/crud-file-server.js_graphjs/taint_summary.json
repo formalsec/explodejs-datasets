@@ -16,10 +16,22 @@
         ],
         "params_types": {
             "vpath": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "path": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "req": {
                 "url": {
@@ -63,10 +75,22 @@
         ],
         "params_types": {
             "vpath": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "path": {
-                "length": "any"
+                "_union": [
+                    {
+                        "length": "any"
+                    },
+                    "string",
+                    "array"
+                ]
             },
             "req": {
                 "url": {

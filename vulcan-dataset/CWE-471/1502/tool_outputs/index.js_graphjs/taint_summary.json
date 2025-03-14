@@ -1,20 +1,30 @@
 [
     {
-        "type": "VFunPropOfExportedObj",
+        "type": "VTopLevel",
         "filename": "/datasets/vulcan-dataset/CWE-471/1502/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 46,
-        "source": "module.exports.extend",
-        "tainted_params": [],
-        "params_types": {},
+        "source": "extend",
+        "tainted_params": [
+            "target",
+            "source"
+        ],
+        "params_types": {
+            "target": "object",
+            "source": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
+        },
         "call_paths": [
             {
-                "type": "Method",
-                "prop": "extend",
-                "fn_name": "1783.v129-o274",
-                "fn_id": 1252,
-                "source_fn_id": 1252
+                "type": "TopLevel",
+                "fn_name": "extend",
+                "fn_id": "1130",
+                "source_fn_id": "1130"
             }
         ]
     }

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-471/jsonpointer_4.0.0/src/jsonpointer.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "else obj[part] = value",
+        "sink_lineno": 43,
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "pointer",
+            "value"
+        ],
+        "params_types": {
+            "obj": "array",
+            "pointer": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1189.set-o160",
+                "fn_id": 1070,
+                "source_fn_id": 1070
+            }
+        ]
+    }
+]

@@ -660,4 +660,5 @@ const getHashOfLastCommit = function getHashOfLastCommit(branchName) {
     return v578;
 };
 Git.getHashOfLastCommit = getHashOfLastCommit;
+Git['is_class'] = true;
 exports.Git = Git;

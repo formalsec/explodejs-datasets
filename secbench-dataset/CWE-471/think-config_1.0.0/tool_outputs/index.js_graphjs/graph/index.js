@@ -68,4 +68,5 @@ const set = function set(name, value) {
     return this;
 };
 Config.set = set;
+Config['is_class'] = true;
 module.exports = Config;

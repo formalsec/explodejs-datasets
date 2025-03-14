@@ -1,1 +1,46 @@
-[]
+[
+    {
+        "type": "unknown",
+        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-6hr9-4692-fch9/src/helper.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(cmd, function (error) {",
+        "sink_lineno": 24,
+        "source": "v55",
+        "tainted_params": [
+            "exec"
+        ],
+        "params_types": {
+            "exec": "function"
+        },
+        "returns": {
+            "source": ".applyEffect",
+            "params_types": {
+                "effect": "any",
+                "options": {
+                    "filter": "any"
+                },
+                "callback": "function"
+            },
+            "tainted_params": [
+                "effect",
+                "options",
+                "callback"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "TopLevel",
+                "fn_name": "v55",
+                "fn_id": "316",
+                "source_fn_id": "316"
+            },
+            {
+                "type": "Method",
+                "fn_name": "525.v53-o98",
+                "fn_id": 479,
+                "prop": "applyEffect",
+                "source_fn_id": "316"
+            }
+        ]
+    }
+]

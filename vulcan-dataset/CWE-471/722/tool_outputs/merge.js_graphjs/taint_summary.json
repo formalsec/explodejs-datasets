@@ -24,6 +24,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "1061.Public-o145",
                 "fn_id": "613",
                 "source_fn_id": "613"
@@ -62,6 +63,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "1061.Public-o145",
                 "fn_id": "613",
                 "source_fn_id": "613"

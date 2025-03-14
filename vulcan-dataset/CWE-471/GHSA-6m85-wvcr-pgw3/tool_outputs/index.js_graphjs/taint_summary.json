@@ -43,6 +43,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "3886.safeCall-o668",
                 "fn_id": "2311",
                 "source_fn_id": "2311"

@@ -30,6 +30,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "3513.v234-o434",
                 "fn_id": "2017",
                 "source_fn_id": "2017"
@@ -65,7 +66,13 @@
             "params_types": {
                 "destFile": "string",
                 "onComplete": {
-                    "length": "any"
+                    "_union": [
+                        {
+                            "length": "any"
+                        },
+                        "string",
+                        "array"
+                    ]
                 }
             },
             "tainted_params": [
@@ -76,6 +83,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "3513.v401-o505",
                 "fn_id": "2017",
                 "source_fn_id": "2017"
@@ -125,6 +133,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "3513.v305-o471",
                 "fn_id": "2017",
                 "source_fn_id": "2017"

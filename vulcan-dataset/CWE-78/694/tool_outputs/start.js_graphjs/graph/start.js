@@ -375,6 +375,7 @@ const checkStatus = function* checkStatus(stderr, timeout, ignoreStdErr) {
     }
 };
 StartCommand.checkStatus = checkStatus;
+StartCommand['is_class'] = true;
 const getRotatelog = function* (logfile) {
     const v301 = path.dirname(logfile);
     const v302 = mkdirp(v301);

@@ -1,7 +1,6 @@
-graph: 21083.484926
-import: 1370
-injection_detection: 129.9304962158203
-injection_reconstruction: 0.019788742065429688
-proto_pollution_detection: 1093.0240154266357
-
-Timed out
+graph: 26399.204354
+import: 3525
+injection_detection: 180.38678169250488
+injection_reconstruction: 0.03981590270996094
+proto_pollution_detection: 2689.3036365509033
+proto_pollution_reconstruction: 16141.058921813965

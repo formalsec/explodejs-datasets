@@ -1,1 +1,49 @@
-[]
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/vulcan-dataset/CWE-78/670/src/index.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(convertCommand, function (err, stdout, stderr) {",
+        "sink_lineno": 104,
+        "source": "new module.exports",
+        "tainted_params": [
+            "pdfFilePath",
+            "options"
+        ],
+        "params_types": {
+            "pdfFilePath": "any",
+            "options": {
+                "pdfFileBaseName": "any",
+                "convertOptions": "any",
+                "convertExtension": "any",
+                "graphicsMagick": "any",
+                "outputDirectory": "any"
+            }
+        },
+        "returns": {
+            "source": ".convertPage",
+            "params_types": {
+                "pageNumber": "any"
+            },
+            "tainted_params": [
+                "pageNumber"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "1882.PDFImage.prototype-o331",
+                "fn_id": "1133",
+                "source_fn_id": "1133"
+            },
+            {
+                "type": "Method",
+                "prop": "convertPage",
+                "fn_name": "1882.v191-o306",
+                "fn_id": 1609,
+                "source_fn_id": 1609
+            }
+        ]
+    }
+]

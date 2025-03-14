@@ -1,0 +1,20 @@
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-78/giting_0.0.7/src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 195
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-78/giting_0.0.7/src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 208
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-78/giting_0.0.7/src/git.js",
+        "vuln_type": "command-injection",
+        "sink": "child.exec(cmd, {",
+        "sink_lineno": 223
+    }
+]

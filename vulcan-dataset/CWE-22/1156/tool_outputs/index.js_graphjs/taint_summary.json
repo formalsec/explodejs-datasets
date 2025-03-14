@@ -42,6 +42,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "6421.v534-o763",
                 "fn_id": "3685",
                 "source_fn_id": "3685"
@@ -95,6 +96,7 @@
         "call_paths": [
             {
                 "type": "New",
+                "prop": null,
                 "fn_name": "6421.v736-o777",
                 "fn_id": "3685",
                 "source_fn_id": "3685"

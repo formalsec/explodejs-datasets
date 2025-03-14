@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "type": "VTopLevel",
+        "filename": "/datasets/vulcan-dataset/CWE-78/789/src/find-opencv.js",
+        "vuln_type": "command-injection",
+        "sink": "exec(\"pkg-config \" + opencv + \" \" + flag, function(error, stdout, stderr){",
+        "sink_lineno": 16,
+        "source": "main",
+        "tainted_params": [],
+        "params_types": {},
+        "call_paths": [
+            {
+                "type": "TopLevel",
+                "fn_name": "main",
+                "fn_id": "588",
+                "source_fn_id": "588"
+            }
+        ]
+    }
+]

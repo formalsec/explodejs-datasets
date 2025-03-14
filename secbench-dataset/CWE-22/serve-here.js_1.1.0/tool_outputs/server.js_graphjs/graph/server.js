@@ -101,4 +101,5 @@ const Stop = function Stop() {
     v120;
 };
 Server.Stop = Stop;
+Server['is_class'] = true;
 module.exports = Server;

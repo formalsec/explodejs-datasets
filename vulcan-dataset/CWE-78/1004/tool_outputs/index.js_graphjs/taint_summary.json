@@ -20,16 +20,17 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "1180.Pullit-o183",
-                "fn_id": "709",
-                "source_fn_id": "709"
+                "prop": null,
+                "fn_name": "1194.Pullit-o185",
+                "fn_id": "717",
+                "source_fn_id": "717"
             },
             {
                 "type": "Method",
                 "prop": "fetch",
-                "fn_name": "1180.fetch-o182",
-                "fn_id": 797,
-                "source_fn_id": 797
+                "fn_name": "1194.fetch-o184",
+                "fn_id": 805,
+                "source_fn_id": 805
             }
         ]
     }

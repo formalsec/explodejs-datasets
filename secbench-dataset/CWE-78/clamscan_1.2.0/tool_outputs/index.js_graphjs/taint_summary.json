@@ -34,16 +34,17 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "27432.NodeClam-o2761",
-                "fn_id": "15485",
-                "source_fn_id": "15485"
+                "prop": null,
+                "fn_name": "27460.NodeClam-o2767",
+                "fn_id": "15507",
+                "source_fn_id": "15507"
             },
             {
                 "type": "Method",
                 "prop": "is_infected",
-                "fn_name": "27432.is_infected-o2760",
-                "fn_id": 20166,
-                "source_fn_id": 20166
+                "fn_name": "27460.is_infected-o2766",
+                "fn_id": 20188,
+                "source_fn_id": 20188
             }
         ]
     },
@@ -72,16 +73,17 @@
         "call_paths": [
             {
                 "type": "New",
-                "fn_name": "27432.NodeClam-o2785",
-                "fn_id": "15485",
-                "source_fn_id": "15485"
+                "prop": null,
+                "fn_name": "27460.NodeClam-o2791",
+                "fn_id": "15507",
+                "source_fn_id": "15507"
             },
             {
                 "type": "Method",
                 "prop": "scan_dir",
-                "fn_name": "27432.scan_dir-o2784",
-                "fn_id": 24998,
-                "source_fn_id": 24998
+                "fn_name": "27460.scan_dir-o2790",
+                "fn_id": 25020,
+                "source_fn_id": 25020
             }
         ]
     }

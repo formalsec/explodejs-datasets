@@ -222,4 +222,5 @@ const init = function init(defaults, opts, cb) {
     v158;
 };
 tools.init = init;
+tools['is_class'] = true;
 module.exports = new tools();
