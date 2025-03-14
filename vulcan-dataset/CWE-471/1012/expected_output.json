@@ -14,7 +14,7 @@
         "params_types": {
             "target": "object",
             "path": "string",
-            "value": "polluted_object2",
+            "value": "string",
             "merge": "object"
         }
     },
@@ -33,7 +33,7 @@
         "params_types": {
             "target": "object",
             "path": "string",
-            "value": "polluted_object3",
+            "value": "polluted_object2",
             "merge": "object"
         }
     }
