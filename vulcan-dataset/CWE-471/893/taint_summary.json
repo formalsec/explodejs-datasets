@@ -1,0 +1,126 @@
+[
+    {
+        "type": "VNewCall",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
+        "vuln_type": "code-injection",
+        "sink": "if ( typeOf.Function(lastArg) ) {",
+        "sink_lineno": 114,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".black",
+            "params_types": {},
+            "tainted_params": []
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "2241.merge-o305",
+                "fn_id": "1430",
+                "source_fn_id": "1430"
+            },
+            {
+                "type": "Method",
+                "prop": "black",
+                "fn_name": "2241.mergeBlack-o304",
+                "fn_id": 1463,
+                "source_fn_id": 1463
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
+        "vuln_type": "code-injection",
+        "sink": "if ( typeOf.Function(lastArg) ) {",
+        "sink_lineno": 114,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".white",
+            "params_types": {},
+            "tainted_params": []
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "2241.merge-o309",
+                "fn_id": "1430",
+                "source_fn_id": "1430"
+            },
+            {
+                "type": "Method",
+                "prop": "white",
+                "fn_name": "2241.mergeWhite-o308",
+                "fn_id": 1502,
+                "source_fn_id": 1502
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj1[key] = obj2[key]",
+        "sink_lineno": 178,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".black",
+            "params_types": {},
+            "tainted_params": []
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "2241.merge-o305",
+                "fn_id": "1430",
+                "source_fn_id": "1430"
+            },
+            {
+                "type": "Method",
+                "prop": "black",
+                "fn_name": "2241.mergeBlack-o304",
+                "fn_id": 1463,
+                "source_fn_id": 1463
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj1[key] = obj2[key]",
+        "sink_lineno": 178,
+        "source": "new module.exports",
+        "tainted_params": [],
+        "params_types": {},
+        "returns": {
+            "source": ".white",
+            "params_types": {},
+            "tainted_params": []
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "2241.merge-o309",
+                "fn_id": "1430",
+                "source_fn_id": "1430"
+            },
+            {
+                "type": "Method",
+                "prop": "white",
+                "fn_name": "2241.mergeWhite-o308",
+                "fn_id": 1502,
+                "source_fn_id": 1502
+            }
+        ]
+    }
+]

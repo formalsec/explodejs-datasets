@@ -1,6 +1,6 @@
 /**
  * @fileoverview Extend node util module
- * @author douzi <liaowei08@gmail.com> 
+ * @author douzi <liaowei08@gmail.com>
  */
 var util = require('util');
 var toString = Object.prototype.toString;
@@ -52,7 +52,7 @@ function extend(target, source) {
 
 extend(exports, util);
 
-// fixed util.isObject 
+// fixed util.isObject
 exports.isObject = isObject;
 
 exports.extend = function() {
@@ -107,7 +107,7 @@ exports.unescape = function(value) {
 exports.hrtime = function(time) {
   if (time) {
     var spend = process.hrtime(time);
-    
+
     spend = (spend[0] + spend[1] / 1e9) * 1000 + 'ms';
 
     return spend;

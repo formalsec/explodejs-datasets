@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "assign-deep": "^0.4.8"
+  }
+}

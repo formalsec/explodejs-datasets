@@ -1,6 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
+        "filename" : "./src/main.js",
         "source": "module.exports",
         "source_lineno": 33,
         "sink": "tmp[v13] = val;",
@@ -12,7 +13,7 @@
         ],
         "params_types": {
             "obj": "object",
-            "path": [ "string", "string" ],
+            "path": "string",
             "val": "string"
         }
     }

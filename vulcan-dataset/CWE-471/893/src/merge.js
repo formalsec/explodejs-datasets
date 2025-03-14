@@ -1,4 +1,26 @@
-var typeOf = require('lutils-typeof')
+function typeOf(value) {
+    if (value === null) return 'null';
+    if (value === undefined) return 'undefined';
+    if (Number.isNaN(value)) return 'nan';
+    return Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
+}
+
+typeOf.Object = function (value) {
+    return typeOf(value) === 'object';
+};
+
+typeOf.Array = function (value) {
+    return Array.isArray(value);
+};
+
+typeOf.Function = function (value) {
+    return typeof value === 'function';
+};
+
+typeOf.String = function (value) {
+    return typeof value === 'string';
+};
+
 
 /**
  *  Merges objects together
