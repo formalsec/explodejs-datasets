@@ -2,7 +2,6 @@
 
 /** @module PomiseHelpers */
 
-var isArray = require('isarray');
 
 var insertHelper = function(keys, value, object) {
   var index;
@@ -67,7 +66,7 @@ module.exports.notify = function(func) {
  */
 module.exports.insert = function(key, value) {
   return function(object) {
-    if(isArray(key)) {
+    if(Array.isArray(key)) {
       return insertHelper(key, value, object);
     }
 

@@ -5,7 +5,7 @@
 const Crypto = require('crypto');
 const Path = require('path');
 const Util = require('util');
-const Escape = require('./escape');
+const Escape = function() {}
 
 
 // Declare internals
@@ -121,10 +121,10 @@ exports.merge = function (target, source, isNullOverride /* = true */, isMergeAr
                 typeof target[key] !== 'object' ||
                 (Array.isArray(target[key]) !== Array.isArray(value)) ||
                 value instanceof Date ||
-                Buffer.isBuffer(value) ||
+                // Buffer.isBuffer(value) ||
                 value instanceof RegExp) {
 
-                target[key] = exports.clone(value);
+                target[key] = value;
             }
             else {
                 exports.merge(target[key], value, isNullOverride, isMergeArrays);
@@ -947,3 +947,5 @@ exports.block = function () {
 
     return new Promise(exports.ignore);
 };
+
+module.exports = exports.merge;

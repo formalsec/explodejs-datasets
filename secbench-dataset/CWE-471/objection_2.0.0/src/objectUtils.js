@@ -230,7 +230,7 @@ function set(obj, path, value) {
     if (!isObject(child)) {
       const nextKey = path[i + 1];
 
-      if (isNaN(nextKey)) {
+      if (typeof nextKey == "number" && isNaN(nextKey)) {
         child = {};
       } else {
         child = [];

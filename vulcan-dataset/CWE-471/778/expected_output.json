@@ -1,7 +1,8 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "defaultsDeep",
+        "filename" : "./src/index.js",
+        "source": "module.exports",
         "source_lineno": 8,
         "sink": "target[key] = value;",
         "sink_lineno": 20,
@@ -11,12 +12,20 @@
         ],
         "params_types": {
             "target": "object",
-            "objects": "polluted_object2"
+            "objects": {
+              "_union" : [
+                "polluted_object1",
+                "polluted_object2",
+                "polluted_object3"
+              ]
+            }
+
         }
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "defaultsDeep",
+        "filename" : "./src/index.js",
+        "source": "module.exports",
         "source_lineno": 8,
         "sink": "target[key] = value;",
         "sink_lineno": 20,

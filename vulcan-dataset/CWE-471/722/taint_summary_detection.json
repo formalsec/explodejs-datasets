@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = extend[key];",
+        "sink_lineno": 94
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = merge_recursive(base[key], extend[key]);",
+        "sink_lineno": 90
+    }
+]

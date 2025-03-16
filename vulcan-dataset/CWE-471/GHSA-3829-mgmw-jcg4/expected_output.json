@@ -1,0 +1,30 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "filename": "./src/deep-merge.js",
+        "source": "module.exports",
+        "sink": "target[name] = copy;",
+        "tainted_params": [
+            "target",
+            "options"
+        ],
+        "params_types": {
+            "target": "object",
+            "options": "polluted_object2"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "filename": "./src/deep-merge.js",
+        "source": "module.exports",
+        "sink": "target[name] = copy;",
+        "tainted_params": [
+            "target",
+            "options"
+        ],
+        "params_types": {
+            "target": "object",
+            "options": "polluted_object3"
+        }
+    }
+]

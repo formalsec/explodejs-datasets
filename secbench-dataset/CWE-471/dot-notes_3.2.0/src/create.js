@@ -1,4 +1,4 @@
-var parse = require('./keys');
+var parse = function (x) { return x.split("."); }
 
 /**
  * Constructs a key based on a dot noted path and

@@ -14,11 +14,11 @@ var _lodash = require('lodash');
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _richParam = require('rich-param');
+var _richParam = {}
 
 var _richParam2 = _interopRequireDefault(_richParam);
 
-var _bodymenSchema = require('./bodymen-schema');
+var _bodymenSchema = {}
 
 var _bodymenSchema2 = _interopRequireDefault(_bodymenSchema);
 

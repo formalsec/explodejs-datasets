@@ -24,5 +24,5 @@ function dset(obj, keys, val) {
 	}
 }
 
-exports.dset = dset;
-exports.merge = merge;
+module.exports.dset = dset;
+module.exports.merge = merge;

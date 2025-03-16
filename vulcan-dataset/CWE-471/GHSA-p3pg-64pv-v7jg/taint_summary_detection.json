@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/GHSA-p3pg-64pv-v7jg/src/jsgui-lang-essentials.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "i[s] = prop_value;",
+        "sink_lineno": 1442
+    },
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/GHSA-p3pg-64pv-v7jg/src/jsgui-lang-essentials.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "i[s] = prop_value;",
+        "sink_lineno": 1435
+    }
+]

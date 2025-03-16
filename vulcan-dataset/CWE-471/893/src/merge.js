@@ -5,22 +5,21 @@ function typeOf(value) {
     return Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
 }
 
-typeOf.Object = function (value) {
+function isObject (value) {
     return typeOf(value) === 'object';
-};
+}
 
-typeOf.Array = function (value) {
+function isArray (value) {
     return Array.isArray(value);
-};
+}
 
-typeOf.Function = function (value) {
+function isFunction (value) {
     return typeof value === 'function';
-};
+}
 
-typeOf.String = function (value) {
+function isString (value) {
     return typeof value === 'string';
-};
-
+}
 
 /**
  *  Merges objects together
@@ -108,10 +107,10 @@ function _parseArguments(args) {
 
     args = Array.prototype.slice.call(args)
 
-    if ( typeOf.Array(args[0]) ) {
+    if ( isArray(args[0]) ) {
         var lastArg = args[ args.length - 1 ]
 
-        if ( typeOf.Function(lastArg) ) {
+        if ( isFunction(lastArg) ) {
             options.tests.push(lastArg)
             args.pop()
         }
@@ -205,7 +204,7 @@ function _runTests(tests, options) {
  *  @return    {Object}
  */
 function _castTypes(types) {
-    if ( typeOf.Object(types) ) return types
+    if ( isObject(types) ) return types
 
     return types.reduce(function(hash, key) { hash[key] = true; return hash }, {})
 }

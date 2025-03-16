@@ -1,0 +1,66 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/GHSA-g954-5hwp-pp24/src/util.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "dst[part] = value;",
+        "sink_lineno": 185,
+        "source": "module.exports.setProperty",
+        "tainted_params": [
+            "dst",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "dst": "any",
+            "path": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "setProperty",
+                "fn_name": "1882.setProperty-o303",
+                "fn_id": 1707,
+                "source_fn_id": 1707
+            }
+        ]
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/GHSA-g954-5hwp-pp24/src/util.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "dst[part] = setProp(dst[part] || {}, path, value);",
+        "sink_lineno": 180,
+        "source": "module.exports.setProperty",
+        "tainted_params": [
+            "dst",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "dst": "any",
+            "path": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "setProperty",
+                "fn_name": "1882.setProperty-o303",
+                "fn_id": 1707,
+                "source_fn_id": 1707
+            }
+        ]
+    }
+]

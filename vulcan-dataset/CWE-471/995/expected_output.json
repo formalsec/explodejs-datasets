@@ -2,7 +2,7 @@
     {
         "vuln_type": "prototype-pollution",
         "filename": "./src/index.js",
-        "source": "merge",
+        "source": "module.exports",
         "sink": "x[key] = v25;",
         "tainted_params": [
             "x",
@@ -16,7 +16,7 @@
     {
         "vuln_type": "prototype-pollution",
         "filename": "./src/index.js",
-        "source": "merge",
+        "source": "module.exports",
         "sink": "x[key] = v25;",
         "tainted_params": [
             "x",

@@ -1,0 +1,20 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "filename" : "./src/index.js",
+        "source": "module.exports",
+        "source_lineno": 3,
+        "sink": "doc[key] = v17;",
+        "sink_lineno": 35,
+        "tainted_params": [
+            "obj",
+            "accessor",
+            "value"
+        ],
+        "params_types": {
+            "doc": "object",
+            "accessor": "string",
+            "value" : "string"
+        }
+    }
+]

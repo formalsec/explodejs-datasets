@@ -40,9 +40,4 @@ const merge = (x, y) => {
 	return y;
 }
 
-const mergify = (...o) => o.reduce((a, b) => merge(a, b));
-
-module.exports = mergify;
-mergify.default = mergify;
-mergify.merge = merge;
-mergify.isPojo = isPojo;
+module.exports = merge

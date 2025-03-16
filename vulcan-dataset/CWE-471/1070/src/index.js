@@ -1213,18 +1213,18 @@ function baseRest(func, start) {
     var args = arguments,
         index = -1,
         length = nativeMax(args.length - start, 0),
-        array = Array(length);
+        array = new Array(length);
 
     while (++index < length) {
       array[index] = args[start + index];
     }
     index = -1;
-    var otherArgs = Array(start + 1);
+    var otherArgs = new Array(start + 1);
     while (++index < start) {
       otherArgs[index] = args[index];
     }
     otherArgs[start] = array;
-    return apply(func, this, otherArgs);
+    return func(this, otherArgs);
   };
 }
 
@@ -1489,7 +1489,7 @@ var getTag = baseGetTag;
 // for data views in Edge < 14, and promises in Node.js.
 if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) ||
     (Map && getTag(new Map) != mapTag) ||
-    (Promise && getTag(Promise.resolve()) != promiseTag) ||
+    /*(Promise && getTag(Promise.resolve()) != promiseTag) ||*/
     (Set && getTag(new Set) != setTag) ||
     (WeakMap && getTag(new WeakMap) != weakMapTag)) {
   getTag = function(value) {
@@ -2115,7 +2115,7 @@ function toPlainObject(value) {
  */
 var defaultsDeep = baseRest(function(args) {
   args.push(undefined, mergeDefaults);
-  return apply(mergeWith, undefined, args);
+  return mergeWith(undefined, args);
 });
 
 /**

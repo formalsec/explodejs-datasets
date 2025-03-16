@@ -1,0 +1,21 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "filename" : "./src/index.js",
+        "source": "module.exports",
+        "sink": "object1[key] = v17;",
+        "tainted_params": [
+            "object1",
+            "object2"
+        ],
+        "params_types": {
+            "object1": "object",
+            "object2": {
+                "_union" : [
+                    "polluted_object2",
+                    "polluted_object3"
+                  ]
+            }
+        }
+    }
+]

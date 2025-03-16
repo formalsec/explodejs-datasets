@@ -57,7 +57,7 @@ function deepExtend(objects, collision, path) {
         if ( copy && ( _.isPlainObject(copy) || (copyIsArray = _.isArray(copy)) ) ) {
           if ( copyIsArray ) {
             copyIsArray = false;
-            clone = src && _.isArray(src) ? src : [];
+            clone = src && Array.isArray(src) ? src : [];
           } else {
             clone = src && _.isPlainObject(src) ? src : {};
           }

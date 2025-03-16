@@ -206,7 +206,7 @@ function set(o, s, value) {
 
         io = io[n];
     }
-    
+
     io[a[a.length - 1]] = value;
 
     return o;
@@ -291,5 +291,4 @@ safeCall.query = query;
 safeCall.set = set;
 safeCall.unset = unset;
 
-exports = module.exports = safeCall;
-
+module.exports = safeCall;

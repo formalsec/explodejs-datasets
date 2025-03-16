@@ -3,8 +3,8 @@ var hasOwnProp = Object.prototype.hasOwnProperty;
 module.exports = deep;
 
 function deep (obj, path, value) {
-  if (arguments.length === 3) return set.apply(null, arguments);
-  return get.apply(null, arguments);
+  if (arguments.length === 3) return set(obj, path, value);
+  return get(obj, path);
 }
 
 function get (obj, path) {

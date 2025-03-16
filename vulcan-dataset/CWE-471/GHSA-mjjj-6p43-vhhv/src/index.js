@@ -2,13 +2,14 @@ var hasOwnProp = Object.prototype.hasOwnProperty;
 
 module.exports = deep;
 
-function isSafeKey (key) {
-  return key !== '__proto__' && key !== 'prototype' && key !== 'constructor';
-}
+// This is only included in the patch
+// function isSafeKey (key) {
+//   return key !== '__proto__' && key !== 'prototype' && key !== 'constructor';
+// }
 
 function deep (obj, path, value) {
-  if (arguments.length === 3) return set.apply(null, arguments);
-  return get.apply(null, arguments);
+  if (arguments.length === 3) return set(obj, path, value);
+  return get(obj, path);
 }
 
 function get (obj, path) {
@@ -28,7 +29,6 @@ function set (obj, path, value) {
   var keys = Array.isArray(path) ? path : path.split('.');
   for (var i = 0; i < keys.length - 1; i++) {
     var key = keys[i];
-    if (!isSafeKey(key)) return;
     if (deep.p && !hasOwnProp.call(obj, key)) obj[key] = {};
     obj = obj[key];
   }

@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-    extendReservedInstances: [Buffer, ArrayBuffer],
+    // extendReservedInstances: [Buffer, ArrayBuffer],
     extend: extend,
     merge: extend,
     isPlainObject: isPlainObject,
@@ -61,11 +61,11 @@ function toArray(obj, fields, transfornFnc){
         transfornFnc = arguments[1];
         fields = null;
     }
-    
+
     if(!isObject(obj)) throw new Error('Wrong arguments');
     var index, array = [];
     transfornFnc = typeof transfornFnc === 'function' ? transfornFnc : function(key, value){ return value; };
-    
+
     if(Array.isArray(fields)) for(var i=0;i<fields.length;i++){
         array[i] = transfornFnc(key, deepGet(obj, fields[i]));
     }
@@ -74,7 +74,7 @@ function toArray(obj, fields, transfornFnc){
             array.push( transfornFnc(key, obj[key]) );
         }
     }
-    
+
     return array;
 }
 
@@ -82,13 +82,13 @@ function fromArray(array, transfornFnc){
     if(!Array.isArray(array)) throw new Error('Wrong arguments');
     var obj = {};
     transfornFnc = typeof transfornFnc === 'function' ? transfornFnc : function(element, i){ return { key:i, value:element }; };
-    
+
     var keyValue = {};
     for(var i=0;i<array.length;i++) {
         keyValue = transfornFnc(array[i],i);
         obj[ keyValue.key ] = keyValue.value;
     }
-    
+
     return obj;
 }
 
@@ -129,25 +129,25 @@ function extend() {
     }
     for ( ; i < length; i++ ) {
         options = arguments[ i ];
-        
+
         if(isReservedInstance(options, reservedInstances)){
             target = options;
             return target;
         }
-        
+
         // Only deal with non-null/undefined values
         else if ( options !== null ) {
             // Extend the base object
             for ( name in options ) {
                 src = target[ name ];
                 copy = options[ name ];
-                
+
                 // prevent modifying reserved instances
                 if ( isReservedInstance(copy, reservedInstances) ){
                     target[ name ] = copy;
                     continue;
                 }
-                
+
                 // Prevent never-ending loop
                 if ( target === copy ) {
                     continue;
@@ -164,10 +164,10 @@ function extend() {
                         clone = src && Array.isArray(src) ? src : [];
                     } else {
                         clone = src && isPlainObject(src) ? src : {};
-                    }  
+                    }
                     // Never move original objects, clone them
                     target[ name ] = object.extend( deep, clone, copy );
-                } 
+                }
                 // copy all include undefined props - helpful in query builder
                 else { // if (copy !== undefined){ // Don't bring in undefined values
                     target[name] = copy;
@@ -209,7 +209,7 @@ function deepSet(parent, key, value, mode) {
                 if(mode==='push') current[parts[i]].push(value);
                 else current[parts[i]] = value;
             }
-            else current[parts[i]] = current[parts[i]] || {};    
+            else current[parts[i]] = current[parts[i]] || {};
             current = current[parts[i]];
         }
     }
@@ -219,31 +219,31 @@ function deepSet(parent, key, value, mode) {
 function deepHasProperty(parent, key) {
     if(key==='this') return true;
     if(parent === null || parent === undefined || typeof parent === 'function') return false;
-    
+
     var parts = key.split('.');
     var current = parent;
-    
+
     for(var i=0; i<parts.length; i++) {
         if( current[parts[i]] ) current = current[parts[i]];
         else if( i === parts.length-1 && current.hasOwnProperty && current.hasOwnProperty(parts[i]) ) return true;
         else return false;
     }
-    
+
     return true;
 }
 
 function deepGet(parent, key) {
     if(key==='this') return parent;
     if(parent === null || parent === undefined || typeof parent === 'function') return undefined;
-    
+
     var parts = key.split('.');
     var current = parent;
-    
+
     for(var i=0; i<parts.length; i++) {
         if((current[parts[i]] === null && i<parts.length-1) || current[parts[i]] === undefined) return undefined;
         else current = current[parts[i]];
     }
-    
+
     // function as value is not allowed
     if(typeof current === 'function') return undefined;
     return current;
@@ -268,7 +268,7 @@ var regexIsoJson = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*))(?:
 
 function dateStringsToDates(input, useIso8601) {
     var value, match;
-    
+
     // try to parse if input is string
     if(typeof input === 'string' && (match = input.match(useIso8601 ? regexIso8601 : regexIsoJson))) {
         var milliseconds = Date.parse(match[0]);
@@ -277,13 +277,13 @@ function dateStringsToDates(input, useIso8601) {
         }
         return input;
     }
-    
+
     // Ignore things that aren't objects
     else if(typeof input !== 'object') return input;
-    
+
     for(var key in input){
         value = input[key];
-        
+
         // Check for string properties which look like dates.
         if(typeof value === 'string' && (match = value.match(useIso8601 ? regexIso8601 : regexIsoJson))) {
             var milliseconds = Date.parse(match[0]);
@@ -296,7 +296,7 @@ function dateStringsToDates(input, useIso8601) {
             dateStringsToDates(value, useIso8601);
         }
     }
-    
+
     return input;
 }
 
@@ -307,9 +307,9 @@ function dateStringsToDates(input, useIso8601) {
 function update(obj, expression){
     if(isObject(expression)) for(var key in expression){
         if(isObject(expression[key])){
-            
+
             if(key==='$set') obj = update(obj, expression[key]);
-            
+
             else if(key==='$inc') for(var prop in expression[key]){
                 if(typeof expression[key][prop] === 'number'){
                     var orig = deepGet(obj, prop);
@@ -317,16 +317,16 @@ function update(obj, expression){
                     else if(typeof orig === 'number') obj = deepSet(obj, prop, orig+expression[key][prop]);
                 }
             }
-            
+
             else if(key==='$max' || key==='$min') for(var prop in expression[key]){
                 if(typeof expression[key][prop] === 'number'){
                     var orig = deepGet(obj, prop);
                     if(key==='$max' && orig < expression[key][prop]) obj = deepSet(obj, prop, expression[key][prop]);
                     else if(key==='$min' && orig > expression[key][prop]) obj = deepSet(obj, prop, expression[key][prop]);
                 }
-                
+
             }
-            
+
             else if(key==='$pull' || key==='$pullAll') for(var prop in expression[key]){
                 var orig = deepGet(obj, prop), value = expression[key][prop];
                 if(Array.isArray(orig)){
@@ -338,7 +338,7 @@ function update(obj, expression){
                     obj = deepSet(obj, prop, orig);
                 }
             }
-            
+
             else if(key==='$push') for(var prop in expression[key]){
                 var orig = deepGet(obj, prop), value = expression[key][prop];
                 if(value.$each) value = value.$each;
@@ -350,12 +350,12 @@ function update(obj, expression){
                     obj = deepSet(obj, prop, orig);
                 }
             }
-            
+
             else if(key[0]==='$') continue; // skip not recognized keys
-            
+
             else obj = deepSet(obj, key, expression[key]); // key is simple property
         }
-        
+
         // if expression.$set, ignore data properties outside it
         else if(!expression.$set) obj = deepSet(obj, key, expression[key]);
     }

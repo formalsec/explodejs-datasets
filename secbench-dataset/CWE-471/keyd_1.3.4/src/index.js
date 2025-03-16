@@ -161,7 +161,7 @@ function eatFirst(keyPath, eat, options = { separator: '.' }) {
 			break;
 		}
 	}
-	
+
 	return join(keyPath, options);
 
 }

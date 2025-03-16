@@ -1,7 +1,16 @@
 'use strict';
 
-var isExtendable = require('is-extendable');
-var forIn = require('for-in');
+function isObject(val) {
+  return val != null && typeof val === 'object' && Array.isArray(val) === false;
+}
+
+function forIn(obj, fn, thisArg) {
+  for (var key in obj) {
+    if (fn.call(thisArg, obj[key], key, obj) === false) {
+      break;
+    }
+  }
+}
 
 function mixinDeep(target, objects) {
   var len = arguments.length, i = 0;
@@ -29,17 +38,6 @@ function copy(val, key) {
   } else {
     this[key] = val;
   }
-}
-
-/**
- * Returns true if `val` is an object or function.
- *
- * @param  {any} val
- * @return {Boolean}
- */
-
-function isObject(val) {
-  return isExtendable(val) && !Array.isArray(val);
 }
 
 /**

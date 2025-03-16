@@ -27,15 +27,16 @@ module.exports.set = function (obj, path, value) {
 	}
 
 	var pathArr = path.split('.');
-	pathArr.forEach(function (path, index) {
+  for (var i = 0; i < pathArr.length - 1; i++) {
+    path = pathArr[i];
 		if (!isObject(obj[path])) {
 			obj[path] = {};
 		}
 
-		if (index === pathArr.length - 1) {
+		if (i === pathArr.length - 1) {
 			obj[path] = value;
 		}
 
 		obj = obj[path];
-	});
+	}
 };

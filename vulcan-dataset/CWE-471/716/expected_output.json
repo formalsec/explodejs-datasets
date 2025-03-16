@@ -1,6 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
+        "filename" : "./src/merge-objects.js",
         "source": "module.exports",
         "sink": "object1[key] = v17;",
         "tainted_params": [
@@ -14,6 +15,7 @@
     },
     {
         "vuln_type": "prototype-pollution",
+        "filename" : "./src/merge-objects.js",
         "source": "module.exports",
         "sink": "object1[key] = v17;",
         "tainted_params": [

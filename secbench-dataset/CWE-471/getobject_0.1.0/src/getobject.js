@@ -8,15 +8,13 @@
 
 'use strict';
 
-var getobject = module.exports = {};
+var getobject = {};
 
 // Split strings on dot, but only if dot isn't preceded by a backslash. Since
 // JavaScript doesn't support lookbehinds, use a placeholder for "\.", split
 // on dot, then replace the placeholder character with a dot.
 function getParts(str) {
-  return str.replace(/\\\./g, '\uffff').split('.').map(function(s) {
-    return s.replace(/\uffff/g, '.');
-  });
+  return str.split(".");
 }
 
 // Get the value of a deeply-nested property exist in an object.
@@ -58,3 +56,5 @@ getobject.exists = function(obj, parts) {
 
   return typeof obj === 'object' && obj && prop in obj;
 };
+
+module.exports = getobject;

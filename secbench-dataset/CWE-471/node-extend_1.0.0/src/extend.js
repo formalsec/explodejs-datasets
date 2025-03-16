@@ -9,7 +9,7 @@
  */
 var fs = require( 'fs' );
 
-function is_plain_obj( obj ){
+function is_plain_obj( obj ) {
    if( !obj ||
        {}.toString.call( obj ) !== '[object Object]' ||
        obj.nodeType ||
@@ -98,7 +98,7 @@ function extend () {
 /**
  * @public
  */
-extend.version = JSON.parse( fs.readFileSync( __dirname + '/../package.json', 'utf8' )).version;
+// extend.version = JSON.parse( fs.readFileSync( __dirname + '/../package.json', 'utf8' )).version;
 
 
 

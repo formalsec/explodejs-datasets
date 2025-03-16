@@ -1,4 +1,3 @@
-module.exports = extend;
 
 /*
   var obj = {a: 3, b: 5};
@@ -60,3 +59,4 @@ function extend(/* [deep], obj1, obj2, [objn] */) {
 function isCloneable(obj) {
   return Array.isArray(obj) || {}.toString.call(obj) == '[object Object]';
 }
+module.exports = extend;

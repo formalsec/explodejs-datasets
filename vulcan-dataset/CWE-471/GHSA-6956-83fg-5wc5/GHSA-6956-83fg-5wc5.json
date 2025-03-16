@@ -1,6 +1,6 @@
 {
     "advisory": {
-        "ghsa_id": "GHSA-6956-83fg-5wc5", 
+        "ghsa_id": "GHSA-6956-83fg-5wc5",
         "cve_id": "CVE-2022-25354",
         "cwe": "CWE-1321"
     },

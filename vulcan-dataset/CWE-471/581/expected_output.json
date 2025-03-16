@@ -1,6 +1,21 @@
 [
     {
         "vuln_type": "prototype-pollution",
+        "filename" : "./src/index.js",
+        "source": "module.exports",
+        "sink": "target[key] = value;",
+        "tainted_params": [
+            "target",
+            "objects"
+        ],
+        "params_types": {
+            "target": "object",
+            "objects": "polluted_object1"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "filename" : "./src/index.js",
         "source": "module.exports",
         "sink": "target[key] = value;",
         "tainted_params": [
@@ -10,19 +25,6 @@
         "params_types": {
             "target": "object",
             "objects": "polluted_object2"
-        }
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "module.exports",
-        "sink": "target[key] = value;",
-        "tainted_params": [
-            "target",
-            "objects"
-        ],
-        "params_types": {
-            "target": "object",
-            "objects": "polluted_object3"
         }
     }
 ]

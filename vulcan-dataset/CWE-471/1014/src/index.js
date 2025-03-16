@@ -210,7 +210,8 @@ function extend(target, obj) {
   assignSymbols(target, obj);
 
   for (var key in obj) {
-    if (isValidKey(key) && hasOwn(obj, key)) {
+    // Is valid key is only in the fixed version
+    if (/* isValidKey(key) && */ hasOwn(obj, key)) {
       var val = obj[key];
       if (isObject(val)) {
         if (typeOf(target[key]) === 'undefined' && typeOf(val) === 'function') {

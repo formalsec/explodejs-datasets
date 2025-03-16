@@ -1,9 +1,5 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
 
 var replaceValue = function replaceValue(obj, arrKey, val, isAppend) {
   var last = arrKey.pop();
@@ -25,6 +21,4 @@ var replaceValue = function replaceValue(obj, arrKey, val, isAppend) {
   }
 };
 
-var _default = replaceValue;
-exports["default"] = _default;
-module.exports = exports.default;
+module.exports = replaceValue;

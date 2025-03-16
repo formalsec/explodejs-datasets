@@ -27,7 +27,7 @@ function set (obj, path, value) {
       obj[path[i]] = value
     else if(null == obj[path[i]])
       obj = (obj[path[i]] = isNonNegativeInteger(path[i+1]) ? [] : {})
-    else if (!(isPrototypePolluted(path[i])))
+    else // Vuln version 1.5.0 doesn't have this if (!(isPrototypePolluted(path[i])))
       obj = obj[path[i]]
   return value
 }
@@ -91,9 +91,10 @@ function clone (obj) {
   return _obj
 }
 
-function isPrototypePolluted(key) {
-  return ['__proto__', 'constructor', 'prototype'].includes(key)
-}
+// This was the patch
+// function isPrototypePolluted(key) {
+//   return ['__proto__', 'constructor', 'prototype'].includes(key)
+// }
 
 exports.get = get
 exports.set = set

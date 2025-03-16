@@ -1,0 +1,25 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "./src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
+        "sink_lineno": 59,
+        "source": "module.exports.set",
+        "tainted_params": [],
+        "params_types": {
+          "a" : "object",
+          "b" : "string",
+          "value" : "string"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "recursive",
+                "fn_name": "1402.recursive-o190",
+                "fn_id": 1005,
+                "source_fn_id": 1005
+            }
+        ]
+    }
+]

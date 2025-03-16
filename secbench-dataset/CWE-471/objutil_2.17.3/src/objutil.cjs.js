@@ -47,7 +47,7 @@ function deepIt(a, b, callback, path, _cache) {
 function forEach(obj, callback) {
   if (!isPrimitive(obj)) {
     for (var key in obj) {
-      if (own(obj, key) 
+      if (own(obj, key)
           && callback(obj[key], key, obj)===false) { break }
     }
   }
@@ -244,8 +244,8 @@ function isEqual(x, y, isStrict, validFn) {
     var isPrimitiveA = isPrimitive(a[key]);
     var isPrimitiveB = isPrimitive(b[key]);
     if (isPrimitiveA || isPrimitiveB) {
-      if(isStrict 
-        ? b[key] !== a[key] 
+      if(isStrict
+        ? b[key] !== a[key]
         : isPrimitiveA!==isPrimitiveB || b[key] != a[key]) { return (equal = false) }
     } else if(keys(a[key]).length !== keys(b[key]).length) {
       return (equal = false)

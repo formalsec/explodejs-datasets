@@ -1,25 +1,32 @@
 // Public API
 module.exports = reduceObject;
 
-/**
- * Iterates over own properties of the provided object
- * and copies then over to the target object.
- * While recursively running merge on the elements.
- *
- * @param   {mixed} target - target object to modify
- * @param   {mixed} source - source object to read from
- * @param   {function} merge - iterator to merge sub elements
- * @returns {mixed} - modified target object
- */
-function reduceObject(target, source, merge)
-{
-  // clone exposed properties
-  Object.keys(source).reduce(function(acc, key)
-  {
-    acc[key] = merge(acc[key], source[key]);
+function recursiveMerge(target, source) {
+  if (Array.isArray(target) && Array.isArray(source)) {
+    return target.concat(source);
+  } else if (isObject(target) && isObject(source)) {
+    for (const key in source) {
+      if (
+        Object.prototype.hasOwnProperty.call(source, key)
+      ) {
+        target[key] = recursiveMerge(target[key], source[key]);
+      }
+    }
 
-    return acc;
-  }, target);
+    return target;
+  }
+  return source;
+}
+
+function isObject(value) {
+  return value !== null && typeof value === "object";
+}
+
+function reduceObject(target, source) {
+  // clone exposed properties
+  Object.keys(source).forEach((key) => {
+    target[key] = recursiveMerge(target[key], source[key]);
+  });
 
   return target;
 }

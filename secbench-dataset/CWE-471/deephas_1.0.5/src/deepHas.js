@@ -61,7 +61,7 @@ function add(obj, str, val) {
         var items = str.split('.');
         var initial = items.slice(0, items.length - 1);
         var last = items.slice(items.length - 1);
-        var test = initial.reduce(indexTrue, obj);
+        var test = obj[initial];
         test[last] = val;
     } catch(ex) {
         console.error(ex);

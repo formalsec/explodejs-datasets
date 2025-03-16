@@ -1,13 +1,13 @@
 'use strict';
 
-var setPath = function (obj, path, value, delimiter) {
+var setPath = function (obj, path, value) {
 	var arr;
 	var key;
 	if (!obj || typeof obj !== 'object') {
 		obj = {};
 	}
 	if (typeof path === 'string') {
-		path = path.split(delimiter || '.');
+		path = path.split('.');
 	}
 	if (Array.isArray(path) && path.length > 0) {
 		arr = path;

@@ -108,6 +108,4 @@ function undefsafe(obj, path, value, __res) {
   return obj;
 }
 
-if (typeof module !== 'undefined') {
-  module.exports = undefsafe;
-}
+module.exports = undefsafe;

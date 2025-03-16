@@ -42,7 +42,7 @@ var exists = module.exports.exists = function exists(object, path) {
 //
 // The return value, however, is the property you're trying to access, or
 // `undefined` if it can't be found. This means you won't be able to tell
-// the difference between an unresolved path and an undefined property, so you 
+// the difference between an unresolved path and an undefined property, so you
 // should not use `get` to check for the existence of a property. Use `exists`
 // instead.
 //
@@ -134,7 +134,7 @@ var put = module.exports.put = function put(object, path, value) {
   if (!(path instanceof Array) || path.length === 0) {
     return false;
   }
-  
+
   path = path.slice();
 
   var key = path.shift();

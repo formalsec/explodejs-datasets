@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-471/dot-prop_2.0.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[path] = value;",
+        "sink_lineno": 37,
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": "string",
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "520.v64-o75",
+                "fn_id": "400",
+                "source_fn_id": "400"
+            }
+        ]
+    }
+]

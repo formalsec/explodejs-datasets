@@ -1,6 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
+        "filename": "./src/merge.js",
         "source": "module.exports.recursive",
         "sink": "base[key] = v27;",
         "tainted_params": [
@@ -8,12 +9,13 @@
             "recursive"
         ],
         "params_types": {
-            "clone": "object",
+            "clone": "bool",
             "recursive": "polluted_object2"
         }
     },
     {
         "vuln_type": "prototype-pollution",
+        "filename": "./src/merge.js",
         "source": "module.exports.recursive",
         "sink": "base[key] = v27;",
         "tainted_params": [
@@ -21,7 +23,7 @@
             "recursive"
         ],
         "params_types": {
-            "clone": "object",
+            "clone": "bool",
             "recursive": "polluted_object3"
         }
     }

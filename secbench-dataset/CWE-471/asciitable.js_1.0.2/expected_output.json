@@ -1,0 +1,30 @@
+[
+    {
+        "vuln_type": "prototype-pollution",
+        "filename" : "./src/asciitable.umd.js",
+        "source": "module.exports",
+        "sink": "target[key] = v17;",
+        "tainted_params": [
+            "orig",
+            "objects"
+        ],
+        "params_types": {
+            "orig": "object",
+            "objects": "polluted_object2"
+        }
+    },
+    {
+        "vuln_type": "prototype-pollution",
+        "filename" : "./src/asciitable.umd.js",
+        "source": "module.exports",
+        "sink": "target[key] = v17;",
+        "tainted_params": [
+            "orig",
+            "objects"
+        ],
+        "params_types": {
+            "orig": "object",
+            "objects": "polluted_object3"
+        }
+    }
+]

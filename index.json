@@ -1117,7 +1117,7 @@
   },
   {
     "package": "libnested",
-    "version": "1.5.1",
+    "version": "1.5.0",
     "vulns": [
       {
         "cwe": "CWE-471",
@@ -1219,7 +1219,7 @@
   },
   {
     "package": "madlib-object-utils",
-    "version": "0.1.7",
+    "version": "0.1.6",
     "vulns": [
       {
         "cwe": "CWE-471",
@@ -1327,7 +1327,7 @@
   },
   {
     "package": "set-in",
-    "version": "2.0.1",
+    "version": "2.0.0",
     "vulns": [
       {
         "cwe": "CWE-471",

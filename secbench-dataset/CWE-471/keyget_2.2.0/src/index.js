@@ -1,13 +1,13 @@
-exports.get = getByPath;
-exports.set = setByPath;
-exports.has = hasPath;
-exports.push = pushByPath;
-exports.method = methodByPath;
-exports.call = callByPath;
-exports.breadcrumbs = breadcrumbs;
-exports.select = select;
-exports.at = at;
-exports.structure = getStructure;
+module.exports.get = getByPath;
+module.exports.set = setByPath;
+module.exports.has = hasPath;
+module.exports.push = pushByPath;
+module.exports.method = methodByPath;
+module.exports.call = callByPath;
+module.exports.breadcrumbs = breadcrumbs;
+module.exports.select = select;
+module.exports.at = at;
+module.exports.structure = getStructure;
 
 /**
  * Property path as String delimited with dots or array of keys and indexes.
@@ -96,11 +96,11 @@ function setByPath(target, path, value) {
 
   const key = path[0];
   if (isNumber(key)) {
-    if (! Array.isArray(target)) {
+    if (!Array.isArray(target)) {
       target = [];
     }
   }
-  else if (! isObject(target)) {
+  else if (!isObject(target)) {
     target = {};
   }
 

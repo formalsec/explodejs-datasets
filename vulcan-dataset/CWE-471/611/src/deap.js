@@ -1,5 +1,23 @@
-var typeOf = require('./typeof'),
-	slice = Array.prototype.slice;
+function typeOf(obj) {
+	var t = typeof obj;
+	if(t !== 'object') return t;
+
+	// typeof null == 'object' so check seperately
+	if(obj === null) return 'null';
+
+	// typeof new Array|String|Number|Boolean|RegExp == 'object' so check seperately
+	switch(obj.constructor) {
+		case Array:		return 'array';
+		case String:	return 'string';
+		case Number:	return 'number';
+		case Boolean:	return 'boolean';
+		case RegExp:	return 'regexp';
+		case Date:		return 'date';
+	}
+	return 'object';
+};
+
+slice = Array.prototype.slice;
 
 module.exports = {
 	clone: deepClone,
@@ -52,6 +70,7 @@ function extend(a, b /*, [b2..n] */) {
 }
 
 function deepExtend(a, b /*, [b2..n] */) {
+  arguments = [a, b];
 	slice.call(arguments, 1).forEach(function(b) {
 		Object.keys(b).forEach(function(p) {
 			if(typeOf(b[p]) === 'object' && typeOf(a[p]) === 'object')

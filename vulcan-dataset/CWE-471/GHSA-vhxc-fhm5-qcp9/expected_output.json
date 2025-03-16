@@ -1,6 +1,7 @@
 [
     {
         "vuln_type": "prototype-pollution",
+        "filename" : "./src/index.js",
         "source": "exports.handler",
         "source_lineno": 43,
         "sink": "v16[name] = fn;",

@@ -1,7 +1,8 @@
 [
     {
         "vuln_type": "prototype-pollution",
-        "source": "deepMixIn",
+        "filename":  "./src/deepMixIn.js",
+        "source": "module.exports",
         "source_lineno": 6,
         "sink": "target[key] = newvalue;",
         "sink_lineno": 19,
@@ -11,12 +12,15 @@
         ],
         "params_types": {
             "target": "object",
-            "defaults": "polluted_object2"
+            "defaults": {
+              "_union" : [ "polluted_object2", "polluted_object3" ]
+            }
         }
     },
     {
         "vuln_type": "prototype-pollution",
-        "source": "deepMixIn",
+        "filename":  "./src/deepFillIn.js",
+        "source": "module.exports",
         "source_lineno": 6,
         "sink": "target[key] = newvalue;",
         "sink_lineno": 19,
@@ -26,37 +30,9 @@
         ],
         "params_types": {
             "target": "object",
-            "defaults": "polluted_object3"
-        }
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "deepFillIn",
-        "source_lineno": 6,
-        "sink": "target[key] = newvalue;",
-        "sink_lineno": 19,
-        "tainted_params": [
-            "target",
-            "defaults"
-        ],
-        "params_types": {
-            "target": "object",
-            "defaults": "polluted_object2"
-        }
-    },
-    {
-        "vuln_type": "prototype-pollution",
-        "source": "deepFillIn",
-        "source_lineno": 6,
-        "sink": "target[key] = newvalue;",
-        "sink_lineno": 19,
-        "tainted_params": [
-            "target",
-            "defaults"
-        ],
-        "params_types": {
-            "target": "object",
-            "defaults": "polluted_object3"
+            "defaults": {
+              "_union" : [ "polluted_object2", "polluted_object3" ]
+            }
         }
     }
 ]

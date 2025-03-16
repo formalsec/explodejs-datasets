@@ -7,9 +7,41 @@
 
 'use strict';
 
-var isPrimitive = require('is-primitive');
-var assignSymbols = require('assign-symbols');
-var typeOf = require('kind-of');
+function isPrimitive(value) {
+  return value == null || (typeof value !== 'function' && typeof value !== 'object');
+}
+
+function assignSymbols(receiver, objects) {
+  if (receiver === null || typeof receiver === 'undefined') {
+    throw new TypeError('expected first argument to be an object.');
+  }
+
+  if (typeof objects === 'undefined' || typeof Symbol === 'undefined') {
+    return receiver;
+  }
+
+  if (typeof Object.getOwnPropertySymbols !== 'function') {
+    return receiver;
+  }
+
+  var isEnumerable = Object.prototype.propertyIsEnumerable;
+  var target = Object(receiver);
+  var len = arguments.length, i = 0;
+
+  while (++i < len) {
+    var provider = Object(arguments[i]);
+    var names = Object.getOwnPropertySymbols(provider);
+
+    for (var j = 0; j < names.length; j++) {
+      var key = names[j];
+
+      if (isEnumerable.call(provider, key)) {
+        target[key] = provider[key];
+      }
+    }
+  }
+  return target;
+}
 
 function assign(target/*, objects*/) {
   target = target || {};
@@ -40,7 +72,7 @@ function extend(target, obj) {
     if (hasOwn(obj, key)) {
       var val = obj[key];
       if (isObject(val)) {
-        if (typeOf(target[key]) === 'undefined' && typeOf(val) === 'function') {
+        if (typeof target[key] === 'undefined' && typeof val === 'function') {
           target[key] = val;
         }
         target[key] = assign(target[key] || {}, val);
@@ -57,7 +89,7 @@ function extend(target, obj) {
  */
 
 function isObject(obj) {
-  return typeOf(obj) === 'object' || typeOf(obj) === 'function';
+  return typeof obj === 'object' || typeof obj === 'function';
 }
 
 /**

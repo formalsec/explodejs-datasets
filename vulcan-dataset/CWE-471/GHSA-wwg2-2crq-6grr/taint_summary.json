@@ -1,0 +1,42 @@
+[
+    {
+        "type": "VFunExported",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/GHSA-wwg2-2crq-6grr/src/main.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "tmp[parts[i]] = val;",
+        "sink_lineno": 11,
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "path",
+            "val",
+            "sep"
+        ],
+        "params_types": {
+            "obj": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
+            "path": [
+                "any"
+            ],
+            "val": {
+                "_union": [
+                    "function",
+                    "object"
+                ]
+            },
+            "sep": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "491.v58-o66",
+                "fn_id": 385,
+                "source_fn_id": 385
+            }
+        ]
+    }
+]

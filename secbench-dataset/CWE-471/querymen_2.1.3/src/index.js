@@ -1,34 +1,34 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(module.exports, "__esModule", {
   value: true
 });
-exports.handlers = exports.Schema = exports.Param = undefined;
-exports.handler = handler;
-exports.parser = parser;
-exports.formatter = formatter;
-exports.validator = validator;
-exports.middleware = middleware;
-exports.errorHandler = errorHandler;
+module.exports.handlers = module.exports.Schema = module.exports.Param = undefined;
+module.exports.handler = handler;
+module.exports.parser = parser;
+module.exports.formatter = formatter;
+module.exports.validator = validator;
+module.exports.middleware = middleware;
+module.exports.errorHandler = errorHandler;
 
 var _lodash = require('lodash');
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _querymenParam = require('./querymen-param');
+var _querymenParam = {}
 
 var _querymenParam2 = _interopRequireDefault(_querymenParam);
 
-var _querymenSchema = require('./querymen-schema');
+var _querymenSchema = {}
 
 var _querymenSchema2 = _interopRequireDefault(_querymenSchema);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.Param = _querymenParam2.default;
-exports.Schema = _querymenSchema2.default; /** @module querymen */
+module.exports.Param = _querymenParam2.default;
+module.exports.Schema = _querymenSchema2.default; /** @module querymen */
 
-var handlers = exports.handlers = {
+var handlers = module.exports.handlers = {
   parsers: {},
   formatters: {},
   validators: {}
@@ -129,4 +129,4 @@ function errorHandler() {
   };
 }
 
-exports.default = { Schema: _querymenSchema2.default, Param: _querymenParam2.default, handlers: handlers, handler: handler, parser: parser, formatter: formatter, validator: validator, middleware: middleware, errorHandler: errorHandler };
+module.exports.default = { Schema: _querymenSchema2.default, Param: _querymenParam2.default, handlers: handlers, handler: handler, parser: parser, formatter: formatter, validator: validator, middleware: middleware, errorHandler: errorHandler };

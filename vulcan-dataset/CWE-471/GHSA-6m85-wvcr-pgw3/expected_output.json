@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-6m85-wvcr-pgw3/src/index.js",
+        "filename": "./src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "io[a[a.length - 1]] = value;",
         "sink_lineno": 210,

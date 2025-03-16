@@ -1,0 +1,29 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/vulcan-dataset/CWE-471/GHSA-vhxc-fhm5-qcp9/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "handlers[type][name] = fn;",
+        "sink_lineno": 44,
+        "source": "module.exports.handler",
+        "tainted_params": [
+            "type",
+            "name",
+            "fn"
+        ],
+        "params_types": {
+            "type": "string",
+            "name": "string",
+            "fn": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "handler",
+                "fn_name": "1296.handler-o193",
+                "fn_id": "928",
+                "source_fn_id": "928"
+            }
+        ]
+    }
+]

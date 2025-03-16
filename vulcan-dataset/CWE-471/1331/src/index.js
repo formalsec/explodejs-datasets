@@ -62,5 +62,5 @@ function get(path, defaultValue, context) {
 }
 
 
-exports.get = get;
-exports.set = set;
+module.exports.get = get;
+module.exports.set = set;

@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-471/libnested_1.5.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[path[i]] = value",
+        "sink_lineno": 27
+    }
+]

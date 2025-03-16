@@ -354,3 +354,5 @@ exports.cloneBuffer = function(buff) {
 exports.isArgumentsObject = function(v) {
   return Object.prototype.toString.call(v) === '[object Arguments]';
 };
+
+module.exports = exports;

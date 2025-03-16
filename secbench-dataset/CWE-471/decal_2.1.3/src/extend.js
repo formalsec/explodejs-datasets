@@ -9,8 +9,19 @@ Used by `decal.CoreObject` for inheritance and mixins.
 
 'use strict'
 
-const isObject = require('./isObject')
-const isFunction = require('./isFunction')
+let objectTypes = {
+  'function': true,
+  'object': true,
+  'unknown': true
+}
+
+function isObject(obj) {
+  return obj ? !!objectTypes[typeof obj] : false
+}
+
+function isFunction(obj) {
+  return typeof obj === 'function'
+}
 
 function isPlainObject (o) {
   return isObject(o) && o.constructor === Object
@@ -25,7 +36,7 @@ module.exports = function extend (target, ...rest) {
   if (typeof target !== 'object' && !isFunction(target)) target = {}
 
   let i = isObject(rest[0]) ? 0 : 1
-  let deep = (rest[0] === true)
+  let deep = isObject(rest[0])
 
   for (let l = rest.length; i < l; i++) {
     let opts = rest[i]

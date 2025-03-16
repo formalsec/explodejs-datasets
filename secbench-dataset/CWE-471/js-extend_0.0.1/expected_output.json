@@ -1,0 +1,21 @@
+[
+  {
+    "type": "VFunPropOfExportedObj",
+    "filename" : "./src/extend.js",
+    "vuln_type": "prototype-pollution",
+    "sink": "target[key] = value;",
+    "sink_lineno": 137,
+    "source": "module.exports",
+    "tainted_params": [ "target", "source" ],
+    "params_types": {
+      "target" : "object",
+      "source" : {
+        "_union": [
+          "polluted_object1",
+          "polluted_object2",
+          "polluted_object3"
+        ]
+      }
+    }
+  }
+]

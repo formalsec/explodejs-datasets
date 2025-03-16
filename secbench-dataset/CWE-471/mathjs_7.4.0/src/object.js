@@ -14,13 +14,10 @@ exports.lazy = lazy;
 exports.traverse = traverse;
 exports.hasOwnProperty = hasOwnProperty;
 exports.isLegacyFactory = isLegacyFactory;
-exports.get = get;
-exports.set = set;
-exports.pick = pick;
 exports.pickShallow = pickShallow;
 exports.values = values;
 
-var _is = require("./is");
+// var _is = require("./is");
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -56,7 +53,7 @@ function clone(x) {
   }
 
   if (x instanceof Date) return new Date(x.valueOf());
-  if ((0, _is.isBigNumber)(x)) return x; // bignumbers are immutable
+  // if ((0, _is.isBigNumber)(x)) return x; // bignumbers are immutable
 
   if (x instanceof RegExp) throw new TypeError('Cannot clone ' + x); // TODO: clone a RegExp
   // object

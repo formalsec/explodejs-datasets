@@ -1,31 +1,50 @@
 "use strict";
 /* IMPORT */
-var plain_object_clone_1 = require("plain-object-clone");
-var isPrimitive = require("is-primitive");
+function clone(object, base) {
+  if (base === void 0) { base = object.constructor(); }
+  for (var key in object) {
+    var value = object[key];
+    if (typeof value === 'object' && value !== null) {
+      base[key] = clone(value, value.constructor());
+    }
+    else {
+      base[key] = value;
+    }
+  }
+  return base;
+}
+
+function isPrimitive(val) {
+  if (typeof val === 'object') {
+    return val === null;
+  }
+  return typeof val !== 'function';
+}
+
 /* MERGE */
 function merge(objects) {
-    var target = plain_object_clone_1.default(objects[0]);
-    for (var i = 1, l = objects.length; i < l; i++) {
-        mergeObjects(target, objects[i]);
-    }
-    return target;
+  var target = clone(objects[0]);
+  for (var i = 1, l = objects.length; i < l; i++) {
+    mergeObjects(target, objects[i]);
+  }
+  return target;
 }
 function mergeObjects(target, source) {
-    for (var key in source) {
-        var value = source[key];
-        if (isPrimitive(value)) {
-            if (value !== undefined || !(key in target)) {
-                target[key] = value;
-            }
-        }
-        else if (!target[key] || Array.isArray(value)) {
-            target[key] = plain_object_clone_1.default(value);
-        }
-        else {
-            target[key] = mergeObjects(target[key], value);
-        }
+  for (var key in source) {
+    var value = source[key];
+    if (isPrimitive(value)) {
+      if (value !== undefined || !(key in target)) {
+        target[key] = value;
+      }
     }
-    return target;
+    else if (!target[key] || Array.isArray(value)) {
+      target[key] = plain_object_clone_1.default(value);
+    }
+    else {
+      target[key] = mergeObjects(target[key], value);
+    }
+  }
+  return target;
 }
 /* EXPORT */
 module.exports = merge;

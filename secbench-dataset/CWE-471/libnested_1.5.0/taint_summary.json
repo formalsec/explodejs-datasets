@@ -1,0 +1,35 @@
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-471/libnested_1.5.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[path[i]] = value",
+        "sink_lineno": 27,
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "obj": "object",
+            "path": {
+                "_union": [
+                    "object",
+                    "array",
+                    "string"
+                ]
+            },
+            "value": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "1597.set-o210",
+                "fn_id": "1072",
+                "source_fn_id": "1072"
+            }
+        ]
+    }
+]

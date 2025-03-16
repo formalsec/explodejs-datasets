@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "/home/filipe/projects/explode-js/bench/datasets/secbench-dataset/CWE-471/dot-prop_2.0.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[path] = value;",
+        "sink_lineno": 37
+    }
+]

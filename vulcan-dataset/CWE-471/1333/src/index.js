@@ -43,6 +43,4 @@ function arupex_deep_setter(obj, accessor, value){
 
 
 
-if(typeof module !== 'undefined'){
-    module.exports = arupex_deep_setter;
-}
+module.exports = arupex_deep_setter;

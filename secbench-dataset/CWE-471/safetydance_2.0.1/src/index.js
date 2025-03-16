@@ -253,7 +253,7 @@ function unset(o, s) {
     return o;
 }
 
-Object.assign(safe, {
+module.exports = {
     JSON: {
         parse: jsonParse,
         stringify: jsonStringify
@@ -299,6 +299,4 @@ Object.assign(safe, {
     safeAwait: safe,
 
     error: null
-});
-
-exports = module.exports = safe;
+}
