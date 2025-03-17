@@ -41,7 +41,7 @@ var localExecutableSync = function(commandName){
     }
 }
 
-var CommandExistsUnix = function(commandName, callback) {
+var commandExistsUnix = function(commandName, callback) {
 
     fileNotExists(commandName, function(isFile){
 
@@ -98,15 +98,10 @@ var commandExistsWindowsSync = function(commandName, callback) {
   }
 }
 
-var cleanInput = function(input) {
-  return '\''  + input.replace(/'/g, '\'\'') + '\'';
-}
-
 module.exports = function commandExists(commandName, callback) {
-  var cleanedCommandName = cleanInput(commandName);
   if (!callback && typeof Promise !== 'undefined') {
     return new Promise(function(resolve, reject){
-      commandExists(cleanedCommandName, function(error, output){
+      commandExists(commandName, function(error, output){
         if (output) {
           resolve(commandName);
         } else {
@@ -116,17 +111,16 @@ module.exports = function commandExists(commandName, callback) {
     });
   }
   if (isUsingWindows) {
-    commandExistsWindows(cleanedCommandName, callback);
+    commandExistsWindows(commandName, callback);
   } else {
-    commandExistsUnix(cleanedCommandName, callback);
+    commandExistsUnix(commandName, callback);
   }
 };
 
 module.exports.sync = function(commandName) {
-  var cleanedCommandName = cleanInput(commandName);
   if (isUsingWindows) {
-    return commandExistsWindowsSync(cleanedCommandName);
+    return commandExistsWindowsSync(commandName);
   } else {
-    return commandExistsUnixSync(cleanedCommandName);
+    return commandExistsUnixSync(commandName);
   }
 };

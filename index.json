@@ -1447,7 +1447,7 @@
   },
   {
     "package": "command-exists",
-    "version": "1.2.3",
+    "version": "1.2.2",
     "vulns": [
       {
         "cwe": "CWE-78",
