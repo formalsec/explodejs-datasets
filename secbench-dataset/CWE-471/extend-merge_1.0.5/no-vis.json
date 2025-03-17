@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/base-extend.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "args",
+            "merge"
+        ],
+        "params_types": {
+            "args": "any",
+            "merge": "any"
+        }
+    }
+]

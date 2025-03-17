@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "command",
+            "callback",
+            "log"
+        ],
+        "params_types": {
+            "command": "any",
+            "callback": "function",
+            "log": "any"
+        }
+    }
+]

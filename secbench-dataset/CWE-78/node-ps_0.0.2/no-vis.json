@@ -1,0 +1,58 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports._getTitles",
+        "tainted_params": [
+            "titleLine"
+        ],
+        "params_types": {
+            "titleLine": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports._parse",
+        "tainted_params": [
+            "input"
+        ],
+        "params_types": {
+            "input": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports._filter",
+        "tainted_params": [
+            "query",
+            "processes"
+        ],
+        "params_types": {
+            "query": "any",
+            "processes": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports._ps",
+        "tainted_params": [
+            "args",
+            "cb"
+        ],
+        "params_types": {
+            "args": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.lookup",
+        "tainted_params": [
+            "query",
+            "cb"
+        ],
+        "params_types": {
+            "query": "any",
+            "cb": "function"
+        }
+    }
+]

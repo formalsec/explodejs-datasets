@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/class.js",
+        "source": "module.exports.create",
+        "tainted_params": [
+            "members"
+        ],
+        "params_types": {
+            "members": "any"
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/parse.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "string"
+        ],
+        "params_types": {
+            "string": "any"
+        }
+    }
+]

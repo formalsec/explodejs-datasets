@@ -1,0 +1,42 @@
+[
+    {
+        "filename": "src/getobject.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "obj",
+            "parts",
+            "create"
+        ],
+        "params_types": {
+            "obj": "any",
+            "parts": "any",
+            "create": "any"
+        }
+    },
+    {
+        "filename": "src/getobject.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "parts",
+            "value"
+        ],
+        "params_types": {
+            "obj": "any",
+            "parts": "any",
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/getobject.js",
+        "source": "module.exports.exists",
+        "tainted_params": [
+            "obj",
+            "parts"
+        ],
+        "params_types": {
+            "obj": "any",
+            "parts": "any"
+        }
+    }
+]

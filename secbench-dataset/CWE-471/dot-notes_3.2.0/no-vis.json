@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/create.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "str",
+            "val"
+        ],
+        "params_types": {
+            "obj": "any",
+            "str": "any",
+            "val": "any"
+        }
+    }
+]

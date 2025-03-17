@@ -1,0 +1,62 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "path",
+            "o",
+            "special",
+            "map"
+        ],
+        "params_types": {
+            "path": "any",
+            "o": "any",
+            "special": "any",
+            "map": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.has",
+        "tainted_params": [
+            "path",
+            "o"
+        ],
+        "params_types": {
+            "path": "any",
+            "o": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.unset",
+        "tainted_params": [
+            "path",
+            "o"
+        ],
+        "params_types": {
+            "path": "any",
+            "o": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "path",
+            "val",
+            "o",
+            "special",
+            "map",
+            "_copying"
+        ],
+        "params_types": {
+            "path": "any",
+            "val": "any",
+            "o": "any",
+            "special": "any",
+            "map": "any",
+            "_copying": "any"
+        }
+    }
+]

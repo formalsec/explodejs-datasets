@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.kill",
+        "tainted_params": [
+            "pid",
+            "callback"
+        ],
+        "params_types": {
+            "pid": "any",
+            "callback": "function"
+        }
+    }
+]

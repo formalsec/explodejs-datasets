@@ -1,0 +1,94 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "obj",
+            "path",
+            "dft"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "dft": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.each",
+        "tainted_params": [
+            "obj",
+            "iter",
+            "includeArrays",
+            "path"
+        ],
+        "params_types": {
+            "obj": "any",
+            "iter": "any",
+            "includeArrays": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.map",
+        "tainted_params": [
+            "obj",
+            "iter",
+            "out",
+            "includeArrays"
+        ],
+        "params_types": {
+            "obj": "any",
+            "iter": "any",
+            "out": "any",
+            "includeArrays": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.paths",
+        "tainted_params": [
+            "obj",
+            "incluedArrays"
+        ],
+        "params_types": {
+            "obj": "any",
+            "incluedArrays": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.clone",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.copy",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    }
+]

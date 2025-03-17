@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "inPath",
+            "outPath",
+            "done"
+        ],
+        "params_types": {
+            "inPath": "any",
+            "outPath": "any",
+            "done": "any"
+        }
+    }
+]

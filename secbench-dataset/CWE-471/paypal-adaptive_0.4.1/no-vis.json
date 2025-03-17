@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/paypal-adaptive.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": "any"
+        }
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/dexie.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "name",
+            "options"
+        ],
+        "params_types": {
+            "name": "any",
+            "options": "any"
+        }
+    }
+]

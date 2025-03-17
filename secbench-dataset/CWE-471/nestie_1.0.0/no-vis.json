@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.nestie",
+        "tainted_params": [
+            "input",
+            "glue"
+        ],
+        "params_types": {
+            "input": "any",
+            "glue": "any"
+        }
+    }
+]

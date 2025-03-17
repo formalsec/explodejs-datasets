@@ -1,0 +1,44 @@
+[
+    {
+        "filename": "src/template.js",
+        "source": "module.exports.body",
+        "tainted_params": [
+            "tpl",
+            "state",
+            "{ inner",
+            "errorHandler }"
+        ],
+        "params_types": {
+            "tpl": "any",
+            "state": "any",
+            "{ inner": "any",
+            "errorHandler }": "any"
+        }
+    },
+    {
+        "filename": "src/template.js",
+        "source": "module.exports.restore",
+        "tainted_params": [
+            "source",
+            "schema",
+            "{ inner }"
+        ],
+        "params_types": {
+            "source": "any",
+            "schema": "any",
+            "{ inner }": "any"
+        }
+    },
+    {
+        "filename": "src/template.js",
+        "source": "module.exports.template",
+        "tainted_params": [
+            "state",
+            "options"
+        ],
+        "params_types": {
+            "state": "any",
+            "options": "any"
+        }
+    }
+]

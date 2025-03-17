@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/grammar-parser.js",
+        "source": "module.exports.Parser",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/grammar-parser.js",
+        "source": "module.exports.parse",
+        "tainted_params": [],
+        "params_types": {}
+    }
+]

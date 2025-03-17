@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.getCredential",
+        "tainted_params": [
+            "target",
+            "pythonLancher"
+        ],
+        "params_types": {
+            "target": "any",
+            "pythonLancher": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.default",
+        "tainted_params": [
+            "target",
+            "pythonLancher"
+        ],
+        "params_types": {
+            "target": "any",
+            "pythonLancher": "any"
+        }
+    }
+]

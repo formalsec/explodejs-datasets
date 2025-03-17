@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "src/undefsafe.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value",
+            "__res"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "value": "any",
+            "__res": "any"
+        }
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "src/serialize.js",
+        "source": "module.exports.serialize",
+        "tainted_params": [
+            "obj",
+            "ignoreNativeFunc",
+            "outputObj",
+            "cache",
+            "path"
+        ],
+        "params_types": {
+            "obj": "any",
+            "ignoreNativeFunc": "any",
+            "outputObj": "any",
+            "cache": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/serialize.js",
+        "source": "module.exports.unserialize",
+        "tainted_params": [
+            "obj",
+            "originObj"
+        ],
+        "params_types": {
+            "obj": "any",
+            "originObj": "any"
+        }
+    }
+]

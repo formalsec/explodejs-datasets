@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/command-exists.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "commandName",
+            "callback"
+        ],
+        "params_types": {
+            "commandName": "any",
+            "callback": "function"
+        }
+    }
+]

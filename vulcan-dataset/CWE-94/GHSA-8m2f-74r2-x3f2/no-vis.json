@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/compile.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "format",
+            "context"
+        ],
+        "params_types": {
+            "format": "any",
+            "context": "any"
+        }
+    }
+]

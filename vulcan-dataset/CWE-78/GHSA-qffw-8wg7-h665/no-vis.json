@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.Git",
+        "tainted_params": [],
+        "params_types": {}
+    }
+]

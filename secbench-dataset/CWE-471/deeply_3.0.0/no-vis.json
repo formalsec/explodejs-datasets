@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/reduce_object.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "target",
+            "source"
+        ],
+        "params_types": {
+            "target": "any",
+            "source": "any"
+        }
+    }
+]

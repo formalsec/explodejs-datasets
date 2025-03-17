@@ -1,0 +1,54 @@
+[
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.isArray",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.getValue",
+        "tainted_params": [
+            "path",
+            "object",
+            "valueIfMissing"
+        ],
+        "params_types": {
+            "path": "any",
+            "object": "any",
+            "valueIfMissing": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.getAndCreate",
+        "tainted_params": [
+            "path",
+            "object",
+            "defaultValue"
+        ],
+        "params_types": {
+            "path": "any",
+            "object": "any",
+            "defaultValue": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.setValue",
+        "tainted_params": [
+            "path",
+            "object",
+            "value"
+        ],
+        "params_types": {
+            "path": "any",
+            "object": "any",
+            "value": "any"
+        }
+    }
+]

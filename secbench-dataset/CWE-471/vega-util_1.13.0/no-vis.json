@@ -1,0 +1,710 @@
+[
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.accessor",
+        "tainted_params": [
+            "fn",
+            "fields",
+            "name"
+        ],
+        "params_types": {
+            "fn": "any",
+            "fields": "any",
+            "name": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.accessorFields",
+        "tainted_params": [
+            "fn"
+        ],
+        "params_types": {
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.accessorName",
+        "tainted_params": [
+            "fn"
+        ],
+        "params_types": {
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.array",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.clampRange",
+        "tainted_params": [
+            "range",
+            "min",
+            "max"
+        ],
+        "params_types": {
+            "range": "any",
+            "min": "any",
+            "max": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.compare",
+        "tainted_params": [
+            "fields",
+            "orders"
+        ],
+        "params_types": {
+            "fields": "any",
+            "orders": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.constant",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.debounce",
+        "tainted_params": [
+            "delay",
+            "handler"
+        ],
+        "params_types": {
+            "delay": "any",
+            "handler": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.error",
+        "tainted_params": [
+            "message"
+        ],
+        "params_types": {
+            "message": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.extend",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.extent",
+        "tainted_params": [
+            "array",
+            "f"
+        ],
+        "params_types": {
+            "array": "any",
+            "f": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.extentIndex",
+        "tainted_params": [
+            "array",
+            "f"
+        ],
+        "params_types": {
+            "array": "any",
+            "f": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.falsy",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.fastmap",
+        "tainted_params": [
+            "input"
+        ],
+        "params_types": {
+            "input": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.field",
+        "tainted_params": [
+            "field",
+            "name"
+        ],
+        "params_types": {
+            "field": "any",
+            "name": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.flush",
+        "tainted_params": [
+            "range",
+            "value",
+            "threshold",
+            "left",
+            "right",
+            "center"
+        ],
+        "params_types": {
+            "range": "any",
+            "value": "any",
+            "threshold": "any",
+            "left": "any",
+            "right": "any",
+            "center": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.hasOwnProperty",
+        "tainted_params": [
+            "object",
+            "property"
+        ],
+        "params_types": {
+            "object": "any",
+            "property": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.id",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.identity",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.inherits",
+        "tainted_params": [
+            "child",
+            "parent"
+        ],
+        "params_types": {
+            "child": "any",
+            "parent": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.inrange",
+        "tainted_params": [
+            "value",
+            "range",
+            "left",
+            "right"
+        ],
+        "params_types": {
+            "value": "any",
+            "range": "any",
+            "left": "any",
+            "right": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.isArray",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.isBoolean",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.isDate",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.isFunction",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.isNumber",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.isObject",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.isRegExp",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.isString",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.key",
+        "tainted_params": [
+            "fields",
+            "flat"
+        ],
+        "params_types": {
+            "fields": "any",
+            "flat": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.lerp",
+        "tainted_params": [
+            "array",
+            "frac"
+        ],
+        "params_types": {
+            "array": "any",
+            "frac": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.logger",
+        "tainted_params": [
+            "_",
+            "method"
+        ],
+        "params_types": {
+            "_": "any",
+            "method": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.lruCache",
+        "tainted_params": [
+            "maxsize"
+        ],
+        "params_types": {
+            "maxsize": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "compare",
+            "array0",
+            "array1",
+            "output"
+        ],
+        "params_types": {
+            "compare": "any",
+            "array0": "any",
+            "array1": "any",
+            "output": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.mergeConfig",
+        "tainted_params": [
+            "...configs"
+        ],
+        "params_types": {
+            "...configs": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.one",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.pad",
+        "tainted_params": [
+            "str",
+            "length",
+            "padchar",
+            "align"
+        ],
+        "params_types": {
+            "str": "any",
+            "length": "any",
+            "padchar": "any",
+            "align": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.panLinear",
+        "tainted_params": [
+            "domain",
+            "delta"
+        ],
+        "params_types": {
+            "domain": "any",
+            "delta": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.panLog",
+        "tainted_params": [
+            "domain",
+            "delta"
+        ],
+        "params_types": {
+            "domain": "any",
+            "delta": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.panPow",
+        "tainted_params": [
+            "domain",
+            "delta",
+            "exponent"
+        ],
+        "params_types": {
+            "domain": "any",
+            "delta": "any",
+            "exponent": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.panSymlog",
+        "tainted_params": [
+            "domain",
+            "delta",
+            "constant"
+        ],
+        "params_types": {
+            "domain": "any",
+            "delta": "any",
+            "constant": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.peek",
+        "tainted_params": [
+            "array"
+        ],
+        "params_types": {
+            "array": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.quarter",
+        "tainted_params": [
+            "date"
+        ],
+        "params_types": {
+            "date": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.repeat",
+        "tainted_params": [
+            "str",
+            "reps"
+        ],
+        "params_types": {
+            "str": "any",
+            "reps": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.span",
+        "tainted_params": [
+            "array"
+        ],
+        "params_types": {
+            "array": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.splitAccessPath",
+        "tainted_params": [
+            "p"
+        ],
+        "params_types": {
+            "p": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.stringValue",
+        "tainted_params": [
+            "x"
+        ],
+        "params_types": {
+            "x": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.toBoolean",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.toDate",
+        "tainted_params": [
+            "_",
+            "parser"
+        ],
+        "params_types": {
+            "_": "any",
+            "parser": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.toNumber",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.toSet",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.toString",
+        "tainted_params": [
+            "_"
+        ],
+        "params_types": {
+            "_": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.truncate",
+        "tainted_params": [
+            "str",
+            "length",
+            "align",
+            "ellipsis"
+        ],
+        "params_types": {
+            "str": "any",
+            "length": "any",
+            "align": "any",
+            "ellipsis": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.truthy",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.utcquarter",
+        "tainted_params": [
+            "date"
+        ],
+        "params_types": {
+            "date": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.visitArray",
+        "tainted_params": [
+            "array",
+            "filter",
+            "visitor"
+        ],
+        "params_types": {
+            "array": "any",
+            "filter": "any",
+            "visitor": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.writeConfig",
+        "tainted_params": [
+            "output",
+            "key",
+            "value",
+            "recurse"
+        ],
+        "params_types": {
+            "output": "any",
+            "key": "any",
+            "value": "any",
+            "recurse": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.zero",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.zoomLinear",
+        "tainted_params": [
+            "domain",
+            "anchor",
+            "scale"
+        ],
+        "params_types": {
+            "domain": "any",
+            "anchor": "any",
+            "scale": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.zoomLog",
+        "tainted_params": [
+            "domain",
+            "anchor",
+            "scale"
+        ],
+        "params_types": {
+            "domain": "any",
+            "anchor": "any",
+            "scale": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.zoomPow",
+        "tainted_params": [
+            "domain",
+            "anchor",
+            "scale",
+            "exponent"
+        ],
+        "params_types": {
+            "domain": "any",
+            "anchor": "any",
+            "scale": "any",
+            "exponent": "any"
+        }
+    },
+    {
+        "filename": "src/vega-util.js",
+        "source": "module.exports.zoomSymlog",
+        "tainted_params": [
+            "domain",
+            "anchor",
+            "scale",
+            "constant"
+        ],
+        "params_types": {
+            "domain": "any",
+            "anchor": "any",
+            "scale": "any",
+            "constant": "any"
+        }
+    }
+]

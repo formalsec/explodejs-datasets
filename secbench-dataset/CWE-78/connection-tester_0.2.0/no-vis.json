@@ -1,0 +1,28 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.timeout",
+        "tainted_params": [
+            "socketTimeout"
+        ],
+        "params_types": {
+            "socketTimeout": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.test",
+        "tainted_params": [
+            "host",
+            "port",
+            "callbackOrConnectTimeout",
+            "callback"
+        ],
+        "params_types": {
+            "host": "any",
+            "port": "any",
+            "callbackOrConnectTimeout": "any",
+            "callback": "function"
+        }
+    }
+]

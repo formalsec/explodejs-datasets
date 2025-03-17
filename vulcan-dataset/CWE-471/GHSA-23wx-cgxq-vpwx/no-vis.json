@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.dset",
+        "tainted_params": [
+            "obj",
+            "keys",
+            "val"
+        ],
+        "params_types": {
+            "obj": "any",
+            "keys": "any",
+            "val": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "a",
+            "b",
+            "k"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any",
+            "k": "any"
+        }
+    }
+]

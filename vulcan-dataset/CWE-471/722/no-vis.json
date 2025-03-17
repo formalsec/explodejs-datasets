@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/merge.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "clone"
+        ],
+        "params_types": {
+            "clone": "any"
+        }
+    }
+]

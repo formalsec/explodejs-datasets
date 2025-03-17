@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value",
+            "create"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "value": "any",
+            "create": "any"
+        }
+    }
+]

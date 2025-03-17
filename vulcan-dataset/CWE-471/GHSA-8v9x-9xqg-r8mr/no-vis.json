@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/apply.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "doc",
+            "patch"
+        ],
+        "params_types": {
+            "doc": "any",
+            "patch": "any"
+        }
+    }
+]

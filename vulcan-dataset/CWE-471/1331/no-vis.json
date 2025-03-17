@@ -1,0 +1,30 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "path",
+            "defaultValue",
+            "context"
+        ],
+        "params_types": {
+            "path": "any",
+            "defaultValue": "any",
+            "context": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "name",
+            "value",
+            "context"
+        ],
+        "params_types": {
+            "name": "any",
+            "value": "any",
+            "context": "any"
+        }
+    }
+]

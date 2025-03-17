@@ -1,0 +1,108 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.cat",
+        "tainted_params": [
+            "f",
+            "fn"
+        ],
+        "params_types": {
+            "f": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.catSync",
+        "tainted_params": [
+            "f"
+        ],
+        "params_types": {
+            "f": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.rec",
+        "tainted_params": [
+            "f",
+            "o",
+            "fn"
+        ],
+        "params_types": {
+            "f": "any",
+            "o": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.recSync",
+        "tainted_params": [
+            "f",
+            "o"
+        ],
+        "params_types": {
+            "f": "any",
+            "o": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.retime",
+        "tainted_params": [
+            "f",
+            "o"
+        ],
+        "params_types": {
+            "f": "any",
+            "o": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.retimeData",
+        "tainted_params": [
+            "d",
+            "o"
+        ],
+        "params_types": {
+            "d": "any",
+            "o": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.retimeSync",
+        "tainted_params": [
+            "f",
+            "o"
+        ],
+        "params_types": {
+            "f": "any",
+            "o": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.upload",
+        "tainted_params": [
+            "f",
+            "fn"
+        ],
+        "params_types": {
+            "f": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.uploadSync",
+        "tainted_params": [
+            "f"
+        ],
+        "params_types": {
+            "f": "any"
+        }
+    }
+]

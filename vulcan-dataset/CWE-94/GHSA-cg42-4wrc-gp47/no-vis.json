@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "src/extend.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "A",
+            "B",
+            "as",
+            "isAargs"
+        ],
+        "params_types": {
+            "A": "any",
+            "B": "any",
+            "as": "any",
+            "isAargs": "any"
+        }
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "filename": "src/macfromip.js",
+        "source": "module.exports.isEmpty",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/macfromip.js",
+        "source": "module.exports.isString",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/macfromip.js",
+        "source": "module.exports.isIpAddress",
+        "tainted_params": [
+            "ipaddress"
+        ],
+        "params_types": {
+            "ipaddress": "any"
+        }
+    },
+    {
+        "filename": "src/macfromip.js",
+        "source": "module.exports.ipIsSelf",
+        "tainted_params": [
+            "ipaddress"
+        ],
+        "params_types": {
+            "ipaddress": "any"
+        }
+    },
+    {
+        "filename": "src/macfromip.js",
+        "source": "module.exports.getMacInLinux",
+        "tainted_params": [
+            "ipAddress",
+            "callback"
+        ],
+        "params_types": {
+            "ipAddress": "any",
+            "callback": "function"
+        }
+    },
+    {
+        "filename": "src/macfromip.js",
+        "source": "module.exports.getMacInWin32",
+        "tainted_params": [
+            "ipAddress",
+            "callback"
+        ],
+        "params_types": {
+            "ipAddress": "any",
+            "callback": "function"
+        }
+    },
+    {
+        "filename": "src/macfromip.js",
+        "source": "module.exports.getMac",
+        "tainted_params": [
+            "ipAddress",
+            "callback"
+        ],
+        "params_types": {
+            "ipAddress": "any",
+            "callback": "function"
+        }
+    }
+]

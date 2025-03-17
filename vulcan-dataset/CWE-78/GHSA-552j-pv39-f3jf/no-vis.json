@@ -1,0 +1,128 @@
+[
+    {
+        "filename": "src/generate.js",
+        "source": "module.exports.createExtensionsFile",
+        "tainted_params": [
+            "opts",
+            "info",
+            "cb"
+        ],
+        "params_types": {
+            "opts": "any",
+            "info": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/generate.js",
+        "source": "module.exports.createCertRequestConfig",
+        "tainted_params": [
+            "opts",
+            "info",
+            "cb"
+        ],
+        "params_types": {
+            "opts": "any",
+            "info": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/generate.js",
+        "source": "module.exports.createKeypair",
+        "tainted_params": [
+            "opts",
+            "cb"
+        ],
+        "params_types": {
+            "opts": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/generate.js",
+        "source": "module.exports.createCertRequest",
+        "tainted_params": [
+            "opts",
+            "keyPath",
+            "cfgPath",
+            "cb"
+        ],
+        "params_types": {
+            "opts": "any",
+            "keyPath": "any",
+            "cfgPath": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/generate.js",
+        "source": "module.exports.createCert",
+        "tainted_params": [
+            "opts",
+            "reqPath",
+            "caKeyPath",
+            "caCertPath",
+            "extPath",
+            "cb"
+        ],
+        "params_types": {
+            "opts": "any",
+            "reqPath": "any",
+            "caKeyPath": "any",
+            "caCertPath": "any",
+            "extPath": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/generate.js",
+        "source": "module.exports.generateCert",
+        "tainted_params": [
+            "prefix",
+            "keepFiles",
+            "info",
+            "caKeyPath",
+            "caCertPath",
+            "cb"
+        ],
+        "params_types": {
+            "prefix": "any",
+            "keepFiles": "any",
+            "info": "any",
+            "caKeyPath": "any",
+            "caCertPath": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/generate.js",
+        "source": "module.exports.generateCertBuffer",
+        "tainted_params": [
+            "prefix",
+            "keepFiles",
+            "info",
+            "caKeyPath",
+            "caCertPath",
+            "cb"
+        ],
+        "params_types": {
+            "prefix": "any",
+            "keepFiles": "any",
+            "info": "any",
+            "caKeyPath": "any",
+            "caCertPath": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/generate.js",
+        "source": "module.exports.setExpiryDays",
+        "tainted_params": [
+            "val"
+        ],
+        "params_types": {
+            "val": "any"
+        }
+    }
+]

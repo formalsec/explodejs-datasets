@@ -1,0 +1,146 @@
+[
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.clone",
+        "tainted_params": [
+            "x"
+        ],
+        "params_types": {
+            "x": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.mapObject",
+        "tainted_params": [
+            "object",
+            "callback"
+        ],
+        "params_types": {
+            "object": "any",
+            "callback": "function"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.extend",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.deepExtend",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.deepStrictEqual",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.deepFlatten",
+        "tainted_params": [
+            "nestedObject"
+        ],
+        "params_types": {
+            "nestedObject": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.canDefineProperty",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.lazy",
+        "tainted_params": [
+            "object",
+            "prop",
+            "valueResolver"
+        ],
+        "params_types": {
+            "object": "any",
+            "prop": "any",
+            "valueResolver": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.traverse",
+        "tainted_params": [
+            "object",
+            "path"
+        ],
+        "params_types": {
+            "object": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.hasOwnProperty",
+        "tainted_params": [
+            "object",
+            "property"
+        ],
+        "params_types": {
+            "object": "any",
+            "property": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.isLegacyFactory",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.pickShallow",
+        "tainted_params": [
+            "object",
+            "properties"
+        ],
+        "params_types": {
+            "object": "any",
+            "properties": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.values",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    }
+]

@@ -1,0 +1,198 @@
+[
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.sendKey",
+        "tainted_params": [
+            "keyCode"
+        ],
+        "params_types": {
+            "keyCode": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.sendKeys",
+        "tainted_params": [
+            "arrKeyCodes"
+        ],
+        "params_types": {
+            "arrKeyCodes": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.sendLetter",
+        "tainted_params": [
+            "letter"
+        ],
+        "params_types": {
+            "letter": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.sendLetters",
+        "tainted_params": [
+            "arrLetters"
+        ],
+        "params_types": {
+            "arrLetters": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.sendText",
+        "tainted_params": [
+            "text"
+        ],
+        "params_types": {
+            "text": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.getKeyCode",
+        "tainted_params": [
+            "letter"
+        ],
+        "params_types": {
+            "letter": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.sendCombination",
+        "tainted_params": [
+            "arrKeyCodes"
+        ],
+        "params_types": {
+            "arrKeyCodes": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.execute",
+        "tainted_params": [
+            "arrParams"
+        ],
+        "params_types": {
+            "arrParams": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.getCommandLineOptions",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.cleanKeyboardLayout",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.setKeyboardLayout",
+        "tainted_params": [
+            "newKeyMap"
+        ],
+        "params_types": {
+            "newKeyMap": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.aggregateKeyboardLayout",
+        "tainted_params": [
+            "objKeyMap"
+        ],
+        "params_types": {
+            "objKeyMap": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.getKeyboardLayout",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.startBatch",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.batchTypeKey",
+        "tainted_params": [
+            "keyCode",
+            "waitMillisec",
+            "batchEvent"
+        ],
+        "params_types": {
+            "keyCode": "any",
+            "waitMillisec": "any",
+            "batchEvent": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.batchTypeCombination",
+        "tainted_params": [
+            "arrKeys",
+            "waitMillisec",
+            "batchEvent"
+        ],
+        "params_types": {
+            "arrKeys": "any",
+            "waitMillisec": "any",
+            "batchEvent": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.batchTypeKeys",
+        "tainted_params": [
+            "arrKeyCodes"
+        ],
+        "params_types": {
+            "arrKeyCodes": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.batchTypeText",
+        "tainted_params": [
+            "text"
+        ],
+        "params_types": {
+            "text": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.sendBatch",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.setOption",
+        "tainted_params": [
+            "optionName",
+            "optionValue"
+        ],
+        "params_types": {
+            "optionName": "any",
+            "optionValue": "any"
+        }
+    },
+    {
+        "filename": "src/key-sender.js",
+        "source": "module.exports.getOptions",
+        "tainted_params": [],
+        "params_types": {}
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/growl.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "msg",
+            "options",
+            "fn"
+        ],
+        "params_types": {
+            "msg": "any",
+            "options": "any",
+            "fn": "any"
+        }
+    }
+]

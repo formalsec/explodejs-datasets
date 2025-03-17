@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/set-deep-prop.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "value": "any"
+        }
+    }
+]

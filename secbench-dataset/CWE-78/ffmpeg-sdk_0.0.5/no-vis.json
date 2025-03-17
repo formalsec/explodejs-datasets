@@ -1,0 +1,86 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.execute",
+        "tainted_params": [
+            "command"
+        ],
+        "params_types": {
+            "command": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.clip",
+        "tainted_params": [
+            "inputFilePath",
+            "outputFilePath",
+            "startTime",
+            "endTime"
+        ],
+        "params_types": {
+            "inputFilePath": "any",
+            "outputFilePath": "any",
+            "startTime": "any",
+            "endTime": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.split",
+        "tainted_params": [
+            "inputFilePath",
+            "outputFilePath",
+            "clipPoints"
+        ],
+        "params_types": {
+            "inputFilePath": "any",
+            "outputFilePath": "any",
+            "clipPoints": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.parseAudio",
+        "tainted_params": [
+            "inputFilePath",
+            "outputFilePath"
+        ],
+        "params_types": {
+            "inputFilePath": "any",
+            "outputFilePath": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.formattedTime",
+        "tainted_params": [
+            "milliSeconds"
+        ],
+        "params_types": {
+            "milliSeconds": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.timeInMilliSeconds",
+        "tainted_params": [
+            "formattedTime"
+        ],
+        "params_types": {
+            "formattedTime": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.parseAudioLowQuality",
+        "tainted_params": [
+            "inputFilePath",
+            "outputFilePath"
+        ],
+        "params_types": {
+            "inputFilePath": "any",
+            "outputFilePath": "any"
+        }
+    }
+]

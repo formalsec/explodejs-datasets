@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/inireadercore.js",
+        "source": "module.exports.IniReaderCore",
+        "tainted_params": [
+            "cfg",
+            "async"
+        ],
+        "params_types": {
+            "cfg": "any",
+            "async": "any"
+        }
+    }
+]

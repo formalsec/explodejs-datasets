@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "aOptions",
+            "aCallback"
+        ],
+        "params_types": {
+            "aOptions": "any",
+            "aCallback": "any"
+        }
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.Cache",
+        "tainted_params": [
+            "maxSize"
+        ],
+        "params_types": {
+            "maxSize": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.split",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.normalizePath",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.setter",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.getter",
+        "tainted_params": [
+            "path",
+            "safe"
+        ],
+        "params_types": {
+            "path": "any",
+            "safe": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.join",
+        "tainted_params": [
+            "segments"
+        ],
+        "params_types": {
+            "segments": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.forEach",
+        "tainted_params": [
+            "path",
+            "cb",
+            "thisArg"
+        ],
+        "params_types": {
+            "path": "any",
+            "cb": "function",
+            "thisArg": "any"
+        }
+    }
+]

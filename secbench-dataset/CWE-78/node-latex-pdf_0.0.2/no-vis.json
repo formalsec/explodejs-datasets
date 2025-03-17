@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/node-latex-pdf.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "src_file",
+            "dest_file",
+            "callback"
+        ],
+        "params_types": {
+            "src_file": "any",
+            "dest_file": "any",
+            "callback": "function"
+        }
+    }
+]

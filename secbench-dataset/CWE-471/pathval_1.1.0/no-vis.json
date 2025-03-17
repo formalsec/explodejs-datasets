@@ -1,0 +1,52 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.hasProperty",
+        "tainted_params": [
+            "obj",
+            "name"
+        ],
+        "params_types": {
+            "obj": "any",
+            "name": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.getPathInfo",
+        "tainted_params": [
+            "obj",
+            "path"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.getPathValue",
+        "tainted_params": [
+            "obj",
+            "path"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.setPathValue",
+        "tainted_params": [
+            "obj",
+            "path",
+            "val"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "val": "any"
+        }
+    }
+]

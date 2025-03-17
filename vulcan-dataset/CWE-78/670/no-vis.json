@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "pdfFilePath",
+            "options"
+        ],
+        "params_types": {
+            "pdfFilePath": "any",
+            "options": "any"
+        }
+    }
+]

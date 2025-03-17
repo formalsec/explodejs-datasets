@@ -1,0 +1,94 @@
+[
+    {
+        "filename": "src/deap.js",
+        "source": "module.exports.clone",
+        "tainted_params": [
+            "val"
+        ],
+        "params_types": {
+            "val": "any"
+        }
+    },
+    {
+        "filename": "src/deap.js",
+        "source": "module.exports.cloneShallow",
+        "tainted_params": [
+            "val"
+        ],
+        "params_types": {
+            "val": "any"
+        }
+    },
+    {
+        "filename": "src/deap.js",
+        "source": "module.exports.extend",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    },
+    {
+        "filename": "src/deap.js",
+        "source": "module.exports.extendShallow",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    },
+    {
+        "filename": "src/deap.js",
+        "source": "module.exports.update",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    },
+    {
+        "filename": "src/deap.js",
+        "source": "module.exports.updateShallow",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    },
+    {
+        "filename": "src/deap.js",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    },
+    {
+        "filename": "src/deap.js",
+        "source": "module.exports.mergeShallow",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    }
+]

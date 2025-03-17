@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/killing.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "name",
+            "callback"
+        ],
+        "params_types": {
+            "name": "any",
+            "callback": "function"
+        }
+    }
+]

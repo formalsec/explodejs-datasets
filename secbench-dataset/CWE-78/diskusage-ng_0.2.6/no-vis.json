@@ -1,0 +1,24 @@
+[
+    {
+        "filename": "src/posix.js",
+        "source": "module.exports.diskusage",
+        "tainted_params": [
+            "path",
+            "cb"
+        ],
+        "params_types": {
+            "path": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/posix.js",
+        "source": "module.exports.parse",
+        "tainted_params": [
+            "dusage"
+        ],
+        "params_types": {
+            "dusage": "any"
+        }
+    }
+]

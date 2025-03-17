@@ -1,0 +1,40 @@
+[
+    {
+        "filename": "src/deepHas.js",
+        "source": "module.exports.has",
+        "tainted_params": [
+            "target",
+            "path"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/deepHas.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "target",
+            "path"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/deepHas.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "target",
+            "path",
+            "val"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any",
+            "val": "any"
+        }
+    }
+]

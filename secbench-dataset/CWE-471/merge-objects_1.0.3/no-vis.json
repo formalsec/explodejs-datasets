@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/merge-objects.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "object1",
+            "object2"
+        ],
+        "params_types": {
+            "object1": "any",
+            "object2": "any"
+        }
+    }
+]

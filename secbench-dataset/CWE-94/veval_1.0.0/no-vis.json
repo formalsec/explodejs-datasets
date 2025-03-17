@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "ctx",
+            "scr"
+        ],
+        "params_types": {
+            "ctx": "any",
+            "scr": "any"
+        }
+    }
+]

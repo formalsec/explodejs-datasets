@@ -1,0 +1,156 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "object",
+            "path",
+            "joiner"
+        ],
+        "params_types": {
+            "object": "any",
+            "path": "any",
+            "joiner": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "object",
+            "path",
+            "value",
+            "initPaths",
+            "joiner"
+        ],
+        "params_types": {
+            "object": "any",
+            "path": "any",
+            "value": "any",
+            "initPaths": "any",
+            "joiner": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.diff",
+        "tainted_params": [
+            "objectA",
+            "objectB"
+        ],
+        "params_types": {
+            "objectA": "any",
+            "objectB": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.keys",
+        "tainted_params": [
+            "object",
+            "joiner"
+        ],
+        "params_types": {
+            "object": "any",
+            "joiner": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "source"
+        ],
+        "params_types": {
+            "target": "any",
+            "source": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.values",
+        "tainted_params": [
+            "object",
+            "joiner"
+        ],
+        "params_types": {
+            "object": "any",
+            "joiner": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.flatten",
+        "tainted_params": [
+            "object",
+            "joiner"
+        ],
+        "params_types": {
+            "object": "any",
+            "joiner": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.expand",
+        "tainted_params": [
+            "object",
+            "joiner"
+        ],
+        "params_types": {
+            "object": "any",
+            "joiner": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.collapse",
+        "tainted_params": [
+            "object",
+            "joiner"
+        ],
+        "params_types": {
+            "object": "any",
+            "joiner": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.isObject",
+        "tainted_params": [
+            "item"
+        ],
+        "params_types": {
+            "item": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.unflatten",
+        "tainted_params": [
+            "object",
+            "joiner"
+        ],
+        "params_types": {
+            "object": "any",
+            "joiner": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.mapToProps",
+        "tainted_params": [
+            "object",
+            "source",
+            "noUndef",
+            "joiner"
+        ],
+        "params_types": {
+            "object": "any",
+            "source": "any",
+            "noUndef": "any",
+            "joiner": "any"
+        }
+    }
+]

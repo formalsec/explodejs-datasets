@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/klona.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "x"
+        ],
+        "params_types": {
+            "x": "any"
+        }
+    }
+]

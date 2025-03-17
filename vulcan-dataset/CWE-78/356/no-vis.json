@@ -1,0 +1,58 @@
+[
+    {
+        "filename": "src/stats.js",
+        "source": "module.exports.proc",
+        "tainted_params": [
+            "pid",
+            "options",
+            "done"
+        ],
+        "params_types": {
+            "pid": "any",
+            "options": "any",
+            "done": "any"
+        }
+    },
+    {
+        "filename": "src/stats.js",
+        "source": "module.exports.proc_calc",
+        "tainted_params": [
+            "pid",
+            "options",
+            "done"
+        ],
+        "params_types": {
+            "pid": "any",
+            "options": "any",
+            "done": "any"
+        }
+    },
+    {
+        "filename": "src/stats.js",
+        "source": "module.exports.win",
+        "tainted_params": [
+            "pid",
+            "options",
+            "done"
+        ],
+        "params_types": {
+            "pid": "any",
+            "options": "any",
+            "done": "any"
+        }
+    },
+    {
+        "filename": "src/stats.js",
+        "source": "module.exports.ps",
+        "tainted_params": [
+            "pid",
+            "options",
+            "done"
+        ],
+        "params_types": {
+            "pid": "any",
+            "options": "any",
+            "done": "any"
+        }
+    }
+]

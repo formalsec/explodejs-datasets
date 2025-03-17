@@ -1,0 +1,196 @@
+[
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.extend",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.merge",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.isPlainObject",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.isObject",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.isEmpty",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.clone",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.copy",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.deepHasProperty",
+        "tainted_params": [
+            "parent",
+            "key"
+        ],
+        "params_types": {
+            "parent": "any",
+            "key": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.getValue",
+        "tainted_params": [
+            "parent",
+            "key"
+        ],
+        "params_types": {
+            "parent": "any",
+            "key": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.deepGet",
+        "tainted_params": [
+            "parent",
+            "key"
+        ],
+        "params_types": {
+            "parent": "any",
+            "key": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.setValue",
+        "tainted_params": [
+            "parent",
+            "key",
+            "value",
+            "mode"
+        ],
+        "params_types": {
+            "parent": "any",
+            "key": "any",
+            "value": "any",
+            "mode": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.deepSet",
+        "tainted_params": [
+            "parent",
+            "key",
+            "value",
+            "mode"
+        ],
+        "params_types": {
+            "parent": "any",
+            "key": "any",
+            "value": "any",
+            "mode": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.deepReplace",
+        "tainted_params": [
+            "parentObj",
+            "cb",
+            "keyPath"
+        ],
+        "params_types": {
+            "parentObj": "any",
+            "cb": "function",
+            "keyPath": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.toArray",
+        "tainted_params": [
+            "obj",
+            "fields",
+            "transfornFnc"
+        ],
+        "params_types": {
+            "obj": "any",
+            "fields": "any",
+            "transfornFnc": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.fromArray",
+        "tainted_params": [
+            "array",
+            "transfornFnc"
+        ],
+        "params_types": {
+            "array": "any",
+            "transfornFnc": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.dateStringsToDates",
+        "tainted_params": [
+            "input",
+            "useIso8601"
+        ],
+        "params_types": {
+            "input": "any",
+            "useIso8601": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.update",
+        "tainted_params": [
+            "obj",
+            "expression"
+        ],
+        "params_types": {
+            "obj": "any",
+            "expression": "any"
+        }
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/extend.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "a",
+            "b"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any"
+        }
+    }
+]

@@ -1,0 +1,210 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.JSON.parse",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.JSON.stringify",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.openSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.closeSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.readSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.readFileSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.writeFileSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.statSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.lstatSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.existsSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.mkdirSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.rmdirSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.unlinkSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.renameSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.readdirSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.chmodSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.readlinkSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.realpathSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.appendFileSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.fs.chownSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.child_process.execSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.child_process.spawnSync",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.require",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.url.parse",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.query",
+        "tainted_params": [
+            "o",
+            "s",
+            "defaultValue"
+        ],
+        "params_types": {
+            "o": "any",
+            "s": "any",
+            "defaultValue": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "o",
+            "s",
+            "value"
+        ],
+        "params_types": {
+            "o": "any",
+            "s": "any",
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.unset",
+        "tainted_params": [
+            "o",
+            "s"
+        ],
+        "params_types": {
+            "o": "any",
+            "s": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.safeCall",
+        "tainted_params": [
+            "funcOrPromise",
+            "errorReturnValue"
+        ],
+        "params_types": {
+            "funcOrPromise": "any",
+            "errorReturnValue": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.safeAwait",
+        "tainted_params": [
+            "funcOrPromise",
+            "errorReturnValue"
+        ],
+        "params_types": {
+            "funcOrPromise": "any",
+            "errorReturnValue": "any"
+        }
+    }
+]

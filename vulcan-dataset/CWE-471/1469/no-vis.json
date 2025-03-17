@@ -1,0 +1,80 @@
+[
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.arrayToObject",
+        "tainted_params": [
+            "source",
+            "options"
+        ],
+        "params_types": {
+            "source": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "source",
+            "options"
+        ],
+        "params_types": {
+            "target": "any",
+            "source": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.decode",
+        "tainted_params": [
+            "str"
+        ],
+        "params_types": {
+            "str": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.encode",
+        "tainted_params": [
+            "str"
+        ],
+        "params_types": {
+            "str": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.compact",
+        "tainted_params": [
+            "obj",
+            "references"
+        ],
+        "params_types": {
+            "obj": "any",
+            "references": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.isRegExp",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.isBuffer",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    }
+]

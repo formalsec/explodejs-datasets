@@ -1,0 +1,82 @@
+[
+    {
+        "filename": "src/oled-exp.js",
+        "source": "module.exports.initialize",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/oled-exp.js",
+        "source": "module.exports.clear",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/oled-exp.js",
+        "source": "module.exports.power",
+        "tainted_params": [
+            "mode"
+        ],
+        "params_types": {
+            "mode": "any"
+        }
+    },
+    {
+        "filename": "src/oled-exp.js",
+        "source": "module.exports.powerOn",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/oled-exp.js",
+        "source": "module.exports.powerOff",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/oled-exp.js",
+        "source": "module.exports.cursor",
+        "tainted_params": [
+            "row",
+            "col"
+        ],
+        "params_types": {
+            "row": "any",
+            "col": "any"
+        }
+    },
+    {
+        "filename": "src/oled-exp.js",
+        "source": "module.exports.invert",
+        "tainted_params": [
+            "mode"
+        ],
+        "params_types": {
+            "mode": "any"
+        }
+    },
+    {
+        "filename": "src/oled-exp.js",
+        "source": "module.exports.write",
+        "tainted_params": [
+            "string",
+            "row",
+            "col"
+        ],
+        "params_types": {
+            "string": "any",
+            "row": "any",
+            "col": "any"
+        }
+    },
+    {
+        "filename": "src/oled-exp.js",
+        "source": "module.exports.scroll",
+        "tainted_params": [
+            "direction"
+        ],
+        "params_types": {
+            "direction": "any"
+        }
+    }
+]

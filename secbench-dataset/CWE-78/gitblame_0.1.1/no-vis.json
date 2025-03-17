@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/gitblame.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "file",
+            "cb"
+        ],
+        "params_types": {
+            "file": "any",
+            "cb": "function"
+        }
+    }
+]

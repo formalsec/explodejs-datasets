@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/run_index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "{ path",
+            "encoding"
+        ],
+        "params_types": {
+            "{ path": "any",
+            "encoding": "any"
+        }
+    }
+]

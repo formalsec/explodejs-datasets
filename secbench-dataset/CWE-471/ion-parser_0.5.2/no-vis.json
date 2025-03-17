@@ -1,0 +1,8 @@
+[
+    {
+        "filename": "src/parser.js",
+        "source": "module.exports",
+        "tainted_params": [],
+        "params_types": {}
+    }
+]

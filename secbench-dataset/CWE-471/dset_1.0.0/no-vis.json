@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/dset.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "keys",
+            "val"
+        ],
+        "params_types": {
+            "obj": "any",
+            "keys": "any",
+            "val": "any"
+        }
+    }
+]

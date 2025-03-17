@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "src/wifiscanner.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "{\n        childProcess.exec(this.command",
+            "(error",
+            "standardOut",
+            "standardError"
+        ],
+        "params_types": {
+            "{\n        childProcess.exec(this.command": "any",
+            "(error": "any",
+            "standardOut": "any",
+            "standardError": "any"
+        }
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "filename": "src/curl-transport.js",
+        "source": "module.exports.run",
+        "tainted_params": [
+            "command",
+            "cb"
+        ],
+        "params_types": {
+            "command": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/curl-transport.js",
+        "source": "module.exports.connect",
+        "tainted_params": [
+            "connOptions"
+        ],
+        "params_types": {
+            "connOptions": "any"
+        }
+    }
+]

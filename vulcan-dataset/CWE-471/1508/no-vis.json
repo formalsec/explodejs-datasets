@@ -1,0 +1,34 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.parse",
+        "tainted_params": [
+            "string"
+        ],
+        "params_types": {
+            "string": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.parseFile",
+        "tainted_params": [
+            "file",
+            "callback"
+        ],
+        "params_types": {
+            "file": "any",
+            "callback": "function"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.parseFileSync",
+        "tainted_params": [
+            "file"
+        ],
+        "params_types": {
+            "file": "any"
+        }
+    }
+]

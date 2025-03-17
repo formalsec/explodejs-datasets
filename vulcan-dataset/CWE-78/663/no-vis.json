@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/open.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "target",
+            "appName",
+            "callback"
+        ],
+        "params_types": {
+            "target": "any",
+            "appName": "any",
+            "callback": "function"
+        }
+    }
+]

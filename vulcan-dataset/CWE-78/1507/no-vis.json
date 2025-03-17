@@ -1,0 +1,36 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.install",
+        "tainted_params": [
+            "packages",
+            "opts"
+        ],
+        "params_types": {
+            "packages": "any",
+            "opts": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.uninstall",
+        "tainted_params": [
+            "packages",
+            "opts"
+        ],
+        "params_types": {
+            "packages": "any",
+            "opts": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.list",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "any"
+        }
+    }
+]

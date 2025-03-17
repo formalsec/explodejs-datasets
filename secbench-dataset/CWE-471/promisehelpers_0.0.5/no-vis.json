@@ -1,0 +1,46 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.wrap",
+        "tainted_params": [
+            "obj",
+            "property"
+        ],
+        "params_types": {
+            "obj": "any",
+            "property": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.notify",
+        "tainted_params": [
+            "func"
+        ],
+        "params_types": {
+            "func": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.insert",
+        "tainted_params": [
+            "key",
+            "value"
+        ],
+        "params_types": {
+            "key": "any",
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.log",
+        "tainted_params": [
+            "promiseValue"
+        ],
+        "params_types": {
+            "promiseValue": "any"
+        }
+    }
+]

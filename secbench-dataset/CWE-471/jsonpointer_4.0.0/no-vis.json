@@ -1,0 +1,38 @@
+[
+    {
+        "filename": "src/jsonpointer.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "obj",
+            "pointer"
+        ],
+        "params_types": {
+            "obj": "any",
+            "pointer": "any"
+        }
+    },
+    {
+        "filename": "src/jsonpointer.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "pointer",
+            "value"
+        ],
+        "params_types": {
+            "obj": "any",
+            "pointer": "any",
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/jsonpointer.js",
+        "source": "module.exports.compile",
+        "tainted_params": [
+            "pointer"
+        ],
+        "params_types": {
+            "pointer": "any"
+        }
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/get.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "app",
+            "cb"
+        ],
+        "params_types": {
+            "app": "any",
+            "cb": "function"
+        }
+    }
+]

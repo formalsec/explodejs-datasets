@@ -1,0 +1,428 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.clone",
+        "tainted_params": [
+            "obj",
+            "seen"
+        ],
+        "params_types": {
+            "obj": "any",
+            "seen": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "source",
+            "isNullOverride",
+            "isMergeArrays"
+        ],
+        "params_types": {
+            "target": "any",
+            "source": "any",
+            "isNullOverride": "any",
+            "isMergeArrays": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.applyToDefaults",
+        "tainted_params": [
+            "defaults",
+            "options",
+            "isNullOverride"
+        ],
+        "params_types": {
+            "defaults": "any",
+            "options": "any",
+            "isNullOverride": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.cloneWithShallow",
+        "tainted_params": [
+            "source",
+            "keys"
+        ],
+        "params_types": {
+            "source": "any",
+            "keys": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.applyToDefaultsWithShallow",
+        "tainted_params": [
+            "defaults",
+            "options",
+            "keys"
+        ],
+        "params_types": {
+            "defaults": "any",
+            "options": "any",
+            "keys": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.deepEqual",
+        "tainted_params": [
+            "obj",
+            "ref",
+            "options",
+            "seen"
+        ],
+        "params_types": {
+            "obj": "any",
+            "ref": "any",
+            "options": "any",
+            "seen": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.unique",
+        "tainted_params": [
+            "array",
+            "key"
+        ],
+        "params_types": {
+            "array": "any",
+            "key": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.mapToObject",
+        "tainted_params": [
+            "array",
+            "key"
+        ],
+        "params_types": {
+            "array": "any",
+            "key": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.intersect",
+        "tainted_params": [
+            "array1",
+            "array2",
+            "justFirst"
+        ],
+        "params_types": {
+            "array1": "any",
+            "array2": "any",
+            "justFirst": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.contain",
+        "tainted_params": [
+            "ref",
+            "values",
+            "options"
+        ],
+        "params_types": {
+            "ref": "any",
+            "values": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.flatten",
+        "tainted_params": [
+            "array",
+            "target"
+        ],
+        "params_types": {
+            "array": "any",
+            "target": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.reach",
+        "tainted_params": [
+            "obj",
+            "chain",
+            "options"
+        ],
+        "params_types": {
+            "obj": "any",
+            "chain": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.reachTemplate",
+        "tainted_params": [
+            "obj",
+            "template",
+            "options"
+        ],
+        "params_types": {
+            "obj": "any",
+            "template": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.formatStack",
+        "tainted_params": [
+            "stack"
+        ],
+        "params_types": {
+            "stack": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.formatTrace",
+        "tainted_params": [
+            "trace"
+        ],
+        "params_types": {
+            "trace": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.callStack",
+        "tainted_params": [
+            "slice"
+        ],
+        "params_types": {
+            "slice": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.displayStack",
+        "tainted_params": [
+            "slice"
+        ],
+        "params_types": {
+            "slice": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.abort",
+        "tainted_params": [
+            "message",
+            "hideStack"
+        ],
+        "params_types": {
+            "message": "any",
+            "hideStack": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.assert",
+        "tainted_params": [
+            "condition",
+            "...args"
+        ],
+        "params_types": {
+            "condition": "any",
+            "...args": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.Bench",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.escapeRegex",
+        "tainted_params": [
+            "string"
+        ],
+        "params_types": {
+            "string": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.base64urlEncode",
+        "tainted_params": [
+            "value",
+            "encoding"
+        ],
+        "params_types": {
+            "value": "any",
+            "encoding": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.base64urlDecode",
+        "tainted_params": [
+            "value",
+            "encoding"
+        ],
+        "params_types": {
+            "value": "any",
+            "encoding": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.escapeHeaderAttribute",
+        "tainted_params": [
+            "attribute"
+        ],
+        "params_types": {
+            "attribute": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.escapeHtml",
+        "tainted_params": [
+            "string"
+        ],
+        "params_types": {
+            "string": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.escapeJavaScript",
+        "tainted_params": [
+            "string"
+        ],
+        "params_types": {
+            "string": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.escapeJson",
+        "tainted_params": [
+            "string"
+        ],
+        "params_types": {
+            "string": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.once",
+        "tainted_params": [
+            "method"
+        ],
+        "params_types": {
+            "method": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.isInteger",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.ignore",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.inherits",
+        "tainted_params": [
+            "ctor",
+            "superCtor"
+        ],
+        "params_types": {
+            "ctor": "any",
+            "superCtor": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.format",
+        "tainted_params": [
+            "...args"
+        ],
+        "params_types": {
+            "...args": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.transform",
+        "tainted_params": [
+            "source",
+            "transform",
+            "options"
+        ],
+        "params_types": {
+            "source": "any",
+            "transform": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.uniqueFilename",
+        "tainted_params": [
+            "path",
+            "extension"
+        ],
+        "params_types": {
+            "path": "any",
+            "extension": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.stringify",
+        "tainted_params": [
+            "...args"
+        ],
+        "params_types": {
+            "...args": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.shallow",
+        "tainted_params": [
+            "source"
+        ],
+        "params_types": {
+            "source": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.wait",
+        "tainted_params": [
+            "timeout"
+        ],
+        "params_types": {
+            "timeout": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.block",
+        "tainted_params": [],
+        "params_types": {}
+    }
+]

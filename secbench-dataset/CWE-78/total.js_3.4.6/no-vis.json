@@ -1,0 +1,136 @@
+[
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.measureGIF",
+        "tainted_params": [
+            "buffer"
+        ],
+        "params_types": {
+            "buffer": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.measureJPG",
+        "tainted_params": [
+            "buffer"
+        ],
+        "params_types": {
+            "buffer": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.measurePNG",
+        "tainted_params": [
+            "buffer"
+        ],
+        "params_types": {
+            "buffer": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.measureSVG",
+        "tainted_params": [
+            "buffer"
+        ],
+        "params_types": {
+            "buffer": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.measure",
+        "tainted_params": [
+            "type",
+            "buffer"
+        ],
+        "params_types": {
+            "type": "any",
+            "buffer": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.Image",
+        "tainted_params": [
+            "filename",
+            "cmd",
+            "width",
+            "height"
+        ],
+        "params_types": {
+            "filename": "any",
+            "cmd": "any",
+            "width": "any",
+            "height": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.Picture",
+        "tainted_params": [
+            "filename",
+            "cmd",
+            "width",
+            "height"
+        ],
+        "params_types": {
+            "filename": "any",
+            "cmd": "any",
+            "width": "any",
+            "height": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.init",
+        "tainted_params": [
+            "filename",
+            "cmd",
+            "width",
+            "height"
+        ],
+        "params_types": {
+            "filename": "any",
+            "cmd": "any",
+            "width": "any",
+            "height": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.load",
+        "tainted_params": [
+            "filename",
+            "cmd",
+            "width",
+            "height"
+        ],
+        "params_types": {
+            "filename": "any",
+            "cmd": "any",
+            "width": "any",
+            "height": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.middleware",
+        "tainted_params": [
+            "type",
+            "fn"
+        ],
+        "params_types": {
+            "type": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/image.js",
+        "source": "module.exports.clear",
+        "tainted_params": [],
+        "params_types": {}
+    }
+]

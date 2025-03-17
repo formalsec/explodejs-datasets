@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/encode.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "statements",
+            "data"
+        ],
+        "params_types": {
+            "statements": "any",
+            "data": "any"
+        }
+    }
+]

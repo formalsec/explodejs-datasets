@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.killByPort",
+        "tainted_params": [
+            "port"
+        ],
+        "params_types": {
+            "port": "any"
+        }
+    }
+]

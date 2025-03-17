@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/exec.js",
+        "source": "module.exports.execSync",
+        "tainted_params": [
+            "cwd",
+            "command"
+        ],
+        "params_types": {
+            "cwd": "any",
+            "command": "any"
+        }
+    }
+]

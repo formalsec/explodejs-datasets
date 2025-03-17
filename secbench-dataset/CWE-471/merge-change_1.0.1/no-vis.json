@@ -1,0 +1,66 @@
+[
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.unset",
+        "tainted_params": [
+            "obj",
+            "path"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "obj",
+            "path",
+            "defaultValue"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "defaultValue": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value",
+            "doNotReplace"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "value": "any",
+            "doNotReplace": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.equal",
+        "tainted_params": [
+            "first",
+            "second"
+        ],
+        "params_types": {
+            "first": "any",
+            "second": "any"
+        }
+    },
+    {
+        "filename": "src/utils.js",
+        "source": "module.exports.type",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    }
+]

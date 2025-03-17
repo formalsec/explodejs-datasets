@@ -1,0 +1,64 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.findLoad",
+        "tainted_params": [
+            "arg",
+            "cb"
+        ],
+        "params_types": {
+            "arg": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.totalLoad",
+        "tainted_params": [
+            "cb"
+        ],
+        "params_types": {
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.nodeLoad",
+        "tainted_params": [
+            "cb"
+        ],
+        "params_types": {
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.processLoad",
+        "tainted_params": [
+            "cb"
+        ],
+        "params_types": {
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.cpuInfo",
+        "tainted_params": [
+            "cb"
+        ],
+        "params_types": {
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.totalMemoryUsage",
+        "tainted_params": [
+            "cb"
+        ],
+        "params_types": {
+            "cb": "function"
+        }
+    }
+]

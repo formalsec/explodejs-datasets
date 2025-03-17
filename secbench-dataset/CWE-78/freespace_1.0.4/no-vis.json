@@ -1,0 +1,24 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.check",
+        "tainted_params": [
+            "driveOrMount",
+            "callback"
+        ],
+        "params_types": {
+            "driveOrMount": "any",
+            "callback": "function"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.checkSync",
+        "tainted_params": [
+            "driveOrMount"
+        ],
+        "params_types": {
+            "driveOrMount": "any"
+        }
+    }
+]

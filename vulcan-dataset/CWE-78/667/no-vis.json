@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/mid-php.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "docroot",
+            "phpBin"
+        ],
+        "params_types": {
+            "docroot": "any",
+            "phpBin": "any"
+        }
+    }
+]

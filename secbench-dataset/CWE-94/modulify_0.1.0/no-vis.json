@@ -1,0 +1,104 @@
+[
+    {
+        "filename": "src/modulify.js",
+        "source": "module.exports.utils.getNames",
+        "tainted_params": [
+            "prev",
+            "curr"
+        ],
+        "params_types": {
+            "prev": "any",
+            "curr": "any"
+        }
+    },
+    {
+        "filename": "src/modulify.js",
+        "source": "module.exports.utils.evaluator",
+        "tainted_params": [
+            "src"
+        ],
+        "params_types": {
+            "src": "any"
+        }
+    },
+    {
+        "filename": "src/modulify.js",
+        "source": "module.exports.utils.getGlobals",
+        "tainted_params": [
+            "src"
+        ],
+        "params_types": {
+            "src": "any"
+        }
+    },
+    {
+        "filename": "src/modulify.js",
+        "source": "module.exports.utils.getTopLevelNames",
+        "tainted_params": [
+            "ast"
+        ],
+        "params_types": {
+            "ast": "any"
+        }
+    },
+    {
+        "filename": "src/modulify.js",
+        "source": "module.exports.utils.getExports",
+        "tainted_params": [
+            "ast",
+            "src"
+        ],
+        "params_types": {
+            "ast": "any",
+            "src": "any"
+        }
+    },
+    {
+        "filename": "src/modulify.js",
+        "source": "module.exports.utils.generateExportsString",
+        "tainted_params": [
+            "ast",
+            "src",
+            "eol"
+        ],
+        "params_types": {
+            "ast": "any",
+            "src": "any",
+            "eol": "any"
+        }
+    },
+    {
+        "filename": "src/modulify.js",
+        "source": "module.exports.utils.generateModuleString",
+        "tainted_params": [
+            "ast",
+            "src",
+            "eol"
+        ],
+        "params_types": {
+            "ast": "any",
+            "src": "any",
+            "eol": "any"
+        }
+    },
+    {
+        "filename": "src/modulify.js",
+        "source": "module.exports.string",
+        "tainted_params": [
+            "src"
+        ],
+        "params_types": {
+            "src": "any"
+        }
+    },
+    {
+        "filename": "src/modulify.js",
+        "source": "module.exports.file",
+        "tainted_params": [
+            "srcFile"
+        ],
+        "params_types": {
+            "srcFile": "any"
+        }
+    }
+]

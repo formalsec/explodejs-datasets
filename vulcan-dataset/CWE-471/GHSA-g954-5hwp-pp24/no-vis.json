@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/util.js",
+        "source": "module.exports.setProperty",
+        "tainted_params": [
+            "dst",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "dst": "any",
+            "path": "any",
+            "value": "any"
+        }
+    }
+]

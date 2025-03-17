@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "target",
+            "source",
+            "isNullOverride",
+            "isMergeArrays"
+        ],
+        "params_types": {
+            "target": "any",
+            "source": "any",
+            "isNullOverride": "any",
+            "isMergeArrays": "any"
+        }
+    }
+]

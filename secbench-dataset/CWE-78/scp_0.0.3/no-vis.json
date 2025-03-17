@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "src/scp.js",
+        "source": "module.exports.send",
+        "tainted_params": [
+            "options",
+            "cb"
+        ],
+        "params_types": {
+            "options": "any",
+            "cb": "function"
+        }
+    },
+    {
+        "filename": "src/scp.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "options",
+            "cb"
+        ],
+        "params_types": {
+            "options": "any",
+            "cb": "function"
+        }
+    }
+]

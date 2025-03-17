@@ -1,0 +1,50 @@
+[
+    {
+        "filename": "src/lsof.js",
+        "source": "module.exports.raw",
+        "tainted_params": [
+            "pid",
+            "fn"
+        ],
+        "params_types": {
+            "pid": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/lsof.js",
+        "source": "module.exports.rawTcpPort",
+        "tainted_params": [
+            "port",
+            "fn"
+        ],
+        "params_types": {
+            "port": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/lsof.js",
+        "source": "module.exports.rawUdpPort",
+        "tainted_params": [
+            "port",
+            "fn"
+        ],
+        "params_types": {
+            "port": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/lsof.js",
+        "source": "module.exports.counters",
+        "tainted_params": [
+            "pid",
+            "fn"
+        ],
+        "params_types": {
+            "pid": "any",
+            "fn": "any"
+        }
+    }
+]

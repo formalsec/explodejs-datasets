@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "object",
+            "keys",
+            "value"
+        ],
+        "params_types": {
+            "object": "any",
+            "keys": "any",
+            "value": "any"
+        }
+    }
+]

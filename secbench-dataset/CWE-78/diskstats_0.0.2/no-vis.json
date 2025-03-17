@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/stat.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "child_process",
+            "path"
+        ],
+        "params_types": {
+            "child_process": "any",
+            "path": "any"
+        }
+    }
+]

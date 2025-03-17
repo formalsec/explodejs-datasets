@@ -1,0 +1,28 @@
+[
+    {
+        "filename": "src/path.js",
+        "source": "module.exports.evaluatePath",
+        "tainted_params": [
+            "document",
+            "keyPath"
+        ],
+        "params_types": {
+            "document": "any",
+            "keyPath": "any"
+        }
+    },
+    {
+        "filename": "src/path.js",
+        "source": "module.exports.setPath",
+        "tainted_params": [
+            "document",
+            "keyPath",
+            "value"
+        ],
+        "params_types": {
+            "document": "any",
+            "keyPath": "any",
+            "value": "any"
+        }
+    }
+]

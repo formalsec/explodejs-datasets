@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/validate.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "instance",
+            "schema"
+        ],
+        "params_types": {
+            "instance": "any",
+            "schema": "any"
+        }
+    }
+]

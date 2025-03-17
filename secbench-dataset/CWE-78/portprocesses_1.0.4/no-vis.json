@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/exec.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "cmd => {\n\treturn new Promise((resolve",
+            "reject"
+        ],
+        "params_types": {
+            "cmd => {\n\treturn new Promise((resolve": "any",
+            "reject": "any"
+        }
+    }
+]

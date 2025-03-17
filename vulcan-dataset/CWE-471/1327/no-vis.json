@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.flatten",
+        "tainted_params": [
+            "target",
+            "opts"
+        ],
+        "params_types": {
+            "target": "any",
+            "opts": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.unflatten",
+        "tainted_params": [
+            "target",
+            "opts"
+        ],
+        "params_types": {
+            "target": "any",
+            "opts": "any"
+        }
+    }
+]

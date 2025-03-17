@@ -1,0 +1,48 @@
+[
+    {
+        "filename": "src/aurelia-path.js",
+        "source": "module.exports.relativeToFile",
+        "tainted_params": [
+            "name",
+            "file"
+        ],
+        "params_types": {
+            "name": "any",
+            "file": "any"
+        }
+    },
+    {
+        "filename": "src/aurelia-path.js",
+        "source": "module.exports.join",
+        "tainted_params": [
+            "path1",
+            "path2"
+        ],
+        "params_types": {
+            "path1": "any",
+            "path2": "any"
+        }
+    },
+    {
+        "filename": "src/aurelia-path.js",
+        "source": "module.exports.buildQueryString",
+        "tainted_params": [
+            "params",
+            "traditional"
+        ],
+        "params_types": {
+            "params": "any",
+            "traditional": "any"
+        }
+    },
+    {
+        "filename": "src/aurelia-path.js",
+        "source": "module.exports.parseQueryString",
+        "tainted_params": [
+            "queryString"
+        ],
+        "params_types": {
+            "queryString": "any"
+        }
+    }
+]

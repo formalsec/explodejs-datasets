@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "pid",
+            "signal",
+            "callback"
+        ],
+        "params_types": {
+            "pid": "any",
+            "signal": "any",
+            "callback": "function"
+        }
+    }
+]

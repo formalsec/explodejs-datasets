@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/git.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "file",
+            "args"
+        ],
+        "params_types": {
+            "file": "any",
+            "args": "any"
+        }
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.ps",
+        "tainted_params": [
+            "condition",
+            "extra",
+            "keywords",
+            "filterWaste"
+        ],
+        "params_types": {
+            "condition": "any",
+            "extra": "any",
+            "keywords": "any",
+            "filterWaste": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.kill",
+        "tainted_params": [
+            "pid",
+            "signal"
+        ],
+        "params_types": {
+            "pid": "any",
+            "signal": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.getSignalRaw",
+        "tainted_params": [
+            "signal"
+        ],
+        "params_types": {
+            "signal": "any"
+        }
+    }
+]

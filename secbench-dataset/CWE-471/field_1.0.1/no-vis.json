@@ -1,0 +1,28 @@
+[
+    {
+        "filename": "src/field.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "topObj",
+            "fields"
+        ],
+        "params_types": {
+            "topObj": "any",
+            "fields": "any"
+        }
+    },
+    {
+        "filename": "src/field.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "topObj",
+            "fields",
+            "value"
+        ],
+        "params_types": {
+            "topObj": "any",
+            "fields": "any",
+            "value": "any"
+        }
+    }
+]

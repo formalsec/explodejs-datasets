@@ -1,0 +1,236 @@
+[
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.isUndefined",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.noop",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.forEachOwnProperty",
+        "tainted_params": [
+            "object",
+            "iterator"
+        ],
+        "params_types": {
+            "object": "any",
+            "iterator": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "destination",
+            "source"
+        ],
+        "params_types": {
+            "destination": "any",
+            "source": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.flatten",
+        "tainted_params": [
+            "object",
+            "join",
+            "root"
+        ],
+        "params_types": {
+            "object": "any",
+            "join": "any",
+            "root": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.unflatten",
+        "tainted_params": [
+            "object",
+            "separator"
+        ],
+        "params_types": {
+            "object": "any",
+            "separator": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.deepSet",
+        "tainted_params": [
+            "object",
+            "property",
+            "value"
+        ],
+        "params_types": {
+            "object": "any",
+            "property": "any",
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.deepMerge",
+        "tainted_params": [
+            "destination",
+            "source"
+        ],
+        "params_types": {
+            "destination": "any",
+            "source": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.deepDelete",
+        "tainted_params": [
+            "object",
+            "property"
+        ],
+        "params_types": {
+            "object": "any",
+            "property": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.resolveProperty",
+        "tainted_params": [
+            "object",
+            "property",
+            "deep"
+        ],
+        "params_types": {
+            "object": "any",
+            "property": "any",
+            "deep": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.isObject",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.isArray",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.values",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.keys",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.prune",
+        "tainted_params": [
+            "object",
+            "blacklist"
+        ],
+        "params_types": {
+            "object": "any",
+            "blacklist": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.pick",
+        "tainted_params": [
+            "objects",
+            "whitelist"
+        ],
+        "params_types": {
+            "objects": "any",
+            "whitelist": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.isEmpty",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.isBoolean",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.isString",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.isNumber",
+        "tainted_params": [
+            "object"
+        ],
+        "params_types": {
+            "object": "any"
+        }
+    },
+    {
+        "filename": "src/objectUtils.js",
+        "source": "module.exports.argsToArray",
+        "tainted_params": [
+            "args",
+            "startingFrom"
+        ],
+        "params_types": {
+            "args": "any",
+            "startingFrom": "any"
+        }
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/set.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "object",
+            "keypath",
+            "value"
+        ],
+        "params_types": {
+            "object": "any",
+            "keypath": "any",
+            "value": "any"
+        }
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.open",
+        "tainted_params": [
+            "path",
+            "ref"
+        ],
+        "params_types": {
+            "path": "any",
+            "ref": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.FSGit",
+        "tainted_params": [
+            "path",
+            "ref"
+        ],
+        "params_types": {
+            "path": "any",
+            "ref": "any"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "separator",
+            "override",
+            "useArray",
+            "useBrackets"
+        ],
+        "params_types": {
+            "separator": "any",
+            "override": "any",
+            "useArray": "any",
+            "useBrackets": "any"
+        }
+    }
+]

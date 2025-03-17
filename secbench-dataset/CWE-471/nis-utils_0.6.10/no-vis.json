@@ -1,0 +1,152 @@
+[
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.extend",
+        "tainted_params": [],
+        "params_types": {}
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.isObject",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.isEmpty",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.clone",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.copy",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.getValue",
+        "tainted_params": [
+            "parent",
+            "namespace"
+        ],
+        "params_types": {
+            "parent": "any",
+            "namespace": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.deepGet",
+        "tainted_params": [
+            "parent",
+            "namespace"
+        ],
+        "params_types": {
+            "parent": "any",
+            "namespace": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.setValue",
+        "tainted_params": [
+            "parent",
+            "namespace",
+            "value",
+            "mode"
+        ],
+        "params_types": {
+            "parent": "any",
+            "namespace": "any",
+            "value": "any",
+            "mode": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.deepSet",
+        "tainted_params": [
+            "parent",
+            "namespace",
+            "value",
+            "mode"
+        ],
+        "params_types": {
+            "parent": "any",
+            "namespace": "any",
+            "value": "any",
+            "mode": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.toArray",
+        "tainted_params": [
+            "obj",
+            "fields",
+            "transfornFnc"
+        ],
+        "params_types": {
+            "obj": "any",
+            "fields": "any",
+            "transfornFnc": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.fromArray",
+        "tainted_params": [
+            "array",
+            "transfornFnc"
+        ],
+        "params_types": {
+            "array": "any",
+            "transfornFnc": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.dateStringsToDates",
+        "tainted_params": [
+            "input"
+        ],
+        "params_types": {
+            "input": "any"
+        }
+    },
+    {
+        "filename": "src/object.js",
+        "source": "module.exports.update",
+        "tainted_params": [
+            "obj",
+            "expression"
+        ],
+        "params_types": {
+            "obj": "any",
+            "expression": "any"
+        }
+    }
+]

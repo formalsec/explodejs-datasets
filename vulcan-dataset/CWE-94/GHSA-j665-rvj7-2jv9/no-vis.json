@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/mosc.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "evaluation_context_dictionary"
+        ],
+        "params_types": {
+            "evaluation_context_dictionary": "any"
+        }
+    }
+]

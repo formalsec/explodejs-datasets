@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "optionalThis",
+            "func",
+            "errorReturnValue"
+        ],
+        "params_types": {
+            "optionalThis": "any",
+            "func": "any",
+            "errorReturnValue": "any"
+        }
+    }
+]

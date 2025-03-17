@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/jquery.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "w"
+        ],
+        "params_types": {
+            "w": "any"
+        }
+    }
+]

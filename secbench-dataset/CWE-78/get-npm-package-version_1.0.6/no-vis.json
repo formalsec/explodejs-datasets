@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "packageName",
+            "{ registry",
+            "timeout"
+        ],
+        "params_types": {
+            "packageName": "any",
+            "{ registry": "any",
+            "timeout": "any"
+        }
+    }
+]

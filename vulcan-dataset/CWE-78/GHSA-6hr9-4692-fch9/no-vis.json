@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/helper.js",
+        "source": "module.exports.applyEffect",
+        "tainted_params": [
+            "effect",
+            "options",
+            "callback"
+        ],
+        "params_types": {
+            "effect": "any",
+            "options": "any",
+            "callback": "function"
+        }
+    }
+]

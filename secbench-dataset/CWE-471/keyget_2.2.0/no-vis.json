@@ -1,0 +1,130 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "target",
+            "path"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "target",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any",
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.has",
+        "tainted_params": [
+            "target",
+            "path"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.push",
+        "tainted_params": [
+            "target",
+            "path",
+            "value"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any",
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.method",
+        "tainted_params": [
+            "target",
+            "path"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.call",
+        "tainted_params": [
+            "target",
+            "path",
+            "args"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any",
+            "args": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.breadcrumbs",
+        "tainted_params": [
+            "target",
+            "path"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.select",
+        "tainted_params": [
+            "target",
+            "path"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.at",
+        "tainted_params": [
+            "target",
+            "path",
+            "update"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any",
+            "update": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.structure",
+        "tainted_params": [
+            "target",
+            "prefix"
+        ],
+        "params_types": {
+            "target": "any",
+            "prefix": "any"
+        }
+    }
+]

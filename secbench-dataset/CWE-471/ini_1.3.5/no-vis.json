@@ -1,0 +1,68 @@
+[
+    {
+        "filename": "src/ini.js",
+        "source": "module.exports.decode",
+        "tainted_params": [
+            "str"
+        ],
+        "params_types": {
+            "str": "any"
+        }
+    },
+    {
+        "filename": "src/ini.js",
+        "source": "module.exports.parse",
+        "tainted_params": [
+            "str"
+        ],
+        "params_types": {
+            "str": "any"
+        }
+    },
+    {
+        "filename": "src/ini.js",
+        "source": "module.exports.encode",
+        "tainted_params": [
+            "obj",
+            "opt"
+        ],
+        "params_types": {
+            "obj": "any",
+            "opt": "any"
+        }
+    },
+    {
+        "filename": "src/ini.js",
+        "source": "module.exports.stringify",
+        "tainted_params": [
+            "obj",
+            "opt"
+        ],
+        "params_types": {
+            "obj": "any",
+            "opt": "any"
+        }
+    },
+    {
+        "filename": "src/ini.js",
+        "source": "module.exports.safe",
+        "tainted_params": [
+            "val"
+        ],
+        "params_types": {
+            "val": "any"
+        }
+    },
+    {
+        "filename": "src/ini.js",
+        "source": "module.exports.unsafe",
+        "tainted_params": [
+            "val",
+            "doUnesc"
+        ],
+        "params_types": {
+            "val": "any",
+            "doUnesc": "any"
+        }
+    }
+]

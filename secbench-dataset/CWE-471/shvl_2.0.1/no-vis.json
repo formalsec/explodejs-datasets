@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "object",
+            "path",
+            "def"
+        ],
+        "params_types": {
+            "object": "any",
+            "path": "any",
+            "def": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "object",
+            "path",
+            "val",
+            "obj"
+        ],
+        "params_types": {
+            "object": "any",
+            "path": "any",
+            "val": "any",
+            "obj": "any"
+        }
+    }
+]

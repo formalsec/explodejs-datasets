@@ -1,0 +1,36 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.upload",
+        "tainted_params": [
+            "inputDirectory",
+            "bucket",
+            "force"
+        ],
+        "params_types": {
+            "inputDirectory": "any",
+            "bucket": "any",
+            "force": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.cors",
+        "tainted_params": [
+            "bucket"
+        ],
+        "params_types": {
+            "bucket": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.publicRead",
+        "tainted_params": [
+            "bucket"
+        ],
+        "params_types": {
+            "bucket": "any"
+        }
+    }
+]

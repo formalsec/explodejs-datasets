@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.flatten",
+        "tainted_params": [
+            "obj",
+            "delimiter"
+        ],
+        "params_types": {
+            "obj": "any",
+            "delimiter": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.unflatten",
+        "tainted_params": [
+            "obj",
+            "delimiter"
+        ],
+        "params_types": {
+            "obj": "any",
+            "delimiter": "any"
+        }
+    }
+]

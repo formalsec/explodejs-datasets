@@ -1,0 +1,320 @@
+[
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.is",
+        "tainted_params": [
+            "val",
+            "type"
+        ],
+        "params_types": {
+            "val": "any",
+            "type": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.own",
+        "tainted_params": [
+            "obj",
+            "key"
+        ],
+        "params_types": {
+            "obj": "any",
+            "key": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.isPOJO",
+        "tainted_params": [
+            "x"
+        ],
+        "params_types": {
+            "x": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.isIterable",
+        "tainted_params": [
+            "val"
+        ],
+        "params_types": {
+            "val": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.isPrimitive",
+        "tainted_params": [
+            "val"
+        ],
+        "params_types": {
+            "val": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.deepIt",
+        "tainted_params": [
+            "a",
+            "b",
+            "callback",
+            "path",
+            "_cache"
+        ],
+        "params_types": {
+            "a": "any",
+            "b": "any",
+            "callback": "function",
+            "path": "any",
+            "_cache": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.forEach",
+        "tainted_params": [
+            "obj",
+            "callback"
+        ],
+        "params_types": {
+            "obj": "any",
+            "callback": "function"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.map",
+        "tainted_params": [
+            "obj",
+            "fn"
+        ],
+        "params_types": {
+            "obj": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.some",
+        "tainted_params": [
+            "obj",
+            "fn"
+        ],
+        "params_types": {
+            "obj": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.every",
+        "tainted_params": [
+            "obj",
+            "fn"
+        ],
+        "params_types": {
+            "obj": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "obj",
+            "path",
+            "errNotFound"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "errNotFound": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.got",
+        "tainted_params": [
+            "obj",
+            "propArr",
+            "defaultValue"
+        ],
+        "params_types": {
+            "obj": "any",
+            "propArr": "any",
+            "defaultValue": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "obj",
+            "path",
+            "value",
+            "descriptor"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "value": "any",
+            "descriptor": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.unset",
+        "tainted_params": [
+            "obj",
+            "path"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.ensure",
+        "tainted_params": [
+            "obj",
+            "path",
+            "defaultValue",
+            "descriptor"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "defaultValue": "any",
+            "descriptor": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.invert",
+        "tainted_params": [
+            "obj"
+        ],
+        "params_types": {
+            "obj": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.assign",
+        "tainted_params": [
+            "target",
+            "arg"
+        ],
+        "params_types": {
+            "target": "any",
+            "arg": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.extend",
+        "tainted_params": [
+            "target",
+            "arg"
+        ],
+        "params_types": {
+            "target": "any",
+            "arg": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.merge",
+        "tainted_params": [
+            "target",
+            "arg"
+        ],
+        "params_types": {
+            "target": "any",
+            "arg": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.remove",
+        "tainted_params": [
+            "x",
+            "y",
+            "force"
+        ],
+        "params_types": {
+            "x": "any",
+            "y": "any",
+            "force": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.pick",
+        "tainted_params": [
+            "obj",
+            "props",
+            "force"
+        ],
+        "params_types": {
+            "obj": "any",
+            "props": "any",
+            "force": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.defaults",
+        "tainted_params": [
+            "target",
+            "arg"
+        ],
+        "params_types": {
+            "target": "any",
+            "arg": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.isEqual",
+        "tainted_params": [
+            "x",
+            "y",
+            "isStrict",
+            "validFn"
+        ],
+        "params_types": {
+            "x": "any",
+            "y": "any",
+            "isStrict": "any",
+            "validFn": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.visit",
+        "tainted_params": [
+            "obj",
+            "fn"
+        ],
+        "params_types": {
+            "obj": "any",
+            "fn": "any"
+        }
+    },
+    {
+        "filename": "src/objutil.cjs.js",
+        "source": "module.exports.filter",
+        "tainted_params": [
+            "obj",
+            "predicate"
+        ],
+        "params_types": {
+            "obj": "any",
+            "predicate": "any"
+        }
+    }
+]

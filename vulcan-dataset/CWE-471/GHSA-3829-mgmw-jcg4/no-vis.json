@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "src/deep-merge.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "result",
+            "initial",
+            "options"
+        ],
+        "params_types": {
+            "result": "any",
+            "initial": "any",
+            "options": "any"
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/main.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "grunt"
+        ],
+        "params_types": {
+            "grunt": "any"
+        }
+    }
+]

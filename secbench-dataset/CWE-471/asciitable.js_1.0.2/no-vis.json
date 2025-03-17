@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/asciitable.umd.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "m",
+            "options"
+        ],
+        "params_types": {
+            "m": "any",
+            "options": "any"
+        }
+    }
+]

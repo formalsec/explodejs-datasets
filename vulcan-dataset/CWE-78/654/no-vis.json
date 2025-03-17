@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/unix.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "iface",
+            "callback"
+        ],
+        "params_types": {
+            "iface": "any",
+            "callback": "function"
+        }
+    }
+]

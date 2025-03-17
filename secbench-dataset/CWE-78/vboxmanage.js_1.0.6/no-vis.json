@@ -1,0 +1,418 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.manage",
+        "tainted_params": [
+            "command",
+            "options"
+        ],
+        "params_types": {
+            "command": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.getProperty",
+        "tainted_params": [
+            "vmname",
+            "propName"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "propName": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.setProperty",
+        "tainted_params": [
+            "vmname",
+            "propName",
+            "value",
+            "options"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "propName": "any",
+            "value": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.deleteProperty",
+        "tainted_params": [
+            "vmname",
+            "propName"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "propName": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.clone",
+        "tainted_params": [
+            "vmname",
+            "newName",
+            "options"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "newName": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.cloneSnapshot",
+        "tainted_params": [
+            "vmname",
+            "snapshot",
+            "newName"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "snapshot": "any",
+            "newName": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.takeSnapshot",
+        "tainted_params": [
+            "vmname",
+            "snapshotName"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "snapshotName": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.restoreSnapshot",
+        "tainted_params": [
+            "vmname",
+            "snapshotName"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "snapshotName": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.getInfo",
+        "tainted_params": [
+            "vmname"
+        ],
+        "params_types": {
+            "vmname": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.getIPAddress",
+        "tainted_params": [
+            "vmname",
+            "timeout"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "timeout": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.modify",
+        "tainted_params": [
+            "vmname",
+            "options"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.isRegistered",
+        "tainted_params": [
+            "vmname"
+        ],
+        "params_types": {
+            "vmname": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.import",
+        "tainted_params": [
+            "ovfname",
+            "options"
+        ],
+        "params_types": {
+            "ovfname": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.start",
+        "tainted_params": [
+            "vmname",
+            "gui",
+            "options"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "gui": "any",
+            "options": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.reset",
+        "tainted_params": [
+            "vmname"
+        ],
+        "params_types": {
+            "vmname": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.resume",
+        "tainted_params": [
+            "vmname"
+        ],
+        "params_types": {
+            "vmname": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.stopAndSaveState",
+        "tainted_params": [
+            "vmname"
+        ],
+        "params_types": {
+            "vmname": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.powerOff",
+        "tainted_params": [
+            "vmname"
+        ],
+        "params_types": {
+            "vmname": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.acpiPowerButton",
+        "tainted_params": [
+            "vmname"
+        ],
+        "params_types": {
+            "vmname": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.acpiSleepButton",
+        "tainted_params": [
+            "vmname"
+        ],
+        "params_types": {
+            "vmname": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.copyToVm",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "source",
+            "dest",
+            "recursive"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "source": "any",
+            "dest": "any",
+            "recursive": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.copyFromVm",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "source",
+            "dest",
+            "recursive"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "source": "any",
+            "dest": "any",
+            "recursive": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.mkdir",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "path",
+            "parents"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "path": "any",
+            "parents": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.rmdir",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "path",
+            "recursive"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "path": "any",
+            "recursive": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.removeFile",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "path",
+            "force"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "path": "any",
+            "force": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.move",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "source",
+            "dest"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "source": "any",
+            "dest": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.mv",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "source",
+            "dest"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "source": "any",
+            "dest": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.stat",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "path"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.execOnVm",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "cmd",
+            "params",
+            "async"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "cmd": "any",
+            "params": "any",
+            "async": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.killOnVm",
+        "tainted_params": [
+            "vmname",
+            "username",
+            "password",
+            "taskName"
+        ],
+        "params_types": {
+            "vmname": "any",
+            "username": "any",
+            "password": "any",
+            "taskName": "any"
+        }
+    }
+]

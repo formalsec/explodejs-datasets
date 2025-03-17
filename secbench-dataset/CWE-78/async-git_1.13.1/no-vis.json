@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "destination",
+            "{ hard"
+        ],
+        "params_types": {
+            "destination": "any",
+            "{ hard": "any"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "filename": "src/main.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "path",
+            "val",
+            "sep"
+        ],
+        "params_types": {
+            "obj": "any",
+            "path": "any",
+            "val": "any",
+            "sep": "any"
+        }
+    }
+]

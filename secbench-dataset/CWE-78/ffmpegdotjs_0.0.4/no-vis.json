@@ -1,0 +1,134 @@
+[
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.generateimage",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.convertvideo",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.generategif",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.extractaudio",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.compressvideo",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.addoverlayimagetime",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.addoverlayimage",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.addoverlaytext",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.addaudiotovideo",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.addaudiotoimage",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    },
+    {
+        "filename": "src/index.js",
+        "source": "module.exports.trimvideo",
+        "tainted_params": [
+            "resolve",
+            "reject"
+        ],
+        "params_types": {
+            "resolve": "any",
+            "reject": "any"
+        }
+    }
+]

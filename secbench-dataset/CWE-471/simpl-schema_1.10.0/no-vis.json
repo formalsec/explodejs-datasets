@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "src/merge.js",
+        "source": "module.exports",
+        "tainted_params": [
+            "destination"
+        ],
+        "params_types": {
+            "destination": "any"
+        }
+    }
+]

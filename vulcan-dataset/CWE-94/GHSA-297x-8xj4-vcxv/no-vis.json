@@ -1,0 +1,38 @@
+[
+    {
+        "filename": "src/doT.js",
+        "source": "module.exports.template",
+        "tainted_params": [
+            "tmpl",
+            "c",
+            "def"
+        ],
+        "params_types": {
+            "tmpl": "any",
+            "c": "any",
+            "def": "any"
+        }
+    },
+    {
+        "filename": "src/doT.js",
+        "source": "module.exports.compile",
+        "tainted_params": [
+            "tmpl",
+            "def"
+        ],
+        "params_types": {
+            "tmpl": "any",
+            "def": "any"
+        }
+    },
+    {
+        "filename": "src/doT.js",
+        "source": "module.exports.encodeHTMLSource",
+        "tainted_params": [
+            "doNotSkipEncoded"
+        ],
+        "params_types": {
+            "doNotSkipEncoded": "any"
+        }
+    }
+]

@@ -1,0 +1,170 @@
+[
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isUndefined",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isDefined",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isString",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isNumber",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isFunction",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isObject",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isBoolean",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isArrayLike",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isArray",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.isEmpty",
+        "tainted_params": [
+            "value"
+        ],
+        "params_types": {
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.parse",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.set",
+        "tainted_params": [
+            "root",
+            "space",
+            "value"
+        ],
+        "params_types": {
+            "root": "any",
+            "space": "any",
+            "value": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.makeSetter",
+        "tainted_params": [
+            "space"
+        ],
+        "params_types": {
+            "space": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.get",
+        "tainted_params": [
+            "root",
+            "path"
+        ],
+        "params_types": {
+            "root": "any",
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.makeGetter",
+        "tainted_params": [
+            "path"
+        ],
+        "params_types": {
+            "path": "any"
+        }
+    },
+    {
+        "filename": "src/core.js",
+        "source": "module.exports.del",
+        "tainted_params": [
+            "root",
+            "space"
+        ],
+        "params_types": {
+            "root": "any",
+            "space": "any"
+        }
+    }
+]

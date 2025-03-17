@@ -1,0 +1,14 @@
+[
+    {
+        "filename": "src/traceroute.js",
+        "source": "module.exports.trace",
+        "tainted_params": [
+            "host",
+            "callback"
+        ],
+        "params_types": {
+            "host": "any",
+            "callback": "function"
+        }
+    }
+]
