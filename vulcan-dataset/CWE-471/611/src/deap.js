@@ -70,7 +70,6 @@ function extend(a, b /*, [b2..n] */) {
 }
 
 function deepExtend(a, b /*, [b2..n] */) {
-  arguments = [a, b];
 	slice.call(arguments, 1).forEach(function(b) {
 		Object.keys(b).forEach(function(p) {
 			if(typeOf(b[p]) === 'object' && typeOf(a[p]) === 'object')
