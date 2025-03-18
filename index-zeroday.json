@@ -1,0 +1,1237 @@
+[
+  {
+    "package": "aaptjs-1.3.2",
+    "version": "aaptjs-1.3.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/aaptjs-1.3.2/src/index.js",
+        "package_dir": "zeroday/aaptjs-1.3.2/src",
+        "lineno": "??",
+        "id": 0
+      }
+    ]
+  },
+  {
+    "package": "angular-jsdoc-1.5.1",
+    "version": "angular-jsdoc-1.5.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/angular-jsdoc-1.5.1/src/index.js",
+        "package_dir": "zeroday/angular-jsdoc-1.5.1/src",
+        "lineno": "??",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "package": "apib-include-directive-0.1.0",
+    "version": "apib-include-directive-0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/apib-include-directive-0.1.0/src/lib/main.js",
+        "package_dir": "zeroday/apib-include-directive-0.1.0/src",
+        "lineno": "??",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "package": "aurelia-loader-nodejs-1.1.0",
+    "version": "aurelia-loader-nodejs-1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/aurelia-loader-nodejs-1.1.0/src/dist/commonjs/aurelia-loader-nodejs.js",
+        "package_dir": "zeroday/aurelia-loader-nodejs-1.1.0/src",
+        "lineno": "??",
+        "id": 3
+      }
+    ]
+  },
+  {
+    "package": "awscred-1.5.0",
+    "version": "awscred-1.5.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/awscred-1.5.0/src/index.js",
+        "package_dir": "zeroday/awscred-1.5.0/src",
+        "lineno": "??",
+        "id": 4
+      }
+    ]
+  },
+  {
+    "package": "base64topdf-1.1.8",
+    "version": "base64topdf-1.1.8",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/base64topdf-1.1.8/src/index.js",
+        "package_dir": "zeroday/base64topdf-1.1.8/src",
+        "lineno": "??",
+        "id": 5
+      }
+    ]
+  },
+  {
+    "package": "blakeembrey-template-1.1.0",
+    "version": "blakeembrey-template-1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/blakeembrey-template-1.1.0/src/dist/index.js",
+        "package_dir": "zeroday/blakeembrey-template-1.1.0/src",
+        "lineno": "??",
+        "id": 6
+      }
+    ]
+  },
+  {
+    "package": "broccoli-sri-hash-2.1.2",
+    "version": "broccoli-sri-hash-2.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/broccoli-sri-hash-2.1.2/src/index.js",
+        "package_dir": "zeroday/broccoli-sri-hash-2.1.2/src",
+        "lineno": "??",
+        "id": 7
+      }
+    ]
+  },
+  {
+    "package": "brotli-size-4.0.0",
+    "version": "brotli-size-4.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/brotli-size-4.0.0/src/dist/index.js",
+        "package_dir": "zeroday/brotli-size-4.0.0/src",
+        "lineno": "??",
+        "id": 8
+      }
+    ]
+  },
+  {
+    "package": "bump-file-2.0.0",
+    "version": "bump-file-2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/bump-file-2.0.0/src/index.js",
+        "package_dir": "zeroday/bump-file-2.0.0/src",
+        "lineno": "??",
+        "id": 9
+      }
+    ]
+  },
+  {
+    "package": "chrome-0.1.0",
+    "version": "chrome-0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/chrome-0.1.0/src/common.js",
+        "package_dir": "zeroday/chrome-0.1.0/src",
+        "lineno": "??",
+        "id": 10
+      }
+    ]
+  },
+  {
+    "package": "cobertura-parse-1.0.5",
+    "version": "cobertura-parse-1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/cobertura-parse-1.0.5/src/source/index.js",
+        "package_dir": "zeroday/cobertura-parse-1.0.5/src",
+        "lineno": "??",
+        "id": 11
+      }
+    ]
+  },
+  {
+    "package": "config-yaml-1.1.6",
+    "version": "config-yaml-1.1.6",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/config-yaml-1.1.6/src/index.js",
+        "package_dir": "zeroday/config-yaml-1.1.6/src",
+        "lineno": "??",
+        "id": 12
+      }
+    ]
+  },
+  {
+    "package": "css-b64-images-0.2.5",
+    "version": "css-b64-images-0.2.5",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/css-b64-images-0.2.5/src/lib/css-b64-images.js",
+        "package_dir": "zeroday/css-b64-images-0.2.5/src",
+        "lineno": "??",
+        "id": 13
+      }
+    ]
+  },
+  {
+    "package": "cubejs-backend-dotenv-9.0.2",
+    "version": "cubejs-backend-dotenv-9.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/cubejs-backend-dotenv-9.0.2/src/lib/main.js",
+        "package_dir": "zeroday/cubejs-backend-dotenv-9.0.2/src",
+        "lineno": "??",
+        "id": 14
+      }
+    ]
+  },
+  {
+    "package": "cvrg-report-clover-json-0.3.3",
+    "version": "cvrg-report-clover-json-0.3.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/cvrg-report-clover-json-0.3.3/src/src/index.js",
+        "package_dir": "zeroday/cvrg-report-clover-json-0.3.3/src",
+        "lineno": "??",
+        "id": 15
+      }
+    ]
+  },
+  {
+    "package": "dom-storage-2.1.0",
+    "version": "dom-storage-2.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/dom-storage-2.1.0/src/lib/index.js",
+        "package_dir": "zeroday/dom-storage-2.1.0/src",
+        "lineno": "??",
+        "id": 16
+      }
+    ]
+  },
+  {
+    "package": "dotenv-flow-3.2.0",
+    "version": "dotenv-flow-3.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/dotenv-flow-3.2.0/src/lib/dotenv-flow.js",
+        "package_dir": "zeroday/dotenv-flow-3.2.0/src",
+        "lineno": "??",
+        "id": 17
+      }
+    ]
+  },
+  {
+    "package": "dotenv-yaml-0.1.4",
+    "version": "dotenv-yaml-0.1.4",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/dotenv-yaml-0.1.4/src/lib/index.js",
+        "package_dir": "zeroday/dotenv-yaml-0.1.4/src",
+        "lineno": "??",
+        "id": 18
+      }
+    ]
+  },
+  {
+    "package": "eivindfjeldstad-dot-0.0.1",
+    "version": "eivindfjeldstad-dot-0.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-1321",
+        "filename": "zeroday/eivindfjeldstad-dot-0.0.1/src/index.js",
+        "package_dir": "zeroday/eivindfjeldstad-dot-0.0.1/src",
+        "lineno": "??",
+        "id": 19
+      }
+    ]
+  },
+  {
+    "package": "electron-winstaller-5.1.0",
+    "version": "electron-winstaller-5.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/electron-winstaller-5.1.0/src/lib/spawn-promise.js",
+        "package_dir": "zeroday/electron-winstaller-5.1.0/src",
+        "lineno": "??",
+        "id": 20
+      }
+    ]
+  },
+  {
+    "package": "exec-async-2.2.0",
+    "version": "exec-async-2.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/exec-async-2.2.0/src/index.js",
+        "package_dir": "zeroday/exec-async-2.2.0/src",
+        "lineno": "??",
+        "id": 21
+      }
+    ]
+  },
+  {
+    "package": "executioner-2.0.1",
+    "version": "executioner-2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/executioner-2.0.1/src/lib/execute.js",
+        "package_dir": "zeroday/executioner-2.0.1/src",
+        "lineno": "??",
+        "id": 22
+      }
+    ]
+  },
+  {
+    "package": "extract-svg-path-2.1.0",
+    "version": "extract-svg-path-2.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/extract-svg-path-2.1.0/src/index.js",
+        "package_dir": "zeroday/extract-svg-path-2.1.0/src",
+        "lineno": "??",
+        "id": 23
+      }
+    ]
+  },
+  {
+    "package": "ffprobe-1.1.2",
+    "version": "ffprobe-1.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/ffprobe-1.1.2/src/index.js",
+        "package_dir": "zeroday/ffprobe-1.1.2/src",
+        "lineno": "??",
+        "id": 24
+      }
+    ]
+  },
+  {
+    "package": "file-source-0.6.1",
+    "version": "file-source-0.6.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/file-source-0.6.1/src/index.js",
+        "package_dir": "zeroday/file-source-0.6.1/src",
+        "lineno": "??",
+        "id": 25
+      }
+    ]
+  },
+  {
+    "package": "file-system-2.2.2",
+    "version": "file-system-2.2.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/file-system-2.2.2/src/file-system.js",
+        "package_dir": "zeroday/file-system-2.2.2/src",
+        "lineno": "??",
+        "id": 26
+      }
+    ]
+  },
+  {
+    "package": "filter-css-1.0.0",
+    "version": "filter-css-1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/filter-css-1.0.0/src/index.js",
+        "package_dir": "zeroday/filter-css-1.0.0/src",
+        "lineno": "??",
+        "id": 27
+      }
+    ]
+  },
+  {
+    "package": "find-config-1.0.0",
+    "version": "find-config-1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/find-config-1.0.0/src/src/find-config.js",
+        "package_dir": "zeroday/find-config-1.0.0/src",
+        "lineno": "??",
+        "id": 28
+      }
+    ]
+  },
+  {
+    "package": "firstline-2.0.2",
+    "version": "firstline-2.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/firstline-2.0.2/src/index.js",
+        "package_dir": "zeroday/firstline-2.0.2/src",
+        "lineno": "??",
+        "id": 29
+      }
+    ]
+  },
+  {
+    "package": "gh-markdown-cli-0.2.0",
+    "version": "gh-markdown-cli-0.2.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/gh-markdown-cli-0.2.0/src/mdown.js",
+        "package_dir": "zeroday/gh-markdown-cli-0.2.0/src",
+        "lineno": "??",
+        "id": 30
+      }
+    ]
+  },
+  {
+    "package": "git-node-fs-1.0.0",
+    "version": "git-node-fs-1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/git-node-fs-1.0.0/src/lib/node-fs.js",
+        "package_dir": "zeroday/git-node-fs-1.0.0/src",
+        "lineno": "??",
+        "id": 31
+      }
+    ]
+  },
+  {
+    "package": "golang-cover-parse-2.0.0",
+    "version": "golang-cover-parse-2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/golang-cover-parse-2.0.0/src/source/index.js",
+        "package_dir": "zeroday/golang-cover-parse-2.0.0/src",
+        "lineno": "??",
+        "id": 32
+      }
+    ]
+  },
+  {
+    "package": "gradle-to-js-2.0.1",
+    "version": "gradle-to-js-2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/gradle-to-js-2.0.1/src/lib/parser.js",
+        "package_dir": "zeroday/gradle-to-js-2.0.1/src",
+        "lineno": "??",
+        "id": 33
+      }
+    ]
+  },
+  {
+    "package": "gulp-mustache-5.0.0",
+    "version": "gulp-mustache-5.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/gulp-mustache-5.0.0/src/index.js",
+        "package_dir": "zeroday/gulp-mustache-5.0.0/src",
+        "lineno": "??",
+        "id": 34
+      }
+    ]
+  },
+  {
+    "package": "heimdalljs-graph-1.0.0",
+    "version": "heimdalljs-graph-1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/heimdalljs-graph-1.0.0/src/dist/cjs/index.js",
+        "package_dir": "zeroday/heimdalljs-graph-1.0.0/src",
+        "lineno": "??",
+        "id": 35
+      }
+    ]
+  },
+  {
+    "package": "hostile-1.3.3",
+    "version": "hostile-1.3.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/hostile-1.3.3/src/index.js",
+        "package_dir": "zeroday/hostile-1.3.3/src",
+        "lineno": "??",
+        "id": 36
+      }
+    ]
+  },
+  {
+    "package": "hull.js-1.0.3",
+    "version": "hull.js-1.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/hull.js-1.0.3/src/src/format.js",
+        "package_dir": "zeroday/hull.js-1.0.3/src",
+        "lineno": "??",
+        "id": 37
+      }
+    ]
+  },
+  {
+    "package": "iedriver-4.0.0",
+    "version": "iedriver-4.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/iedriver-4.0.0/src/lib/iedriver.js",
+        "package_dir": "zeroday/iedriver-4.0.0/src",
+        "lineno": "??",
+        "id": 38
+      }
+    ]
+  },
+  {
+    "package": "iniparser-1.0.5",
+    "version": "iniparser-1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/iniparser-1.0.5/src/lib/node-iniparser.js",
+        "package_dir": "zeroday/iniparser-1.0.5/src",
+        "lineno": "??",
+        "id": 39
+      }
+    ]
+  },
+  {
+    "package": "init-0.1.2",
+    "version": "init-0.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/init-0.1.2/src/init.js",
+        "package_dir": "zeroday/init-0.1.2/src",
+        "lineno": "??",
+        "id": 40
+      }
+    ]
+  },
+  {
+    "package": "jest-transform-file-1.1.1",
+    "version": "jest-transform-file-1.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/jest-transform-file-1.1.1/src/index.js",
+        "package_dir": "zeroday/jest-transform-file-1.1.1/src",
+        "lineno": "??",
+        "id": 41
+      }
+    ]
+  },
+  {
+    "package": "jsrsasign-util-1.0.5",
+    "version": "jsrsasign-util-1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/jsrsasign-util-1.0.5/src/lib/jsrsasign-util.js",
+        "package_dir": "zeroday/jsrsasign-util-1.0.5/src",
+        "lineno": "??",
+        "id": 42
+      }
+    ]
+  },
+  {
+    "package": "kitx-2.1.0",
+    "version": "kitx-2.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/kitx-2.1.0/src/lib/index.js",
+        "package_dir": "zeroday/kitx-2.1.0/src",
+        "lineno": "??",
+        "id": 43
+      }
+    ]
+  },
+  {
+    "package": "lasso-caching-fs-1.0.2",
+    "version": "lasso-caching-fs-1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/lasso-caching-fs-1.0.2/src/src/index.js",
+        "package_dir": "zeroday/lasso-caching-fs-1.0.2/src",
+        "lineno": "??",
+        "id": 44
+      }
+    ]
+  },
+  {
+    "package": "load-source-map-3.0.1",
+    "version": "load-source-map-3.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/load-source-map-3.0.1/src/lib/index.js",
+        "package_dir": "zeroday/load-source-map-3.0.1/src",
+        "lineno": "??",
+        "id": 45
+      }
+    ]
+  },
+  {
+    "package": "md5-file-5.0.0",
+    "version": "md5-file-5.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/md5-file-5.0.0/src/index.js",
+        "package_dir": "zeroday/md5-file-5.0.0/src",
+        "lineno": "??",
+        "id": 46
+      }
+    ]
+  },
+  {
+    "package": "metro-cache-key-0.78.0",
+    "version": "metro-cache-key-0.78.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/metro-cache-key-0.78.0/src/src/index.js",
+        "package_dir": "zeroday/metro-cache-key-0.78.0/src",
+        "lineno": "??",
+        "id": 47
+      }
+    ]
+  },
+  {
+    "package": "network-0.6.1",
+    "version": "network-0.6.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/network-0.6.1/src/lib/darwin.js",
+        "package_dir": "zeroday/network-0.6.1/src",
+        "lineno": "??",
+        "id": 48
+      }
+    ]
+  },
+  {
+    "package": "node-cmd-5.0.0",
+    "version": "node-cmd-5.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/node-cmd-5.0.0/src/cmd.js",
+        "package_dir": "zeroday/node-cmd-5.0.0/src",
+        "lineno": "??",
+        "id": 49
+      }
+    ]
+  },
+  {
+    "package": "node-exiftool-2.3.0",
+    "version": "node-exiftool-2.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/node-exiftool-2.3.0/src/src/lib.js",
+        "package_dir": "zeroday/node-exiftool-2.3.0/src",
+        "lineno": "??",
+        "id": 50
+      }
+    ]
+  },
+  {
+    "package": "parse-jtl-1.0.4",
+    "version": "parse-jtl-1.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/parse-jtl-1.0.4/src/src/index.js",
+        "package_dir": "zeroday/parse-jtl-1.0.4/src",
+        "lineno": "??",
+        "id": 51
+      }
+    ]
+  },
+  {
+    "package": "prepend-file-2.0.1",
+    "version": "prepend-file-2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/prepend-file-2.0.1/src/index.js",
+        "package_dir": "zeroday/prepend-file-2.0.1/src",
+        "lineno": "??",
+        "id": 52
+      }
+    ]
+  },
+  {
+    "package": "promisify-child-process-4.1.2",
+    "version": "promisify-child-process-4.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/promisify-child-process-4.1.2/src/index.cjs",
+        "package_dir": "zeroday/promisify-child-process-4.1.2/src",
+        "lineno": "??",
+        "id": 53
+      }
+    ]
+  },
+  {
+    "package": "protoc-1.1.3",
+    "version": "protoc-1.1.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/protoc-1.1.3/src/index.js",
+        "package_dir": "zeroday/protoc-1.1.3/src",
+        "lineno": "??",
+        "id": 54
+      }
+    ]
+  },
+  {
+    "package": "repl.history-0.1.4",
+    "version": "repl.history-0.1.4",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/repl.history-0.1.4/src/index.js",
+        "package_dir": "zeroday/repl.history-0.1.4/src",
+        "lineno": "??",
+        "id": 55
+      }
+    ]
+  },
+  {
+    "package": "rsync-0.6.1",
+    "version": "rsync-0.6.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/rsync-0.6.1/src/rsync.js",
+        "package_dir": "zeroday/rsync-0.6.1/src",
+        "lineno": "??",
+        "id": 56
+      }
+    ]
+  },
+  {
+    "package": "sha256-file-1.0.0",
+    "version": "sha256-file-1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/sha256-file-1.0.0/src/index.js",
+        "package_dir": "zeroday/sha256-file-1.0.0/src",
+        "lineno": "??",
+        "id": 57
+      }
+    ]
+  },
+  {
+    "package": "simctl-2.0.3",
+    "version": "simctl-2.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/simctl-2.0.3/src/simctl.js",
+        "package_dir": "zeroday/simctl-2.0.3/src",
+        "lineno": "??",
+        "id": 58
+      }
+    ]
+  },
+  {
+    "package": "simple-spellchecker-1.0.2",
+    "version": "simple-spellchecker-1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/simple-spellchecker-1.0.2/src/index.js",
+        "package_dir": "zeroday/simple-spellchecker-1.0.2/src",
+        "lineno": "??",
+        "id": 59
+      }
+    ]
+  },
+  {
+    "package": "skn0tt-lambda-local-2.0.3",
+    "version": "skn0tt-lambda-local-2.0.3",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/skn0tt-lambda-local-2.0.3/src/build/lib/utils.js",
+        "package_dir": "zeroday/skn0tt-lambda-local-2.0.3/src",
+        "lineno": "??",
+        "id": 60
+      }
+    ]
+  },
+  {
+    "package": "smpltmpl-1.0.2",
+    "version": "smpltmpl-1.0.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/smpltmpl-1.0.2/src/index.js",
+        "package_dir": "zeroday/smpltmpl-1.0.2/src",
+        "lineno": "??",
+        "id": 61
+      }
+    ]
+  },
+  {
+    "package": "split-ca-1.0.1",
+    "version": "split-ca-1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/split-ca-1.0.1/src/index.js",
+        "package_dir": "zeroday/split-ca-1.0.1/src",
+        "lineno": "??",
+        "id": 62
+      }
+    ]
+  },
+  {
+    "package": "split-tests-core-0.1.0",
+    "version": "split-tests-core-0.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/split-tests-core-0.1.0/src/index.cjs.js",
+        "package_dir": "zeroday/split-tests-core-0.1.0/src",
+        "lineno": "??",
+        "id": 63
+      }
+    ]
+  },
+  {
+    "package": "tal-page-strategies-2.0.1",
+    "version": "tal-page-strategies-2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/tal-page-strategies-2.0.1/src/index.js",
+        "package_dir": "zeroday/tal-page-strategies-2.0.1/src",
+        "lineno": "??",
+        "id": 64
+      }
+    ]
+  },
+  {
+    "package": "ts-typed-json-0.3.2",
+    "version": "ts-typed-json-0.3.2",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/ts-typed-json-0.3.2/src/lib/index.js",
+        "package_dir": "zeroday/ts-typed-json-0.3.2/src",
+        "lineno": "??",
+        "id": 65
+      }
+    ]
+  },
+  {
+    "package": "webpack-dotenv-plugin-2.1.0",
+    "version": "webpack-dotenv-plugin-2.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-22",
+        "filename": "zeroday/webpack-dotenv-plugin-2.1.0/src/index.js",
+        "package_dir": "zeroday/webpack-dotenv-plugin-2.1.0/src",
+        "lineno": "??",
+        "id": 66
+      }
+    ]
+  },
+  {
+    "package": "win-fork-1.1.1",
+    "version": "win-fork-1.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/win-fork-1.1.1/src/index.js",
+        "package_dir": "zeroday/win-fork-1.1.1/src",
+        "lineno": "??",
+        "id": 67
+      }
+    ]
+  },
+  {
+    "package": "adb-driver-0.1.8",
+    "version": "adb-driver-0.1.8",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/adb-driver-0.1.8/src/build/AdbDriver.js",
+        "package_dir": "zeroday/adb-driver-0.1.8/src",
+        "lineno": "??",
+        "id": 68
+      }
+    ]
+  },
+  {
+    "package": "can-npm-publish-1.3.6",
+    "version": "can-npm-publish-1.3.6",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/can-npm-publish-1.3.6/src/lib/can-npm-publish.js",
+        "package_dir": "zeroday/can-npm-publish-1.3.6/src",
+        "lineno": "??",
+        "id": 69
+      }
+    ]
+  },
+  {
+    "package": "docusaurus-lunr-search-2.3.2",
+    "version": "docusaurus-lunr-search-2.3.2",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/docusaurus-lunr-search-2.3.2/src/src/utils.js",
+        "package_dir": "zeroday/docusaurus-lunr-search-2.3.2/src",
+        "lineno": "??",
+        "id": 70
+      }
+    ]
+  },
+  {
+    "package": "dot-access-1.0.0",
+    "version": "dot-access-1.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/dot-access-1.0.0/src/index.js",
+        "package_dir": "zeroday/dot-access-1.0.0/src",
+        "lineno": "??",
+        "id": 71
+      }
+    ]
+  },
+  {
+    "package": "dottie-2.0.6",
+    "version": "dottie-2.0.6",
+    "vulns": [
+      {
+        "cwe": "CWE-1321",
+        "filename": "zeroday/dottie-2.0.6/src/dottie.js",
+        "package_dir": "zeroday/dottie-2.0.6/src",
+        "lineno": "??",
+        "id": 72
+      }
+    ]
+  },
+  {
+    "package": "find-git-exec-0.0.4",
+    "version": "find-git-exec-0.0.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/find-git-exec-0.0.4/src/lib/find-git-exec.js",
+        "package_dir": "zeroday/find-git-exec-0.0.4/src",
+        "lineno": "??",
+        "id": 73
+      }
+    ]
+  },
+  {
+    "package": "first-base-1.3.0",
+    "version": "first-base-1.3.0",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/first-base-1.3.0/src/dist/index.js",
+        "package_dir": "zeroday/first-base-1.3.0/src",
+        "lineno": "??",
+        "id": 74
+      }
+    ]
+  },
+  {
+    "package": "fulcon-2.0.0",
+    "version": "fulcon-2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/fulcon-2.0.0/src/index.js",
+        "package_dir": "zeroday/fulcon-2.0.0/src",
+        "lineno": "??",
+        "id": 75
+      }
+    ]
+  },
+  {
+    "package": "gettext.js-2.0.0",
+    "version": "gettext.js-2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/gettext.js-2.0.0/src/dist/gettext.cjs.min.js",
+        "package_dir": "zeroday/gettext.js-2.0.0/src",
+        "lineno": "??",
+        "id": 76
+      }
+    ]
+  },
+  {
+    "package": "graphql-mesh-plugin-snapshot-0.95.1",
+    "version": "graphql-mesh-plugin-snapshot-0.95.1",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/graphql-mesh-plugin-snapshot-0.95.1/src/cjs/index.js",
+        "package_dir": "zeroday/graphql-mesh-plugin-snapshot-0.95.1/src",
+        "lineno": "??",
+        "id": 77
+      }
+    ]
+  },
+  {
+    "package": "if-node-version-1.1.1",
+    "version": "if-node-version-1.1.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/if-node-version-1.1.1/src/lib/index.js",
+        "package_dir": "zeroday/if-node-version-1.1.1/src",
+        "lineno": "??",
+        "id": 78
+      }
+    ]
+  },
+  {
+    "package": "mdns-discovery-0.2.6",
+    "version": "mdns-discovery-0.2.6",
+    "vulns": [
+      {
+        "cwe": "CWE-1321",
+        "filename": "zeroday/mdns-discovery-0.2.6/src/mdns-discovery.js",
+        "package_dir": "zeroday/mdns-discovery-0.2.6/src",
+        "lineno": "??",
+        "id": 79
+      }
+    ]
+  },
+  {
+    "package": "mecab-async-0.1.2",
+    "version": "mecab-async-0.1.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/mecab-async-0.1.2/src/mecab.js",
+        "package_dir": "zeroday/mecab-async-0.1.2/src",
+        "lineno": "??",
+        "id": 80
+      }
+    ]
+  },
+  {
+    "package": "morgan-json-1.1.0",
+    "version": "morgan-json-1.1.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/morgan-json-1.1.0/src/index.js",
+        "package_dir": "zeroday/morgan-json-1.1.0/src",
+        "lineno": "??",
+        "id": 81
+      }
+    ]
+  },
+  {
+    "package": "multiview-3.0.1",
+    "version": "multiview-3.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/multiview-3.0.1/src/lib/Spawn.js",
+        "package_dir": "zeroday/multiview-3.0.1/src",
+        "lineno": "??",
+        "id": 82
+      }
+    ]
+  },
+  {
+    "package": "node-phantom-simple-2.2.4",
+    "version": "node-phantom-simple-2.2.4",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/node-phantom-simple-2.2.4/src/node-phantom-simple.js",
+        "package_dir": "zeroday/node-phantom-simple-2.2.4/src",
+        "lineno": "??",
+        "id": 83
+      }
+    ]
+  },
+  {
+    "package": "nx-js-compiler-util-2.0.0",
+    "version": "nx-js-compiler-util-2.0.0",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/nx-js-compiler-util-2.0.0/src/dist/cjs.es5.js",
+        "package_dir": "zeroday/nx-js-compiler-util-2.0.0/src",
+        "lineno": "??",
+        "id": 84
+      }
+    ]
+  },
+  {
+    "package": "os-utils-0.0.14",
+    "version": "os-utils-0.0.14",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/os-utils-0.0.14/src/lib/osutils.js",
+        "package_dir": "zeroday/os-utils-0.0.14/src",
+        "lineno": "??",
+        "id": 85
+      }
+    ]
+  },
+  {
+    "package": "pdffiller-0.0.11",
+    "version": "pdffiller-0.0.11",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/pdffiller-0.0.11/src/index.js",
+        "package_dir": "zeroday/pdffiller-0.0.11/src",
+        "lineno": "??",
+        "id": 86
+      }
+    ]
+  },
+  {
+    "package": "rcinfo-0.1.3",
+    "version": "rcinfo-0.1.3",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/rcinfo-0.1.3/src/lib/index.js",
+        "package_dir": "zeroday/rcinfo-0.1.3/src",
+        "lineno": "??",
+        "id": 87
+      }
+    ]
+  },
+  {
+    "package": "spawn-please-2.0.1",
+    "version": "spawn-please-2.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/spawn-please-2.0.1/src/index.js",
+        "package_dir": "zeroday/spawn-please-2.0.1/src",
+        "lineno": "??",
+        "id": 88
+      }
+    ]
+  },
+  {
+    "package": "sync-exec-0.6.2",
+    "version": "sync-exec-0.6.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/sync-exec-0.6.2/src/js/lib/proxy.js",
+        "package_dir": "zeroday/sync-exec-0.6.2/src",
+        "lineno": "??",
+        "id": 89
+      }
+    ]
+  },
+  {
+    "package": "tmpl-1.0.5",
+    "version": "tmpl-1.0.5",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/tmpl-1.0.5/src/lib/tmpl.js",
+        "package_dir": "zeroday/tmpl-1.0.5/src",
+        "lineno": "??",
+        "id": 90
+      }
+    ]
+  },
+  {
+    "package": "toggle-array-1.0.1",
+    "version": "toggle-array-1.0.1",
+    "vulns": [
+      {
+        "cwe": "CWE-1321",
+        "filename": "zeroday/toggle-array-1.0.1/src/index.js",
+        "package_dir": "zeroday/toggle-array-1.0.1/src",
+        "lineno": "??",
+        "id": 91
+      }
+    ]
+  },
+  {
+    "package": "tree-kill-1.2.2",
+    "version": "tree-kill-1.2.2",
+    "vulns": [
+      {
+        "cwe": "CWE-78",
+        "filename": "zeroday/tree-kill-1.2.2/src/index.js",
+        "package_dir": "zeroday/tree-kill-1.2.2/src",
+        "lineno": "??",
+        "id": 92
+      }
+    ]
+  },
+  {
+    "package": "viralify-0.4.2",
+    "version": "viralify-0.4.2",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/viralify-0.4.2/src/index.js",
+        "package_dir": "zeroday/viralify-0.4.2/src",
+        "lineno": "??",
+        "id": 93
+      }
+    ]
+  },
+  {
+    "package": "webpack-cdn-plugin-3.3.1",
+    "version": "webpack-cdn-plugin-3.3.1",
+    "vulns": [
+      {
+        "cwe": "CWE-94",
+        "filename": "zeroday/webpack-cdn-plugin-3.3.1/src/module.js",
+        "package_dir": "zeroday/webpack-cdn-plugin-3.3.1/src",
+        "lineno": "??",
+        "id": 94
+      }
+    ]
+  }
+]
