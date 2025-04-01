@@ -38,7 +38,7 @@ function mergeObjects(target, source) {
       }
     }
     else if (!target[key] || Array.isArray(value)) {
-      target[key] = plain_object_clone_1.default(value);
+      target[key] = clone(value);
     }
     else {
       target[key] = mergeObjects(target[key], value);

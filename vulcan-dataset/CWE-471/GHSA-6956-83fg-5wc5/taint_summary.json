@@ -12,8 +12,8 @@
             "value"
         ],
         "params_types": {
-            "object": "array",
-            "path": [ "string", "string"],
+            "object": "object",
+            "path": "array",
             "value": "any"
         },
         "call_paths": [
