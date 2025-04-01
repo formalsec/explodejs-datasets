@@ -1,4 +1,8 @@
-const helper = require('think-helper');
+const helper = {
+  isObject: function(o) {
+    return o !== null && typeof o === 'object' && !Array.isArray(o);
+  }
+};
 /**
  * config manage
  */
