@@ -7,17 +7,24 @@
         "sink_lineno": 19,
         "source": "module.exports",
         "tainted_params": [
-            "undefined"
+            "x",
+            "y"
         ],
         "params_types": {
-            "undefined": "any"
+            "x": "object",
+            "y": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            }
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "882.mergify-o126",
-                "fn_id": 833,
-                "source_fn_id": 833
+                "fn_name": "773.merge-o104",
+                "fn_id": 477,
+                "source_fn_id": 477
             }
         ]
     },
@@ -29,17 +36,24 @@
         "sink_lineno": 15,
         "source": "module.exports",
         "tainted_params": [
-            "undefined"
+            "x",
+            "y"
         ],
         "params_types": {
-            "undefined": "any"
+            "x": "object",
+            "y": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            }
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "882.mergify-o126",
-                "fn_id": 833,
-                "source_fn_id": 833
+                "fn_name": "773.merge-o104",
+                "fn_id": 477,
+                "source_fn_id": 477
             }
         ]
     }

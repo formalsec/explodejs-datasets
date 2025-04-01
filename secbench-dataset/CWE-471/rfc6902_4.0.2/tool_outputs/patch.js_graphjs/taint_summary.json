@@ -1,1 +1,30 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-471/rfc6902_4.0.2/src/patch.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "endpoint.parent[endpoint.key] = operation.value;",
+        "sink_lineno": 130,
+        "source": "module.exports.replace",
+        "tainted_params": [
+            "object",
+            "operation"
+        ],
+        "params_types": {
+            "object": "array",
+            "operation": {
+                "path": "string",
+                "value": "any"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "replace",
+                "fn_name": "3046.replace-o463",
+                "fn_id": "2441",
+                "source_fn_id": "2441"
+            }
+        ]
+    }
+]

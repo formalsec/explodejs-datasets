@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-vvv8-xw5f-3f88/src/deepFillIn.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = newValue;",
+        "sink_lineno": 106,
+        "source": "module.exports",
+        "tainted_params": [
+            "target",
+            "defaults"
+        ],
+        "params_types": {
+            "target": "object",
+            "defaults": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "929.deepFillIn-o153",
+                "fn_id": 832,
+                "source_fn_id": 832
+            }
+        ]
+    }
+]

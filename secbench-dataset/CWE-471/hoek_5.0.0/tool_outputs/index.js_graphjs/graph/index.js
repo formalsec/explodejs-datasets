@@ -2,44 +2,45 @@
 const Crypto = require('crypto');
 const Path = require('path');
 const Util = require('util');
-const Escape = require('./escape');
+const Escape = function () {
+};
 const internals = {};
-const v677 = function (obj, seen) {
-    const v653 = typeof obj;
-    const v654 = v653 !== 'object';
-    const v655 = obj === null;
-    const v656 = v654 || v655;
-    if (v656) {
+const v675 = function (obj, seen) {
+    const v651 = typeof obj;
+    const v652 = v651 !== 'object';
+    const v653 = obj === null;
+    const v654 = v652 || v653;
+    if (v654) {
         return obj;
     }
-    const v657 = new Map();
-    seen = seen || v657;
+    const v655 = new Map();
+    seen = seen || v655;
     const lookup = seen.get(obj);
     if (lookup) {
         return lookup;
     }
     let newObj;
     let cloneDeep = false;
-    const v658 = Array.isArray(obj);
-    const v659 = !v658;
-    if (v659) {
-        const v660 = Buffer.isBuffer(obj);
-        if (v660) {
+    const v656 = Array.isArray(obj);
+    const v657 = !v656;
+    if (v657) {
+        const v658 = Buffer.isBuffer(obj);
+        if (v658) {
             newObj = new Buffer(obj);
         } else {
-            const v661 = obj instanceof Date;
-            if (v661) {
-                const v662 = obj.getTime();
-                newObj = new Date(v662);
+            const v659 = obj instanceof Date;
+            if (v659) {
+                const v660 = obj.getTime();
+                newObj = new Date(v660);
             } else {
-                const v663 = obj instanceof RegExp;
-                if (v663) {
+                const v661 = obj instanceof RegExp;
+                if (v661) {
                     newObj = new RegExp(obj);
                 } else {
                     const proto = Object.getPrototypeOf(obj);
-                    const v664 = proto.isImmutable;
-                    const v665 = proto && v664;
-                    if (v665) {
+                    const v662 = proto.isImmutable;
+                    const v663 = proto && v662;
+                    if (v663) {
                         newObj = obj;
                     } else {
                         newObj = Object.create(proto);
@@ -52,1294 +53,1291 @@ const v677 = function (obj, seen) {
         newObj = [];
         cloneDeep = true;
     }
-    const v666 = seen.set(obj, newObj);
-    v666;
+    const v664 = seen.set(obj, newObj);
+    v664;
     if (cloneDeep) {
         const keys = Object.getOwnPropertyNames(obj);
         let i = 0;
-        const v667 = keys.length;
-        let v668 = i < v667;
-        while (v668) {
+        const v665 = keys.length;
+        let v666 = i < v665;
+        while (v666) {
             const key = keys[i];
             const descriptor = Object.getOwnPropertyDescriptor(obj, key);
-            const v670 = descriptor.get;
-            const v671 = descriptor.set;
-            const v672 = v670 || v671;
-            const v673 = descriptor && v672;
-            if (v673) {
-                const v674 = Object.defineProperty(newObj, key, descriptor);
-                v674;
+            const v668 = descriptor.get;
+            const v669 = descriptor.set;
+            const v670 = v668 || v669;
+            const v671 = descriptor && v670;
+            if (v671) {
+                const v672 = Object.defineProperty(newObj, key, descriptor);
+                v672;
             } else {
-                const v675 = obj[key];
-                const v676 = exports.clone(v675, seen);
-                newObj[key] = v676;
+                const v673 = obj[key];
+                const v674 = exports.clone(v673, seen);
+                newObj[key] = v674;
             }
-            const v669 = ++i;
-            v668 = i < v667;
+            const v667 = ++i;
+            v666 = i < v665;
         }
     }
     return newObj;
 };
-exports.clone = v677;
-const v730 = function (target, source, isNullOverride, isMergeArrays) {
-    const v678 = typeof target;
-    const v679 = v678 === 'object';
-    const v680 = target && v679;
-    const v681 = exports.assert(v680, 'Invalid target value: must be an object');
-    v681;
-    const v682 = source === null;
-    const v683 = source === undefined;
-    const v684 = v682 || v683;
-    const v685 = typeof source;
-    const v686 = v685 === 'object';
-    const v687 = v684 || v686;
-    const v688 = exports.assert(v687, 'Invalid source value: must be null, undefined, or an object');
-    v688;
-    const v689 = !source;
-    if (v689) {
+exports.clone = v675;
+const v725 = function (target, source, isNullOverride, isMergeArrays) {
+    const v676 = typeof target;
+    const v677 = v676 === 'object';
+    const v678 = target && v677;
+    const v679 = exports.assert(v678, 'Invalid target value: must be an object');
+    v679;
+    const v680 = source === null;
+    const v681 = source === undefined;
+    const v682 = v680 || v681;
+    const v683 = typeof source;
+    const v684 = v683 === 'object';
+    const v685 = v682 || v684;
+    const v686 = exports.assert(v685, 'Invalid source value: must be null, undefined, or an object');
+    v686;
+    const v687 = !source;
+    if (v687) {
         return target;
     }
-    const v690 = Array.isArray(source);
-    if (v690) {
-        const v691 = Array.isArray(target);
-        const v692 = exports.assert(v691, 'Cannot merge array onto an object');
-        v692;
-        const v693 = isMergeArrays === false;
-        if (v693) {
+    const v688 = Array.isArray(source);
+    if (v688) {
+        const v689 = Array.isArray(target);
+        const v690 = exports.assert(v689, 'Cannot merge array onto an object');
+        v690;
+        const v691 = isMergeArrays === false;
+        if (v691) {
             target.length = 0;
         }
         let i = 0;
-        const v694 = source.length;
-        let v695 = i < v694;
-        while (v695) {
-            const v697 = source[i];
-            const v698 = exports.clone(v697);
-            const v699 = target.push(v698);
-            v699;
-            const v696 = ++i;
-            v695 = i < v694;
+        const v692 = source.length;
+        let v693 = i < v692;
+        while (v693) {
+            const v695 = source[i];
+            const v696 = exports.clone(v695);
+            const v697 = target.push(v696);
+            v697;
+            const v694 = ++i;
+            v693 = i < v692;
         }
         return target;
     }
     const keys = Object.keys(source);
     let i = 0;
-    const v700 = keys.length;
-    let v701 = i < v700;
-    while (v701) {
+    const v698 = keys.length;
+    let v699 = i < v698;
+    while (v699) {
         const key = keys[i];
         const value = source[key];
-        const v703 = typeof value;
-        const v704 = v703 === 'object';
-        const v705 = value && v704;
-        if (v705) {
+        const v701 = typeof value;
+        const v702 = v701 === 'object';
+        const v703 = value && v702;
+        if (v703) {
+            const v704 = target[key];
+            const v705 = !v704;
             const v706 = target[key];
-            const v707 = !v706;
-            const v708 = target[key];
-            const v709 = typeof v708;
-            const v710 = v709 !== 'object';
-            const v711 = v707 || v710;
-            const v712 = target[key];
-            const v713 = Array.isArray(v712);
-            const v714 = Array.isArray(value);
-            const v715 = v713 !== v714;
-            const v716 = v711 || v715;
-            const v717 = value instanceof Date;
+            const v707 = typeof v706;
+            const v708 = v707 !== 'object';
+            const v709 = v705 || v708;
+            const v710 = target[key];
+            const v711 = Array.isArray(v710);
+            const v712 = Array.isArray(value);
+            const v713 = v711 !== v712;
+            const v714 = v709 || v713;
+            const v715 = value instanceof Date;
+            const v716 = v714 || v715;
+            const v717 = value instanceof RegExp;
             const v718 = v716 || v717;
-            const v719 = Buffer.isBuffer(value);
-            const v720 = v718 || v719;
-            const v721 = value instanceof RegExp;
-            const v722 = v720 || v721;
-            if (v722) {
-                const v723 = exports.clone(value);
-                target[key] = v723;
-            } else {
-                const v724 = target[key];
-                const v725 = exports.merge(v724, value, isNullOverride, isMergeArrays);
-                v725;
-            }
-        } else {
-            const v726 = value !== null;
-            const v727 = value !== undefined;
-            const v728 = v726 && v727;
-            if (v728) {
+            if (v718) {
                 target[key] = value;
             } else {
-                const v729 = isNullOverride !== false;
-                if (v729) {
+                const v719 = target[key];
+                const v720 = exports.merge(v719, value, isNullOverride, isMergeArrays);
+                v720;
+            }
+        } else {
+            const v721 = value !== null;
+            const v722 = value !== undefined;
+            const v723 = v721 && v722;
+            if (v723) {
+                target[key] = value;
+            } else {
+                const v724 = isNullOverride !== false;
+                if (v724) {
                     target[key] = value;
                 }
             }
         }
-        const v702 = ++i;
-        v701 = i < v700;
+        const v700 = ++i;
+        v699 = i < v698;
     }
     return target;
 };
-exports.merge = v730;
-const v746 = function (defaults, options, isNullOverride) {
-    const v731 = typeof defaults;
-    const v732 = v731 === 'object';
-    const v733 = defaults && v732;
-    const v734 = exports.assert(v733, 'Invalid defaults value: must be an object');
-    v734;
-    const v735 = !options;
-    const v736 = options === true;
-    const v737 = v735 || v736;
-    const v738 = typeof options;
-    const v739 = v738 === 'object';
-    const v740 = v737 || v739;
-    const v741 = exports.assert(v740, 'Invalid options value: must be true, falsy or an object');
-    v741;
-    const v742 = !options;
-    if (v742) {
+exports.merge = v725;
+const v741 = function (defaults, options, isNullOverride) {
+    const v726 = typeof defaults;
+    const v727 = v726 === 'object';
+    const v728 = defaults && v727;
+    const v729 = exports.assert(v728, 'Invalid defaults value: must be an object');
+    v729;
+    const v730 = !options;
+    const v731 = options === true;
+    const v732 = v730 || v731;
+    const v733 = typeof options;
+    const v734 = v733 === 'object';
+    const v735 = v732 || v734;
+    const v736 = exports.assert(v735, 'Invalid options value: must be true, falsy or an object');
+    v736;
+    const v737 = !options;
+    if (v737) {
         return null;
     }
     const copy = exports.clone(defaults);
-    const v743 = options === true;
-    if (v743) {
+    const v738 = options === true;
+    if (v738) {
         return copy;
     }
-    const v744 = isNullOverride === true;
-    const v745 = exports.merge(copy, options, v744, false);
-    return v745;
+    const v739 = isNullOverride === true;
+    const v740 = exports.merge(copy, options, v739, false);
+    return v740;
 };
-exports.applyToDefaults = v746;
-const v752 = function (source, keys) {
-    const v747 = !source;
-    const v748 = typeof source;
-    const v749 = v748 !== 'object';
-    const v750 = v747 || v749;
-    if (v750) {
+exports.applyToDefaults = v741;
+const v747 = function (source, keys) {
+    const v742 = !source;
+    const v743 = typeof source;
+    const v744 = v743 !== 'object';
+    const v745 = v742 || v744;
+    if (v745) {
         return source;
     }
     const storage = internals.store(source, keys);
     const copy = exports.clone(source);
-    const v751 = internals.restore(copy, source, storage);
-    v751;
+    const v746 = internals.restore(copy, source, storage);
+    v746;
     return copy;
 };
-exports.cloneWithShallow = v752;
-const v758 = function (source, keys) {
+exports.cloneWithShallow = v747;
+const v753 = function (source, keys) {
     const storage = {};
     let i = 0;
-    const v753 = keys.length;
-    let v754 = i < v753;
-    while (v754) {
+    const v748 = keys.length;
+    let v749 = i < v748;
+    while (v749) {
         const key = keys[i];
         const value = exports.reach(source, key);
-        const v756 = value !== undefined;
-        if (v756) {
+        const v751 = value !== undefined;
+        if (v751) {
             storage[key] = value;
-            const v757 = internals.reachSet(source, key, undefined);
-            v757;
+            const v752 = internals.reachSet(source, key, undefined);
+            v752;
         }
-        const v755 = ++i;
-        v754 = i < v753;
+        const v750 = ++i;
+        v749 = i < v748;
     }
     return storage;
 };
-internals.store = v758;
-const v766 = function (copy, source, storage) {
+internals.store = v753;
+const v761 = function (copy, source, storage) {
     const keys = Object.keys(storage);
     let i = 0;
-    const v759 = keys.length;
-    let v760 = i < v759;
-    while (v760) {
+    const v754 = keys.length;
+    let v755 = i < v754;
+    while (v755) {
         const key = keys[i];
-        const v762 = storage[key];
-        const v763 = internals.reachSet(copy, key, v762);
-        v763;
-        const v764 = storage[key];
-        const v765 = internals.reachSet(source, key, v764);
-        v765;
-        const v761 = ++i;
-        v760 = i < v759;
+        const v757 = storage[key];
+        const v758 = internals.reachSet(copy, key, v757);
+        v758;
+        const v759 = storage[key];
+        const v760 = internals.reachSet(source, key, v759);
+        v760;
+        const v756 = ++i;
+        v755 = i < v754;
     }
 };
-internals.restore = v766;
-const v773 = function (obj, key, value) {
+internals.restore = v761;
+const v768 = function (obj, key, value) {
     const path = key.split('.');
     let ref = obj;
     let i = 0;
-    const v767 = path.length;
-    let v768 = i < v767;
-    while (v768) {
+    const v762 = path.length;
+    let v763 = i < v762;
+    while (v763) {
         const segment = path[i];
-        const v770 = i + 1;
-        const v771 = path.length;
-        const v772 = v770 === v771;
-        if (v772) {
+        const v765 = i + 1;
+        const v766 = path.length;
+        const v767 = v765 === v766;
+        if (v767) {
             ref[segment] = value;
         }
         ref = ref[segment];
-        const v769 = ++i;
-        v768 = i < v767;
+        const v764 = ++i;
+        v763 = i < v762;
     }
 };
-internals.reachSet = v773;
-const v792 = function (defaults, options, keys) {
-    const v774 = typeof defaults;
-    const v775 = v774 === 'object';
-    const v776 = defaults && v775;
-    const v777 = exports.assert(v776, 'Invalid defaults value: must be an object');
-    v777;
-    const v778 = !options;
-    const v779 = options === true;
-    const v780 = v778 || v779;
-    const v781 = typeof options;
-    const v782 = v781 === 'object';
-    const v783 = v780 || v782;
-    const v784 = exports.assert(v783, 'Invalid options value: must be true, falsy or an object');
-    v784;
-    const v785 = Array.isArray(keys);
-    const v786 = keys && v785;
-    const v787 = exports.assert(v786, 'Invalid keys');
-    v787;
-    const v788 = !options;
-    if (v788) {
+internals.reachSet = v768;
+const v787 = function (defaults, options, keys) {
+    const v769 = typeof defaults;
+    const v770 = v769 === 'object';
+    const v771 = defaults && v770;
+    const v772 = exports.assert(v771, 'Invalid defaults value: must be an object');
+    v772;
+    const v773 = !options;
+    const v774 = options === true;
+    const v775 = v773 || v774;
+    const v776 = typeof options;
+    const v777 = v776 === 'object';
+    const v778 = v775 || v777;
+    const v779 = exports.assert(v778, 'Invalid options value: must be true, falsy or an object');
+    v779;
+    const v780 = Array.isArray(keys);
+    const v781 = keys && v780;
+    const v782 = exports.assert(v781, 'Invalid keys');
+    v782;
+    const v783 = !options;
+    if (v783) {
         return null;
     }
     const copy = exports.cloneWithShallow(defaults, keys);
-    const v789 = options === true;
-    if (v789) {
+    const v784 = options === true;
+    if (v784) {
         return copy;
     }
     const storage = internals.store(options, keys);
-    const v790 = exports.merge(copy, options, false, false);
-    v790;
-    const v791 = internals.restore(copy, options, storage);
-    v791;
+    const v785 = exports.merge(copy, options, false, false);
+    v785;
+    const v786 = internals.restore(copy, options, storage);
+    v786;
     return copy;
 };
-exports.applyToDefaultsWithShallow = v792;
-const v885 = function (obj, ref, options, seen) {
-    const v793 = { prototype: true };
-    options = options || v793;
-    const v794 = typeof obj;
-    const type = v794;
-    const v795 = typeof ref;
-    const v796 = type !== v795;
-    if (v796) {
+exports.applyToDefaultsWithShallow = v787;
+const v880 = function (obj, ref, options, seen) {
+    const v788 = { prototype: true };
+    options = options || v788;
+    const v789 = typeof obj;
+    const type = v789;
+    const v790 = typeof ref;
+    const v791 = type !== v790;
+    if (v791) {
         return false;
     }
-    const v797 = type !== 'object';
-    const v798 = obj === null;
-    const v799 = v797 || v798;
-    const v800 = ref === null;
-    const v801 = v799 || v800;
-    if (v801) {
-        const v802 = obj === ref;
-        if (v802) {
-            const v803 = obj !== 0;
-            const v804 = 1 / obj;
-            const v805 = 1 / ref;
-            const v806 = v804 === v805;
-            const v807 = v803 || v806;
-            return v807;
+    const v792 = type !== 'object';
+    const v793 = obj === null;
+    const v794 = v792 || v793;
+    const v795 = ref === null;
+    const v796 = v794 || v795;
+    if (v796) {
+        const v797 = obj === ref;
+        if (v797) {
+            const v798 = obj !== 0;
+            const v799 = 1 / obj;
+            const v800 = 1 / ref;
+            const v801 = v799 === v800;
+            const v802 = v798 || v801;
+            return v802;
         }
-        const v808 = obj !== obj;
-        const v809 = ref !== ref;
-        const v810 = v808 && v809;
-        return v810;
+        const v803 = obj !== obj;
+        const v804 = ref !== ref;
+        const v805 = v803 && v804;
+        return v805;
     }
-    const v811 = [];
-    seen = seen || v811;
-    const v812 = seen.indexOf(obj);
-    const v813 = -1;
-    const v814 = v812 !== v813;
-    if (v814) {
+    const v806 = [];
+    seen = seen || v806;
+    const v807 = seen.indexOf(obj);
+    const v808 = -1;
+    const v809 = v807 !== v808;
+    if (v809) {
         return true;
     }
-    const v815 = seen.push(obj);
-    v815;
-    const v816 = Array.isArray(obj);
-    if (v816) {
-        const v817 = Array.isArray(ref);
-        const v818 = !v817;
-        if (v818) {
+    const v810 = seen.push(obj);
+    v810;
+    const v811 = Array.isArray(obj);
+    if (v811) {
+        const v812 = Array.isArray(ref);
+        const v813 = !v812;
+        if (v813) {
             return false;
         }
-        const v819 = options.part;
-        const v820 = !v819;
-        const v821 = obj.length;
-        const v822 = ref.length;
-        const v823 = v821 !== v822;
-        const v824 = v820 && v823;
-        if (v824) {
+        const v814 = options.part;
+        const v815 = !v814;
+        const v816 = obj.length;
+        const v817 = ref.length;
+        const v818 = v816 !== v817;
+        const v819 = v815 && v818;
+        if (v819) {
             return false;
         }
         let i = 0;
-        const v825 = obj.length;
-        let v826 = i < v825;
-        while (v826) {
-            const v828 = options.part;
-            if (v828) {
+        const v820 = obj.length;
+        let v821 = i < v820;
+        while (v821) {
+            const v823 = options.part;
+            if (v823) {
                 let found = false;
                 let j = 0;
-                const v829 = ref.length;
-                let v830 = j < v829;
-                while (v830) {
-                    const v832 = obj[i];
-                    const v833 = ref[j];
-                    const v834 = exports.deepEqual(v832, v833, options);
-                    if (v834) {
+                const v824 = ref.length;
+                let v825 = j < v824;
+                while (v825) {
+                    const v827 = obj[i];
+                    const v828 = ref[j];
+                    const v829 = exports.deepEqual(v827, v828, options);
+                    if (v829) {
                         found = true;
                         break;
                     }
-                    const v831 = ++j;
-                    v830 = j < v829;
+                    const v826 = ++j;
+                    v825 = j < v824;
                 }
                 return found;
             }
-            const v835 = obj[i];
-            const v836 = ref[i];
-            const v837 = exports.deepEqual(v835, v836, options);
-            const v838 = !v837;
-            if (v838) {
+            const v830 = obj[i];
+            const v831 = ref[i];
+            const v832 = exports.deepEqual(v830, v831, options);
+            const v833 = !v832;
+            if (v833) {
                 return false;
             }
-            const v827 = ++i;
-            v826 = i < v825;
+            const v822 = ++i;
+            v821 = i < v820;
         }
         return true;
     }
-    const v839 = Buffer.isBuffer(obj);
-    if (v839) {
-        const v840 = Buffer.isBuffer(ref);
-        const v841 = !v840;
-        if (v841) {
+    const v834 = Buffer.isBuffer(obj);
+    if (v834) {
+        const v835 = Buffer.isBuffer(ref);
+        const v836 = !v835;
+        if (v836) {
             return false;
         }
-        const v842 = obj.length;
-        const v843 = ref.length;
-        const v844 = v842 !== v843;
-        if (v844) {
+        const v837 = obj.length;
+        const v838 = ref.length;
+        const v839 = v837 !== v838;
+        if (v839) {
             return false;
         }
         let i = 0;
-        const v845 = obj.length;
-        let v846 = i < v845;
-        while (v846) {
-            const v848 = obj[i];
-            const v849 = ref[i];
-            const v850 = v848 !== v849;
-            if (v850) {
+        const v840 = obj.length;
+        let v841 = i < v840;
+        while (v841) {
+            const v843 = obj[i];
+            const v844 = ref[i];
+            const v845 = v843 !== v844;
+            if (v845) {
                 return false;
             }
-            const v847 = ++i;
-            v846 = i < v845;
+            const v842 = ++i;
+            v841 = i < v840;
         }
         return true;
     }
-    const v851 = obj instanceof Date;
-    if (v851) {
-        const v852 = ref instanceof Date;
-        const v853 = obj.getTime();
-        const v854 = ref.getTime();
-        const v855 = v853 === v854;
-        const v856 = v852 && v855;
-        return v856;
+    const v846 = obj instanceof Date;
+    if (v846) {
+        const v847 = ref instanceof Date;
+        const v848 = obj.getTime();
+        const v849 = ref.getTime();
+        const v850 = v848 === v849;
+        const v851 = v847 && v850;
+        return v851;
     }
-    const v857 = obj instanceof RegExp;
-    if (v857) {
-        const v858 = ref instanceof RegExp;
-        const v859 = obj.toString();
-        const v860 = ref.toString();
-        const v861 = v859 === v860;
-        const v862 = v858 && v861;
-        return v862;
+    const v852 = obj instanceof RegExp;
+    if (v852) {
+        const v853 = ref instanceof RegExp;
+        const v854 = obj.toString();
+        const v855 = ref.toString();
+        const v856 = v854 === v855;
+        const v857 = v853 && v856;
+        return v857;
     }
-    const v863 = options.prototype;
-    if (v863) {
-        const v864 = Object.getPrototypeOf(obj);
-        const v865 = Object.getPrototypeOf(ref);
-        const v866 = v864 !== v865;
-        if (v866) {
+    const v858 = options.prototype;
+    if (v858) {
+        const v859 = Object.getPrototypeOf(obj);
+        const v860 = Object.getPrototypeOf(ref);
+        const v861 = v859 !== v860;
+        if (v861) {
             return false;
         }
     }
     const keys = Object.getOwnPropertyNames(obj);
-    const v867 = options.part;
-    const v868 = !v867;
-    const v869 = keys.length;
-    const v870 = Object.getOwnPropertyNames(ref);
-    const v871 = v870.length;
-    const v872 = v869 !== v871;
-    const v873 = v868 && v872;
-    if (v873) {
+    const v862 = options.part;
+    const v863 = !v862;
+    const v864 = keys.length;
+    const v865 = Object.getOwnPropertyNames(ref);
+    const v866 = v865.length;
+    const v867 = v864 !== v866;
+    const v868 = v863 && v867;
+    if (v868) {
         return false;
     }
     let i = 0;
-    const v874 = keys.length;
-    let v875 = i < v874;
-    while (v875) {
+    const v869 = keys.length;
+    let v870 = i < v869;
+    while (v870) {
         const key = keys[i];
         const descriptor = Object.getOwnPropertyDescriptor(obj, key);
-        const v877 = descriptor.get;
-        if (v877) {
-            const v878 = Object.getOwnPropertyDescriptor(ref, key);
-            const v879 = exports.deepEqual(descriptor, v878, options, seen);
-            const v880 = !v879;
-            if (v880) {
+        const v872 = descriptor.get;
+        if (v872) {
+            const v873 = Object.getOwnPropertyDescriptor(ref, key);
+            const v874 = exports.deepEqual(descriptor, v873, options, seen);
+            const v875 = !v874;
+            if (v875) {
                 return false;
             }
         } else {
-            const v881 = obj[key];
-            const v882 = ref[key];
-            const v883 = exports.deepEqual(v881, v882, options, seen);
-            const v884 = !v883;
-            if (v884) {
+            const v876 = obj[key];
+            const v877 = ref[key];
+            const v878 = exports.deepEqual(v876, v877, options, seen);
+            const v879 = !v878;
+            if (v879) {
                 return false;
             }
         }
-        const v876 = ++i;
-        v875 = i < v874;
+        const v871 = ++i;
+        v870 = i < v869;
     }
     return true;
 };
-exports.deepEqual = v885;
-const v893 = (array, key) => {
+exports.deepEqual = v880;
+const v888 = (array, key) => {
     let result;
     if (key) {
         result = [];
         const index = new Set();
-        const v890 = item => {
+        const v885 = item => {
             const identifier = item[key];
-            const v886 = index.has(identifier);
-            const v887 = !v886;
-            if (v887) {
-                const v888 = index.add(identifier);
-                v888;
-                const v889 = result.push(item);
-                v889;
+            const v881 = index.has(identifier);
+            const v882 = !v881;
+            if (v882) {
+                const v883 = index.add(identifier);
+                v883;
+                const v884 = result.push(item);
+                v884;
             }
         };
-        const v891 = array.forEach(v890);
-        v891;
+        const v886 = array.forEach(v885);
+        v886;
     } else {
-        const v892 = new Set(array);
-        result = Array.from(v892);
+        const v887 = new Set(array);
+        result = Array.from(v887);
     }
     return result;
 };
-exports.unique = v893;
-const v903 = function (array, key) {
-    const v894 = !array;
-    if (v894) {
+exports.unique = v888;
+const v898 = function (array, key) {
+    const v889 = !array;
+    if (v889) {
         return null;
     }
     const obj = {};
     let i = 0;
-    const v895 = array.length;
-    let v896 = i < v895;
-    while (v896) {
+    const v890 = array.length;
+    let v891 = i < v890;
+    while (v891) {
         if (key) {
-            const v898 = array[i];
-            const v899 = v898[key];
-            if (v899) {
-                const v900 = array[i];
-                const v901 = v900[key];
-                obj[v901] = true;
+            const v893 = array[i];
+            const v894 = v893[key];
+            if (v894) {
+                const v895 = array[i];
+                const v896 = v895[key];
+                obj[v896] = true;
             }
         } else {
-            const v902 = array[i];
-            obj[v902] = true;
+            const v897 = array[i];
+            obj[v897] = true;
         }
-        const v897 = ++i;
-        v896 = i < v895;
+        const v892 = ++i;
+        v891 = i < v890;
     }
     return obj;
 };
-exports.mapToObject = v903;
-const v924 = function (array1, array2, justFirst) {
-    const v904 = !array1;
-    const v905 = !array2;
-    const v906 = v904 || v905;
-    if (v906) {
-        const v907 = [];
-        return v907;
+exports.mapToObject = v898;
+const v919 = function (array1, array2, justFirst) {
+    const v899 = !array1;
+    const v900 = !array2;
+    const v901 = v899 || v900;
+    if (v901) {
+        const v902 = [];
+        return v902;
     }
     const common = [];
     let hash;
-    const v908 = Array.isArray(array1);
-    const v909 = exports.mapToObject(array1);
-    if (v908) {
-        hash = v909;
+    const v903 = Array.isArray(array1);
+    const v904 = exports.mapToObject(array1);
+    if (v903) {
+        hash = v904;
     } else {
         hash = array1;
     }
     const found = {};
     let i = 0;
-    const v910 = array2.length;
-    let v911 = i < v910;
-    while (v911) {
-        const v913 = array2[i];
-        const v914 = hash[v913];
-        const v915 = array2[i];
-        const v916 = found[v915];
-        const v917 = !v916;
-        const v918 = v914 && v917;
-        if (v918) {
+    const v905 = array2.length;
+    let v906 = i < v905;
+    while (v906) {
+        const v908 = array2[i];
+        const v909 = hash[v908];
+        const v910 = array2[i];
+        const v911 = found[v910];
+        const v912 = !v911;
+        const v913 = v909 && v912;
+        if (v913) {
             if (justFirst) {
-                const v919 = array2[i];
-                return v919;
+                const v914 = array2[i];
+                return v914;
             }
-            const v920 = array2[i];
-            const v921 = common.push(v920);
-            v921;
-            const v922 = array2[i];
-            found[v922] = true;
+            const v915 = array2[i];
+            const v916 = common.push(v915);
+            v916;
+            const v917 = array2[i];
+            found[v917] = true;
         }
-        const v912 = ++i;
-        v911 = i < v910;
+        const v907 = ++i;
+        v906 = i < v905;
     }
-    let v923;
+    let v918;
     if (justFirst) {
-        v923 = null;
+        v918 = null;
     } else {
-        v923 = common;
+        v918 = common;
     }
-    return v923;
+    return v918;
 };
-exports.intersect = v924;
-const v1024 = function (ref, values, options) {
+exports.intersect = v919;
+const v1019 = function (ref, values, options) {
     let valuePairs = null;
-    const v925 = typeof ref;
-    const v926 = v925 === 'object';
-    const v927 = typeof values;
-    const v928 = v927 === 'object';
-    const v929 = v926 && v928;
-    const v930 = Array.isArray(ref);
-    const v931 = !v930;
-    const v932 = v929 && v931;
-    const v933 = Array.isArray(values);
-    const v934 = !v933;
-    const v935 = v932 && v934;
-    if (v935) {
+    const v920 = typeof ref;
+    const v921 = v920 === 'object';
+    const v922 = typeof values;
+    const v923 = v922 === 'object';
+    const v924 = v921 && v923;
+    const v925 = Array.isArray(ref);
+    const v926 = !v925;
+    const v927 = v924 && v926;
+    const v928 = Array.isArray(values);
+    const v929 = !v928;
+    const v930 = v927 && v929;
+    if (v930) {
         valuePairs = values;
         values = Object.keys(values);
     } else {
-        const v936 = [];
-        values = v936.concat(values);
+        const v931 = [];
+        values = v931.concat(values);
     }
-    const v937 = {};
-    options = options || v937;
-    const v938 = typeof ref;
-    const v939 = v938 === 'string';
-    const v940 = typeof ref;
-    const v941 = v940 === 'object';
-    const v942 = v939 || v941;
-    const v943 = exports.assert(v942, 'Reference must be string or an object');
-    v943;
-    const v944 = values.length;
-    const v945 = exports.assert(v944, 'Values array cannot be empty');
-    v945;
+    const v932 = {};
+    options = options || v932;
+    const v933 = typeof ref;
+    const v934 = v933 === 'string';
+    const v935 = typeof ref;
+    const v936 = v935 === 'object';
+    const v937 = v934 || v936;
+    const v938 = exports.assert(v937, 'Reference must be string or an object');
+    v938;
+    const v939 = values.length;
+    const v940 = exports.assert(v939, 'Values array cannot be empty');
+    v940;
     let compare;
     let compareFlags;
-    const v946 = options.deep;
-    if (v946) {
+    const v941 = options.deep;
+    if (v941) {
         compare = exports.deepEqual;
         const hasOnly = options.hasOwnProperty('only');
         const hasPart = options.hasOwnProperty('part');
+        const v942 = options.only;
+        const v943 = options.part;
+        const v944 = !v943;
+        let v945;
+        if (hasPart) {
+            v945 = v944;
+        } else {
+            v945 = false;
+        }
+        let v946;
+        if (hasOnly) {
+            v946 = v942;
+        } else {
+            v946 = v945;
+        }
         const v947 = options.only;
-        const v948 = options.part;
-        const v949 = !v948;
+        const v948 = !v947;
+        const v949 = options.part;
         let v950;
         if (hasPart) {
             v950 = v949;
         } else {
-            v950 = false;
+            v950 = true;
         }
         let v951;
         if (hasOnly) {
-            v951 = v947;
+            v951 = v948;
         } else {
             v951 = v950;
         }
-        const v952 = options.only;
-        const v953 = !v952;
-        const v954 = options.part;
-        let v955;
-        if (hasPart) {
-            v955 = v954;
-        } else {
-            v955 = true;
-        }
-        let v956;
-        if (hasOnly) {
-            v956 = v953;
-        } else {
-            v956 = v955;
-        }
-        compareFlags.prototype = v951;
-        compareFlags.part = v956;
+        compareFlags.prototype = v946;
+        compareFlags.part = v951;
         compareFlags = {};
         compareFlags = {};
     } else {
-        const v958 = (a, b) => {
-            const v957 = a === b;
-            return v957;
+        const v953 = (a, b) => {
+            const v952 = a === b;
+            return v952;
         };
-        compare = v958;
+        compare = v953;
     }
     let misses = false;
-    const v959 = values.length;
-    const matches = new Array(v959);
+    const v954 = values.length;
+    const matches = new Array(v954);
     let i = 0;
-    const v960 = matches.length;
-    let v961 = i < v960;
-    while (v961) {
+    const v955 = matches.length;
+    let v956 = i < v955;
+    while (v956) {
         matches[i] = 0;
-        const v962 = ++i;
-        v961 = i < v960;
+        const v957 = ++i;
+        v956 = i < v955;
     }
-    const v963 = typeof ref;
-    const v964 = v963 === 'string';
-    if (v964) {
+    const v958 = typeof ref;
+    const v959 = v958 === 'string';
+    if (v959) {
         let pattern = '(';
         let i = 0;
-        const v965 = values.length;
-        let v966 = i < v965;
-        while (v966) {
+        const v960 = values.length;
+        let v961 = i < v960;
+        while (v961) {
             const value = values[i];
-            const v968 = typeof value;
-            const v969 = v968 === 'string';
-            const v970 = exports.assert(v969, 'Cannot compare string reference to non-string value');
-            v970;
-            let v971;
+            const v963 = typeof value;
+            const v964 = v963 === 'string';
+            const v965 = exports.assert(v964, 'Cannot compare string reference to non-string value');
+            v965;
+            let v966;
             if (i) {
-                v971 = '|';
+                v966 = '|';
             } else {
-                v971 = '';
+                v966 = '';
             }
-            const v972 = exports.escapeRegex(value);
-            pattern += v971 + v972;
-            const v967 = ++i;
-            v966 = i < v965;
+            const v967 = exports.escapeRegex(value);
+            pattern += v966 + v967;
+            const v962 = ++i;
+            v961 = i < v960;
         }
-        const v973 = pattern + ')';
-        const regex = new RegExp(v973, 'g');
-        const v976 = ($0, $1) => {
+        const v968 = pattern + ')';
+        const regex = new RegExp(v968, 'g');
+        const v971 = ($0, $1) => {
             const index = values.indexOf($1);
-            const v974 = matches[index];
-            const v975 = ++v974;
-            v975;
+            const v969 = matches[index];
+            const v970 = ++v969;
+            v970;
             return '';
         };
-        const leftovers = ref.replace(regex, v976);
-        const v977 = !leftovers;
-        const v978 = !v977;
-        misses = v978;
+        const leftovers = ref.replace(regex, v971);
+        const v972 = !leftovers;
+        const v973 = !v972;
+        misses = v973;
     } else {
-        const v979 = Array.isArray(ref);
-        if (v979) {
+        const v974 = Array.isArray(ref);
+        if (v974) {
             let i = 0;
-            const v980 = ref.length;
-            let v981 = i < v980;
-            while (v981) {
+            const v975 = ref.length;
+            let v976 = i < v975;
+            while (v976) {
                 let matched = false;
                 let j = 0;
-                const v983 = values.length;
-                const v984 = j < v983;
-                const v985 = matched === false;
-                let v986 = v984 && v985;
-                while (v986) {
-                    const v988 = values[j];
-                    const v989 = ref[i];
-                    const v990 = compare(v988, v989, compareFlags);
-                    matched = v990 && j;
-                    const v987 = ++j;
-                    v986 = v984 && v985;
+                const v978 = values.length;
+                const v979 = j < v978;
+                const v980 = matched === false;
+                let v981 = v979 && v980;
+                while (v981) {
+                    const v983 = values[j];
+                    const v984 = ref[i];
+                    const v985 = compare(v983, v984, compareFlags);
+                    matched = v985 && j;
+                    const v982 = ++j;
+                    v981 = v979 && v980;
                 }
-                const v991 = matched !== false;
-                if (v991) {
-                    const v992 = matches[matched];
-                    const v993 = ++v992;
-                    v993;
+                const v986 = matched !== false;
+                if (v986) {
+                    const v987 = matches[matched];
+                    const v988 = ++v987;
+                    v988;
                 } else {
                     misses = true;
                 }
-                const v982 = ++i;
-                v981 = i < v980;
+                const v977 = ++i;
+                v976 = i < v975;
             }
         } else {
             const keys = Object.getOwnPropertyNames(ref);
             let i = 0;
-            const v994 = keys.length;
-            let v995 = i < v994;
-            while (v995) {
+            const v989 = keys.length;
+            let v990 = i < v989;
+            while (v990) {
                 const key = keys[i];
                 const pos = values.indexOf(key);
-                const v997 = -1;
-                const v998 = pos !== v997;
-                if (v998) {
-                    const v999 = valuePairs[key];
-                    const v1000 = ref[key];
-                    const v1001 = compare(v999, v1000, compareFlags);
-                    const v1002 = !v1001;
-                    const v1003 = valuePairs && v1002;
-                    if (v1003) {
+                const v992 = -1;
+                const v993 = pos !== v992;
+                if (v993) {
+                    const v994 = valuePairs[key];
+                    const v995 = ref[key];
+                    const v996 = compare(v994, v995, compareFlags);
+                    const v997 = !v996;
+                    const v998 = valuePairs && v997;
+                    if (v998) {
                         return false;
                     }
-                    const v1004 = matches[pos];
-                    const v1005 = ++v1004;
-                    v1005;
+                    const v999 = matches[pos];
+                    const v1000 = ++v999;
+                    v1000;
                 } else {
                     misses = true;
                 }
-                const v996 = ++i;
-                v995 = i < v994;
+                const v991 = ++i;
+                v990 = i < v989;
             }
         }
     }
     let result = false;
     let i = 0;
-    const v1006 = matches.length;
-    let v1007 = i < v1006;
-    while (v1007) {
-        const v1009 = matches[i];
-        const v1010 = !v1009;
-        const v1011 = !v1010;
-        result = result || v1011;
-        const v1012 = options.once;
+    const v1001 = matches.length;
+    let v1002 = i < v1001;
+    while (v1002) {
+        const v1004 = matches[i];
+        const v1005 = !v1004;
+        const v1006 = !v1005;
+        result = result || v1006;
+        const v1007 = options.once;
+        const v1008 = matches[i];
+        const v1009 = v1008 > 1;
+        const v1010 = v1007 && v1009;
+        const v1011 = options.part;
+        const v1012 = !v1011;
         const v1013 = matches[i];
-        const v1014 = v1013 > 1;
+        const v1014 = !v1013;
         const v1015 = v1012 && v1014;
-        const v1016 = options.part;
-        const v1017 = !v1016;
-        const v1018 = matches[i];
-        const v1019 = !v1018;
-        const v1020 = v1017 && v1019;
-        const v1021 = v1015 || v1020;
-        if (v1021) {
+        const v1016 = v1010 || v1015;
+        if (v1016) {
             return false;
         }
-        const v1008 = ++i;
-        v1007 = i < v1006;
+        const v1003 = ++i;
+        v1002 = i < v1001;
     }
-    const v1022 = options.only;
-    const v1023 = v1022 && misses;
-    if (v1023) {
+    const v1017 = options.only;
+    const v1018 = v1017 && misses;
+    if (v1018) {
         return false;
     }
     return result;
 };
-exports.contain = v1024;
-const v1035 = function (array, target) {
-    const v1025 = [];
-    const result = target || v1025;
+exports.contain = v1019;
+const v1030 = function (array, target) {
+    const v1020 = [];
+    const result = target || v1020;
     let i = 0;
-    const v1026 = array.length;
-    let v1027 = i < v1026;
-    while (v1027) {
-        const v1029 = array[i];
-        const v1030 = Array.isArray(v1029);
-        if (v1030) {
-            const v1031 = array[i];
-            const v1032 = exports.flatten(v1031, result);
-            v1032;
+    const v1021 = array.length;
+    let v1022 = i < v1021;
+    while (v1022) {
+        const v1024 = array[i];
+        const v1025 = Array.isArray(v1024);
+        if (v1025) {
+            const v1026 = array[i];
+            const v1027 = exports.flatten(v1026, result);
+            v1027;
         } else {
-            const v1033 = array[i];
-            const v1034 = result.push(v1033);
-            v1034;
+            const v1028 = array[i];
+            const v1029 = result.push(v1028);
+            v1029;
         }
-        const v1028 = ++i;
-        v1027 = i < v1026;
+        const v1023 = ++i;
+        v1022 = i < v1021;
     }
     return result;
 };
-exports.flatten = v1035;
-const v1088 = function (obj, chain, options) {
-    const v1036 = chain === false;
-    const v1037 = chain === null;
-    const v1038 = v1036 || v1037;
-    const v1039 = typeof chain;
-    const v1040 = v1039 === 'undefined';
-    const v1041 = v1038 || v1040;
-    if (v1041) {
+exports.flatten = v1030;
+const v1083 = function (obj, chain, options) {
+    const v1031 = chain === false;
+    const v1032 = chain === null;
+    const v1033 = v1031 || v1032;
+    const v1034 = typeof chain;
+    const v1035 = v1034 === 'undefined';
+    const v1036 = v1033 || v1035;
+    if (v1036) {
         return obj;
     }
-    const v1042 = {};
-    options = options || v1042;
-    const v1043 = typeof options;
-    const v1044 = v1043 === 'string';
-    if (v1044) {
+    const v1037 = {};
+    options = options || v1037;
+    const v1038 = typeof options;
+    const v1039 = v1038 === 'string';
+    if (v1039) {
         options.separator = options;
         options = {};
         options = {};
     }
-    const v1045 = options.separator;
-    const v1046 = v1045 || '.';
-    const path = chain.split(v1046);
+    const v1040 = options.separator;
+    const v1041 = v1040 || '.';
+    const path = chain.split(v1041);
     let ref = obj;
     let i = 0;
-    const v1047 = path.length;
-    let v1048 = i < v1047;
-    while (v1048) {
+    const v1042 = path.length;
+    let v1043 = i < v1042;
+    while (v1043) {
         let key = path[i];
-        const v1050 = key[0];
-        const v1051 = v1050 === '-';
-        const v1052 = Array.isArray(ref);
-        const v1053 = v1051 && v1052;
-        if (v1053) {
-            const v1054 = key.length;
-            key = key.slice(1, v1054);
-            const v1055 = ref.length;
-            key = v1055 - key;
+        const v1045 = key[0];
+        const v1046 = v1045 === '-';
+        const v1047 = Array.isArray(ref);
+        const v1048 = v1046 && v1047;
+        if (v1048) {
+            const v1049 = key.length;
+            key = key.slice(1, v1049);
+            const v1050 = ref.length;
+            key = v1050 - key;
         }
-        const v1056 = !ref;
-        const v1057 = typeof ref;
-        const v1058 = v1057 === 'object';
-        const v1059 = typeof ref;
-        const v1060 = v1059 === 'function';
-        const v1061 = v1058 || v1060;
-        const v1062 = key in ref;
-        const v1063 = v1061 && v1062;
-        const v1064 = !v1063;
-        const v1065 = v1056 || v1064;
-        const v1066 = typeof ref;
-        const v1067 = v1066 !== 'object';
-        const v1068 = options.functions;
-        const v1069 = v1068 === false;
-        const v1070 = v1067 && v1069;
-        const v1071 = v1065 || v1070;
-        if (v1071) {
-            const v1072 = options.strict;
-            const v1073 = !v1072;
-            const v1074 = i + 1;
-            const v1075 = path.length;
-            const v1076 = v1074 === v1075;
-            const v1077 = v1073 || v1076;
-            const v1078 = exports.assert(v1077, 'Missing segment', key, 'in reach path ', chain);
-            v1078;
+        const v1051 = !ref;
+        const v1052 = typeof ref;
+        const v1053 = v1052 === 'object';
+        const v1054 = typeof ref;
+        const v1055 = v1054 === 'function';
+        const v1056 = v1053 || v1055;
+        const v1057 = key in ref;
+        const v1058 = v1056 && v1057;
+        const v1059 = !v1058;
+        const v1060 = v1051 || v1059;
+        const v1061 = typeof ref;
+        const v1062 = v1061 !== 'object';
+        const v1063 = options.functions;
+        const v1064 = v1063 === false;
+        const v1065 = v1062 && v1064;
+        const v1066 = v1060 || v1065;
+        if (v1066) {
+            const v1067 = options.strict;
+            const v1068 = !v1067;
+            const v1069 = i + 1;
+            const v1070 = path.length;
+            const v1071 = v1069 === v1070;
+            const v1072 = v1068 || v1071;
+            const v1073 = exports.assert(v1072, 'Missing segment', key, 'in reach path ', chain);
+            v1073;
+            const v1074 = typeof ref;
+            const v1075 = v1074 === 'object';
+            const v1076 = options.functions;
+            const v1077 = v1076 === true;
+            const v1078 = v1075 || v1077;
             const v1079 = typeof ref;
-            const v1080 = v1079 === 'object';
-            const v1081 = options.functions;
-            const v1082 = v1081 === true;
-            const v1083 = v1080 || v1082;
-            const v1084 = typeof ref;
-            const v1085 = v1084 !== 'function';
-            const v1086 = v1083 || v1085;
-            const v1087 = exports.assert(v1086, 'Invalid segment', key, 'in reach path ', chain);
-            v1087;
+            const v1080 = v1079 !== 'function';
+            const v1081 = v1078 || v1080;
+            const v1082 = exports.assert(v1081, 'Invalid segment', key, 'in reach path ', chain);
+            v1082;
             ref = options.default;
             break;
         }
         ref = ref[key];
-        const v1049 = ++i;
-        v1048 = i < v1047;
+        const v1044 = ++i;
+        v1043 = i < v1042;
     }
     return ref;
 };
-exports.reach = v1088;
-const v1095 = function (obj, template, options) {
-    const v1093 = ($0, chain) => {
+exports.reach = v1083;
+const v1090 = function (obj, template, options) {
+    const v1088 = ($0, chain) => {
         const value = exports.reach(obj, chain, options);
-        const v1089 = value === undefined;
-        const v1090 = value === null;
-        const v1091 = v1089 || v1090;
-        let v1092;
-        if (v1091) {
-            v1092 = '';
+        const v1084 = value === undefined;
+        const v1085 = value === null;
+        const v1086 = v1084 || v1085;
+        let v1087;
+        if (v1086) {
+            v1087 = '';
         } else {
-            v1092 = value;
+            v1087 = value;
         }
-        return v1092;
+        return v1087;
     };
-    const v1094 = template.replace(/{([^}]+)}/g, v1093);
-    return v1094;
+    const v1089 = template.replace(/{([^}]+)}/g, v1088);
+    return v1089;
 };
-exports.reachTemplate = v1095;
-const v1106 = function (stack) {
+exports.reachTemplate = v1090;
+const v1101 = function (stack) {
     const trace = [];
     let i = 0;
-    const v1096 = stack.length;
-    let v1097 = i < v1096;
-    while (v1097) {
+    const v1091 = stack.length;
+    let v1092 = i < v1091;
+    while (v1092) {
         const item = stack[i];
-        const v1099 = item.getFileName();
-        const v1100 = item.getLineNumber();
-        const v1101 = item.getColumnNumber();
-        const v1102 = item.getFunctionName();
-        const v1103 = item.isConstructor();
-        const v1104 = [
-            v1099,
-            v1100,
-            v1101,
-            v1102,
-            v1103
+        const v1094 = item.getFileName();
+        const v1095 = item.getLineNumber();
+        const v1096 = item.getColumnNumber();
+        const v1097 = item.getFunctionName();
+        const v1098 = item.isConstructor();
+        const v1099 = [
+            v1094,
+            v1095,
+            v1096,
+            v1097,
+            v1098
         ];
-        const v1105 = trace.push(v1104);
-        v1105;
-        const v1098 = ++i;
-        v1097 = i < v1096;
+        const v1100 = trace.push(v1099);
+        v1100;
+        const v1093 = ++i;
+        v1092 = i < v1091;
     }
     return trace;
 };
-exports.formatStack = v1106;
-const v1125 = function (trace) {
+exports.formatStack = v1101;
+const v1120 = function (trace) {
     const display = [];
     let i = 0;
-    const v1107 = trace.length;
-    let v1108 = i < v1107;
-    while (v1108) {
+    const v1102 = trace.length;
+    let v1103 = i < v1102;
+    while (v1103) {
         const row = trace[i];
-        const v1110 = row[4];
-        let v1111;
-        if (v1110) {
-            v1111 = 'new ';
+        const v1105 = row[4];
+        let v1106;
+        if (v1105) {
+            v1106 = 'new ';
         } else {
-            v1111 = '';
+            v1106 = '';
         }
-        const v1112 = row[3];
-        const v1113 = v1111 + v1112;
-        const v1114 = v1113 + ' (';
-        const v1115 = row[0];
-        const v1116 = v1114 + v1115;
-        const v1117 = v1116 + ':';
-        const v1118 = row[1];
-        const v1119 = v1117 + v1118;
-        const v1120 = v1119 + ':';
-        const v1121 = row[2];
-        const v1122 = v1120 + v1121;
-        const v1123 = v1122 + ')';
-        const v1124 = display.push(v1123);
-        v1124;
-        const v1109 = ++i;
-        v1108 = i < v1107;
+        const v1107 = row[3];
+        const v1108 = v1106 + v1107;
+        const v1109 = v1108 + ' (';
+        const v1110 = row[0];
+        const v1111 = v1109 + v1110;
+        const v1112 = v1111 + ':';
+        const v1113 = row[1];
+        const v1114 = v1112 + v1113;
+        const v1115 = v1114 + ':';
+        const v1116 = row[2];
+        const v1117 = v1115 + v1116;
+        const v1118 = v1117 + ')';
+        const v1119 = display.push(v1118);
+        v1119;
+        const v1104 = ++i;
+        v1103 = i < v1102;
     }
     return display;
 };
-exports.formatTrace = v1125;
-const v1130 = function (slice) {
+exports.formatTrace = v1120;
+const v1125 = function (slice) {
     const v8 = Error.prepareStackTrace;
-    const v1126 = function (_, stack) {
+    const v1121 = function (_, stack) {
         return stack;
     };
-    Error.prepareStackTrace = v1126;
+    Error.prepareStackTrace = v1121;
     const capture = {};
-    const v1127 = Error.captureStackTrace(capture, this);
-    v1127;
+    const v1122 = Error.captureStackTrace(capture, this);
+    v1122;
     const stack = capture.stack;
     Error.prepareStackTrace = v8;
     const trace = exports.formatStack(stack);
-    const v1128 = 1 + slice;
-    const v1129 = trace.slice(v1128);
+    const v1123 = 1 + slice;
+    const v1124 = trace.slice(v1123);
+    return v1124;
+};
+exports.callStack = v1125;
+const v1130 = function (slice) {
+    const v1126 = slice === undefined;
+    const v1127 = slice + 1;
+    let v1128;
+    if (v1126) {
+        v1128 = 1;
+    } else {
+        v1128 = v1127;
+    }
+    const trace = exports.callStack(v1128);
+    const v1129 = exports.formatTrace(trace);
     return v1129;
 };
-exports.callStack = v1130;
-const v1135 = function (slice) {
-    const v1131 = slice === undefined;
-    const v1132 = slice + 1;
-    let v1133;
-    if (v1131) {
-        v1133 = 1;
-    } else {
-        v1133 = v1132;
-    }
-    const trace = exports.callStack(v1133);
-    const v1134 = exports.formatTrace(trace);
-    return v1134;
-};
-exports.displayStack = v1135;
+exports.displayStack = v1130;
 exports.abortThrow = false;
-const v1151 = function (message, hideStack) {
-    const v1136 = process.env;
-    const v1137 = v1136.NODE_ENV;
-    const v1138 = v1137 === 'test';
-    const v1139 = exports.abortThrow;
-    const v1140 = v1139 === true;
-    const v1141 = v1138 || v1140;
-    if (v1141) {
-        const v1142 = message || 'Unknown error';
-        const v1143 = new Error(v1142);
-        throw v1143;
+const v1146 = function (message, hideStack) {
+    const v1131 = process.env;
+    const v1132 = v1131.NODE_ENV;
+    const v1133 = v1132 === 'test';
+    const v1134 = exports.abortThrow;
+    const v1135 = v1134 === true;
+    const v1136 = v1133 || v1135;
+    if (v1136) {
+        const v1137 = message || 'Unknown error';
+        const v1138 = new Error(v1137);
+        throw v1138;
     }
     let stack = '';
-    const v1144 = !hideStack;
-    if (v1144) {
-        const v1145 = exports.displayStack(1);
-        stack = v1145.join('\n\t');
+    const v1139 = !hideStack;
+    if (v1139) {
+        const v1140 = exports.displayStack(1);
+        stack = v1140.join('\n\t');
     }
-    const v1146 = 'ABORT: ' + message;
-    const v1147 = v1146 + '\n\t';
-    const v1148 = v1147 + stack;
-    const v1149 = console.log(v1148);
-    v1149;
-    const v1150 = process.exit(1);
-    v1150;
+    const v1141 = 'ABORT: ' + message;
+    const v1142 = v1141 + '\n\t';
+    const v1143 = v1142 + stack;
+    const v1144 = console.log(v1143);
+    v1144;
+    const v1145 = process.exit(1);
+    v1145;
 };
-exports.abort = v1151;
-const v1172 = function (condition, ...args) {
+exports.abort = v1146;
+const v1167 = function (condition, ...args) {
     if (condition) {
         return;
     }
-    const v1152 = args.length;
-    const v1153 = v1152 === 1;
-    const v1154 = args[0];
-    const v1155 = v1154 instanceof Error;
-    const v1156 = v1153 && v1155;
-    if (v1156) {
-        const v1157 = args[0];
-        throw v1157;
+    const v1147 = args.length;
+    const v1148 = v1147 === 1;
+    const v1149 = args[0];
+    const v1150 = v1149 instanceof Error;
+    const v1151 = v1148 && v1150;
+    if (v1151) {
+        const v1152 = args[0];
+        throw v1152;
     }
-    const v1159 = arg => {
-        const v1158 = arg !== '';
-        return v1158;
+    const v1154 = arg => {
+        const v1153 = arg !== '';
+        return v1153;
     };
-    const v1160 = args.filter(v1159);
-    const v1168 = arg => {
-        const v1161 = typeof arg;
-        const v1162 = v1161 === 'string';
-        const v1163 = arg instanceof Error;
-        const v1164 = arg.message;
-        const v1165 = exports.stringify(arg);
-        let v1166;
-        if (v1163) {
-            v1166 = v1164;
+    const v1155 = args.filter(v1154);
+    const v1163 = arg => {
+        const v1156 = typeof arg;
+        const v1157 = v1156 === 'string';
+        const v1158 = arg instanceof Error;
+        const v1159 = arg.message;
+        const v1160 = exports.stringify(arg);
+        let v1161;
+        if (v1158) {
+            v1161 = v1159;
         } else {
-            v1166 = v1165;
+            v1161 = v1160;
         }
-        let v1167;
-        if (v1162) {
-            v1167 = arg;
+        let v1162;
+        if (v1157) {
+            v1162 = arg;
         } else {
-            v1167 = v1166;
+            v1162 = v1161;
         }
-        return v1167;
+        return v1162;
     };
-    const msgs = v1160.map(v1168);
-    const v1169 = msgs.join(' ');
-    const v1170 = v1169 || 'Unknown error';
-    const v1171 = new Error(v1170);
-    throw v1171;
+    const msgs = v1155.map(v1163);
+    const v1164 = msgs.join(' ');
+    const v1165 = v1164 || 'Unknown error';
+    const v1166 = new Error(v1165);
+    throw v1166;
 };
-exports.assert = v1172;
-const v1174 = function () {
+exports.assert = v1167;
+const v1169 = function () {
     this.ts = 0;
-    const v1173 = this.reset();
-    v1173;
+    const v1168 = this.reset();
+    v1168;
 };
-exports.Bench = v1174;
+exports.Bench = v1169;
+const v1170 = exports.Bench;
+const v1171 = v1170.prototype;
+const v1174 = function () {
+    const v1172 = exports.Bench;
+    const v1173 = v1172.now();
+    this.ts = v1173;
+};
+v1171.reset = v1174;
 const v1175 = exports.Bench;
 const v1176 = v1175.prototype;
-const v1179 = function () {
+const v1181 = function () {
     const v1177 = exports.Bench;
     const v1178 = v1177.now();
-    this.ts = v1178;
+    const v1179 = this.ts;
+    const v1180 = v1178 - v1179;
+    return v1180;
 };
-v1176.reset = v1179;
-const v1180 = exports.Bench;
-const v1181 = v1180.prototype;
-const v1186 = function () {
-    const v1182 = exports.Bench;
-    const v1183 = v1182.now();
-    const v1184 = this.ts;
-    const v1185 = v1183 - v1184;
-    return v1185;
-};
-v1181.elapsed = v1186;
-const v1187 = exports.Bench;
-const v1193 = function () {
+v1176.elapsed = v1181;
+const v1182 = exports.Bench;
+const v1188 = function () {
     const ts = process.hrtime();
-    const v1188 = ts[0];
-    const v1189 = v1188 * 1000;
-    const v1190 = ts[1];
-    const v1191 = v1190 / 1000000;
-    const v1192 = v1189 + v1191;
-    return v1192;
+    const v1183 = ts[0];
+    const v1184 = v1183 * 1000;
+    const v1185 = ts[1];
+    const v1186 = v1185 / 1000000;
+    const v1187 = v1184 + v1186;
+    return v1187;
 };
-v1187.now = v1193;
-const v1195 = function (string) {
-    const v1194 = string.replace(/[\^\$\.\*\+\-\?\=\!\:\|\\\/\(\)\[\]\{\}\,]/g, '\\$&');
-    return v1194;
+v1182.now = v1188;
+const v1190 = function (string) {
+    const v1189 = string.replace(/[\^\$\.\*\+\-\?\=\!\:\|\\\/\(\)\[\]\{\}\,]/g, '\\$&');
+    return v1189;
 };
-exports.escapeRegex = v1195;
-const v1208 = function (value, encoding) {
-    const v1196 = typeof value;
-    const v1197 = v1196 === 'string';
-    const v1198 = Buffer.isBuffer(value);
-    const v1199 = v1197 || v1198;
-    const v1200 = exports.assert(v1199, 'value must be string or buffer');
-    v1200;
+exports.escapeRegex = v1190;
+const v1203 = function (value, encoding) {
+    const v1191 = typeof value;
+    const v1192 = v1191 === 'string';
+    const v1193 = Buffer.isBuffer(value);
+    const v1194 = v1192 || v1193;
+    const v1195 = exports.assert(v1194, 'value must be string or buffer');
+    v1195;
     let buf;
-    const v1201 = Buffer.isBuffer(value);
-    const v1202 = encoding || 'binary';
-    const v1203 = new Buffer(value, v1202);
-    if (v1201) {
+    const v1196 = Buffer.isBuffer(value);
+    const v1197 = encoding || 'binary';
+    const v1198 = new Buffer(value, v1197);
+    if (v1196) {
         buf = value;
     } else {
-        buf = v1203;
+        buf = v1198;
     }
-    const v1204 = buf.toString('base64');
-    const v1205 = v1204.replace(/\+/g, '-');
-    const v1206 = v1205.replace(/\//g, '_');
-    const v1207 = v1206.replace(/\=/g, '');
-    return v1207;
+    const v1199 = buf.toString('base64');
+    const v1200 = v1199.replace(/\+/g, '-');
+    const v1201 = v1200.replace(/\//g, '_');
+    const v1202 = v1201.replace(/\=/g, '');
+    return v1202;
 };
-exports.base64urlEncode = v1208;
-const v1219 = function (value, encoding) {
-    const v1209 = typeof value;
-    const v1210 = v1209 !== 'string';
-    if (v1210) {
-        const v1211 = new Error('Value not a string');
-        return v1211;
+exports.base64urlEncode = v1203;
+const v1214 = function (value, encoding) {
+    const v1204 = typeof value;
+    const v1205 = v1204 !== 'string';
+    if (v1205) {
+        const v1206 = new Error('Value not a string');
+        return v1206;
     }
-    const v1212 = /^[\w\-]*$/.test(value);
-    const v1213 = !v1212;
-    if (v1213) {
-        const v1214 = new Error('Invalid character');
-        return v1214;
+    const v1207 = /^[\w\-]*$/.test(value);
+    const v1208 = !v1207;
+    if (v1208) {
+        const v1209 = new Error('Invalid character');
+        return v1209;
     }
     const buf = new Buffer(value, 'base64');
-    const v1215 = encoding === 'buffer';
-    const v1216 = encoding || 'binary';
-    const v1217 = buf.toString(v1216);
-    let v1218;
-    if (v1215) {
-        v1218 = buf;
+    const v1210 = encoding === 'buffer';
+    const v1211 = encoding || 'binary';
+    const v1212 = buf.toString(v1211);
+    let v1213;
+    if (v1210) {
+        v1213 = buf;
     } else {
-        v1218 = v1217;
+        v1213 = v1212;
     }
-    return v1218;
+    return v1213;
 };
-exports.base64urlDecode = v1219;
-const v1226 = function (attribute) {
-    const v1220 = /^[ \w\!#\$%&'\(\)\*\+,\-\.\/\:;<\=>\?@\[\]\^`\{\|\}~\"\\]*$/.test(attribute);
-    const v1221 = 'Bad attribute value (' + attribute;
-    const v1222 = v1221 + ')';
-    const v1223 = exports.assert(v1220, v1222);
-    v1223;
-    const v1224 = attribute.replace(/\\/g, '\\\\');
-    const v1225 = v1224.replace(/\"/g, '\\"');
-    return v1225;
+exports.base64urlDecode = v1214;
+const v1221 = function (attribute) {
+    const v1215 = /^[ \w\!#\$%&'\(\)\*\+,\-\.\/\:;<\=>\?@\[\]\^`\{\|\}~\"\\]*$/.test(attribute);
+    const v1216 = 'Bad attribute value (' + attribute;
+    const v1217 = v1216 + ')';
+    const v1218 = exports.assert(v1215, v1217);
+    v1218;
+    const v1219 = attribute.replace(/\\/g, '\\\\');
+    const v1220 = v1219.replace(/\"/g, '\\"');
+    return v1220;
 };
-exports.escapeHeaderAttribute = v1226;
-const v1228 = function (string) {
-    const v1227 = Escape.escapeHtml(string);
-    return v1227;
+exports.escapeHeaderAttribute = v1221;
+const v1223 = function (string) {
+    const v1222 = Escape.escapeHtml(string);
+    return v1222;
 };
-exports.escapeHtml = v1228;
-const v1230 = function (string) {
-    const v1229 = Escape.escapeJavaScript(string);
-    return v1229;
+exports.escapeHtml = v1223;
+const v1225 = function (string) {
+    const v1224 = Escape.escapeJavaScript(string);
+    return v1224;
 };
-exports.escapeJavaScript = v1230;
-const v1232 = function (string) {
-    const v1231 = Escape.escapeJson(string);
-    return v1231;
+exports.escapeJavaScript = v1225;
+const v1227 = function (string) {
+    const v1226 = Escape.escapeJson(string);
+    return v1226;
 };
-exports.escapeJson = v1232;
-const v1236 = function (method) {
-    const v1233 = method._hoekOnce;
-    if (v1233) {
+exports.escapeJson = v1227;
+const v1231 = function (method) {
+    const v1228 = method._hoekOnce;
+    if (v1228) {
         return method;
     }
     let once = false;
     const wrapped = function (...args) {
-        const v1234 = !once;
-        if (v1234) {
+        const v1229 = !once;
+        if (v1229) {
             once = true;
-            const v1235 = method.apply(null, args);
-            v1235;
+            const v1230 = method.apply(null, args);
+            v1230;
         }
     };
     wrapped._hoekOnce = true;
     return wrapped;
 };
-exports.once = v1236;
-const v1237 = Number.isSafeInteger;
-exports.isInteger = v1237;
-const v1238 = function () {
+exports.once = v1231;
+const v1232 = Number.isSafeInteger;
+exports.isInteger = v1232;
+const v1233 = function () {
 };
-exports.ignore = v1238;
-const v1239 = Util.inherits;
-exports.inherits = v1239;
-const v1240 = Util.format;
-exports.format = v1240;
-const v1275 = function (source, transform, options) {
-    const v1241 = source === null;
-    const v1242 = source === undefined;
+exports.ignore = v1233;
+const v1234 = Util.inherits;
+exports.inherits = v1234;
+const v1235 = Util.format;
+exports.format = v1235;
+const v1270 = function (source, transform, options) {
+    const v1236 = source === null;
+    const v1237 = source === undefined;
+    const v1238 = v1236 || v1237;
+    const v1239 = typeof source;
+    const v1240 = v1239 === 'object';
+    const v1241 = v1238 || v1240;
+    const v1242 = Array.isArray(source);
     const v1243 = v1241 || v1242;
-    const v1244 = typeof source;
-    const v1245 = v1244 === 'object';
-    const v1246 = v1243 || v1245;
-    const v1247 = Array.isArray(source);
-    const v1248 = v1246 || v1247;
-    const v1249 = exports.assert(v1248, 'Invalid source object: must be null, undefined, an object, or an array');
-    v1249;
+    const v1244 = exports.assert(v1243, 'Invalid source object: must be null, undefined, an object, or an array');
+    v1244;
     let separator;
-    const v1250 = typeof options;
-    const v1251 = v1250 === 'object';
-    const v1252 = options !== null;
-    const v1253 = v1251 && v1252;
-    const v1254 = options.separator;
-    const v1255 = v1254 || '.';
-    if (v1253) {
-        separator = v1255;
+    const v1245 = typeof options;
+    const v1246 = v1245 === 'object';
+    const v1247 = options !== null;
+    const v1248 = v1246 && v1247;
+    const v1249 = options.separator;
+    const v1250 = v1249 || '.';
+    if (v1248) {
+        separator = v1250;
     } else {
         separator = '.';
     }
-    const v1256 = Array.isArray(source);
-    if (v1256) {
+    const v1251 = Array.isArray(source);
+    if (v1251) {
         const results = [];
         let i = 0;
-        const v1257 = source.length;
-        let v1258 = i < v1257;
-        while (v1258) {
-            const v1260 = source[i];
-            const v1261 = exports.transform(v1260, transform, options);
-            const v1262 = results.push(v1261);
-            v1262;
-            const v1259 = ++i;
-            v1258 = i < v1257;
+        const v1252 = source.length;
+        let v1253 = i < v1252;
+        while (v1253) {
+            const v1255 = source[i];
+            const v1256 = exports.transform(v1255, transform, options);
+            const v1257 = results.push(v1256);
+            v1257;
+            const v1254 = ++i;
+            v1253 = i < v1252;
         }
         return results;
     }
     const result = {};
     const keys = Object.keys(transform);
     let i = 0;
-    const v1263 = keys.length;
-    let v1264 = i < v1263;
-    while (v1264) {
+    const v1258 = keys.length;
+    let v1259 = i < v1258;
+    while (v1259) {
         const key = keys[i];
         const path = key.split(separator);
         const sourcePath = transform[key];
-        const v1266 = typeof sourcePath;
-        const v1267 = v1266 === 'string';
-        const v1268 = exports.assert(v1267, 'All mappings must be "." delineated strings');
-        v1268;
+        const v1261 = typeof sourcePath;
+        const v1262 = v1261 === 'string';
+        const v1263 = exports.assert(v1262, 'All mappings must be "." delineated strings');
+        v1263;
         let segment;
         let res = result;
-        const v1269 = path.length;
-        let v1270 = v1269 > 1;
-        while (v1270) {
+        const v1264 = path.length;
+        let v1265 = v1264 > 1;
+        while (v1265) {
             segment = path.shift();
-            const v1271 = res[segment];
-            const v1272 = !v1271;
-            if (v1272) {
-                const v1273 = {};
-                res[segment] = v1273;
+            const v1266 = res[segment];
+            const v1267 = !v1266;
+            if (v1267) {
+                const v1268 = {};
+                res[segment] = v1268;
             }
             res = res[segment];
-            v1270 = v1269 > 1;
+            v1265 = v1264 > 1;
         }
         segment = path.shift();
-        const v1274 = exports.reach(source, sourcePath, options);
-        res[segment] = v1274;
-        const v1265 = ++i;
-        v1264 = i < v1263;
+        const v1269 = exports.reach(source, sourcePath, options);
+        res[segment] = v1269;
+        const v1260 = ++i;
+        v1259 = i < v1258;
     }
     return result;
 };
-exports.transform = v1275;
-const v1286 = function (path, extension) {
+exports.transform = v1270;
+const v1281 = function (path, extension) {
     if (extension) {
-        const v1276 = extension[0];
-        const v1277 = v1276 !== '.';
-        const v1278 = '.' + extension;
-        if (v1277) {
-            extension = v1278;
+        const v1271 = extension[0];
+        const v1272 = v1271 !== '.';
+        const v1273 = '.' + extension;
+        if (v1272) {
+            extension = v1273;
         } else {
             extension = extension;
         }
@@ -1347,62 +1345,64 @@ const v1286 = function (path, extension) {
         extension = '';
     }
     path = Path.resolve(path);
-    const v1279 = Date.now();
-    const v1280 = process.pid;
-    const v1281 = Crypto.randomBytes(8);
-    const v1282 = v1281.toString('hex');
-    const v1283 = [
-        v1279,
-        v1280,
-        v1282
+    const v1274 = Date.now();
+    const v1275 = process.pid;
+    const v1276 = Crypto.randomBytes(8);
+    const v1277 = v1276.toString('hex');
+    const v1278 = [
+        v1274,
+        v1275,
+        v1277
     ];
-    const v1284 = v1283.join('-');
-    const name = v1284 + extension;
-    const v1285 = Path.join(path, name);
-    return v1285;
+    const v1279 = v1278.join('-');
+    const name = v1279 + extension;
+    const v1280 = Path.join(path, name);
+    return v1280;
 };
-exports.uniqueFilename = v1286;
-const v1292 = function (...args) {
+exports.uniqueFilename = v1281;
+const v1287 = function (...args) {
     try {
-        const v1287 = JSON.stringify;
-        const v1288 = v1287.apply(null, args);
-        return v1288;
+        const v1282 = JSON.stringify;
+        const v1283 = v1282.apply(null, args);
+        return v1283;
     } catch (err) {
-        const v1289 = err.message;
-        const v1290 = '[Cannot display object: ' + v1289;
-        const v1291 = v1290 + ']';
-        return v1291;
+        const v1284 = err.message;
+        const v1285 = '[Cannot display object: ' + v1284;
+        const v1286 = v1285 + ']';
+        return v1286;
     }
 };
-exports.stringify = v1292;
-const v1297 = function (source) {
+exports.stringify = v1287;
+const v1292 = function (source) {
     const target = {};
     const keys = Object.keys(source);
     let i = 0;
-    const v1293 = keys.length;
-    let v1294 = i < v1293;
-    while (v1294) {
+    const v1288 = keys.length;
+    let v1289 = i < v1288;
+    while (v1289) {
         const key = keys[i];
-        const v1296 = source[key];
-        target[key] = v1296;
-        const v1295 = ++i;
-        v1294 = i < v1293;
+        const v1291 = source[key];
+        target[key] = v1291;
+        const v1290 = ++i;
+        v1289 = i < v1288;
     }
     return target;
 };
-exports.shallow = v1297;
-const v1301 = function (timeout) {
-    const v1299 = resolve => {
-        const v1298 = setTimeout(resolve, timeout);
-        return v1298;
+exports.shallow = v1292;
+const v1296 = function (timeout) {
+    const v1294 = resolve => {
+        const v1293 = setTimeout(resolve, timeout);
+        return v1293;
     };
-    const v1300 = new Promise(v1299);
-    return v1300;
+    const v1295 = new Promise(v1294);
+    return v1295;
 };
-exports.wait = v1301;
-const v1304 = function () {
-    const v1302 = exports.ignore;
-    const v1303 = new Promise(v1302);
-    return v1303;
+exports.wait = v1296;
+const v1299 = function () {
+    const v1297 = exports.ignore;
+    const v1298 = new Promise(v1297);
+    return v1298;
 };
-exports.block = v1304;
+exports.block = v1299;
+const v1300 = exports.merge;
+module.exports = v1300;

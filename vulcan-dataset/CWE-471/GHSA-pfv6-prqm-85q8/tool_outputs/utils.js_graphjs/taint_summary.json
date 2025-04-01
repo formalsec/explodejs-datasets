@@ -1,1 +1,34 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-pfv6-prqm-85q8/src/utils.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "value[key] = defaultValue;",
+        "sink_lineno": 75,
+        "source": "module.exports.getAndCreate",
+        "tainted_params": [
+            "path",
+            "object",
+            "defaultValue"
+        ],
+        "params_types": {
+            "path": "string",
+            "object": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
+            "defaultValue": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "getAndCreate",
+                "fn_name": "982.v83-o133",
+                "fn_id": "814",
+                "source_fn_id": "814"
+            }
+        ]
+    }
+]

@@ -4,22 +4,20 @@
         "filename": "/datasets/secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = mergeObjects(target[key], value);",
-        "sink_lineno": 25,
+        "sink_lineno": 44,
         "source": "module.exports",
         "tainted_params": [
             "objects"
         ],
         "params_types": {
-            "objects": [
-                "any"
-            ]
+            "objects": "array"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "447.merge-o56",
-                "fn_id": 267,
-                "source_fn_id": 267
+                "fn_name": "664.merge-o85",
+                "fn_id": 486,
+                "source_fn_id": 486
             }
         ]
     },
@@ -28,22 +26,20 @@
         "filename": "/datasets/secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = plain_object_clone_1.default(value);",
-        "sink_lineno": 22,
+        "sink_lineno": 41,
         "source": "module.exports",
         "tainted_params": [
             "objects"
         ],
         "params_types": {
-            "objects": [
-                "any"
-            ]
+            "objects": "array"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "447.merge-o56",
-                "fn_id": 267,
-                "source_fn_id": 267
+                "fn_name": "664.merge-o85",
+                "fn_id": 486,
+                "source_fn_id": 486
             }
         ]
     },
@@ -52,22 +48,20 @@
         "filename": "/datasets/secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
-        "sink_lineno": 18,
+        "sink_lineno": 37,
         "source": "module.exports",
         "tainted_params": [
             "objects"
         ],
         "params_types": {
-            "objects": [
-                "any"
-            ]
+            "objects": "array"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "447.merge-o56",
-                "fn_id": 267,
-                "source_fn_id": 267
+                "fn_name": "664.merge-o85",
+                "fn_id": 486,
+                "source_fn_id": 486
             }
         ]
     }

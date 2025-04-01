@@ -49,15 +49,6 @@ function reduce(obj, str) {
 function add(obj, str, val) {
     "use strict";
     try {
-        if ( typeof str !== "string") {
-            return;
-        }
-        if ( typeof obj !== "object") {
-            return;
-        }
-        if (!val) {
-            return;
-        }
         var items = str.split('.');
         var initial = items.slice(0, items.length - 1);
         var last = items.slice(items.length - 1);
@@ -96,6 +87,15 @@ function get(target, path) {
 function set(target, path, val) {
     "use strict";
     try {
+        if ( typeof str !== "string") {
+            return;
+        }
+        if ( typeof obj !== "object") {
+            return;
+        }
+        if (!val) {
+            return;
+        }
         return add(target, path, val);
     } catch(ex) {
         console.error(ex);

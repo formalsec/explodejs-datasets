@@ -3,18 +3,18 @@
         "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "child[lastKey] = value;",
-        "sink_lineno": 391
+        "sink_lineno": 388
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
-        "sink_lineno": 131
+        "sink_lineno": 128
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
-        "sink_lineno": 126
+        "sink_lineno": 123
     }
 ]

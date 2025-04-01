@@ -4,5 +4,23 @@
         "vuln_type": "code-injection",
         "sink": "return eval('(' + string + ')');",
         "sink_lineno": 1175
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.prototype[key] = value;",
+        "sink_lineno": 102
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (previous == null || !previous.$protected) this.prototype[name] = method;",
+        "sink_lineno": 197
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.prototype[key] = (retain) ? value : wrap(this, key, value);",
+        "sink_lineno": 947
     }
 ]

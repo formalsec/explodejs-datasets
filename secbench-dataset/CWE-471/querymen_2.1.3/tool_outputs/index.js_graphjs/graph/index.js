@@ -1,170 +1,184 @@
 'use strict';
-const v76 = { value: true };
-const v77 = Object.defineProperty(exports, '__esModule', v76);
-v77;
-exports.Param = undefined;
-exports.Schema = exports.Param;
-exports.handlers = exports.Schema;
-exports.handler = handler;
-exports.parser = parser;
-exports.formatter = formatter;
-exports.validator = validator;
-exports.middleware = middleware;
-exports.errorHandler = errorHandler;
+const v90 = module.exports;
+const v91 = { value: true };
+const v92 = Object.defineProperty(v90, '__esModule', v91);
+v92;
+const v93 = module.exports;
+const v94 = module.exports;
+const v95 = module.exports;
+v95.Param = undefined;
+v94.Schema = v95.Param;
+v93.handlers = v94.Schema;
+const v96 = module.exports;
+v96.handler = handler;
+const v97 = module.exports;
+v97.parser = parser;
+const v98 = module.exports;
+v98.formatter = formatter;
+const v99 = module.exports;
+v99.validator = validator;
+const v100 = module.exports;
+v100.middleware = middleware;
+const v101 = module.exports;
+v101.errorHandler = errorHandler;
 var _lodash = require('lodash');
 var _lodash2 = _interopRequireDefault(_lodash);
-var _querymenParam = require('./querymen-param');
+var _querymenParam = {};
 var _querymenParam2 = _interopRequireDefault(_querymenParam);
-var _querymenSchema = require('./querymen-schema');
+var _querymenSchema = {};
 var _querymenSchema2 = _interopRequireDefault(_querymenSchema);
 const _interopRequireDefault = function (obj) {
-    const v78 = obj.__esModule;
-    const v79 = obj && v78;
-    const v80 = { default: obj };
-    let v81;
-    if (v79) {
-        v81 = obj;
+    const v102 = obj.__esModule;
+    const v103 = obj && v102;
+    const v104 = { default: obj };
+    let v105;
+    if (v103) {
+        v105 = obj;
     } else {
-        v81 = v80;
+        v105 = v104;
     }
-    return v81;
+    return v105;
 };
-const v82 = _querymenParam2.default;
-exports.Param = v82;
-const v83 = _querymenSchema2.default;
-exports.Schema = v83;
-const v84 = {};
-const v85 = {};
-const v86 = {};
-const v87 = {};
-v87.parsers = v84;
-v87.formatters = v85;
-v87.validators = v86;
-exports.handlers = v87;
-var handlers = exports.handlers;
+const v106 = module.exports;
+const v107 = _querymenParam2.default;
+v106.Param = v107;
+const v108 = module.exports;
+const v109 = _querymenSchema2.default;
+v108.Schema = v109;
+const v110 = module.exports;
+const v111 = {};
+const v112 = {};
+const v113 = {};
+const v114 = {};
+v114.parsers = v111;
+v114.formatters = v112;
+v114.validators = v113;
+v110.handlers = v114;
+var handlers = v110.handlers;
 const handler = function (type, name, fn) {
-    const v88 = arguments.length;
-    const v89 = v88 > 2;
-    if (v89) {
-        const v90 = handlers[type];
-        v90[name] = fn;
+    const v115 = arguments.length;
+    const v116 = v115 > 2;
+    if (v116) {
+        const v117 = handlers[type];
+        v117[name] = fn;
     }
-    const v91 = handlers[type];
-    const v92 = v91[name];
-    return v92;
+    const v118 = handlers[type];
+    const v119 = v118[name];
+    return v119;
 };
 const parser = function (name, fn) {
-    const v93 = ['parsers'];
-    const v94 = Array.prototype;
-    const v95 = v94.slice;
-    const v96 = v95.call(arguments);
-    const v97 = v93.concat(v96);
-    const v98 = handler.apply(undefined, v97);
-    return v98;
+    const v120 = ['parsers'];
+    const v121 = Array.prototype;
+    const v122 = v121.slice;
+    const v123 = v122.call(arguments);
+    const v124 = v120.concat(v123);
+    const v125 = handler.apply(undefined, v124);
+    return v125;
 };
 const formatter = function (name, fn) {
-    const v99 = ['formatters'];
-    const v100 = Array.prototype;
-    const v101 = v100.slice;
-    const v102 = v101.call(arguments);
-    const v103 = v99.concat(v102);
-    const v104 = handler.apply(undefined, v103);
-    return v104;
+    const v126 = ['formatters'];
+    const v127 = Array.prototype;
+    const v128 = v127.slice;
+    const v129 = v128.call(arguments);
+    const v130 = v126.concat(v129);
+    const v131 = handler.apply(undefined, v130);
+    return v131;
 };
 const validator = function (name, fn) {
-    const v105 = ['validators'];
-    const v106 = Array.prototype;
-    const v107 = v106.slice;
-    const v108 = v107.call(arguments);
-    const v109 = v105.concat(v108);
-    const v110 = handler.apply(undefined, v109);
-    return v110;
-};
-const middleware = function (schema, options) {
-    const v137 = function (req, res, next) {
-        const v111 = void 0;
-        var _schema = v111;
-        const v112 = schema.options;
-        const v113 = schema && v112;
-        const v114 = schema.options;
-        const v115 = v114.near;
-        const v116 = v113 && v115;
-        if (v116) {
-            const v117 = _querymenSchema2.default;
-            const v118 = schema instanceof v117;
-            const v119 = _lodash2.default;
-            const v120 = v119.clone(schema);
-            const v121 = new _querymenSchema2.default(schema, options);
-            if (v118) {
-                _schema = v120;
-            } else {
-                _schema = v121;
-            }
-        } else {
-            const v122 = _querymenSchema2.default;
-            const v123 = schema instanceof v122;
-            const v124 = _lodash2.default;
-            const v125 = v124.cloneDeep(schema);
-            const v126 = new _querymenSchema2.default(schema, options);
-            if (v123) {
-                _schema = v125;
-            } else {
-                _schema = v126;
-            }
-        }
-        const v127 = req.query;
-        const v135 = function (err) {
-            if (err) {
-                const v128 = {};
-                v128.error = err;
-                req.querymen = v128;
-                const v129 = res.status(400);
-                v129;
-                const v130 = err.message;
-                const v131 = next(v130);
-                return v131;
-            }
-            const v132 = _schema.parse();
-            req.querymen = v132;
-            const v133 = req.querymen;
-            v133.schema = _schema;
-            const v134 = next();
-            v134;
-        };
-        const v136 = _schema.validate(v127, v135);
-        v136;
-    };
+    const v132 = ['validators'];
+    const v133 = Array.prototype;
+    const v134 = v133.slice;
+    const v135 = v134.call(arguments);
+    const v136 = v132.concat(v135);
+    const v137 = handler.apply(undefined, v136);
     return v137;
 };
-const errorHandler = function () {
-    const v147 = function (err, req, res, next) {
-        const v138 = req.querymen;
-        const v139 = req.querymen;
-        const v140 = v139.error;
-        const v141 = v138 && v140;
-        if (v141) {
-            const v142 = res.status(400);
-            const v143 = req.querymen;
-            const v144 = v143.error;
-            const v145 = v142.json(v144);
-            v145;
+const middleware = function (schema, options) {
+    const v164 = function (req, res, next) {
+        const v138 = void 0;
+        var _schema = v138;
+        const v139 = schema.options;
+        const v140 = schema && v139;
+        const v141 = schema.options;
+        const v142 = v141.near;
+        const v143 = v140 && v142;
+        if (v143) {
+            const v144 = _querymenSchema2.default;
+            const v145 = schema instanceof v144;
+            const v146 = _lodash2.default;
+            const v147 = v146.clone(schema);
+            const v148 = new _querymenSchema2.default(schema, options);
+            if (v145) {
+                _schema = v147;
+            } else {
+                _schema = v148;
+            }
         } else {
-            const v146 = next(err);
-            v146;
+            const v149 = _querymenSchema2.default;
+            const v150 = schema instanceof v149;
+            const v151 = _lodash2.default;
+            const v152 = v151.cloneDeep(schema);
+            const v153 = new _querymenSchema2.default(schema, options);
+            if (v150) {
+                _schema = v152;
+            } else {
+                _schema = v153;
+            }
+        }
+        const v154 = req.query;
+        const v162 = function (err) {
+            if (err) {
+                const v155 = {};
+                v155.error = err;
+                req.querymen = v155;
+                const v156 = res.status(400);
+                v156;
+                const v157 = err.message;
+                const v158 = next(v157);
+                return v158;
+            }
+            const v159 = _schema.parse();
+            req.querymen = v159;
+            const v160 = req.querymen;
+            v160.schema = _schema;
+            const v161 = next();
+            v161;
+        };
+        const v163 = _schema.validate(v154, v162);
+        v163;
+    };
+    return v164;
+};
+const errorHandler = function () {
+    const v174 = function (err, req, res, next) {
+        const v165 = req.querymen;
+        const v166 = req.querymen;
+        const v167 = v166.error;
+        const v168 = v165 && v167;
+        if (v168) {
+            const v169 = res.status(400);
+            const v170 = req.querymen;
+            const v171 = v170.error;
+            const v172 = v169.json(v171);
+            v172;
+        } else {
+            const v173 = next(err);
+            v173;
         }
     };
-    return v147;
+    return v174;
 };
-const v148 = _querymenSchema2.default;
-const v149 = _querymenParam2.default;
-const v150 = {};
-v150.Schema = v148;
-v150.Param = v149;
-v150.handlers = handlers;
-v150.handler = handler;
-v150.parser = parser;
-v150.formatter = formatter;
-v150.validator = validator;
-v150.middleware = middleware;
-v150.errorHandler = errorHandler;
-exports.default = v150;
+const v175 = module.exports;
+const v176 = _querymenSchema2.default;
+const v177 = _querymenParam2.default;
+const v178 = {};
+v178.Schema = v176;
+v178.Param = v177;
+v178.handlers = handlers;
+v178.handler = handler;
+v178.parser = parser;
+v178.formatter = formatter;
+v178.validator = validator;
+v178.middleware = middleware;
+v178.errorHandler = errorHandler;
+v175.default = v178;

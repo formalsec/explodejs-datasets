@@ -10,6 +10,7 @@ var baseN = require('./baseN');
 
 /* Utilities API */
 var util = module.exports = forge.util = forge.util || {};
+module.exports = util;
 
 // define setImmediate and nextTick
 (function() {

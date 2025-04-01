@@ -3,12 +3,12 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/717/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "merged[key] = clone(source[key]);",
-        "sink_lineno": 75
+        "sink_lineno": 80
     },
     {
         "filename": "/datasets/vulcan-dataset/CWE-471/717/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "merged[key] = merge(merged[key], source[key], mergeOpts);",
-        "sink_lineno": 73
+        "sink_lineno": 78
     }
 ]

@@ -4,7 +4,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-p23c-p8w2-ww5v/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "handlers[type][name] = fn;",
-        "sink_lineno": 48,
+        "sink_lineno": 51,
         "source": "module.exports.handler",
         "tainted_params": [
             "type",
@@ -20,9 +20,9 @@
             {
                 "type": "Method",
                 "prop": "handler",
-                "fn_name": "1634.handler-o225",
-                "fn_id": "1130",
-                "source_fn_id": "1130"
+                "fn_name": "1643.handler-o223",
+                "fn_id": "1167",
+                "source_fn_id": "1167"
             }
         ]
     }

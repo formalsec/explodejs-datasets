@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/think-config_1.0.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.config[name] = value;",
+        "sink_lineno": 43
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/think-config_1.0.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "config[item] = value;",
+        "sink_lineno": 50
+    }
+]

@@ -1,9 +1,5 @@
 'use strict';
-const v294 = [
-    Buffer,
-    ArrayBuffer
-];
-const v295 = [
+const v293 = [
     'Promise',
     'Generator',
     'GeneratorFunction',
@@ -14,7 +10,7 @@ const v295 = [
     'Proxy',
     'eval'
 ];
-const v296 = [
+const v294 = [
     'setTimeout',
     'clearTimeout',
     'setInterval',
@@ -31,55 +27,54 @@ const v296 = [
     'exports',
     'module'
 ];
-const v297 = {};
-v297.js = v295;
-v297.node = v296;
-const v298 = {};
-v298.extendReservedInstances = v294;
-v298.extend = extend;
-v298.merge = extend;
-v298.isPlainObject = isPlainObject;
-v298.isObject = isObject;
-v298.isEmpty = isEmpty;
-v298.clone = cloneObj;
-v298.copy = cloneObj;
-v298.deepHasProperty = deepHasProperty;
-v298.getValue = deepGet;
-v298.deepGet = deepGet;
-v298.setValue = deepSet;
-v298.deepSet = deepSet;
-v298.deepReplace = deepReplace;
-v298.toArray = toArray;
-v298.fromArray = fromArray;
-v298.dateStringsToDates = dateStringsToDates;
-v298.update = update;
-v298.globalsList = v297;
-module.exports = v298;
+const v295 = {};
+v295.js = v293;
+v295.node = v294;
+const v296 = {};
+v296.extend = extend;
+v296.merge = extend;
+v296.isPlainObject = isPlainObject;
+v296.isObject = isObject;
+v296.isEmpty = isEmpty;
+v296.clone = cloneObj;
+v296.copy = cloneObj;
+v296.deepHasProperty = deepHasProperty;
+v296.getValue = deepGet;
+v296.deepGet = deepGet;
+v296.setValue = deepSet;
+v296.deepSet = deepSet;
+v296.deepReplace = deepReplace;
+v296.toArray = toArray;
+v296.fromArray = fromArray;
+v296.dateStringsToDates = dateStringsToDates;
+v296.update = update;
+v296.globalsList = v295;
+module.exports = v296;
 const cloneObj = function (obj) {
     let newObj;
-    const v299 = Object.prototype;
-    const v300 = v299.toString;
-    const v301 = v300.call(obj);
-    const v302 = v301 === '[object Array]';
-    const v303 = [];
-    const v304 = {};
-    if (v302) {
-        newObj = v303;
+    const v297 = Object.prototype;
+    const v298 = v297.toString;
+    const v299 = v298.call(obj);
+    const v300 = v299 === '[object Array]';
+    const v301 = [];
+    const v302 = {};
+    if (v300) {
+        newObj = v301;
     } else {
-        newObj = v304;
+        newObj = v302;
     }
     let propName;
     for (propName in obj) {
-        const v305 = obj[propName];
-        const v306 = typeof v305;
-        const v307 = v306 === 'object';
-        if (v307) {
-            const v308 = obj[propName];
-            const v309 = cloneObj(v308);
-            newObj[propName] = v309;
+        const v303 = obj[propName];
+        const v304 = typeof v303;
+        const v305 = v304 === 'object';
+        if (v305) {
+            const v306 = obj[propName];
+            const v307 = cloneObj(v306);
+            newObj[propName] = v307;
         } else {
-            const v310 = obj[propName];
-            newObj[propName] = v310;
+            const v308 = obj[propName];
+            newObj[propName] = v308;
         }
     }
     return newObj;
@@ -92,139 +87,139 @@ const isEmpty = function (obj) {
     return true;
 };
 const isObject = function (value) {
-    const v311 = Object.prototype;
-    const v312 = v311.toString;
-    const v313 = v312.call(value);
-    const v314 = v313 === '[object Object]';
-    return v314;
+    const v309 = Object.prototype;
+    const v310 = v309.toString;
+    const v311 = v310.call(value);
+    const v312 = v311 === '[object Object]';
+    return v312;
 };
 const toArray = function (obj, fields, transfornFnc) {
-    const v315 = arguments.length;
-    const v316 = v315 === 2;
-    const v317 = arguments[1];
-    const v318 = typeof v317;
-    const v319 = v318 === 'function';
-    const v320 = v316 && v319;
-    if (v320) {
+    const v313 = arguments.length;
+    const v314 = v313 === 2;
+    const v315 = arguments[1];
+    const v316 = typeof v315;
+    const v317 = v316 === 'function';
+    const v318 = v314 && v317;
+    if (v318) {
         transfornFnc = arguments[1];
         fields = null;
     }
-    const v321 = isObject(obj);
-    const v322 = !v321;
-    if (v322) {
-        const v323 = new Error('Wrong arguments');
-        throw v323;
+    const v319 = isObject(obj);
+    const v320 = !v319;
+    if (v320) {
+        const v321 = new Error('Wrong arguments');
+        throw v321;
     }
     var index;
     var array = [];
-    const v324 = typeof transfornFnc;
-    const v325 = v324 === 'function';
-    const v326 = function (key, value) {
+    const v322 = typeof transfornFnc;
+    const v323 = v322 === 'function';
+    const v324 = function (key, value) {
         return value;
     };
-    if (v325) {
+    if (v323) {
         transfornFnc = transfornFnc;
     } else {
-        transfornFnc = v326;
+        transfornFnc = v324;
     }
-    const v327 = Array.isArray(fields);
-    if (v327) {
+    const v325 = Array.isArray(fields);
+    if (v325) {
         var i = 0;
-        const v328 = fields.length;
-        let v329 = i < v328;
-        while (v329) {
-            const v331 = fields[i];
-            const v332 = deepGet(obj, v331);
-            const v333 = transfornFnc(key, v332);
-            array[i] = v333;
-            const v330 = i++;
-            v329 = i < v328;
+        const v326 = fields.length;
+        let v327 = i < v326;
+        while (v327) {
+            const v329 = fields[i];
+            const v330 = deepGet(obj, v329);
+            const v331 = transfornFnc(key, v330);
+            array[i] = v331;
+            const v328 = i++;
+            v327 = i < v326;
         }
     } else {
         let key;
         for (key in obj) {
-            const v334 = obj.hasOwnProperty(key);
-            if (v334) {
-                const v335 = obj[key];
-                const v336 = transfornFnc(key, v335);
-                const v337 = array.push(v336);
-                v337;
+            const v332 = obj.hasOwnProperty(key);
+            if (v332) {
+                const v333 = obj[key];
+                const v334 = transfornFnc(key, v333);
+                const v335 = array.push(v334);
+                v335;
             }
         }
     }
     return array;
 };
 const fromArray = function (array, transfornFnc) {
-    const v338 = Array.isArray(array);
-    const v339 = !v338;
-    if (v339) {
-        const v340 = new Error('Wrong arguments');
-        throw v340;
+    const v336 = Array.isArray(array);
+    const v337 = !v336;
+    if (v337) {
+        const v338 = new Error('Wrong arguments');
+        throw v338;
     }
     var obj = {};
-    const v341 = typeof transfornFnc;
-    const v342 = v341 === 'function';
-    const v344 = function (element, i) {
-        const v343 = {};
-        v343.key = i;
-        v343.value = element;
-        return v343;
+    const v339 = typeof transfornFnc;
+    const v340 = v339 === 'function';
+    const v342 = function (element, i) {
+        const v341 = {};
+        v341.key = i;
+        v341.value = element;
+        return v341;
     };
-    if (v342) {
+    if (v340) {
         transfornFnc = transfornFnc;
     } else {
-        transfornFnc = v344;
+        transfornFnc = v342;
     }
     var keyValue = {};
     var i = 0;
-    const v345 = array.length;
-    let v346 = i < v345;
-    while (v346) {
-        const v348 = array[i];
-        keyValue = transfornFnc(v348, i);
-        const v349 = keyValue.key;
-        const v350 = keyValue.value;
-        obj[v349] = v350;
-        const v347 = i++;
-        v346 = i < v345;
+    const v343 = array.length;
+    let v344 = i < v343;
+    while (v344) {
+        const v346 = array[i];
+        keyValue = transfornFnc(v346, i);
+        const v347 = keyValue.key;
+        const v348 = keyValue.value;
+        obj[v347] = v348;
+        const v345 = i++;
+        v344 = i < v343;
     }
     return obj;
 };
 const isPlainObject = function (obj) {
-    const v351 = !obj;
-    const v352 = Object.prototype;
-    const v353 = v352.toString;
-    const v354 = v353.call(obj);
-    const v355 = v354 !== '[object Object]';
-    const v356 = v351 || v355;
-    const v357 = obj.nodeType;
+    const v349 = !obj;
+    const v350 = Object.prototype;
+    const v351 = v350.toString;
+    const v352 = v351.call(obj);
+    const v353 = v352 !== '[object Object]';
+    const v354 = v349 || v353;
+    const v355 = obj.nodeType;
+    const v356 = v354 || v355;
+    const v357 = obj.setInterval;
     const v358 = v356 || v357;
-    const v359 = obj.setInterval;
-    const v360 = v358 || v359;
-    if (v360) {
+    if (v358) {
         return false;
     }
     var has_own_constructor = hasOwnProperty.call(obj, 'constructor');
+    const v359 = obj.constructor;
+    const v360 = v359.prototype;
+    var has_is_property_of_method = hasOwnProperty.call(v360, 'isPrototypeOf');
     const v361 = obj.constructor;
-    const v362 = v361.prototype;
-    var has_is_property_of_method = hasOwnProperty.call(v362, 'isPrototypeOf');
-    const v363 = obj.constructor;
-    const v364 = !has_own_constructor;
+    const v362 = !has_own_constructor;
+    const v363 = v361 && v362;
+    const v364 = !has_is_property_of_method;
     const v365 = v363 && v364;
-    const v366 = !has_is_property_of_method;
-    const v367 = v365 && v366;
-    if (v367) {
+    if (v365) {
         return false;
     }
     var key;
     for (key in obj) {
     }
-    const v368 = key === undefined;
-    const v369 = Object.prototype;
-    const v370 = v369.hasOwnProperty;
-    const v371 = v370.call(obj, key);
-    const v372 = v368 || v371;
-    return v372;
+    const v366 = key === undefined;
+    const v367 = Object.prototype;
+    const v368 = v367.hasOwnProperty;
+    const v369 = v368.call(obj, key);
+    const v370 = v366 || v369;
+    return v370;
 };
 const extend = function () {
     var options;
@@ -233,296 +228,296 @@ const extend = function () {
     var copy;
     var copyIsArray;
     var clone;
-    const v373 = this.extendReservedInstances;
-    const v374 = [];
-    var reservedInstances = v373 || v374;
+    const v371 = this.extendReservedInstances;
+    const v372 = [];
+    var reservedInstances = v371 || v372;
     var object = this;
-    const v375 = arguments[0];
-    const v376 = {};
-    var target = v375 || v376;
+    const v373 = arguments[0];
+    const v374 = {};
+    var target = v373 || v374;
     var i = 1;
     var length = arguments.length;
     var deep = false;
-    const v377 = typeof target;
-    const v378 = v377 === 'boolean';
-    const v379 = target === 'data';
-    const v380 = v378 || v379;
-    if (v380) {
+    const v375 = typeof target;
+    const v376 = v375 === 'boolean';
+    const v377 = target === 'data';
+    const v378 = v376 || v377;
+    if (v378) {
         deep = target;
-        const v381 = arguments[1];
-        const v382 = {};
-        target = v381 || v382;
+        const v379 = arguments[1];
+        const v380 = {};
+        target = v379 || v380;
         i = 2;
     }
+    const v381 = typeof target;
+    const v382 = v381 !== 'object';
     const v383 = typeof target;
-    const v384 = v383 !== 'object';
-    const v385 = typeof target;
-    const v386 = v385 !== 'function';
-    const v387 = v384 && v386;
-    if (v387) {
+    const v384 = v383 !== 'function';
+    const v385 = v382 && v384;
+    if (v385) {
         target = {};
     }
-    let v388 = i < length;
-    while (v388) {
+    let v386 = i < length;
+    while (v386) {
         options = arguments[i];
-        const v390 = isReservedInstance(options, reservedInstances);
-        if (v390) {
+        const v388 = isReservedInstance(options, reservedInstances);
+        if (v388) {
             target = options;
             return target;
         } else {
-            const v391 = options !== null;
-            if (v391) {
+            const v389 = options !== null;
+            if (v389) {
                 for (name in options) {
                     src = target[name];
                     copy = options[name];
-                    const v392 = isReservedInstance(copy, reservedInstances);
-                    if (v392) {
+                    const v390 = isReservedInstance(copy, reservedInstances);
+                    if (v390) {
                         target[name] = copy;
                         continue;
                     }
-                    const v393 = target === copy;
-                    if (v393) {
+                    const v391 = target === copy;
+                    if (v391) {
                         continue;
                     }
-                    const v394 = deep && copy;
-                    const v395 = isPlainObject(copy);
-                    const v396 = v395 || (copyIsArray = Array.isArray(copy));
-                    const v397 = v394 && v396;
-                    if (v397) {
+                    const v392 = deep && copy;
+                    const v393 = isPlainObject(copy);
+                    const v394 = v393 || (copyIsArray = Array.isArray(copy));
+                    const v395 = v392 && v394;
+                    if (v395) {
                         if (copyIsArray) {
                             copyIsArray = false;
-                            const v398 = deep === 'data';
-                            if (v398) {
-                                const v399 = copy.slice(0);
-                                target[name] = v399;
+                            const v396 = deep === 'data';
+                            if (v396) {
+                                const v397 = copy.slice(0);
+                                target[name] = v397;
                                 continue;
                             }
-                            const v400 = Array.isArray(src);
-                            const v401 = src && v400;
-                            const v402 = [];
-                            if (v401) {
+                            const v398 = Array.isArray(src);
+                            const v399 = src && v398;
+                            const v400 = [];
+                            if (v399) {
                                 clone = src;
                             } else {
-                                clone = v402;
+                                clone = v400;
                             }
                         } else {
-                            const v403 = isPlainObject(src);
-                            const v404 = src && v403;
-                            const v405 = {};
-                            if (v404) {
+                            const v401 = isPlainObject(src);
+                            const v402 = src && v401;
+                            const v403 = {};
+                            if (v402) {
                                 clone = src;
                             } else {
-                                clone = v405;
+                                clone = v403;
                             }
                         }
-                        const v406 = object.extend(deep, clone, copy);
-                        target[name] = v406;
+                        const v404 = object.extend(deep, clone, copy);
+                        target[name] = v404;
                     } else {
                         target[name] = copy;
                     }
                 }
             }
         }
-        const v389 = i++;
-        v388 = i < length;
+        const v387 = i++;
+        v386 = i < length;
     }
     return target;
 };
 const isReservedInstance = function (value, reservedInstances) {
     var i = 0;
-    const v407 = reservedInstances.length;
-    let v408 = i < v407;
-    while (v408) {
-        const v410 = reservedInstances[i];
-        const v411 = value instanceof v410;
-        if (v411) {
+    const v405 = reservedInstances.length;
+    let v406 = i < v405;
+    while (v406) {
+        const v408 = reservedInstances[i];
+        const v409 = value instanceof v408;
+        if (v409) {
             return true;
         }
-        const v409 = i++;
-        v408 = i < v407;
+        const v407 = i++;
+        v406 = i < v405;
     }
     return false;
 };
 const deepSet = function (parent, key, value, mode) {
     var parts = key.split('.');
     var current = parent;
-    const v412 = key === 'this';
-    if (v412) {
-        const v413 = mode === 'push';
-        if (v413) {
-            const v414 = parent.push(value);
-            v414;
+    const v410 = key === 'this';
+    if (v410) {
+        const v411 = mode === 'push';
+        if (v411) {
+            const v412 = parent.push(value);
+            v412;
         } else {
             parent = value.toString();
         }
     } else {
         var i = 0;
-        const v415 = parts.length;
-        let v416 = i < v415;
-        while (v416) {
-            const v418 = parts.length;
-            const v419 = v418 - 1;
-            const v420 = i >= v419;
-            if (v420) {
-                const v421 = mode === 'push';
-                if (v421) {
-                    const v422 = parts[i];
-                    const v423 = current[v422];
-                    const v424 = v423.push(value);
-                    v424;
+        const v413 = parts.length;
+        let v414 = i < v413;
+        while (v414) {
+            const v416 = parts.length;
+            const v417 = v416 - 1;
+            const v418 = i >= v417;
+            if (v418) {
+                const v419 = mode === 'push';
+                if (v419) {
+                    const v420 = parts[i];
+                    const v421 = current[v420];
+                    const v422 = v421.push(value);
+                    v422;
                 } else {
-                    const v425 = parts[i];
-                    current[v425] = value;
+                    const v423 = parts[i];
+                    current[v423] = value;
                 }
             } else {
-                const v426 = parts[i];
-                const v427 = parts[i];
-                const v428 = current[v427];
-                const v429 = {};
-                current[v426] = v428 || v429;
+                const v424 = parts[i];
+                const v425 = parts[i];
+                const v426 = current[v425];
+                const v427 = {};
+                current[v424] = v426 || v427;
             }
-            const v430 = parts[i];
-            current = current[v430];
-            const v417 = i++;
-            v416 = i < v415;
+            const v428 = parts[i];
+            current = current[v428];
+            const v415 = i++;
+            v414 = i < v413;
         }
     }
     return parent;
 };
 const deepHasProperty = function (parent, key) {
-    const v431 = key === 'this';
-    if (v431) {
+    const v429 = key === 'this';
+    if (v429) {
         return true;
     }
-    const v432 = parent === null;
-    const v433 = parent === undefined;
-    const v434 = v432 || v433;
-    const v435 = typeof parent;
-    const v436 = v435 === 'function';
-    const v437 = v434 || v436;
-    if (v437) {
+    const v430 = parent === null;
+    const v431 = parent === undefined;
+    const v432 = v430 || v431;
+    const v433 = typeof parent;
+    const v434 = v433 === 'function';
+    const v435 = v432 || v434;
+    if (v435) {
         return false;
     }
     var parts = key.split('.');
     var current = parent;
     var i = 0;
-    const v438 = parts.length;
-    let v439 = i < v438;
-    while (v439) {
-        const v441 = parts[i];
-        const v442 = current[v441];
-        if (v442) {
-            const v443 = parts[i];
-            current = current[v443];
+    const v436 = parts.length;
+    let v437 = i < v436;
+    while (v437) {
+        const v439 = parts[i];
+        const v440 = current[v439];
+        if (v440) {
+            const v441 = parts[i];
+            current = current[v441];
         } else {
-            const v444 = parts.length;
-            const v445 = v444 - 1;
-            const v446 = i === v445;
-            const v447 = current.hasOwnProperty;
-            const v448 = v446 && v447;
-            const v449 = parts[i];
-            const v450 = current.hasOwnProperty(v449);
-            const v451 = v448 && v450;
-            if (v451) {
+            const v442 = parts.length;
+            const v443 = v442 - 1;
+            const v444 = i === v443;
+            const v445 = current.hasOwnProperty;
+            const v446 = v444 && v445;
+            const v447 = parts[i];
+            const v448 = current.hasOwnProperty(v447);
+            const v449 = v446 && v448;
+            if (v449) {
                 return true;
             } else {
                 return false;
             }
         }
-        const v440 = i++;
-        v439 = i < v438;
+        const v438 = i++;
+        v437 = i < v436;
     }
     return true;
 };
 const deepGet = function (parent, key) {
-    const v452 = key === 'this';
-    if (v452) {
+    const v450 = key === 'this';
+    if (v450) {
         return parent;
     }
-    const v453 = parent === null;
-    const v454 = parent === undefined;
-    const v455 = v453 || v454;
-    const v456 = typeof parent;
-    const v457 = v456 === 'function';
-    const v458 = v455 || v457;
-    if (v458) {
+    const v451 = parent === null;
+    const v452 = parent === undefined;
+    const v453 = v451 || v452;
+    const v454 = typeof parent;
+    const v455 = v454 === 'function';
+    const v456 = v453 || v455;
+    if (v456) {
         return undefined;
     }
     var parts = key.split('.');
     var current = parent;
     var i = 0;
-    const v459 = parts.length;
-    let v460 = i < v459;
-    while (v460) {
-        const v462 = parts[i];
-        const v463 = current[v462];
-        const v464 = v463 === null;
-        const v465 = parts.length;
-        const v466 = v465 - 1;
-        const v467 = i < v466;
-        const v468 = v464 && v467;
-        const v469 = parts[i];
-        const v470 = current[v469];
-        const v471 = v470 === undefined;
-        const v472 = v468 || v471;
-        if (v472) {
+    const v457 = parts.length;
+    let v458 = i < v457;
+    while (v458) {
+        const v460 = parts[i];
+        const v461 = current[v460];
+        const v462 = v461 === null;
+        const v463 = parts.length;
+        const v464 = v463 - 1;
+        const v465 = i < v464;
+        const v466 = v462 && v465;
+        const v467 = parts[i];
+        const v468 = current[v467];
+        const v469 = v468 === undefined;
+        const v470 = v466 || v469;
+        if (v470) {
             return undefined;
         } else {
-            const v473 = parts[i];
-            current = current[v473];
+            const v471 = parts[i];
+            current = current[v471];
         }
-        const v461 = i++;
-        v460 = i < v459;
+        const v459 = i++;
+        v458 = i < v457;
     }
-    const v474 = typeof current;
-    const v475 = v474 === 'function';
-    if (v475) {
+    const v472 = typeof current;
+    const v473 = v472 === 'function';
+    if (v473) {
         return undefined;
     }
     return current;
 };
 const deepReplace = function (parentObj, cb, keyPath) {
-    const v476 = isObject(parentObj);
-    const v477 = !v476;
-    if (v477) {
+    const v474 = isObject(parentObj);
+    const v475 = !v474;
+    if (v475) {
         return;
     }
     keyPath = keyPath || '';
     var value;
     let key;
     for (key in parentObj) {
-        const v478 = parentObj[key];
-        const v479 = isObject(v478);
-        if (v479) {
-            const v480 = parentObj[key];
-            const v481 = keyPath === '';
-            const v482 = keyPath + '.';
-            const v483 = v482 + key;
-            let v484;
-            if (v481) {
-                v484 = key;
+        const v476 = parentObj[key];
+        const v477 = isObject(v476);
+        if (v477) {
+            const v478 = parentObj[key];
+            const v479 = keyPath === '';
+            const v480 = keyPath + '.';
+            const v481 = v480 + key;
+            let v482;
+            if (v479) {
+                v482 = key;
             } else {
-                v484 = v483;
+                v482 = v481;
             }
-            const v485 = deepReplace(v480, cb, v484);
-            v485;
+            const v483 = deepReplace(v478, cb, v482);
+            v483;
         }
-        const v486 = keyPath === '';
-        const v487 = keyPath + '.';
-        const v488 = v487 + key;
-        let v489;
-        if (v486) {
-            v489 = key;
+        const v484 = keyPath === '';
+        const v485 = keyPath + '.';
+        const v486 = v485 + key;
+        let v487;
+        if (v484) {
+            v487 = key;
         } else {
-            v489 = v488;
+            v487 = v486;
         }
-        const v490 = parentObj[key];
-        value = cb(v489, key, v490, parentObj);
-        const v491 = !value;
-        if (v491) {
-            const v492 = parentObj[key];
-            const v493 = delete v492;
-            v493;
+        const v488 = parentObj[key];
+        value = cb(v487, key, v488, parentObj);
+        const v489 = !value;
+        if (v489) {
+            const v490 = parentObj[key];
+            const v491 = delete v490;
+            v491;
         } else {
             parentObj[key] = value;
         }
@@ -533,217 +528,217 @@ var regexIsoJson = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*))(?:
 const dateStringsToDates = function (input, useIso8601) {
     var value;
     var match;
-    const v494 = typeof input;
-    const v495 = v494 === 'string';
-    let v496;
+    const v492 = typeof input;
+    const v493 = v492 === 'string';
+    let v494;
     if (useIso8601) {
-        v496 = regexIso8601;
+        v494 = regexIso8601;
     } else {
-        v496 = regexIsoJson;
+        v494 = regexIsoJson;
     }
-    const v497 = v495 && (match = input.match(v496));
-    if (v497) {
-        const v498 = match[0];
-        var milliseconds = Date.parse(v498);
-        const v499 = isNaN(milliseconds);
-        const v500 = !v499;
-        if (v500) {
+    const v495 = v493 && (match = input.match(v494));
+    if (v495) {
+        const v496 = match[0];
+        var milliseconds = Date.parse(v496);
+        const v497 = isNaN(milliseconds);
+        const v498 = !v497;
+        if (v498) {
             input = new Date(milliseconds);
         }
         return input;
     } else {
-        const v501 = typeof input;
-        const v502 = v501 !== 'object';
-        if (v502) {
+        const v499 = typeof input;
+        const v500 = v499 !== 'object';
+        if (v500) {
             return input;
         }
     }
     let key;
     for (key in input) {
         value = input[key];
-        const v503 = typeof value;
-        const v504 = v503 === 'string';
-        let v505;
+        const v501 = typeof value;
+        const v502 = v501 === 'string';
+        let v503;
         if (useIso8601) {
-            v505 = regexIso8601;
+            v503 = regexIso8601;
         } else {
-            v505 = regexIsoJson;
+            v503 = regexIsoJson;
         }
-        const v506 = v504 && (match = value.match(v505));
-        if (v506) {
-            const v507 = match[0];
-            var milliseconds = Date.parse(v507);
-            const v508 = isNaN(milliseconds);
-            const v509 = !v508;
-            if (v509) {
+        const v504 = v502 && (match = value.match(v503));
+        if (v504) {
+            const v505 = match[0];
+            var milliseconds = Date.parse(v505);
+            const v506 = isNaN(milliseconds);
+            const v507 = !v506;
+            if (v507) {
                 input[key] = new Date(milliseconds);
             }
         } else {
-            const v510 = typeof value;
-            const v511 = v510 === 'object';
-            if (v511) {
-                const v512 = dateStringsToDates(value, useIso8601);
-                v512;
+            const v508 = typeof value;
+            const v509 = v508 === 'object';
+            if (v509) {
+                const v510 = dateStringsToDates(value, useIso8601);
+                v510;
             }
         }
     }
     return input;
 };
 const update = function (obj, expression) {
-    const v513 = isObject(expression);
-    if (v513) {
+    const v511 = isObject(expression);
+    if (v511) {
         let key;
         for (key in expression) {
-            const v514 = expression[key];
-            const v515 = isObject(v514);
-            if (v515) {
-                const v516 = key === '$set';
-                if (v516) {
-                    const v517 = expression[key];
-                    obj = update(obj, v517);
+            const v512 = expression[key];
+            const v513 = isObject(v512);
+            if (v513) {
+                const v514 = key === '$set';
+                if (v514) {
+                    const v515 = expression[key];
+                    obj = update(obj, v515);
                 } else {
-                    const v518 = key === '$inc';
-                    if (v518) {
+                    const v516 = key === '$inc';
+                    if (v516) {
                         let prop;
-                        const v519 = expression[key];
-                        for (prop in v519) {
-                            const v520 = expression[key];
-                            const v521 = v520[prop];
-                            const v522 = typeof v521;
-                            const v523 = v522 === 'number';
-                            if (v523) {
+                        const v517 = expression[key];
+                        for (prop in v517) {
+                            const v518 = expression[key];
+                            const v519 = v518[prop];
+                            const v520 = typeof v519;
+                            const v521 = v520 === 'number';
+                            if (v521) {
                                 var orig = deepGet(obj, prop);
-                                const v524 = orig === undefined;
-                                if (v524) {
-                                    const v525 = expression[key];
-                                    const v526 = v525[prop];
-                                    obj = deepSet(obj, prop, v526);
+                                const v522 = orig === undefined;
+                                if (v522) {
+                                    const v523 = expression[key];
+                                    const v524 = v523[prop];
+                                    obj = deepSet(obj, prop, v524);
                                 } else {
-                                    const v527 = typeof orig;
-                                    const v528 = v527 === 'number';
-                                    if (v528) {
-                                        const v529 = expression[key];
-                                        const v530 = v529[prop];
-                                        const v531 = orig + v530;
-                                        obj = deepSet(obj, prop, v531);
+                                    const v525 = typeof orig;
+                                    const v526 = v525 === 'number';
+                                    if (v526) {
+                                        const v527 = expression[key];
+                                        const v528 = v527[prop];
+                                        const v529 = orig + v528;
+                                        obj = deepSet(obj, prop, v529);
                                     }
                                 }
                             }
                         }
                     } else {
-                        const v532 = key === '$max';
-                        const v533 = key === '$min';
-                        const v534 = v532 || v533;
-                        if (v534) {
+                        const v530 = key === '$max';
+                        const v531 = key === '$min';
+                        const v532 = v530 || v531;
+                        if (v532) {
                             let prop;
-                            const v535 = expression[key];
-                            for (prop in v535) {
-                                const v536 = expression[key];
-                                const v537 = v536[prop];
-                                const v538 = typeof v537;
-                                const v539 = v538 === 'number';
-                                if (v539) {
+                            const v533 = expression[key];
+                            for (prop in v533) {
+                                const v534 = expression[key];
+                                const v535 = v534[prop];
+                                const v536 = typeof v535;
+                                const v537 = v536 === 'number';
+                                if (v537) {
                                     var orig = deepGet(obj, prop);
-                                    const v540 = key === '$max';
-                                    const v541 = expression[key];
-                                    const v542 = v541[prop];
-                                    const v543 = orig < v542;
-                                    const v544 = v540 && v543;
-                                    if (v544) {
-                                        const v545 = expression[key];
-                                        const v546 = v545[prop];
-                                        obj = deepSet(obj, prop, v546);
+                                    const v538 = key === '$max';
+                                    const v539 = expression[key];
+                                    const v540 = v539[prop];
+                                    const v541 = orig < v540;
+                                    const v542 = v538 && v541;
+                                    if (v542) {
+                                        const v543 = expression[key];
+                                        const v544 = v543[prop];
+                                        obj = deepSet(obj, prop, v544);
                                     } else {
-                                        const v547 = key === '$min';
-                                        const v548 = expression[key];
-                                        const v549 = v548[prop];
-                                        const v550 = orig > v549;
-                                        const v551 = v547 && v550;
-                                        if (v551) {
-                                            const v552 = expression[key];
-                                            const v553 = v552[prop];
-                                            obj = deepSet(obj, prop, v553);
+                                        const v545 = key === '$min';
+                                        const v546 = expression[key];
+                                        const v547 = v546[prop];
+                                        const v548 = orig > v547;
+                                        const v549 = v545 && v548;
+                                        if (v549) {
+                                            const v550 = expression[key];
+                                            const v551 = v550[prop];
+                                            obj = deepSet(obj, prop, v551);
                                         }
                                     }
                                 }
                             }
                         } else {
-                            const v554 = key === '$pull';
-                            const v555 = key === '$pullAll';
-                            const v556 = v554 || v555;
-                            if (v556) {
+                            const v552 = key === '$pull';
+                            const v553 = key === '$pullAll';
+                            const v554 = v552 || v553;
+                            if (v554) {
                                 let prop;
-                                const v557 = expression[key];
-                                for (prop in v557) {
+                                const v555 = expression[key];
+                                for (prop in v555) {
                                     var orig = deepGet(obj, prop);
-                                    const v558 = expression[key];
-                                    var value = v558[prop];
-                                    const v559 = Array.isArray(orig);
-                                    if (v559) {
-                                        const v560 = Array.isArray(value);
-                                        const v561 = !v560;
-                                        if (v561) {
+                                    const v556 = expression[key];
+                                    var value = v556[prop];
+                                    const v557 = Array.isArray(orig);
+                                    if (v557) {
+                                        const v558 = Array.isArray(value);
+                                        const v559 = !v558;
+                                        if (v559) {
                                             value = [value];
                                         }
                                         var i = 0;
-                                        const v562 = value.length;
-                                        let v563 = i < v562;
-                                        while (v563) {
-                                            const v565 = value[i];
-                                            var index = orig.indexOf(v565);
-                                            const v566 = -1;
-                                            const v567 = index !== v566;
-                                            if (v567) {
-                                                const v568 = orig.splice(index, 1);
-                                                v568;
+                                        const v560 = value.length;
+                                        let v561 = i < v560;
+                                        while (v561) {
+                                            const v563 = value[i];
+                                            var index = orig.indexOf(v563);
+                                            const v564 = -1;
+                                            const v565 = index !== v564;
+                                            if (v565) {
+                                                const v566 = orig.splice(index, 1);
+                                                v566;
                                             }
-                                            const v564 = i++;
-                                            v563 = i < v562;
+                                            const v562 = i++;
+                                            v561 = i < v560;
                                         }
                                         obj = deepSet(obj, prop, orig);
                                     }
                                 }
                             } else {
-                                const v569 = key === '$push';
-                                if (v569) {
+                                const v567 = key === '$push';
+                                if (v567) {
                                     let prop;
-                                    const v570 = expression[key];
-                                    for (prop in v570) {
+                                    const v568 = expression[key];
+                                    for (prop in v568) {
                                         var orig = deepGet(obj, prop);
-                                        const v571 = expression[key];
-                                        var value = v571[prop];
-                                        const v572 = value.$each;
-                                        if (v572) {
+                                        const v569 = expression[key];
+                                        var value = v569[prop];
+                                        const v570 = value.$each;
+                                        if (v570) {
                                             value = value.$each;
                                         }
-                                        const v573 = Array.isArray(orig);
-                                        if (v573) {
-                                            const v574 = Array.isArray(value);
-                                            const v575 = !v574;
-                                            if (v575) {
+                                        const v571 = Array.isArray(orig);
+                                        if (v571) {
+                                            const v572 = Array.isArray(value);
+                                            const v573 = !v572;
+                                            if (v573) {
                                                 value = [value];
                                             }
                                             var i = 0;
-                                            const v576 = value.length;
-                                            let v577 = i < v576;
-                                            while (v577) {
-                                                const v579 = value[i];
-                                                const v580 = orig.push(v579);
-                                                v580;
-                                                const v578 = i++;
-                                                v577 = i < v576;
+                                            const v574 = value.length;
+                                            let v575 = i < v574;
+                                            while (v575) {
+                                                const v577 = value[i];
+                                                const v578 = orig.push(v577);
+                                                v578;
+                                                const v576 = i++;
+                                                v575 = i < v574;
                                             }
                                             obj = deepSet(obj, prop, orig);
                                         }
                                     }
                                 } else {
-                                    const v581 = key[0];
-                                    const v582 = v581 === '$';
-                                    if (v582) {
+                                    const v579 = key[0];
+                                    const v580 = v579 === '$';
+                                    if (v580) {
                                         continue;
                                     } else {
-                                        const v583 = expression[key];
-                                        obj = deepSet(obj, key, v583);
+                                        const v581 = expression[key];
+                                        obj = deepSet(obj, key, v581);
                                     }
                                 }
                             }
@@ -751,11 +746,11 @@ const update = function (obj, expression) {
                     }
                 }
             } else {
-                const v584 = expression.$set;
-                const v585 = !v584;
-                if (v585) {
-                    const v586 = expression[key];
-                    obj = deepSet(obj, key, v586);
+                const v582 = expression.$set;
+                const v583 = !v582;
+                if (v583) {
+                    const v584 = expression[key];
+                    obj = deepSet(obj, key, v584);
                 }
             }
         }

@@ -16,5 +16,11 @@
         "vuln_type": "prototype-pollution",
         "sink": "this._gspo[i.g][i.s][i.p][i.o] = quad",
         "sink_lineno": 211
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/rdf-graph-array_0.3.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this._gspo[i.g] = this._gspo[i.g] || {}",
+        "sink_lineno": 206
     }
 ]

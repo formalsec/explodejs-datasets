@@ -1,1 +1,31 @@
-[]
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-471/deeply_3.0.0/src/reduce_object.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = recursiveMerge(target[key], source[key]);",
+        "sink_lineno": 12,
+        "source": "module.exports",
+        "tainted_params": [
+            "target",
+            "source"
+        ],
+        "params_types": {
+            "target": "object",
+            "source": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "406.reduceObject-o60",
+                "fn_id": 362,
+                "source_fn_id": 362
+            }
+        ]
+    }
+]

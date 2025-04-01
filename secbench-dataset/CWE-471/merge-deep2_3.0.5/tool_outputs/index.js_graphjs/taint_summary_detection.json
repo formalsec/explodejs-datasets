@@ -3,18 +3,18 @@
         "filename": "/datasets/secbench-dataset/CWE-471/merge-deep2_3.0.5/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.clone(oldVal);",
-        "sink_lineno": 45
+        "sink_lineno": 88
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-471/merge-deep2_3.0.5/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.union([], newVal, oldVal);",
-        "sink_lineno": 43
+        "sink_lineno": 86
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-471/merge-deep2_3.0.5/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = merge(newVal, oldVal);",
-        "sink_lineno": 41
+        "sink_lineno": 84
     }
 ]

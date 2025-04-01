@@ -8,7 +8,7 @@
     {
         "filename": "/datasets/secbench-dataset/CWE-471/nodee-utils_1.2.2/src/object.js",
         "vuln_type": "prototype-pollution",
-        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
+        "sink": "else current[parts[i]] = current[parts[i]] || {};",
         "sink_lineno": 212
     },
     {

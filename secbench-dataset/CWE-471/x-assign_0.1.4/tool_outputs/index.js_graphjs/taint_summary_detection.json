@@ -3,12 +3,12 @@
         "filename": "/datasets/secbench-dataset/CWE-471/x-assign_0.1.4/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "acc[key] = value;",
-        "sink_lineno": 34
+        "sink_lineno": 33
     },
     {
         "filename": "/datasets/secbench-dataset/CWE-471/x-assign_0.1.4/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "acc[key] =",
-        "sink_lineno": 19
+        "sink_lineno": 18
     }
 ]

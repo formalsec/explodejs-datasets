@@ -4,7 +4,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/1508/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, 'utf-8', function(error, data){",
-        "sink_lineno": 21,
+        "sink_lineno": 22,
         "source": "module.exports.parseFile",
         "tainted_params": [
             "file",
@@ -18,9 +18,9 @@
             {
                 "type": "Method",
                 "prop": "parseFile",
-                "fn_name": "467.parseFile-o63",
-                "fn_id": "384",
-                "source_fn_id": "384"
+                "fn_name": "478.parseFile-o67",
+                "fn_id": "395",
+                "source_fn_id": "395"
             }
         ]
     },
@@ -29,7 +29,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/1508/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(file, 'utf-8'))",
-        "sink_lineno": 31,
+        "sink_lineno": 32,
         "source": "module.exports.parseFileSync",
         "tainted_params": [
             "file"
@@ -41,9 +41,9 @@
             {
                 "type": "Method",
                 "prop": "parseFileSync",
-                "fn_name": "467.parseFileSync-o66",
-                "fn_id": "424",
-                "source_fn_id": "424"
+                "fn_name": "478.parseFileSync-o70",
+                "fn_id": "435",
+                "source_fn_id": "435"
             }
         ]
     }

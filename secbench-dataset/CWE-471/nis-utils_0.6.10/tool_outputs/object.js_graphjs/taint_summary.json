@@ -43,7 +43,7 @@
         "type": "VFunPropOfExportedObj",
         "filename": "/datasets/secbench-dataset/CWE-471/nis-utils_0.6.10/src/object.js",
         "vuln_type": "prototype-pollution",
-        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
+        "sink": "else current[parts[i]] = current[parts[i]] || {};",
         "sink_lineno": 168,
         "source": "module.exports.deepSet",
         "tainted_params": [

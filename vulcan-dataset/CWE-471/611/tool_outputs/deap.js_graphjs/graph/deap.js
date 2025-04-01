@@ -1,226 +1,254 @@
-var typeOf = require('./typeof');
-const v95 = Array.prototype;
-var slice = v95.slice;
-const v96 = {};
-v96.clone = deepClone;
-v96.cloneShallow = clone;
-v96.extend = deepExtend;
-v96.extendShallow = extend;
-v96.update = deepUpdate;
-v96.updateShallow = update;
-v96.merge = deepMerge;
-v96.mergeShallow = merge;
-module.exports = v96;
+const typeOf = function (obj) {
+    const v99 = typeof obj;
+    var t = v99;
+    const v100 = t !== 'object';
+    if (v100) {
+        return t;
+    }
+    const v101 = obj === null;
+    if (v101) {
+        return 'null';
+    }
+    const v102 = obj.constructor;
+    switch (v102) {
+    case Array:
+        return 'array';
+    case String:
+        return 'string';
+    case Number:
+        return 'number';
+    case Boolean:
+        return 'boolean';
+    case RegExp:
+        return 'regexp';
+    case Date:
+        return 'date';
+    }
+    return 'object';
+};
+;
+const v103 = Array.prototype;
+slice = v103.slice;
+const v104 = {};
+v104.clone = deepClone;
+v104.cloneShallow = clone;
+v104.extend = deepExtend;
+v104.extendShallow = extend;
+v104.update = deepUpdate;
+v104.updateShallow = update;
+v104.merge = deepMerge;
+v104.mergeShallow = merge;
+module.exports = v104;
 const clone = function (val) {
-    const v97 = typeOf(val);
-    switch (v97) {
+    const v105 = typeOf(val);
+    switch (v105) {
     case 'object':
         var args = slice.call(arguments);
-        const v98 = {};
-        const v99 = args.unshift(v98);
-        v99;
-        const v100 = extend.apply(null, args);
-        return v100;
+        const v106 = {};
+        const v107 = args.unshift(v106);
+        v107;
+        const v108 = extend.apply(null, args);
+        return v108;
     case 'array':
-        const v101 = [];
-        const v102 = v101.concat(val);
-        return v102;
+        const v109 = [];
+        const v110 = v109.concat(val);
+        return v110;
     case 'date':
-        const v103 = val.getTime();
-        const v104 = new Date(v103);
-        return v104;
+        const v111 = val.getTime();
+        const v112 = new Date(v111);
+        return v112;
     case 'regexp':
-        const v105 = new RegExp(val);
-        return v105;
+        const v113 = new RegExp(val);
+        return v113;
     default:
         return val;
     }
 };
 const deepClone = function (val) {
-    const v106 = typeOf(val);
-    switch (v106) {
+    const v114 = typeOf(val);
+    switch (v114) {
     case 'object':
         var args = slice.call(arguments);
-        const v107 = {};
-        const v108 = args.unshift(v107);
-        v108;
-        const v109 = deepExtend.apply(null, args);
-        return v109;
+        const v115 = {};
+        const v116 = args.unshift(v115);
+        v116;
+        const v117 = deepExtend.apply(null, args);
+        return v117;
     case 'array':
-        const v111 = function (v) {
-            const v110 = deepClone(v);
-            return v110;
+        const v119 = function (v) {
+            const v118 = deepClone(v);
+            return v118;
         };
-        const v112 = val.map(v111);
-        return v112;
+        const v120 = val.map(v119);
+        return v120;
     default:
-        const v113 = clone(val);
-        return v113;
+        const v121 = clone(val);
+        return v121;
     }
 };
 const extend = function (a, b) {
-    const v114 = slice.call(arguments, 1);
-    const v119 = function (b) {
-        const v115 = Object.keys(b);
-        const v117 = function (p) {
-            const v116 = b[p];
-            a[p] = v116;
+    const v122 = slice.call(arguments, 1);
+    const v127 = function (b) {
+        const v123 = Object.keys(b);
+        const v125 = function (p) {
+            const v124 = b[p];
+            a[p] = v124;
         };
-        const v118 = v115.forEach(v117);
-        v118;
+        const v126 = v123.forEach(v125);
+        v126;
     };
-    const v120 = v114.forEach(v119);
-    v120;
+    const v128 = v122.forEach(v127);
+    v128;
     return a;
 };
 const deepExtend = function (a, b) {
-    const v121 = slice.call(arguments, 1);
-    const v137 = function (b) {
-        const v122 = Object.keys(b);
-        const v135 = function (p) {
-            const v123 = b[p];
-            const v124 = typeOf(v123);
-            const v125 = v124 === 'object';
-            const v126 = a[p];
-            const v127 = typeOf(v126);
-            const v128 = v127 === 'object';
-            const v129 = v125 && v128;
-            if (v129) {
-                const v130 = a[p];
-                const v131 = b[p];
-                const v132 = deepExtend(v130, v131);
-                v132;
-            } else {
-                const v133 = b[p];
-                const v134 = deepClone(v133);
-                a[p] = v134;
-            }
-        };
-        const v136 = v122.forEach(v135);
-        v136;
-    };
-    const v138 = v121.forEach(v137);
-    v138;
-    return a;
-};
-const update = function (a, b) {
-    const v139 = slice.call(arguments, 1);
+    const v129 = slice.call(arguments, 1);
     const v145 = function (b) {
-        const v140 = Object.keys(b);
+        const v130 = Object.keys(b);
         const v143 = function (p) {
-            const v141 = a.hasOwnProperty(p);
-            if (v141) {
-                const v142 = b[p];
+            const v131 = b[p];
+            const v132 = typeOf(v131);
+            const v133 = v132 === 'object';
+            const v134 = a[p];
+            const v135 = typeOf(v134);
+            const v136 = v135 === 'object';
+            const v137 = v133 && v136;
+            if (v137) {
+                const v138 = a[p];
+                const v139 = b[p];
+                const v140 = deepExtend(v138, v139);
+                v140;
+            } else {
+                const v141 = b[p];
+                const v142 = deepClone(v141);
                 a[p] = v142;
             }
         };
-        const v144 = v140.forEach(v143);
+        const v144 = v130.forEach(v143);
         v144;
     };
-    const v146 = v139.forEach(v145);
+    const v146 = v129.forEach(v145);
     v146;
     return a;
 };
-const deepUpdate = function (a, b) {
+const update = function (a, b) {
     const v147 = slice.call(arguments, 1);
-    const v165 = function (b) {
+    const v153 = function (b) {
+        const v148 = Object.keys(b);
+        const v151 = function (p) {
+            const v149 = a.hasOwnProperty(p);
+            if (v149) {
+                const v150 = b[p];
+                a[p] = v150;
+            }
+        };
+        const v152 = v148.forEach(v151);
+        v152;
+    };
+    const v154 = v147.forEach(v153);
+    v154;
+    return a;
+};
+const deepUpdate = function (a, b) {
+    const v155 = slice.call(arguments, 1);
+    const v173 = function (b) {
         var ap;
         var bp;
         var ta;
         var tb;
-        const v148 = Object.keys(b);
-        const v163 = function (p) {
-            const v149 = a.hasOwnProperty(p);
-            if (v149) {
+        const v156 = Object.keys(b);
+        const v171 = function (p) {
+            const v157 = a.hasOwnProperty(p);
+            if (v157) {
                 ap = a[p];
                 bp = b[p];
                 ta = typeOf(ap);
                 tb = typeOf(bp);
-                const v150 = tb === 'object';
-                const v151 = ta === 'object';
-                const v152 = v150 && v151;
-                if (v152) {
-                    const v153 = deepUpdate(ap, bp);
-                    v153;
+                const v158 = tb === 'object';
+                const v159 = ta === 'object';
+                const v160 = v158 && v159;
+                if (v160) {
+                    const v161 = deepUpdate(ap, bp);
+                    v161;
                 } else {
-                    const v154 = tb === 'array';
-                    const v155 = ta === 'array';
-                    const v156 = v154 && v155;
-                    if (v156) {
+                    const v162 = tb === 'array';
+                    const v163 = ta === 'array';
+                    const v164 = v162 && v163;
+                    if (v164) {
                         ap.length = 0;
-                        const v157 = ap.push;
-                        const v159 = function (v) {
-                            const v158 = deepClone(v);
-                            return v158;
+                        const v165 = ap.push;
+                        const v167 = function (v) {
+                            const v166 = deepClone(v);
+                            return v166;
                         };
-                        const v160 = bp.map(v159);
-                        const v161 = v157.apply(ap, v160);
-                        v161;
+                        const v168 = bp.map(v167);
+                        const v169 = v165.apply(ap, v168);
+                        v169;
                     } else {
-                        const v162 = deepClone(bp);
-                        a[p] = v162;
+                        const v170 = deepClone(bp);
+                        a[p] = v170;
                     }
                 }
             }
         };
-        const v164 = v148.forEach(v163);
-        v164;
+        const v172 = v156.forEach(v171);
+        v172;
     };
-    const v166 = v147.forEach(v165);
-    v166;
+    const v174 = v155.forEach(v173);
+    v174;
     return a;
 };
 const merge = function (a, b) {
-    const v167 = slice.call(arguments, 1);
-    const v174 = function (b) {
-        const v168 = Object.keys(b);
-        const v172 = function (p) {
-            const v169 = a.hasOwnProperty(p);
-            const v170 = !v169;
-            if (v170) {
-                const v171 = b[p];
-                a[p] = v171;
+    const v175 = slice.call(arguments, 1);
+    const v182 = function (b) {
+        const v176 = Object.keys(b);
+        const v180 = function (p) {
+            const v177 = a.hasOwnProperty(p);
+            const v178 = !v177;
+            if (v178) {
+                const v179 = b[p];
+                a[p] = v179;
             }
         };
-        const v173 = v168.forEach(v172);
-        v173;
+        const v181 = v176.forEach(v180);
+        v181;
     };
-    const v175 = v167.forEach(v174);
-    v175;
+    const v183 = v175.forEach(v182);
+    v183;
     return a;
 };
 const deepMerge = function (a, b) {
-    const v176 = slice.call(arguments, 1);
-    const v187 = function (b) {
+    const v184 = slice.call(arguments, 1);
+    const v195 = function (b) {
         var ap;
         var bp;
         var ta;
         var tb;
-        const v177 = Object.keys(b);
-        const v185 = function (p) {
+        const v185 = Object.keys(b);
+        const v193 = function (p) {
             ap = a[p];
             bp = b[p];
             ta = typeOf(ap);
             tb = typeOf(bp);
-            const v178 = tb === 'object';
-            const v179 = ta === 'object';
-            const v180 = v178 && v179;
-            if (v180) {
-                const v181 = deepMerge(ap, bp);
-                v181;
+            const v186 = tb === 'object';
+            const v187 = ta === 'object';
+            const v188 = v186 && v187;
+            if (v188) {
+                const v189 = deepMerge(ap, bp);
+                v189;
             } else {
-                const v182 = a.hasOwnProperty(p);
-                const v183 = !v182;
-                if (v183) {
-                    const v184 = deepClone(bp);
-                    a[p] = v184;
+                const v190 = a.hasOwnProperty(p);
+                const v191 = !v190;
+                if (v191) {
+                    const v192 = deepClone(bp);
+                    a[p] = v192;
                 }
             }
         };
-        const v186 = v177.forEach(v185);
-        v186;
+        const v194 = v185.forEach(v193);
+        v194;
     };
-    const v188 = v176.forEach(v187);
-    v188;
+    const v196 = v184.forEach(v195);
+    v196;
     return a;
 };

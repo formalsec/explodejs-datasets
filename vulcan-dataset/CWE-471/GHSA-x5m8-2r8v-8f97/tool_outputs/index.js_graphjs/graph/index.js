@@ -1,156 +1,151 @@
 const isObject = function (o, allowArray) {
-    const v89 = typeof o;
-    const v90 = 'object' === v89;
-    const v91 = o && v90;
-    const v92 = Array.isArray(o);
-    const v93 = !v92;
-    const v94 = allowArray || v93;
-    const v95 = v91 && v94;
-    return v95;
+    const v84 = typeof o;
+    const v85 = 'object' === v84;
+    const v86 = o && v85;
+    const v87 = Array.isArray(o);
+    const v88 = !v87;
+    const v89 = allowArray || v88;
+    const v90 = v86 && v89;
+    return v90;
 };
 const isBasic = function (b) {
-    const v96 = typeof b;
-    const v97 = 'string' === v96;
-    const v98 = typeof b;
-    const v99 = 'number' === v98;
-    const v100 = v97 || v99;
-    return v100;
+    const v91 = typeof b;
+    const v92 = 'string' === v91;
+    const v93 = typeof b;
+    const v94 = 'number' === v93;
+    const v95 = v92 || v94;
+    return v95;
 };
 const get = function (obj, path, dft) {
-    const v101 = isObject(obj, true);
-    const v102 = !v101;
-    if (v102) {
+    const v96 = isObject(obj, true);
+    const v97 = !v96;
+    if (v97) {
         return dft;
     }
-    const v103 = isBasic(path);
-    if (v103) {
-        const v104 = obj[path];
-        return v104;
+    const v98 = isBasic(path);
+    if (v98) {
+        const v99 = obj[path];
+        return v99;
     }
     var i = 0;
-    const v105 = path.length;
-    let v106 = i < v105;
-    while (v106) {
-        const v108 = path[i];
-        const v109 = null == (obj = obj[v108]);
-        if (v109) {
+    const v100 = path.length;
+    let v101 = i < v100;
+    while (v101) {
+        const v103 = path[i];
+        const v104 = null == (obj = obj[v103]);
+        if (v104) {
             return dft;
         }
-        const v107 = i++;
-        v106 = i < v105;
+        const v102 = i++;
+        v101 = i < v100;
     }
     return obj;
 };
 const isNonNegativeInteger = function (i) {
-    const v110 = Number.isInteger(i);
-    const v111 = i >= 0;
-    const v112 = v110 && v111;
-    return v112;
+    const v105 = Number.isInteger(i);
+    const v106 = i >= 0;
+    const v107 = v105 && v106;
+    return v107;
 };
 const set = function (obj, path, value) {
-    const v113 = !obj;
-    if (v113) {
-        const v114 = new Error('libnested.set: first arg must be an object');
-        throw v114;
+    const v108 = !obj;
+    if (v108) {
+        const v109 = new Error('libnested.set: first arg must be an object');
+        throw v109;
     }
-    const v115 = isBasic(path);
-    if (v115) {
+    const v110 = isBasic(path);
+    if (v110) {
         return obj[path] = value;
     }
     var i = 0;
-    const v116 = path.length;
-    let v117 = i < v116;
-    while (v117) {
-        const v119 = path.length;
-        const v120 = v119 - 1;
-        const v121 = i === v120;
-        if (v121) {
-            const v122 = path[i];
-            obj[v122] = value;
+    const v111 = path.length;
+    let v112 = i < v111;
+    while (v112) {
+        const v114 = path.length;
+        const v115 = v114 - 1;
+        const v116 = i === v115;
+        if (v116) {
+            const v117 = path[i];
+            obj[v117] = value;
         } else {
-            const v123 = path[i];
-            const v124 = obj[v123];
-            const v125 = null == v124;
-            if (v125) {
-                const v126 = path[i];
-                const v127 = i + 1;
-                const v128 = path[v127];
-                const v129 = isNonNegativeInteger(v128);
-                const v130 = [];
-                const v131 = {};
-                let v132;
-                if (v129) {
-                    v132 = v130;
+            const v118 = path[i];
+            const v119 = obj[v118];
+            const v120 = null == v119;
+            if (v120) {
+                const v121 = path[i];
+                const v122 = i + 1;
+                const v123 = path[v122];
+                const v124 = isNonNegativeInteger(v123);
+                const v125 = [];
+                const v126 = {};
+                let v127;
+                if (v124) {
+                    v127 = v125;
                 } else {
-                    v132 = v131;
+                    v127 = v126;
                 }
-                obj.v126 = v132;
-                obj = obj[v126];
+                obj.v121 = v127;
+                obj = obj[v121];
             } else {
-                const v133 = path[i];
-                const v134 = isPrototypePolluted(v133);
-                const v135 = !v134;
-                if (v135) {
-                    const v136 = path[i];
-                    obj = obj[v136];
-                }
+                const v128 = path[i];
+                obj = obj[v128];
             }
         }
-        const v118 = i++;
-        v117 = i < v116;
+        const v113 = i++;
+        v112 = i < v111;
     }
     return value;
 };
 const each = function (obj, iter, includeArrays, path) {
-    const v137 = [];
-    path = path || v137;
-    const v138 = Array.isArray(obj);
-    if (v138) {
-        const v139 = !includeArrays;
-        if (v139) {
+    const v129 = [];
+    path = path || v129;
+    const v130 = Array.isArray(obj);
+    if (v130) {
+        const v131 = !includeArrays;
+        if (v131) {
             return false;
         }
         var k = 0;
-        const v140 = obj.length;
-        let v141 = k < v140;
-        while (v141) {
+        const v132 = obj.length;
+        let v133 = k < v132;
+        while (v133) {
             var v = obj[k];
-            const v143 = isObject(v, includeArrays);
-            if (v143) {
-                const v144 = path.concat(k);
-                const v145 = each(v, iter, includeArrays, v144);
-                const v146 = false === v145;
-                if (v146) {
+            const v135 = isObject(v, includeArrays);
+            if (v135) {
+                const v136 = path.concat(k);
+                const v137 = each(v, iter, includeArrays, v136);
+                const v138 = false === v137;
+                if (v138) {
                     return false;
                 }
             } else {
-                const v147 = path.concat(k);
-                const v148 = iter(v, v147);
-                const v149 = false === v148;
-                if (v149) {
+                const v139 = path.concat(k);
+                const v140 = iter(v, v139);
+                const v141 = false === v140;
+                if (v141) {
                     return false;
                 }
             }
-            const v142 = k++;
-            v141 = k < v140;
+            const v134 = k++;
+            v133 = k < v132;
         }
     } else {
         let k;
         for (k in obj) {
             var v = obj[k];
-            const v150 = isObject(v, includeArrays);
-            if (v150) {
-                const v151 = path.concat(k);
-                const v152 = each(v, iter, includeArrays, v151);
-                const v153 = false === v152;
-                if (v153) {
+            const v142 = isObject(v, includeArrays);
+            if (v142) {
+                const v143 = path.concat(k);
+                const v144 = each(v, iter, includeArrays, v143);
+                const v145 = false === v144;
+                if (v145) {
                     return false;
                 }
             } else {
-                const v154 = path.concat(k);
-                const v155 = iter(v, v154);
-                const v156 = false === v155;
-                if (v156) {
+                const v146 = path.concat(k);
+                const v147 = iter(v, v146);
+                const v148 = false === v147;
+                if (v148) {
                     return false;
                 }
             }
@@ -160,68 +155,59 @@ const each = function (obj, iter, includeArrays, path) {
 };
 const map = function (obj, iter, out, includeArrays) {
     let out;
-    const v157 = Array.isArray(obj);
-    const v158 = out || v157;
-    const v159 = [];
-    const v160 = {};
-    if (v158) {
-        out = v159;
+    const v149 = Array.isArray(obj);
+    const v150 = out || v149;
+    const v151 = [];
+    const v152 = {};
+    if (v150) {
+        out = v151;
     } else {
-        out = v160;
+        out = v152;
     }
-    const v163 = function (val, path) {
-        const v161 = iter(val, path);
-        const v162 = set(out, path, v161);
-        v162;
+    const v155 = function (val, path) {
+        const v153 = iter(val, path);
+        const v154 = set(out, path, v153);
+        v154;
     };
-    const v164 = each(obj, v163, includeArrays);
-    v164;
+    const v156 = each(obj, v155, includeArrays);
+    v156;
     return out;
 };
 const paths = function (obj, incluedArrays) {
     var out = [];
-    const v166 = function (_, path) {
-        const v165 = out.push(path);
-        v165;
+    const v158 = function (_, path) {
+        const v157 = out.push(path);
+        v157;
     };
-    const v167 = each(obj, v166, incluedArrays);
-    v167;
+    const v159 = each(obj, v158, incluedArrays);
+    v159;
     return out;
 };
 const id = function (e) {
     return e;
 };
 const clone = function (obj) {
-    const v168 = isObject(obj, true);
-    const v169 = !v168;
-    if (v169) {
+    const v160 = isObject(obj, true);
+    const v161 = !v160;
+    if (v161) {
         return obj;
     }
     var _obj;
-    const v170 = Array.isArray(obj);
-    const v171 = [];
-    const v172 = {};
-    if (v170) {
-        _obj = v171;
+    const v162 = Array.isArray(obj);
+    const v163 = [];
+    const v164 = {};
+    if (v162) {
+        _obj = v163;
     } else {
-        _obj = v172;
+        _obj = v164;
     }
     let k;
     for (k in obj) {
-        const v173 = obj[k];
-        const v174 = clone(v173);
-        _obj[k] = v174;
+        const v165 = obj[k];
+        const v166 = clone(v165);
+        _obj[k] = v166;
     }
     return _obj;
-};
-const isPrototypePolluted = function (key) {
-    const v175 = [
-        '__proto__',
-        'constructor',
-        'prototype'
-    ];
-    const v176 = v175.includes(key);
-    return v176;
 };
 exports.get = get;
 exports.set = set;

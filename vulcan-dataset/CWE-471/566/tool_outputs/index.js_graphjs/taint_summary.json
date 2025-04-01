@@ -15,7 +15,10 @@
             "source": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },
@@ -33,9 +36,9 @@
             {
                 "type": "Method",
                 "prop": "transform",
-                "fn_name": "11056.v1279-o1390",
-                "fn_id": "10536",
-                "source_fn_id": "10536"
+                "fn_name": "11033.v1275-o1388",
+                "fn_id": "10513",
+                "source_fn_id": "10513"
             }
         ]
     },
@@ -63,9 +66,9 @@
             {
                 "type": "Method",
                 "prop": "clone",
-                "fn_name": "11056.v679-o1174",
-                "fn_id": "6247",
-                "source_fn_id": "6247"
+                "fn_name": "11033.v677-o1172",
+                "fn_id": "6234",
+                "source_fn_id": "6234"
             }
         ]
     },
@@ -97,9 +100,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "11056.v732-o1182",
-                "fn_id": "6505",
-                "source_fn_id": "6505"
+                "fn_name": "11033.v728-o1180",
+                "fn_id": "6492",
+                "source_fn_id": "6492"
             }
         ]
     },
@@ -131,9 +134,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "11056.v732-o1182",
-                "fn_id": "6505",
-                "source_fn_id": "6505"
+                "fn_name": "11033.v728-o1180",
+                "fn_id": "6492",
+                "source_fn_id": "6492"
             }
         ]
     },
@@ -155,7 +158,10 @@
             "source": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },
@@ -166,9 +172,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "11056.v732-o1182",
-                "fn_id": "6505",
-                "source_fn_id": "6505"
+                "fn_name": "11033.v728-o1180",
+                "fn_id": "6492",
+                "source_fn_id": "6492"
             }
         ]
     }

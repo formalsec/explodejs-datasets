@@ -30,9 +30,7 @@
         "returns": {
             "source": ".all",
             "params_types": {
-                "objects": [
-                    "any"
-                ],
+                "objects": "array",
                 "options": "array"
             },
             "tainted_params": [

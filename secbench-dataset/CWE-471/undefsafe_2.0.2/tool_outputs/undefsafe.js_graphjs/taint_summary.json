@@ -19,7 +19,10 @@
             "__res": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             }
@@ -27,9 +30,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1093.undefsafe-o103",
-                "fn_id": "612",
-                "source_fn_id": "612"
+                "fn_name": "1071.undefsafe-o102",
+                "fn_id": "600",
+                "source_fn_id": "600"
             }
         ]
     }

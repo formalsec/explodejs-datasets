@@ -1,1 +1,29 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-471/deephas_1.0.5/src/deepHas.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "test[last] = val;",
+        "sink_lineno": 65,
+        "source": "module.exports.set",
+        "tainted_params": [
+            "target",
+            "path",
+            "val"
+        ],
+        "params_types": {
+            "target": "any",
+            "path": "any",
+            "val": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "865.set-o106",
+                "fn_id": 817,
+                "source_fn_id": 817
+            }
+        ]
+    }
+]

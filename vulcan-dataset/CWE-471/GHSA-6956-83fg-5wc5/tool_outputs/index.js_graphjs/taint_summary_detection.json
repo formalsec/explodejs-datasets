@@ -3,6 +3,6 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-6956-83fg-5wc5/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = value",
-        "sink_lineno": 50
+        "sink_lineno": 30
     }
 ]

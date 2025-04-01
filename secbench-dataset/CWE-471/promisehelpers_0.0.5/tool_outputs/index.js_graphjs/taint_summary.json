@@ -4,14 +4,19 @@
         "filename": "/datasets/secbench-dataset/CWE-471/promisehelpers_0.0.5/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "nestedObject[key] = value;",
-        "sink_lineno": 20,
+        "sink_lineno": 19,
         "source": "module.exports.insert",
         "tainted_params": [
             "key",
             "value"
         ],
         "params_types": {
-            "key": "string",
+            "key": {
+                "_union": [
+                    "array",
+                    "string"
+                ]
+            },
             "value": "any"
         },
         "returns": {
@@ -32,15 +37,15 @@
             {
                 "type": "Method",
                 "prop": "insert",
-                "fn_name": "535.v45-o99",
-                "fn_id": "471",
-                "source_fn_id": "471"
+                "fn_name": "528.v45-o95",
+                "fn_id": "462",
+                "source_fn_id": "462"
             },
             {
                 "type": "Call",
-                "fn_name": "550.v44-o138",
-                "fn_id": 475,
-                "source_fn_id": "471"
+                "fn_name": "543.v44-o134",
+                "fn_id": 466,
+                "source_fn_id": "462"
             }
         ]
     }

@@ -9,23 +9,19 @@
         "tainted_params": [
             "obj",
             "path",
-            "value",
-            "delimiter"
+            "value"
         ],
         "params_types": {
             "obj": "object",
-            "path": [
-                "any"
-            ],
-            "value": "any",
-            "delimiter": "any"
+            "path": "array",
+            "value": "any"
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "323.setPath-o40",
-                "fn_id": "186",
-                "source_fn_id": "186"
+                "fn_name": "311.setPath-o37",
+                "fn_id": "179",
+                "source_fn_id": "179"
             }
         ]
     }

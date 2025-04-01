@@ -1,313 +1,293 @@
-;
-const v271 = function (root) {
-    var isObject = function isObject(obj) {
-        const v137 = typeof obj;
-        const v138 = v137 === 'function';
-        const v139 = typeof obj;
-        const v140 = v139 === 'object';
-        const v141 = !obj;
-        const v142 = !v141;
-        const v143 = v140 && v142;
-        const v144 = v138 || v143;
-        return v144;
-    };
-    var isArray = function isArray(arr) {
-        const v145 = Array.isArray;
-        const v146 = Array.isArray(arr);
-        const v147 = arr instanceof Array;
-        const v148 = arr.constructor;
-        const v149 = arr && v148;
-        const v150 = arr.constructor;
-        const v151 = v150.name;
-        const v152 = v151 === 'Array';
-        const v153 = v149 && v152;
-        const v154 = v147 || v153;
-        let v155;
-        if (v145) {
-            v155 = v146;
-        } else {
-            v155 = v154;
+var isObject = function isObject(obj) {
+    const v127 = typeof obj;
+    const v128 = v127 === 'function';
+    const v129 = typeof obj;
+    const v130 = v129 === 'object';
+    const v131 = !obj;
+    const v132 = !v131;
+    const v133 = v130 && v132;
+    const v134 = v128 || v133;
+    return v134;
+};
+var isArray = function isArray(arr) {
+    const v135 = Array.isArray;
+    const v136 = Array.isArray(arr);
+    const v137 = arr instanceof Array;
+    const v138 = arr.constructor;
+    const v139 = arr && v138;
+    const v140 = arr.constructor;
+    const v141 = v140.name;
+    const v142 = v141 === 'Array';
+    const v143 = v139 && v142;
+    const v144 = v137 || v143;
+    let v145;
+    if (v135) {
+        v145 = v136;
+    } else {
+        v145 = v144;
+    }
+    return v145;
+};
+var any = function any(list, func) {
+    var i;
+    var l = list.length;
+    (i = 0)
+    let v146 = i < l;
+    while (v146) {
+        const v148 = list[i];
+        const v149 = func(v148);
+        if (v149) {
+            return true;
         }
-        return v155;
-    };
-    var any = function any(list, func) {
-        var i;
-        var l = list.length;
-        (i = 0)
-        let v156 = i < l;
-        while (v156) {
-            const v158 = list[i];
-            const v159 = func(v158);
-            if (v159) {
-                return true;
-            }
-            const v157 = i++;
-            v156 = i < l;
+        const v147 = i++;
+        v146 = i < l;
+    }
+    return false;
+};
+var every = function every(list, func) {
+    var i;
+    var l = list.length;
+    (i = 0)
+    let v150 = i < l;
+    while (v150) {
+        const v152 = list[i];
+        const v153 = func(v152);
+        const v154 = !v153;
+        if (v154) {
+            return false;
         }
+        const v151 = i++;
+        v150 = i < l;
+    }
+    return true;
+};
+var isEqual = function isEqual(a, b) {
+    const v155 = a === b;
+    if (v155) {
+        return true;
+    }
+    const v156 = typeof a;
+    const v157 = typeof b;
+    const v158 = v156 !== v157;
+    if (v158) {
         return false;
-    };
-    var every = function every(list, func) {
-        var i;
-        var l = list.length;
-        (i = 0)
-        let v160 = i < l;
-        while (v160) {
-            const v162 = list[i];
-            const v163 = func(v162);
-            const v164 = !v163;
+    }
+    const v159 = typeof a;
+    const v160 = v159 === 'object';
+    if (v160) {
+        const v161 = a instanceof Array;
+        if (v161) {
+            const v162 = a.length;
+            const v163 = b.length;
+            const v164 = v162 !== v163;
             if (v164) {
                 return false;
             }
-            const v161 = i++;
-            v160 = i < l;
-        }
-        return true;
-    };
-    var isEqual = function isEqual(a, b) {
-        const v165 = a === b;
-        if (v165) {
-            return true;
-        }
-        const v166 = typeof a;
-        const v167 = typeof b;
-        const v168 = v166 !== v167;
-        if (v168) {
-            return false;
-        }
-        const v169 = typeof a;
-        const v170 = v169 === 'object';
-        if (v170) {
-            const v171 = a instanceof Array;
-            if (v171) {
-                const v172 = a.length;
-                const v173 = b.length;
-                const v174 = v172 !== v173;
-                if (v174) {
+            var i;
+            var l = a.length;
+            i = 0
+            let v165 = i < l;
+            while (v165) {
+                const v167 = a[i];
+                const v168 = b[i];
+                const v169 = isEqual(v167, v168);
+                const v170 = !v169;
+                if (v170) {
                     return false;
                 }
-                var i;
-                var l = a.length;
-                i = 0
-                let v175 = i < l;
-                while (v175) {
-                    const v177 = a[i];
-                    const v178 = b[i];
-                    const v179 = isEqual(v177, v178);
-                    const v180 = !v179;
-                    if (v180) {
-                        return false;
-                    }
-                    const v176 = i++;
-                    v175 = i < l;
-                }
-                return true;
-            } else {
-                let k;
-                for (k in a) {
-                    const v181 = k in b;
-                    const v182 = !v181;
-                    const v183 = a[k];
-                    const v184 = b[k];
-                    const v185 = isEqual(v183, v184);
-                    const v186 = !v185;
-                    const v187 = v182 || v186;
-                    if (v187) {
-                        return false;
-                    }
-                }
-                return true;
+                const v166 = i++;
+                v165 = i < l;
             }
+            return true;
         } else {
-            return false;
-        }
-    };
-    var anyOrAll = function anyOrAll(method, _args) {
-        var paths = [];
-        var obj = {};
-        const v188 = [];
-        const v189 = v188.slice;
-        var args = v189.call(_args);
-        const v190 = args[1];
-        const v191 = isArray(v190);
-        if (v191) {
-            obj = args[0];
-            paths = args[1];
-        } else {
-            paths = args;
-            obj = paths.shift();
-        }
-        const v192 = isObject(obj);
-        if (v192) {
-            const v194 = function (path) {
-                const v193 = _safe.safe(obj, path);
-                return v193;
-            };
-            const v195 = method(paths, v194);
-            return v195;
-        } else {
-            return false;
-        }
-    };
-    const v219 = function (obj, path, otherwise) {
-        const v196 = !path;
-        if (v196) {
-            return otherwise;
-        }
-        const v197 = isObject(obj);
-        const v198 = {};
-        if (v197) {
-            obj = obj;
-        } else {
-            obj = v198;
-        }
-        var props = path.split('.');
-        const v199 = props.length;
-        const v200 = v199 === 1;
-        if (v200) {
-            const v201 = props[0];
-            const v202 = obj[v201];
-            const v203 = typeof v202;
-            const v204 = v203 === 'undefined';
-            if (v204) {
-                return otherwise;
-            } else {
-                const v205 = props[0];
-                const v206 = obj[v205];
-                const v207 = v206 === null;
-                if (v207) {
-                    const v208 = typeof otherwise;
-                    const v209 = v208 === 'undefined';
-                    let v210;
-                    if (v209) {
-                        v210 = null;
-                    } else {
-                        v210 = otherwise;
-                    }
-                    return v210;
-                } else {
-                    const v211 = props.shift();
-                    const v212 = obj[v211];
-                    return v212;
+            let k;
+            for (k in a) {
+                const v171 = k in b;
+                const v172 = !v171;
+                const v173 = a[k];
+                const v174 = b[k];
+                const v175 = isEqual(v173, v174);
+                const v176 = !v175;
+                const v177 = v172 || v176;
+                if (v177) {
+                    return false;
                 }
             }
-        } else {
-            var prop = props.shift();
-            const v213 = obj[prop];
-            const v214 = isObject(v213);
-            const v215 = obj[prop];
-            const v216 = props.join('.');
-            const v217 = _safe.safe(v215, v216, otherwise);
-            let v218;
-            if (v214) {
-                v218 = v217;
-            } else {
-                v218 = otherwise;
-            }
-            return v218;
+            return true;
         }
-    };
-    const v237 = function (obj, path, thing) {
-        const v220 = !path;
-        const v221 = typeof thing;
-        const v222 = v221 === 'undefined';
-        const v223 = v220 || v222;
-        if (v223) {
-            return;
-        }
-        const v224 = isObject(obj);
-        const v225 = obj !== null;
-        const v226 = v224 && v225;
-        const v227 = {};
-        if (v226) {
-            obj = obj;
-        } else {
-            obj = v227;
-        }
-        var props = path.split('.');
-        const v228 = props.length;
-        const v229 = v228 === 1;
-        if (v229) {
-            const v230 = props.shift();
-            obj[v230] = thing;
-        } else {
-            var prop = props.shift();
-            const v231 = prop in obj;
-            const v232 = !v231;
-            if (v232) {
-                const v233 = {};
-                obj[prop] = v233;
-            }
-            const v234 = obj[prop];
-            const v235 = props.join('.');
-            const v236 = _safe.expand(v234, v235, thing);
-            v236;
-        }
-    };
-    const v249 = function (obj, path, disallowed, otherwise) {
-        const v238 = arguments.length;
-        const v239 = v238 === 3;
-        if (v239) {
-            otherwise = disallowed;
-            disallowed = [];
-        }
-        var current = _safe.safe(obj, path);
-        const v240 = typeof current;
-        const v241 = v240 === 'undefined';
-        const v242 = current === null;
-        const v243 = v241 || v242;
-        const v245 = function (item) {
-            const v244 = isEqual(current, item);
-            return v244;
-        };
-        const v246 = any(disallowed, v245);
-        const v247 = v243 || v246;
-        if (v247) {
-            const v248 = _safe.expand(obj, path, otherwise);
-            v248;
-        }
-    };
-    const v253 = function () {
-        const v250 = [every];
-        const v251 = v250.concat(arguments);
-        const v252 = anyOrAll.apply(null, v251);
-        return v252;
-    };
-    const v257 = function () {
-        const v254 = [any];
-        const v255 = v254.concat(arguments);
-        const v256 = anyOrAll.apply(null, v255);
-        return v256;
-    };
-    const v261 = function () {
-        const v258 = _safe.anyOf;
-        const v259 = v258.apply(null, arguments);
-        const v260 = !v259;
-        return v260;
-    };
-    var _safe = {};
-    _safe.safe = v219;
-    _safe.expand = v237;
-    _safe.ensure = v249;
-    _safe.allOf = v253;
-    _safe.anyOf = v257;
-    _safe.noneOf = v261;
-    const v262 = typeof exports;
-    const v263 = v262 !== 'undefined';
-    if (v263) {
-        const v264 = typeof module;
-        const v265 = v264 !== 'undefined';
-        const v266 = module.exports;
-        const v267 = v265 && v266;
-        if (v267) {
-            module.exports = _safe;
-        }
-        exports._safe = _safe;
+    } else {
+        return false;
     }
-    const v268 = root._;
-    const v269 = {};
-    root._ = v268 || v269;
-    const v270 = root._;
-    v270._safe = _safe;
 };
-const v272 = v271(this);
-v272;
+var anyOrAll = function anyOrAll(method, _args) {
+    var paths = [];
+    var obj = {};
+    const v178 = [];
+    const v179 = v178.slice;
+    var args = v179.call(_args);
+    const v180 = args[1];
+    const v181 = isArray(v180);
+    if (v181) {
+        obj = args[0];
+        paths = args[1];
+    } else {
+        paths = args;
+        obj = paths.shift();
+    }
+    const v182 = isObject(obj);
+    if (v182) {
+        const v184 = function (path) {
+            const v183 = _safe.safe(obj, path);
+            return v183;
+        };
+        const v185 = method(paths, v184);
+        return v185;
+    } else {
+        return false;
+    }
+};
+const v209 = function (obj, path, otherwise) {
+    const v186 = !path;
+    if (v186) {
+        return otherwise;
+    }
+    const v187 = isObject(obj);
+    const v188 = {};
+    if (v187) {
+        obj = obj;
+    } else {
+        obj = v188;
+    }
+    var props = path.split('.');
+    const v189 = props.length;
+    const v190 = v189 === 1;
+    if (v190) {
+        const v191 = props[0];
+        const v192 = obj[v191];
+        const v193 = typeof v192;
+        const v194 = v193 === 'undefined';
+        if (v194) {
+            return otherwise;
+        } else {
+            const v195 = props[0];
+            const v196 = obj[v195];
+            const v197 = v196 === null;
+            if (v197) {
+                const v198 = typeof otherwise;
+                const v199 = v198 === 'undefined';
+                let v200;
+                if (v199) {
+                    v200 = null;
+                } else {
+                    v200 = otherwise;
+                }
+                return v200;
+            } else {
+                const v201 = props.shift();
+                const v202 = obj[v201];
+                return v202;
+            }
+        }
+    } else {
+        var prop = props.shift();
+        const v203 = obj[prop];
+        const v204 = isObject(v203);
+        const v205 = obj[prop];
+        const v206 = props.join('.');
+        const v207 = _safe.safe(v205, v206, otherwise);
+        let v208;
+        if (v204) {
+            v208 = v207;
+        } else {
+            v208 = otherwise;
+        }
+        return v208;
+    }
+};
+const v227 = function (obj, path, thing) {
+    const v210 = !path;
+    const v211 = typeof thing;
+    const v212 = v211 === 'undefined';
+    const v213 = v210 || v212;
+    if (v213) {
+        return;
+    }
+    const v214 = isObject(obj);
+    const v215 = obj !== null;
+    const v216 = v214 && v215;
+    const v217 = {};
+    if (v216) {
+        obj = obj;
+    } else {
+        obj = v217;
+    }
+    var props = path.split('.');
+    const v218 = props.length;
+    const v219 = v218 === 1;
+    if (v219) {
+        const v220 = props.shift();
+        obj[v220] = thing;
+    } else {
+        var prop = props.shift();
+        const v221 = prop in obj;
+        const v222 = !v221;
+        if (v222) {
+            const v223 = {};
+            obj[prop] = v223;
+        }
+        const v224 = obj[prop];
+        const v225 = props.join('.');
+        const v226 = _safe.expand(v224, v225, thing);
+        v226;
+    }
+};
+const v239 = function (obj, path, disallowed, otherwise) {
+    const v228 = arguments.length;
+    const v229 = v228 === 3;
+    if (v229) {
+        otherwise = disallowed;
+        disallowed = [];
+    }
+    var current = _safe.safe(obj, path);
+    const v230 = typeof current;
+    const v231 = v230 === 'undefined';
+    const v232 = current === null;
+    const v233 = v231 || v232;
+    const v235 = function (item) {
+        const v234 = isEqual(current, item);
+        return v234;
+    };
+    const v236 = any(disallowed, v235);
+    const v237 = v233 || v236;
+    if (v237) {
+        const v238 = _safe.expand(obj, path, otherwise);
+        v238;
+    }
+};
+const v243 = function () {
+    const v240 = [every];
+    const v241 = v240.concat(arguments);
+    const v242 = anyOrAll.apply(null, v241);
+    return v242;
+};
+const v247 = function () {
+    const v244 = [any];
+    const v245 = v244.concat(arguments);
+    const v246 = anyOrAll.apply(null, v245);
+    return v246;
+};
+const v251 = function () {
+    const v248 = _safe.anyOf;
+    const v249 = v248.apply(null, arguments);
+    const v250 = !v249;
+    return v250;
+};
+var _safe = {};
+_safe.safe = v209;
+_safe.expand = v227;
+_safe.ensure = v239;
+_safe.allOf = v243;
+_safe.anyOf = v247;
+_safe.noneOf = v251;
+const v252 = _safe.expand;
+module.exports = v252;

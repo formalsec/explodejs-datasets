@@ -380,3 +380,4 @@ const v298 = function (v) {
     return v297;
 };
 exports.isArgumentsObject = v298;
+module.exports = exports;

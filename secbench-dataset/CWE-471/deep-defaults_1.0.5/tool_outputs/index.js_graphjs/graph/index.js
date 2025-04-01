@@ -1,32 +1,50 @@
 'use strict';
-var _ = require('lodash');
+const isUndefined = function (value) {
+    const v22 = value === undefined;
+    return v22;
+};
+const isObject = function (val) {
+    const v23 = val !== null;
+    const v24 = typeof val;
+    const v25 = v24 === 'object';
+    const v26 = v23 && v25;
+    const v27 = Array.isArray(val);
+    const v28 = !v27;
+    const v29 = v26 && v28;
+    return v29;
+};
+const each = function (obj, iteratee) {
+    let key;
+    for (key in obj) {
+        const v30 = obj[key];
+        const v31 = iteratee(v30, key);
+        v31;
+    }
+};
 const _deepDefaults = function (dest, src) {
-    const v14 = _.isUndefined(dest);
-    const v15 = _.isNull(dest);
-    const v16 = v14 || v15;
-    const v17 = _.isPlainObject(dest);
-    const v18 = !v17;
-    const v19 = v16 || v18;
-    if (v19) {
+    const v32 = isUndefined(dest);
+    const v33 = isObject(dest);
+    const v34 = !v33;
+    const v35 = v32 || v34;
+    if (v35) {
         return dest;
     }
-    const v25 = function (v, k) {
-        const v20 = dest[k];
-        const v21 = _.isUndefined(v20);
-        if (v21) {
+    const v41 = function (v, k) {
+        const v36 = dest[k];
+        const v37 = isUndefined(v36);
+        if (v37) {
             dest[k] = v;
         } else {
-            const v22 = _.isPlainObject(v);
-            if (v22) {
-                const v23 = dest[k];
-                const v24 = _deepDefaults(v23, v);
-                v24;
+            const v38 = isObject(v);
+            if (v38) {
+                const v39 = dest[k];
+                const v40 = _deepDefaults(v39, v);
+                v40;
             }
         }
     };
-    const v26 = _.each(src, v25);
-    v26;
+    const v42 = each(src, v41);
+    v42;
     return dest;
 };
 module.exports = _deepDefaults;
-exports = module.exports;

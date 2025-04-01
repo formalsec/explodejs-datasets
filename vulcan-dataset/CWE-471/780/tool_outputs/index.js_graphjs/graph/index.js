@@ -1,4 +1,3 @@
-module.exports = extend;
 const extend = function () {
     const v31 = [];
     const v32 = v31.slice;
@@ -68,3 +67,4 @@ const isCloneable = function (obj) {
     const v60 = v55 || v59;
     return v60;
 };
+module.exports = extend;

@@ -16,5 +16,11 @@
         "vuln_type": "prototype-pollution",
         "sink": "this.cache[this.locale][key] = obj[key]",
         "sink_lineno": 156
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/y18n_3.2.1/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.cache[this.locale] = localeLookup",
+        "sink_lineno": 82
     }
 ]

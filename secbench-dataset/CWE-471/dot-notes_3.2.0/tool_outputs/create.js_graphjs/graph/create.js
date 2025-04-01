@@ -1,50 +1,53 @@
-var parse = require('./keys');
+var parse = function (x) {
+    const v20 = x.split('.');
+    return v20;
+};
 const create = function (obj, str, val) {
     var keys = parse(str);
     var container;
-    const v19 = typeof obj;
-    const v20 = v19 === 'object';
-    const v21 = obj && v20;
-    if (v21) {
+    const v21 = typeof obj;
+    const v22 = v21 === 'object';
+    const v23 = obj && v22;
+    if (v23) {
         container = obj;
     } else {
-        const v22 = keys[0];
-        container = typed(v22);
+        const v24 = keys[0];
+        container = typed(v24);
     }
     var tmp = container;
-    const v23 = keys.length;
-    var last = v23 - 1;
+    const v25 = keys.length;
+    var last = v25 - 1;
     var k = 0;
-    let v24 = k < last;
-    while (v24) {
+    let v26 = k < last;
+    while (v26) {
         var key = keys[k];
-        const v26 = tmp[key];
-        const v27 = !v26;
-        if (v27) {
-            const v28 = k + 1;
-            const v29 = keys[v28];
-            const v30 = typed(v29);
-            tmp[key] = v30;
+        const v28 = tmp[key];
+        const v29 = !v28;
+        if (v29) {
+            const v30 = k + 1;
+            const v31 = keys[v30];
+            const v32 = typed(v31);
+            tmp[key] = v32;
         }
         tmp = tmp[key];
-        const v25 = k++;
-        v24 = k < last;
+        const v27 = k++;
+        v26 = k < last;
     }
-    const v31 = keys[last];
-    tmp[v31] = val;
+    const v33 = keys[last];
+    tmp[v33] = val;
     return container;
 };
 const typed = function (key) {
-    const v32 = typeof key;
-    const v33 = v32 === 'number';
-    const v34 = [];
-    const v35 = {};
-    let v36;
-    if (v33) {
-        v36 = v34;
+    const v34 = typeof key;
+    const v35 = v34 === 'number';
+    const v36 = [];
+    const v37 = {};
+    let v38;
+    if (v35) {
+        v38 = v36;
     } else {
-        v36 = v35;
+        v38 = v37;
     }
-    return v36;
+    return v38;
 };
 module.exports = create;

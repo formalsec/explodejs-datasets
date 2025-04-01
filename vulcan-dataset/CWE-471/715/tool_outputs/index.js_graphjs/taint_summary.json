@@ -15,7 +15,7 @@
         "returns": {
             "source": ".recursive",
             "params_types": {
-                "host": "any"
+                "host": "object"
             },
             "tainted_params": [
                 "host"
@@ -59,7 +59,7 @@
         "vuln_type": "prototype-pollution",
         "sink": "host[key] = donor[key];",
         "sink_lineno": 66,
-        "source": "new module.exports",
+        "source": "new module.exports.recursive",
         "tainted_params": [
             "host"
         ],
@@ -70,7 +70,7 @@
             "source": ".recursive",
             "params_types": {
                 "keys": "array",
-                "host": "any"
+                "host": "object"
             },
             "tainted_params": [
                 "keys",
@@ -89,7 +89,7 @@
         "call_paths": [
             {
                 "type": "New",
-                "prop": null,
+                "prop": "recursive",
                 "fn_name": "965.v74-o161",
                 "fn_id": "571",
                 "source_fn_id": "571"

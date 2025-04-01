@@ -15,14 +15,20 @@
             "topObj": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },
             "fields": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },
@@ -54,14 +60,20 @@
             "topObj": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },
             "fields": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },

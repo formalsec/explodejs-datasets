@@ -5,7 +5,7 @@
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, function fileReadCb(err, data) {",
         "sink_lineno": 83,
-        "source": "new module.exports",
+        "source": "new module.exports.IniReaderCore",
         "tainted_params": [
             "cfg",
             "async"
@@ -26,7 +26,7 @@
         "call_paths": [
             {
                 "type": "New",
-                "prop": null,
+                "prop": "IniReaderCore",
                 "fn_name": "4591.v301-o551",
                 "fn_id": "3001",
                 "source_fn_id": "3001"
@@ -46,7 +46,7 @@
         "vuln_type": "path-traversal",
         "sink": "data = fs.readFileSync(file);",
         "sink_lineno": 91,
-        "source": "new module.exports",
+        "source": "new module.exports.IniReaderCore",
         "tainted_params": [
             "cfg",
             "async"
@@ -67,7 +67,7 @@
         "call_paths": [
             {
                 "type": "New",
-                "prop": null,
+                "prop": "IniReaderCore",
                 "fn_name": "4591.v301-o551",
                 "fn_id": "3001",
                 "source_fn_id": "3001"
@@ -87,7 +87,7 @@
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(file, output, function writeFile(err) {",
         "sink_lineno": 508,
-        "source": "new module.exports",
+        "source": "new module.exports.IniReaderCore",
         "tainted_params": [
             "cfg",
             "async"
@@ -115,7 +115,7 @@
         "call_paths": [
             {
                 "type": "New",
-                "prop": null,
+                "prop": "IniReaderCore",
                 "fn_name": "4591.v403-o611",
                 "fn_id": "3001",
                 "source_fn_id": "3001"
@@ -135,7 +135,7 @@
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(file, output);",
         "sink_lineno": 516,
-        "source": "new module.exports",
+        "source": "new module.exports.IniReaderCore",
         "tainted_params": [
             "cfg",
             "async"
@@ -163,7 +163,7 @@
         "call_paths": [
             {
                 "type": "New",
-                "prop": null,
+                "prop": "IniReaderCore",
                 "fn_name": "4591.v403-o611",
                 "fn_id": "3001",
                 "source_fn_id": "3001"

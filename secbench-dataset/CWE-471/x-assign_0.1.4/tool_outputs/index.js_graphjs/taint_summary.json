@@ -1,11 +1,11 @@
 [
     {
-        "type": "VFunPropOfExportedObj",
+        "type": "VFunExported",
         "filename": "/datasets/secbench-dataset/CWE-471/x-assign_0.1.4/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "acc[key] = value;",
-        "sink_lineno": 34,
-        "source": "module.exports.assign",
+        "sink_lineno": 33,
+        "source": "module.exports",
         "tainted_params": [
             "undefined"
         ],
@@ -14,21 +14,20 @@
         },
         "call_paths": [
             {
-                "type": "Method",
-                "prop": "assign",
-                "fn_name": "566.v66-o64",
-                "fn_id": 325,
-                "source_fn_id": 325
+                "type": "Call",
+                "fn_name": "547.assign-o61",
+                "fn_id": 314,
+                "source_fn_id": 314
             }
         ]
     },
     {
-        "type": "VFunPropOfExportedObj",
+        "type": "VFunExported",
         "filename": "/datasets/secbench-dataset/CWE-471/x-assign_0.1.4/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "acc[key] =",
-        "sink_lineno": 19,
-        "source": "module.exports.assign",
+        "sink_lineno": 18,
+        "source": "module.exports",
         "tainted_params": [
             "undefined"
         ],
@@ -37,11 +36,10 @@
         },
         "call_paths": [
             {
-                "type": "Method",
-                "prop": "assign",
-                "fn_name": "566.v66-o64",
-                "fn_id": 325,
-                "source_fn_id": 325
+                "type": "Call",
+                "fn_name": "547.assign-o61",
+                "fn_id": 314,
+                "source_fn_id": 314
             }
         ]
     }

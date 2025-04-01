@@ -19,9 +19,7 @@
                     "array"
                 ]
             },
-            "path": [
-                "any"
-            ],
+            "path": "array",
             "val": {
                 "_union": [
                     "function",

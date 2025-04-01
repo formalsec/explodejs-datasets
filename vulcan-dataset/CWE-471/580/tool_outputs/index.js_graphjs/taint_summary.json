@@ -4,22 +4,29 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/580/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.clone(oldVal);",
-        "sink_lineno": 45,
+        "sink_lineno": 86,
         "source": "module.exports",
         "tainted_params": [
             "orig",
-            "objects"
+            "objects",
+            "obj"
         ],
         "params_types": {
             "orig": "array",
-            "objects": "any"
+            "objects": "any",
+            "obj": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "546.mergeDeep-o75",
-                "fn_id": 323,
-                "source_fn_id": 323
+                "fn_name": "1020.mergeDeep-o140",
+                "fn_id": 797,
+                "source_fn_id": 797
             }
         ]
     },
@@ -28,22 +35,29 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/580/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = utils.union([], newVal, oldVal);",
-        "sink_lineno": 43,
+        "sink_lineno": 84,
         "source": "module.exports",
         "tainted_params": [
             "orig",
-            "objects"
+            "objects",
+            "obj"
         ],
         "params_types": {
             "orig": "array",
-            "objects": "any"
+            "objects": "any",
+            "obj": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "546.mergeDeep-o75",
-                "fn_id": 323,
-                "source_fn_id": 323
+                "fn_name": "1020.mergeDeep-o140",
+                "fn_id": 797,
+                "source_fn_id": 797
             }
         ]
     },
@@ -52,22 +66,29 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/580/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = merge(newVal, oldVal);",
-        "sink_lineno": 41,
+        "sink_lineno": 82,
         "source": "module.exports",
         "tainted_params": [
             "orig",
-            "objects"
+            "objects",
+            "obj"
         ],
         "params_types": {
             "orig": "array",
-            "objects": "any"
+            "objects": "any",
+            "obj": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "546.mergeDeep-o75",
-                "fn_id": 323,
-                "source_fn_id": 323
+                "fn_name": "1020.mergeDeep-o140",
+                "fn_id": 797,
+                "source_fn_id": 797
             }
         ]
     }

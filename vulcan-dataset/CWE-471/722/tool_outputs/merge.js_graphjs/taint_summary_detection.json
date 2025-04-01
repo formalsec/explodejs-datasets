@@ -10,5 +10,17 @@
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = merge_recursive(base[key], extend[key]);",
         "sink_lineno": 90
+    },
+    {
+        "filename": "/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "result[key] = sitem;",
+        "sink_lineno": 139
+    },
+    {
+        "filename": "/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "result[key] = merge_recursive(result[key], sitem);",
+        "sink_lineno": 135
     }
 ]

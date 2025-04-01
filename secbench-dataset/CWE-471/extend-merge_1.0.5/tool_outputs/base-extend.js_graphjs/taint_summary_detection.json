@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/extend-merge_1.0.5/src/base-extend.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = Array.isArray(src) ? src.slice() : src;",
+        "sink_lineno": 41
+    },
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/extend-merge_1.0.5/src/base-extend.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "target[key] = baseExtend([{}, src], merge);",
+        "sink_lineno": 38
+    }
+]

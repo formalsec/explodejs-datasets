@@ -3,6 +3,6 @@
         "filename": "/datasets/secbench-dataset/CWE-471/defaults-deep_0.2.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "o[key] = value;",
-        "sink_lineno": 20
+        "sink_lineno": 39
     }
 ]

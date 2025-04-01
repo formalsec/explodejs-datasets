@@ -3,46 +3,8 @@
         "type": "VFunPropOfExportedObj",
         "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
-        "sink": "child[lastKey] = value;",
-        "sink_lineno": 391,
-        "source": "module.exports.set",
-        "tainted_params": [
-            "object",
-            "path",
-            "value"
-        ],
-        "params_types": {
-            "object": {
-                "_union": [
-                    "object",
-                    "array"
-                ]
-            },
-            "path": {
-                "_union": [
-                    "object",
-                    "array",
-                    "string"
-                ]
-            },
-            "value": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "3577.set-o448",
-                "fn_id": "3270",
-                "source_fn_id": "3270"
-            }
-        ]
-    },
-    {
-        "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
-        "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
-        "sink_lineno": 131,
+        "sink_lineno": 128,
         "source": "module.exports.deepExtend",
         "tainted_params": [
             "a",
@@ -61,9 +23,9 @@
             {
                 "type": "Method",
                 "prop": "deepExtend",
-                "fn_name": "3577.deepExtend-o421",
-                "fn_id": "2498",
-                "source_fn_id": "2498"
+                "fn_name": "3489.deepExtend-o409",
+                "fn_id": "2410",
+                "source_fn_id": "2410"
             }
         ]
     },
@@ -72,7 +34,7 @@
         "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
-        "sink_lineno": 126,
+        "sink_lineno": 123,
         "source": "module.exports.deepExtend",
         "tainted_params": [
             "a",
@@ -91,9 +53,9 @@
             {
                 "type": "Method",
                 "prop": "deepExtend",
-                "fn_name": "3577.deepExtend-o421",
-                "fn_id": "2498",
-                "source_fn_id": "2498"
+                "fn_name": "3489.deepExtend-o409",
+                "fn_id": "2410",
+                "source_fn_id": "2410"
             }
         ]
     }

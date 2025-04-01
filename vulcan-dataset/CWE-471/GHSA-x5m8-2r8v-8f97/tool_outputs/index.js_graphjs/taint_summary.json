@@ -16,7 +16,10 @@
             "path": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },
@@ -26,9 +29,9 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "1674.set-o222",
-                "fn_id": "1118",
-                "source_fn_id": "1118"
+                "fn_name": "1597.set-o210",
+                "fn_id": "1072",
+                "source_fn_id": "1072"
             }
         ]
     }

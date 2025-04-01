@@ -4,7 +4,7 @@
         "filename": "/datasets/secbench-dataset/CWE-471/deep-set_1.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "currentObject[property] = value",
-        "sink_lineno": 37,
+        "sink_lineno": 35,
         "source": "module.exports",
         "tainted_params": [
             "obj",
@@ -26,9 +26,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1309.deepSet-o248",
-                "fn_id": "1112",
-                "source_fn_id": "1112"
+                "fn_name": "318.deepSet-o38",
+                "fn_id": "182",
+                "source_fn_id": "182"
             }
         ]
     }

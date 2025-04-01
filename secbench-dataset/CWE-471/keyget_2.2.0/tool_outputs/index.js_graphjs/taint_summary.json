@@ -13,18 +13,16 @@
         ],
         "params_types": {
             "target": "object",
-            "path": [
-                "any"
-            ],
+            "path": "array",
             "value": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "2245.setByPath-o293",
-                "fn_id": "1503",
-                "source_fn_id": "1503"
+                "fn_name": "2327.setByPath-o297",
+                "fn_id": "1585",
+                "source_fn_id": "1585"
             }
         ]
     },
@@ -42,18 +40,16 @@
         ],
         "params_types": {
             "target": "object",
-            "path": [
-                "any"
-            ],
+            "path": "array",
             "value": "any"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "2245.setByPath-o293",
-                "fn_id": "1503",
-                "source_fn_id": "1503"
+                "fn_name": "2327.setByPath-o297",
+                "fn_id": "1585",
+                "source_fn_id": "1585"
             }
         ]
     },
@@ -71,18 +67,16 @@
         ],
         "params_types": {
             "target": "object",
-            "path": [
-                "any"
-            ],
+            "path": "array",
             "update": "function"
         },
         "call_paths": [
             {
                 "type": "Method",
                 "prop": "at",
-                "fn_name": "2245.at-o314",
-                "fn_id": "1723",
-                "source_fn_id": "1723"
+                "fn_name": "2327.at-o318",
+                "fn_id": "1805",
+                "source_fn_id": "1805"
             }
         ]
     }

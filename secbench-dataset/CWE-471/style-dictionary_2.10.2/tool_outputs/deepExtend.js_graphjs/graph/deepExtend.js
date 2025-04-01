@@ -45,7 +45,7 @@ const deepExtend = function (objects, collision, path) {
                 if (v48) {
                     if (copyIsArray) {
                         copyIsArray = false;
-                        const v49 = _.isArray(src);
+                        const v49 = Array.isArray(src);
                         const v50 = src && v49;
                         const v51 = [];
                         if (v50) {

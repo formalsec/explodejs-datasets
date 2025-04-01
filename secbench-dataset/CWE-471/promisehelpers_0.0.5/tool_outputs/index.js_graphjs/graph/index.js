@@ -1,5 +1,4 @@
 'use strict';
-var isArray = require('isarray');
 var insertHelper = function (keys, value, object) {
     var index;
     var key;
@@ -50,7 +49,7 @@ v37.notify = v40;
 const v41 = module.exports;
 const v45 = function (key, value) {
     const v44 = function (object) {
-        const v42 = isArray(key);
+        const v42 = Array.isArray(key);
         if (v42) {
             const v43 = insertHelper(key, value, object);
             return v43;

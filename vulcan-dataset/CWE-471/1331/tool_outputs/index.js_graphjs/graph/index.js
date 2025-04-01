@@ -4,15 +4,15 @@ const set = function (name, value, context) {
     var parts = name.split('.');
     var p = parts.pop();
     var obj = _get(parts, true, context);
-    const v10 = obj && p;
-    let v11;
-    if (v10) {
+    const v12 = obj && p;
+    let v13;
+    if (v12) {
         obj[p] = value;
-        v11 = obj[p];
+        v13 = obj[p];
     } else {
-        v11 = undefined;
+        v13 = undefined;
     }
-    return v11;
+    return v13;
 };
 const _get = function (parts, create, defaultValue, context) {
     context = context || this;
@@ -20,32 +20,34 @@ const _get = function (parts, create, defaultValue, context) {
     defaultValue = defaultValue || null;
     var p;
     var i = 0;
-    const v12 = i++;
-    let v13 = context && (p = parts[v12]);
-    while (v13) {
-        const v14 = p in context;
-        const v15 = context[p];
-        const v16 = {};
-        let v17;
+    const v14 = i++;
+    let v15 = context && (p = parts[v14]);
+    while (v15) {
+        const v16 = p in context;
+        const v17 = context[p];
+        const v18 = {};
+        let v19;
         if (create) {
-            context[p] = v16;
-            v17 = context[p];
+            context[p] = v18;
+            v19 = context[p];
         } else {
-            v17 = defaultValue;
+            v19 = defaultValue;
         }
-        if (v14) {
-            context = v15;
-        } else {
+        if (v16) {
             context = v17;
+        } else {
+            context = v19;
         }
-        v13 = context && (p = parts[v12]);
+        v15 = context && (p = parts[v14]);
     }
     return context;
 };
 const get = function (path, defaultValue, context) {
     var parts = path.split('.');
-    const v18 = _get(parts, false, defaultValue, context);
-    return v18;
+    const v20 = _get(parts, false, defaultValue, context);
+    return v20;
 };
-exports.get = get;
-exports.set = set;
+const v21 = module.exports;
+v21.get = get;
+const v22 = module.exports;
+v22.set = set;

@@ -5,10 +5,10 @@ const deep = function (obj, path, value) {
     const v28 = arguments.length;
     const v29 = v28 === 3;
     if (v29) {
-        const v30 = set.apply(null, arguments);
+        const v30 = set(obj, path, value);
         return v30;
     }
-    const v31 = get.apply(null, arguments);
+    const v31 = get(obj, path);
     return v31;
 };
 const get = function (obj, path) {

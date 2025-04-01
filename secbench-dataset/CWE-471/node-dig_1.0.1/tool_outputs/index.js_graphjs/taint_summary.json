@@ -16,7 +16,10 @@
             "keys": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },

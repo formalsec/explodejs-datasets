@@ -1,31 +1,31 @@
 const merge = function (a, b, k) {
-    const v48 = typeof a;
-    const v49 = v48 === 'object';
-    const v50 = typeof b;
+    const v50 = typeof a;
     const v51 = v50 === 'object';
-    const v52 = v49 && v51;
-    if (v52) {
-        const v53 = Array.isArray(a);
-        const v54 = Array.isArray(b);
-        const v55 = v53 && v54;
-        if (v55) {
+    const v52 = typeof b;
+    const v53 = v52 === 'object';
+    const v54 = v51 && v53;
+    if (v54) {
+        const v55 = Array.isArray(a);
+        const v56 = Array.isArray(b);
+        const v57 = v55 && v56;
+        if (v57) {
             k = 0
-            const v56 = b.length;
-            let v57 = k < v56;
-            while (v57) {
-                const v59 = a[k];
-                const v60 = b[k];
-                const v61 = merge(v59, v60);
-                a[k] = v61;
-                const v58 = k++;
-                v57 = k < v56;
+            const v58 = b.length;
+            let v59 = k < v58;
+            while (v59) {
+                const v61 = a[k];
+                const v62 = b[k];
+                const v63 = merge(v61, v62);
+                a[k] = v63;
+                const v60 = k++;
+                v59 = k < v58;
             }
         } else {
             for (k in b) {
-                const v62 = a[k];
-                const v63 = b[k];
-                const v64 = merge(v62, v63);
-                a[k] = v64;
+                const v64 = a[k];
+                const v65 = b[k];
+                const v66 = merge(v64, v65);
+                a[k] = v66;
             }
         }
         return a;
@@ -33,66 +33,68 @@ const merge = function (a, b, k) {
     return b;
 };
 const dset = function (obj, keys, val) {
-    const v65 = keys.split;
-    const v66 = v65 && (keys = keys.split('.'));
-    v66;
+    const v67 = keys.split;
+    const v68 = v67 && (keys = keys.split('.'));
+    v68;
     var i = 0;
     var l = keys.length;
     var t = obj;
     var x;
     var k;
-    let v67 = i < l;
-    while (v67) {
-        const v68 = i++;
-        k = keys[v68];
-        const v69 = k === '__proto__';
-        const v70 = k === 'constructor';
-        const v71 = v69 || v70;
-        const v72 = k === 'prototype';
+    let v69 = i < l;
+    while (v69) {
+        const v70 = i++;
+        k = keys[v70];
+        const v71 = k === '__proto__';
+        const v72 = k === 'constructor';
         const v73 = v71 || v72;
-        if (v73) {
+        const v74 = k === 'prototype';
+        const v75 = v73 || v74;
+        if (v75) {
             break;
         }
-        const v74 = i === l;
-        const v75 = t[k];
-        const v76 = merge(v75, val);
-        const v77 = typeof (x = t[k]);
-        const v78 = typeof keys;
-        const v79 = v77 === v78;
-        const v80 = keys[i];
-        const v81 = v80 * 0;
-        const v82 = v81 !== 0;
-        const v83 = keys[i];
-        const v84 = '' + v83;
-        const v85 = v84.indexOf('.');
-        const v86 = ~v85;
-        const v87 = !v86;
-        const v88 = !v87;
-        const v89 = v82 || v88;
-        const v90 = {};
-        const v91 = [];
-        let v92;
-        if (v89) {
-            v92 = v90;
-        } else {
-            v92 = v91;
-        }
-        let v93;
-        if (v79) {
-            v93 = x;
-        } else {
-            v93 = v92;
-        }
+        const v76 = i === l;
+        const v77 = t[k];
+        const v78 = merge(v77, val);
+        const v79 = typeof (x = t[k]);
+        const v80 = typeof keys;
+        const v81 = v79 === v80;
+        const v82 = keys[i];
+        const v83 = v82 * 0;
+        const v84 = v83 !== 0;
+        const v85 = keys[i];
+        const v86 = '' + v85;
+        const v87 = v86.indexOf('.');
+        const v88 = ~v87;
+        const v89 = !v88;
+        const v90 = !v89;
+        const v91 = v84 || v90;
+        const v92 = {};
+        const v93 = [];
         let v94;
-        if (v74) {
-            v94 = v76;
+        if (v91) {
+            v94 = v92;
         } else {
             v94 = v93;
         }
-        t.k = v94;
+        let v95;
+        if (v81) {
+            v95 = x;
+        } else {
+            v95 = v94;
+        }
+        let v96;
+        if (v76) {
+            v96 = v78;
+        } else {
+            v96 = v95;
+        }
+        t.k = v96;
         t = t[k];
-        v67 = i < l;
+        v69 = i < l;
     }
 };
-exports.dset = dset;
-exports.merge = merge;
+const v97 = module.exports;
+v97.dset = dset;
+const v98 = module.exports;
+v98.merge = merge;

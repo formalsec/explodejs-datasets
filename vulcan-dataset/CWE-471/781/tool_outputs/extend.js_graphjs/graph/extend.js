@@ -1,90 +1,123 @@
-'use strict';
-var is = require('is');
+const v49 = Object.prototype;
+var hasOwn = v49.hasOwnProperty;
+const v50 = Object.prototype;
+var toString = v50.toString;
+var undefined;
+var isPlainObject = function isPlainObject(obj) {
+    'use strict';
+    const v51 = !obj;
+    const v52 = toString.call(obj);
+    const v53 = v52 !== '[object Object]';
+    const v54 = v51 || v53;
+    if (v54) {
+        return false;
+    }
+    var has_own_constructor = hasOwn.call(obj, 'constructor');
+    const v55 = obj.constructor;
+    const v56 = obj.constructor;
+    const v57 = v56.prototype;
+    const v58 = v55 && v57;
+    const v59 = obj.constructor;
+    const v60 = v59.prototype;
+    const v61 = hasOwn.call(v60, 'isPrototypeOf');
+    var has_is_property_of_method = v58 && v61;
+    const v62 = obj.constructor;
+    const v63 = !has_own_constructor;
+    const v64 = v62 && v63;
+    const v65 = !has_is_property_of_method;
+    const v66 = v64 && v65;
+    if (v66) {
+        return false;
+    }
+    var key;
+    for (key in obj) {
+    }
+    const v67 = key === undefined;
+    const v68 = hasOwn.call(obj, key);
+    const v69 = v67 || v68;
+    return v69;
+};
 const extend = function () {
-    const v31 = arguments[0];
-    const v32 = {};
-    var target = v31 || v32;
-    var i = 1;
-    var length = arguments.length;
-    var deep = false;
+    'use strict';
     var options;
     var name;
     var src;
     var copy;
     var copyIsArray;
     var clone;
-    const v33 = typeof target;
-    const v34 = v33 === 'boolean';
-    if (v34) {
+    var target = arguments[0];
+    var i = 1;
+    var length = arguments.length;
+    var deep = false;
+    const v70 = typeof target;
+    const v71 = v70 === 'boolean';
+    if (v71) {
         deep = target;
-        const v35 = arguments[1];
-        const v36 = {};
-        target = v35 || v36;
+        const v72 = arguments[1];
+        const v73 = {};
+        target = v72 || v73;
         i = 2;
+    } else {
+        const v74 = typeof target;
+        const v75 = v74 !== 'object';
+        const v76 = typeof target;
+        const v77 = v76 !== 'function';
+        const v78 = v75 && v77;
+        const v79 = target == null;
+        const v80 = v78 || v79;
+        if (v80) {
+            target = {};
+        }
     }
-    const v37 = typeof target;
-    const v38 = v37 !== 'object';
-    const v39 = is.fn(target);
-    const v40 = !v39;
-    const v41 = v38 && v40;
-    if (v41) {
-        target = {};
-    }
-    let v42 = i < length;
-    while (v42) {
+    let v81 = i < length;
+    while (v81) {
         options = arguments[i];
-        const v44 = options != null;
-        if (v44) {
-            const v45 = typeof options;
-            const v46 = v45 === 'string';
-            if (v46) {
-                options = options.split('');
-            }
+        const v83 = options != null;
+        if (v83) {
             for (name in options) {
                 src = target[name];
                 copy = options[name];
-                const v47 = target === copy;
-                if (v47) {
+                const v84 = target === copy;
+                if (v84) {
                     continue;
                 }
-                const v48 = deep && copy;
-                const v49 = is.hash(copy);
-                const v50 = v49 || (copyIsArray = is.array(copy));
-                const v51 = v48 && v50;
-                if (v51) {
+                const v85 = deep && copy;
+                const v86 = isPlainObject(copy);
+                const v87 = v86 || (copyIsArray = Array.isArray(copy));
+                const v88 = v85 && v87;
+                if (v88) {
                     if (copyIsArray) {
                         copyIsArray = false;
-                        const v52 = is.array(src);
-                        const v53 = src && v52;
-                        const v54 = [];
-                        if (v53) {
+                        const v89 = Array.isArray(src);
+                        const v90 = src && v89;
+                        const v91 = [];
+                        if (v90) {
                             clone = src;
                         } else {
-                            clone = v54;
+                            clone = v91;
                         }
                     } else {
-                        const v55 = is.hash(src);
-                        const v56 = src && v55;
-                        const v57 = {};
-                        if (v56) {
+                        const v92 = isPlainObject(src);
+                        const v93 = src && v92;
+                        const v94 = {};
+                        if (v93) {
                             clone = src;
                         } else {
-                            clone = v57;
+                            clone = v94;
                         }
                     }
-                    const v58 = extend(deep, clone, copy);
-                    target[name] = v58;
+                    const v95 = extend(deep, clone, copy);
+                    target[name] = v95;
                 } else {
-                    const v59 = typeof copy;
-                    const v60 = v59 !== 'undefined';
-                    if (v60) {
+                    const v96 = copy !== undefined;
+                    if (v96) {
                         target[name] = copy;
                     }
                 }
             }
         }
-        const v43 = i++;
-        v42 = i < length;
+        const v82 = ++i;
+        v81 = i < length;
     }
     return target;
 };

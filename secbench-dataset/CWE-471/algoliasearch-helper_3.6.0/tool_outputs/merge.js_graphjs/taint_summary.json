@@ -7,10 +7,17 @@
         "sink_lineno": 38,
         "source": "module.exports",
         "tainted_params": [
-            "target"
+            "target",
+            "source"
         ],
         "params_types": {
-            "target": "any"
+            "target": "object",
+            "source": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
         },
         "call_paths": [
             {
@@ -29,10 +36,17 @@
         "sink_lineno": 36,
         "source": "module.exports",
         "tainted_params": [
-            "target"
+            "target",
+            "source"
         ],
         "params_types": {
-            "target": "any"
+            "target": "object",
+            "source": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
         },
         "call_paths": [
             {

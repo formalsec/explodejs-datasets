@@ -1,18 +1,18 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-471/1014/src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
         "vuln_type": "prototype-pollution",
-        "sink": "target[key] = val;",
-        "sink_lineno": 222,
+        "sink": "a[key] = b[key];",
+        "sink_lineno": 42,
         "source": "module.exports",
         "tainted_params": [
-            "target",
-            "obj"
+            "a",
+            "b"
         ],
         "params_types": {
-            "target": "object",
-            "obj": {
+            "a": "object",
+            "b": {
                 "_union": [
                     "polluted_object2",
                     "polluted_object3"
@@ -22,55 +22,55 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "2121.assign-o244",
-                "fn_id": 1868,
-                "source_fn_id": 1868
+                "fn_name": "326.extend-o40",
+                "fn_id": 187,
+                "source_fn_id": 187
             }
         ]
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-471/1014/src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
         "vuln_type": "prototype-pollution",
-        "sink": "target[key] = assign(target[key] || {}, val);",
-        "sink_lineno": 220,
+        "sink": "a[key] = extend(a[key], b[key]);",
+        "sink_lineno": 39,
         "source": "module.exports",
         "tainted_params": [
-            "target",
-            "obj"
+            "a",
+            "b"
         ],
         "params_types": {
-            "target": "object",
-            "obj": {
+            "a": "object",
+            "b": {
                 "_union": [
-                    "polluted_object2",
-                    "polluted_object3"
+                    "object",
+                    "array"
                 ]
             }
         },
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "2121.assign-o244",
-                "fn_id": 1868,
-                "source_fn_id": 1868
+                "fn_name": "326.extend-o40",
+                "fn_id": 187,
+                "source_fn_id": 187
             }
         ]
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-471/1014/src/index.js",
+        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
         "vuln_type": "prototype-pollution",
-        "sink": "target[key] = val;",
-        "sink_lineno": 218,
+        "sink": "a[key] = b[key];",
+        "sink_lineno": 37,
         "source": "module.exports",
         "tainted_params": [
-            "target",
-            "obj"
+            "a",
+            "b"
         ],
         "params_types": {
-            "target": "object",
-            "obj": {
+            "a": "object",
+            "b": {
                 "_union": [
                     "polluted_object2",
                     "polluted_object3"
@@ -80,9 +80,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "2121.assign-o244",
-                "fn_id": 1868,
-                "source_fn_id": 1868
+                "fn_name": "326.extend-o40",
+                "fn_id": 187,
+                "source_fn_id": 187
             }
         ]
     }

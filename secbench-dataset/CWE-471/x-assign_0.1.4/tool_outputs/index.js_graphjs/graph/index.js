@@ -1,54 +1,54 @@
 'use strict';
-const v66 = function (...args) {
+const assign = function (...args) {
     const apply = function (acc, obj) {
-        const v34 = obj == null;
-        const v35 = typeof obj;
-        const v36 = v35 !== 'object';
-        const v37 = v34 || v36;
-        if (v37) {
+        const v33 = obj == null;
+        const v34 = typeof obj;
+        const v35 = v34 !== 'object';
+        const v36 = v33 || v35;
+        if (v36) {
             return;
         }
-        const v38 = Object.keys(obj);
-        const v61 = key => {
+        const v37 = Object.keys(obj);
+        const v60 = key => {
             const value = obj[key];
-            const v39 = Array.isArray(value);
-            if (v39) {
+            const v38 = Array.isArray(value);
+            if (v38) {
+                const v39 = acc[key];
                 const v40 = acc[key];
-                const v41 = acc[key];
-                const v42 = Array.isArray(v41);
-                const v43 = v40 && v42;
-                const v44 = acc[key];
-                const v45 = v44.concat(value);
-                let v46;
-                if (v43) {
-                    v46 = v45;
+                const v41 = Array.isArray(v40);
+                const v42 = v39 && v41;
+                const v43 = acc[key];
+                const v44 = v43.concat(value);
+                let v45;
+                if (v42) {
+                    v45 = v44;
                 } else {
-                    v46 = value;
+                    v45 = value;
                 }
-                acc[key] = v46;
+                acc[key] = v45;
             } else {
-                const v47 = typeof value;
-                const v48 = v47 === 'object';
-                if (v48) {
-                    const v49 = acc[key];
-                    const v50 = {};
-                    acc[key] = v49 || v50;
-                    const v51 = acc[key];
-                    const v52 = Array.isArray(v51);
-                    if (v52) {
-                        const v53 = {};
-                        acc[key] = v53;
-                        const v54 = acc[key];
-                        const v55 = apply(v54, value);
-                        v55;
+                const v46 = typeof value;
+                const v47 = v46 === 'object';
+                if (v47) {
+                    const v48 = acc[key];
+                    const v49 = {};
+                    acc[key] = v48 || v49;
+                    const v50 = acc[key];
+                    const v51 = Array.isArray(v50);
+                    if (v51) {
+                        const v52 = {};
+                        acc[key] = v52;
+                        const v53 = acc[key];
+                        const v54 = apply(v53, value);
+                        v54;
                     } else {
-                        const v56 = acc[key];
-                        const v57 = typeof v56;
-                        const v58 = v57 === 'object';
-                        if (v58) {
-                            const v59 = acc[key];
-                            const v60 = apply(v59, value);
-                            v60;
+                        const v55 = acc[key];
+                        const v56 = typeof v55;
+                        const v57 = v56 === 'object';
+                        if (v57) {
+                            const v58 = acc[key];
+                            const v59 = apply(v58, value);
+                            v59;
                         } else {
                             acc[key] = value;
                         }
@@ -58,18 +58,16 @@ const v66 = function (...args) {
                 }
             }
         };
-        const v62 = v38.forEach(v61);
-        v62;
+        const v61 = v37.forEach(v60);
+        v61;
     };
     const result = {};
-    const v64 = obj => {
-        const v63 = apply(result, obj);
-        return v63;
+    const v63 = obj => {
+        const v62 = apply(result, obj);
+        return v62;
     };
-    const v65 = args.forEach(v64);
-    v65;
+    const v64 = args.forEach(v63);
+    v64;
     return result;
 };
-const XAssign = {};
-XAssign.assign = v66;
-module.exports = XAssign;
+module.exports = assign;

@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "filename": "/datasets/secbench-dataset/CWE-471/deephas_1.0.5/src/deepHas.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "test[last] = val;",
+        "sink_lineno": 65
+    }
+]

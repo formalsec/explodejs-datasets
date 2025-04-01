@@ -1,1 +1,102 @@
-[]
+[
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-471/think-config_1.0.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.config[name] = value;",
+        "sink_lineno": 43,
+        "source": "new module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": "any"
+        },
+        "returns": {
+            "source": ".set",
+            "params_types": {
+                "name": {
+                    "_union": [
+                        "object",
+                        [
+                            "string",
+                            "string"
+                        ],
+                        "string"
+                    ]
+                },
+                "value": "any"
+            },
+            "tainted_params": [
+                "name",
+                "value"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "614.Config-o88",
+                "fn_id": "358",
+                "source_fn_id": "358"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "614.set-o87",
+                "fn_id": "486",
+                "source_fn_id": "486"
+            }
+        ]
+    },
+    {
+        "type": "VNewCall",
+        "filename": "/datasets/secbench-dataset/CWE-471/think-config_1.0.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "config[item] = value;",
+        "sink_lineno": 50,
+        "source": "new module.exports",
+        "tainted_params": [
+            "config"
+        ],
+        "params_types": {
+            "config": "any"
+        },
+        "returns": {
+            "source": ".set",
+            "params_types": {
+                "name": {
+                    "_union": [
+                        "object",
+                        [
+                            "string",
+                            "string"
+                        ],
+                        "string"
+                    ]
+                },
+                "value": "any"
+            },
+            "tainted_params": [
+                "name",
+                "value"
+            ]
+        },
+        "call_paths": [
+            {
+                "type": "New",
+                "prop": null,
+                "fn_name": "614.Config-o88",
+                "fn_id": "358",
+                "source_fn_id": "358"
+            },
+            {
+                "type": "Method",
+                "prop": "set",
+                "fn_name": "614.set-o87",
+                "fn_id": 486,
+                "source_fn_id": 486
+            }
+        ]
+    }
+]

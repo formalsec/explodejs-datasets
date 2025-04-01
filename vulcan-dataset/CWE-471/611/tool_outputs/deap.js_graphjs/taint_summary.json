@@ -4,7 +4,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(b[p]);",
-        "sink_lineno": 60,
+        "sink_lineno": 78,
         "source": "module.exports.extend",
         "tainted_params": [
             "a",
@@ -18,9 +18,9 @@
             {
                 "type": "Method",
                 "prop": "extend",
-                "fn_name": "1893.deepExtend-o288",
-                "fn_id": 1377,
-                "source_fn_id": 1377
+                "fn_name": "2032.deepExtend-o302",
+                "fn_id": 1516,
+                "source_fn_id": 1516
             }
         ]
     },
@@ -29,7 +29,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(bp);",
-        "sink_lineno": 90,
+        "sink_lineno": 108,
         "source": "module.exports.update",
         "tainted_params": [
             "a",
@@ -43,9 +43,9 @@
             {
                 "type": "Method",
                 "prop": "update",
-                "fn_name": "1893.deepUpdate-o294",
-                "fn_id": 1545,
-                "source_fn_id": 1545
+                "fn_name": "2032.deepUpdate-o308",
+                "fn_id": 1684,
+                "source_fn_id": 1684
             }
         ]
     },
@@ -54,7 +54,7 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(bp);",
-        "sink_lineno": 117,
+        "sink_lineno": 135,
         "source": "module.exports.merge",
         "tainted_params": [
             "a",
@@ -68,9 +68,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "1893.deepMerge-o300",
-                "fn_id": 1776,
-                "source_fn_id": 1776
+                "fn_name": "2032.deepMerge-o314",
+                "fn_id": 1915,
+                "source_fn_id": 1915
             }
         ]
     }

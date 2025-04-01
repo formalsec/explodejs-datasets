@@ -478,4 +478,3 @@ safeCall.query = query;
 safeCall.set = set;
 safeCall.unset = unset;
 module.exports = safeCall;
-exports = module.exports;

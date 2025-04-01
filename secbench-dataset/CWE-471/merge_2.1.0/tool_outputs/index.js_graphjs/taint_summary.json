@@ -12,9 +12,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "1454.merge-o197",
-                "fn_id": 974,
-                "source_fn_id": 974
+                "fn_name": "1402.merge-o194",
+                "fn_id": 946,
+                "source_fn_id": 946
             }
         ]
     },
@@ -31,9 +31,9 @@
             {
                 "type": "Method",
                 "prop": "recursive",
-                "fn_name": "1454.recursive-o193",
-                "fn_id": 1033,
-                "source_fn_id": 1033
+                "fn_name": "1402.recursive-o190",
+                "fn_id": 1005,
+                "source_fn_id": 1005
             }
         ]
     }

@@ -12,7 +12,7 @@
             "value"
         ],
         "params_types": {
-            "obj": "any",
+            "obj": "object",
             "path": {
                 "_union": [
                     "array",
@@ -24,9 +24,9 @@
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "572.deep-o66",
-                "fn_id": 340,
-                "source_fn_id": 340
+                "fn_name": "566.deep-o66",
+                "fn_id": 337,
+                "source_fn_id": 337
             }
         ]
     }

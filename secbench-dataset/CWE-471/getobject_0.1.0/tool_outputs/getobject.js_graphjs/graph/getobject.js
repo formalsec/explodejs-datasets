@@ -1,65 +1,58 @@
 'use strict';
-const v29 = {};
-module.exports = v29;
-var getobject = module.exports;
+var getobject = {};
 const getParts = function (str) {
-    const v30 = str.replace(/\\\./g, '\uFFFF');
-    const v31 = v30.split('.');
-    const v33 = function (s) {
-        const v32 = s.replace(/\uffff/g, '.');
-        return v32;
-    };
-    const v34 = v31.map(v33);
-    return v34;
+    const v24 = str.split('.');
+    return v24;
 };
-const v46 = function (obj, parts, create) {
-    const v35 = typeof parts;
-    const v36 = v35 === 'string';
-    if (v36) {
+const v36 = function (obj, parts, create) {
+    const v25 = typeof parts;
+    const v26 = v25 === 'string';
+    if (v26) {
         parts = getParts(parts);
     }
     var part;
-    const v37 = typeof obj;
-    const v38 = v37 === 'object';
-    const v39 = v38 && obj;
-    const v40 = parts.length;
-    let v41 = v39 && v40;
-    while (v41) {
+    const v27 = typeof obj;
+    const v28 = v27 === 'object';
+    const v29 = v28 && obj;
+    const v30 = parts.length;
+    let v31 = v29 && v30;
+    while (v31) {
         part = parts.shift();
-        const v42 = part in obj;
-        const v43 = !v42;
-        const v44 = v43 && create;
-        if (v44) {
-            const v45 = {};
-            obj[part] = v45;
+        const v32 = part in obj;
+        const v33 = !v32;
+        const v34 = v33 && create;
+        if (v34) {
+            const v35 = {};
+            obj[part] = v35;
         }
         obj = obj[part];
-        v41 = v39 && v40;
+        v31 = v29 && v30;
     }
     return obj;
 };
-getobject.get = v46;
-const v50 = function (obj, parts, value) {
+getobject.get = v36;
+const v40 = function (obj, parts, value) {
     parts = getParts(parts);
     var prop = parts.pop();
     obj = getobject.get(obj, parts, true);
-    const v47 = typeof obj;
-    const v48 = v47 === 'object';
-    const v49 = obj && v48;
-    if (v49) {
+    const v37 = typeof obj;
+    const v38 = v37 === 'object';
+    const v39 = obj && v38;
+    if (v39) {
         return obj[prop] = value;
     }
 };
-getobject.set = v50;
-const v56 = function (obj, parts) {
+getobject.set = v40;
+const v46 = function (obj, parts) {
     parts = getParts(parts);
     var prop = parts.pop();
     obj = getobject.get(obj, parts);
-    const v51 = typeof obj;
-    const v52 = v51 === 'object';
-    const v53 = v52 && obj;
-    const v54 = prop in obj;
-    const v55 = v53 && v54;
-    return v55;
+    const v41 = typeof obj;
+    const v42 = v41 === 'object';
+    const v43 = v42 && obj;
+    const v44 = prop in obj;
+    const v45 = v43 && v44;
+    return v45;
 };
-getobject.exists = v56;
+getobject.exists = v46;
+module.exports = getobject;

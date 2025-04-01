@@ -83,7 +83,7 @@ const add = function (obj, str, val) {
         const v59 = items.length;
         const v60 = v59 - 1;
         var last = items.slice(v60);
-        var test = initial.reduce(indexTrue, obj);
+        var test = obj[initial];
         test[last] = val;
     } catch (ex) {
         const v61 = console.error(ex);

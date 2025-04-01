@@ -15,7 +15,10 @@
             "source": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },
@@ -33,9 +36,9 @@
             {
                 "type": "Method",
                 "prop": "transform",
-                "fn_name": "10999.v1275-o1386",
-                "fn_id": "10479",
-                "source_fn_id": "10479"
+                "fn_name": "10985.v1270-o1385",
+                "fn_id": "10455",
+                "source_fn_id": "10455"
             }
         ]
     },
@@ -63,9 +66,9 @@
             {
                 "type": "Method",
                 "prop": "clone",
-                "fn_name": "10999.v677-o1170",
-                "fn_id": "6213",
-                "source_fn_id": "6213"
+                "fn_name": "10985.v675-o1169",
+                "fn_id": "6205",
+                "source_fn_id": "6205"
             }
         ]
     },
@@ -97,9 +100,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "10999.v730-o1178",
-                "fn_id": "6471",
-                "source_fn_id": "6471"
+                "fn_name": "10985.v725-o1177",
+                "fn_id": "6463",
+                "source_fn_id": "6463"
             }
         ]
     },
@@ -131,9 +134,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "10999.v730-o1178",
-                "fn_id": "6471",
-                "source_fn_id": "6471"
+                "fn_name": "10985.v725-o1177",
+                "fn_id": "6463",
+                "source_fn_id": "6463"
             }
         ]
     },
@@ -141,7 +144,7 @@
         "type": "VFunPropOfExportedObj",
         "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
-        "sink": "target[key] = exports.clone(value);",
+        "sink": "target[key] = value;",
         "sink_lineno": 127,
         "source": "module.exports.merge",
         "tainted_params": [
@@ -154,9 +157,8 @@
             "target": "object",
             "source": {
                 "_union": [
-                    "object",
-                    "array",
-                    "string"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "isNullOverride": "bool",
@@ -166,9 +168,9 @@
             {
                 "type": "Method",
                 "prop": "merge",
-                "fn_name": "10999.v730-o1178",
-                "fn_id": "6471",
-                "source_fn_id": "6471"
+                "fn_name": "10985.v725-o1177",
+                "fn_id": "6463",
+                "source_fn_id": "6463"
             }
         ]
     }

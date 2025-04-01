@@ -33,9 +33,9 @@
             {
                 "type": "Method",
                 "prop": "deepSet",
-                "fn_name": "5369.deepSet-o595",
-                "fn_id": "4067",
-                "source_fn_id": "4067"
+                "fn_name": "5344.deepSet-o585",
+                "fn_id": "4042",
+                "source_fn_id": "4042"
             }
         ]
     },
@@ -43,7 +43,7 @@
         "type": "VFunPropOfExportedObj",
         "filename": "/datasets/secbench-dataset/CWE-471/nodee-utils_1.2.2/src/object.js",
         "vuln_type": "prototype-pollution",
-        "sink": "else current[parts[i]] = current[parts[i]] || {};    ",
+        "sink": "else current[parts[i]] = current[parts[i]] || {};",
         "sink_lineno": 212,
         "source": "module.exports.deepSet",
         "tainted_params": [
@@ -73,9 +73,9 @@
             {
                 "type": "Method",
                 "prop": "deepSet",
-                "fn_name": "5369.deepSet-o595",
-                "fn_id": "4067",
-                "source_fn_id": "4067"
+                "fn_name": "5344.deepSet-o585",
+                "fn_id": "4042",
+                "source_fn_id": "4042"
             }
         ]
     },
@@ -100,9 +100,9 @@
             {
                 "type": "Method",
                 "prop": "deepReplace",
-                "fn_name": "5369.deepReplace-o600",
-                "fn_id": "4503",
-                "source_fn_id": "4503"
+                "fn_name": "5344.deepReplace-o590",
+                "fn_id": "4478",
+                "source_fn_id": "4478"
             }
         ]
     }

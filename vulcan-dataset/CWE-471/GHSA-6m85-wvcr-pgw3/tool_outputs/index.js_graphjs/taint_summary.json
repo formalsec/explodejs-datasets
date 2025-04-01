@@ -28,7 +28,10 @@
                 "s": {
                     "_union": [
                         "object",
-                        "array",
+                        [
+                            "string",
+                            "string"
+                        ],
                         "string"
                     ]
                 },
@@ -44,16 +47,16 @@
             {
                 "type": "New",
                 "prop": null,
-                "fn_name": "3886.safeCall-o668",
-                "fn_id": "2311",
-                "source_fn_id": "2311"
+                "fn_name": "3874.safeCall-o668",
+                "fn_id": "2305",
+                "source_fn_id": "2305"
             },
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "3886.set-o599",
-                "fn_id": "3268",
-                "source_fn_id": "3268"
+                "fn_name": "3874.set-o599",
+                "fn_id": "3262",
+                "source_fn_id": "3262"
             }
         ]
     }

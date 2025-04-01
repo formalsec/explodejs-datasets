@@ -1,1 +1,82 @@
-[]
+[
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-471/dset_1.0.0/src/dset.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "t[keys[i]] = x == null ? {} : x;",
+        "sink_lineno": 9,
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "keys",
+            "val"
+        ],
+        "params_types": {
+            "obj": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
+            "keys": {
+                "_union": [
+                    "object",
+                    [
+                        "string",
+                        "string"
+                    ],
+                    "string"
+                ]
+            },
+            "val": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "282.v28-o29",
+                "fn_id": "158",
+                "source_fn_id": "158"
+            }
+        ]
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/datasets/secbench-dataset/CWE-471/dset_1.0.0/src/dset.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "t[keys[i]] = val;",
+        "sink_lineno": 7,
+        "source": "module.exports",
+        "tainted_params": [
+            "obj",
+            "keys",
+            "val"
+        ],
+        "params_types": {
+            "obj": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
+            "keys": {
+                "_union": [
+                    "object",
+                    [
+                        "string",
+                        "string"
+                    ],
+                    "string"
+                ]
+            },
+            "val": "any"
+        },
+        "call_paths": [
+            {
+                "type": "Call",
+                "fn_name": "282.v28-o29",
+                "fn_id": "158",
+                "source_fn_id": "158"
+            }
+        ]
+    }
+]

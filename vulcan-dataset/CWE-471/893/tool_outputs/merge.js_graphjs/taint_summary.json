@@ -2,9 +2,9 @@
     {
         "type": "VNewCall",
         "filename": "/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
-        "vuln_type": "code-injection",
-        "sink": "if ( typeOf.Function(lastArg) ) {",
-        "sink_lineno": 92,
+        "vuln_type": "prototype-pollution",
+        "sink": "obj1[key] = obj2[key]",
+        "sink_lineno": 177,
         "source": "new module.exports",
         "tainted_params": [],
         "params_types": {},
@@ -17,25 +17,25 @@
             {
                 "type": "New",
                 "prop": null,
-                "fn_name": "1908.merge-o235",
-                "fn_id": "1097",
-                "source_fn_id": "1097"
+                "fn_name": "2172.merge-o289",
+                "fn_id": "1367",
+                "source_fn_id": "1367"
             },
             {
                 "type": "Method",
                 "prop": "black",
-                "fn_name": "1908.mergeBlack-o234",
-                "fn_id": 1130,
-                "source_fn_id": 1130
+                "fn_name": "2172.mergeBlack-o288",
+                "fn_id": 1400,
+                "source_fn_id": 1400
             }
         ]
     },
     {
         "type": "VNewCall",
         "filename": "/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
-        "vuln_type": "code-injection",
-        "sink": "if ( typeOf.Function(lastArg) ) {",
-        "sink_lineno": 92,
+        "vuln_type": "prototype-pollution",
+        "sink": "obj1[key] = obj2[key]",
+        "sink_lineno": 177,
         "source": "new module.exports",
         "tainted_params": [],
         "params_types": {},
@@ -48,78 +48,16 @@
             {
                 "type": "New",
                 "prop": null,
-                "fn_name": "1908.merge-o239",
-                "fn_id": "1097",
-                "source_fn_id": "1097"
+                "fn_name": "2172.merge-o293",
+                "fn_id": "1367",
+                "source_fn_id": "1367"
             },
             {
                 "type": "Method",
                 "prop": "white",
-                "fn_name": "1908.mergeWhite-o238",
-                "fn_id": 1169,
-                "source_fn_id": 1169
-            }
-        ]
-    },
-    {
-        "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "obj1[key] = obj2[key]",
-        "sink_lineno": 156,
-        "source": "new module.exports",
-        "tainted_params": [],
-        "params_types": {},
-        "returns": {
-            "source": ".black",
-            "params_types": {},
-            "tainted_params": []
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1908.merge-o235",
-                "fn_id": "1097",
-                "source_fn_id": "1097"
-            },
-            {
-                "type": "Method",
-                "prop": "black",
-                "fn_name": "1908.mergeBlack-o234",
-                "fn_id": 1130,
-                "source_fn_id": 1130
-            }
-        ]
-    },
-    {
-        "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
-        "vuln_type": "prototype-pollution",
-        "sink": "obj1[key] = obj2[key]",
-        "sink_lineno": 156,
-        "source": "new module.exports",
-        "tainted_params": [],
-        "params_types": {},
-        "returns": {
-            "source": ".white",
-            "params_types": {},
-            "tainted_params": []
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1908.merge-o239",
-                "fn_id": "1097",
-                "source_fn_id": "1097"
-            },
-            {
-                "type": "Method",
-                "prop": "white",
-                "fn_name": "1908.mergeWhite-o238",
-                "fn_id": 1169,
-                "source_fn_id": 1169
+                "fn_name": "2172.mergeWhite-o292",
+                "fn_id": 1439,
+                "source_fn_id": 1439
             }
         ]
     }

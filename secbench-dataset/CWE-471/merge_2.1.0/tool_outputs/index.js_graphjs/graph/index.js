@@ -1,9 +1,9 @@
 'use strict';
-const v71 = { value: true };
-const v72 = Object.defineProperty(exports, '__esModule', v71);
-v72;
-const v73 = void 0;
-exports.main = v73;
+const v66 = { value: true };
+const v67 = Object.defineProperty(exports, '__esModule', v66);
+v67;
+const v68 = void 0;
+exports.main = v68;
 exports.merge = exports.main;
 exports.recursive = exports.merge;
 exports.clone = exports.recursive;
@@ -14,17 +14,17 @@ exports.default = main;
 const main = function () {
     var items = [];
     var _i = 0;
-    const v74 = arguments.length;
-    let v75 = _i < v74;
-    while (v75) {
-        const v77 = arguments[_i];
-        items[_i] = v77;
-        const v76 = _i++;
-        v75 = _i < v74;
+    const v69 = arguments.length;
+    let v70 = _i < v69;
+    while (v70) {
+        const v72 = arguments[_i];
+        items[_i] = v72;
+        const v71 = _i++;
+        v70 = _i < v69;
     }
-    const v78 = void 0;
-    const v79 = merge.apply(v78, items);
-    return v79;
+    const v73 = void 0;
+    const v74 = merge.apply(v73, items);
+    return v74;
 };
 exports.main = main;
 main.clone = clone;
@@ -33,62 +33,62 @@ main.recursive = recursive;
 const merge = function () {
     var items = [];
     var _i = 0;
-    const v80 = arguments.length;
-    let v81 = _i < v80;
-    while (v81) {
-        const v83 = arguments[_i];
-        items[_i] = v83;
-        const v82 = _i++;
-        v81 = _i < v80;
+    const v75 = arguments.length;
+    let v76 = _i < v75;
+    while (v76) {
+        const v78 = arguments[_i];
+        items[_i] = v78;
+        const v77 = _i++;
+        v76 = _i < v75;
     }
-    const v84 = items[0];
-    const v85 = v84 === true;
-    const v86 = _merge(v85, false, items);
-    return v86;
+    const v79 = items[0];
+    const v80 = v79 === true;
+    const v81 = _merge(v80, false, items);
+    return v81;
 };
 exports.merge = merge;
 const recursive = function () {
     var items = [];
     var _i = 0;
-    const v87 = arguments.length;
-    let v88 = _i < v87;
-    while (v88) {
-        const v90 = arguments[_i];
-        items[_i] = v90;
-        const v89 = _i++;
-        v88 = _i < v87;
+    const v82 = arguments.length;
+    let v83 = _i < v82;
+    while (v83) {
+        const v85 = arguments[_i];
+        items[_i] = v85;
+        const v84 = _i++;
+        v83 = _i < v82;
     }
-    const v91 = items[0];
-    const v92 = v91 === true;
-    const v93 = _merge(v92, true, items);
-    return v93;
+    const v86 = items[0];
+    const v87 = v86 === true;
+    const v88 = _merge(v87, true, items);
+    return v88;
 };
 exports.recursive = recursive;
 const clone = function (input) {
-    const v94 = Array.isArray(input);
-    if (v94) {
+    const v89 = Array.isArray(input);
+    if (v89) {
         var output = [];
         var index = 0;
-        const v95 = input.length;
-        let v96 = index < v95;
-        while (v96) {
-            const v98 = input[index];
-            const v99 = clone(v98);
-            const v100 = output.push(v99);
-            v100;
-            const v97 = ++index;
-            v96 = index < v95;
+        const v90 = input.length;
+        let v91 = index < v90;
+        while (v91) {
+            const v93 = input[index];
+            const v94 = clone(v93);
+            const v95 = output.push(v94);
+            v95;
+            const v92 = ++index;
+            v91 = index < v90;
         }
         return output;
     } else {
-        const v101 = isPlainObject(input);
-        if (v101) {
+        const v96 = isPlainObject(input);
+        if (v96) {
             var output = {};
             let index;
             for (index in input) {
-                const v102 = input[index];
-                const v103 = clone(v102);
-                output[index] = v103;
+                const v97 = input[index];
+                const v98 = clone(v97);
+                output[index] = v98;
             }
             return output;
         } else {
@@ -98,91 +98,83 @@ const clone = function (input) {
 };
 exports.clone = clone;
 const isPlainObject = function (input) {
-    const v104 = typeof input;
-    const v105 = v104 === 'object';
-    const v106 = input && v105;
-    const v107 = Array.isArray(input);
-    const v108 = !v107;
-    const v109 = v106 && v108;
-    return v109;
+    const v99 = typeof input;
+    const v100 = v99 === 'object';
+    const v101 = input && v100;
+    const v102 = Array.isArray(input);
+    const v103 = !v102;
+    const v104 = v101 && v103;
+    return v104;
 };
 exports.isPlainObject = isPlainObject;
 const _recursiveMerge = function (base, extend) {
-    const v110 = isPlainObject(base);
-    const v111 = !v110;
-    if (v111) {
+    const v105 = isPlainObject(base);
+    const v106 = !v105;
+    if (v106) {
         return extend;
     }
     let key;
     for (key in extend) {
+        const v107 = base[key];
+        const v108 = isPlainObject(v107);
+        const v109 = extend[key];
+        const v110 = isPlainObject(v109);
+        const v111 = v108 && v110;
         const v112 = base[key];
-        const v113 = isPlainObject(v112);
-        const v114 = extend[key];
-        const v115 = isPlainObject(v114);
-        const v116 = v113 && v115;
-        const v117 = base[key];
-        const v118 = extend[key];
-        const v119 = _recursiveMerge(v117, v118);
-        const v120 = extend[key];
-        let v121;
-        if (v116) {
-            v121 = v119;
+        const v113 = extend[key];
+        const v114 = _recursiveMerge(v112, v113);
+        const v115 = extend[key];
+        let v116;
+        if (v111) {
+            v116 = v114;
         } else {
-            v121 = v120;
+            v116 = v115;
         }
-        base[key] = v121;
+        base[key] = v116;
     }
     return base;
 };
 const _merge = function (isClone, isRecursive, items) {
     var result;
-    const v122 = isPlainObject(result = items.shift());
-    const v123 = !v122;
-    const v124 = isClone || v123;
-    if (v124) {
+    const v117 = isPlainObject(result = items.shift());
+    const v118 = !v117;
+    const v119 = isClone || v118;
+    if (v119) {
         result = {};
     }
     var index = 0;
-    const v125 = items.length;
-    let v126 = index < v125;
-    while (v126) {
+    const v120 = items.length;
+    let v121 = index < v120;
+    while (v121) {
         var item = items[index];
-        const v128 = isPlainObject(item);
-        const v129 = !v128;
-        if (v129) {
+        const v123 = isPlainObject(item);
+        const v124 = !v123;
+        if (v124) {
             continue;
         }
         let key;
         for (key in item) {
-            const v130 = key === '__proto__';
-            const v131 = key === 'constructor';
-            const v132 = v130 || v131;
-            const v133 = key === 'prototype';
-            const v134 = v132 || v133;
-            if (v134) {
-                continue;
-            }
             let value;
-            const v135 = item[key];
-            const v136 = clone(v135);
-            const v137 = item[key];
+            const v125 = item[key];
+            const v126 = clone(v125);
+            const v127 = item[key];
             if (isClone) {
-                value = v136;
+                value = v126;
             } else {
-                value = v137;
+                value = v127;
             }
-            const v138 = result[key];
-            const v139 = _recursiveMerge(v138, value);
-            let v140;
+            const v128 = result[key];
+            const v129 = _recursiveMerge(v128, value);
+            let v130;
             if (isRecursive) {
-                v140 = v139;
+                v130 = v129;
             } else {
-                v140 = value;
+                v130 = value;
             }
-            result[key] = v140;
+            result[key] = v130;
         }
-        const v127 = ++index;
-        v126 = index < v125;
+        const v122 = ++index;
+        v121 = index < v120;
     }
     return result;
 };

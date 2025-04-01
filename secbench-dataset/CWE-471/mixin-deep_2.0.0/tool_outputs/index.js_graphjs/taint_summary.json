@@ -11,7 +11,7 @@
             "undefined"
         ],
         "params_types": {
-            "target": "any",
+            "target": "object",
             "undefined": "any"
         },
         "call_paths": [

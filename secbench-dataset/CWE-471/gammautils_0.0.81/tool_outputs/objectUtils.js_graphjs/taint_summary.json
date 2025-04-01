@@ -46,9 +46,7 @@
         ],
         "params_types": {
             "object": "object",
-            "property": [
-                "any"
-            ],
+            "property": "array",
             "value": {
                 "_union": [
                     "object",

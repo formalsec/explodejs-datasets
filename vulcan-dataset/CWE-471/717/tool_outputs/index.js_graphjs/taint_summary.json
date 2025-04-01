@@ -4,16 +4,16 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/717/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "merged[key] = clone(source[key]);",
-        "sink_lineno": 75,
+        "sink_lineno": 80,
         "source": "module.exports",
         "tainted_params": [],
         "params_types": {},
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1595.v176-o251",
-                "fn_id": 1492,
-                "source_fn_id": 1492
+                "fn_name": "1715.v194-o266",
+                "fn_id": 1612,
+                "source_fn_id": 1612
             }
         ]
     },
@@ -22,16 +22,16 @@
         "filename": "/datasets/vulcan-dataset/CWE-471/717/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "merged[key] = merge(merged[key], source[key], mergeOpts);",
-        "sink_lineno": 73,
+        "sink_lineno": 78,
         "source": "module.exports",
         "tainted_params": [],
         "params_types": {},
         "call_paths": [
             {
                 "type": "Call",
-                "fn_name": "1595.v176-o251",
-                "fn_id": 1492,
-                "source_fn_id": 1492
+                "fn_name": "1715.v194-o266",
+                "fn_id": 1612,
+                "source_fn_id": 1612
             }
         ]
     }

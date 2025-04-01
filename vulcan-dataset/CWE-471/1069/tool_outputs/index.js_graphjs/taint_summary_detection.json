@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "filename": "/datasets/vulcan-dataset/CWE-471/1069/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED : value;",
+        "sink_lineno": 508
+    }
+]

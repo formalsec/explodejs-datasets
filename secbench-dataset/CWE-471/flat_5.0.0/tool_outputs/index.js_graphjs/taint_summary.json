@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/datasets/secbench-dataset/CWE-471/flat_5.0.0/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "recipient[key1] = unflatten(target[key], opts)",
+        "sink_lineno": 145,
+        "source": "module.exports.unflatten",
+        "tainted_params": [
+            "target",
+            "opts"
+        ],
+        "params_types": {
+            "target": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
+            },
+            "opts": {
+                "delimiter": "string",
+                "overwrite": "any",
+                "transformKey": "function",
+                "object": "object"
+            }
+        },
+        "call_paths": [
+            {
+                "type": "Method",
+                "prop": "unflatten",
+                "fn_name": "1908.unflatten-o223",
+                "fn_id": 1328,
+                "source_fn_id": 1328
+            }
+        ]
+    }
+]

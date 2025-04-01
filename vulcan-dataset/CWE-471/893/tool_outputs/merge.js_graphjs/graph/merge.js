@@ -1,180 +1,219 @@
-var typeOf = require('lutils-typeof');
+const typeOf = function (value) {
+    const v117 = value === null;
+    if (v117) {
+        return 'null';
+    }
+    const v118 = value === undefined;
+    if (v118) {
+        return 'undefined';
+    }
+    const v119 = Number.isNaN(value);
+    if (v119) {
+        return 'nan';
+    }
+    const v120 = Object.prototype;
+    const v121 = v120.toString;
+    const v122 = v121.call(value);
+    const v123 = -1;
+    const v124 = v122.slice(8, v123);
+    const v125 = v124.toLowerCase();
+    return v125;
+};
+const isObject = function (value) {
+    const v126 = typeOf(value);
+    const v127 = v126 === 'object';
+    return v127;
+};
+const isArray = function (value) {
+    const v128 = Array.isArray(value);
+    return v128;
+};
+const isFunction = function (value) {
+    const v129 = typeof value;
+    const v130 = v129 === 'function';
+    return v130;
+};
+const isString = function (value) {
+    const v131 = typeof value;
+    const v132 = v131 === 'string';
+    return v132;
+};
 const merge = function () {
     var options = _parseArguments(arguments);
-    const v101 = options.tests;
-    const v102 = merge.tests;
-    const v103 = v102.merge;
-    const v104 = v101.unshift(v103);
-    v104;
-    const v105 = _reducer(options);
-    return v105;
+    const v133 = options.tests;
+    const v134 = merge.tests;
+    const v135 = v134.merge;
+    const v136 = v133.unshift(v135);
+    v136;
+    const v137 = _reducer(options);
+    return v137;
 };
 const mergeBlack = function () {
     var options = _parseArguments(arguments);
-    const v106 = options.tests;
-    const v107 = merge.tests;
-    const v108 = v107.black;
-    const v109 = v106.unshift(v108);
-    v109;
-    const v110 = _reducer(options);
-    return v110;
+    const v138 = options.tests;
+    const v139 = merge.tests;
+    const v140 = v139.black;
+    const v141 = v138.unshift(v140);
+    v141;
+    const v142 = _reducer(options);
+    return v142;
 };
 merge.black = mergeBlack;
 const mergeWhite = function () {
     var options = _parseArguments(arguments);
     options.reversed = true;
-    const v111 = options.tests;
-    const v112 = merge.tests;
-    const v113 = v112.white;
-    const v114 = v111.unshift(v113);
-    v114;
-    const v115 = _reducer(options);
-    return v115;
+    const v143 = options.tests;
+    const v144 = merge.tests;
+    const v145 = v144.white;
+    const v146 = v143.unshift(v145);
+    v146;
+    const v147 = _reducer(options);
+    return v147;
 };
 merge.white = mergeWhite;
-const v120 = function (params) {
-    const v116 = params.assigning;
-    if (v116) {
+const v152 = function (params) {
+    const v148 = params.assigning;
+    if (v148) {
         return true;
     }
-    const v117 = params.key;
-    const v118 = params.obj1;
-    const v119 = v117 in v118;
-    return v119;
+    const v149 = params.key;
+    const v150 = params.obj1;
+    const v151 = v149 in v150;
+    return v151;
 };
-const v125 = function (params) {
-    const v121 = params.recursing;
-    if (v121) {
+const v157 = function (params) {
+    const v153 = params.recursing;
+    if (v153) {
         return true;
     }
-    const v122 = params.key;
-    const v123 = params.obj2;
-    const v124 = v122 in v123;
-    return v124;
+    const v154 = params.key;
+    const v155 = params.obj2;
+    const v156 = v154 in v155;
+    return v156;
 };
-const v131 = function (params) {
-    const v126 = params.recursing;
-    if (v126) {
+const v163 = function (params) {
+    const v158 = params.recursing;
+    if (v158) {
         return true;
     }
-    const v127 = params.key;
-    const v128 = params.obj1;
-    const v129 = v127 in v128;
-    const v130 = !v129;
-    return v130;
+    const v159 = params.key;
+    const v160 = params.obj1;
+    const v161 = v159 in v160;
+    const v162 = !v161;
+    return v162;
 };
-const v132 = {};
-v132.merge = v120;
-v132.white = v125;
-v132.black = v131;
-merge.tests = v132;
+const v164 = {};
+v164.merge = v152;
+v164.white = v157;
+v164.black = v163;
+merge.tests = v164;
 module.exports = merge;
 const _reducer = function (options) {
-    const v133 = options.objects;
-    var target = v133[0];
-    const v134 = options.objects;
-    var len = v134.length;
+    const v165 = options.objects;
+    var target = v165[0];
+    const v166 = options.objects;
+    var len = v166.length;
     var i = 1;
-    let v135 = i < len;
-    while (v135) {
-        const v137 = options.objects;
-        const v138 = v137[i];
-        const v139 = options.depth;
-        const v140 = _iterate(target, v138, v139, options);
-        v140;
-        const v136 = ++i;
-        v135 = i < len;
+    let v167 = i < len;
+    while (v167) {
+        const v169 = options.objects;
+        const v170 = v169[i];
+        const v171 = options.depth;
+        const v172 = _iterate(target, v170, v171, options);
+        v172;
+        const v168 = ++i;
+        v167 = i < len;
     }
     return target;
 };
 const _parseArguments = function (args) {
-    const v141 = {};
-    v141.object = true;
-    v141.array = true;
-    const v142 = [];
+    const v173 = {};
+    v173.object = true;
+    v173.array = true;
+    const v174 = [];
     var options = {};
     options.depth = 8;
-    options.types = v141;
-    options.tests = v142;
-    const v143 = Array.prototype;
-    const v144 = v143.slice;
-    args = v144.call(args);
-    const v145 = args[0];
-    const v146 = typeOf.Array(v145);
-    if (v146) {
-        const v147 = args.length;
-        const v148 = v147 - 1;
-        var lastArg = args[v148];
-        const v149 = typeOf.Function(lastArg);
-        if (v149) {
-            const v150 = options.tests;
-            const v151 = v150.push(lastArg);
-            v151;
-            const v152 = args.pop();
-            v152;
+    options.types = v173;
+    options.tests = v174;
+    const v175 = Array.prototype;
+    const v176 = v175.slice;
+    args = v176.call(args);
+    const v177 = args[0];
+    const v178 = isArray(v177);
+    if (v178) {
+        const v179 = args.length;
+        const v180 = v179 - 1;
+        var lastArg = args[v180];
+        const v181 = isFunction(lastArg);
+        if (v181) {
+            const v182 = options.tests;
+            const v183 = v182.push(lastArg);
+            v183;
+            const v184 = args.pop();
+            v184;
         }
-        const v153 = args[1];
-        if (v153) {
-            const v154 = args[1];
-            const v155 = v154.depth;
-            const v156 = v155 !== undefined;
-            const v157 = args[1];
-            const v158 = v157.depth;
-            const v159 = options.depth;
-            let v160;
-            if (v156) {
-                v160 = v158;
+        const v185 = args[1];
+        if (v185) {
+            const v186 = args[1];
+            const v187 = v186.depth;
+            const v188 = v187 !== undefined;
+            const v189 = args[1];
+            const v190 = v189.depth;
+            const v191 = options.depth;
+            let v192;
+            if (v188) {
+                v192 = v190;
             } else {
-                v160 = v159;
+                v192 = v191;
             }
-            options.depth = v160;
-            const v161 = args[1];
-            const v162 = v161.types;
-            const v163 = options.types;
-            const v164 = v162 || v163;
-            const v165 = _castTypes(v164);
-            options.types = v165;
-            const v166 = args[1];
-            const v167 = v166.test;
-            if (v167) {
-                const v168 = options.tests;
-                const v169 = args[1];
-                const v170 = v169.test;
-                const v171 = v168.push(v170);
-                v171;
+            options.depth = v192;
+            const v193 = args[1];
+            const v194 = v193.types;
+            const v195 = options.types;
+            const v196 = v194 || v195;
+            const v197 = _castTypes(v196);
+            options.types = v197;
+            const v198 = args[1];
+            const v199 = v198.test;
+            if (v199) {
+                const v200 = options.tests;
+                const v201 = args[1];
+                const v202 = v201.test;
+                const v203 = v200.push(v202);
+                v203;
             }
         }
-        const v172 = args[0];
-        options.objects = v172;
+        const v204 = args[0];
+        options.objects = v204;
     } else {
         options.objects = args;
     }
     return options;
 };
 const _iterate = function (obj1, obj2, depth, options) {
-    const v173 = --depth;
-    const v174 = v173 < 0;
-    if (v174) {
+    const v205 = --depth;
+    const v206 = v205 < 0;
+    if (v206) {
         return obj1;
     }
     let iterated;
-    const v175 = options.reversed;
-    if (v175) {
+    const v207 = options.reversed;
+    if (v207) {
         iterated = obj1;
     } else {
         iterated = obj2;
     }
     let key;
     for (key in iterated) {
-        const v176 = obj2.hasOwnProperty(key);
-        const v177 = !v176;
-        if (v177) {
+        const v208 = obj2.hasOwnProperty(key);
+        const v209 = !v208;
+        if (v209) {
             continue;
         }
-        const v178 = obj1[key];
-        var obj1Type = typeOf(v178);
-        const v179 = obj2[key];
-        var obj2Type = typeOf(v179);
+        const v210 = obj1[key];
+        var obj1Type = typeOf(v210);
+        const v211 = obj2[key];
+        var obj2Type = typeOf(v211);
         var testOptions = {};
         testOptions.obj1 = obj1;
         testOptions.obj2 = obj2;
@@ -184,33 +223,33 @@ const _iterate = function (obj1, obj2, depth, options) {
         testOptions.options = options;
         testOptions.assigning = false;
         testOptions.recursing = false;
-        const v180 = options.types;
-        const v181 = obj2Type in v180;
-        const v182 = options.types;
-        const v183 = obj1Type in v182;
-        const v184 = v181 && v183;
-        if (v184) {
+        const v212 = options.types;
+        const v213 = obj2Type in v212;
+        const v214 = options.types;
+        const v215 = obj1Type in v214;
+        const v216 = v213 && v215;
+        if (v216) {
             testOptions.recursing = true;
-            const v185 = options.tests;
-            const v186 = _runTests(v185, testOptions);
-            const v187 = !v186;
-            if (v187) {
+            const v217 = options.tests;
+            const v218 = _runTests(v217, testOptions);
+            const v219 = !v218;
+            if (v219) {
                 continue;
             }
-            const v188 = obj1[key];
-            const v189 = obj2[key];
-            const v190 = _iterate(v188, v189, depth, options);
-            v190;
+            const v220 = obj1[key];
+            const v221 = obj2[key];
+            const v222 = _iterate(v220, v221, depth, options);
+            v222;
         } else {
             testOptions.assigning = true;
-            const v191 = options.tests;
-            const v192 = _runTests(v191, testOptions);
-            const v193 = !v192;
-            if (v193) {
+            const v223 = options.tests;
+            const v224 = _runTests(v223, testOptions);
+            const v225 = !v224;
+            if (v225) {
                 continue;
             }
-            const v194 = obj2[key];
-            obj1[key] = v194;
+            const v226 = obj2[key];
+            obj1[key] = v226;
         }
     }
     return obj1;
@@ -218,24 +257,24 @@ const _iterate = function (obj1, obj2, depth, options) {
 const _runTests = function (tests, options) {
     let i;
     for (i in tests) {
-        const v195 = tests[i](options);
-        const v196 = !v195;
-        if (v196) {
+        const v227 = tests[i](options);
+        const v228 = !v227;
+        if (v228) {
             return false;
         }
     }
     return true;
 };
 const _castTypes = function (types) {
-    const v197 = typeOf.Object(types);
-    if (v197) {
+    const v229 = isObject(types);
+    if (v229) {
         return types;
     }
-    const v198 = function (hash, key) {
+    const v230 = function (hash, key) {
         hash[key] = true;
         return hash;
     };
-    const v199 = {};
-    const v200 = types.reduce(v198, v199);
-    return v200;
+    const v231 = {};
+    const v232 = types.reduce(v230, v231);
+    return v232;
 };

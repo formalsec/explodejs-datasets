@@ -16,7 +16,10 @@
             "path": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },
@@ -34,9 +37,9 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "4262.set-o596",
-                "fn_id": "3451",
-                "source_fn_id": "3451"
+                "fn_name": "4286.set-o598",
+                "fn_id": "3464",
+                "source_fn_id": "3464"
             }
         ]
     },
@@ -62,7 +65,10 @@
             "path": {
                 "_union": [
                     "object",
-                    "array",
+                    [
+                        "string",
+                        "string"
+                    ],
                     "string"
                 ]
             },
@@ -80,9 +86,9 @@
             {
                 "type": "Method",
                 "prop": "set",
-                "fn_name": "4262.set-o596",
-                "fn_id": "3451",
-                "source_fn_id": "3451"
+                "fn_name": "4286.set-o598",
+                "fn_id": "3464",
+                "source_fn_id": "3464"
             }
         ]
     }

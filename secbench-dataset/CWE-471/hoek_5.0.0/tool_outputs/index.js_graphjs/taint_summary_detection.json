@@ -32,7 +32,7 @@
     {
         "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
-        "sink": "target[key] = exports.clone(value);",
+        "sink": "target[key] = value;",
         "sink_lineno": 127
     }
 ]

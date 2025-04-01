@@ -1,7 +1,20 @@
 'use strict';
-const isOptionObject = require('is-plain-obj');
-const v89 = Object.prototype;
-const hasOwnProperty = v89.hasOwnProperty;
+const v98 = Object.prototype;
+var toString = v98.toString;
+const isOptionObject = function (x) {
+    var prototype;
+    const v99 = toString.call(x);
+    const v100 = v99 === '[object Object]';
+    const v101 = prototype === null;
+    const v102 = {};
+    const v103 = Object.getPrototypeOf(v102);
+    const v104 = prototype === v103;
+    const v105 = v101 || v104;
+    const v106 = v100 && (prototype = Object.getPrototypeOf(x), v105);
+    return v106;
+};
+const v107 = Object.prototype;
+const hasOwnProperty = v107.hasOwnProperty;
 const propIsEnumerable = Object.propertyIsEnumerable;
 const globalThis = this;
 const defaultMergeOpts = {};
@@ -10,196 +23,196 @@ const getEnumerableOwnPropertyKeys = value => {
     const keys = [];
     let key;
     for (key in value) {
-        const v90 = hasOwnProperty.call(value, key);
-        if (v90) {
-            const v91 = keys.push(key);
-            v91;
+        const v108 = hasOwnProperty.call(value, key);
+        if (v108) {
+            const v109 = keys.push(key);
+            v109;
         }
     }
-    const v92 = Object.getOwnPropertySymbols;
-    if (v92) {
+    const v110 = Object.getOwnPropertySymbols;
+    if (v110) {
         const symbols = Object.getOwnPropertySymbols(value);
         let i = 0;
-        const v93 = symbols.length;
-        let v94 = i < v93;
-        while (v94) {
-            const v96 = symbols[i];
-            const v97 = propIsEnumerable.call(value, v96);
-            if (v97) {
-                const v98 = symbols[i];
-                const v99 = keys.push(v98);
-                v99;
+        const v111 = symbols.length;
+        let v112 = i < v111;
+        while (v112) {
+            const v114 = symbols[i];
+            const v115 = propIsEnumerable.call(value, v114);
+            if (v115) {
+                const v116 = symbols[i];
+                const v117 = keys.push(v116);
+                v117;
             }
-            const v95 = i++;
-            v94 = i < v93;
+            const v113 = i++;
+            v112 = i < v111;
         }
     }
     return keys;
 };
 const clone = function (value) {
-    const v100 = Array.isArray(value);
-    if (v100) {
-        const v101 = cloneArray(value);
-        return v101;
+    const v118 = Array.isArray(value);
+    if (v118) {
+        const v119 = cloneArray(value);
+        return v119;
     }
-    const v102 = isOptionObject(value);
-    if (v102) {
-        const v103 = cloneOptionObject(value);
-        return v103;
+    const v120 = isOptionObject(value);
+    if (v120) {
+        const v121 = cloneOptionObject(value);
+        return v121;
     }
     return value;
 };
 const cloneArray = function (array) {
     const result = array.slice(0, 0);
-    const v104 = getEnumerableOwnPropertyKeys(array);
-    const v107 = key => {
-        const v105 = array[key];
-        const v106 = clone(v105);
-        result[key] = v106;
+    const v122 = getEnumerableOwnPropertyKeys(array);
+    const v125 = key => {
+        const v123 = array[key];
+        const v124 = clone(v123);
+        result[key] = v124;
     };
-    const v108 = v104.forEach(v107);
-    v108;
+    const v126 = v122.forEach(v125);
+    v126;
     return result;
 };
 const cloneOptionObject = function (obj) {
     let result;
-    const v109 = Object.getPrototypeOf(obj);
-    const v110 = v109 === null;
-    const v111 = Object.create(null);
-    const v112 = {};
-    if (v110) {
-        result = v111;
+    const v127 = Object.getPrototypeOf(obj);
+    const v128 = v127 === null;
+    const v129 = Object.create(null);
+    const v130 = {};
+    if (v128) {
+        result = v129;
     } else {
-        result = v112;
+        result = v130;
     }
-    const v113 = getEnumerableOwnPropertyKeys(obj);
-    const v116 = key => {
-        const v114 = obj[key];
-        const v115 = clone(v114);
-        result[key] = v115;
+    const v131 = getEnumerableOwnPropertyKeys(obj);
+    const v134 = key => {
+        const v132 = obj[key];
+        const v133 = clone(v132);
+        result[key] = v133;
     };
-    const v117 = v113.forEach(v116);
-    v117;
+    const v135 = v131.forEach(v134);
+    v135;
     return result;
 };
 const mergeKeys = (merged, source, keys, mergeOpts) => {
-    const v124 = key => {
-        const v118 = key in merged;
-        if (v118) {
-            const v119 = merged[key];
-            const v120 = source[key];
-            const v121 = merge(v119, v120, mergeOpts);
-            merged[key] = v121;
+    const v142 = key => {
+        const v136 = key in merged;
+        if (v136) {
+            const v137 = merged[key];
+            const v138 = source[key];
+            const v139 = merge(v137, v138, mergeOpts);
+            merged[key] = v139;
         } else {
-            const v122 = source[key];
-            const v123 = clone(v122);
-            merged[key] = v123;
+            const v140 = source[key];
+            const v141 = clone(v140);
+            merged[key] = v141;
         }
     };
-    const v125 = keys.forEach(v124);
-    v125;
+    const v143 = keys.forEach(v142);
+    v143;
     return merged;
 };
 const concatArrays = (merged, source, mergeOpts) => {
     let result = merged.slice(0, 0);
     let resultIndex = 0;
-    const v126 = [
+    const v144 = [
         merged,
         source
     ];
-    const v146 = array => {
+    const v164 = array => {
         const indices = [];
         let k = 0;
-        const v127 = array.length;
-        let v128 = k < v127;
-        while (v128) {
-            const v130 = hasOwnProperty.call(array, k);
-            const v131 = !v130;
-            if (v131) {
+        const v145 = array.length;
+        let v146 = k < v145;
+        while (v146) {
+            const v148 = hasOwnProperty.call(array, k);
+            const v149 = !v148;
+            if (v149) {
                 continue;
             }
-            const v132 = String(k);
-            const v133 = indices.push(v132);
-            v133;
-            const v134 = array === merged;
-            if (v134) {
-                const v135 = resultIndex++;
-                const v136 = array[k];
-                result[v135] = v136;
+            const v150 = String(k);
+            const v151 = indices.push(v150);
+            v151;
+            const v152 = array === merged;
+            if (v152) {
+                const v153 = resultIndex++;
+                const v154 = array[k];
+                result[v153] = v154;
             } else {
-                const v138 = array[k];
-                const v139 = clone(v138);
-                result[v137] = v139;
+                const v156 = array[k];
+                const v157 = clone(v156);
+                result[v155] = v157;
             }
-            const v129 = k++;
-            v128 = k < v127;
+            const v147 = k++;
+            v146 = k < v145;
         }
-        const v140 = getEnumerableOwnPropertyKeys(array);
-        const v144 = key => {
-            const v141 = indices.indexOf(key);
-            const v142 = -1;
-            const v143 = v141 === v142;
-            return v143;
+        const v158 = getEnumerableOwnPropertyKeys(array);
+        const v162 = key => {
+            const v159 = indices.indexOf(key);
+            const v160 = -1;
+            const v161 = v159 === v160;
+            return v161;
         };
-        const v145 = v140.filter(v144);
-        result = mergeKeys(result, array, v145, mergeOpts);
+        const v163 = v158.filter(v162);
+        result = mergeKeys(result, array, v163, mergeOpts);
     };
-    const v147 = v126.forEach(v146);
-    v147;
+    const v165 = v144.forEach(v164);
+    v165;
     return result;
 };
 const merge = function (merged, source, mergeOpts) {
-    const v148 = mergeOpts.concatArrays;
-    const v149 = Array.isArray(merged);
-    const v150 = v148 && v149;
-    const v151 = Array.isArray(source);
-    const v152 = v150 && v151;
-    if (v152) {
-        const v153 = concatArrays(merged, source, mergeOpts);
-        return v153;
+    const v166 = mergeOpts.concatArrays;
+    const v167 = Array.isArray(merged);
+    const v168 = v166 && v167;
+    const v169 = Array.isArray(source);
+    const v170 = v168 && v169;
+    if (v170) {
+        const v171 = concatArrays(merged, source, mergeOpts);
+        return v171;
     }
-    const v154 = isOptionObject(source);
-    const v155 = !v154;
-    const v156 = isOptionObject(merged);
-    const v157 = !v156;
-    const v158 = v155 || v157;
-    if (v158) {
-        const v159 = clone(source);
-        return v159;
+    const v172 = isOptionObject(source);
+    const v173 = !v172;
+    const v174 = isOptionObject(merged);
+    const v175 = !v174;
+    const v176 = v173 || v175;
+    if (v176) {
+        const v177 = clone(source);
+        return v177;
     }
-    const v160 = getEnumerableOwnPropertyKeys(source);
-    const v161 = mergeKeys(merged, source, v160, mergeOpts);
-    return v161;
+    const v178 = getEnumerableOwnPropertyKeys(source);
+    const v179 = mergeKeys(merged, source, v178, mergeOpts);
+    return v179;
 };
-const v176 = function () {
-    const v162 = clone(defaultMergeOpts);
-    const v163 = this !== globalThis;
-    const v164 = v163 && this;
-    const v165 = {};
-    const v166 = v164 || v165;
-    const mergeOpts = merge(v162, v166, defaultMergeOpts);
+const v194 = function () {
+    const v180 = clone(defaultMergeOpts);
+    const v181 = this !== globalThis;
+    const v182 = v181 && this;
+    const v183 = {};
+    const v184 = v182 || v183;
+    const mergeOpts = merge(v180, v184, defaultMergeOpts);
     let merged = {};
     let i = 0;
-    const v167 = arguments.length;
-    let v168 = i < v167;
-    while (v168) {
+    const v185 = arguments.length;
+    let v186 = i < v185;
+    while (v186) {
         const option = arguments[i];
-        const v170 = option === undefined;
-        if (v170) {
+        const v188 = option === undefined;
+        if (v188) {
             continue;
         }
-        const v171 = isOptionObject(option);
-        const v172 = !v171;
-        if (v172) {
-            const v173 = '`' + option;
-            const v174 = v173 + '` is not an Option Object';
-            const v175 = new TypeError(v174);
-            throw v175;
+        const v189 = isOptionObject(option);
+        const v190 = !v189;
+        if (v190) {
+            const v191 = '`' + option;
+            const v192 = v191 + '` is not an Option Object';
+            const v193 = new TypeError(v192);
+            throw v193;
         }
         merged = merge(merged, option, mergeOpts);
-        const v169 = i++;
-        v168 = i < v167;
+        const v187 = i++;
+        v186 = i < v185;
     }
     return merged;
 };
-module.exports = v176;
+module.exports = v194;
