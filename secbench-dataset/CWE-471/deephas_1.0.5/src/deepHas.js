@@ -87,10 +87,10 @@ function get(target, path) {
 function set(target, path, val) {
     "use strict";
     try {
-        if ( typeof str !== "string") {
+        if ( typeof path !== "string") {
             return;
         }
-        if ( typeof obj !== "object") {
+        if ( typeof target !== "object") {
             return;
         }
         if (!val) {
