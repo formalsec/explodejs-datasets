@@ -1,1 +1,15 @@
-{"type":"commonjs"}
+{
+  "type":"commonjs",
+  "peerDependencies": {
+    "@graphql-mesh/cross-helpers": "^0.4.0",
+    "@graphql-mesh/types": "^0.95.1",
+    "@graphql-mesh/utils": "^0.95.1",
+    "graphql": "*",
+    "tslib": "^2.4.0"
+  },
+  "dependencies": {
+    "@graphql-mesh/string-interpolation": "0.5.1",
+    "@whatwg-node/fetch": "^0.9.0",
+    "minimatch": "9.0.3"
+  }
+}

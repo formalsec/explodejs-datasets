@@ -3,7 +3,12 @@
 const chalk = require('chalk');
 const cl = require('chalkline');
 const Table = require('cli-table');
-const pkgInfo = require('../package.json');
+const pkgInfo = {
+  version : "2.7.26",
+  name: "cd-messenger"
+}
+
+
 
 const CLI_ICON_FAIL = '✘';
 const CLI_ICON_PASS = '✓';
