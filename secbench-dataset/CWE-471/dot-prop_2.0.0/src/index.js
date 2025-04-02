@@ -27,8 +27,8 @@ module.exports.set = function (obj, path, value) {
 	}
 
 	var pathArr = path.split('.');
-  for (var i = 0; i < pathArr.length - 1; i++) {
-    path = pathArr[i];
+  for (var i = 0; i < pathArr.length; i++) {
+    var path = pathArr[i];
 		if (!isObject(obj[path])) {
 			obj[path] = {};
 		}
@@ -38,5 +38,5 @@ module.exports.set = function (obj, path, value) {
 		}
 
 		obj = obj[path];
-	}
+	};
 };

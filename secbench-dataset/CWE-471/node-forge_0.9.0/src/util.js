@@ -5,8 +5,11 @@
  *
  * Copyright (c) 2010-2018 Digital Bazaar, Inc.
  */
-var forge = require('./forge');
-var baseN = require('./baseN');
+var forge = {};
+var baseN = {
+  encode: (input) => { return input },
+  decode: (input) => { return input }
+};
 
 /* Utilities API */
 var util = module.exports = forge.util = forge.util || {};

@@ -1,4 +1,7 @@
-var isBuffer = require('is-buffer')
+function isBuffer (obj) {
+  return obj != null && obj.constructor != null &&
+    typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj);
+}
 
 module.exports = flatten
 flatten.flatten = flatten
