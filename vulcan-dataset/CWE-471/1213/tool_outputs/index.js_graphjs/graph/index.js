@@ -1,188 +1,194 @@
 'use strict';
-const isObj = require('is-obj');
+const isObj = o => {
+    const v90 = o !== null;
+    const v91 = typeof o;
+    const v92 = v91 == 'object';
+    const v93 = v90 && v92;
+    return v93;
+};
 const getPathSegments = function (path) {
     const pathArray = path.split('.');
     const parts = [];
     let i = 0;
-    const v86 = pathArray.length;
-    let v87 = i < v86;
-    while (v87) {
+    const v94 = pathArray.length;
+    let v95 = i < v94;
+    while (v95) {
         let p = pathArray[i];
-        const v89 = p.length;
-        const v90 = v89 - 1;
-        const v91 = p[v90];
-        const v92 = v91 === '\\';
-        const v93 = i + 1;
-        const v94 = pathArray[v93];
-        const v95 = v94 !== undefined;
-        let v96 = v92 && v95;
-        while (v96) {
-            const v97 = -1;
-            const v98 = p.slice(0, v97);
-            p = v98 + '.';
-            const v99 = ++i;
-            p += pathArray[v99];
-            v96 = v92 && v95;
+        const v97 = p.length;
+        const v98 = v97 - 1;
+        const v99 = p[v98];
+        const v100 = v99 === '\\';
+        const v101 = i + 1;
+        const v102 = pathArray[v101];
+        const v103 = v102 !== undefined;
+        let v104 = v100 && v103;
+        while (v104) {
+            const v105 = -1;
+            const v106 = p.slice(0, v105);
+            p = v106 + '.';
+            const v107 = ++i;
+            p += pathArray[v107];
+            v104 = v100 && v103;
         }
-        const v100 = parts.push(p);
-        v100;
-        const v88 = i++;
-        v87 = i < v86;
+        const v108 = parts.push(p);
+        v108;
+        const v96 = i++;
+        v95 = i < v94;
     }
     return parts;
 };
-const v123 = function (object, path, value) {
-    const v101 = isObj(object);
-    const v102 = !v101;
-    const v103 = typeof path;
-    const v104 = v103 !== 'string';
-    const v105 = v102 || v104;
-    if (v105) {
-        const v106 = value === undefined;
-        let v107;
-        if (v106) {
-            v107 = object;
+const v131 = function (object, path, value) {
+    const v109 = isObj(object);
+    const v110 = !v109;
+    const v111 = typeof path;
+    const v112 = v111 !== 'string';
+    const v113 = v110 || v112;
+    if (v113) {
+        const v114 = value === undefined;
+        let v115;
+        if (v114) {
+            v115 = object;
         } else {
-            v107 = value;
+            v115 = value;
         }
-        return v107;
+        return v115;
     }
     const pathArray = getPathSegments(path);
     let i = 0;
-    const v108 = pathArray.length;
-    let v109 = i < v108;
-    while (v109) {
-        const v111 = Object.prototype;
-        const v112 = v111.propertyIsEnumerable;
-        const v113 = pathArray[i];
-        const v114 = v112.call(object, v113);
-        const v115 = !v114;
-        if (v115) {
+    const v116 = pathArray.length;
+    let v117 = i < v116;
+    while (v117) {
+        const v119 = Object.prototype;
+        const v120 = v119.propertyIsEnumerable;
+        const v121 = pathArray[i];
+        const v122 = v120.call(object, v121);
+        const v123 = !v122;
+        if (v123) {
             return value;
         }
-        const v116 = pathArray[i];
-        object = object[v116];
-        const v117 = object === undefined;
-        const v118 = object === null;
-        const v119 = v117 || v118;
-        if (v119) {
-            const v120 = pathArray.length;
-            const v121 = v120 - 1;
-            const v122 = i !== v121;
-            if (v122) {
+        const v124 = pathArray[i];
+        object = object[v124];
+        const v125 = object === undefined;
+        const v126 = object === null;
+        const v127 = v125 || v126;
+        if (v127) {
+            const v128 = pathArray.length;
+            const v129 = v128 - 1;
+            const v130 = i !== v129;
+            if (v130) {
                 return value;
             }
             break;
         }
-        const v110 = i++;
-        v109 = i < v108;
+        const v118 = i++;
+        v117 = i < v116;
     }
     return object;
 };
-const v139 = function (object, path, value) {
-    const v124 = isObj(object);
-    const v125 = !v124;
-    const v126 = typeof path;
-    const v127 = v126 !== 'string';
-    const v128 = v125 || v127;
-    if (v128) {
+const v147 = function (object, path, value) {
+    const v132 = isObj(object);
+    const v133 = !v132;
+    const v134 = typeof path;
+    const v135 = v134 !== 'string';
+    const v136 = v133 || v135;
+    if (v136) {
         return object;
     }
     const root = object;
     const pathArray = getPathSegments(path);
     let i = 0;
-    const v129 = pathArray.length;
-    let v130 = i < v129;
-    while (v130) {
+    const v137 = pathArray.length;
+    let v138 = i < v137;
+    while (v138) {
         const p = pathArray[i];
-        const v132 = object[p];
-        const v133 = isObj(v132);
-        const v134 = !v133;
-        if (v134) {
-            const v135 = {};
-            object[p] = v135;
+        const v140 = object[p];
+        const v141 = isObj(v140);
+        const v142 = !v141;
+        if (v142) {
+            const v143 = {};
+            object[p] = v143;
         }
-        const v136 = pathArray.length;
-        const v137 = v136 - 1;
-        const v138 = i === v137;
-        if (v138) {
+        const v144 = pathArray.length;
+        const v145 = v144 - 1;
+        const v146 = i === v145;
+        if (v146) {
             object[p] = value;
         }
         object = object[p];
-        const v131 = i++;
-        v130 = i < v129;
+        const v139 = i++;
+        v138 = i < v137;
     }
     return root;
 };
-const v155 = function (object, path) {
-    const v140 = isObj(object);
-    const v141 = !v140;
-    const v142 = typeof path;
-    const v143 = v142 !== 'string';
-    const v144 = v141 || v143;
-    if (v144) {
+const v163 = function (object, path) {
+    const v148 = isObj(object);
+    const v149 = !v148;
+    const v150 = typeof path;
+    const v151 = v150 !== 'string';
+    const v152 = v149 || v151;
+    if (v152) {
         return;
     }
     const pathArray = getPathSegments(path);
     let i = 0;
-    const v145 = pathArray.length;
-    let v146 = i < v145;
-    while (v146) {
+    const v153 = pathArray.length;
+    let v154 = i < v153;
+    while (v154) {
         const p = pathArray[i];
-        const v148 = pathArray.length;
-        const v149 = v148 - 1;
-        const v150 = i === v149;
-        if (v150) {
-            const v151 = object[p];
-            const v152 = delete v151;
-            v152;
+        const v156 = pathArray.length;
+        const v157 = v156 - 1;
+        const v158 = i === v157;
+        if (v158) {
+            const v159 = object[p];
+            const v160 = delete v159;
+            v160;
             return;
         }
         object = object[p];
-        const v153 = isObj(object);
-        const v154 = !v153;
-        if (v154) {
+        const v161 = isObj(object);
+        const v162 = !v161;
+        if (v162) {
             return;
         }
-        const v147 = i++;
-        v146 = i < v145;
+        const v155 = i++;
+        v154 = i < v153;
     }
 };
-const v169 = function (object, path) {
-    const v156 = isObj(object);
-    const v157 = !v156;
-    const v158 = typeof path;
-    const v159 = v158 !== 'string';
-    const v160 = v157 || v159;
-    if (v160) {
+const v177 = function (object, path) {
+    const v164 = isObj(object);
+    const v165 = !v164;
+    const v166 = typeof path;
+    const v167 = v166 !== 'string';
+    const v168 = v165 || v167;
+    if (v168) {
         return false;
     }
     const pathArray = getPathSegments(path);
     let i = 0;
-    const v161 = pathArray.length;
-    let v162 = i < v161;
-    while (v162) {
-        const v164 = isObj(object);
-        if (v164) {
-            const v165 = pathArray[i];
-            const v166 = v165 in object;
-            const v167 = !v166;
-            if (v167) {
+    const v169 = pathArray.length;
+    let v170 = i < v169;
+    while (v170) {
+        const v172 = isObj(object);
+        if (v172) {
+            const v173 = pathArray[i];
+            const v174 = v173 in object;
+            const v175 = !v174;
+            if (v175) {
                 return false;
             }
-            const v168 = pathArray[i];
-            object = object[v168];
+            const v176 = pathArray[i];
+            object = object[v176];
         } else {
             return false;
         }
-        const v163 = i++;
-        v162 = i < v161;
+        const v171 = i++;
+        v170 = i < v169;
     }
     return true;
 };
-const v170 = {};
-v170.get = v123;
-v170.set = v139;
-v170.delete = v155;
-v170.has = v169;
-module.exports = v170;
+const v178 = {};
+v178.get = v131;
+v178.set = v147;
+v178.delete = v163;
+v178.has = v177;
+module.exports = v178;

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-471/mixin-deep_2.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mixin-deep_2.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = val;",
         "sink_lineno": 21,
@@ -13,14 +13,6 @@
         "params_types": {
             "target": "object",
             "undefined": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "330.mixinDeep-o46",
-                "fn_id": 196,
-                "source_fn_id": 196
-            }
-        ]
+        }
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/bmoor_0.8.11/src/core.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/bmoor_0.8.11/src/core.js",
         "vuln_type": "prototype-pollution",
         "sink": "curSpace[ val ] = value;",
         "sink_lineno": 194

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-94/safe-eval_0.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/safe-eval_0.2.0/src/index.js",
         "vuln_type": "code-injection",
         "sink": "vm.runInNewContext(code, sandbox)",
         "sink_lineno": 13,
@@ -15,14 +15,6 @@
             "context": {
                 "*": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "245.safeEval-o39",
-                "fn_id": "149",
-                "source_fn_id": "149"
-            }
-        ]
+        }
     }
 ]

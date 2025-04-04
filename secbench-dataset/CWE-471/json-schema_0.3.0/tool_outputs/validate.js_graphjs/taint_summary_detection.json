@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/json-schema_0.3.0/src/validate.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/json-schema_0.3.0/src/validate.js",
         "vuln_type": "prototype-pollution",
         "sink": "value[i] = options.coerce(value[i], propDef);",
         "sink_lineno": 149

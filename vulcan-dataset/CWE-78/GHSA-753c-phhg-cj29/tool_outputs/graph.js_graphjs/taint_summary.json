@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
         "sink_lineno": 29,
@@ -15,20 +15,11 @@
             "modules": "object",
             "circular": "array",
             "config": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "svg",
-                "fn_name": "1819.v193-o281",
-                "fn_id": 1605,
-                "source_fn_id": 1605
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
         "sink_lineno": 29,
@@ -44,20 +35,11 @@
             "circular": "array",
             "imagePath": "string",
             "config": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "image",
-                "fn_name": "1819.v207-o289",
-                "fn_id": 1655,
-                "source_fn_id": 1655
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "command-injection",
         "sink": "return exec(cmd)",
         "sink_lineno": 29,
@@ -71,20 +53,11 @@
             "modules": "object",
             "circular": "array",
             "config": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "dot",
-                "fn_name": "1819.v216-o296",
-                "fn_id": 1755,
-                "source_fn_id": 1755
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-753c-phhg-cj29/src/graph.js",
         "vuln_type": "path-traversal",
         "sink": ".then((image) => writeFile(imagePath, image))",
         "sink_lineno": 151,
@@ -100,15 +73,6 @@
             "circular": "array",
             "imagePath": "string",
             "config": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "image",
-                "fn_name": "1819.v207-o289",
-                "fn_id": 1655,
-                "source_fn_id": 1655
-            }
-        ]
+        }
     }
 ]

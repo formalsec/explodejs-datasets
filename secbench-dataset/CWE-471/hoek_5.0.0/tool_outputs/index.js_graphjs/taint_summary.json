@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "res[segment] = exports.reach(source, sourcePath, options);",
         "sink_lineno": 894,
@@ -14,37 +14,24 @@
         "params_types": {
             "source": {
                 "_union": [
-                    "object",
-                    [
-                        "string",
-                        "string"
-                    ],
-                    "string"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "transform": {
                 "_union": [
-                    "object",
-                    "array"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "options": {
                 "separator": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "transform",
-                "fn_name": "10985.v1270-o1385",
-                "fn_id": "10455",
-                "source_fn_id": "10455"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "newObj[key] = exports.clone(obj[key], seen);",
         "sink_lineno": 78,
@@ -61,20 +48,11 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "clone",
-                "fn_name": "10985.v675-o1169",
-                "fn_id": "6205",
-                "source_fn_id": "6205"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 140,
@@ -95,20 +73,11 @@
             },
             "isNullOverride": "bool",
             "isMergeArrays": "bool"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "10985.v725-o1177",
-                "fn_id": "6463",
-                "source_fn_id": "6463"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 137,
@@ -129,20 +98,11 @@
             },
             "isNullOverride": "bool",
             "isMergeArrays": "bool"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "10985.v725-o1177",
-                "fn_id": "6463",
-                "source_fn_id": "6463"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/hoek_5.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 127,
@@ -163,15 +123,6 @@
             },
             "isNullOverride": "bool",
             "isMergeArrays": "bool"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "10985.v725-o1177",
-                "fn_id": "6463",
-                "source_fn_id": "6463"
-            }
-        ]
+        }
     }
 ]

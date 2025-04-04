@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/nis-utils_0.6.10/src/object.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/nis-utils_0.6.10/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "else current[parts[i]] = value;",
         "sink_lineno": 166
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/nis-utils_0.6.10/src/object.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/nis-utils_0.6.10/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "else current[parts[i]] = current[parts[i]] || {};",
         "sink_lineno": 168

@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/1439/src/grammar-parser.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1439/src/grammar-parser.js",
         "vuln_type": "code-injection",
         "sink": "var arr = eval(\"[\" + yytext + \"]\");",
         "sink_lineno": 258

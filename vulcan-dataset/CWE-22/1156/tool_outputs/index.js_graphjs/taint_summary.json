@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-22/1156/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-22/1156/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(req.routed.templateFullPath, function (err, str) {",
         "sink_lineno": 215,
@@ -38,27 +38,11 @@
                 "res",
                 "cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "6421.v534-o763",
-                "fn_id": "3685",
-                "source_fn_id": "3685"
-            },
-            {
-                "type": "Method",
-                "prop": "mwRender",
-                "fn_name": "6421.mwRender-o762",
-                "fn_id": 4505,
-                "source_fn_id": 4505
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-22/1156/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-22/1156/src/index.js",
         "vuln_type": "code-injection",
         "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
         "sink_lineno": 350,
@@ -92,22 +76,6 @@
                 "res",
                 "cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "6421.v736-o777",
-                "fn_id": "3685",
-                "source_fn_id": "3685"
-            },
-            {
-                "type": "Method",
-                "prop": "mwRunController",
-                "fn_name": "6421.mwRunController-o776",
-                "fn_id": "5755",
-                "source_fn_id": "5755"
-            }
-        ]
+        }
     }
 ]

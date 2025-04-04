@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/svn.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/svn.js",
         "vuln_type": "command-injection",
         "sink": "exec('svn blame ' + realFile + ' ' + args, {",
         "sink_lineno": 37

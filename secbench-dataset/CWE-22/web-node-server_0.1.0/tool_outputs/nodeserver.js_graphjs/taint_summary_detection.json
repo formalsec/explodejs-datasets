@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/web-node-server_0.1.0/src/nodeserver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/web-node-server_0.1.0/src/nodeserver.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(host.frondend + host.baseTemp, function(err, file) {",
         "sink_lineno": 41
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/web-node-server_0.1.0/src/nodeserver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/web-node-server_0.1.0/src/nodeserver.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(nowTemp, function(err, file) {",
         "sink_lineno": 85

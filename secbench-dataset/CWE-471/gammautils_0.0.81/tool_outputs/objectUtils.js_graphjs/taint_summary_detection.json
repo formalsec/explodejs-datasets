@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "currentNode[currentProperty] = messages;",
         "sink_lineno": 110
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[property.shift()] = value;",
         "sink_lineno": 146

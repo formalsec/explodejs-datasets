@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/wincred_1.0.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/wincred_1.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(script)",
         "sink_lineno": 15,
@@ -13,15 +13,6 @@
         "params_types": {
             "target": "string",
             "pythonLancher": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "getCredential",
-                "fn_name": "308.getCredential-o63",
-                "fn_id": "253",
-                "source_fn_id": "253"
-            }
-        ]
+        }
     }
 ]

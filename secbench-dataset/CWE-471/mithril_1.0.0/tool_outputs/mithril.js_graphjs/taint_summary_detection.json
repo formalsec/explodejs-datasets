@@ -1,36 +1,36 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
         "vuln_type": "prototype-pollution",
         "sink": "cursor[level] = isValue ? value : isNumber ? [] : {}",
         "sink_lineno": 982
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
         "vuln_type": "prototype-pollution",
         "sink": "args.data[args.callbackKey || \"callback\"] = callbackName",
         "sink_lineno": 304
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
         "vuln_type": "prototype-pollution",
         "sink": "element[key2] = value",
         "sink_lineno": 776
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
         "vuln_type": "prototype-pollution",
         "sink": "element.style[key2] = style[key2]",
         "sink_lineno": 832
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
         "vuln_type": "prototype-pollution",
         "sink": "if (key2 in element) element[key2] = typeof value === \"function\" ? callback : null",
         "sink_lineno": 849
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
         "vuln_type": "prototype-pollution",
         "sink": "vnode.events[key2] = callback",
         "sink_lineno": 856

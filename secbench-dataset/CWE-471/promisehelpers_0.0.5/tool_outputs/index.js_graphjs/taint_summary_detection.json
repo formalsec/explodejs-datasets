@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/promisehelpers_0.0.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/promisehelpers_0.0.5/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "nestedObject[key] = value;",
         "sink_lineno": 19

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-6hr9-4692-fch9/src/helper.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-6hr9-4692-fch9/src/helper.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function (error) {",
         "sink_lineno": 24,
@@ -17,15 +17,6 @@
                 "filter": "any"
             },
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "fn_name": "525.v53-o98",
-                "fn_id": 479,
-                "prop": "applyEffect",
-                "source_fn_id": "316"
-            }
-        ]
+        }
     }
 ]

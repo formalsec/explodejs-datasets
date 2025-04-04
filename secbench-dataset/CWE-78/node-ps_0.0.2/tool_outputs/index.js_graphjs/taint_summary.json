@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/node-ps_0.0.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/node-ps_0.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "childProcess.exec(cmd, function(err, stdout, stderr) {",
         "sink_lineno": 72,
@@ -13,15 +13,6 @@
         "params_types": {
             "args": "array",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "_ps",
-                "fn_name": "1200._ps-o181",
-                "fn_id": "1027",
-                "source_fn_id": "1027"
-            }
-        ]
+        }
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/@vivaxy-here_3.1.0/src/read-file.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/@vivaxy-here_3.1.0/src/read-file.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.readFile(file, done);",
         "sink_lineno": 11

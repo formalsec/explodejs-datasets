@@ -1,7 +1,7 @@
 [
     {
         "type": "VServerInitialization",
-        "filename": "/datasets/secbench-dataset/CWE-22/zwserver_0.1.1/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/zwserver_0.1.1/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(directory + urlObj.pathname, function (err,data) {",
         "sink_lineno": 32,
@@ -11,13 +11,6 @@
         "client": {
             "type": "GET",
             "port": 8080
-        },
-        "call_paths": [
-            {
-                "type": "ServerInitialization",
-                "port": 8080,
-                "fn_name": "/datasets/secbench-dataset/CWE-22/zwserver_0.1.1/src/server.js"
-            }
-        ]
+        }
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/serve-here.js_1.1.0/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/serve-here.js_1.1.0/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "FileSystem.readFile (FilePath, function (SomeError, Data) {",
         "sink_lineno": 27

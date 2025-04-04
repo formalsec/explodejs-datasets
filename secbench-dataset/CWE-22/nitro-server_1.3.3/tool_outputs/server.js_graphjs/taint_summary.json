@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/nitro-server_1.3.3/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/nitro-server_1.3.3/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filepath, 'binary', function(err, file) {",
         "sink_lineno": 148,
@@ -47,15 +47,6 @@
                 "openInBrowser": "any",
                 "livereload": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "start",
-                "fn_name": "3440.runServer-o442",
-                "fn_id": 2332,
-                "source_fn_id": 2332
-            }
-        ]
+        }
     }
 ]

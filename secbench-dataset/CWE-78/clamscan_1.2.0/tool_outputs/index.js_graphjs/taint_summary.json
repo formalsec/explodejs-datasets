@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/clamscan_1.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/clamscan_1.2.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "const stream = fs.createReadStream(file);",
         "sink_lineno": 846,
@@ -30,27 +30,11 @@
                 "file",
                 "cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "27460.NodeClam-o2767",
-                "fn_id": "15507",
-                "source_fn_id": "15507"
-            },
-            {
-                "type": "Method",
-                "prop": "is_infected",
-                "fn_name": "27460.is_infected-o2766",
-                "fn_id": 20188,
-                "source_fn_id": 20188
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/clamscan_1.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/clamscan_1.2.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "results.concat(await Promise.all(chunk.map(file => this.scan_stream(fs.createReadStream(file)))));",
         "sink_lineno": 1587,
@@ -69,22 +53,6 @@
                 "end_cb",
                 "file_cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "27460.NodeClam-o2791",
-                "fn_id": "15507",
-                "source_fn_id": "15507"
-            },
-            {
-                "type": "Method",
-                "prop": "scan_dir",
-                "fn_name": "27460.scan_dir-o2790",
-                "fn_id": 25020,
-                "source_fn_id": 25020
-            }
-        ]
+        }
     }
 ]

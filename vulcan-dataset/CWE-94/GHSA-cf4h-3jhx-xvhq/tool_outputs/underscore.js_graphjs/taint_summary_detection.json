@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-cf4h-3jhx-xvhq/src/underscore.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-cf4h-3jhx-xvhq/src/underscore.js",
         "vuln_type": "code-injection",
         "sink": "var render = new Function(settings.variable || 'obj', '_', source);",
         "sink_lineno": 981

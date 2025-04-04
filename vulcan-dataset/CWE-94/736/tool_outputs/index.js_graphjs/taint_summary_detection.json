@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/736/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/736/src/index.js",
         "vuln_type": "code-injection",
         "sink": "return new Function('tokens, req, res', js)",
         "sink_lineno": 391

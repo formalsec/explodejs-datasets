@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/vega-util_1.13.0/src/vega-util.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/vega-util_1.13.0/src/vega-util.js",
         "vuln_type": "prototype-pollution",
         "sink": "o[k] = value[k];",
         "sink_lineno": 197
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/vega-util_1.13.0/src/vega-util.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/vega-util_1.13.0/src/vega-util.js",
         "vuln_type": "prototype-pollution",
         "sink": "output[key] = value;",
         "sink_lineno": 201

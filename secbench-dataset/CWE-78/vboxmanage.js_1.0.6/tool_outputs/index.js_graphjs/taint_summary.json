@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/vboxmanage.js_1.0.6/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/vboxmanage.js_1.0.6/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(vBoxManageBinary + ' ' + command.join(' '), {}, function (err, stdout, stderr) {",
         "sink_lineno": 76,
@@ -25,15 +25,6 @@
             "options": {
                 "*": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "manage",
-                "fn_name": "5643.v335-o840",
-                "fn_id": 3460,
-                "source_fn_id": 3460
-            }
-        ]
+        }
     }
 ]

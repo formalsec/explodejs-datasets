@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/looppake_3.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/looppake_3.0.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(path,function(error,data){",
         "sink_lineno": 9

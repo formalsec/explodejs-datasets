@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3269-x4pw-vffg/src/posix.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-3269-x4pw-vffg/src/posix.js",
         "vuln_type": "command-injection",
         "sink": "exec('df -k \"' + path + '\"', function(err, stdout) {",
         "sink_lineno": 13

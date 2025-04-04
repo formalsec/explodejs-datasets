@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/bmoor_0.8.11/src/core.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/bmoor_0.8.11/src/core.js",
         "vuln_type": "prototype-pollution",
         "sink": "curSpace[ val ] = value;",
         "sink_lineno": 194,
@@ -33,15 +33,6 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "2294.set-o334",
-                "fn_id": "1692",
-                "source_fn_id": "1692"
-            }
-        ]
+        }
     }
 ]

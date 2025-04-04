@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/552/src/typed-function.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "newParam.types[j] = conversion.from;",
+        "sink_lineno": 466
+    }
+]

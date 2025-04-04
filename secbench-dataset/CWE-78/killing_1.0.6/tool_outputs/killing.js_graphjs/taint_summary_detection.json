@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/killing_1.0.6/src/killing.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/killing_1.0.6/src/killing.js",
         "vuln_type": "command-injection",
         "sink": "exec('ps -ef | grep ' + name, function(error, stdout) {",
         "sink_lineno": 35

@@ -1,24 +1,24 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
         "vuln_type": "path-traversal",
         "sink": "this.input = fs.readFileSync(path, encoding)",
         "sink_lineno": 17
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(toPath, result, {encoding: toEncoding})",
         "sink_lineno": 161
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.configs[curSection][curKey] = curValue",
         "sink_lineno": 63
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/iniparserjs_1.0.4/src/ini_parser.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.configs[section][key] = value",
         "sink_lineno": 108

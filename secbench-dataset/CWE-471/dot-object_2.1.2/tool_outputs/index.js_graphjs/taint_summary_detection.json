@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/dot-object_2.1.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/dot-object_2.1.2/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key][k] = val[k]",
         "sink_lineno": 415
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/dot-object_2.1.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/dot-object_2.1.2/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = val",
         "sink_lineno": 423

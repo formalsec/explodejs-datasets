@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-fw2f-7f87-5r6c/src/encode.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-fw2f-7f87-5r6c/src/encode.js",
         "vuln_type": "code-injection",
         "sink": "return eval('`' + tmpl + '`');",
         "sink_lineno": 6

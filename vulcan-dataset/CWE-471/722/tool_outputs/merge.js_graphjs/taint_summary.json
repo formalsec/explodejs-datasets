@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = extend[key];",
         "sink_lineno": 94,
@@ -20,27 +20,11 @@
             "tainted_params": [
                 "clone"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1061.Public-o145",
-                "fn_id": "613",
-                "source_fn_id": "613"
-            },
-            {
-                "type": "Method",
-                "prop": "recursive",
-                "fn_name": "1061.v60-o144",
-                "fn_id": 631,
-                "source_fn_id": 631
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = merge_recursive(base[key], extend[key]);",
         "sink_lineno": 90,
@@ -59,27 +43,11 @@
             "tainted_params": [
                 "clone"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1061.Public-o145",
-                "fn_id": "613",
-                "source_fn_id": "613"
-            },
-            {
-                "type": "Method",
-                "prop": "recursive",
-                "fn_name": "1061.v60-o144",
-                "fn_id": 631,
-                "source_fn_id": 631
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "result[key] = sitem;",
         "sink_lineno": 139,
@@ -98,27 +66,11 @@
             "tainted_params": [
                 "clone"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1061.Public-o145",
-                "fn_id": "613",
-                "source_fn_id": "613"
-            },
-            {
-                "type": "Method",
-                "prop": "recursive",
-                "fn_name": "1061.v60-o144",
-                "fn_id": 631,
-                "source_fn_id": 631
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/722/src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "result[key] = merge_recursive(result[key], sitem);",
         "sink_lineno": 135,
@@ -137,22 +89,6 @@
             "tainted_params": [
                 "clone"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1061.Public-o145",
-                "fn_id": "613",
-                "source_fn_id": "613"
-            },
-            {
-                "type": "Method",
-                "prop": "recursive",
-                "fn_name": "1061.v60-o144",
-                "fn_id": 631,
-                "source_fn_id": 631
-            }
-        ]
+        }
     }
 ]

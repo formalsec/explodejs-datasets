@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/566/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "res[segment] = exports.reach(source, sourcePath, options);",
         "sink_lineno": 902,
@@ -14,37 +14,24 @@
         "params_types": {
             "source": {
                 "_union": [
-                    "object",
-                    [
-                        "string",
-                        "string"
-                    ],
-                    "string"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "transform": {
                 "_union": [
-                    "object",
-                    "array"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "options": {
                 "separator": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "transform",
-                "fn_name": "11033.v1275-o1388",
-                "fn_id": "10513",
-                "source_fn_id": "10513"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/566/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "newObj[key] = exports.clone(obj[key], seen);",
         "sink_lineno": 80,
@@ -61,20 +48,11 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "clone",
-                "fn_name": "11033.v677-o1172",
-                "fn_id": "6234",
-                "source_fn_id": "6234"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/566/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 142,
@@ -95,20 +73,11 @@
             },
             "isNullOverride": "bool",
             "isMergeArrays": "bool"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "11033.v728-o1180",
-                "fn_id": "6492",
-                "source_fn_id": "6492"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/566/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 139,
@@ -129,20 +98,11 @@
             },
             "isNullOverride": "bool",
             "isMergeArrays": "bool"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "11033.v728-o1180",
-                "fn_id": "6492",
-                "source_fn_id": "6492"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/566/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/566/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = exports.clone(value);",
         "sink_lineno": 129,
@@ -157,25 +117,12 @@
             "target": "object",
             "source": {
                 "_union": [
-                    "object",
-                    [
-                        "string",
-                        "string"
-                    ],
-                    "string"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "isNullOverride": "bool",
             "isMergeArrays": "bool"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "11033.v728-o1180",
-                "fn_id": "6492",
-                "source_fn_id": "6492"
-            }
-        ]
+        }
     }
 ]

@@ -1,46 +1,30 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-78/kill-process-by-name_1.0.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/kill-process-by-name_1.0.5/src/index.js",
         "vuln_type": "command-injection",
-        "sink": "exec('taskkill /F /IM ' + programname + '.exe /T');",
-        "sink_lineno": 9,
+        "sink": "exec('donttaskkill /F /IM ' + programname + '.exe /T');",
+        "sink_lineno": 10,
         "source": "module.exports",
         "tainted_params": [
             "programname"
         ],
         "params_types": {
             "programname": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "140.v14-o23",
-                "fn_id": "95",
-                "source_fn_id": "95"
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-78/kill-process-by-name_1.0.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/kill-process-by-name_1.0.5/src/index.js",
         "vuln_type": "command-injection",
-        "sink": "exec('pkill -f ' + programname);",
-        "sink_lineno": 12,
+        "sink": "exec('dontpkill -f ' + programname);",
+        "sink_lineno": 13,
         "source": "module.exports",
         "tainted_params": [
             "programname"
         ],
         "params_types": {
             "programname": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "140.v14-o23",
-                "fn_id": "95",
-                "source_fn_id": "95"
-            }
-        ]
+        }
     }
 ]

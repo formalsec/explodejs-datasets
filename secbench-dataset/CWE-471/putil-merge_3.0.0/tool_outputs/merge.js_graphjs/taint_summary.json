@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/putil-merge_3.0.0/src/merge.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/putil-merge_3.0.0/src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = srcVal;",
         "sink_lineno": 72,
@@ -37,22 +37,6 @@
                 "objects",
                 "options"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1090.merge-o127",
-                "fn_id": "645",
-                "source_fn_id": "645"
-            },
-            {
-                "type": "Method",
-                "prop": "all",
-                "fn_name": "1090.all-o126",
-                "fn_id": 1002,
-                "source_fn_id": 1002
-            }
-        ]
+        }
     }
 ]

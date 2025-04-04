@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-471/917/src/deepMerge.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/917/src/deepMerge.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = source[key];",
         "sink_lineno": 18

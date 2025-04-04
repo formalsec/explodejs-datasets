@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/tiny-conf_1.1.0/src/tiny-conf.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/tiny-conf_1.1.0/src/tiny-conf.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = val;",
         "sink_lineno": 73
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/tiny-conf_1.1.0/src/tiny-conf.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/tiny-conf_1.1.0/src/tiny-conf.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = val;",
         "sink_lineno": 107

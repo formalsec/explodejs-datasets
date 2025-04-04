@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-22/GHSA-hj3m-v758-jwx5/src/file-system.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-22/GHSA-hj3m-v758-jwx5/src/file-system.js",
         "vuln_type": "path-traversal",
         "sink": "const readStream = fs.createReadStream(filePath);",
         "sink_lineno": 13,
@@ -11,15 +11,6 @@
         ],
         "params_types": {
             "url": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "createReadStream",
-                "fn_name": "494.createReadStream-o80",
-                "fn_id": "312",
-                "source_fn_id": "312"
-            }
-        ]
+        }
     }
 ]

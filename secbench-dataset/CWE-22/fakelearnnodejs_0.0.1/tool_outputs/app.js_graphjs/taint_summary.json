@@ -1,7 +1,7 @@
 [
     {
         "type": "VServerInitialization",
-        "filename": "/datasets/secbench-dataset/CWE-22/fakelearnnodejs_0.0.1/src/app.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/fakelearnnodejs_0.0.1/src/app.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, 'utf-8', function(err, data) {",
         "sink_lineno": 8,
@@ -11,13 +11,6 @@
         "client": {
             "type": "GET",
             "port": 3000
-        },
-        "call_paths": [
-            {
-                "type": "ServerInitialization",
-                "port": 3000,
-                "fn_name": "/datasets/secbench-dataset/CWE-22/fakelearnnodejs_0.0.1/src/app.js"
-            }
-        ]
+        }
     }
 ]

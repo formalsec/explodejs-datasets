@@ -1,8 +1,32 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/1/src/batch.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1/src/batch.js",
         "vuln_type": "code-injection",
         "sink": "eval('value = ref.' + parts[i].value + ';');",
         "sink_lineno": 152
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1/src/batch.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "resultsData.resultsMap[pos] = result;",
+        "sink_lineno": 195
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1/src/batch.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "resultsData.results[pos] = result;",
+        "sink_lineno": 194
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1/src/batch.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "resultsData.resultsMap[pos] = result;",
+        "sink_lineno": 203
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1/src/batch.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "resultsData.results[pos] = result;",
+        "sink_lineno": 202
     }
 ]

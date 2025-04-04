@@ -1,42 +1,42 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "code-injection",
         "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
         "sink_lineno": 75
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "outputObj[key] = obj[key];",
         "sink_lineno": 51
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "outputObj[key] = FUNCFLAG + funcStr;",
         "sink_lineno": 49
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "outputObj[key] = exports.serialize(obj[key], ignoreNativeFunc, outputObj[key], cache, path + KEYPATHSEPARATOR + key);",
         "sink_lineno": 38
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = obj[key].substring(CIRCULARFLAG.length);",
         "sink_lineno": 77
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
         "sink_lineno": 75
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = exports.unserialize(obj[key], originObj);",
         "sink_lineno": 72

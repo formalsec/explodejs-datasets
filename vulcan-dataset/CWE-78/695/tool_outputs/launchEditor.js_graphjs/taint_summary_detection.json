@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/695/src/launchEditor.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/695/src/launchEditor.js",
         "vuln_type": "command-injection",
         "sink": "_childProcess = child_process.spawn(",
         "sink_lineno": 334
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/695/src/launchEditor.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/695/src/launchEditor.js",
         "vuln_type": "command-injection",
         "sink": "_childProcess = child_process.spawn(editor, args, { stdio: 'inherit' });",
         "sink_lineno": 340

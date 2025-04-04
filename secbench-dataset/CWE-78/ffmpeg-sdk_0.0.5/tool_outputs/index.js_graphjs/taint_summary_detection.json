@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpeg-sdk_0.0.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpeg-sdk_0.0.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, (error, stdout, stderr) => {",
         "sink_lineno": 9

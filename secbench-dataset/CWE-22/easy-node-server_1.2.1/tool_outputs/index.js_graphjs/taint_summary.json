@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/easy-node-server_1.2.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/easy-node-server_1.2.1/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(realPath, 'binary', function(err, file) {",
         "sink_lineno": 49,
@@ -13,15 +13,6 @@
             "config": {
                 "port": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "start",
-                "fn_name": "1245.v144-o162",
-                "fn_id": 1184,
-                "source_fn_id": 1184
-            }
-        ]
+        }
     }
 ]

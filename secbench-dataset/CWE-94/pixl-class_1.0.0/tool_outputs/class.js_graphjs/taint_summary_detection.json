@@ -1,8 +1,32 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
         "vuln_type": "code-injection",
         "sink": "eval('constructor = function ('+args+') {'+inner_code+'};');",
         "sink_lineno": 26
+    },
+    {
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "constructor[key] = members.__static[key];",
+        "sink_lineno": 42
+    },
+    {
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "constructor.prototype[key] = class_obj.prototype[key];",
+        "sink_lineno": 63
+    },
+    {
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (typeof(constructor[key]) == 'undefined') constructor[key] = static_members[key];",
+        "sink_lineno": 69
+    },
+    {
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "constructor.prototype[key] = members[key];",
+        "sink_lineno": 78
     }
 ]

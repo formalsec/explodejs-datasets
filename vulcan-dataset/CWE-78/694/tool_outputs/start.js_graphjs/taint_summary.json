@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "code-injection",
         "sink": "const pkgInfo = require(path.join(baseDir, 'package.json'));",
         "sink_lineno": 97,
@@ -44,27 +44,11 @@
             "tainted_params": [
                 "context"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3594.StartCommand-o489",
-                "fn_id": "2116",
-                "source_fn_id": "2116"
-            },
-            {
-                "type": "Method",
-                "prop": "run",
-                "fn_name": "3594.run-o488",
-                "fn_id": "2426",
-                "source_fn_id": "2426"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "command-injection",
         "sink": "const child = this.child = spawn('node', eggArgs, options);",
         "sink_lineno": 150,
@@ -107,27 +91,11 @@
             "tainted_params": [
                 "context"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3594.StartCommand-o489",
-                "fn_id": "2116",
-                "source_fn_id": "2116"
-            },
-            {
-                "type": "Method",
-                "prop": "run",
-                "fn_name": "3594.run-o488",
-                "fn_id": "2426",
-                "source_fn_id": "2426"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "command-injection",
         "sink": "const child = this.child = spawn('node', eggArgs, options);",
         "sink_lineno": 168,
@@ -170,27 +138,11 @@
             "tainted_params": [
                 "context"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3594.StartCommand-o489",
-                "fn_id": "2116",
-                "source_fn_id": "2116"
-            },
-            {
-                "type": "Method",
-                "prop": "run",
-                "fn_name": "3594.run-o488",
-                "fn_id": "2426",
-                "source_fn_id": "2426"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "code-injection",
         "sink": "const pkg = require(pkgPath);",
         "sink_lineno": 198,
@@ -209,27 +161,11 @@
             "tainted_params": [
                 "framework"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3594.StartCommand-o499",
-                "fn_id": "2116",
-                "source_fn_id": "2116"
-            },
-            {
-                "type": "Method",
-                "prop": "getFrameworkName",
-                "fn_name": "3594.getFrameworkName-o498",
-                "fn_id": "3196",
-                "source_fn_id": "3196"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/694/src/start.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/694/src/start.js",
         "vuln_type": "command-injection",
         "sink": "const [ stdout ] = yield exec('tail -n 100 ' + stderr);",
         "sink_lineno": 235,
@@ -252,22 +188,6 @@
                 "timeout",
                 "ignoreStdErr"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3594.StartCommand-o506",
-                "fn_id": "2116",
-                "source_fn_id": "2116"
-            },
-            {
-                "type": "Method",
-                "prop": "checkStatus",
-                "fn_name": "3594.checkStatus-o505",
-                "fn_id": "3239",
-                "source_fn_id": "3239"
-            }
-        ]
+        }
     }
 ]

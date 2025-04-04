@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/960/src/wx.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/960/src/wx.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('curl \"'+ url +'\" -F media=@\"' + file + '\"', function(e, sout, serr){",
         "sink_lineno": 123

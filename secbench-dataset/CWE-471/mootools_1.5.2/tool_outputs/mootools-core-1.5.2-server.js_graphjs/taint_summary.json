@@ -1,56 +1,32 @@
 [
     {
         "type": "VTopLevel",
-        "filename": "/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.prototype[key] = value;",
         "sink_lineno": 102,
         "source": "v1046",
         "tainted_params": [],
-        "params_types": {},
-        "call_paths": [
-            {
-                "type": "TopLevel",
-                "fn_name": "v1046",
-                "fn_id": 8511,
-                "source_fn_id": 8511
-            }
-        ]
+        "params_types": {}
     },
     {
         "type": "VTopLevel",
-        "filename": "/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
         "vuln_type": "prototype-pollution",
         "sink": "if (previous == null || !previous.$protected) this.prototype[name] = method;",
         "sink_lineno": 197,
         "source": "v1046",
         "tainted_params": [],
-        "params_types": {},
-        "call_paths": [
-            {
-                "type": "TopLevel",
-                "fn_name": "v1046",
-                "fn_id": 8511,
-                "source_fn_id": 8511
-            }
-        ]
+        "params_types": {}
     },
     {
         "type": "VTopLevel",
-        "filename": "/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mootools_1.5.2/src/mootools-core-1.5.2-server.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.prototype[key] = (retain) ? value : wrap(this, key, value);",
         "sink_lineno": 947,
         "source": "v1430",
         "tainted_params": [],
-        "params_types": {},
-        "call_paths": [
-            {
-                "type": "TopLevel",
-                "fn_name": "v1430",
-                "fn_id": 13022,
-                "source_fn_id": 13022
-            }
-        ]
+        "params_types": {}
     }
 ]

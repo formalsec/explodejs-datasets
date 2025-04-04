@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-471/739/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/739/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "cache[from][to] = result",
         "sink_lineno": 39

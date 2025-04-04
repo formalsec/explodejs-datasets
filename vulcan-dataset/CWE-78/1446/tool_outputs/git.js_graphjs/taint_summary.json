@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/1446/src/git.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/1446/src/git.js",
         "vuln_type": "command-injection",
         "sink": "child.exec(cmd, {",
         "sink_lineno": 223,
@@ -34,22 +34,6 @@
                 "repo",
                 "cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3873.v440-o592",
-                "fn_id": "2288",
-                "source_fn_id": "2288"
-            },
-            {
-                "type": "Method",
-                "prop": "pull",
-                "fn_name": "3873.v466-o591",
-                "fn_id": "3714",
-                "source_fn_id": "3714"
-            }
-        ]
+        }
     }
 ]

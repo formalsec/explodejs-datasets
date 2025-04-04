@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/fsk-server_0.2.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/fsk-server_0.2.1/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "data = fs.readFileSync(url,'utf8');",
         "sink_lineno": 48
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/fsk-server_0.2.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/fsk-server_0.2.1/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.existsSync(_path) ? fs.readFileSync(_path,'utf8') : '<!-- 404 Not found -->';",
         "sink_lineno": 54

@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/fbr-client_1.0.3/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/fbr-client_1.0.3/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filename, 'binary', function(err, file) {",
         "sink_lineno": 53
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/fbr-client_1.0.3/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/fbr-client_1.0.3/src/server.js",
         "vuln_type": "command-injection",
         "sink": "child = spawn(cmd, args),",
         "sink_lineno": 80

@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/dotty_0.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/dotty_0.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = value;",
         "sink_lineno": 147

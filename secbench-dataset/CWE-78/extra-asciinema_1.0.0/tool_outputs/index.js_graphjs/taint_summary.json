@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(`asciinema cat ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
         "sink_lineno": 11,
@@ -13,20 +13,11 @@
         "params_types": {
             "f": "string",
             "fn": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "cat",
-                "fn_name": "2022.cat-o267",
-                "fn_id": 1187,
-                "source_fn_id": 1187
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return cp1.execSync(`asciinema cat ${f}`, {encoding: 'utf8'});",
         "sink_lineno": 26,
@@ -36,20 +27,11 @@
         ],
         "params_types": {
             "f": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "catSync",
-                "fn_name": "2022.catSync-o272",
-                "fn_id": "1276",
-                "source_fn_id": "1276"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp3.exec(recCmd(f, o), {encoding: 'utf8'}, (err) => {",
         "sink_lineno": 71,
@@ -63,20 +45,11 @@
             "f": "string",
             "o": "any",
             "fn": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "rec",
-                "fn_name": "2022.rec-o289",
-                "fn_id": 1506,
-                "source_fn_id": 1506
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp4.execSync(recCmd(f, o), {encoding: 'utf8'});",
         "sink_lineno": 99,
@@ -88,20 +61,11 @@
         "params_types": {
             "f": "string",
             "o": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "recSync",
-                "fn_name": "2022.recSync-o301",
-                "fn_id": "1638",
-                "source_fn_id": "1638"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "var d = fs7.readFileSync(f, 'utf8');",
         "sink_lineno": 179,
@@ -113,20 +77,11 @@
         "params_types": {
             "f": "string",
             "o": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "retimeSync",
-                "fn_name": "2022.retimeSync-o317",
-                "fn_id": "1812",
-                "source_fn_id": "1812"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs7.writeFileSync(f, d);",
         "sink_lineno": 181,
@@ -138,20 +93,11 @@
         "params_types": {
             "f": "string",
             "o": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "retimeSync",
-                "fn_name": "2022.retimeSync-o317",
-                "fn_id": "1812",
-                "source_fn_id": "1812"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp8.exec(`asciinema upload ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
         "sink_lineno": 193,
@@ -163,20 +109,11 @@
         "params_types": {
             "f": "string",
             "fn": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "upload",
-                "fn_name": "2022.upload-o323",
-                "fn_id": 1844,
-                "source_fn_id": 1844
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = cp9.execSync(`asciinema upload ${f}`, {encoding: 'utf8'});",
         "sink_lineno": 208,
@@ -186,15 +123,6 @@
         ],
         "params_types": {
             "f": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "uploadSync",
-                "fn_name": "2022.uploadSync-o328",
-                "fn_id": "1940",
-                "source_fn_id": "1940"
-            }
-        ]
+        }
     }
 ]

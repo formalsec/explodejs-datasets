@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/gfm-srv_1.1.2/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/gfm-srv_1.1.2/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "return this._tmpl = fs.readFileSync(templatePath).toString();",
         "sink_lineno": 50
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/gfm-srv_1.1.2/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/gfm-srv_1.1.2/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.readFile(filePath, {",
         "sink_lineno": 65

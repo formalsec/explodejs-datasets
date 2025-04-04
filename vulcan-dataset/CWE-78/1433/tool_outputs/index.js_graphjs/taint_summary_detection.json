@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/1433/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/1433/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec('taskkill /pid ' + pid + ' /T /F');",
         "sink_lineno": 32

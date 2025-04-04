@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/ps-kill_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ps-kill_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function (error) {",
         "sink_lineno": 8

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-g954-5hwp-pp24/src/util.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-g954-5hwp-pp24/src/util.js",
         "vuln_type": "prototype-pollution",
         "sink": "dst[part] = value;",
         "sink_lineno": 185,
@@ -20,20 +20,11 @@
                 ]
             },
             "value": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "setProperty",
-                "fn_name": "340.setProperty-o49",
-                "fn_id": 202,
-                "source_fn_id": 202
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-g954-5hwp-pp24/src/util.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-g954-5hwp-pp24/src/util.js",
         "vuln_type": "prototype-pollution",
         "sink": "dst[part] = setProp(dst[part] || {}, path, value);",
         "sink_lineno": 180,
@@ -52,15 +43,6 @@
                 ]
             },
             "value": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "setProperty",
-                "fn_name": "340.setProperty-o49",
-                "fn_id": 202,
-                "source_fn_id": 202
-            }
-        ]
+        }
     }
 ]

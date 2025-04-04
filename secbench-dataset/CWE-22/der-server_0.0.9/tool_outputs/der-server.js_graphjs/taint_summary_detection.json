@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/der-server_0.0.9/src/der-server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/der-server_0.0.9/src/der-server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(pn, encode, function(err, data) {",
         "sink_lineno": 52

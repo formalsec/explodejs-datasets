@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-94/veval_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/veval_1.0.0/src/index.js",
         "vuln_type": "code-injection",
         "sink": "output = vm.runInContext(scr, context);",
         "sink_lineno": 13,
@@ -13,14 +13,6 @@
         "params_types": {
             "ctx": "any",
             "scr": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "109.veval-o19",
-                "fn_id": "70",
-                "source_fn_id": "70"
-            }
-        ]
+        }
     }
 ]

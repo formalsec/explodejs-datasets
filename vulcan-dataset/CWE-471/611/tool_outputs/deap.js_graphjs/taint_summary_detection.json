@@ -1,18 +1,18 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(b[p]);",
         "sink_lineno": 78
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(bp);",
         "sink_lineno": 108
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(bp);",
         "sink_lineno": 135

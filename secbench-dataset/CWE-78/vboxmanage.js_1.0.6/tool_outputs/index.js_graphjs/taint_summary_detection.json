@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/vboxmanage.js_1.0.6/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/vboxmanage.js_1.0.6/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(vBoxManageBinary + ' ' + command.join(' '), {}, function (err, stdout, stderr) {",
         "sink_lineno": 76

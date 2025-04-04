@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
         "sink_lineno": 28,
@@ -17,20 +17,11 @@
                 "subjectaltname": "string"
             },
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "createExtensionsFile",
-                "fn_name": "2571.createExtensionsFile-o386",
-                "fn_id": 1555,
-                "source_fn_id": 1555
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
         "sink_lineno": 69,
@@ -50,20 +41,11 @@
                 }
             },
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "createCertRequestConfig",
-                "fn_name": "2571.createCertRequestConfig-o393",
-                "fn_id": 1642,
-                "source_fn_id": 1642
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function execCb (err) {",
         "sink_lineno": 88,
@@ -75,20 +57,11 @@
         "params_types": {
             "opts": "any",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "createKeypair",
-                "fn_name": "2571.createKeypair-o399",
-                "fn_id": 1826,
-                "source_fn_id": 1826
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function execCb (err) {",
         "sink_lineno": 112,
@@ -104,20 +77,11 @@
             "keyPath": "string",
             "cfgPath": "string",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "createCertRequest",
-                "fn_name": "2571.createCertRequest-o407",
-                "fn_id": 1890,
-                "source_fn_id": 1890
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function execCb (err) {",
         "sink_lineno": 142,
@@ -137,20 +101,11 @@
             "caCertPath": "string",
             "extPath": "string",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "createCert",
-                "fn_name": "2571.createCert-o417",
-                "fn_id": 1968,
-                "source_fn_id": 1968
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd2, function statsCb (err, stdout) {",
         "sink_lineno": 145,
@@ -170,20 +125,11 @@
             "caCertPath": "string",
             "extPath": "string",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "createCert",
-                "fn_name": "2571.createCert-o417",
-                "fn_id": 1968,
-                "source_fn_id": 1968
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(certPath, function readCertCb (err, certBuf) {",
         "sink_lineno": 219,
@@ -203,20 +149,11 @@
             "caKeyPath": "any",
             "caCertPath": "any",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "generateCertBuffer",
-                "fn_name": "2571.generateCertBuf-o437",
-                "fn_id": 2416,
-                "source_fn_id": 2416
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-552j-pv39-f3jf/src/generate.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(keyPath, function readKeyCb (err, keyBuf) {",
         "sink_lineno": 221,
@@ -236,15 +173,6 @@
             "caKeyPath": "any",
             "caCertPath": "any",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "generateCertBuffer",
-                "fn_name": "2571.generateCertBuf-o437",
-                "fn_id": 2416,
-                "source_fn_id": 2416
-            }
-        ]
+        }
     }
 ]

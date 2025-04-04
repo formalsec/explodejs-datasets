@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (error, content) {",
         "sink_lineno": 68,
@@ -34,19 +34,11 @@
                 "historyApiFallback": "any",
                 "open": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "2246.server-o290",
-                "fn_id": 1375,
-                "source_fn_id": 1375
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (error, content) {",
         "sink_lineno": 130,
@@ -79,14 +71,6 @@
                 "historyApiFallback": "any",
                 "open": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "2246.server-o290",
-                "fn_id": 1375,
-                "source_fn_id": 1375
-            }
-        ]
+        }
     }
 ]

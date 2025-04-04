@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[k] = merge(a[k], b[k]);",
         "sink_lineno": 9,
@@ -15,12 +15,8 @@
             "a": "object",
             "b": {
                 "_union": [
-                    "object",
-                    [
-                        "string",
-                        "string"
-                    ],
-                    "string"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "k": {
@@ -29,20 +25,11 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "756.merge-o73",
-                "fn_id": "421",
-                "source_fn_id": "421"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-23wx-cgxq-vpwx/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[k] = merge(a[k], b[k]);",
         "sink_lineno": 5,
@@ -56,12 +43,8 @@
             "a": "object",
             "b": {
                 "_union": [
-                    "object",
-                    [
-                        "string",
-                        "string"
-                    ],
-                    "string"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "k": {
@@ -70,15 +53,6 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "756.merge-o73",
-                "fn_id": "421",
-                "source_fn_id": "421"
-            }
-        ]
+        }
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = b[p];",
         "sink_lineno": 31,
@@ -17,19 +17,11 @@
                 "appId": "any",
                 "sandbox": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "3233.Paypal-o442",
-                "fn_id": 2176,
-                "source_fn_id": 2176
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = b[p];",
         "sink_lineno": 31,
@@ -60,27 +52,11 @@
                 "params",
                 "callback"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3233.v270-o461",
-                "fn_id": "2176",
-                "source_fn_id": "2176"
-            },
-            {
-                "type": "Method",
-                "prop": "paymentDetails",
-                "fn_name": "3233.v283-o460",
-                "fn_id": 2753,
-                "source_fn_id": 2753
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = b[p];",
         "sink_lineno": 31,
@@ -111,27 +87,11 @@
                 "params",
                 "callback"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3233.v309-o479",
-                "fn_id": "2176",
-                "source_fn_id": "2176"
-            },
-            {
-                "type": "Method",
-                "prop": "refund",
-                "fn_name": "3233.v322-o478",
-                "fn_id": 3032,
-                "source_fn_id": 3032
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = merge(a[p], b[p]);",
         "sink_lineno": 29,
@@ -147,19 +107,11 @@
                 "appId": "any",
                 "sandbox": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "3233.Paypal-o442",
-                "fn_id": 2176,
-                "source_fn_id": 2176
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = merge(a[p], b[p]);",
         "sink_lineno": 29,
@@ -190,27 +142,11 @@
                 "params",
                 "callback"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3233.v270-o461",
-                "fn_id": "2176",
-                "source_fn_id": "2176"
-            },
-            {
-                "type": "Method",
-                "prop": "paymentDetails",
-                "fn_name": "3233.v283-o460",
-                "fn_id": 2753,
-                "source_fn_id": 2753
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = merge(a[p], b[p]);",
         "sink_lineno": 29,
@@ -241,22 +177,6 @@
                 "params",
                 "callback"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3233.v309-o479",
-                "fn_id": "2176",
-                "source_fn_id": "2176"
-            },
-            {
-                "type": "Method",
-                "prop": "refund",
-                "fn_name": "3233.v322-o478",
-                "fn_id": 3032,
-                "source_fn_id": 3032
-            }
-        ]
+        }
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/998/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/998/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec('codesign -d --entitlements :- ' + path, function(error, output){",
         "sink_lineno": 7,
@@ -13,14 +13,6 @@
         "params_types": {
             "path": "string",
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "164.v16-o34",
-                "fn_id": "115",
-                "source_fn_id": "115"
-            }
-        ]
+        }
     }
 ]

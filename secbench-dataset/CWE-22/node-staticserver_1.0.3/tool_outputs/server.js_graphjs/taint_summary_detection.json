@@ -1,14 +1,20 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/node-staticserver_1.0.3/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-staticserver_1.0.3/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.createReadStream(file, {",
         "sink_lineno": 178
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/node-staticserver_1.0.3/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-staticserver_1.0.3/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "var stream = fs.createReadStream(file);",
         "sink_lineno": 183
+    },
+    {
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-staticserver_1.0.3/src/server.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "this.config[attribute] = value;",
+        "sink_lineno": 75
     }
 ]

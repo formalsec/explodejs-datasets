@@ -1,32 +1,38 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.readFile(filename, {",
         "sink_lineno": 627
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
         "vuln_type": "path-traversal",
         "sink": "fd = fs.createReadStream(full_path);",
         "sink_lineno": 757
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
         "vuln_type": "command-injection",
         "sink": "child = spawn(dispatch.php_cgi, [full_path], {",
         "sink_lineno": 852
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
         "vuln_type": "command-injection",
         "sink": "child = spawn(full_path, [], {",
         "sink_lineno": 860
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
         "vuln_type": "path-traversal",
         "sink": "tf = fs.createReadStream(file_name, 'utf8');",
         "sink_lineno": 1398
+    },
+    {
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-simple-router_0.10.0/src/router.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "req.params[param] = args[index];",
+        "sink_lineno": 272
     }
 ]

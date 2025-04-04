@@ -1,1 +1,95 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/src/doT.js",
+        "vuln_type": "code-injection",
+        "sink": "new Function(\"def\", \"def['\"+code+\"']=\" + value)(def);",
+        "sink_lineno": 69,
+        "source": "module.exports.template",
+        "tainted_params": [
+            "tmpl",
+            "c",
+            "def"
+        ],
+        "params_types": {
+            "tmpl": "any",
+            "c": {
+                "append": "any",
+                "use": "any",
+                "define": "function",
+                "strip": "any",
+                "interpolate": "any",
+                "encode": "any",
+                "conditional": "any",
+                "iterate": "any",
+                "evaluate": "any",
+                "selfcontained": "any",
+                "doNotSkipEncoded": "string",
+                "varname": "any"
+            },
+            "def": "any"
+        }
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/src/doT.js",
+        "vuln_type": "code-injection",
+        "sink": "var v = new Function(\"def\", \"return \" + code)(def);",
+        "sink_lineno": 83,
+        "source": "module.exports.template",
+        "tainted_params": [
+            "tmpl",
+            "c",
+            "def"
+        ],
+        "params_types": {
+            "tmpl": "any",
+            "c": {
+                "append": "any",
+                "use": "any",
+                "define": "function",
+                "strip": "any",
+                "interpolate": "any",
+                "encode": "any",
+                "conditional": "any",
+                "iterate": "any",
+                "evaluate": "any",
+                "selfcontained": "any",
+                "doNotSkipEncoded": "string",
+                "varname": "any"
+            },
+            "def": "any"
+        }
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-297x-8xj4-vcxv/src/doT.js",
+        "vuln_type": "code-injection",
+        "sink": "return new Function(c.varname, str);",
+        "sink_lineno": 133,
+        "source": "module.exports.template",
+        "tainted_params": [
+            "tmpl",
+            "c",
+            "def"
+        ],
+        "params_types": {
+            "tmpl": "any",
+            "c": {
+                "append": "any",
+                "use": "any",
+                "define": "function",
+                "strip": "any",
+                "interpolate": "any",
+                "encode": "any",
+                "conditional": "any",
+                "iterate": "any",
+                "evaluate": "any",
+                "selfcontained": "any",
+                "doNotSkipEncoded": "string",
+                "varname": "any"
+            },
+            "def": "any"
+        }
+    }
+]

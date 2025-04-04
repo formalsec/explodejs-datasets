@@ -1,40 +1,22 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/merge_2.1.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/merge_2.1.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
         "sink_lineno": 59,
         "source": "module.exports.merge",
         "tainted_params": [],
-        "params_types": {},
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "1402.merge-o194",
-                "fn_id": 946,
-                "source_fn_id": 946
-            }
-        ]
+        "params_types": {}
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/merge_2.1.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/merge_2.1.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
         "sink_lineno": 59,
         "source": "module.exports.recursive",
         "tainted_params": [],
-        "params_types": {},
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "recursive",
-                "fn_name": "1402.recursive-o190",
-                "fn_id": 1005,
-                "source_fn_id": 1005
-            }
-        ]
+        "params_types": {}
     }
 ]

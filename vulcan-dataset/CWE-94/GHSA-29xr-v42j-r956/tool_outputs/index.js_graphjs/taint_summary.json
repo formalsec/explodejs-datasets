@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/src/index.js",
         "vuln_type": "code-injection",
         "sink": "return eval(createWrapper($$__fn__$$.name, options))",
         "sink_lineno": 17,
@@ -15,14 +15,27 @@
                 "name": "string"
             },
             "options": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "959.thenify-o121",
-                "fn_id": "565",
-                "source_fn_id": "565"
+        }
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-29xr-v42j-r956/src/index.js",
+        "vuln_type": "code-injection",
+        "sink": "return eval(createWrapper($$__fn__$$.name, options))",
+        "sink_lineno": 33,
+        "source": "module.exports.withCallback",
+        "tainted_params": [
+            "$$__fn__$$",
+            "options"
+        ],
+        "params_types": {
+            "$$__fn__$$": {
+                "name": "string"
+            },
+            "options": {
+                "withCallback": "any",
+                "multiArgs": "array"
             }
-        ]
+        }
     }
 ]

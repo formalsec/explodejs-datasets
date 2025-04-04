@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-xp4x-j9vh-c3wf/src/killer.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-xp4x-j9vh-c3wf/src/killer.js",
         "vuln_type": "command-injection",
         "sink": "const lsof = child_process_1.spawn('lsof', ['-i', `tcp:${port}`]);",
         "sink_lineno": 47

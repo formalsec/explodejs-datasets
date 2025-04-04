@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/djv_2.0.0/src/template.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/djv_2.0.0/src/template.js",
         "vuln_type": "code-injection",
         "sink": "const tpl = new Function('schema', source)(schema);",
         "sink_lineno": 110

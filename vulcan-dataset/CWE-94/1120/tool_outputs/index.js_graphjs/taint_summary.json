@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.readFile(readmeFile, function (err, data) {",
         "sink_lineno": 153,
@@ -15,19 +15,11 @@
                     "middleware": "any"
                 }
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "4388.Api-o461",
-                "fn_id": 2490,
-                "source_fn_id": 2490
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
         "vuln_type": "code-injection",
         "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
         "sink_lineno": 207,
@@ -41,14 +33,42 @@
                     "middleware": "any"
                 }
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "4388.Api-o461",
-                "fn_id": 2490,
-                "source_fn_id": 2490
+        }
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "that.routeCache[req.urlBase] = req.routed; // add to cache",
+        "sink_lineno": 184,
+        "source": "module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "baseOptions": {
+                    "middleware": "any"
+                }
             }
-        ]
+        }
+    },
+    {
+        "type": "VFunExported",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "that.routeCache[req.urlBase] = result;",
+        "sink_lineno": 192,
+        "source": "module.exports",
+        "tainted_params": [
+            "options"
+        ],
+        "params_types": {
+            "options": {
+                "baseOptions": {
+                    "middleware": "any"
+                }
+            }
+        }
     }
 ]

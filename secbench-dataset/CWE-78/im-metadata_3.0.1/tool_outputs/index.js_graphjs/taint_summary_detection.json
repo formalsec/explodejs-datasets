@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/im-metadata_3.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/im-metadata_3.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, opts, function(e, stdout, stderr) {",
         "sink_lineno": 15

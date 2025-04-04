@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/apex-publish-static-files_2.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apex-publish-static-files_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const childProcess = execSync(",
         "sink_lineno": 54,
@@ -18,15 +18,6 @@
                 "pluginName": "string",
                 "sqlclPath": "string"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "publish",
-                "fn_name": "1002.v153-o110",
-                "fn_id": "580",
-                "source_fn_id": "580"
-            }
-        ]
+        }
     }
 ]

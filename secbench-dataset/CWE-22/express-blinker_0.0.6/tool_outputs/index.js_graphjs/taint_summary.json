@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunRetByExport",
-        "filename": "/datasets/secbench-dataset/CWE-22/express-blinker_0.0.6/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/express-blinker_0.0.6/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.createReadStream(result.file).pipe(res);",
         "sink_lineno": 181,
@@ -36,20 +36,6 @@
                 "res",
                 "next"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "2496.Blinker-o380",
-                "fn_id": "2017",
-                "source_fn_id": "2017"
-            },
-            {
-                "type": "Call",
-                "fn_name": "2527.v272-o537",
-                "fn_id": 2021,
-                "source_fn_id": "2017"
-            }
-        ]
+        }
     }
 ]

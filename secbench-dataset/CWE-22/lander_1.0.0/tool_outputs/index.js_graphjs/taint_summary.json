@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-22/lander_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/lander_1.0.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "var stream = fs.createReadStream(filePath, {flags: 'r', encoding: null});",
         "sink_lineno": 33,
@@ -11,14 +11,6 @@
         ],
         "params_types": {
             "port": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "849.v37-o99",
-                "fn_id": 505,
-                "source_fn_id": 505
-            }
-        ]
+        }
     }
 ]

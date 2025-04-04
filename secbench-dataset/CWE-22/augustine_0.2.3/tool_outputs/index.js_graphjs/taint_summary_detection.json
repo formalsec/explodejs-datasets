@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/augustine_0.2.3/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/augustine_0.2.3/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "res.write(fs.readFileSync(path, { flag: 'rs+' }));",
         "sink_lineno": 88

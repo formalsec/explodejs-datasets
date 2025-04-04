@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(b[p]);",
         "sink_lineno": 78,
@@ -13,20 +13,11 @@
         "params_types": {
             "a": "object",
             "b": "object"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "extend",
-                "fn_name": "2032.deepExtend-o302",
-                "fn_id": 1516,
-                "source_fn_id": 1516
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(bp);",
         "sink_lineno": 108,
@@ -38,20 +29,11 @@
         "params_types": {
             "a": "object",
             "b": "object"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "update",
-                "fn_name": "2032.deepUpdate-o308",
-                "fn_id": 1684,
-                "source_fn_id": 1684
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/611/src/deap.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = deepClone(bp);",
         "sink_lineno": 135,
@@ -63,15 +45,6 @@
         "params_types": {
             "a": "object",
             "b": "object"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "2032.deepMerge-o314",
-                "fn_id": 1915,
-                "source_fn_id": 1915
-            }
-        ]
+        }
     }
 ]

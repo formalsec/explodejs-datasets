@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/bestzip_2.1.6/src/bestzip.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/bestzip_2.1.6/src/bestzip.js",
         "vuln_type": "command-injection",
         "sink": "const zipProcess = cp.exec(command, {",
         "sink_lineno": 27,
@@ -15,15 +15,6 @@
                 "destination": "string",
                 "cwd": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "nativeZip",
-                "fn_name": "1795.nativeZip-o258",
-                "fn_id": 1097,
-                "source_fn_id": 1097
-            }
-        ]
+        }
     }
 ]

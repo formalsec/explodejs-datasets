@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpeg-sdk_0.0.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpeg-sdk_0.0.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, (error, stdout, stderr) => {",
         "sink_lineno": 9,
@@ -11,15 +11,6 @@
         ],
         "params_types": {
             "command": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "execute",
-                "fn_name": "927.execute-o151",
-                "fn_id": 559,
-                "source_fn_id": 559
-            }
-        ]
+        }
     }
 ]

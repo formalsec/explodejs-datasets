@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-926x-m6m5-3mmp/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-926x-m6m5-3mmp/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const proc = childProcess.spawn(cmd, args, { stdio: 'pipe' });",
         "sink_lineno": 180,
@@ -21,19 +21,11 @@
                 "cleanup": "any",
                 "verbose": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "2529.pushDir-o365",
-                "fn_id": 1496,
-                "source_fn_id": 1496
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-926x-m6m5-3mmp/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-926x-m6m5-3mmp/src/index.js",
         "vuln_type": "command-injection",
         "sink": "childProcess.exec(cmd, function(error, stdout, stderr) {",
         "sink_lineno": 202,
@@ -53,14 +45,6 @@
                 "cleanup": "any",
                 "verbose": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "2529.pushDir-o365",
-                "fn_id": 1496,
-                "source_fn_id": 1496
-            }
-        ]
+        }
     }
 ]

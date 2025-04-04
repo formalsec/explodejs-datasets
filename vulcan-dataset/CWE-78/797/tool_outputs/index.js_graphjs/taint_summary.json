@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/797/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/797/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(cmd, {",
         "sink_lineno": 76,
@@ -19,14 +19,6 @@
             "app": "any",
             "logger": "any",
             "config": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "968.v102-o132",
-                "fn_id": 568,
-                "source_fn_id": 568
-            }
-        ]
+        }
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/654/src/linux.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/654/src/linux.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"cat /sys/class/net/\" + iface + \"/address\", function (err, out) {",
         "sink_lineno": 4,
@@ -13,14 +13,6 @@
         "params_types": {
             "iface": "string",
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "171.v20-o32",
-                "fn_id": "112",
-                "source_fn_id": "112"
-            }
-        ]
+        }
     }
 ]

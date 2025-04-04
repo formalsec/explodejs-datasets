@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/nestie_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/nestie_1.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "tmp[key] = input[k];",
         "sink_lineno": 29,
@@ -18,15 +18,6 @@
                 ]
             },
             "glue": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "nestie",
-                "fn_name": "453.nestie-o55",
-                "fn_id": "299",
-                "source_fn_id": "299"
-            }
-        ]
+        }
     }
 ]

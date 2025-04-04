@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/deeply_3.0.0/src/reduce_object.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/deeply_3.0.0/src/reduce_object.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = recursiveMerge(target[key], source[key]);",
         "sink_lineno": 12

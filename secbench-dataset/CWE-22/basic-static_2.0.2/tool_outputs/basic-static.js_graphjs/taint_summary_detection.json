@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/basic-static_2.0.2/src/basic-static.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/basic-static_2.0.2/src/basic-static.js",
         "vuln_type": "path-traversal",
         "sink": "const stream = fs.createReadStream(filePath);",
         "sink_lineno": 121

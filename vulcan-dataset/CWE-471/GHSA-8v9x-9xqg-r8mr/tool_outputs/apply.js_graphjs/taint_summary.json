@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-8v9x-9xqg-r8mr/src/apply.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-8v9x-9xqg-r8mr/src/apply.js",
         "vuln_type": "prototype-pollution",
         "sink": "doc[key] = apply(doc[key], v);",
         "sink_lineno": 28,
@@ -14,18 +14,10 @@
             "doc": "object",
             "patch": {
                 "_union": [
-                    "object",
-                    "array"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "300.apply-o33",
-                "fn_id": "174",
-                "source_fn_id": "174"
-            }
-        ]
+        }
     }
 ]

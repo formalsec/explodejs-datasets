@@ -67,7 +67,7 @@ const mergeObjects = function (target, source) {
             const v60 = Array.isArray(value);
             const v61 = v59 || v60;
             if (v61) {
-                const v62 = plain_object_clone_1.default(value);
+                const v62 = clone(value);
                 target[key] = v62;
             } else {
                 const v63 = target[key];

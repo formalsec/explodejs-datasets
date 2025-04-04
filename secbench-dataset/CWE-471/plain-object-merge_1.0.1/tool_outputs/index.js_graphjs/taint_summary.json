@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = mergeObjects(target[key], value);",
         "sink_lineno": 44,
@@ -11,21 +11,13 @@
         ],
         "params_types": {
             "objects": "array"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "664.merge-o85",
-                "fn_id": 486,
-                "source_fn_id": 486
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
-        "sink": "target[key] = plain_object_clone_1.default(value);",
+        "sink": "target[key] = clone(value);",
         "sink_lineno": 41,
         "source": "module.exports",
         "tainted_params": [
@@ -33,19 +25,11 @@
         ],
         "params_types": {
             "objects": "array"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "664.merge-o85",
-                "fn_id": 486,
-                "source_fn_id": 486
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/plain-object-merge_1.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 37,
@@ -55,14 +39,6 @@
         ],
         "params_types": {
             "objects": "array"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "664.merge-o85",
-                "fn_id": 486,
-                "source_fn_id": 486
-            }
-        ]
+        }
     }
 ]

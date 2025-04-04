@@ -1,8 +1,14 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/ex-http-frame_1.0.2/src/res.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/ex-http-frame_1.0.2/src/res.js",
         "vuln_type": "path-traversal",
         "sink": "var readstream = fs.createReadStream(filepath, { encoding: 'binary' });",
         "sink_lineno": 41
+    },
+    {
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/ex-http-frame_1.0.2/src/res.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "res.config.cache_key[filepath] = tag;",
+        "sink_lineno": 39
     }
 ]

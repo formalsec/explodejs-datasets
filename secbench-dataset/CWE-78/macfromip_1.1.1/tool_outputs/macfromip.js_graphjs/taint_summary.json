@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/macfromip_1.1.1/src/macfromip.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/macfromip_1.1.1/src/macfromip.js",
         "vuln_type": "command-injection",
         "sink": "var ls = cp.exec('ping  -c 1 ' + ipAddress,",
         "sink_lineno": 66,
@@ -21,20 +21,11 @@
                 ]
             },
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "getMacInLinux",
-                "fn_name": "1818.v169-o257",
-                "fn_id": "1311",
-                "source_fn_id": "1311"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/macfromip_1.1.1/src/macfromip.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/macfromip_1.1.1/src/macfromip.js",
         "vuln_type": "command-injection",
         "sink": "var ls = cp.exec('ping  ' + ipAddress + ' -n 1',",
         "sink_lineno": 96,
@@ -54,15 +45,6 @@
                 ]
             },
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "getMacInWin32",
-                "fn_name": "1818.v197-o263",
-                "fn_id": "1485",
-                "source_fn_id": "1485"
-            }
-        ]
+        }
     }
 ]

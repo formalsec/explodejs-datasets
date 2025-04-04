@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-8m2f-74r2-x3f2/src/compile.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-8m2f-74r2-x3f2/src/compile.js",
         "vuln_type": "code-injection",
         "sink": "return new Function('tokens, req, res', js).bind(context);",
         "sink_lineno": 6,
@@ -13,14 +13,6 @@
         "params_types": {
             "format": "string",
             "context": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "160.compile-o28",
-                "fn_id": "97",
-                "source_fn_id": "97"
-            }
-        ]
+        }
     }
 ]

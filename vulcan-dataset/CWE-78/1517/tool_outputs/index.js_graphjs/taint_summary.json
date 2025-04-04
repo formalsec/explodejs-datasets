@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/1517/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/1517/src/index.js",
         "vuln_type": "command-injection",
         "sink": "r.exec(\"git ls-remote --tags \" + e, (e, r, o) => {",
         "sink_lineno": 12,
@@ -11,15 +11,6 @@
         ],
         "params_types": {
             "s": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "get",
-                "fn_name": "915.v107-o153",
-                "fn_id": 590,
-                "source_fn_id": 590
-            }
-        ]
+        }
     }
 ]

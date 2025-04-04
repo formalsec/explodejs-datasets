@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/deepref_1.1.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/deepref_1.1.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.pointer[ this.field ][key] = pointer[key];",
         "sink_lineno": 126
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/deepref_1.1.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/deepref_1.1.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.pointer[this.field] = value;",
         "sink_lineno": 29

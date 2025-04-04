@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/samsung-remote_1.2.5/src/samsung-remote.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/samsung-remote_1.2.5/src/samsung-remote.js",
         "vuln_type": "command-injection",
         "sink": "return exec(\"ping -c 1 \" + config.ip, function (error, stdout, stderr) {",
         "sink_lineno": 103,
@@ -47,22 +47,6 @@
             "tainted_params": [
                 "done"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1696.Remote-o237",
-                "fn_id": "1010",
-                "source_fn_id": "1010"
-            },
-            {
-                "type": "Method",
-                "prop": "isAlive",
-                "fn_name": "1700.v254-o277",
-                "fn_id": "1636",
-                "source_fn_id": "1636"
-            }
-        ]
+        }
     }
 ]

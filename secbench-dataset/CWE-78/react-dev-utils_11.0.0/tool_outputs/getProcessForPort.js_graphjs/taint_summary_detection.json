@@ -1,24 +1,24 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
         "vuln_type": "command-injection",
         "sink": "return execSync('lsof -i:' + port + ' -P -t -sTCP:LISTEN', execOptions)",
         "sink_lineno": 28
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
         "vuln_type": "code-injection",
         "sink": "return require(packagePath).name;",
         "sink_lineno": 37
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
         "vuln_type": "command-injection",
         "sink": "var command = execSync(",
         "sink_lineno": 44
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/react-dev-utils_11.0.0/src/getProcessForPort.js",
         "vuln_type": "command-injection",
         "sink": "return execSync(",
         "sink_lineno": 60

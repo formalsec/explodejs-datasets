@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/1492/src/controller.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/1492/src/controller.js",
         "vuln_type": "command-injection",
         "sink": "var child = spawn(cmd, params.args, {",
         "sink_lineno": 140,
@@ -52,22 +52,6 @@
             "tainted_params": [
                 "info"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "4273.v356-o557",
-                "fn_id": "2475",
-                "source_fn_id": "2475"
-            },
-            {
-                "type": "Method",
-                "prop": "createChild",
-                "fn_name": "4273.v478-o556",
-                "fn_id": "3119",
-                "source_fn_id": "3119"
-            }
-        ]
+        }
     }
 ]

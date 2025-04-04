@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/gity_1.0.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/gity_1.0.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, { cwd: base }, function(err, stdout){",
         "sink_lineno": 90,
@@ -23,22 +23,6 @@
             "tainted_params": [
                 "opts"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1448.v84-o293",
-                "fn_id": "859",
-                "source_fn_id": "859"
-            },
-            {
-                "type": "Method",
-                "prop": "*",
-                "fn_name": "1448.v95-o292",
-                "fn_id": 1048,
-                "source_fn_id": 1048
-            }
-        ]
+        }
     }
 ]

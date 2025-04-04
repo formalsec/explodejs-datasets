@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/adb-driver_0.1.8/src/AdbDriver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/adb-driver_0.1.8/src/AdbDriver.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.exec(execCmd, option || { stdio: 'inherit' }, (err, stdout, stderr) => {",
         "sink_lineno": 26,
@@ -13,15 +13,6 @@
         "params_types": {
             "command": "string",
             "option": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "execADBCommand",
-                "fn_name": "560.execADBCommand-o113",
-                "fn_id": 445,
-                "source_fn_id": 445
-            }
-        ]
+        }
     }
 ]

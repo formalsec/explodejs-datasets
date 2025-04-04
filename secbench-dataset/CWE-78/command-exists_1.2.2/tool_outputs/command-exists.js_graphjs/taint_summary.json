@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('command -v ' + commandName +",
         "sink_lineno": 49,
@@ -13,19 +13,11 @@
         "params_types": {
             "commandName": "string",
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "1185.commandExists-o207",
-                "fn_id": 1070,
-                "source_fn_id": 1070
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('where ' + commandName,",
         "sink_lineno": 64,
@@ -37,19 +29,11 @@
         "params_types": {
             "commandName": "string",
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "1185.commandExists-o207",
-                "fn_id": 1070,
-                "source_fn_id": 1070
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('command -v ' + commandName +",
         "sink_lineno": 78,
@@ -59,20 +43,11 @@
         ],
         "params_types": {
             "commandName": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "sync",
-                "fn_name": "1185.v136-o212",
-                "fn_id": 1159,
-                "source_fn_id": 1159
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/command-exists_1.2.2/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('where ' + commandName);",
         "sink_lineno": 94,
@@ -82,15 +57,6 @@
         ],
         "params_types": {
             "commandName": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "sync",
-                "fn_name": "1185.v136-o212",
-                "fn_id": 1159,
-                "source_fn_id": 1159
-            }
-        ]
+        }
     }
 ]

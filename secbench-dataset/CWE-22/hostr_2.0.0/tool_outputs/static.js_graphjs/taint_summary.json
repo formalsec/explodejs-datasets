@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunRetByExport",
-        "filename": "/datasets/secbench-dataset/CWE-22/hostr_2.0.0/src/static.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/hostr_2.0.0/src/static.js",
         "vuln_type": "path-traversal",
         "sink": "var readStream = fs.createReadStream(filePath);",
         "sink_lineno": 56,
@@ -33,20 +33,6 @@
                 "res",
                 "next"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "1111.v146-o164",
-                "fn_id": "676",
-                "source_fn_id": "676"
-            },
-            {
-                "type": "Call",
-                "fn_name": "1113.v145-o172",
-                "fn_id": 689,
-                "source_fn_id": "676"
-            }
-        ]
+        }
     }
 ]

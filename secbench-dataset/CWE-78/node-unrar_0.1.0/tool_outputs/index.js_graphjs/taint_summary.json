@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/node-unrar_0.1.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/node-unrar_0.1.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(execCommand, function (err, stdout, stderr) {",
         "sink_lineno": 23,
@@ -26,22 +26,6 @@
                 "dstPath",
                 "cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "452.v31-o85",
-                "fn_id": "279",
-                "source_fn_id": "279"
-            },
-            {
-                "type": "Method",
-                "prop": "_execute",
-                "fn_name": "452.v46-o84",
-                "fn_id": "342",
-                "source_fn_id": "342"
-            }
-        ]
+        }
     }
 ]

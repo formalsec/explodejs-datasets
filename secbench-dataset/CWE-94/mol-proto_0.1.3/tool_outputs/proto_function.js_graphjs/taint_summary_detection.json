@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/mol-proto_0.1.3/src/proto_function.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/mol-proto_0.1.3/src/proto_function.js",
         "vuln_type": "code-injection",
         "sink": "eval(code);",
         "sink_lineno": 70

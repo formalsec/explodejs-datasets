@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/1174/src/gitlabhook.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/1174/src/gitlabhook.js",
         "vuln_type": "path-traversal",
         "sink": "Fs.writeFile(fname, cmds[idx], function (err) {",
         "sink_lineno": 140,
@@ -21,19 +21,11 @@
                 "logger": "any"
             },
             "_callback": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "4333.GitLabHook-o472",
-                "fn_id": 2487,
-                "source_fn_id": 2487
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/1174/src/gitlabhook.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/1174/src/gitlabhook.js",
         "vuln_type": "command-injection",
         "sink": "execFile(self.cmdshell, [ fname ], { cwd:path, env:process.env },",
         "sink_lineno": 146,
@@ -53,14 +45,6 @@
                 "logger": "any"
             },
             "_callback": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "4333.GitLabHook-o472",
-                "fn_id": 2487,
-                "source_fn_id": 2487
-            }
-        ]
+        }
     }
 ]

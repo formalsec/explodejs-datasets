@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-x949-7cm6-fm6p/src/md-to-pdf.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-x949-7cm6-fm6p/src/md-to-pdf.js",
         "vuln_type": "code-injection",
         "sink": "const { content: md, data: frontMatterConfig } = gray_matter_1.default(mdFileContent);",
         "sink_lineno": 23,
@@ -33,15 +33,6 @@
                 "devtools": "any"
             },
             "args": "object"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "convertMdToPdf",
-                "fn_name": "1638.convertMdToPdf-o208",
-                "fn_id": "1031",
-                "source_fn_id": "1031"
-            }
-        ]
+        }
     }
 ]

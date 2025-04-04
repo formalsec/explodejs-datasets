@@ -1,24 +1,24 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('command -v ' + commandName +",
         "sink_lineno": 49
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec('where ' + commandName,",
         "sink_lineno": 64
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('command -v ' + commandName +",
         "sink_lineno": 78
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/659/src/command-exists.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = execSync('where ' + commandName);",
         "sink_lineno": 94

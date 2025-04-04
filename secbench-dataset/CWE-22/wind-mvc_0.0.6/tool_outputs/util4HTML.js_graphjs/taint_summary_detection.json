@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/wind-mvc_0.0.6/src/util4HTML.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(path, 'binary', callback);",
         "sink_lineno": 7

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "path-traversal",
         "sink": "var loadedYamlFile = jsYaml.safeLoad(fs.readFileSync(query.yaml, 'utf8'))",
         "sink_lineno": 306,
@@ -37,20 +37,11 @@
             },
             "on_success": "function",
             "on_failure": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "upload",
-                "fn_name": "6380.upload-o818",
-                "fn_id": "4471",
-                "source_fn_id": "4471"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "command-injection",
         "sink": "execSync(gcov)",
         "sink_lineno": 419,
@@ -86,20 +77,11 @@
             },
             "on_success": "function",
             "on_failure": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "upload",
-                "fn_name": "6380.upload-o818",
-                "fn_id": "4471",
-                "source_fn_id": "4471"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFileSync(file, 'utf8').toString() +",
         "sink_lineno": 468,
@@ -135,20 +117,11 @@
             },
             "on_success": "function",
             "on_failure": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "upload",
-                "fn_name": "6380.upload-o818",
-                "fn_id": "4471",
-                "source_fn_id": "4471"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "command-injection",
         "sink": "_files = execSync('find ' + root + ' ' + patterns + more_patterns)",
         "sink_lineno": 480,
@@ -184,20 +157,11 @@
             },
             "on_success": "function",
             "on_failure": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "upload",
-                "fn_name": "6380.upload-o818",
-                "fn_id": "4471",
-                "source_fn_id": "4471"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/codecov_3.6.4/src/codecov.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFileSync(file, 'utf8').toString() +",
         "sink_lineno": 500,
@@ -233,15 +197,6 @@
             },
             "on_success": "function",
             "on_failure": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "upload",
-                "fn_name": "6380.upload-o818",
-                "fn_id": "4471",
-                "source_fn_id": "4471"
-            }
-        ]
+        }
     }
 ]

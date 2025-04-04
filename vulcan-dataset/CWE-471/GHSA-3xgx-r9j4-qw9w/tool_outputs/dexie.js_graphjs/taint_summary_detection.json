@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "requestedValue_1[keyPath] = additionalChanges_1[keyPath];",
+        "sink_lineno": 4133
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[keyPath] = value;",
+        "sink_lineno": 198
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "obj[currentKeyPath] = value;",
+        "sink_lineno": 182
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "schema[storeName].idxByName[indexName] = indexSpec;",
+        "sink_lineno": 3579
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-3xgx-r9j4-qw9w/src/dexie.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "req.keys[i] = key;",
+        "sink_lineno": 4120
+    }
+]

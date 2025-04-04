@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/json-schema_0.3.0/src/validate.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/json-schema_0.3.0/src/validate.js",
         "vuln_type": "prototype-pollution",
         "sink": "value[i] = options.coerce(value[i], propDef);",
         "sink_lineno": 149,
@@ -27,15 +27,6 @@
                 "existingOnly": "any",
                 "filter": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "_validate",
-                "fn_name": "4647.v685-o521",
-                "fn_id": 2776,
-                "source_fn_id": 2776
-            }
-        ]
+        }
     }
 ]

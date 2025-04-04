@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-78/git-dummy-commit_1.3.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/git-dummy-commit_1.3.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "shell.exec('git commit ' + arg + ' --allow-empty --no-gpg-sign', {",
         "sink_lineno": 37,
@@ -21,14 +21,6 @@
                 ]
             },
             "silent": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "387.v40-o51",
-                "fn_id": "269",
-                "source_fn_id": "269"
-            }
-        ]
+        }
     }
 ]

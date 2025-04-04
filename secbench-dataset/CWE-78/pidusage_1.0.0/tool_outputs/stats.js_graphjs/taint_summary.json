@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(p.join('/proc', ''+pid, 'stat'), 'utf8', function(err, infos) {",
         "sink_lineno": 46,
@@ -22,20 +22,11 @@
                 "childrens": "any"
             },
             "done": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "proc_calc",
-                "fn_name": "2213.v213-o300",
-                "fn_id": "1450",
-                "source_fn_id": "1450"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
         "sink_lineno": 110,
@@ -49,20 +40,11 @@
             "pid": "string",
             "options": "any",
             "done": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "ps",
-                "fn_name": "2213.v232-o305",
-                "fn_id": "1895",
-                "source_fn_id": "1895"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/pidusage_1.0.0/src/stats.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function(err, stdout, stderr) {",
         "sink_lineno": 140,
@@ -76,15 +58,6 @@
             "pid": "string",
             "options": "any",
             "done": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "win",
-                "fn_name": "2213.v252-o310",
-                "fn_id": "2026",
-                "source_fn_id": "2026"
-            }
-        ]
+        }
     }
 ]

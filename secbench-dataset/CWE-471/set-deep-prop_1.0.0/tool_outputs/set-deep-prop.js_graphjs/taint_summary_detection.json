@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/set-deep-prop_1.0.0/src/set-deep-prop.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/set-deep-prop_1.0.0/src/set-deep-prop.js",
         "vuln_type": "prototype-pollution",
         "sink": "current[path[path.length - 1]] = value",
         "sink_lineno": 20

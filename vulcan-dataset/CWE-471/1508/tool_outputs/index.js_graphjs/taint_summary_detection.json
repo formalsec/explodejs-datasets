@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-471/1508/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/1508/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, 'utf-8', function(error, data){",
         "sink_lineno": 22
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-471/1508/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/1508/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(file, 'utf-8'))",
         "sink_lineno": 32

@@ -1,18 +1,18 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('lsof -p ' + pid, function(err, d) {",
         "sink_lineno": 9
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('lsof -i tcp:' + port, function(err, d) {",
         "sink_lineno": 37
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('lsof -i udp:' + port, function(err, d) {",
         "sink_lineno": 71

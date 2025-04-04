@@ -1,18 +1,18 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/317/src/resize.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/317/src/resize.js",
         "vuln_type": "code-injection",
         "sink": "var ratio = eval(options.ratio); // Yeah, eval... Deal with it!",
         "sink_lineno": 31
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/317/src/resize.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/317/src/resize.js",
         "vuln_type": "command-injection",
         "sink": "child = exec(command,",
         "sink_lineno": 40
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/317/src/resize.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/317/src/resize.js",
         "vuln_type": "code-injection",
         "sink": "options.config = (options.config) ? require(path.resolve(options.config)) : require('../config');",
         "sink_lineno": 162

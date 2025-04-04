@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('which ' + name, function(error, stdout, stderr) {",
         "sink_lineno": 4,
@@ -13,19 +13,11 @@
         "params_types": {
             "name": "string",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "715.whereis-o91",
-                "fn_id": "416",
-                "source_fn_id": "416"
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('whereis ' + name, function(error, stdout, stderr) {",
         "sink_lineno": 8,
@@ -37,19 +29,11 @@
         "params_types": {
             "name": "string",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "715.whereis-o91",
-                "fn_id": 416,
-                "source_fn_id": 416
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('where ' + name, function (error, stdout, stderr) { //windows",
         "sink_lineno": 10,
@@ -61,19 +45,11 @@
         "params_types": {
             "name": "string",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "715.whereis-o91",
-                "fn_id": 416,
-                "source_fn_id": 416
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/604/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/604/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('for %i in (' + name + '.exe) do @echo. %~$PATH:i', function (error, stdout, stderr) { //windows xp",
         "sink_lineno": 12,
@@ -85,14 +61,6 @@
         "params_types": {
             "name": "string",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "715.whereis-o91",
-                "fn_id": 416,
-                "source_fn_id": 416
-            }
-        ]
+        }
     }
 ]

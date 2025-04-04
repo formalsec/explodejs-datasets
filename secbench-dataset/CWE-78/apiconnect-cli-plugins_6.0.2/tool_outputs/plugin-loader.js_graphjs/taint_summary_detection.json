@@ -1,54 +1,54 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "pluginInfo = require(path.join(pluginPath, 'package.json'));",
         "sink_lineno": 47
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "maybePlugin = require(pluginPath);",
         "sink_lineno": 62
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "command-injection",
         "sink": "var proc = exec(installCmd, function(err) {",
         "sink_lineno": 180
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "var pkg = require(path.join(pluginDir, 'package.json'));",
         "sink_lineno": 203
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "if (!require(pluginDir).getVersion ||",
         "sink_lineno": 239
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "typeof require(pluginDir).getVersion !== 'function') {",
         "sink_lineno": 240
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "var pkg = require(path.join(pluginDir, 'package.json'));",
         "sink_lineno": 242
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "var plugin = require(pluginDir);",
         "sink_lineno": 243
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "return require(pluginDir).getVersion();",
         "sink_lineno": 256

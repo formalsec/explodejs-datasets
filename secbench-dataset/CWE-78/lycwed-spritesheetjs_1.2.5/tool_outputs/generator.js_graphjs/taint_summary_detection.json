@@ -1,30 +1,30 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, next);",
         "sink_lineno": 85
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"identify \" + filePaths.join(\" \"), function (err, stdout) {",
         "sink_lineno": 102
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
         "vuln_type": "command-injection",
         "sink": "exec(command.join(\" \"), function (err) {",
         "sink_lineno": 196
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"magick identify \" + filePath, function (err, stdout) {",
         "sink_lineno": 204
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lycwed-spritesheetjs_1.2.5/src/generator.js",
         "vuln_type": "path-traversal",
         "sink": "var templateContent = fs.readFileSync(path, \"utf-8\");",
         "sink_lineno": 301

@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/connection-tester_0.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/connection-tester_0.2.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const shellOut = shell.execSync(cmd).toString();",
         "sink_lineno": 15

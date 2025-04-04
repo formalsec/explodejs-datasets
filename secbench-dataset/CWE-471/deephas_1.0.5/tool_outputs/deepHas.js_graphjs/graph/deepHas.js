@@ -62,32 +62,18 @@ const reduce = function (obj, str) {
 const add = function (obj, str, val) {
     'use strict';
     try {
-        const v52 = typeof str;
-        const v53 = v52 !== 'string';
-        if (v53) {
-            return;
-        }
-        const v54 = typeof obj;
-        const v55 = v54 !== 'object';
-        if (v55) {
-            return;
-        }
-        const v56 = !val;
-        if (v56) {
-            return;
-        }
         var items = str.split('.');
-        const v57 = items.length;
-        const v58 = v57 - 1;
-        var initial = items.slice(0, v58);
-        const v59 = items.length;
-        const v60 = v59 - 1;
-        var last = items.slice(v60);
+        const v52 = items.length;
+        const v53 = v52 - 1;
+        var initial = items.slice(0, v53);
+        const v54 = items.length;
+        const v55 = v54 - 1;
+        var last = items.slice(v55);
         var test = obj[initial];
         test[last] = val;
     } catch (ex) {
-        const v61 = console.error(ex);
-        v61;
+        const v56 = console.error(ex);
+        v56;
         return;
     }
 };
@@ -95,32 +81,46 @@ const has = function (target, path) {
     'use strict';
     try {
         var test = reduce(target, path);
-        const v62 = typeof test;
-        const v63 = v62 !== 'undefined';
-        if (v63) {
+        const v57 = typeof test;
+        const v58 = v57 !== 'undefined';
+        if (v58) {
             return true;
         }
         return false;
     } catch (ex) {
-        const v64 = console.error(ex);
-        v64;
+        const v59 = console.error(ex);
+        v59;
         return;
     }
 };
 const get = function (target, path) {
     'use strict';
     try {
-        const v65 = reduce(target, path);
-        return v65;
+        const v60 = reduce(target, path);
+        return v60;
     } catch (ex) {
-        const v66 = console.error(ex);
-        v66;
+        const v61 = console.error(ex);
+        v61;
         return;
     }
 };
 const set = function (target, path, val) {
     'use strict';
     try {
+        const v62 = typeof str;
+        const v63 = v62 !== 'string';
+        if (v63) {
+            return;
+        }
+        const v64 = typeof obj;
+        const v65 = v64 !== 'object';
+        if (v65) {
+            return;
+        }
+        const v66 = !val;
+        if (v66) {
+            return;
+        }
         const v67 = add(target, path, val);
         return v67;
     } catch (ex) {

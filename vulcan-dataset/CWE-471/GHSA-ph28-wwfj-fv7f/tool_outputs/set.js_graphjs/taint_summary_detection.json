@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-ph28-wwfj-fv7f/src/set.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-ph28-wwfj-fv7f/src/set.js",
         "vuln_type": "prototype-pollution",
         "sink": "o[kp[0]] = value;",
         "sink_lineno": 42

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "command-injection",
         "sink": "const child = exec(cmd, {",
         "sink_lineno": 16,
@@ -15,20 +15,11 @@
             "cmd": "string",
             "exitOnError": "any",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "sh",
-                "fn_name": "1322.sh-o196",
-                "fn_id": "805",
-                "source_fn_id": "805"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, 'utf8', (err, data) => {",
         "sink_lineno": 112,
@@ -40,20 +31,11 @@
         "params_types": {
             "file": "string",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "readYamlFile",
-                "fn_name": "1322.readYamlFile-o215",
-                "fn_id": "1139",
-                "source_fn_id": "1139"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "return yaml.safeLoad(fs.readFileSync(file, 'utf8'));",
         "sink_lineno": 125,
@@ -63,20 +45,11 @@
         ],
         "params_types": {
             "file": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "readYamlFileSync",
-                "fn_name": "1322.readYamlFileSync-o218",
-                "fn_id": "1176",
-                "source_fn_id": "1176"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(file, yaml.safeDump(data), () => {",
         "sink_lineno": 136,
@@ -90,20 +63,11 @@
             "file": "string",
             "data": "string",
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "writeYamlFile",
-                "fn_name": "1322.writeYamlFile-o223",
-                "fn_id": "1195",
-                "source_fn_id": "1195"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/theme-core_0.2.5/src/utils.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(file, yaml.safeDump(data));",
         "sink_lineno": 147,
@@ -115,15 +79,6 @@
         "params_types": {
             "file": "string",
             "data": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "writeYamlFileSync",
-                "fn_name": "1322.writeYamlFileSync-o227",
-                "fn_id": "1228",
-                "source_fn_id": "1228"
-            }
-        ]
+        }
     }
 ]

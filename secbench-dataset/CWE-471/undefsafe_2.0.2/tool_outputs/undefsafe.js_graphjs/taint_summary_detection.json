@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/undefsafe_2.0.2/src/undefsafe.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/undefsafe_2.0.2/src/undefsafe.js",
         "vuln_type": "prototype-pollution",
         "sink": "parent[key] = value;",
         "sink_lineno": 106

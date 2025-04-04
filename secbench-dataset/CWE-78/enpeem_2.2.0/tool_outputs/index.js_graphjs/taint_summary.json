@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/enpeem_2.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/enpeem_2.2.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var npm = exec(cmd, {cwd: options.dir});",
         "sink_lineno": 114,
@@ -22,20 +22,11 @@
                 "dir": "any"
             },
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "install",
-                "fn_name": "1192.v94-o153",
-                "fn_id": 700,
-                "source_fn_id": 700
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/enpeem_2.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/enpeem_2.2.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var npm = exec(cmd, {cwd: options.dir});",
         "sink_lineno": 114,
@@ -53,15 +44,6 @@
                 "dir": "any"
             },
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "update",
-                "fn_name": "1192.v108-o157",
-                "fn_id": 820,
-                "source_fn_id": 820
-            }
-        ]
+        }
     }
 ]

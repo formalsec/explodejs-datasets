@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "currentNode[currentProperty] = messages;",
         "sink_lineno": 110,
@@ -21,20 +21,11 @@
                 ]
             },
             "separator": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "unflatten",
-                "fn_name": "3761.unflatten-o487",
-                "fn_id": 2533,
-                "source_fn_id": 2533
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/gammautils_0.0.81/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[property.shift()] = value;",
         "sink_lineno": 146,
@@ -53,15 +44,6 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "deepSet",
-                "fn_name": "3761.deepSet-o494",
-                "fn_id": "2690",
-                "source_fn_id": "2690"
-            }
-        ]
+        }
     }
 ]

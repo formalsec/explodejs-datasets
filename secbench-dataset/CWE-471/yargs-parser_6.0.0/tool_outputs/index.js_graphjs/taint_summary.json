@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/yargs-parser_6.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/yargs-parser_6.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "defaults[alias] = defaults[key]",
         "sink_lineno": 98,
@@ -34,22 +34,6 @@
                 "args",
                 "opts"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "12012.Parser-o1439",
-                "fn_id": "11962",
-                "source_fn_id": "11962"
-            },
-            {
-                "type": "Method",
-                "prop": "detailed",
-                "fn_name": "12012.v1578-o1438",
-                "fn_id": 11983,
-                "source_fn_id": 11983
-            }
-        ]
+        }
     }
 ]

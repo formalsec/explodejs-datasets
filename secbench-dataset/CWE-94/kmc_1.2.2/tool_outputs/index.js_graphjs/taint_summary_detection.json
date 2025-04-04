@@ -1,20 +1,26 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/kmc_1.2.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/kmc_1.2.2/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "var fileContent = fs.readFileSync(filePath).toString();",
         "sink_lineno": 157
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/kmc_1.2.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/kmc_1.2.2/src/index.js",
         "vuln_type": "code-injection",
         "sink": "var requiredModules = eval('(' + requires[i]).requires;",
         "sink_lineno": 164
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/kmc_1.2.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/kmc_1.2.2/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "moduleContent = iconv.decode(fs.readFileSync(module.path), module.charset);",
         "sink_lineno": 316
+    },
+    {
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/kmc_1.2.2/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "self._packages[pkg.name] = pkg;",
+        "sink_lineno": 78
     }
 ]

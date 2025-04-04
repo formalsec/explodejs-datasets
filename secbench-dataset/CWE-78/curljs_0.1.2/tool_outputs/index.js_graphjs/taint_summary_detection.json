@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/curljs_0.1.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/curljs_0.1.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(curlString, function(err, stdout, stderr) {",
         "sink_lineno": 37

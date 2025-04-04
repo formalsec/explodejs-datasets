@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"open \".concat(result.link), errorTryingToOpen);",
         "sink_lineno": 59
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (err, data) {",
         "sink_lineno": 195

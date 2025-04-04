@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-471/deepmergefn_1.1.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/deepmergefn_1.1.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[prop] = source[prop];",
         "sink_lineno": 12,
@@ -18,14 +18,6 @@
                     "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "179.deepMerge-o23",
-                "fn_id": "104",
-                "source_fn_id": "104"
-            }
-        ]
+        }
     }
 ]

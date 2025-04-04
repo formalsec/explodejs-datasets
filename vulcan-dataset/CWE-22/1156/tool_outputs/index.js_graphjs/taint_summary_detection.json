@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-22/1156/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-22/1156/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(req.routed.templateFullPath, function (err, str) {",
         "sink_lineno": 215
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-22/1156/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-22/1156/src/index.js",
         "vuln_type": "code-injection",
         "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
         "sink_lineno": 350

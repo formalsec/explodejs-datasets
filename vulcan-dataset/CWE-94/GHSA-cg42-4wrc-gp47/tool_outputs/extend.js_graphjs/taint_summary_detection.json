@@ -1,8 +1,14 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-cg42-4wrc-gp47/src/extend.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-cg42-4wrc-gp47/src/extend.js",
         "vuln_type": "code-injection",
         "sink": "var nn = eval('('+ss+')');",
         "sink_lineno": 31
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-cg42-4wrc-gp47/src/extend.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "nn.prototype[k] = ap[k];",
+        "sink_lineno": 44
     }
 ]

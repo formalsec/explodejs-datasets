@@ -1,1 +1,29 @@
-[]
+[
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/node-forge_0.9.0/src/util.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "object[next] = value;",
+        "sink_lineno": 2537,
+        "source": "module.exports.setPath",
+        "tainted_params": [
+            "object",
+            "keys",
+            "value"
+        ],
+        "params_types": {
+            "object": "object",
+            "keys": {
+                "_union": [
+                    "object",
+                    [
+                        "string",
+                        "string"
+                    ],
+                    "string"
+                ]
+            },
+            "value": "any"
+        }
+    }
+]

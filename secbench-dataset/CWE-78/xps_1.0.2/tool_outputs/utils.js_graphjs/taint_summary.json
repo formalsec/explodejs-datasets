@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/xps_1.0.2/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/xps_1.0.2/src/utils.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, function(error, stdout, stderr) {",
         "sink_lineno": 27,
@@ -13,15 +13,6 @@
         "params_types": {
             "cmd": "string",
             "args": "array"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "shell",
-                "fn_name": "306.shell-o60",
-                "fn_id": 221,
-                "source_fn_id": 221
-            }
-        ]
+        }
     }
 ]

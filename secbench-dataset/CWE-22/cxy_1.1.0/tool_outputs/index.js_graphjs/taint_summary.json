@@ -1,7 +1,7 @@
 [
     {
         "type": "VServerInitialization",
-        "filename": "/datasets/secbench-dataset/CWE-22/cxy_1.1.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/cxy_1.1.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(path,function (error,data) {",
         "sink_lineno": 5,
@@ -11,13 +11,6 @@
         "client": {
             "type": "GET",
             "port": 8081
-        },
-        "call_paths": [
-            {
-                "type": "ServerInitialization",
-                "port": 8081,
-                "fn_name": "/datasets/secbench-dataset/CWE-22/cxy_1.1.0/src/index.js"
-            }
-        ]
+        }
     }
 ]

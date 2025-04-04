@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "path-traversal",
         "sink": "var stream = require('fs').createReadStream(self.filename, { start: 0, end: extension === '.jpg' ? 40000 : 24 });",
         "sink_lineno": 177,
@@ -31,27 +31,11 @@
             "tainted_params": [
                 "callback"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "Picture",
-                "fn_name": "10281.ImageProto-o1265",
-                "fn_id": "6592",
-                "source_fn_id": "6592"
-            },
-            {
-                "type": "Method",
-                "prop": "measure",
-                "fn_name": "10281.v649-o1264",
-                "fn_id": "6738",
-                "source_fn_id": "6738"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = exec(command, function(err) {",
         "sink_lineno": 231,
@@ -90,27 +74,11 @@
                 "callback",
                 "writer"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "Picture",
-                "fn_name": "10281.ImageProto-o1276",
-                "fn_id": "6592",
-                "source_fn_id": "6592"
-            },
-            {
-                "type": "Method",
-                "prop": "save",
-                "fn_name": "10281.v702-o1275",
-                "fn_id": "6983",
-                "source_fn_id": "6983"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "path-traversal",
         "sink": "var reader = Fs.createReadStream(filename);",
         "sink_lineno": 252,
@@ -149,27 +117,11 @@
                 "callback",
                 "writer"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "Picture",
-                "fn_name": "10281.ImageProto-o1276",
-                "fn_id": "6592",
-                "source_fn_id": "6592"
-            },
-            {
-                "type": "Method",
-                "prop": "save",
-                "fn_name": "10281.v702-o1275",
-                "fn_id": 6983,
-                "source_fn_id": 6983
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = spawn(CMD_CONVERT[self.cmdarg], self.arg(self.filename ? wrap(self.filename) : '-', (type ? type + ':' : '') + '-'), SPAWN_OPT);",
         "sink_lineno": 291,
@@ -210,27 +162,11 @@
                 "type",
                 "options"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "Picture",
-                "fn_name": "10281.ImageProto-o1289",
-                "fn_id": "6592",
-                "source_fn_id": "6592"
-            },
-            {
-                "type": "Method",
-                "prop": "pipe",
-                "fn_name": "10281.v759-o1288",
-                "fn_id": "7353",
-                "source_fn_id": "7353"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "command-injection",
         "sink": "var cmd = spawn(CMD_CONVERT[self.cmdarg], self.arg(self.filename ? wrap(self.filename) : '-', (type ? type + ':' : '') + '-'), SPAWN_OPT);",
         "sink_lineno": 329,
@@ -267,27 +203,11 @@
                 "type",
                 "writer"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "Picture",
-                "fn_name": "10281.ImageProto-o1295",
-                "fn_id": "6592",
-                "source_fn_id": "6592"
-            },
-            {
-                "type": "Method",
-                "prop": "stream",
-                "fn_name": "10281.v797-o1294",
-                "fn_id": "7692",
-                "source_fn_id": "7692"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/total.js_3.4.6/src/image.js",
         "vuln_type": "command-injection",
         "sink": "exec((self.cmdarg === 'gm' ? 'gm ' : '') + 'identify' + wrap(self.filename, true), function(err, stdout) {",
         "sink_lineno": 408,
@@ -317,22 +237,6 @@
             "tainted_params": [
                 "callback"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "Picture",
-                "fn_name": "10281.ImageProto-o1316",
-                "fn_id": "6592",
-                "source_fn_id": "6592"
-            },
-            {
-                "type": "Method",
-                "prop": "identify",
-                "fn_name": "10281.v885-o1315",
-                "fn_id": "8368",
-                "source_fn_id": "8368"
-            }
-        ]
+        }
     }
 ]

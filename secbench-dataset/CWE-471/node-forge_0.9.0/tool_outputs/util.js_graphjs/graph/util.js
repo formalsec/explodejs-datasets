@@ -5,6 +5,7 @@ const v1719 = {};
 forge.util = v1718 || v1719;
 module.exports = forge.util;
 var util = module.exports;
+module.exports = util;
 const v1780 = function () {
     const v1720 = typeof process;
     const v1721 = v1720 !== 'undefined';

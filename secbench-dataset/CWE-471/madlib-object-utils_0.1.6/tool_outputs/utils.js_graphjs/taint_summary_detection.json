@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/madlib-object-utils_0.1.6/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/madlib-object-utils_0.1.6/src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "value[key] = defaultValue;",
         "sink_lineno": 53

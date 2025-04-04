@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-22/fast-http_0.1.3/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/fast-http_0.1.3/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filename, 'binary', function(err, file) {",
         "sink_lineno": 35,
@@ -15,14 +15,6 @@
             "port": "string",
             "root": "any",
             "wordy": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "972.v110-o124",
-                "fn_id": 578,
-                "source_fn_id": 578
-            }
-        ]
+        }
     }
 ]

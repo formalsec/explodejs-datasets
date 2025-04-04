@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
         "vuln_type": "path-traversal",
         "sink": "return writeFile(commitTextPath, commitText);",
         "sink_lineno": 43,
@@ -23,20 +23,11 @@
             "tagMessageText": "any",
             "tempDir": "any",
             "packageInfo": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "default",
-                "fn_name": "3803.publish-o557",
-                "fn_id": 2292,
-                "source_fn_id": 2292
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
         "vuln_type": "path-traversal",
         "sink": "return writeFile(tagTextPath, tagMessageText);",
         "sink_lineno": 48,
@@ -58,20 +49,11 @@
             "tagMessageText": "any",
             "tempDir": "any",
             "packageInfo": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "default",
-                "fn_name": "3803.publish-o557",
-                "fn_id": 2292,
-                "source_fn_id": 2292
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.execSync(\"git push --follow-tags --force origin HEAD \" + extraBranchNames, { cwd: gitRepoDir, stdio: 'inherit' });",
         "sink_lineno": 138,
@@ -93,20 +75,11 @@
             "tagMessageText": "any",
             "tempDir": "any",
             "packageInfo": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "default",
-                "fn_name": "3803.publish-o557",
-                "fn_id": 2292,
-                "source_fn_id": 2292
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/npm-git-publish_0.2.4-beta/src/publish.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.exec(command, options, function (error, stdout, stderr) {",
         "sink_lineno": 198,
@@ -128,15 +101,6 @@
             "tagMessageText": "any",
             "tempDir": "any",
             "packageInfo": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "default",
-                "fn_name": "3803.publish-o557",
-                "fn_id": 2292,
-                "source_fn_id": 2292
-            }
-        ]
+        }
     }
 ]

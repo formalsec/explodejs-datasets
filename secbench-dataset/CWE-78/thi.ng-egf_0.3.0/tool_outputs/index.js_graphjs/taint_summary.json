@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/thi.ng-egf_0.3.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/thi.ng-egf_0.3.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(path$1).toString(), $ctx);",
         "sink_lineno": 352,
@@ -13,15 +13,6 @@
         "params_types": {
             "path$1": "string",
             "ctx": "object"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "$parseFile",
-                "fn_name": "7585.$parseFile-o1072",
-                "fn_id": "7312",
-                "source_fn_id": "7312"
-            }
-        ]
+        }
     }
 ]

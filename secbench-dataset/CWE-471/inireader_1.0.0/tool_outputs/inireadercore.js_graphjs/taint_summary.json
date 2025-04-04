@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, function fileReadCb(err, data) {",
         "sink_lineno": 83,
@@ -22,27 +22,11 @@
             "tainted_params": [
                 "file"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "IniReaderCore",
-                "fn_name": "4591.v301-o551",
-                "fn_id": "3001",
-                "source_fn_id": "3001"
-            },
-            {
-                "type": "Method",
-                "prop": "init",
-                "fn_name": "4591.load-o550",
-                "fn_id": 3132,
-                "source_fn_id": 3132
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
         "vuln_type": "path-traversal",
         "sink": "data = fs.readFileSync(file);",
         "sink_lineno": 91,
@@ -63,27 +47,11 @@
             "tainted_params": [
                 "file"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "IniReaderCore",
-                "fn_name": "4591.v301-o551",
-                "fn_id": "3001",
-                "source_fn_id": "3001"
-            },
-            {
-                "type": "Method",
-                "prop": "init",
-                "fn_name": "4591.load-o550",
-                "fn_id": 3132,
-                "source_fn_id": 3132
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(file, output, function writeFile(err) {",
         "sink_lineno": 508,
@@ -111,27 +79,11 @@
                 "file",
                 "le"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "IniReaderCore",
-                "fn_name": "4591.v403-o611",
-                "fn_id": "3001",
-                "source_fn_id": "3001"
-            },
-            {
-                "type": "Method",
-                "prop": "write",
-                "fn_name": "4591.v424-o610",
-                "fn_id": "4129",
-                "source_fn_id": "4129"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/inireader_1.0.0/src/inireadercore.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFileSync(file, output);",
         "sink_lineno": 516,
@@ -159,22 +111,6 @@
                 "file",
                 "le"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "IniReaderCore",
-                "fn_name": "4591.v403-o611",
-                "fn_id": "3001",
-                "source_fn_id": "3001"
-            },
-            {
-                "type": "Method",
-                "prop": "write",
-                "fn_name": "4591.v424-o610",
-                "fn_id": "4129",
-                "source_fn_id": "4129"
-            }
-        ]
+        }
     }
 ]

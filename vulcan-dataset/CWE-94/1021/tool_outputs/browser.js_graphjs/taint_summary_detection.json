@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/1021/src/browser.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1021/src/browser.js",
         "vuln_type": "code-injection",
         "sink": "return Function('__context', src).call(null, __context) // eslint-disable-line",
         "sink_lineno": 49

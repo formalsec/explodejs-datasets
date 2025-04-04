@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj1[key] = obj2[key]",
         "sink_lineno": 177,
@@ -12,27 +12,11 @@
             "source": ".black",
             "params_types": {},
             "tainted_params": []
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "2172.merge-o289",
-                "fn_id": "1367",
-                "source_fn_id": "1367"
-            },
-            {
-                "type": "Method",
-                "prop": "black",
-                "fn_name": "2172.mergeBlack-o288",
-                "fn_id": 1400,
-                "source_fn_id": 1400
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/893/src/merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj1[key] = obj2[key]",
         "sink_lineno": 177,
@@ -43,22 +27,6 @@
             "source": ".white",
             "params_types": {},
             "tainted_params": []
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "2172.merge-o293",
-                "fn_id": "1367",
-                "source_fn_id": "1367"
-            },
-            {
-                "type": "Method",
-                "prop": "white",
-                "fn_name": "2172.mergeWhite-o292",
-                "fn_id": 1439,
-                "source_fn_id": 1439
-            }
-        ]
+        }
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mithril_1.0.0/src/mithril.js",
         "vuln_type": "prototype-pollution",
         "sink": "cursor[level] = isValue ? value : isNumber ? [] : {}",
         "sink_lineno": 982,
@@ -27,22 +27,6 @@
             "tainted_params": [
                 "string"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "26193.m-o2860",
-                "fn_id": "14979",
-                "source_fn_id": "14979"
-            },
-            {
-                "type": "Method",
-                "prop": "parseQueryString",
-                "fn_name": "26193.parseQueryString-o2828",
-                "fn_id": "24268",
-                "source_fn_id": "24268"
-            }
-        ]
+        }
     }
 ]

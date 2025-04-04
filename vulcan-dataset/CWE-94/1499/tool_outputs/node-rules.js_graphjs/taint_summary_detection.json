@@ -1,24 +1,24 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/1499/src/node-rules.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1499/src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rules.condition = eval(\"(\" + rules.condition + \")\");",
         "sink_lineno": 157
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/1499/src/node-rules.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1499/src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rules.consequence = eval(\"(\" + rules.consequence + \")\");",
         "sink_lineno": 158
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/1499/src/node-rules.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1499/src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rule.condition = eval(\"(\" + rule.condition + \")\");",
         "sink_lineno": 152
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/1499/src/node-rules.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1499/src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rule.consequence = eval(\"(\" + rule.consequence + \")\");",
         "sink_lineno": 153

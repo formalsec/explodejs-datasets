@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/kill-by-port_0.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/kill-by-port_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "processId = exec(`lsof -t -i:${port}`)",
         "sink_lineno": 8,
@@ -11,20 +11,11 @@
         ],
         "params_types": {
             "port": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "killByPort",
-                "fn_name": "131.v12-o21",
-                "fn_id": "89",
-                "source_fn_id": "89"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/kill-by-port_0.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/kill-by-port_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`kill ${processId}`)",
         "sink_lineno": 14,
@@ -34,15 +25,6 @@
         ],
         "params_types": {
             "port": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "killByPort",
-                "fn_name": "131.v12-o21",
-                "fn_id": "89",
-                "source_fn_id": "89"
-            }
-        ]
+        }
     }
 ]

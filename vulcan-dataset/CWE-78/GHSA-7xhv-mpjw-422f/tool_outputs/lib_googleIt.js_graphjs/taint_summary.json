@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"open \".concat(result.link), errorTryingToOpen);",
         "sink_lineno": 59,
@@ -18,20 +18,11 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "openInBrowser",
-                "fn_name": "3977.openInBrowser-o524",
-                "fn_id": 2755,
-                "source_fn_id": 2755
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-7xhv-mpjw-422f/src/lib_googleIt.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (err, data) {",
         "sink_lineno": 195,
@@ -52,15 +43,6 @@
                 "includeSites": "any",
                 "excludeSites": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "getResponse",
-                "fn_name": "3977.getResponse-o536",
-                "fn_id": 3521,
-                "source_fn_id": 3521
-            }
-        ]
+        }
     }
 ]

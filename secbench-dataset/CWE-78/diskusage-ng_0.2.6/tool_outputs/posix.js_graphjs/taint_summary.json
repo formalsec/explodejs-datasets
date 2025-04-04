@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/diskusage-ng_0.2.6/src/posix.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/diskusage-ng_0.2.6/src/posix.js",
         "vuln_type": "command-injection",
         "sink": "exec('df -k \"' + path + '\"', function(err, stdout) {",
         "sink_lineno": 13,
@@ -18,15 +18,6 @@
                 ]
             },
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "diskusage",
-                "fn_name": "676.diskusage-o102",
-                "fn_id": "428",
-                "source_fn_id": "428"
-            }
-        ]
+        }
     }
 ]

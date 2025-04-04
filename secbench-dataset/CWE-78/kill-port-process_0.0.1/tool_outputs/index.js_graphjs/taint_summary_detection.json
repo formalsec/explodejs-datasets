@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/kill-port-process_0.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/kill-port-process_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(command, (err, stdout, stderr) => {",
         "sink_lineno": 44
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/kill-port-process_0.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/kill-port-process_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`taskkill /PID ${pid} /F`, (err, stdout, stderr) => {",
         "sink_lineno": 63

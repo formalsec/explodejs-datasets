@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/reduce-css-calc_1.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/reduce-css-calc_1.2.0/src/index.js",
         "vuln_type": "code-injection",
         "sink": "result = eval(toEvaluate)",
         "sink_lineno": 73

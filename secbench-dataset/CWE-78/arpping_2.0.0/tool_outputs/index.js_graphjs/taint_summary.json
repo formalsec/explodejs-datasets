@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/arpping_2.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/arpping_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`ping ${flag} ${this.timeout} ${ip}`, (err, stdout, stderr) => {",
         "sink_lineno": 120,
@@ -28,27 +28,11 @@
             "tainted_params": [
                 "range"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "4091.v347-o570",
-                "fn_id": "2440",
-                "source_fn_id": "2440"
-            },
-            {
-                "type": "Method",
-                "prop": "ping",
-                "fn_name": "4091.v377-o569",
-                "fn_id": 3133,
-                "source_fn_id": 3133
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-78/arpping_2.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/arpping_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(`arp ${ip}`, (err, stdout, stderr) => {",
         "sink_lineno": 145,
@@ -77,22 +61,6 @@
             "tainted_params": [
                 "range"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "4091.v378-o575",
-                "fn_id": "2440",
-                "source_fn_id": "2440"
-            },
-            {
-                "type": "Method",
-                "prop": "arp",
-                "fn_name": "4091.v421-o574",
-                "fn_id": 3326,
-                "source_fn_id": 3326
-            }
-        ]
+        }
     }
 ]

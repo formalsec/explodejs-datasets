@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-6m85-wvcr-pgw3/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-6m85-wvcr-pgw3/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "io[a[a.length - 1]] = value;",
         "sink_lineno": 210,
@@ -42,22 +42,6 @@
                 "s",
                 "value"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3874.safeCall-o668",
-                "fn_id": "2305",
-                "source_fn_id": "2305"
-            },
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "3874.set-o599",
-                "fn_id": "3262",
-                "source_fn_id": "3262"
-            }
-        ]
+        }
     }
 ]

@@ -1,48 +1,48 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(`asciinema cat ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
         "sink_lineno": 11
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return cp1.execSync(`asciinema cat ${f}`, {encoding: 'utf8'});",
         "sink_lineno": 26
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp3.exec(recCmd(f, o), {encoding: 'utf8'}, (err) => {",
         "sink_lineno": 71
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp4.execSync(recCmd(f, o), {encoding: 'utf8'});",
         "sink_lineno": 99
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "var d = fs7.readFileSync(f, 'utf8');",
         "sink_lineno": 179
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs7.writeFileSync(f, d);",
         "sink_lineno": 181
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp8.exec(`asciinema upload ${f}`, {encoding: 'utf8'}, (err, stdout) => {",
         "sink_lineno": 193
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/extra-asciinema_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var stdout = cp9.execSync(`asciinema upload ${f}`, {encoding: 'utf8'});",
         "sink_lineno": 208

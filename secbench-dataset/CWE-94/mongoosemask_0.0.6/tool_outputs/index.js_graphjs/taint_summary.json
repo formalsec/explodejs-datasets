@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-94/mongoosemask_0.0.6/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/mongoosemask_0.0.6/src/index.js",
         "vuln_type": "code-injection",
         "sink": "eval(path);",
         "sink_lineno": 170,
@@ -13,15 +13,6 @@
         "params_types": {
             "obj": "any",
             "values": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "expose",
-                "fn_name": "1453.expose-o225",
-                "fn_id": 1058,
-                "source_fn_id": 1058
-            }
-        ]
+        }
     }
 ]

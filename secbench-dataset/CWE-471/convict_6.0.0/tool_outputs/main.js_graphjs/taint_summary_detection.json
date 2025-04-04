@@ -1,18 +1,18 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/convict_6.0.0/src/main.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/convict_6.0.0/src/main.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(path, 'utf-8'))",
         "sink_lineno": 429
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/convict_6.0.0/src/main.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/convict_6.0.0/src/main.js",
         "vuln_type": "prototype-pollution",
         "sink": "c[name] = coerce(name, cloneDeep(p.default), schema, instance)",
         "sink_lineno": 342
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/convict_6.0.0/src/main.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/convict_6.0.0/src/main.js",
         "vuln_type": "prototype-pollution",
         "sink": "c[name] = kids",
         "sink_lineno": 340

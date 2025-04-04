@@ -1,24 +1,24 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(getInfoCommand, function (err, stdout, stderr) {",
         "sink_lineno": 42
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(combineCommand, function (err, stdout, stderr) {",
         "sink_lineno": 114
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"rm \"+imagePaths.join(' ')); //cleanUp",
         "sink_lineno": 123
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/pdf-image_2.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(convertCommand, function (err, stdout, stderr) {",
         "sink_lineno": 168

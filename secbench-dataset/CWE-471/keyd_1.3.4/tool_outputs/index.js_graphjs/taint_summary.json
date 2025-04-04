@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/keyd_1.3.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/keyd_1.3.4/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "if (keyPath.length > 0) ret[keyPath[keyPath.length - 1]] = value;",
         "sink_lineno": 76,
@@ -40,22 +40,6 @@
                 "value",
                 "options"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "2500.KeyPath-o345",
-                "fn_id": "1459",
-                "source_fn_id": "1459"
-            },
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "2502.v225-o442",
-                "fn_id": "1891",
-                "source_fn_id": "1891"
-            }
-        ]
+        }
     }
 ]

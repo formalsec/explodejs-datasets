@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/vega-util_1.13.0/src/vega-util.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/vega-util_1.13.0/src/vega-util.js",
         "vuln_type": "prototype-pollution",
         "sink": "o[k] = value[k];",
         "sink_lineno": 197,
@@ -27,20 +27,11 @@
                     "array"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "writeConfig",
-                "fn_name": "13379.writeConfig-o1607",
-                "fn_id": "8641",
-                "source_fn_id": "8641"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/vega-util_1.13.0/src/vega-util.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/vega-util_1.13.0/src/vega-util.js",
         "vuln_type": "prototype-pollution",
         "sink": "output[key] = value;",
         "sink_lineno": 201,
@@ -66,15 +57,6 @@
                     "array"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "writeConfig",
-                "fn_name": "13379.writeConfig-o1607",
-                "fn_id": "8641",
-                "source_fn_id": "8641"
-            }
-        ]
+        }
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/express-blinker_0.0.6/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/express-blinker_0.0.6/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.createReadStream(result.file).pipe(res);",
         "sink_lineno": 181

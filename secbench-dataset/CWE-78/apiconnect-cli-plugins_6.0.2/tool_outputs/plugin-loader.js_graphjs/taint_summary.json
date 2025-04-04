@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "pluginInfo = require(path.join(pluginPath, 'package.json'));",
         "sink_lineno": 47,
@@ -11,20 +11,11 @@
         ],
         "params_types": {
             "pluginPath": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "validatePlugin",
-                "fn_name": "4152.validatePlugin-o579",
-                "fn_id": "2516",
-                "source_fn_id": "2516"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "maybePlugin = require(pluginPath);",
         "sink_lineno": 62,
@@ -34,20 +25,11 @@
         ],
         "params_types": {
             "pluginPath": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "validatePlugin",
-                "fn_name": "4152.validatePlugin-o579",
-                "fn_id": "2516",
-                "source_fn_id": "2516"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "if (!require(pluginDir).getVersion ||",
         "sink_lineno": 239,
@@ -59,20 +41,11 @@
         "params_types": {
             "pluginDir": "string",
             "isBuiltin": "undefined"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "loadPluginFromDir",
-                "fn_name": "4152.loadPluginFromDir-o591",
-                "fn_id": "3574",
-                "source_fn_id": "3574"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "typeof require(pluginDir).getVersion !== 'function') {",
         "sink_lineno": 240,
@@ -84,20 +57,11 @@
         "params_types": {
             "pluginDir": "string",
             "isBuiltin": "undefined"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "loadPluginFromDir",
-                "fn_name": "4152.loadPluginFromDir-o591",
-                "fn_id": "3574",
-                "source_fn_id": "3574"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "var pkg = require(path.join(pluginDir, 'package.json'));",
         "sink_lineno": 242,
@@ -109,20 +73,11 @@
         "params_types": {
             "pluginDir": "string",
             "isBuiltin": "undefined"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "loadPluginFromDir",
-                "fn_name": "4152.loadPluginFromDir-o591",
-                "fn_id": "3574",
-                "source_fn_id": "3574"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "var plugin = require(pluginDir);",
         "sink_lineno": 243,
@@ -134,20 +89,11 @@
         "params_types": {
             "pluginDir": "string",
             "isBuiltin": "undefined"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "loadPluginFromDir",
-                "fn_name": "4152.loadPluginFromDir-o591",
-                "fn_id": "3574",
-                "source_fn_id": "3574"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/apiconnect-cli-plugins_6.0.2/src/plugin-loader.js",
         "vuln_type": "code-injection",
         "sink": "return require(pluginDir).getVersion();",
         "sink_lineno": 256,
@@ -159,15 +105,6 @@
         "params_types": {
             "pluginDir": "string",
             "isBuiltin": "undefined"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "loadPluginFromDir",
-                "fn_name": "4152.loadPluginFromDir-o591",
-                "fn_id": "3574",
-                "source_fn_id": "3574"
-            }
-        ]
+        }
     }
 ]

@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(relativePath, function(err, data) { ",
         "sink_lineno": 158
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(relativePath, function(err, data) { ",
         "sink_lineno": 170

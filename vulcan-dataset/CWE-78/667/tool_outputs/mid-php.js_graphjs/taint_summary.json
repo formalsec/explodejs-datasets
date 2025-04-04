@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunRetByExport",
-        "filename": "/datasets/vulcan-dataset/CWE-78/667/src/mid-php.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/667/src/mid-php.js",
         "vuln_type": "command-injection",
         "sink": "var cp = require('child_process').spawn(phpBin, [phpFile])",
         "sink_lineno": 27,
@@ -28,20 +28,6 @@
                 "res",
                 "next"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "520.v56-o79",
-                "fn_id": "311",
-                "source_fn_id": "311"
-            },
-            {
-                "type": "Call",
-                "fn_name": "522.v55-o100",
-                "fn_id": 358,
-                "source_fn_id": "311"
-            }
-        ]
+        }
     }
 ]

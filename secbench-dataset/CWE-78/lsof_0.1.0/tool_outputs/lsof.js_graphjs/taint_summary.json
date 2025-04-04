@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('lsof -p ' + pid, function(err, d) {",
         "sink_lineno": 9,
@@ -18,20 +18,11 @@
                 ]
             },
             "fn": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "raw",
-                "fn_name": "1739.v118-o226",
-                "fn_id": "1011",
-                "source_fn_id": "1011"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('lsof -i tcp:' + port, function(err, d) {",
         "sink_lineno": 37,
@@ -43,20 +34,11 @@
         "params_types": {
             "port": "string",
             "fn": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "rawTcpPort",
-                "fn_name": "1739.v145-o232",
-                "fn_id": "1209",
-                "source_fn_id": "1209"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/lsof_0.1.0/src/lsof.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec('lsof -i udp:' + port, function(err, d) {",
         "sink_lineno": 71,
@@ -68,15 +50,6 @@
         "params_types": {
             "port": "string",
             "fn": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "rawUdpPort",
-                "fn_name": "1739.v166-o238",
-                "fn_id": "1415",
-                "source_fn_id": "1415"
-            }
-        ]
+        }
     }
 ]

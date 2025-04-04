@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-v756-4whv-48vc/src/messenger-node.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-v756-4whv-48vc/src/messenger-node.js",
         "vuln_type": "code-injection",
         "sink": "eval(`cl.${color}()`); // eslint-disable-line",
         "sink_lineno": 71,
@@ -11,15 +11,6 @@
         ],
         "params_types": {
             "color": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "line",
-                "fn_name": "1118.v104-o191",
-                "fn_id": "984",
-                "source_fn_id": "984"
-            }
-        ]
+        }
     }
 ]

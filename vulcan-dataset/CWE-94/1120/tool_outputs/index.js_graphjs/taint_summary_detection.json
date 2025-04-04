@@ -1,14 +1,26 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "return fs.readFile(readmeFile, function (err, data) {",
         "sink_lineno": 153
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
         "vuln_type": "code-injection",
         "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
         "sink_lineno": 207
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "that.routeCache[req.urlBase] = req.routed; // add to cache",
+        "sink_lineno": 184
+    },
+    {
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/1120/src/index.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "that.routeCache[req.urlBase] = result;",
+        "sink_lineno": 192
     }
 ]

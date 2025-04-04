@@ -1,26 +1,17 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/670/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/670/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(getInfoCommand, function (err, stdout, stderr) {",
         "sink_lineno": 44,
         "source": "module.exports.getInfo",
         "tainted_params": [],
-        "params_types": {},
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "getInfo",
-                "fn_name": "1862.v124-o278",
-                "fn_id": 1265,
-                "source_fn_id": 1265
-            }
-        ]
+        "params_types": {}
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/670/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/670/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(convertCommand, function (err, stdout, stderr) {",
         "sink_lineno": 105,
@@ -30,15 +21,6 @@
         ],
         "params_types": {
             "pageNumber": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "convertPage",
-                "fn_name": "1862.v189-o300",
-                "fn_id": 1589,
-                "source_fn_id": 1589
-            }
-        ]
+        }
     }
 ]

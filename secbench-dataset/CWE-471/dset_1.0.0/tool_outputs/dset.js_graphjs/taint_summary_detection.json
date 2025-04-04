@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/dset_1.0.0/src/dset.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/dset_1.0.0/src/dset.js",
         "vuln_type": "prototype-pollution",
         "sink": "t[keys[i]] = x == null ? {} : x;",
         "sink_lineno": 9
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/dset_1.0.0/src/dset.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/dset_1.0.0/src/dset.js",
         "vuln_type": "prototype-pollution",
         "sink": "t[keys[i]] = val;",
         "sink_lineno": 7

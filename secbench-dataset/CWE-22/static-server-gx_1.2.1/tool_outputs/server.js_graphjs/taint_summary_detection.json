@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/static-server-gx_1.2.1/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/static-server-gx_1.2.1/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(url,function(err,data){",
         "sink_lineno": 7

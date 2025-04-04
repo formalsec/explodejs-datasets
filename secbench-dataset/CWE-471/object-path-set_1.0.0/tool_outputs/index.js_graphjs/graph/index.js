@@ -1,34 +1,35 @@
 'use strict';
-var setPath = function (obj, path, value) {
+var setPath = function (obj, path, value, delimiter) {
     var arr;
     var key;
-    const v16 = !obj;
-    const v17 = typeof obj;
-    const v18 = v17 !== 'object';
-    const v19 = v16 || v18;
-    if (v19) {
+    const v17 = !obj;
+    const v18 = typeof obj;
+    const v19 = v18 !== 'object';
+    const v20 = v17 || v19;
+    if (v20) {
         obj = {};
     }
-    const v20 = typeof path;
-    const v21 = v20 === 'string';
-    if (v21) {
-        path = path.split('.');
+    const v21 = typeof path;
+    const v22 = v21 === 'string';
+    if (v22) {
+        const v23 = delimiter || '.';
+        path = path.split(v23);
     }
-    const v22 = Array.isArray(path);
-    const v23 = path.length;
-    const v24 = v23 > 0;
-    const v25 = v22 && v24;
-    if (v25) {
+    const v24 = Array.isArray(path);
+    const v25 = path.length;
+    const v26 = v25 > 0;
+    const v27 = v24 && v26;
+    if (v27) {
         arr = path;
         key = arr[0];
-        const v26 = arr.length;
-        const v27 = v26 > 1;
-        if (v27) {
-            const v28 = arr.shift();
-            v28;
-            const v29 = obj[key];
-            const v30 = setPath(v29, arr, value, delimiter);
-            obj[key] = v30;
+        const v28 = arr.length;
+        const v29 = v28 > 1;
+        if (v29) {
+            const v30 = arr.shift();
+            v30;
+            const v31 = obj[key];
+            const v32 = setPath(v31, arr, value, delimiter);
+            obj[key] = v32;
         } else {
             obj[key] = value;
         }

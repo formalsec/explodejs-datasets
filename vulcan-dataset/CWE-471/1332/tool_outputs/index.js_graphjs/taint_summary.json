@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/1332/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/1332/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[arr.shift()] = value;",
         "sink_lineno": 41,
@@ -13,15 +13,6 @@
         "params_types": {
             "path": "string",
             "value": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "362.setter-o48",
-                "fn_id": "284",
-                "source_fn_id": "284"
-            }
-        ]
+        }
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/1457/src/meta-git-clone.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/1457/src/meta-git-clone.js",
         "vuln_type": "command-injection",
         "sink": "exec(`git clone ${repoUrl} ${dirname}`, (err, result) => {",
         "sink_lineno": 19

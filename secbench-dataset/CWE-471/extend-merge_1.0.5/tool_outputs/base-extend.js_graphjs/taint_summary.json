@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-471/extend-merge_1.0.5/src/base-extend.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/extend-merge_1.0.5/src/base-extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = Array.isArray(src) ? src.slice() : src;",
         "sink_lineno": 41,
@@ -13,19 +13,11 @@
         "params_types": {
             "args": "object",
             "merge": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "583.baseExtend-o73",
-                "fn_id": "355",
-                "source_fn_id": "355"
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-471/extend-merge_1.0.5/src/base-extend.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/extend-merge_1.0.5/src/base-extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = baseExtend([{}, src], merge);",
         "sink_lineno": 38,
@@ -37,14 +29,6 @@
         "params_types": {
             "args": "object",
             "merge": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "583.baseExtend-o73",
-                "fn_id": "355",
-                "source_fn_id": "355"
-            }
-        ]
+        }
     }
 ]

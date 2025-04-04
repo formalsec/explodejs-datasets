@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/adb-driver_0.1.8/src/AdbDriver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/adb-driver_0.1.8/src/AdbDriver.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.exec(execCmd, option || { stdio: 'inherit' }, (err, stdout, stderr) => {",
         "sink_lineno": 26

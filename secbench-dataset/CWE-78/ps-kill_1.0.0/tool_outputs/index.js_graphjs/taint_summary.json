@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ps-kill_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ps-kill_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, function (error) {",
         "sink_lineno": 8,
@@ -13,15 +13,6 @@
         "params_types": {
             "pid": "array",
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "kill",
-                "fn_name": "163.kill-o32",
-                "fn_id": "110",
-                "source_fn_id": "110"
-            }
-        ]
+        }
     }
 ]

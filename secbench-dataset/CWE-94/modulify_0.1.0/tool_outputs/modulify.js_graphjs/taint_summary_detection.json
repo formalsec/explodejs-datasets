@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/modulify_0.1.0/src/modulify.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/modulify_0.1.0/src/modulify.js",
         "vuln_type": "code-injection",
         "sink": "eval(src);",
         "sink_lineno": 74
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/modulify_0.1.0/src/modulify.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/modulify_0.1.0/src/modulify.js",
         "vuln_type": "path-traversal",
         "sink": "var src = fs.readFileSync(srcFile, 'utf8');",
         "sink_lineno": 250

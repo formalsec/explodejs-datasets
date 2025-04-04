@@ -1,7 +1,7 @@
 [
     {
         "type": "VServerInitialization",
-        "filename": "/datasets/secbench-dataset/CWE-22/rtcmulticonnection-client_1.0.5/src/server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/rtcmulticonnection-client_1.0.5/src/server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filename, 'binary', function (err, file) {",
         "sink_lineno": 30,
@@ -11,13 +11,6 @@
         "client": {
             "type": "GET",
             "port": 8080
-        },
-        "call_paths": [
-            {
-                "type": "ServerInitialization",
-                "port": 8080,
-                "fn_name": "/datasets/secbench-dataset/CWE-22/rtcmulticonnection-client_1.0.5/src/server.js"
-            }
-        ]
+        }
     }
 ]

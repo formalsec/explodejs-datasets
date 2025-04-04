@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-22/pico-static-server_2.3.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/pico-static-server_2.3.4/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "const data = fs.readFileSync(requestPath);",
         "sink_lineno": 118,
@@ -11,14 +11,6 @@
         ],
         "params_types": {
             "customOptions": "object"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "1133.createServer-o218",
-                "fn_id": 906,
-                "source_fn_id": 906
-            }
-        ]
+        }
     }
 ]

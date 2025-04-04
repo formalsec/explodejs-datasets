@@ -1,24 +1,24 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/freespace_1.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/freespace_1.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(`fsutil volume diskfree ${driveOrMount}:`, {}, cb);",
         "sink_lineno": 49
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/freespace_1.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/freespace_1.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {}, cb);",
         "sink_lineno": 51
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/freespace_1.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/freespace_1.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "output = cp.execSync(`fsutil volume diskfree ${driveOrMount}:`, {});",
         "sink_lineno": 65
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/freespace_1.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/freespace_1.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "output = cp.execSync(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {});",
         "sink_lineno": 67

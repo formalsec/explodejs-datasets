@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-chj3-f7xw-367m/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-chj3-f7xw-367m/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return execFile(execBinary, execArguments, execOptions).then(",
         "sink_lineno": 34,
@@ -15,14 +15,6 @@
             "commandOrArgs": "string",
             "optionsOrCallback": "array",
             "callbackMaybe": "array"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "539.v50-o102",
-                "fn_id": "377",
-                "source_fn_id": "377"
-            }
-        ]
+        }
     }
 ]

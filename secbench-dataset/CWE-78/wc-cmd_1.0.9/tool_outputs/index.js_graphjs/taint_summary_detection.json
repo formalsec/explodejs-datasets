@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/wc-cmd_1.0.9/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/wc-cmd_1.0.9/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var child = exec(command, {",
         "sink_lineno": 49

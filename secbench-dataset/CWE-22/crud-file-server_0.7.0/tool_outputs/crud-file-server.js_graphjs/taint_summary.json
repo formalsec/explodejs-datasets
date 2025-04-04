@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(relativePath, function(err, data) { ",
         "sink_lineno": 158,
@@ -47,20 +47,11 @@
             },
             "readOnly": "any",
             "logHeadRequests": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "handleRequest",
-                "fn_name": "4211.v518-o468",
-                "fn_id": 2432,
-                "source_fn_id": 2432
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/crud-file-server_0.7.0/src/crud-file-server.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(relativePath, function(err, data) { ",
         "sink_lineno": 170,
@@ -106,15 +97,6 @@
             },
             "readOnly": "any",
             "logHeadRequests": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "handleRequest",
-                "fn_name": "4211.v518-o468",
-                "fn_id": 2432,
-                "source_fn_id": 2432
-            }
-        ]
+        }
     }
 ]

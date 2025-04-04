@@ -1,24 +1,24 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
         "vuln_type": "path-traversal",
         "sink": "this.push(JSON.parse(fs.readFileSync(filePath, 'utf8')));",
         "sink_lineno": 160
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
         "vuln_type": "prototype-pollution",
         "sink": "hash[lastSubKey] = value;",
         "sink_lineno": 48
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
         "vuln_type": "prototype-pollution",
         "sink": "hash[lastSubKey] = extend(true, {}, value);",
         "sink_lineno": 45
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/confucious_0.0.12/src/confucious.js",
         "vuln_type": "prototype-pollution",
         "sink": "hash[subKey] = hash;",
         "sink_lineno": 37

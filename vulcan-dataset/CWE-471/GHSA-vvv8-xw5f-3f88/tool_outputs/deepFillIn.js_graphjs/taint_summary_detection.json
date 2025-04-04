@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-vvv8-xw5f-3f88/src/deepFillIn.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-vvv8-xw5f-3f88/src/deepFillIn.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = newValue;",
         "sink_lineno": 106

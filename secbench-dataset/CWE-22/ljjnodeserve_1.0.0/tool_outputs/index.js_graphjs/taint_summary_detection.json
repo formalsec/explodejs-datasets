@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/ljjnodeserve_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/ljjnodeserve_1.0.0/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(path,function (error,file) {          /*\u67e5\u627e\u6587\u4ef6*/",
         "sink_lineno": 23

@@ -1,10 +1,10 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/think-config_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/think-config_1.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "this.config[name] = value;",
-        "sink_lineno": 43,
+        "sink_lineno": 47,
         "source": "new module.exports",
         "tainted_params": [
             "config"
@@ -31,30 +31,14 @@
                 "name",
                 "value"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "614.Config-o88",
-                "fn_id": "358",
-                "source_fn_id": "358"
-            },
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "614.set-o87",
-                "fn_id": "486",
-                "source_fn_id": "486"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/think-config_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/think-config_1.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "config[item] = value;",
-        "sink_lineno": 50,
+        "sink_lineno": 54,
         "source": "new module.exports",
         "tainted_params": [
             "config"
@@ -81,22 +65,6 @@
                 "name",
                 "value"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "614.Config-o88",
-                "fn_id": "358",
-                "source_fn_id": "358"
-            },
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "614.set-o87",
-                "fn_id": 486,
-                "source_fn_id": 486
-            }
-        ]
+        }
     }
 ]

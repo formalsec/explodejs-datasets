@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/1512/src/umount.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/1512/src/umount.js",
         "vuln_type": "command-injection",
         "sink": "return child_process.exec(unmountCommand + \" \" + device, callback);",
         "sink_lineno": 74

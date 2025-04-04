@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/webrepl_0.4.7/src/webrepl.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/webrepl_0.4.7/src/webrepl.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, \"binary\", function (err, data) {",
         "sink_lineno": 177

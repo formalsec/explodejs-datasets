@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rules.condition = eval(\"(\"+rules.condition+\")\");",
         "sink_lineno": 244,
@@ -29,27 +29,11 @@
             "tainted_params": [
                 "rules"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "2412.v242-o354",
-                "fn_id": "1406",
-                "source_fn_id": "1406"
-            },
-            {
-                "type": "Method",
-                "prop": "fromJSON",
-                "fn_name": "2412.v269-o353",
-                "fn_id": "2222",
-                "source_fn_id": "2222"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rules.consequence = eval(\"(\"+rules.consequence+\")\");",
         "sink_lineno": 245,
@@ -77,27 +61,11 @@
             "tainted_params": [
                 "rules"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "2412.v242-o354",
-                "fn_id": "1406",
-                "source_fn_id": "1406"
-            },
-            {
-                "type": "Method",
-                "prop": "fromJSON",
-                "fn_name": "2412.v269-o353",
-                "fn_id": "2222",
-                "source_fn_id": "2222"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rule.condition = eval(\"(\"+rule.condition+\")\");",
         "sink_lineno": 236,
@@ -125,27 +93,11 @@
             "tainted_params": [
                 "rules"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "2412.v242-o354",
-                "fn_id": "1406",
-                "source_fn_id": "1406"
-            },
-            {
-                "type": "Method",
-                "prop": "fromJSON",
-                "fn_name": "2412.v269-o353",
-                "fn_id": 2222,
-                "source_fn_id": 2222
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/GHSA-f78f-353m-cf4j/src/node-rules.js",
         "vuln_type": "code-injection",
         "sink": "rule.consequence = eval(\"(\"+rule.consequence+\")\");",
         "sink_lineno": 237,
@@ -173,22 +125,6 @@
             "tainted_params": [
                 "rules"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "2412.v242-o354",
-                "fn_id": "1406",
-                "source_fn_id": "1406"
-            },
-            {
-                "type": "Method",
-                "prop": "fromJSON",
-                "fn_name": "2412.v269-o353",
-                "fn_id": 2222,
-                "source_fn_id": 2222
-            }
-        ]
+        }
     }
 ]

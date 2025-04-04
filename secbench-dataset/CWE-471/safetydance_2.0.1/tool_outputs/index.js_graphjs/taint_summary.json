@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/safetydance_2.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/safetydance_2.0.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "io[a[a.length - 1]] = value;",
         "sink_lineno": 215,
@@ -29,15 +29,6 @@
                 ]
             },
             "value": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "4083.set-o635",
-                "fn_id": "3457",
-                "source_fn_id": "3457"
-            }
-        ]
+        }
     }
 ]

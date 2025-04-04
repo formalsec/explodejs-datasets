@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
         "sink_lineno": 128,
@@ -18,20 +18,11 @@
                     "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "deepExtend",
-                "fn_name": "3489.deepExtend-o409",
-                "fn_id": "2410",
-                "source_fn_id": "2410"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mathjs_7.4.0/src/object.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[prop] = b[prop];",
         "sink_lineno": 123,
@@ -48,15 +39,6 @@
                     "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "deepExtend",
-                "fn_name": "3489.deepExtend-o409",
-                "fn_id": "2410",
-                "source_fn_id": "2410"
-            }
-        ]
+        }
     }
 ]

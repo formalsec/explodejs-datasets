@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/properties-reader_2.0.0/src/properties-reader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/properties-reader_2.0.0/src/properties-reader.js",
         "vuln_type": "path-traversal",
         "sink": "this.read(fs.readFileSync(sourceFile, typeof encoding === 'string' && encoding || this._encoding));",
         "sink_lineno": 75,
@@ -26,27 +26,11 @@
                 "sourceFile",
                 "encoding"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3513.v234-o434",
-                "fn_id": "2017",
-                "source_fn_id": "2017"
-            },
-            {
-                "type": "Method",
-                "prop": "append",
-                "fn_name": "3513.v242-o433",
-                "fn_id": "2192",
-                "source_fn_id": "2192"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/properties-reader_2.0.0/src/properties-reader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/properties-reader_2.0.0/src/properties-reader.js",
         "vuln_type": "path-traversal",
         "sink": "fs.writeFile(destFile, content, (err) => {",
         "sink_lineno": 341,
@@ -79,27 +63,11 @@
                 "destFile",
                 "onComplete"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3513.v401-o505",
-                "fn_id": "2017",
-                "source_fn_id": "2017"
-            },
-            {
-                "type": "Method",
-                "prop": "save",
-                "fn_name": "3513.v416-o504",
-                "fn_id": 3393,
-                "source_fn_id": 3393
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/properties-reader_2.0.0/src/properties-reader.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/properties-reader_2.0.0/src/properties-reader.js",
         "vuln_type": "prototype-pollution",
         "sink": "source[expanded[0]] = parsedValue;",
         "sink_lineno": 200,
@@ -129,22 +97,6 @@
                 "key",
                 "value"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "3513.v305-o471",
-                "fn_id": "2017",
-                "source_fn_id": "2017"
-            },
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "3513.v331-o470",
-                "fn_id": "2666",
-                "source_fn_id": "2666"
-            }
-        ]
+        }
     }
 ]

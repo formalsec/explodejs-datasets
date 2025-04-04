@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3x62-x456-q2vm/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-3x62-x456-q2vm/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return require(\"child_process\").exec(cmd + args.join(\" \"), opts)",
         "sink_lineno": 7

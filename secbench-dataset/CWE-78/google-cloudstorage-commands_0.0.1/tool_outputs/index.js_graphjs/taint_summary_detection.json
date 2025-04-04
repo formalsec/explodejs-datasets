@@ -1,18 +1,18 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/google-cloudstorage-commands_0.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/google-cloudstorage-commands_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "let _cmd = exec(`gsutil -m cp ${_rn} -a public-read ${_path} ${bucket}`)",
         "sink_lineno": 11
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/google-cloudstorage-commands_0.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/google-cloudstorage-commands_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "let _cmd = exec(_c, (code, stdout, stderr) => {",
         "sink_lineno": 22
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/google-cloudstorage-commands_0.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/google-cloudstorage-commands_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "let _cmd = exec(_c, (code, stdout, stderr) => {",
         "sink_lineno": 39

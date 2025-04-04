@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/psnode_0.0.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/psnode_0.0.1/src/index.js",
         "vuln_type": "command-injection",
         "sink": "ChildProcess.exec(killCommand, function (err, stdout, stderr) {",
         "sink_lineno": 59

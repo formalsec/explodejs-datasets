@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/portprocesses_1.0.4/src/exec.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/portprocesses_1.0.4/src/exec.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd, (err, stdout, stderr) => {",
         "sink_lineno": 5

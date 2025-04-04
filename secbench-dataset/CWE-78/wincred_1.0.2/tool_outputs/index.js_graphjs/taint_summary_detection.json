@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/wincred_1.0.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/wincred_1.0.2/src/index.js",
         "vuln_type": "command-injection",
         "sink": "return exec(script)",
         "sink_lineno": 15

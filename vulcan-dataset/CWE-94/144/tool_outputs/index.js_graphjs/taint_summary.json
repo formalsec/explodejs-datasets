@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-94/144/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/144/src/index.js",
         "vuln_type": "code-injection",
         "sink": "result = eval(toEvaluate)",
         "sink_lineno": 75,
@@ -13,14 +13,6 @@
         "params_types": {
             "value": "any",
             "decimalPrecision": "number"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "1230.reduceCSSCalc-o137",
-                "fn_id": 717,
-                "source_fn_id": 717
-            }
-        ]
+        }
     }
 ]

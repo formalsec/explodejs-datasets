@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/npm-help_1.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/npm-help_1.0.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var latestVersion = execSync('tnpm view ' + module_ + ' version').toString();",
         "sink_lineno": 13,
@@ -11,15 +11,6 @@
         ],
         "params_types": {
             "module_": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "latestVersion",
-                "fn_name": "186.v12-o37",
-                "fn_id": "126",
-                "source_fn_id": "126"
-            }
-        ]
+        }
     }
 ]

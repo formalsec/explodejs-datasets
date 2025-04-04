@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/find-process_1.4.4/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/find-process_1.4.4/src/utils.js",
         "vuln_type": "command-injection",
         "sink": "cp.exec(cmd, {",
         "sink_lineno": 19,
@@ -13,20 +13,11 @@
         "params_types": {
             "cmd": "string",
             "callback": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "exec",
-                "fn_name": "1292.v67-o184",
-                "fn_id": "764",
-                "source_fn_id": "764"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/find-process_1.4.4/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/find-process_1.4.4/src/utils.js",
         "vuln_type": "command-injection",
         "sink": "return cp.spawn(cmd, args, options)",
         "sink_lineno": 28,
@@ -40,15 +31,6 @@
             "cmd": "string",
             "args": "any",
             "options": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "spawn",
-                "fn_name": "1292.v69-o189",
-                "fn_id": "791",
-                "source_fn_id": "791"
-            }
-        ]
+        }
     }
 ]

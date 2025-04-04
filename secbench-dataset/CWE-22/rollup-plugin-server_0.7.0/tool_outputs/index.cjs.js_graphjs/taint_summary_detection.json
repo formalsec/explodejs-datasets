@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (error, content) {",
         "sink_lineno": 68
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/rollup-plugin-server_0.7.0/src/index.cjs.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(filePath, function (error, content) {",
         "sink_lineno": 130

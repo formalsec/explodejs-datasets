@@ -1,18 +1,18 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
         "vuln_type": "command-injection",
         "sink": "var childProcess = cp.exec(command, options, function (err, stdout, stderr) {",
         "sink_lineno": 45
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
         "vuln_type": "command-injection",
         "sink": "var childProcess = cp.execFile(file, args, options, function (err, stdout, stderr) {",
         "sink_lineno": 64
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ts-process-promises_1.0.2/src/process-promises.js",
         "vuln_type": "command-injection",
         "sink": "var childProcess = cp.spawn(command, args, options);",
         "sink_lineno": 83

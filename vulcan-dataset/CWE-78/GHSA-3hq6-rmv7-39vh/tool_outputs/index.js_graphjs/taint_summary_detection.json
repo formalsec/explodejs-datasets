@@ -1,18 +1,18 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
         "vuln_type": "command-injection",
         "sink": "childProcess.execFile(path.resolve(browserPath), commandOptions, {maxBuffer: 50000 * 1024}, function (err) {",
         "sink_lineno": 70
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
         "vuln_type": "command-injection",
         "sink": "result = childProcess.execSync(cmd).toString().trim();",
         "sink_lineno": 107
     },
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-3hq6-rmv7-39vh/src/index.js",
         "vuln_type": "command-injection",
         "sink": "result = childProcess.execSync(cmd).toString().trim();",
         "sink_lineno": 124

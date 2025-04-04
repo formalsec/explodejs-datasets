@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-vhxc-fhm5-qcp9/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-vhxc-fhm5-qcp9/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "handlers[type][name] = fn;",
         "sink_lineno": 44,
@@ -15,15 +15,6 @@
             "type": "string",
             "name": "string",
             "fn": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "handler",
-                "fn_name": "1284.handler-o191",
-                "fn_id": "916",
-                "source_fn_id": "916"
-            }
-        ]
+        }
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-94/736/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-94/736/src/index.js",
         "vuln_type": "code-injection",
         "sink": "return new Function('tokens, req, res', js)",
         "sink_lineno": 391,
@@ -16,15 +16,6 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "compile",
-                "fn_name": "3782.compile-o469",
-                "fn_id": "3382",
-                "source_fn_id": "3382"
-            }
-        ]
+        }
     }
 ]

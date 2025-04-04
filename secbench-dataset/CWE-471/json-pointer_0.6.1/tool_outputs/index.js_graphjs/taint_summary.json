@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/json-pointer_0.6.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/json-pointer_0.6.1/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[nextTok] = value;",
         "sink_lineno": 98,
@@ -15,15 +15,6 @@
             "obj": "object",
             "pointer": "array",
             "value": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "2185.set-o289",
-                "fn_id": "1457",
-                "source_fn_id": "1457"
-            }
-        ]
+        }
     }
 ]

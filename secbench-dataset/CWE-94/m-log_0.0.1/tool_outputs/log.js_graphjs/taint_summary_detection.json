@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/m-log_0.0.1/src/log.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/m-log_0.0.1/src/log.js",
         "vuln_type": "code-injection",
         "sink": "eval('colors.setTheme({' + i + ':' + theme + '});');",
         "sink_lineno": 24
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/m-log_0.0.1/src/log.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/m-log_0.0.1/src/log.js",
         "vuln_type": "code-injection",
         "sink": "eval('theme = {' + i + ':['+ v +']}');",
         "sink_lineno": 32

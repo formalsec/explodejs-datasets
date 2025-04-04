@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/get-npm-package-version_1.0.6/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/get-npm-package-version_1.0.6/src/index.js",
         "vuln_type": "command-injection",
         "sink": "version = require('child_process').execSync(`npm view ${packageName} version --registry ${registry}`, config);",
         "sink_lineno": 14
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/get-npm-package-version_1.0.6/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/get-npm-package-version_1.0.6/src/index.js",
         "vuln_type": "command-injection",
         "sink": "version = require('child_process').execSync(`npm view ${packageName} version`, config);",
         "sink_lineno": 16

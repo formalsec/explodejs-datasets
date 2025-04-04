@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-78/eslint-fixer_0.1.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/eslint-fixer_0.1.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "childProcess.exec(cmd, (error, stdout, stderr) => {",
         "sink_lineno": 24,
@@ -15,14 +15,6 @@
             "options": {
                 "null": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "745.fix-o118",
-                "fn_id": 621,
-                "source_fn_id": 621
-            }
-        ]
+        }
     }
 ]

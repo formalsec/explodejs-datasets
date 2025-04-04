@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/654/src/unix.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/654/src/unix.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"ifconfig \" + iface, function (err, out) {",
         "sink_lineno": 4,
@@ -13,14 +13,6 @@
         "params_types": {
             "iface": "string",
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "216.v24-o36",
-                "fn_id": "137",
-                "source_fn_id": "137"
-            }
-        ]
+        }
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = value;",
         "sink_lineno": 111,
@@ -15,20 +15,11 @@
             "target": "object",
             "path": "array",
             "value": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "2327.setByPath-o297",
-                "fn_id": "1585",
-                "source_fn_id": "1585"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = setByPath(target[key], path.slice(1), value);",
         "sink_lineno": 108,
@@ -42,20 +33,11 @@
             "target": "object",
             "path": "array",
             "value": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "2327.setByPath-o297",
-                "fn_id": "1585",
-                "source_fn_id": "1585"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/keyget_2.2.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "target[key] = at(target[key], path.slice(1), update);",
         "sink_lineno": 188,
@@ -69,15 +51,6 @@
             "target": "object",
             "path": "array",
             "update": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "at",
-                "fn_name": "2327.at-o318",
-                "fn_id": "1805",
-                "source_fn_id": "1805"
-            }
-        ]
+        }
     }
 ]

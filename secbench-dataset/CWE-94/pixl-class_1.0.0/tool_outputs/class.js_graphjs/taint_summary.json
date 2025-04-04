@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
         "vuln_type": "code-injection",
         "sink": "eval('constructor = function ('+args+') {'+inner_code+'};');",
         "sink_lineno": 26,
@@ -41,15 +41,72 @@
                 },
                 "*": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "create",
-                "fn_name": "1020.v136-o93",
-                "fn_id": "575",
-                "source_fn_id": "575"
+        }
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "constructor[key] = members.__static[key];",
+        "sink_lineno": 42,
+        "source": "module.exports.create",
+        "tainted_params": [
+            "members"
+        ],
+        "params_types": {
+            "members": "object"
+        }
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "constructor.prototype[key] = class_obj.prototype[key];",
+        "sink_lineno": 63,
+        "source": "module.exports.create",
+        "tainted_params": [
+            "members"
+        ],
+        "params_types": {
+            "members": {
+                "_union": [
+                    "object",
+                    "array"
+                ]
             }
-        ]
+        }
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "if (typeof(constructor[key]) == 'undefined') constructor[key] = static_members[key];",
+        "sink_lineno": 69,
+        "source": "module.exports.create",
+        "tainted_params": [
+            "members"
+        ],
+        "params_types": {
+            "members": "object"
+        }
+    },
+    {
+        "type": "VFunPropOfExportedObj",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/pixl-class_1.0.0/src/class.js",
+        "vuln_type": "prototype-pollution",
+        "sink": "constructor.prototype[key] = members[key];",
+        "sink_lineno": 78,
+        "source": "module.exports.create",
+        "tainted_params": [
+            "members"
+        ],
+        "params_types": {
+            "members": {
+                "_union": [
+                    "polluted_object2",
+                    "polluted_object3"
+                ]
+            }
+        }
     }
 ]

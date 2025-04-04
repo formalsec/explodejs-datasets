@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "to[key] = from[key];",
         "sink_lineno": 142,
@@ -18,20 +18,11 @@
                     "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "2856.merge-o337",
-                "fn_id": "2170",
-                "source_fn_id": "2170"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "to[key] = from[key];",
         "sink_lineno": 137,
@@ -48,20 +39,11 @@
                     "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "2856.merge-o337",
-                "fn_id": "2170",
-                "source_fn_id": "2170"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "to[key] = clone(from[key]);",
         "sink_lineno": 169,
@@ -74,24 +56,15 @@
             "to": "object",
             "from": {
                 "_union": [
-                    "object",
-                    "array"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "mergeClone",
-                "fn_name": "2856.mergeClone-o343",
-                "fn_id": "2273",
-                "source_fn_id": "2273"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/mquery_3.2.1/src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "to[key] = clone(from[key]);",
         "sink_lineno": 164,
@@ -104,19 +77,10 @@
             "to": "object",
             "from": {
                 "_union": [
-                    "object",
-                    "array"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "mergeClone",
-                "fn_name": "2856.mergeClone-o343",
-                "fn_id": "2273",
-                "source_fn_id": "2273"
-            }
-        ]
+        }
     }
 ]

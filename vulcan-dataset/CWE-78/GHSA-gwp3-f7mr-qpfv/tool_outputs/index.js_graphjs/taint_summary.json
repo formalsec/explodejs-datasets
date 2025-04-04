@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-gwp3-f7mr-qpfv/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-gwp3-f7mr-qpfv/src/index.js",
         "vuln_type": "command-injection",
         "sink": "metadata(src, {",
         "sink_lineno": 36,
@@ -26,27 +26,11 @@
                 "src",
                 "cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "Image",
-                "fn_name": "3786.v298-o397",
-                "fn_id": "2165",
-                "source_fn_id": "2165"
-            },
-            {
-                "type": "Method",
-                "prop": "getMetadata",
-                "fn_name": "3786.getMetadata-o396",
-                "fn_id": "2322",
-                "source_fn_id": "2322"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-gwp3-f7mr-qpfv/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-gwp3-f7mr-qpfv/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "Body: fs.createReadStream(version.path),",
         "sink_lineno": 95,
@@ -82,22 +66,6 @@
                 "version",
                 "cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "Image",
-                "fn_name": "3786.v383-o427",
-                "fn_id": "2165",
-                "source_fn_id": "2165"
-            },
-            {
-                "type": "Method",
-                "prop": "_upload",
-                "fn_name": "3786._upload-o426",
-                "fn_id": "2816",
-                "source_fn_id": "2816"
-            }
-        ]
+        }
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = b[key];",
         "sink_lineno": 42,
@@ -18,19 +18,11 @@
                     "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "326.extend-o40",
-                "fn_id": 187,
-                "source_fn_id": 187
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = extend(a[key], b[key]);",
         "sink_lineno": 39,
@@ -43,23 +35,15 @@
             "a": "object",
             "b": {
                 "_union": [
-                    "object",
-                    "array"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "326.extend-o40",
-                "fn_id": 187,
-                "source_fn_id": 187
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-m639-9whg-fw97/src/extend.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[key] = b[key];",
         "sink_lineno": 37,
@@ -76,14 +60,6 @@
                     "polluted_object3"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "326.extend-o40",
-                "fn_id": 187,
-                "source_fn_id": 187
-            }
-        ]
+        }
     }
 ]

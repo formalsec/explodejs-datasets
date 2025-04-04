@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/773/src/pi_video_recording.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/773/src/pi_video_recording.js",
         "vuln_type": "command-injection",
         "sink": "proc =",
         "sink_lineno": 57,
@@ -11,20 +11,11 @@
         ],
         "params_types": {
             "file": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "startRecord",
-                "fn_name": "960.v65-o184",
-                "fn_id": "793",
-                "source_fn_id": "793"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/773/src/pi_video_recording.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/773/src/pi_video_recording.js",
         "vuln_type": "command-injection",
         "sink": "const process = childProcess.exec(",
         "sink_lineno": 78,
@@ -34,15 +25,6 @@
         ],
         "params_types": {
             "file": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "encodeRecord",
-                "fn_name": "960.v75-o191",
-                "fn_id": "890",
-                "source_fn_id": "890"
-            }
-        ]
+        }
     }
 ]

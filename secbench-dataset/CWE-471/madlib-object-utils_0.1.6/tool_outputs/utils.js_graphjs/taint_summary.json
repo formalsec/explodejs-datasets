@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/madlib-object-utils_0.1.6/src/utils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/madlib-object-utils_0.1.6/src/utils.js",
         "vuln_type": "prototype-pollution",
         "sink": "value[key] = defaultValue;",
         "sink_lineno": 53,
@@ -20,15 +20,6 @@
                 ]
             },
             "defaultValue": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "getAndCreate",
-                "fn_name": "887.v65-o119",
-                "fn_id": "721",
-                "source_fn_id": "721"
-            }
-        ]
+        }
     }
 ]

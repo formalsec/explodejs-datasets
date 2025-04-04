@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/663/src/open.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/663/src/open.js",
         "vuln_type": "command-injection",
         "sink": "return exec(opener + ' \"' + escape(target) + '\"', callback);",
         "sink_lineno": 58

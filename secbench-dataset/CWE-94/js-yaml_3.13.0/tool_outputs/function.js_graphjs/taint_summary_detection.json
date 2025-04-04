@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/js-yaml_3.13.0/src/function.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/js-yaml_3.13.0/src/function.js",
         "vuln_type": "code-injection",
         "sink": "return new Function(params, source.slice(body[0] + 1, body[1] - 1));",
         "sink_lineno": 70
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/js-yaml_3.13.0/src/function.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/js-yaml_3.13.0/src/function.js",
         "vuln_type": "code-injection",
         "sink": "return new Function(params, 'return ' + source.slice(body[0], body[1]));",
         "sink_lineno": 75

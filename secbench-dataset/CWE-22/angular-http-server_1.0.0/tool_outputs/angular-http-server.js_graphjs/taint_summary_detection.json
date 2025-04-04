@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/angular-http-server_1.0.0/src/angular-http-server.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/angular-http-server_1.0.0/src/angular-http-server.js",
         "vuln_type": "path-traversal",
         "sink": "fileBuffer = fs.readFileSync(possibleFilename);",
         "sink_lineno": 16

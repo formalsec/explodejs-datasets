@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/enpeem_2.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/enpeem_2.2.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var npm = exec(cmd, {cwd: options.dir});",
         "sink_lineno": 114

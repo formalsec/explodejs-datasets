@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-22/run-this-place_1.0.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/run-this-place_1.0.2/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "var stream = fs.createReadStream(filePath, {",
         "sink_lineno": 53

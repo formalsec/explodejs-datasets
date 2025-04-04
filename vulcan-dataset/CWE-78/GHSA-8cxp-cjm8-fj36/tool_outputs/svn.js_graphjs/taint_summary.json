@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/svn.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-8cxp-cjm8-fj36/src/svn.js",
         "vuln_type": "command-injection",
         "sink": "exec('svn blame ' + realFile + ' ' + args, {",
         "sink_lineno": 37,
@@ -13,14 +13,6 @@
         "params_types": {
             "file": "string",
             "args": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "771.v96-o103",
-                "fn_id": 460,
-                "source_fn_id": 460
-            }
-        ]
+        }
     }
 ]

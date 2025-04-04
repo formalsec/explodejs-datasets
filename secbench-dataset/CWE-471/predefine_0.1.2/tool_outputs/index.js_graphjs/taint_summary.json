@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/predefine_0.1.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/predefine_0.1.2/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "result[key] = merge(target[key], additional[key]);",
         "sink_lineno": 286,
@@ -25,8 +25,8 @@
                 "target": "object",
                 "additional": {
                     "_union": [
-                        "object",
-                        "array"
+                        "polluted_object2",
+                        "polluted_object3"
                     ]
                 }
             },
@@ -34,27 +34,11 @@
                 "target",
                 "additional"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "2525.predefine-o356",
-                "fn_id": "1663",
-                "source_fn_id": "1663"
-            },
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "2525.merge-o345",
-                "fn_id": 2282,
-                "source_fn_id": 2282
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/predefine_0.1.2/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/predefine_0.1.2/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "result[key] = value;",
         "sink_lineno": 284,
@@ -87,22 +71,6 @@
                 "target",
                 "additional"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "2525.predefine-o356",
-                "fn_id": "1663",
-                "source_fn_id": "1663"
-            },
-            {
-                "type": "Method",
-                "prop": "merge",
-                "fn_name": "2525.merge-o345",
-                "fn_id": 2282,
-                "source_fn_id": 2282
-            }
-        ]
+        }
     }
 ]

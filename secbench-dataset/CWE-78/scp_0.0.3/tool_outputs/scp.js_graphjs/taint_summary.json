@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/scp_0.0.3/src/scp.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/scp_0.0.3/src/scp.js",
         "vuln_type": "command-injection",
         "sink": "exec(command.join(' '), function (err, stdout, stderr) {",
         "sink_lineno": 21,
@@ -29,15 +29,6 @@
                 "path": "array"
             },
             "cb": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "send",
-                "fn_name": "696.v67-o94",
-                "fn_id": "422",
-                "source_fn_id": "422"
-            }
-        ]
+        }
     }
 ]

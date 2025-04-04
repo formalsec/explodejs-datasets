@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/connection-tester_0.2.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/connection-tester_0.2.0/src/index.js",
         "vuln_type": "command-injection",
         "sink": "const shellOut = shell.execSync(cmd).toString();",
         "sink_lineno": 15,
@@ -22,15 +22,6 @@
                 ]
             },
             "callback": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "test",
-                "fn_name": "910.v69-o152",
-                "fn_id": 823,
-                "source_fn_id": 823
-            }
-        ]
+        }
     }
 ]

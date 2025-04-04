@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/heroku-env_0.2.0/src/get.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/heroku-env_0.2.0/src/get.js",
         "vuln_type": "command-injection",
         "sink": "exec('heroku config --app ' + app, function(err, stdout) {",
         "sink_lineno": 3

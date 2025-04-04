@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-3829-mgmw-jcg4/src/deep-merge.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-3829-mgmw-jcg4/src/deep-merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "if (current[1]) current[1][key] = current[0][key];",
         "sink_lineno": 23,
@@ -23,19 +23,11 @@
                 "depth": "number",
                 "deep": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "825.deepMerge-o64",
-                "fn_id": "453",
-                "source_fn_id": "453"
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/vulcan-dataset/CWE-471/GHSA-3829-mgmw-jcg4/src/deep-merge.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-471/GHSA-3829-mgmw-jcg4/src/deep-merge.js",
         "vuln_type": "prototype-pollution",
         "sink": "current[1][key] = (current[1][key] && typeof current[1][key] === 'object') ? current[1][key] : (isArray) ? [] : {};",
         "sink_lineno": 14,
@@ -57,14 +49,6 @@
                 "depth": "number",
                 "deep": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "825.deepMerge-o64",
-                "fn_id": "453",
-                "source_fn_id": "453"
-            }
-        ]
+        }
     }
 ]

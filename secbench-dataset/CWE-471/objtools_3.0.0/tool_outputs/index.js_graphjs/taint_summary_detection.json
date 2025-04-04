@@ -1,24 +1,24 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "cur[parts[i]] = value;",
         "sink_lineno": 349
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = result;",
         "sink_lineno": 533
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = result;",
         "sink_lineno": 565
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/objtools_3.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "object[key] = baseMergeHeavy(result, srcValue, customizer);",
         "sink_lineno": 563

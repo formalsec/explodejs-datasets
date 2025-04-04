@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
         "vuln_type": "path-traversal",
         "sink": "var file = fs.createReadStream(filename);",
         "sink_lineno": 26,
@@ -17,20 +17,11 @@
                 "outfile": "any"
             },
             "callback": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "serve",
-                "fn_name": "896.serve-o131",
-                "fn_id": 546,
-                "source_fn_id": 546
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var bundler = child.spawn(options.bundler, options.argv);",
         "sink_lineno": 42,
@@ -46,20 +37,11 @@
                 "outfile": "any"
             },
             "callback": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "bundle",
-                "fn_name": "896.bundle-o135",
-                "fn_id": "713",
-                "source_fn_id": "713"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/wrlc_0.2.5/src/index.js",
         "vuln_type": "command-injection",
         "sink": "var browser = child.spawn(options.browser, [util.format('http://%s:%d', options.host, options.port)]);",
         "sink_lineno": 65,
@@ -75,15 +57,6 @@
                 "port": "any"
             },
             "callback": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "browse",
-                "fn_name": "896.browse-o139",
-                "fn_id": "817",
-                "source_fn_id": "817"
-            }
-        ]
+        }
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(ROOT_DIR + \"/index.html\", function (err,data) {",
         "sink_lineno": 37,
@@ -13,20 +13,11 @@
         "params_types": {
             "port": "any",
             "root": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "run",
-                "fn_name": "1106.v130-o130",
-                "fn_id": 634,
-                "source_fn_id": 634
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(ROOT_DIR + \"/city-weather.html\", function (err,data) {",
         "sink_lineno": 47,
@@ -38,20 +29,11 @@
         "params_types": {
             "port": "any",
             "root": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "run",
-                "fn_name": "1106.v130-o130",
-                "fn_id": 634,
-                "source_fn_id": 634
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/willvdb_test_server_0.0.0/src/cityserver.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(ROOT_DIR + urlObj.pathname, function (err,data) {",
         "sink_lineno": 57,
@@ -63,15 +45,6 @@
         "params_types": {
             "port": "any",
             "root": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "run",
-                "fn_name": "1106.v130-o130",
-                "fn_id": 634,
-                "source_fn_id": 634
-            }
-        ]
+        }
     }
 ]

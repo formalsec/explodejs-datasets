@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/objection_2.0.0/src/objectUtils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/objection_2.0.0/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[path[path.length - 1]] = value;",
         "sink_lineno": 246,
@@ -32,20 +32,11 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "4286.set-o598",
-                "fn_id": "3464",
-                "source_fn_id": "3464"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-471/objection_2.0.0/src/objectUtils.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/objection_2.0.0/src/objectUtils.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = child;",
         "sink_lineno": 239,
@@ -81,15 +72,6 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "set",
-                "fn_name": "4286.set-o598",
-                "fn_id": "3464",
-                "source_fn_id": "3464"
-            }
-        ]
+        }
     }
 ]

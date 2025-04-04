@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/yargs-parser_6.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/yargs-parser_6.0.0/src/index.js",
         "vuln_type": "code-injection",
         "sink": "config = require(resolvedConfigPath)",
         "sink_lineno": 451
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/yargs-parser_6.0.0/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/yargs-parser_6.0.0/src/index.js",
         "vuln_type": "prototype-pollution",
         "sink": "defaults[alias] = defaults[key]",
         "sink_lineno": 98

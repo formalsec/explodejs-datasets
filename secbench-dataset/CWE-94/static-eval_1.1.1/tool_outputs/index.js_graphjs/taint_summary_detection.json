@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-94/static-eval_1.1.1/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/static-eval_1.1.1/src/index.js",
         "vuln_type": "code-injection",
         "sink": "return Function(keys.join(', '), 'return ' + unparse(node)).apply(null, vals);",
         "sink_lineno": 118

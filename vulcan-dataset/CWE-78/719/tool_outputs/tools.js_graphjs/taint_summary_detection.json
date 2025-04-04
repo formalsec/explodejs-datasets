@@ -1,6 +1,6 @@
 [
     {
-        "filename": "/datasets/vulcan-dataset/CWE-78/719/src/tools.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/719/src/tools.js",
         "vuln_type": "command-injection",
         "sink": "const execute = proc(cmd, (err, stdout, stderr) => {",
         "sink_lineno": 114

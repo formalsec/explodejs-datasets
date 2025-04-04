@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-78/get-npm-package-version_1.0.6/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/get-npm-package-version_1.0.6/src/index.js",
         "vuln_type": "command-injection",
         "sink": "version = require('child_process').execSync(`npm view ${packageName} version --registry ${registry}`, config);",
         "sink_lineno": 14,
@@ -13,19 +13,11 @@
         "params_types": {
             "packageName": "string",
             "undefined": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "273.v20-o42",
-                "fn_id": "163",
-                "source_fn_id": "163"
-            }
-        ]
+        }
     },
     {
         "type": "VFunExported",
-        "filename": "/datasets/secbench-dataset/CWE-78/get-npm-package-version_1.0.6/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/get-npm-package-version_1.0.6/src/index.js",
         "vuln_type": "command-injection",
         "sink": "version = require('child_process').execSync(`npm view ${packageName} version`, config);",
         "sink_lineno": 16,
@@ -37,14 +29,6 @@
         "params_types": {
             "packageName": "string",
             "undefined": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Call",
-                "fn_name": "273.v20-o42",
-                "fn_id": "163",
-                "source_fn_id": "163"
-            }
-        ]
+        }
     }
 ]

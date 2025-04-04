@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process_1.exec(`touch ${filePath}`);",
         "sink_lineno": 41,
@@ -13,20 +13,11 @@
             "options": {
                 "finish": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "plot",
-                "fn_name": "914.plot-o114",
-                "fn_id": 828,
-                "source_fn_id": 828
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "vuln_type": "command-injection",
         "sink": "gnuplot = child_process_1.exec(`gnuplot | ps2pdf - ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
         "sink_lineno": 44,
@@ -38,20 +29,11 @@
             "options": {
                 "finish": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "plot",
-                "fn_name": "914.plot-o114",
-                "fn_id": 828,
-                "source_fn_id": 828
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/GHSA-f2jw-pr2c-9x96/src/index.js",
         "vuln_type": "command-injection",
         "sink": "gnuplot = child_process_1.exec(`gnuplot > ${filePath}`, options.exec ? options.exec : {}, options.finish || post_gnuplot_processing);",
         "sink_lineno": 48,
@@ -63,15 +45,6 @@
             "options": {
                 "finish": "any"
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "plot",
-                "fn_name": "914.plot-o114",
-                "fn_id": 828,
-                "source_fn_id": 828
-            }
-        ]
+        }
     }
 ]

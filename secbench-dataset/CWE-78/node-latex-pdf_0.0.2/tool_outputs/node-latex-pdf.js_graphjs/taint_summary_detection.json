@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/node-latex-pdf_0.0.2/src/node-latex-pdf.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/node-latex-pdf_0.0.2/src/node-latex-pdf.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
         "sink_lineno": 10
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/node-latex-pdf_0.0.2/src/node-latex-pdf.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/node-latex-pdf_0.0.2/src/node-latex-pdf.js",
         "vuln_type": "command-injection",
         "sink": "exec(\"pdflatex -output-directory \" + dest_file + \" \" + src_file, (err,stdout,stderr) => {",
         "sink_lineno": 15

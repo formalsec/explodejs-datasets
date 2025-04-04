@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "code-injection",
         "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
         "sink_lineno": 75,
@@ -15,20 +15,11 @@
                 "*": "any"
             },
             "originObj": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "unserialize",
-                "fn_name": "1253.v138-o142",
-                "fn_id": "1008",
-                "source_fn_id": "1008"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "outputObj[key] = obj[key];",
         "sink_lineno": 51,
@@ -61,20 +52,11 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "serialize",
-                "fn_name": "1253.v101-o136",
-                "fn_id": "754",
-                "source_fn_id": "754"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "outputObj[key] = FUNCFLAG + funcStr;",
         "sink_lineno": 49,
@@ -89,8 +71,8 @@
         "params_types": {
             "obj": {
                 "_union": [
-                    "object",
-                    "array"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "ignoreNativeFunc": "any",
@@ -107,20 +89,11 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "serialize",
-                "fn_name": "1253.v101-o136",
-                "fn_id": "754",
-                "source_fn_id": "754"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "outputObj[key] = exports.serialize(obj[key], ignoreNativeFunc, outputObj[key], cache, path + KEYPATHSEPARATOR + key);",
         "sink_lineno": 38,
@@ -135,16 +108,16 @@
         "params_types": {
             "obj": {
                 "_union": [
-                    "object",
-                    "array"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "ignoreNativeFunc": "any",
             "outputObj": "object",
             "cache": {
                 "_union": [
-                    "object",
-                    "array"
+                    "polluted_object2",
+                    "polluted_object3"
                 ]
             },
             "path": {
@@ -153,20 +126,11 @@
                     "string"
                 ]
             }
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "serialize",
-                "fn_name": "1253.v101-o136",
-                "fn_id": "754",
-                "source_fn_id": "754"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = obj[key].substring(CIRCULARFLAG.length);",
         "sink_lineno": 77,
@@ -178,20 +142,11 @@
         "params_types": {
             "obj": "object",
             "originObj": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "unserialize",
-                "fn_name": "1253.v138-o142",
-                "fn_id": "1008",
-                "source_fn_id": "1008"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
         "sink_lineno": 75,
@@ -203,20 +158,11 @@
         "params_types": {
             "obj": "object",
             "originObj": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "unserialize",
-                "fn_name": "1253.v138-o142",
-                "fn_id": "1008",
-                "source_fn_id": "1008"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-94/node-serialize_0.0.3/src/serialize.js",
         "vuln_type": "prototype-pollution",
         "sink": "obj[key] = exports.unserialize(obj[key], originObj);",
         "sink_lineno": 72,
@@ -228,15 +174,6 @@
         "params_types": {
             "obj": "object",
             "originObj": "any"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "unserialize",
-                "fn_name": "1253.v138-o142",
-                "fn_id": "1008",
-                "source_fn_id": "1008"
-            }
-        ]
+        }
     }
 ]

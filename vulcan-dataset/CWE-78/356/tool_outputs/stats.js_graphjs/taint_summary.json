@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/356/src/stats.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/356/src/stats.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(p.join('/proc', ''+pid, 'stat'), 'utf8', function(err, infos) {",
         "sink_lineno": 47,
@@ -22,20 +22,11 @@
                 "childrens": "any"
             },
             "done": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "proc_calc",
-                "fn_name": "3074.v262-o388",
-                "fn_id": "1942",
-                "source_fn_id": "1942"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/356/src/stats.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/356/src/stats.js",
         "vuln_type": "command-injection",
         "sink": "var wmic = spawn('wmic', args.split(' '), {detached: true})",
         "sink_lineno": 106,
@@ -54,20 +45,11 @@
             },
             "options": "any",
             "done": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "win",
-                "fn_name": "3074.v335-o393",
-                "fn_id": "2351",
-                "source_fn_id": "2351"
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/vulcan-dataset/CWE-78/356/src/stats.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/356/src/stats.js",
         "vuln_type": "command-injection",
         "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
         "sink_lineno": 170,
@@ -81,15 +63,6 @@
             "pid": "string",
             "options": "any",
             "done": "function"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "ps",
-                "fn_name": "3074.v354-o398",
-                "fn_id": "2899",
-                "source_fn_id": "2899"
-            }
-        ]
+        }
     }
 ]

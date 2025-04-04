@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 8,
@@ -13,20 +13,11 @@
         "params_types": {
             "input": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "generateimage",
-                "fn_name": "2342.v146-o389",
-                "fn_id": 1426,
-                "source_fn_id": 1426
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 27,
@@ -38,20 +29,11 @@
         "params_types": {
             "input": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "convertvideo",
-                "fn_name": "2342.v157-o393",
-                "fn_id": 1495,
-                "source_fn_id": 1495
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 46,
@@ -63,20 +45,11 @@
         "params_types": {
             "input": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "generategif",
-                "fn_name": "2342.v168-o397",
-                "fn_id": 1564,
-                "source_fn_id": 1564
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 65,
@@ -88,20 +61,11 @@
         "params_types": {
             "input": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "extractaudio",
-                "fn_name": "2342.v179-o401",
-                "fn_id": 1633,
-                "source_fn_id": 1633
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 83,
@@ -113,20 +77,11 @@
         "params_types": {
             "input": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "compressvideo",
-                "fn_name": "2342.v191-o405",
-                "fn_id": 1702,
-                "source_fn_id": 1702
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 101,
@@ -148,20 +103,11 @@
             "x": "string",
             "y": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "addoverlayimagetime",
-                "fn_name": "2342.v204-o414",
-                "fn_id": 1775,
-                "source_fn_id": 1775
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 119,
@@ -179,20 +125,11 @@
             "x": "string",
             "y": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "addoverlayimage",
-                "fn_name": "2342.v217-o421",
-                "fn_id": 1864,
-                "source_fn_id": 1864
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 137,
@@ -210,20 +147,11 @@
             "x": "string",
             "y": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "addoverlaytext",
-                "fn_name": "2342.v228-o428",
-                "fn_id": 1949,
-                "source_fn_id": 1949
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 155,
@@ -237,20 +165,11 @@
             "input": "string",
             "audio": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "addaudiotovideo",
-                "fn_name": "2342.v242-o433",
-                "fn_id": 2024,
-                "source_fn_id": 2024
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 173,
@@ -264,20 +183,11 @@
             "audio": "string",
             "image": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "addaudiotoimage",
-                "fn_name": "2342.v256-o438",
-                "fn_id": 2108,
-                "source_fn_id": 2108
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/ffmpegdotjs_0.0.4/src/index.js",
         "vuln_type": "command-injection",
         "sink": "exec(",
         "sink_lineno": 191,
@@ -293,15 +203,6 @@
             "start": "string",
             "duration": "string",
             "output": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "trimvideo",
-                "fn_name": "2342.v268-o444",
-                "fn_id": 2192,
-                "source_fn_id": 2192
-            }
-        ]
+        }
     }
 ]

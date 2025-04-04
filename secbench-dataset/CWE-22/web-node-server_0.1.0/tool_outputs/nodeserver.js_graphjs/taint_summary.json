@@ -1,7 +1,7 @@
 [
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/web-node-server_0.1.0/src/nodeserver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/web-node-server_0.1.0/src/nodeserver.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(host.frondend + host.baseTemp, function(err, file) {",
         "sink_lineno": 41,
@@ -11,20 +11,11 @@
         ],
         "params_types": {
             "config": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "start",
-                "fn_name": "1367.start-o174",
-                "fn_id": 887,
-                "source_fn_id": 887
-            }
-        ]
+        }
     },
     {
         "type": "VFunPropOfExportedObj",
-        "filename": "/datasets/secbench-dataset/CWE-22/web-node-server_0.1.0/src/nodeserver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/web-node-server_0.1.0/src/nodeserver.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(nowTemp, function(err, file) {",
         "sink_lineno": 85,
@@ -34,15 +25,6 @@
         ],
         "params_types": {
             "config": "string"
-        },
-        "call_paths": [
-            {
-                "type": "Method",
-                "prop": "start",
-                "fn_name": "1367.start-o174",
-                "fn_id": 887,
-                "source_fn_id": 887
-            }
-        ]
+        }
     }
 ]

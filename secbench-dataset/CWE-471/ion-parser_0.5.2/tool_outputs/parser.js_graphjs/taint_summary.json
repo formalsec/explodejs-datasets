@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/ion-parser_0.5.2/src/parser.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/ion-parser_0.5.2/src/parser.js",
         "vuln_type": "path-traversal",
         "sink": "fs.readFile(file, (err, data) => {",
         "sink_lineno": 750,
@@ -18,27 +18,11 @@
                 "file",
                 "cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "7252.ION-o801",
-                "fn_id": "7112",
-                "source_fn_id": "7112"
-            },
-            {
-                "type": "Method",
-                "prop": "parseFile",
-                "fn_name": "7252.v724-o800",
-                "fn_id": "7159",
-                "source_fn_id": "7159"
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-471/ion-parser_0.5.2/src/parser.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/ion-parser_0.5.2/src/parser.js",
         "vuln_type": "path-traversal",
         "sink": "return parse(fs.readFileSync(file))",
         "sink_lineno": 762,
@@ -55,22 +39,6 @@
                 "file",
                 "cb"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "7252.ION-o801",
-                "fn_id": "7112",
-                "source_fn_id": "7112"
-            },
-            {
-                "type": "Method",
-                "prop": "parseFile",
-                "fn_name": "7252.v724-o800",
-                "fn_id": "7159",
-                "source_fn_id": "7159"
-            }
-        ]
+        }
     }
 ]

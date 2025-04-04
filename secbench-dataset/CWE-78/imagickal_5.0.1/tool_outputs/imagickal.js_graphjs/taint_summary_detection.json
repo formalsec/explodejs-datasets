@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
         "vuln_type": "command-injection",
         "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
         "sink_lineno": 76
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-78/imagickal_5.0.1/src/imagickal.js",
         "vuln_type": "command-injection",
         "sink": "const shell = exec(cmd, Object.assign({ stdio: ['pipe'] }, globalOpts.execOptions || {}), (err, stdout) => {",
         "sink_lineno": 126

@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/360/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
         "sink_lineno": 34,
@@ -18,27 +18,11 @@
             "source": ".showRef",
             "params_types": {},
             "tainted_params": []
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "FSGit",
-                "fn_name": "2238.v145-o351",
-                "fn_id": "1355",
-                "source_fn_id": "1355"
-            },
-            {
-                "type": "Method",
-                "prop": "showRef",
-                "fn_name": "2238.v163-o350",
-                "fn_id": 1493,
-                "source_fn_id": 1493
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/360/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
         "sink_lineno": 56,
@@ -63,27 +47,11 @@
                 "path",
                 "opts"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "FSGit",
-                "fn_name": "2238.v164-o357",
-                "fn_id": "1355",
-                "source_fn_id": "1355"
-            },
-            {
-                "type": "Method",
-                "prop": "readFile",
-                "fn_name": "2238.v180-o356",
-                "fn_id": 1643,
-                "source_fn_id": 1643
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/360/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
         "sink_lineno": 77,
@@ -104,27 +72,11 @@
             "tainted_params": [
                 "ref"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "FSGit",
-                "fn_name": "2238.v190-o367",
-                "fn_id": "1355",
-                "source_fn_id": "1355"
-            },
-            {
-                "type": "Method",
-                "prop": "revParse",
-                "fn_name": "2238.v205-o366",
-                "fn_id": 1806,
-                "source_fn_id": 1806
-            }
-        ]
+        }
     },
     {
         "type": "VNewCall",
-        "filename": "/datasets/vulcan-dataset/CWE-78/360/src/index.js",
+        "filename": "/home/graphjs/datasets/vulcan-dataset/CWE-78/360/src/index.js",
         "vuln_type": "command-injection",
         "sink": "child_process.exec(command, { maxBuffer: maxBuffer }, function (error, stdout, stderr) {",
         "sink_lineno": 96,
@@ -147,22 +99,6 @@
                 "ref",
                 "path"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": "FSGit",
-                "fn_name": "2238.v206-o373",
-                "fn_id": "1355",
-                "source_fn_id": "1355"
-            },
-            {
-                "type": "Method",
-                "prop": "_lsTree",
-                "fn_name": "2238.v233-o372",
-                "fn_id": 1919,
-                "source_fn_id": 1919
-            }
-        ]
+        }
     }
 ]

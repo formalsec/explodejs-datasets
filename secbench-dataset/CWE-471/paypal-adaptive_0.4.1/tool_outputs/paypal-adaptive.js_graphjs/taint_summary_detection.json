@@ -1,12 +1,12 @@
 [
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = b[p];",
         "sink_lineno": 31
     },
     {
-        "filename": "/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-471/paypal-adaptive_0.4.1/src/paypal-adaptive.js",
         "vuln_type": "prototype-pollution",
         "sink": "a[p] = merge(a[p], b[p]);",
         "sink_lineno": 29

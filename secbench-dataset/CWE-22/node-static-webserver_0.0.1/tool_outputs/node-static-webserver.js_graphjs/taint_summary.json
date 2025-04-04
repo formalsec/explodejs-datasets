@@ -1,7 +1,7 @@
 [
     {
         "type": "VNewCall",
-        "filename": "/datasets/secbench-dataset/CWE-22/node-static-webserver_0.0.1/src/node-static-webserver.js",
+        "filename": "/home/graphjs/datasets/secbench-dataset/CWE-22/node-static-webserver_0.0.1/src/node-static-webserver.js",
         "vuln_type": "path-traversal",
         "sink": "var readStream = fs.createReadStream(filename);",
         "sink_lineno": 79,
@@ -33,22 +33,6 @@
                 "stats",
                 "lastModifiedSince"
             ]
-        },
-        "call_paths": [
-            {
-                "type": "New",
-                "prop": null,
-                "fn_name": "1648.v119-o241",
-                "fn_id": "967",
-                "source_fn_id": "967"
-            },
-            {
-                "type": "Method",
-                "prop": "_responseFile",
-                "fn_name": "1648.v143-o240",
-                "fn_id": "1275",
-                "source_fn_id": "1275"
-            }
-        ]
+        }
     }
 ]
