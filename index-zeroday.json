@@ -932,6 +932,13 @@
         "package_dir": "zeroday/dot-access-1.0.0/src",
         "lineno": "??",
         "id": 71
+      },
+      {
+        "cwe": "CWE-1321",
+        "filename": "zeroday/dot-access-1.0.0_pp/src/index.js",
+        "package_dir": "zeroday/dot-access-1.0.0_pp/src",
+        "lineno": "??",
+        "id": 95
       }
     ]
   },

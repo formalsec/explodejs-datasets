@@ -1,6 +1,8 @@
 'use strict';
 
-var isObject = require('isobject');
+function isObject(val) {
+  return val != null && typeof val === 'object' && Array.isArray(val) === false;
+}
 
 function toggle(arr, prop, idx) {
   var ele = arr[idx];
