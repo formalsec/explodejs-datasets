@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "return obj && p ? (obj[p] = value) : undefined;",
+    "sink_lineno": 22,
+    "file": "index.js"
+  }
+]

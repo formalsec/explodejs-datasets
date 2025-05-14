@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "let data = execSync('pdfinfo ' + self.options.additional.join(' ')).toString('utf8');",
+        "sink_lineno": 26,
+        "file": "pdfinfo.js"
+    }
+]

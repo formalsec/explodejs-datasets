@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "proc =\nchildProcess.spawn(\"raspivid\",\n[\"-o\", file + \".h264\", \"-t\", \"0\", \"-ih\", \"-pf\", \"high\", \"-ISO\", \"800\",\n                           \"-ex\", \"night\", \"-drc\", \"high\", \"-n\", \"-fps\", \"30\", \"-w\", `${width}`, \"-h\",\n`${height}`, \"-r\", \"90\", \"-b\", \"8000000\", \"-r\", hostname]);",
+        "sink_lineno": 48,
+        "file": "pi_video_recording.js"
+    }
+]

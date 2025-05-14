@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "_childProcess = child_process.spawn(editor, args, { stdio: 'inherit' });",
+        "sink_lineno": 340,
+        "file": "launchEditor.js"
+    }
+]

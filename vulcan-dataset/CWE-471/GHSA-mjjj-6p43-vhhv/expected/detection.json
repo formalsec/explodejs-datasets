@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "obj[keys[i]] = value;",
+    "sink_lineno": 35,
+    "file": "index.js"
+  }
+]

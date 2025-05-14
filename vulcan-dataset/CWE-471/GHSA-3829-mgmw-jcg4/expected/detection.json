@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "if (current[1]) current[1][key] = current[0][key];",
+    "sink_lineno": 23,
+    "file": "bin/deepAssign.js"
+  }
+]

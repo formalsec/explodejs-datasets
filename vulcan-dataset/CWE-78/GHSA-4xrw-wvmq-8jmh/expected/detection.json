@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return exec(command, {}, function(error, stdout, stderr) {",
+    "sink_lineno": 117,
+    "file": "key-sender.js"
+  }
+]

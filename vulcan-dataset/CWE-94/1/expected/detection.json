@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "eval('value = ref.' + parts[i].value + ';');",
+    "sink_lineno": 152,
+    "file": "lib/batch.js"
+  }
+]

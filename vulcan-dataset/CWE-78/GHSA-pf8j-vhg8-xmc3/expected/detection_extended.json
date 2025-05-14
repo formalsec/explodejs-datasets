@@ -1,0 +1,26 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "var cache = JSON.parse(fs.readFileSync(config.cachePath, 'utf-8'));",
+        "sink_lineno": 68,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFileSync(",
+        "sink_lineno": 58,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFileSync(outPath, '');",
+        "sink_lineno": 146,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.writeFileSync(config.cachePath, JSON.stringify(testFiles, null, 2));",
+        "sink_lineno": 188,
+        "file": "index.js"
+    }
+]

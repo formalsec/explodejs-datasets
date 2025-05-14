@@ -1,0 +1,14 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "'(function () {\"use strict\"; ' + src + '})()'",
+    "sink_lineno": 47,
+    "file": "src/index.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "return Function('__context', src).call(null, __context)",
+    "sink_lineno": 49,
+    "file": "src/browser.js"
+  }
+]

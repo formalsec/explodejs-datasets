@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "const child = crossSpawn(command, args, opts)",
+    "sink_lineno": 52,
+    "file": "index.js"
+  }
+]

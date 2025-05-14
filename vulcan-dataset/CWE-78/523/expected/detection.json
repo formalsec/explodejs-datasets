@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "response = shell.exec(cmd, {silent: true});",
+    "sink_lineno": 21,
+    "file": "lib/dns-sync.js"
+  }
+]

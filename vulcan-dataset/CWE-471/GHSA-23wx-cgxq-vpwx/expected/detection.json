@@ -1,0 +1,14 @@
+[
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "a[k] = merge(a[k], b[k]);",
+    "sink_lineno": 5,
+    "file": "merge/index.js"
+  },
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "a[k] = merge(a[k], b[k]);",
+    "sink_lineno": 9,
+    "file": "merge/index.js"
+  }
+]

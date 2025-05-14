@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "dst[key] = src;",
+    "sink_lineno": 488,
+    "file": "angular.js"
+  }
+]

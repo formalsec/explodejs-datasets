@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "var ratio = eval(options.ratio);",
+    "sink_lineno": 31,
+    "file": "lib/resize.js"
+  }
+]

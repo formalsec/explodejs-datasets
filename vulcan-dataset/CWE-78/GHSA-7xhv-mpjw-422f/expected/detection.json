@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(\"open \".concat(result.link), errorTryingToOpen);",
+    "sink_lineno": 59,
+    "file": "lib/googleIt.js"
+  }
+]

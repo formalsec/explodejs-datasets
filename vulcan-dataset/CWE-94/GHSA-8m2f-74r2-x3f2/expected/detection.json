@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "return new Function('tokens, req, res', js).bind(context);",
+    "sink_lineno": 6,
+    "file": "lib/compile.js"
+  }
+]

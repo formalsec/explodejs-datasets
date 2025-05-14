@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "obj[arr.shift()] = value;",
+    "sink_lineno": 41,
+    "file": "index.js"
+  }
+]

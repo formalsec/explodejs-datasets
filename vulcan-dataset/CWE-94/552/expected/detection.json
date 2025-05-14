@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "var factory = (new Function(refs.name, 'createError', body));",
+    "sink_lineno": 1116,
+    "file": "typed-function/typed-function.js"
+  }
+]

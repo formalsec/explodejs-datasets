@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "tmp[parts[i]] = val;",
+    "sink_lineno": 11,
+    "file": "set/main.js"
+  }
+]

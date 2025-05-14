@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "child_process.exec(cmd, {",
+    "sink_lineno": 76,
+    "file": "lib/api/index.js"
+  }
+]

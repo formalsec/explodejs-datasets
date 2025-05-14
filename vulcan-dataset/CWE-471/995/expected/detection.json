@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "x[key] = merge(x[key], y[key]);",
+    "sink_lineno": 15,
+    "file": "index.js"
+  }
+]

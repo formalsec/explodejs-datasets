@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "execFile(self.cmdshell, [ fname ], { cwd:path, env:process.env },",
+    "sink_lineno": 146,
+    "file": "gitlabhook.js"
+  }
+]

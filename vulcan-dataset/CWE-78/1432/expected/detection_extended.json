@@ -1,0 +1,14 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "return spawn('pgrep', ['-P', parentPid]);",
+        "sink_lineno": 24,
+        "file": "index.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "return spawn('ps', ['-o', 'pid', '--no-headers', '--ppid', parentPid]);",
+        "sink_lineno": 36,
+        "file": "index.js"
+    }
+]

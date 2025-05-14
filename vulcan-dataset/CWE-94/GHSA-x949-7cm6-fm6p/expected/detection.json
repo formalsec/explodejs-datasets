@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "const { content: md, data: frontMatterConfig } = gray_matter_1.default(mdFileContent);",
+    "sink_lineno": 23,
+    "file": "dist/lib/md-to-pdf.js"
+  }
+]

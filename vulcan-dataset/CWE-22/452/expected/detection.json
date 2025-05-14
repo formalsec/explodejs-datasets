@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-22",
+    "sink": "    fs.readFile(settings.storageDir + 'published/' + req.params.package + '/' + req.params.filename, function (err, data) { ",
+    "sink_lineno": 172,
+    "file": "index.js"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "var fn = new Function('w', 'a', 'b', a);",
+    "sink_lineno": 6628,
+    "file": "utils.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "var fn = (new Function('w', builder.join(';') + ';return w' + (v[0] === '[' ? '' : '.') + v));",
+    "sink_lineno": 6647,
+    "file": "utils.js"
+  }
+]

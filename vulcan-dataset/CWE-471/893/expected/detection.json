@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "obj1[key] = obj2[key]",
+    "sink_lineno": 156,
+    "file": "merge.js"
+  }
+]

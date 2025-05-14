@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "obj[keyPath] = value;",
+    "sink_lineno": 198,
+    "file": "dist/dexie.js"
+  }
+]

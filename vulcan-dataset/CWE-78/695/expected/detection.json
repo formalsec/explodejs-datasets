@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "_childProcess = child_process.spawn(",
+    "sink_lineno": 334,
+    "file": "launchEditor.js"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "metadata(src, {",
+    "sink_lineno": 36,
+    "file": "index.js"
+  }
+]

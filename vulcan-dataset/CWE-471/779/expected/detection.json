@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "obj[part] = map(val);",
+    "sink_lineno": 269,
+    "file": "lib/index.js"
+  }
+]

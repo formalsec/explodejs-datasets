@@ -1,0 +1,20 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(\"networksetup -getmacaddress \" + iface, function (err, out)",
+    "sink_lineno": 4,
+    "file": "lib/macosx.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(\"cat /sys/class/net/\" + iface + \"/address\", function (err, out) {",
+    "sink_lineno": 4,
+    "file": "lib/linux.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(\"ifconfig \" + iface, function (err, out) {",
+    "sink_lineno": 4,
+    "file": "lib/unix.js"
+  }
+]

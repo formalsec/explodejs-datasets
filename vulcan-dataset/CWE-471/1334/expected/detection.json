@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "subject[key] = value",
+    "sink_lineno": 74,
+    "file": "edition-esnext/index.js"
+  }
+]

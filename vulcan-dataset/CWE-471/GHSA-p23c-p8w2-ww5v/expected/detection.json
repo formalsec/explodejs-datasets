@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "handlers[type][name] = fn;",
+    "sink_lineno": 48,
+    "file": "dist/index.js"
+  }
+]

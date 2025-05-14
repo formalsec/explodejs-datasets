@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "cache[from][to] = result",
+    "sink_lineno": 39,
+    "file": "lib/index.js"
+  }
+]

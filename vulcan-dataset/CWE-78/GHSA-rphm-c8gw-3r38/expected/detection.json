@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "const { stdout } = await execAsync(`npm view ${name} versions --json`);",
+    "sink_lineno": 16,
+    "file": "lib/index.js"
+  }
+]

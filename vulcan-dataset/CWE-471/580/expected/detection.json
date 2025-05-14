@@ -1,0 +1,20 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = merge(newVal, oldVal);",
+    "sink_lineno": 41,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = utils.union([], newVal, oldVal);",
+    "sink_lineno": 43,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = utils.clone(oldVal);",
+    "sink_lineno": 45,
+    "file": "index.js"
+  }
+]

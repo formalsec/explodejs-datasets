@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "var render = new Function(settings.variable || 'obj', '_', source);",
+    "sink_lineno": 981,
+    "file": "underscore.js"
+  }
+]

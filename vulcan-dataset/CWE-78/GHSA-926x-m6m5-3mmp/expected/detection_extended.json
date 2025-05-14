@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-78",
+        "sink": "const proc = childProcess.spawn(cmd, args, { stdio: 'pipe' });",
+        "sink_lineno": 180,
+        "file": "index.js"
+    }
+]

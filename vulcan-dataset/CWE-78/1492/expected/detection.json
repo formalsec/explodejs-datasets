@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "var child = spawn(cmd, params.args, {",
+    "sink_lineno": 140,
+    "file": "src/controller.js"
+  }
+]

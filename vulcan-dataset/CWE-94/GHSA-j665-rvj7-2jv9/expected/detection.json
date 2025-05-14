@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "propertyBase[property_parts[0]] = eval(get_eval_string(pvalue));",
+    "sink_lineno": 50,
+    "file": "mosc.js"
+  }
+]

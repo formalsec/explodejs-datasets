@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "obj[prop.key.value || prop.key.name] = value",
+    "sink_lineno": 290,
+    "file": "index.js"
+  }
+]

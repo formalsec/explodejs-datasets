@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "result = eval(toEvaluate)",
+    "sink_lineno": 75,
+    "file": "index.js"
+  }
+]

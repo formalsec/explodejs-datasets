@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('egrep -rl \"describe\\([\\'\\\"].*' + config.grep + '\" ' + config.grepDir, {",
+    "sink_lineno": 100,
+    "file": "index.js"
+  }
+]

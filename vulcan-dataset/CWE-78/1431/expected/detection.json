@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(command, function(err, stdout, stderr) {",
+    "sink_lineno": 41,
+    "file": "lib/index.js"
+  }
+]

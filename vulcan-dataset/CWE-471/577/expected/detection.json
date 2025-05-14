@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "var objValue = object[key], srcValue = source[key],",
+    "sink_lineno": 3645,
+    "file": "lodash.js"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(s3command, (err, stdout, stderr) => {",
+    "sink_lineno": 21,
+    "file": "server.js"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = val;",
+    "sink_lineno": 117,
+    "file": "lib/deep-extend"
+  },
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = deepCloneArray(val);",
+    "sink_lineno": 122,
+    "file": "lib/deep-extend"
+  },
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = cloneSpecificValue(val);",
+    "sink_lineno": 127,
+    "file": "lib/deep-extend"
+  },
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = deepExtend({}, val);",
+    "sink_lineno": 132,
+    "file": "lib/deep-extend"
+  },
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = deepExtend(src, val);",
+    "sink_lineno": 137,
+    "file": "lib/deep-extend"
+  }
+]

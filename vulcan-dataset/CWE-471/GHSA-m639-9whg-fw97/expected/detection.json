@@ -1,0 +1,20 @@
+[
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "a[key] = b[key];",
+    "sink_lineno": 42,
+    "file": "lib/extend.js"
+  },
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "a[key] = b[key];",
+    "sink_lineno": 37,
+    "file": "lib/extend.js"
+  },
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "a[key] = extend(a[key], b[key]);",
+    "sink_lineno": 39,
+    "file": "lib/extend.js"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "cp.exec('ps ' + args, function(err, stdout, stderr) {",
+    "sink_lineno": 8,
+    "file": "lib/index.js"
+  }
+]

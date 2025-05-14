@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "cp.exec('git remote add ' + name + ' ' + url, {cwd: cwd}, cb);",
+    "sink_lineno": 21,
+    "file": "index.js"
+  }
+]

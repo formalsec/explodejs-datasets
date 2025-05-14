@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "childProcess.exec(cmd, function(error, stdout, stderr) {",
+    "sink_lineno": 202,
+    "file": "index.js"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "var cp = require('child_process').spawn(phpBin, [phpFile])",
+    "sink_lineno": 22,
+    "file": "lib/mid-php.js"
+  }
+]

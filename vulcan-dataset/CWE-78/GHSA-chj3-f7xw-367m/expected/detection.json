@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return execFile(execBinary, execArguments, execOptions).then(",
+    "sink_lineno": 34,
+    "file": "index.js"
+  }
+]

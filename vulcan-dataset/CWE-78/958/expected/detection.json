@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "var child = exec(scripts_dir() + 'systemctl-unit.sh ' +service +  \" \" + env_file(current_user(req)));",
+    "sink_lineno": 67,
+    "file": "server/routes.js"
+  }
+]

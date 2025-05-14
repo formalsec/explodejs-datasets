@@ -1,0 +1,8 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "return fs.readFile(readmeFile, function (err, data) {",
+        "sink_lineno": 153,
+        "file": "index.js"
+    }
+]

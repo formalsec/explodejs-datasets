@@ -1,0 +1,26 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "cp.exec('whereis ' + name, function(error, stdout, stderr) {",
+    "sink_lineno": 8,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "cp.exec('which ' + name, function(error, stdout, stderr){",
+    "sink_lineno": 4,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "cp.exec('where ' + name, function (error, stdout, stderr) {",
+    "sink_lineno": 10,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "cp.exec('for %i in (' + name + '.exe) do @echo. %~$PATH:i', function (error, stdout, stderr) { //windows xp",
+    "sink_lineno": 12,
+    "file": "index.js"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "acc[keyBase][onwardKey.join(delimiter)] = baseObj[key];",
+    "sink_lineno": 193,
+    "file": "index.js"
+  }
+]

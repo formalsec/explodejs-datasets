@@ -1,0 +1,20 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "status.commitMessage = fs.readFileSync(path.join(repoPath, '.git', 'MERGE_MSG'), { encoding: 'utf8' })",
+        "sink_lineno": 142,
+        "file": "git.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(filePath, { encoding: 'utf8' }, function(err, text) {",
+        "sink_lineno": 217,
+        "file": "git.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(HEADFile, { encoding: 'utf8' }, function(err, text) {",
+        "sink_lineno": 407,
+        "file": "git.js"
+    }
+]

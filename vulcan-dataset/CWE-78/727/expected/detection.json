@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": " CWE-78",
+    "sink": "exec('open \"http://www.figlet.org/fontdb_example.cgi?font='+target.toLowerCase()+'.flf\"')",
+    "sink_lineno": 210,
+    "file": "bin/ascii-art"
+  }
+]

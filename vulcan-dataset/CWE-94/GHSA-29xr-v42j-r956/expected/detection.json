@@ -1,0 +1,14 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "return eval(createWrapper($$__fn__$$.name, options))",
+    "sink_lineno": 17,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "return eval(createWrapper($$__fn__$$.name, options))",
+    "sink_lineno": 33,
+    "file": "index.js"
+  }
+]

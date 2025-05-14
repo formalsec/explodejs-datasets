@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('df -k \"' + path + \"', function(err, stdout) {",
+    "sink_lineno": 11,
+    "file": "lib/posix.js"
+  }
+]

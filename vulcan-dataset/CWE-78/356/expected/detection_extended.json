@@ -1,0 +1,14 @@
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(p.join('/proc', ''+pid, 'stat'), 'utf8', function(err, infos) {",
+        "sink_lineno": 45,
+        "file": "stats.js"
+    },
+    {
+        "vuln_type": "CWE-78",
+        "sink": "var wmic = spawn('wmic', args.split(' '), {detached: true})",
+        "sink_lineno": 124,
+        "file": "stats.js"
+    }
+]

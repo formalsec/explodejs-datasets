@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return exec(cmd)",
+    "sink_lineno": 28,
+    "file": "lib/graph.js"
+  }
+]

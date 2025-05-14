@@ -1,0 +1,20 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = val;",
+    "sink_lineno": 44,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = assign(target[key] || {}, val);",
+    "sink_lineno": 46,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = val;",
+    "sink_lineno": 48,
+    "file": "index.js"
+  }
+]

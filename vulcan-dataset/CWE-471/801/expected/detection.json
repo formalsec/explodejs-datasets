@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-471",
+    "sink": "default: target[key] = sourceValue;",
+    "sink_lineno": 79,
+    "file": "/package/dist/smart-extend.js"
+  }
+]

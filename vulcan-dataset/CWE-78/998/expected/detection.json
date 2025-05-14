@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('codesign -d --entitlements :- ' + path, function(error, output){",
+    "sink_lineno": 7,
+    "file": "index.js"
+  }
+]

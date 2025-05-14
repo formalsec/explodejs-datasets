@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('taskkill /pid ' + pid + ' /T /F', callback);",
+    "sink_lineno": 20,
+    "file": "index.js"
+  }
+]

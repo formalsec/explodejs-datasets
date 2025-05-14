@@ -1,0 +1,8 @@
+[
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(req.routed.templateFullPath, function (err, str) {",
+    "sink_lineno": 215,
+    "file": "index.js"
+  }
+]

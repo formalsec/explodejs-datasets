@@ -1,0 +1,14 @@
+[
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "i[s] = prop_value;",
+    "sink_lineno": 1435,
+    "file": "jsgui-lang-essentials.js"
+  },
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "i[s] = prop_value;",
+    "sink_lineno": 1442,
+    "file": "jsgui-lang-essentials.js"
+  }
+]

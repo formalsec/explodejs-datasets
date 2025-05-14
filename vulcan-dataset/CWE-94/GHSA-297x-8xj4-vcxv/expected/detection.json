@@ -1,0 +1,20 @@
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "return new Function(c.varname, str);",
+    "sink_lineno": 133,
+    "file": "doT.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "new Function(\"def\", \"def['\"+code+\"']=\" + value)(def);",
+    "sink_lineno": 69,
+    "file": "doT.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "var v = new Function(\"def\", \"return \" + code)(def);",
+    "sink_lineno": 83,
+    "file": "doT.js"
+  }
+]
