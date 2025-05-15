@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-94",
-        "sink": "msg.result = eval( msg.data )",
-        "sink_lineno": 83,
-        "file": "server.js"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "msg.result = eval( msg.data )",
+    "sink_lineno": 83,
+    "file": "server.js"
+  }
 ]

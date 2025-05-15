@@ -1,20 +1,20 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(file, function fileReadCb(err, data) {",
-        "sink_lineno": 83,
-        "file": "inireadercore.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "data = fs.readFileSync(file);",
-        "sink_lineno": 91,
-        "file": "inireadercore.js"
-    },
-    {
-        "vuln_type": "CWE-471",
-        "sink": "out[key] = sourceObj[key];",
-        "sink_lineno": 133,
-        "file": "inireadercore.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(file, function fileReadCb(err, data) {",
+    "sink_lineno": 83,
+    "file": "inireadercore.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "data = fs.readFileSync(file);",
+    "sink_lineno": 91,
+    "file": "inireadercore.js"
+  },
+  {
+    "vuln_type": "CWE-471",
+    "sink": "out[key] = sourceObj[key];",
+    "sink_lineno": 133,
+    "file": "inireadercore.js"
+  }
 ]

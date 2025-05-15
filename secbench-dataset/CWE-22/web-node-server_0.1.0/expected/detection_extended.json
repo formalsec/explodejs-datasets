@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(host.frondend + host.baseTemp, function(err, file) {",
-        "sink_lineno": 41,
-        "file": "nodeserver.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(host.frondend + host.baseTemp, function(err, file) {",
+    "sink_lineno": 41,
+    "file": "nodeserver.js"
+  }
 ]

@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec('taskkill /F /IM ' + programname + '.exe /T');",
-        "sink_lineno": 9,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('taskkill /F /IM ' + programname + '.exe /T');",
+    "sink_lineno": 9,
+    "file": "index.js"
+  }
 ]

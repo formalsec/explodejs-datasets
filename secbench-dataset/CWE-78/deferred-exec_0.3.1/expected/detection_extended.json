@@ -1,14 +1,14 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "child_process.execFile( command, args, options, hollaback );",
-        "sink_lineno": 38,
-        "file": "deferred-exec.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "var cp = child_process.spawn( command, args, options );",
-        "sink_lineno": 46,
-        "file": "deferred-exec.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "child_process.execFile( command, args, options, hollaback );",
+    "sink_lineno": 38,
+    "file": "deferred-exec.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "var cp = child_process.spawn( command, args, options );",
+    "sink_lineno": 46,
+    "file": "deferred-exec.js"
+  }
 ]

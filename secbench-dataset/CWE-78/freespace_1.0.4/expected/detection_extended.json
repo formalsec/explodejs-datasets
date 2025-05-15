@@ -1,20 +1,20 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "cp.exec(`fsutil volume diskfree ${driveOrMount}:`, {}, cb);",
-        "sink_lineno": 49,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "output = cp.execSync(`fsutil volume diskfree ${driveOrMount}:`, {});",
-        "sink_lineno": 65,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "output = cp.execSync(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {});",
-        "sink_lineno": 67,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "cp.exec(`fsutil volume diskfree ${driveOrMount}:`, {}, cb);",
+    "sink_lineno": 49,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "output = cp.execSync(`fsutil volume diskfree ${driveOrMount}:`, {});",
+    "sink_lineno": 65,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "output = cp.execSync(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {});",
+    "sink_lineno": 67,
+    "file": "index.js"
+  }
 ]

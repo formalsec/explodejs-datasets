@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec(`taskkill /PID ${pid} /F`, (err, stdout, stderr) => {",
-        "sink_lineno": 63,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(`taskkill /PID ${pid} /F`, (err, stdout, stderr) => {",
+    "sink_lineno": 63,
+    "file": "index.js"
+  }
 ]

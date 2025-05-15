@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "cp.exec('kill ' + pid, function (err, stdout, stderr) {",
-        "sink_lineno": 29,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "cp.exec('kill ' + pid, function (err, stdout, stderr) {",
+    "sink_lineno": 29,
+    "file": "index.js"
+  }
 ]

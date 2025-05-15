@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "results.concat(await Promise.all(chunk.map(file => this.scan_stream(fs.createReadStream(file)))));",
-        "sink_lineno": 1587,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "results.concat(await Promise.all(chunk.map(file => this.scan_stream(fs.createReadStream(file)))));",
+    "sink_lineno": 1587,
+    "file": "index.js"
+  }
 ]

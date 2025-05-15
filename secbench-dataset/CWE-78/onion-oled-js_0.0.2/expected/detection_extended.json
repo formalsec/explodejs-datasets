@@ -1,26 +1,26 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "return exec(oledExecutable + ' power ' + mode);",
-        "sink_lineno": 34,
-        "file": "oled-exp.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "return exec(oledExecutable + ' cursor ' + row + ',' + col);",
-        "sink_lineno": 60,
-        "file": "oled-exp.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "return exec(oledExecutable + ' invert ' + mode);",
-        "sink_lineno": 69,
-        "file": "oled-exp.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "return exec(oledExecutable + cursor + ' write \"' + string + '\"');",
-        "sink_lineno": 82,
-        "file": "oled-exp.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return exec(oledExecutable + ' power ' + mode);",
+    "sink_lineno": 34,
+    "file": "oled-exp.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return exec(oledExecutable + ' cursor ' + row + ',' + col);",
+    "sink_lineno": 60,
+    "file": "oled-exp.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return exec(oledExecutable + ' invert ' + mode);",
+    "sink_lineno": 69,
+    "file": "oled-exp.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return exec(oledExecutable + cursor + ' write \"' + string + '\"');",
+    "sink_lineno": 82,
+    "file": "oled-exp.js"
+  }
 ]

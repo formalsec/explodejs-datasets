@@ -1,14 +1,14 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "this.read(fs.readFileSync(sourceFile, typeof encoding === 'string' && encoding || this._encoding));",
-        "sink_lineno": 75,
-        "file": "properties-reader.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.writeFile(destFile, content, (err) => {",
-        "sink_lineno": 341,
-        "file": "properties-reader.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "this.read(fs.readFileSync(sourceFile, typeof encoding === 'string' && encoding || this._encoding));",
+    "sink_lineno": 75,
+    "file": "properties-reader.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFile(destFile, content, (err) => {",
+    "sink_lineno": 341,
+    "file": "properties-reader.js"
+  }
 ]

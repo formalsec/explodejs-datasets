@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec(`kill ${processId}`)",
-        "sink_lineno": 14,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(`kill ${processId}`)",
+    "sink_lineno": 14,
+    "file": "index.js"
+  }
 ]

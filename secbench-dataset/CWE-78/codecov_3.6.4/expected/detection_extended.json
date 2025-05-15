@@ -1,20 +1,20 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "var loadedYamlFile = jsYaml.safeLoad(fs.readFileSync(query.yaml, 'utf8'))",
-        "sink_lineno": 306,
-        "file": "codecov.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFileSync(file, 'utf8').toString() +",
-        "sink_lineno": 468,
-        "file": "codecov.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "_files = execSync('find ' + root + ' ' + patterns + more_patterns)",
-        "sink_lineno": 480,
-        "file": "codecov.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "var loadedYamlFile = jsYaml.safeLoad(fs.readFileSync(query.yaml, 'utf8'))",
+    "sink_lineno": 306,
+    "file": "codecov.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFileSync(file, 'utf8').toString() +",
+    "sink_lineno": 468,
+    "file": "codecov.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "_files = execSync('find ' + root + ' ' + patterns + more_patterns)",
+    "sink_lineno": 480,
+    "file": "codecov.js"
+  }
 ]

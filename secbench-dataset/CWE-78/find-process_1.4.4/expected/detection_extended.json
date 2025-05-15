@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "return cp.spawn(cmd, args, options)",
-        "sink_lineno": 28,
-        "file": "utils.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return cp.spawn(cmd, args, options)",
+    "sink_lineno": 28,
+    "file": "utils.js"
+  }
 ]

@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "var readStream = fs.createReadStream(filePath);",
-        "sink_lineno": 62,
-        "file": "simple-mock-server.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "var readStream = fs.createReadStream(filePath);",
+    "sink_lineno": 62,
+    "file": "simple-mock-server.js"
+  }
 ]

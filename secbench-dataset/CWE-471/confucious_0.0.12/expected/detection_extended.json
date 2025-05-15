@@ -1,14 +1,14 @@
 [
-    {
-        "vuln_type": "CWE-471",
-        "sink": "hash[lastSubKey] = extend(true, {}, value);",
-        "sink_lineno": 45,
-        "file": "confucious.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "this.push(JSON.parse(fs.readFileSync(filePath, 'utf8')));",
-        "sink_lineno": 160,
-        "file": "confucious.js"
-    }
+  {
+    "vuln_type": "CWE-471",
+    "sink": "hash[lastSubKey] = extend(true, {}, value);",
+    "sink_lineno": 45,
+    "file": "confucious.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "this.push(JSON.parse(fs.readFileSync(filePath, 'utf8')));",
+    "sink_lineno": 160,
+    "file": "confucious.js"
+  }
 ]

@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "return this._tmpl = fs.readFileSync(templatePath).toString();",
-        "sink_lineno": 50,
-        "file": "server.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "return this._tmpl = fs.readFileSync(templatePath).toString();",
+    "sink_lineno": 50,
+    "file": "server.js"
+  }
 ]

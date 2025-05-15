@@ -1,14 +1,14 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "return exec(cmd).then((result) => {",
-        "sink_lineno": 56,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "return exec(cmd).then((result) => {",
-        "sink_lineno": 444,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return exec(cmd).then((result) => {",
+    "sink_lineno": 56,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "return exec(cmd).then((result) => {",
+    "sink_lineno": 444,
+    "file": "index.js"
+  }
 ]

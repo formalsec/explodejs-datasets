@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-94",
-        "sink": "return eval('(' + string + ')');",
-        "sink_lineno": 1175,
-        "file": "mootools-core-1.5.2-server.js"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "return eval('(' + string + ')');",
+    "sink_lineno": 1175,
+    "file": "mootools-core-1.5.2-server.js"
+  }
 ]

@@ -1,14 +1,14 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '));",
-        "sink_lineno": 28,
-        "file": "pdfinfo.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
-        "sink_lineno": 72,
-        "file": "pdfinfo.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '));",
+    "sink_lineno": 28,
+    "file": "pdfinfo.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
+    "sink_lineno": 72,
+    "file": "pdfinfo.js"
+  }
 ]

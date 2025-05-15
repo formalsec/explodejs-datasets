@@ -1,32 +1,32 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec('git commit ' + options + ' -m \\\"' + message + '\\\"', function(err){",
-        "sink_lineno": 27,
-        "file": "git.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec('git checkout -- ' + file, function(err){",
-        "sink_lineno": 126,
-        "file": "git.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec('git checkout ' + branch, function(err, result){",
-        "sink_lineno": 223,
-        "file": "git.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec('git checkout -b ' + newBranchName, function(err){",
-        "sink_lineno": 236,
-        "file": "git.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec(\"git branch -d \" + branch, function(err){",
-        "sink_lineno": 249,
-        "file": "git.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('git commit ' + options + ' -m \\\"' + message + '\\\"', function(err){",
+    "sink_lineno": 27,
+    "file": "git.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('git checkout -- ' + file, function(err){",
+    "sink_lineno": 126,
+    "file": "git.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('git checkout ' + branch, function(err, result){",
+    "sink_lineno": 223,
+    "file": "git.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('git checkout -b ' + newBranchName, function(err){",
+    "sink_lineno": 236,
+    "file": "git.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(\"git branch -d \" + branch, function(err){",
+    "sink_lineno": 249,
+    "file": "git.js"
+  }
 ]

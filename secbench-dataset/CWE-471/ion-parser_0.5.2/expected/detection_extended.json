@@ -1,14 +1,14 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(file, (err, data) => {",
-        "sink_lineno": 750,
-        "file": "parser.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "return parse(fs.readFileSync(file))",
-        "sink_lineno": 762,
-        "file": "parser.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(file, (err, data) => {",
+    "sink_lineno": 750,
+    "file": "parser.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "return parse(fs.readFileSync(file))",
+    "sink_lineno": 762,
+    "file": "parser.js"
+  }
 ]

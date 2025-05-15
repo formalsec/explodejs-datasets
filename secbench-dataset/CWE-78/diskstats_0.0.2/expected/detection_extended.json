@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "this.child_process.exec('df -i ' + this._ensureAbsPath(path), (err, stdout) => {",
-        "sink_lineno": 56,
-        "file": "stat.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "this.child_process.exec('df -i ' + this._ensureAbsPath(path), (err, stdout) => {",
+    "sink_lineno": 56,
+    "file": "stat.js"
+  }
 ]

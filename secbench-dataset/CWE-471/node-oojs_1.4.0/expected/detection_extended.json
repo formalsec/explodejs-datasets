@@ -1,20 +1,20 @@
 [
-    {
-        "vuln_type": "CWE-94",
-        "sink": "classObj[key] = require(this.getClassPath(classFullName));",
-        "sink_lineno": 110,
-        "file": "oojs.js"
-    },
-    {
-        "vuln_type": "CWE-94",
-        "sink": "result = require(classPath);",
-        "sink_lineno": 194,
-        "file": "oojs.js"
-    },
-    {
-        "vuln_type": "CWE-94",
-        "sink": "require(this.getClassPath(name));",
-        "sink_lineno": 213,
-        "file": "oojs.js"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "classObj[key] = require(this.getClassPath(classFullName));",
+    "sink_lineno": 110,
+    "file": "oojs.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "result = require(classPath);",
+    "sink_lineno": 194,
+    "file": "oojs.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "require(this.getClassPath(name));",
+    "sink_lineno": 213,
+    "file": "oojs.js"
+  }
 ]

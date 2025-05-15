@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "var src = fs.readFileSync(srcFile, 'utf8');",
-        "sink_lineno": 250,
-        "file": "modulify.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "var src = fs.readFileSync(srcFile, 'utf8');",
+    "sink_lineno": 250,
+    "file": "modulify.js"
+  }
 ]

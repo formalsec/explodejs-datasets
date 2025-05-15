@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-94",
-        "sink": "eval('theme = {' + i + ':['+ v +']}');",
-        "sink_lineno": 32,
-        "file": "log.js"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "eval('theme = {' + i + ':['+ v +']}');",
+    "sink_lineno": 32,
+    "file": "log.js"
+  }
 ]

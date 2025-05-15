@@ -1,14 +1,14 @@
 [
-    {
-        "vuln_type": "CWE-78",
-        "sink": "var childProcess = cp.execFile(file, args, options, function (err, stdout, stderr) {",
-        "sink_lineno": 64,
-        "file": "process-promises.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "var childProcess = cp.spawn(command, args, options);",
-        "sink_lineno": 83,
-        "file": "process-promises.js"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "var childProcess = cp.execFile(file, args, options, function (err, stdout, stderr) {",
+    "sink_lineno": 64,
+    "file": "process-promises.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "var childProcess = cp.spawn(command, args, options);",
+    "sink_lineno": 83,
+    "file": "process-promises.js"
+  }
 ]
