@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "const stream = fs.createReadStream(filePath);",
     "sink_lineno": 121,
     "file": "basic-static.js"
   }

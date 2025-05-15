@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "var stream = fs.createReadStream(filePath, {flags: 'r', encoding: null});",
     "sink_lineno": 33,
     "file": "index.js"
   }

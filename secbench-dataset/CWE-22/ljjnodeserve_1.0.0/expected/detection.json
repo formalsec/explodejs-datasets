@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.readFile(path,function (error,file) {          /*查找文件*/",
     "sink_lineno": 23,
     "file": "index.js"
   }

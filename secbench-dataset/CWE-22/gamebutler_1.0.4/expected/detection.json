@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "var fileStream = _fs2.default.createReadStream(filename);",
     "sink_lineno": 69,
     "file": "gamebutler.js"
   }

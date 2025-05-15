@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.readFile(nowTemp, function(err, file) {",
     "sink_lineno": 85,
     "file": "nodeserver.js"
   }

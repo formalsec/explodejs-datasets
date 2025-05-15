@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "var resourceFile = fs.readFileSync(top.rootFolder + resource);",
     "sink_lineno": 191,
     "file": "proxey.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fileBuffer = fs.readFileSync(possibleFilename);",
     "sink_lineno": 16,
     "file": "angular-http-server.js"
   }

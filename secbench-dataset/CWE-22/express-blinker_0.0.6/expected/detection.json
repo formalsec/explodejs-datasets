@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.createReadStream(result.file).pipe(res);",
     "sink_lineno": 181,
     "file": "index.js"
   }

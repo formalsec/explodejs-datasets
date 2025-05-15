@@ -1,3 +1,8 @@
 [
-  { "vuln_type": "CWE-22", "sink": "", "sink_lineno": 38, "file": "res.js" }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "var readstream = fs.createReadStream(filepath, { encoding: 'binary' });",
+    "sink_lineno": 38,
+    "file": "res.js"
+  }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.readFile(file, function(err, data) {",
     "sink_lineno": 31,
     "file": "asset-cache.js"
   }

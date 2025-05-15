@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "return fs.createReadStream(filePath).on('open', function() {",
     "sink_lineno": 185,
     "file": "server.js"
   }

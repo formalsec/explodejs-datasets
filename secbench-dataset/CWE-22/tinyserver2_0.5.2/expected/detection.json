@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.readFile(path.join(process.cwd(),myurl.pathname),function(err,data)",
     "sink_lineno": 27,
     "file": "tinyserver.js"
   }

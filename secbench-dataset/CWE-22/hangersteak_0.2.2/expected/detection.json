@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "const stream = fs.createReadStream(filePath, { start, end })",
     "sink_lineno": 61,
     "file": "hangersteak.js"
   }

@@ -1,1 +1,8 @@
-[ { "vuln_type": "CWE-22", "sink": "", "sink_lineno": 8, "file": "xbh.js" } ]
+[
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(path,function (error,data) {",
+    "sink_lineno": 8,
+    "file": "xbh.js"
+  }
+]

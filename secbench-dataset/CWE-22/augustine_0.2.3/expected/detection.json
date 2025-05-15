@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "res.write(fs.readFileSync(path, { flag: 'rs+' }));",
     "sink_lineno": 88,
     "file": "index.js"
   }

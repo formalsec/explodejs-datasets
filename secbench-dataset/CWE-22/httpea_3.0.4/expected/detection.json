@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "const file = fs.readFileSync(filePath);",
     "sink_lineno": 48,
     "file": "index.js"
   }

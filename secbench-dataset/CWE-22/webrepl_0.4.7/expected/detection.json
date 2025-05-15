@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.readFile(file, \"binary\", function (err, data) {",
     "sink_lineno": 177,
     "file": "webrepl.js"
   }

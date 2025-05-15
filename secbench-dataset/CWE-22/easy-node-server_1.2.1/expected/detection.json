@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.readFile(realPath, 'binary', function(err, file) {",
     "sink_lineno": 49,
     "file": "index.js"
   }

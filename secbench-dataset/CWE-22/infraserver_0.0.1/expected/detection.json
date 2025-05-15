@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
-    "sink_lineno": 137,
+    "sink": "fs.readFile(realPath,options, function(err, file){",
+    "sink_lineno": 136,
     "file": "Infra.data.js"
   }
 ]

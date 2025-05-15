@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
-    "sink_lineno": 111,
+    "sink": "fs.readFile(filePath, function (error, content) {",
+    "sink_lineno": 130,
     "file": "index.cjs.js"
   }
 ]

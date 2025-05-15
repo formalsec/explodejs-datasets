@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "return filed(request.fullPath).pipe(res)",
     "sink_lineno": 81,
     "file": "index.js"
   }

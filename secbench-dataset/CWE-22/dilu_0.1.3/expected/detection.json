@@ -1,3 +1,8 @@
 [
-  { "vuln_type": "CWE-22", "sink": "", "sink_lineno": 57, "file": "get.js" }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "var stream = fs.createReadStream(fpath.absolute);",
+    "sink_lineno": 57,
+    "file": "get.js"
+  }
 ]

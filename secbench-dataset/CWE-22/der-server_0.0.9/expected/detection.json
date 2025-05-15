@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.readFile(pn, encode, function(err, data) {",
     "sink_lineno": 52,
     "file": "der-server.js"
   }

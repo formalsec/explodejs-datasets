@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.readFile(directory + urlObj.pathname, function (err,data) {",
     "sink_lineno": 32,
     "file": "server.js"
   }

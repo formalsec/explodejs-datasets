@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "",
+    "sink": "fs.readFile(parent_path + path, callback);",
     "sink_lineno": 21,
     "file": "static.js"
   }

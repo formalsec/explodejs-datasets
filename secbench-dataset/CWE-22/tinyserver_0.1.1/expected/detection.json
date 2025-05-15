@@ -1,3 +1,8 @@
 [
-  { "vuln_type": "CWE-22", "sink": "", "sink_lineno": 52, "file": "main.js" }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.createReadStream(filename, {",
+    "sink_lineno": 52,
+    "file": "main.js"
+  }
 ]
