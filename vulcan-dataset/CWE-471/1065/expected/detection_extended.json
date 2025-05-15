@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-94",
-        "sink": "return Function(importsKeys, sourceURL + 'return ' + source)",
-        "sink_lineno": 14866,
-        "file": "lodash.js"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "return Function(importsKeys, sourceURL + 'return ' + source)",
+    "sink_lineno": 14866,
+    "file": "lodash.js"
+  }
 ]

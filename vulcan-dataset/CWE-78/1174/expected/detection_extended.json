@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "var data = Fs.readFileSync(fname, 'utf-8');",
-        "sink_lineno": 86,
-        "file": "gitlabhook.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "var data = Fs.readFileSync(fname, 'utf-8');",
+    "sink_lineno": 86,
+    "file": "gitlabhook.js"
+  }
 ]

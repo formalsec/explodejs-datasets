@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-471",
-        "sink": "target[key] = value;",
-        "sink_lineno": 200,
-        "file": "memory.js"
-    }
+  {
+    "vuln_type": "CWE-471",
+    "sink": "target[key] = value;",
+    "sink_lineno": 200,
+    "file": "memory.js"
+  }
 ]

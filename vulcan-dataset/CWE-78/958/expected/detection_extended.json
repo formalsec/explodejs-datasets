@@ -1,14 +1,14 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "res.send(fs.readFileSync(req.query.resource, 'UTF-8'));",
-        "sink_lineno": 57,
-        "file": "routes.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "child = exec(\"sh \" + script);",
-        "sink_lineno": 226,
-        "file": "routes.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "res.send(fs.readFileSync(req.query.resource, 'UTF-8'));",
+    "sink_lineno": 57,
+    "file": "routes.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "child = exec(\"sh \" + script);",
+    "sink_lineno": 226,
+    "file": "routes.js"
+  }
 ]

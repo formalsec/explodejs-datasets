@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-94",
-        "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
-        "sink_lineno": 350,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "require(req.routed.controllerFullPath)(req, res, cb);",
+    "sink_lineno": 350,
+    "file": "index.js"
+  }
 ]

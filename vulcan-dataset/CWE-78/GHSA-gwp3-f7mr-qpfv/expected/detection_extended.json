@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "Body: fs.createReadStream(version.path),",
-        "sink_lineno": 95,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "Body: fs.createReadStream(version.path),",
+    "sink_lineno": 95,
+    "file": "index.js"
+  }
 ]

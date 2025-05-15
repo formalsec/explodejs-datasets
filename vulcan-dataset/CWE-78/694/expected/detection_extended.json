@@ -1,26 +1,26 @@
 [
-    {
-        "vuln_type": "CWE-94",
-        "sink": "const pkgInfo = require(path.join(baseDir, 'package.json'));",
-        "sink_lineno": 97,
-        "file": "start.js"
-    },
-    {
-        "vuln_type": "CWE-94",
-        "sink": "const pkg = require(pkgPath);",
-        "sink_lineno": 198,
-        "file": "start.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": " const child = this.child = spawn('node', eggArgs, options);",
-        "sink_lineno": 150,
-        "file": "start.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "const child = this.child = spawn('node', eggArgs, options);",
-        "sink_lineno": 168,
-        "file": "start.js"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "const pkgInfo = require(path.join(baseDir, 'package.json'));",
+    "sink_lineno": 97,
+    "file": "start.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "const pkg = require(pkgPath);",
+    "sink_lineno": 198,
+    "file": "start.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": " const child = this.child = spawn('node', eggArgs, options);",
+    "sink_lineno": 150,
+    "file": "start.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "const child = this.child = spawn('node', eggArgs, options);",
+    "sink_lineno": 168,
+    "file": "start.js"
+  }
 ]

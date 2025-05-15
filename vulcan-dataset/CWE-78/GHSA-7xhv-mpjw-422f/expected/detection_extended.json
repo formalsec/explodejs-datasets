@@ -1,8 +1,8 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(filePath, function (err, data) {",
-        "sink_lineno": 195,
-        "file": "lib_googleIt.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(filePath, function (err, data) {",
+    "sink_lineno": 195,
+    "file": "lib_googleIt.js"
+  }
 ]

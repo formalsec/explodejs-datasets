@@ -1,62 +1,62 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(packagejson, function (err, data) {",
-        "sink_lineno": 151,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.writeFileSync(file, new Buffer(pkgData._attachments[fileName].data, 'base64'));",
-        "sink_lineno": 144,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.writeFileSync(packagejson, JSON.stringify(pkgData, null, 4));",
-        "sink_lineno": 154,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(packagejson, function (err, data) {",
-        "sink_lineno": 157,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.writeFileSync(packagejson, JSON.stringify(newObj, null, 4));",
-        "sink_lineno": 161,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile('cache/' + req.query.sha, function (err, data) {",
-        "sink_lineno": 284,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.writeFileSync('cache/' + req.query.sha, b);",
-        "sink_lineno": 294,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(settings.storageDir + 'published' + req.url + '.json', function (err, data) {",
-        "sink_lineno": 314,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.writeFileSync(settings.storageDir + 'cache' + req.url + '.json', JSON.stringify(b, null, 4));",
-        "sink_lineno": 325,
-        "file": "index.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(settings.storageDir + 'cache' + req.url + '.json', function(err, data) {",
-        "sink_lineno": 329,
-        "file": "index.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(packagejson, function (err, data) {",
+    "sink_lineno": 151,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFileSync(file, new Buffer(pkgData._attachments[fileName].data, 'base64'));",
+    "sink_lineno": 144,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFileSync(packagejson, JSON.stringify(pkgData, null, 4));",
+    "sink_lineno": 154,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(packagejson, function (err, data) {",
+    "sink_lineno": 157,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFileSync(packagejson, JSON.stringify(newObj, null, 4));",
+    "sink_lineno": 161,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile('cache/' + req.query.sha, function (err, data) {",
+    "sink_lineno": 284,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFileSync('cache/' + req.query.sha, b);",
+    "sink_lineno": 294,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(settings.storageDir + 'published' + req.url + '.json', function (err, data) {",
+    "sink_lineno": 314,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFileSync(settings.storageDir + 'cache' + req.url + '.json', JSON.stringify(b, null, 4));",
+    "sink_lineno": 325,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(settings.storageDir + 'cache' + req.url + '.json', function(err, data) {",
+    "sink_lineno": 329,
+    "file": "index.js"
+  }
 ]

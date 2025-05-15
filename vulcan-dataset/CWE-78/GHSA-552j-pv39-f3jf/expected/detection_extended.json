@@ -1,38 +1,38 @@
 [
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
-        "sink_lineno": 67,
-        "file": "generate.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
-        "sink_lineno": 26,
-        "file": "generate.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec(cmd, function execCb (err) {",
-        "sink_lineno": 140,
-        "file": "generate.js"
-    },
-    {
-        "vuln_type": "CWE-78",
-        "sink": "exec(cmd, function execCb (err) {",
-        "sink_lineno": 86,
-        "file": "generate.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(keyPath,",
-        "sink_lineno": 219,
-        "file": "generate.js"
-    },
-    {
-        "vuln_type": "CWE-22",
-        "sink": "fs.readFile(certPath, function readCertCb (err, certBuf) {",
-        "sink_lineno": 217,
-        "file": "generate.js"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
+    "sink_lineno": 67,
+    "file": "generate.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFile(path, s, function writeFileCb (err) {",
+    "sink_lineno": 26,
+    "file": "generate.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(cmd, function execCb (err) {",
+    "sink_lineno": 140,
+    "file": "generate.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(cmd, function execCb (err) {",
+    "sink_lineno": 86,
+    "file": "generate.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(keyPath,",
+    "sink_lineno": 219,
+    "file": "generate.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFile(certPath, function readCertCb (err, certBuf) {",
+    "sink_lineno": 217,
+    "file": "generate.js"
+  }
 ]
