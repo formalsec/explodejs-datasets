@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
-    "sink_lineno": 6406,
+    "sink": "lastObj[key] = value;",
+    "sink_lineno": 6421,
     "file": "npm.js"
   }
 ]

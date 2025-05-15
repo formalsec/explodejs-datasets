@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
-    "sink_lineno": 19,
+    "sink": "target[key] = recursiveMerge(target[key], source[key]);",
+    "sink_lineno": 12,
     "file": "reduce_object.js"
   }
 ]

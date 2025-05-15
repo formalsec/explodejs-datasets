@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "original[name] = patch[name];",
     "sink_lineno": 93,
     "file": "index.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "this._gspo[i.g][i.s][i.p] = this._gspo[i.g][i.s][i.p] || {}",
     "sink_lineno": 208,
     "file": "index.js"
   }

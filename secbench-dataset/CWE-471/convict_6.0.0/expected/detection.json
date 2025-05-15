@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "parent[childKey] = v",
     "sink_lineno": 565,
     "file": "main.js"
   }

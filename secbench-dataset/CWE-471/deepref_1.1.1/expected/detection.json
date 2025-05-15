@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "this.pointer[this.field] = value;",
     "sink_lineno": 29,
     "file": "index.js"
   }

@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
-    "sink_lineno": 37,
+    "sink": "currentObject[property] = value",
+    "sink_lineno": 35,
     "file": "index.js"
   }
 ]

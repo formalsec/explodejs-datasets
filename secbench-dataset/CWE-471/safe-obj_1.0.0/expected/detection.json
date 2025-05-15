@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
-    "sink_lineno": 122,
+    "sink": "_safe.expand(obj[prop], props.join('.'), thing);",
+    "sink_lineno": 126,
     "file": "index.js"
   }
 ]

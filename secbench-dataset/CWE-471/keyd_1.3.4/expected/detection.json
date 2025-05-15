@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "if (keyPath.length > 0) ret[keyPath[keyPath.length - 1]] = value;",
     "sink_lineno": 76,
     "file": "index.js"
   }

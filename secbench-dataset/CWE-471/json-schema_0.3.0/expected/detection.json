@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "value = instance[i] = propDef[\"default\"];",
     "sink_lineno": 217,
     "file": "validate.js"
   }

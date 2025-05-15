@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "default: source[key] = current;",
     "sink_lineno": 355,
     "file": "mootools-core-1.5.2-server.js"
   }

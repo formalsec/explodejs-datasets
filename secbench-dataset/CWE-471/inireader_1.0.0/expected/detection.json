@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "output[currentSection][keyVal.key] = fixQuoted(keyVal.value);",
     "sink_lineno": 310,
     "file": "inireadercore.js"
   }

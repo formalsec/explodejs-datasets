@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "target[key] = opts.transform ? opts.transform(result, targetValue, key) : result;",
     "sink_lineno": 86,
     "file": "mixer.js"
   }

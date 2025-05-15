@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
-    "sink_lineno": 203,
+    "sink": "output[key] = value;",
+    "sink_lineno": 201,
     "file": "vega-util.js"
   }
 ]

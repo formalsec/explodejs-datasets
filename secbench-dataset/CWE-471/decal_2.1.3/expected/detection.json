@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "let copy = opts[name]",
     "sink_lineno": 50,
     "file": "extend.js"
   }

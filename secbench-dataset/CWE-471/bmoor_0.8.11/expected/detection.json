@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "curSpace[ val ] = value;",
     "sink_lineno": 194,
     "file": "core.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "tmp[keys[last]] = val;",
     "sink_lineno": 43,
     "file": "create.js"
   }

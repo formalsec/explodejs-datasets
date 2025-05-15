@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "curr[prop] = obj[p];",
     "sink_lineno": 17,
     "file": "unflatten.js"
   }

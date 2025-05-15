@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "document[keyPath] = value;",
     "sink_lineno": 54,
     "file": "path.js"
   }

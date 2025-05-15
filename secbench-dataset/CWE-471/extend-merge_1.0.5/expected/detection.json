@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "target[key] = Array.isArray(src) ? src.slice() : src;",
     "sink_lineno": 41,
     "file": "base-extend.js"
   }

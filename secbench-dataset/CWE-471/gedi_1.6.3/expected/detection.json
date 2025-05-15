@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "reference[key] = {};",
     "sink_lineno": 393,
     "file": "gedi.js"
   }

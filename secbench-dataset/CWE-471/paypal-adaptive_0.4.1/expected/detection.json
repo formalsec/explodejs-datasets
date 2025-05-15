@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "a[p] = b[p];",
     "sink_lineno": 31,
     "file": "paypal-adaptive.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "obj[field] = value",
     "sink_lineno": 50,
     "file": "field.js"
   }

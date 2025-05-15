@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "if (isObject(object) || (Array.isArray(object) && !Number.isNaN(keys[i]))) object[keys[i]] = value;",
     "sink_lineno": 226,
     "file": "index.js"
   }

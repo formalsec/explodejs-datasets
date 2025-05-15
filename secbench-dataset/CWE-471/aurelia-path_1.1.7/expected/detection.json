@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "currentParams = currentParams[key] = value;",
     "sink_lineno": 163,
     "file": "aurelia-path.js"
   }

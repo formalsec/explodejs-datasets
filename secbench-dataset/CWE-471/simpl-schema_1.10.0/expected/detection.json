@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "destination[prop] = source[prop];",
     "sink_lineno": 31,
     "file": "merge.js"
   }

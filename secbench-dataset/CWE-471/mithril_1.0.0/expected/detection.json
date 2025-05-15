@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "cursor[level] = isValue ? value : isNumber ? [] : {}",
     "sink_lineno": 982,
     "file": "mithril.js"
   }

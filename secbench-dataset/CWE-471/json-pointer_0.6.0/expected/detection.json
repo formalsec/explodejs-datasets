@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "obj[nextTok] = value;",
     "sink_lineno": 91,
     "file": "index.js"
   }

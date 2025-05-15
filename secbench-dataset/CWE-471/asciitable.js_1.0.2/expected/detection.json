@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
-    "sink_lineno": 50,
+    "sink": "b.hasOwnProperty(a) && (c[a] && typeof b[a] === \"object\" ? defaults(c[a], b[a]) : c[a] = b[a]);",
+    "sink_lineno": 44,
     "file": "asciitable.umd.js"
   }
 ]

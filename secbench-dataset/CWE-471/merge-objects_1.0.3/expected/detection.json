@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "object1[key] = object2[key];",
     "sink_lineno": 20,
     "file": "merge-objects.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": ".reduce(function (obj, p) {",
     "sink_lineno": 10,
     "file": "index.js"
   }

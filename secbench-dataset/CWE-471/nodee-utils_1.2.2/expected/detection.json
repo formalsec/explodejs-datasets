@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "else current[parts[i]] = value;",
     "sink_lineno": 210,
     "file": "object.js"
   }

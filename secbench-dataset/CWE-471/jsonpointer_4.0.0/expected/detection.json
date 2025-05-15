@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "else obj[part] = value",
     "sink_lineno": 43,
     "file": "jsonpointer.js"
   }

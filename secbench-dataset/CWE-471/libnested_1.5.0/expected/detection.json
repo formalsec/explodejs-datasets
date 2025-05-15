@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "obj[path[i]] = value",
     "sink_lineno": 27,
     "file": "index.js"
   }

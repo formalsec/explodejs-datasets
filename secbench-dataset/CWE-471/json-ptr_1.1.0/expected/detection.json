@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "it[step] = val;",
     "sink_lineno": 277,
     "file": "index.js"
   }

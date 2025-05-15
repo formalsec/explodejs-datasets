@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "defineProperty(target, options.name, {",
     "sink_lineno": 44,
     "file": "objnest.js"
   }

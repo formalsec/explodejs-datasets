@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
-    "sink_lineno": 17,
+    "sink": "obj[prop] = source[prop];",
+    "sink_lineno": 15,
     "file": "extend.js"
   }
 ]

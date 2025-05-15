@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
-    "sink_lineno": 6,
+    "sink": "t[keys[i]] = val;",
+    "sink_lineno": 7,
     "file": "dset.js"
   }
 ]

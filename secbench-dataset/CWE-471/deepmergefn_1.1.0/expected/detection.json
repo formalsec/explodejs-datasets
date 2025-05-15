@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "target[prop] = source[prop];",
     "sink_lineno": 12,
     "file": "index.js"
   }

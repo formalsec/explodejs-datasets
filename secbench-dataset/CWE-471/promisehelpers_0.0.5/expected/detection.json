@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
-    "sink_lineno": 20,
+    "sink": "nestedObject[key] = value;",
+    "sink_lineno": 19,
     "file": "index.js"
   }
 ]

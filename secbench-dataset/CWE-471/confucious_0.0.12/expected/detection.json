@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "hash[lastSubKey] = value;",
     "sink_lineno": 48,
     "file": "confucious.js"
   }

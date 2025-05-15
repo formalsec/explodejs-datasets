@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "node[currentName] = node[currentName] || {",
     "sink_lineno": 65,
     "file": "oojs.js"
   }

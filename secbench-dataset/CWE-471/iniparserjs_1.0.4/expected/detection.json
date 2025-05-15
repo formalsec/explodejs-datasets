@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "this.configs[curSection][curKey] = curValue",
     "sink_lineno": 63,
     "file": "ini_parser.js"
   }

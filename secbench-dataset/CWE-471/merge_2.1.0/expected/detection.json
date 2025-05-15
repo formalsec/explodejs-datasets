@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "base[key] = (isPlainObject(base[key]) && isPlainObject(extend[key])) ?",
     "sink_lineno": 59,
     "file": "index.js"
   }

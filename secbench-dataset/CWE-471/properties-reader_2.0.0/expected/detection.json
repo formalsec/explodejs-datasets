@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-1321",
-    "sink": "",
+    "sink": "source[expanded[0]] = parsedValue;",
     "sink_lineno": 200,
     "file": "properties-reader.js"
   }
