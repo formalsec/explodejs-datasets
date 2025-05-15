@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "exec( `npm install --package-lock --package-lock-only${date ? ` --before=${date}` : ''}${only ? ` --only=${only}` : ''}`,",
+    "sink": "exec(",
     "sink_lineno": 42,
     "file": "getLockfile.js"
   }

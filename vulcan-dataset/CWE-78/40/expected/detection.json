@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "var process = child_process.exec(task.command,",
+    "sink": "var process = child_process.exec(",
     "sink_lineno": 57,
     "file": "git.js"
   }

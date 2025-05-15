@@ -2,13 +2,13 @@
   {
     "vuln_type": "CWE-78",
     "sink": "exec(getInfoCommand, function (err, stdout, stderr) {",
-    "sink_lineno": 43,
+    "sink_lineno": 44,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "exec(convertCommand, function (err, stdout, stderr) {",
-    "sink_lineno": 104,
+    "sink_lineno": 105,
     "file": "index.js"
   }
 ]

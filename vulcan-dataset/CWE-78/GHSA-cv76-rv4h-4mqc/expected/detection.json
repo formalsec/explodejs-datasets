@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "let lines = execSync(`pgrep -lfP ${processObj.pid}`).toString().split('\n').filter(e => e);",
+    "sink": "let lines = execSync(`pgrep -lfP ${processObj.pid}`).toString().split('\\n').filter(e => e);",
     "sink_lineno": 17,
     "file": "index.js"
   },

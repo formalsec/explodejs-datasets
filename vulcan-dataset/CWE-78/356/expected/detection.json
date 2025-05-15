@@ -2,7 +2,7 @@
   {
     "vuln_type": "CWE-78",
     "sink": "exec(cmd + pid, function(err, stdout, stderr) {",
-    "sink_lineno": 103,
+    "sink_lineno": 170,
     "file": "stats.js"
   }
 ]

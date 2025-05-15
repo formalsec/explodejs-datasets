@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "return exec(params.join(' '), { encoding, cwd: path }).toString(encoding)",
     "sink_lineno": 8,
-    "file": "index.js"
+    "file": "run_index.js"
   }
 ]

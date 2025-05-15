@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "exec(\"networksetup -getmacaddress \" + iface, function (err, out)",
+    "sink": "exec(\"networksetup -getmacaddress \" + iface, function (err, out) {",
     "sink_lineno": 4,
     "file": "macosx.js"
   },

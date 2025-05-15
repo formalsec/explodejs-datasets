@@ -2,13 +2,13 @@
   {
     "vuln_type": "CWE-78",
     "sink": "exec(cmd, function execCb (err) {",
-    "sink_lineno": 110,
+    "sink_lineno": 112,
     "file": "generate.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "exec(cmd, function execCb (err) {",
-    "sink_lineno": 140,
+    "sink_lineno": 142,
     "file": "generate.js"
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "Child.exec(command, (err, stdout, stderr)",
+    "sink": "Child.exec(command, (err, stdout, stderr) => {",
     "sink_lineno": 29,
     "file": "traceroute.js"
   }

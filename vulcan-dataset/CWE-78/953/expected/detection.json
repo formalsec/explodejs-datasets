@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "exec('cp -R ' + source + ' ' + destination, function ()",
+    "sink": "exec('cp -R ' + source + ' ' + destination, function () {",
     "sink_lineno": 33,
     "file": "expressfs.server.js"
   },

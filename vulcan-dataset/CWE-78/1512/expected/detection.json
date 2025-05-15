@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "  return child_process.exec(unmountCommand + \" \" + device, callback);",
-    "sink_lineno": 52,
+    "sink": "return child_process.exec(unmountCommand + \" \" + device, callback);",
+    "sink_lineno": 74,
     "file": "umount.js"
   }
 ]

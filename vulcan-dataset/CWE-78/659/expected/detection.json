@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "var child = exec('command -v ' + commandName + ...);",
+    "sink": "var child = exec('command -v ' + commandName +",
     "sink_lineno": 49,
     "file": "command-exists.js"
   },
@@ -13,7 +13,7 @@
   },
   {
     "vuln_type": "CWE-78",
-    "sink": "var stdout = execSync('command -v ' + commandName +...",
+    "sink": "var stdout = execSync('command -v ' + commandName +",
     "sink_lineno": 78,
     "file": "command-exists.js"
   },
