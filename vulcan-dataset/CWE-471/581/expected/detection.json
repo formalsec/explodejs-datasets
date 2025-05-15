@@ -3,6 +3,6 @@
     "vuln_type": "CWE-471",
     "sink": "target[key] = value;",
     "sink_lineno": 22,
-    "file": "package/index.js"
+    "file": "index.js"
   }
 ]

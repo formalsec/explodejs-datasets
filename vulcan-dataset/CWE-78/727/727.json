@@ -9,12 +9,12 @@
         "vulnerability_location": [
             {
                 "source": {
-                    "file": "bin/ascii-art",
+                    "file": "bin/ascii-art.js",
                     "lineno": 43,
                     "code": "var target = argv._.pop();"
                 },
                 "sink": {
-                    "file": "bin/ascii-art",
+                    "file": "bin/ascii-art.js",
                     "lineno": 210,
                     "code": "exec('open \"http://www.figlet.org/fontdb_example.cgi?font='+target.toLowerCase()+'.flf\"')"
                 }

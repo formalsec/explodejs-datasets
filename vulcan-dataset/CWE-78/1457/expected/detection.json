@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "exec({ cmd: `git clone ${repoUrl} ${dirname}`, displayDir: dirname }, (err, result) => {",
     "sink_lineno": 20,
-    "file": "bin/meta-git-clone"
+    "file": "meta-git-clone.js"
   }
 ]

@@ -3,6 +3,6 @@
     "vuln_type": "CWE-471",
     "sink": "target[key] = source[key];",
     "sink_lineno": 40,
-    "file": "package/dist/chartkick.js"
+    "file": "chartkick.js"
   }
 ]

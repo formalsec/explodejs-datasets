@@ -3,6 +3,6 @@
     "vuln_type": "CWE-94",
     "sink": "return eval('`' + tmpl + '`');",
     "sink_lineno": 6,
-    "file": "lib/encode.js"
+    "file": "encode.js"
   }
 ]

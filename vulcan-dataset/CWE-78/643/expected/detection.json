@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "let child = exec('pdfinfo ' + self.options.additional.join(' '), function(error, stdout, stderr) {",
     "sink_lineno": 36,
-    "file": "lib/pdfinfo.js"
+    "file": "pdfinfo.js"
   }
 ]

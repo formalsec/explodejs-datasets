@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "exec(call_string, options,",
     "sink_lineno": 232,
-    "file": "lib/git/git.js"
+    "file": "git.js"
   }
 ]

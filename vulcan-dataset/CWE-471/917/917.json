@@ -9,12 +9,12 @@
         "vulnerability_location": [
             {
                 "source": {
-                    "file": "src/utilities/deepMerge.ts",
+                    "file": "src/utilities/deepMerge.js",
                     "lineno": 3,
                     "code": "export function deepMerge(target: any, source: any): any {"
                 },
                 "sink": {
-                    "file": "src/utilities/deepMerge.ts",
+                    "file": "src/utilities/deepMerge.js",
                     "lineno": 14,
                     "code": "target[key] = source[key];"
                 }

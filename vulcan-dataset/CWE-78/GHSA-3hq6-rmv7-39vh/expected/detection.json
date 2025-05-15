@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "childProcess.execFile(path.resolve(browserPath), commandOptions, {maxBuffer: 50000 * 1024}, function (err) {",
     "sink_lineno": 70,
-    "file": "lib/index.js"
+    "file": "index.js"
   }
 ]

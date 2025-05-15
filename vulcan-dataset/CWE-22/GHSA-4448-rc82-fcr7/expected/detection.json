@@ -3,6 +3,6 @@
     "vuln_type": "CWE-22",
     "sink": "return fs.readFile(file, done);",
     "sink_lineno": 11,
-    "file": "lib/read-file.js"
+    "file": "read-file.js"
   }
 ]

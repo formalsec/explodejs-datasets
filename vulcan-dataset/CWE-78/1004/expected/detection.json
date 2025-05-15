@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "execSync(`git fetch origin pull/${id}/head:${branch} && git checkout ${branch}`);",
     "sink_lineno": 37,
-    "file": "src/index.js"
+    "file": "index.js"
   }
 ]

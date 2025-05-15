@@ -3,24 +3,24 @@
     "vuln_type": "CWE-78",
     "sink": "var child = exec('command -v ' + commandName + ...);",
     "sink_lineno": 49,
-    "file": "lib/command-exists.js"
+    "file": "command-exists.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "var child = exec('where ' + commandName,",
     "sink_lineno": 64,
-    "file": "lib/command-exists.js"
+    "file": "command-exists.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "var stdout = execSync('command -v ' + commandName +...",
     "sink_lineno": 78,
-    "file": "lib/command-exists.js"
+    "file": "command-exists.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "var stdout = execSync('where ' + commandName);",
     "sink_lineno": 94,
-    "file": "lib/command-exists.js"
+    "file": "command-exists.js"
   }
 ]

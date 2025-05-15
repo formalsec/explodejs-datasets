@@ -3,12 +3,12 @@
     "vuln_type": "CWE-78",
     "sink": "exec('cp -R ' + source + ' ' + destination, function ()",
     "sink_lineno": 33,
-    "file": "package/expressfs.server.js"
+    "file": "expressfs.server.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "exec('rm -rf ' + path, function () {",
     "sink_lineno": 204,
-    "file": "package/expressfs.server.js"
+    "file": "expressfs.server.js"
   }
 ]

@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "const [ stdout ] = yield exec('tail -n 100 ' + stderr);",
     "sink_lineno": 235,
-    "file": "lib/cmd/start.js"
+    "file": "start.js"
   }
 ]

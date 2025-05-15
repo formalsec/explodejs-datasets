@@ -9,12 +9,12 @@
         "vulnerability_location": [
             {
                 "source": {
-                    "file": "bin/meta-git-clone",
+                    "file": "bin/meta-git-clone.js",
                     "lineno": 14,
                     "code": "const repoUrl = process.argv[2] === 'blank' ? process.argv[3] : process.argv[2];"
                 },
                 "sink": {
-                    "file": "bin/meta-git-clone",
+                    "file": "bin/meta-git-clone.js",
                     "lineno": 20,
                     "code": "exec({ cmd: `git clone ${repoUrl} ${dirname}`, displayDir: dirname }, (err, result) => {"
                 }

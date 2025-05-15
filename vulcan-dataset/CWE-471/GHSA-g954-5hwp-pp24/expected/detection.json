@@ -3,6 +3,6 @@
     "vuln_type": "CWE-1321",
     "sink": "util.setProperty = function setProperty(dst, path, value) { function setProp(dst, path, value) {var part = path.shift(); if (path.length > 0) {     dst[part] = setProp(dst[part] || {}, path, value); } else {     var prevValue = dst[part];     if (prevValue)         value = [].concat(prevValue).concat(value);     dst[part] = value; } return dst;} if (typeof dst !== \"objec\")    throw TypeError(\"dst must be an object\");if (!path)    throw TypeError(\"path must be specified\"); path = path.split(\".\");return setProp(dst, path, value); };",
     "sink_lineno": 176,
-    "file": "src/util.js"
+    "file": "util.js"
   }
 ]

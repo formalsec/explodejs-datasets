@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78 ",
     "sink": "r.exec('git ls-remote --tags '+e,(e,r,o)=>{o&&s(new Error(o))",
     "sink_lineno": 1,
-    "file": "dist/index.js"
+    "file": "index.js"
   }
 ]

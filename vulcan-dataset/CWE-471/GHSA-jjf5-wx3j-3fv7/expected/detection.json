@@ -3,6 +3,6 @@
     "vuln_type": "CWE-1321",
     "sink": "parent[childKey] = v",
     "sink_lineno": 581,
-    "file": "src/main.js"
+    "file": "main.js"
   }
 ]

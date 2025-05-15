@@ -3,12 +3,12 @@
     "vuln_type": "CWE-78",
     "sink": "exec('git blame ' + args + ' ' + realFile, {",
     "sink_lineno": 24,
-    "file": "svn/git.js"
+    "file": "git.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "exec('svn blame ' + realFile + ' ' + args, {",
     "sink_lineno": 38,
-    "file": "vcs/svn.js"
+    "file": "svn.js"
   }
 ]

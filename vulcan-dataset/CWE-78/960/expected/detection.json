@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "cp.exec('curl \"'+ url +'\" -F media=@\"' + file + '\"', function(e, sout, serr){",
     "sink_lineno": 123,
-    "file": "src/server/wx.js"
+    "file": "wx.js"
   }
 ]

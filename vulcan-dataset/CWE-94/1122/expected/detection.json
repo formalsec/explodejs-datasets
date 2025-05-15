@@ -3,6 +3,6 @@
     "vuln_type": "CWE-94",
     "sink": "selectorValue = Function('obj', 'return ' + selectorValue);",
     "sink_lineno": 419,
-    "file": "lib/DocumentMatcher.js"
+    "file": "DocumentMatcher.js"
   }
 ]

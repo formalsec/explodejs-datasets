@@ -3,24 +3,24 @@
     "vuln_type": "CWE-471",
     "sink": "host[key] = donor[key];",
     "sink_lineno": 66,
-    "file": "lib/index.js"
+    "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "host[key] = donor[key];",
     "sink_lineno": 7,
-    "file": "lib/index.js"
+    "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "host[key] = donor[key];",
     "sink_lineno": 18,
-    "file": "lib/index.js"
+    "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "host[key] = donor[key];",
     "sink_lineno": 66,
-    "file": "lib/index.js"
+    "file": "index.js"
   }
 ]

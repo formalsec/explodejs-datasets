@@ -3,6 +3,6 @@
     "vuln_type": "CWE-22",
     "sink": "const readStream = fs.createReadStream(filePath);",
     "sink_lineno": 13,
-    "file": "lib/utils/file-system.js"
+    "file": "file-system.js"
   }
 ]

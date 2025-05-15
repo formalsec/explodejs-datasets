@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "cp.exec(command, {}, function(err, stdout, stderr) {",
     "sink_lineno": 56,
-    "file": "bin/wizard-sync.js"
+    "file": "wizard-sync.js"
   }
 ]

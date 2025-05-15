@@ -3,6 +3,6 @@
     "vuln_type": "CWE-471",
     "sink": "if (isValue) cursor[level] = value",
     "sink_lineno": 32,
-    "file": "querystring/parse.js"
+    "file": "parse.js"
   }
 ]

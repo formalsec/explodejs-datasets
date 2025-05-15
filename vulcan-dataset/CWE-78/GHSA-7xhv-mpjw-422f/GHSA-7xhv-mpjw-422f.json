@@ -10,12 +10,12 @@
         "vulnerability_location": [
             {
                 "source": {
-                    "file": "lib/googleIt.js",
+                    "file": "lib_googleIt.js",
                     "lineno": 232,
                     "code": "function googleIt(config) {"
                 },
                 "sink": {
-                    "file": "lib/googleIt.js",
+                    "file": "lib_googleIt.js",
                     "lineno": 59,
                     "code": "exec(\"open \".concat(result.link), errorTryingToOpen);"
                 }

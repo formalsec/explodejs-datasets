@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "const execute = proc(cmd, (err, stdout, stderr) => {",
     "sink_lineno": 114,
-    "file": "lib/classes/tools.js"
+    "file": "tools.js"
   }
 ]

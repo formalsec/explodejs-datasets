@@ -3,6 +3,6 @@
     "vuln_type": "CWE-1321",
     "sink": "o[kp[0]] = value;",
     "sink_lineno": 42,
-    "file": "js/set.js"
+    "file": "set.js"
   }
 ]

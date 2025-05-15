@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "data[name] = value;",
     "sink_lineno": 242,
-    "file": "lib/index.js"
+    "file": "index.js"
   }
 ]

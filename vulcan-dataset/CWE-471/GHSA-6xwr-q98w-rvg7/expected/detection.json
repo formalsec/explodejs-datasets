@@ -3,6 +3,6 @@
     "vuln_type": "CWE-1321",
     "sink": "target[key] = value;",
     "sink_lineno": 107,
-    "file": "lib/nconf/stores/memory.js"
+    "file": "memory.js"
   }
 ]

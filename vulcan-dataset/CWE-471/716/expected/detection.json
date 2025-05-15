@@ -3,18 +3,18 @@
     "vuln_type": "CWE-471",
     "sink": "object1[key] = object1[key].concat(object2[key]);",
     "sink_lineno": 28,
-    "file": "lib/merge-objects.js"
+    "file": "merge-objects.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "object1[key] = mergeObjects(object1[key], object2[key]);",
     "sink_lineno": 31,
-    "file": "lib/merge-objects.js"
+    "file": "merge-objects.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "object1[key] = object2[key];",
     "sink_lineno": 33,
-    "file": "lib/merge-objects.js"
+    "file": "merge-objects.js"
   }
 ]

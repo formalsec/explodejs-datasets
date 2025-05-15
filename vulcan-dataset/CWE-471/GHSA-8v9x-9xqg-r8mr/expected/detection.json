@@ -3,6 +3,6 @@
     "vuln_type": "CWE-1321",
     "sink": "doc[key] = apply(doc[key], v);",
     "sink_lineno": 28,
-    "file": "lib/apply.js"
+    "file": "apply.js"
   }
 ]

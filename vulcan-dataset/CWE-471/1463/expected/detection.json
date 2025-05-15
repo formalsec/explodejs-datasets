@@ -3,6 +3,6 @@
     "vuln_type": "CWE-471",
     "sink": "tmp[k] = klona(x[k]);",
     "sink_lineno": 9,
-    "file": "package/dist/klona.js"
+    "file": "klona.js"
   }
 ]

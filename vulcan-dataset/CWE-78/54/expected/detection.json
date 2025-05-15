@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "exec(execCmd, function (err, stdout, stderr) {",
     "sink_lineno": 72,
-    "file": "lib/compare.js"
+    "file": "compare.js"
   }
 ]

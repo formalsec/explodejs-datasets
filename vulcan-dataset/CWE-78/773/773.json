@@ -14,7 +14,7 @@
                     "code": "let filename = req.body.filename;"
                 },
                 "sink": {
-                    "file": "pi_video_recording.js.js",
+                    "file": "pi_video_recording.js",
                     "lineno": 48,
                     "code": "proc = childProcess.spawn('raspivid', ['-o', file + '.h264', '-t', '0', '-ih', '-pf', 'high', '-ISO', '800'"
                 }

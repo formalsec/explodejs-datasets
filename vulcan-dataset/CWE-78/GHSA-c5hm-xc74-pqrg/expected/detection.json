@@ -3,6 +3,6 @@
     "vuln_type": "CWE-78",
     "sink": "var child = exec(cmd, function (err, stdout, stderr) {",
     "sink_lineno": 59,
-    "file": "lib/jscover.js"
+    "file": "jscover.js"
   }
 ]

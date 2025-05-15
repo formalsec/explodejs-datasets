@@ -10,12 +10,12 @@
         "vulnerability_location": [
             {
                 "source": {
-                    "file": "bin/deepAssign.js",
+                    "file": "bin/deep-merge.js",
                     "lineno": 3,
                     "code": "function deepMerge (result, initial, options = {})"
                 },
                 "sink": {
-                    "file": "bin/deepAssign.js",
+                    "file": "bin/deep-merge.js",
                     "lineno": 23,
                     "code": "if (current[1]) current[1][key] = current[0][key];"
                 }
