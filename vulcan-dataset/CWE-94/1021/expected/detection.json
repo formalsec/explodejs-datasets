@@ -1,13 +1,13 @@
 [
   {
     "vuln_type": "CWE-94",
-    "sink": "'(function () {\"use strict\"; ' + src + '})()'",
+    "sink": "'(function () {\"use strict\"; ' + src + '})()',",
     "sink_lineno": 47,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-94",
-    "sink": "return Function('__context', src).call(null, __context)",
+    "sink": "return Function('__context', src).call(null, __context) // eslint-disable-line",
     "sink_lineno": 49,
     "file": "browser.js"
   }

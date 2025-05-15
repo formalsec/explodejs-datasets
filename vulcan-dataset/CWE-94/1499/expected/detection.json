@@ -1,25 +1,25 @@
 [
   {
     "vuln_type": "CWE-94",
-    "sink": "rule.condition = eval(rule.condition);",
+    "sink": "rule.condition = eval(\"(\" + rule.condition + \")\");",
     "sink_lineno": 152,
     "file": "node-rules.js"
   },
   {
     "vuln_type": "CWE-94",
-    "sink": "rule.consequence = eval( rule.consequence);",
+    "sink": "rule.consequence = eval(\"(\" + rule.consequence + \")\");",
     "sink_lineno": 153,
     "file": "node-rules.js"
   },
   {
     "vuln_type": "CWE-94",
-    "sink": "rules.condition = eval( rules.condition );",
+    "sink": "rules.condition = eval(\"(\" + rules.condition + \")\");",
     "sink_lineno": 157,
     "file": "node-rules.js"
   },
   {
     "vuln_type": "CWE-94",
-    "sink": "rules.consequence = eval(rules.consequence);",
+    "sink": "rules.consequence = eval(\"(\" + rules.consequence + \")\");",
     "sink_lineno": 158,
     "file": "node-rules.js"
   }
