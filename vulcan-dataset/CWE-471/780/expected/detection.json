@@ -2,7 +2,7 @@
   {
     "vuln_type": "CWE-471",
     "sink": "result[key] = value;",
-    "sink_lineno": 52,
+    "sink_lineno": 51,
     "file": "index.js"
   }
 ]

@@ -2,31 +2,31 @@
   {
     "vuln_type": "CWE-471",
     "sink": "result[key] = clone(obj[key]);",
-    "sink_lineno": 60,
+    "sink_lineno": 65,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "result[key] = clone(array[key]);",
-    "sink_lineno": 50,
+    "sink_lineno": 55,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "merged[key] = clone(source[key]);",
-    "sink_lineno": 75,
+    "sink_lineno": 80,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "result[resultIndex++] = array[k];",
-    "sink_lineno": 105,
+    "sink_lineno": 110,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "result[resultIndex++] = clone(array[k]);",
-    "sink_lineno": 107,
+    "sink_lineno": 112,
     "file": "index.js"
   }
 ]

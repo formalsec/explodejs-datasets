@@ -2,7 +2,7 @@
   {
     "vuln_type": "CWE-1321",
     "sink": "handlers[type][name] = fn;",
-    "sink_lineno": 48,
+    "sink_lineno": 51,
     "file": "index.js"
   }
 ]

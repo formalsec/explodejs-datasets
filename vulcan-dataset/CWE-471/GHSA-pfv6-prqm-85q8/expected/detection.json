@@ -2,7 +2,7 @@
   {
     "vuln_type": "CWE-1321",
     "sink": "value[key] = defaultValue;",
-    "sink_lineno": 80,
+    "sink_lineno": 75,
     "file": "utils.js"
   }
 ]

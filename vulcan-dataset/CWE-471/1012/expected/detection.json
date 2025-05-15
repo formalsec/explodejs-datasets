@@ -2,13 +2,13 @@
   {
     "vuln_type": "CWE-471",
     "sink": "target[path] = value;",
-    "sink_lineno": 59,
+    "sink_lineno": 88,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "target[path] = merge({}, target[path], value);",
-    "sink_lineno": 57,
+    "sink_lineno": 86,
     "file": "index.js"
   }
 ]

@@ -2,19 +2,19 @@
   {
     "vuln_type": "CWE-471",
     "sink": "target[key] = val;",
-    "sink_lineno": 44,
+    "sink_lineno": 218,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "target[key] = assign(target[key] || {}, val);",
-    "sink_lineno": 46,
+    "sink_lineno": 220,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-471",
     "sink": "target[key] = val;",
-    "sink_lineno": 48,
+    "sink_lineno": 222,
     "file": "index.js"
   }
 ]

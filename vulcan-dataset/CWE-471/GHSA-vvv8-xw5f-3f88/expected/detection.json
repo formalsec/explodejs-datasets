@@ -2,13 +2,13 @@
   {
     "vuln_type": "CWE-1321",
     "sink": "target[key] = newValue;",
-    "sink_lineno": 18,
+    "sink_lineno": 106,
     "file": "deepFillIn.js"
   },
   {
     "vuln_type": "CWE-1321",
     "sink": "this[key] = val;",
-    "sink_lineno": 27,
+    "sink_lineno": 114,
     "file": "deepMixIn.js"
   }
 ]
