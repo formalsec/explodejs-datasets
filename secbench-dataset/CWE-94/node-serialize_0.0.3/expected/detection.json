@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-94",
-    "sink": "",
+    "sink": "obj[key] = eval('(' + obj[key].substring(FUNCFLAG.length) + ')');",
     "sink_lineno": 75,
     "file": "serialize.js"
   }

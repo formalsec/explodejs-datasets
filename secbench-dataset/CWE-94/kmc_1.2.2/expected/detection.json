@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-94",
-    "sink": "",
+    "sink": "var requiredModules = eval('(' + requires[i]).requires;",
     "sink_lineno": 164,
     "file": "index.js"
   }

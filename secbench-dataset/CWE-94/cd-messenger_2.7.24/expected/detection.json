@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-94",
-    "sink": "",
-    "sink_lineno": 70,
+    "sink": "eval(`cl.${color}()`); // eslint-disable-line",
+    "sink_lineno": 73,
     "file": "messenger-node.js"
   }
 ]

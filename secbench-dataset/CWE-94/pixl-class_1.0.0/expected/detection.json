@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-94",
-    "sink": "",
+    "sink": "eval('constructor = function ('+args+') {'+inner_code+'};');",
     "sink_lineno": 26,
     "file": "class.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-94",
-    "sink": "",
+    "sink": "render = new Function(settings.variable || 'obj', '_', source);",
     "sink_lineno": 71,
     "file": "template.js"
   }

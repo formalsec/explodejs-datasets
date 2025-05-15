@@ -1,3 +1,8 @@
 [
-  { "vuln_type": "CWE-94", "sink": "", "sink_lineno": 284, "file": "sea.js" }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "configData = eval('(' + configSource + ')');",
+    "sink_lineno": 284,
+    "file": "sea.js"
+  }
 ]
