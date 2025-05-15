@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "cp.exec(curlString, function(err, stdout, stderr) {",
     "sink_lineno": 37,
     "file": "index.js"
   }

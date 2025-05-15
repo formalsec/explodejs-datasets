@@ -1,1 +1,8 @@
-[ { "vuln_type": "CWE-78", "sink": "", "sink_lineno": 3, "file": "get.js" } ]
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('heroku config --app ' + app, function(err, stdout) {",
+    "sink_lineno": 3,
+    "file": "get.js"
+  }
+]

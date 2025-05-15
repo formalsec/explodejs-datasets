@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "child_process_1.exec(execCmd, option || { stdio: 'inherit' }, (err, stdout, stderr) => {",
     "sink_lineno": 26,
     "file": "AdbDriver.js"
   }

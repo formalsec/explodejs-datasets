@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "el.add.apply(el, eargs);",
     "sink_lineno": 88,
     "file": "index.js"
   }

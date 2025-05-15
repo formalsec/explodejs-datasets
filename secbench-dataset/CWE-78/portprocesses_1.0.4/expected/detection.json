@@ -1,3 +1,8 @@
 [
-  { "vuln_type": "CWE-78", "sink": "", "sink_lineno": 5, "file": "exec.js" }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(cmd, (err, stdout, stderr) => {",
+    "sink_lineno": 5,
+    "file": "exec.js"
+  }
 ]

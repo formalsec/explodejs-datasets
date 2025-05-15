@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-94",
-    "sink": "",
+    "sink": "var arr = eval(\"[\" + yytext + \"]\");",
     "sink_lineno": 258,
     "file": "grammar-parser.js"
   }

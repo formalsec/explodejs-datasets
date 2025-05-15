@@ -1,3 +1,8 @@
 [
-  { "vuln_type": "CWE-78", "sink": "", "sink_lineno": 4, "file": "exec.js" }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exports.execSync = (cwd, command) => child_process_1.execSync(command, { cwd, env: process.env });",
+    "sink_lineno": 4,
+    "file": "exec.js"
+  }
 ]

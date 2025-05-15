@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "const {stdout} = await cp_exec(version_cmds[scanner]);",
     "sink_lineno": 495,
     "file": "index.js"
   }

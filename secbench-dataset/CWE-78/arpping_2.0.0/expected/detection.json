@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "exec(`ping ${flag} ${this.timeout} ${ip}`, (err, stdout, stderr) => {",
     "sink_lineno": 120,
     "file": "index.js"
   }

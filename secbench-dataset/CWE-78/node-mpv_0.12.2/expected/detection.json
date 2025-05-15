@@ -1,3 +1,8 @@
 [
-  { "vuln_type": "CWE-78", "sink": "", "sink_lineno": 45, "file": "mpv.js" }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "var output = exec((options.binary ? options.binary + \" --version\" : \"mpv --version\"), {encoding: 'utf8'});",
+    "sink_lineno": 87,
+    "file": "mpv.js"
+  }
 ]

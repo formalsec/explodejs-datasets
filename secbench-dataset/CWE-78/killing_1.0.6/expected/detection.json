@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "exec('ps -ef | grep ' + name, function(error, stdout) {",
     "sink_lineno": 35,
     "file": "killing.js"
   }

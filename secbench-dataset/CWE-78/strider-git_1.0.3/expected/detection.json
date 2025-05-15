@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "exec(`git ls-remote -h ${httpUrl(config)[0]}`, function (err, stdout) {",
     "sink_lineno": 151,
     "file": "index.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "var stdout = cp9.execSync(`asciinema upload ${f}`, {encoding: 'utf8'});",
     "sink_lineno": 208,
     "file": "index.js"
   }

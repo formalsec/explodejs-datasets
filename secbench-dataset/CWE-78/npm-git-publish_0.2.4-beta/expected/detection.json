@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "child_process_1.execSync(\"git clone --quiet --depth 1 \" + gitRemoteUrl + \" \\\"\" + gitRepoDir + \"\\\"\", { stdio: 'inherit' });",
     "sink_lineno": 92,
     "file": "publish.js"
   }

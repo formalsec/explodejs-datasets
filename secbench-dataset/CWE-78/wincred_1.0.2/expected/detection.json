@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
-    "sink_lineno": 16,
+    "sink": "return exec(script)",
+    "sink_lineno": 15,
     "file": "index.js"
   }
 ]

@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
-    "sink_lineno": 47,
+    "sink": "var child = shell.exec('pdfinfo ' + self.options.additional.join(' '), function(code, data) {",
+    "sink_lineno": 49,
     "file": "pdfinfo.js"
   }
 ]

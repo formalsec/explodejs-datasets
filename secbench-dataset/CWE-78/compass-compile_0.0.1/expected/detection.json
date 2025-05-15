@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
-    "sink_lineno": 25,
+    "sink": "exec(command, function(error, stdout, stderr) {",
+    "sink_lineno": 24,
     "file": "compass.js"
   }
 ]

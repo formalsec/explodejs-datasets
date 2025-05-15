@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "ChildProcess.exec(killCommand, function (err, stdout, stderr) {",
     "sink_lineno": 59,
     "file": "index.js"
   }

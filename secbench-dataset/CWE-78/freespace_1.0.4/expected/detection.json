@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "cp.exec(`df -P ${driveOrMount} | awk 'NR==2 {print $4}'`, {}, cb);",
     "sink_lineno": 51,
     "file": "index.js"
   }

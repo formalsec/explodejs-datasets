@@ -1,3 +1,8 @@
 [
-  { "vuln_type": "CWE-78", "sink": "", "sink_lineno": 6, "file": "index.js" }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec(ogrCommand, function(err, stdout, stderr){",
+    "sink_lineno": 6,
+    "file": "index.js"
+  }
 ]

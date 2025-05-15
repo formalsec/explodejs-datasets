@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "child_process.exec( command, hollaback );",
     "sink_lineno": 42,
     "file": "deferred-exec.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "const shellOut = shell.execSync(cmd).toString();",
     "sink_lineno": 15,
     "file": "index.js"
   }

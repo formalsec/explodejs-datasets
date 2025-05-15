@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "return execSync('lsof -i:' + port + ' -P -t -sTCP:LISTEN', execOptions)",
     "sink_lineno": 28,
     "file": "getProcessForPort.js"
   }

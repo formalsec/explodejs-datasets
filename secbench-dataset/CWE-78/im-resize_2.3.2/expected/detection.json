@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "exec(cmd, {timeout: 30000}, function(e, stdout, stderr) {",
     "sink_lineno": 11,
     "file": "index.js"
   }

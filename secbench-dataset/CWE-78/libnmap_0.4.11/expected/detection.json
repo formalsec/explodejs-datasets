@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "const execute = proc(cmd, (err, stdout, stderr) => {",
     "sink_lineno": 114,
     "file": "tools.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "let _cmd = exec(`gsutil -m cp ${_rn} -a public-read ${_path} ${bucket}`)",
     "sink_lineno": 11,
     "file": "index.js"
   }

@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "var child = exec(command, {",
     "sink_lineno": 49,
     "file": "index.js"
   }

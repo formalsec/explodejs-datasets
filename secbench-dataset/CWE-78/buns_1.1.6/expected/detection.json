@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "",
+    "sink": "exec(command);",
     "sink_lineno": 678,
     "file": "index.js"
   }
