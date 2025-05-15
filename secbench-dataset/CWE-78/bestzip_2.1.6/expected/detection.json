@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "command-injection",
-        "sink_file": "lib/bestzip.js",
-        "sink_lineno": "27"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "",
+    "sink_lineno": 27,
+    "file": "bestzip.js"
+  }
 ]

@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "command-injection",
-        "sink_file": "lib/killing.js",
-        "sink_lineno": "35"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "",
+    "sink_lineno": 35,
+    "file": "killing.js"
+  }
 ]

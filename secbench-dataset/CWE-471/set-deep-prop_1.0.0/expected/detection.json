@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "prototype-pollution",
-        "sink_file": "set-deep-prop.js",
-        "sink_lineno": "20"
-    }
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "",
+    "sink_lineno": 20,
+    "file": "set-deep-prop.js"
+  }
 ]

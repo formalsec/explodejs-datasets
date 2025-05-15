@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "path-traversal",
-        "sink_file": "lib/router.js",
-        "sink_lineno": "757"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "",
+    "sink_lineno": 757,
+    "file": "router.js"
+  }
 ]

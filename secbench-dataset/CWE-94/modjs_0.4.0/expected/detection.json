@@ -1,7 +1,3 @@
 [
-    {
-        "vuln_type": "code-injection",
-        "sink_file": "lib/utils/sea.js",
-        "sink_lineno": "284"
-    }
+  { "vuln_type": "CWE-94", "sink": "", "sink_lineno": 284, "file": "sea.js" }
 ]

@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "prototype-pollution",
-        "sink_file": "dist/mixer.js",
-        "sink_lineno": "86"
-    }
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "",
+    "sink_lineno": 86,
+    "file": "mixer.js"
+  }
 ]

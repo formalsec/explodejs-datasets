@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "path-traversal",
-        "sink_file": "lib/goserv.js",
-        "sink_lineno": "63"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "",
+    "sink_lineno": 63,
+    "file": "goserv.js"
+  }
 ]

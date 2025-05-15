@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "code-injection",
-        "sink_file": "src/messenger-node.js",
-        "sink_lineno": "70"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "",
+    "sink_lineno": 70,
+    "file": "messenger-node.js"
+  }
 ]

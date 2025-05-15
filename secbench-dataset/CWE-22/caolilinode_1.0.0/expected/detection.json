@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "path-traversal",
-        "sink_file": "caolili.js",
-        "sink_lineno": "7"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "",
+    "sink_lineno": 7,
+    "file": "caolili.js"
+  }
 ]

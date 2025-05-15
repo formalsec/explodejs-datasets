@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "prototype-pollution",
-        "sink_file": "src/functions/merge.js",
-        "sink_lineno": "38"
-    }
+  {
+    "vuln_type": "CWE-1321",
+    "sink": "",
+    "sink_lineno": 38,
+    "file": "merge.js"
+  }
 ]

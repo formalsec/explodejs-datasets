@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "code-injection",
-        "sink_file": "class.js",
-        "sink_lineno": "26"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "",
+    "sink_lineno": 26,
+    "file": "class.js"
+  }
 ]

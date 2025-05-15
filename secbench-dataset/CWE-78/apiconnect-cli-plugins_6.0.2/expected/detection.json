@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "command-injection",
-        "sink_file": "lib/plugin-loader.js",
-        "sink_lineno": "181"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "",
+    "sink_lineno": 181,
+    "file": "plugin-loader.js"
+  }
 ]

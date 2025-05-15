@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "code-injection",
-        "sink_file": "src/modulify.js",
-        "sink_lineno": "74"
-    }
+  {
+    "vuln_type": "CWE-94",
+    "sink": "",
+    "sink_lineno": 74,
+    "file": "modulify.js"
+  }
 ]

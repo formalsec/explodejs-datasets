@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "path-traversal",
-        "sink_file": "server/Server.js",
-        "sink_lineno": "494"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "",
+    "sink_lineno": 494,
+    "file": "Server.js"
+  }
 ]

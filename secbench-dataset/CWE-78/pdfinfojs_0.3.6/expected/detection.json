@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "command-injection",
-        "sink_file": "lib/pdfinfo.js",
-        "sink_lineno": "47"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "",
+    "sink_lineno": 47,
+    "file": "pdfinfo.js"
+  }
 ]

@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "path-traversal",
-        "sink_file": "build/gamebutler.js",
-        "sink_lineno": "69"
-    }
+  {
+    "vuln_type": "CWE-22",
+    "sink": "",
+    "sink_lineno": 69,
+    "file": "gamebutler.js"
+  }
 ]

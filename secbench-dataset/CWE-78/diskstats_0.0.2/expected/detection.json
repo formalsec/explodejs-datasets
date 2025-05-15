@@ -1,7 +1,3 @@
 [
-    {
-        "vuln_type": "command-injection",
-        "sink_file": "lib/stat.js",
-        "sink_lineno": "44"
-    }
+  { "vuln_type": "CWE-78", "sink": "", "sink_lineno": 44, "file": "stat.js" }
 ]

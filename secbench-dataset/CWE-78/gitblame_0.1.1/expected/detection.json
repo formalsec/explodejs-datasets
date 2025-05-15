@@ -1,7 +1,8 @@
 [
-    {
-        "vuln_type": "command-injection",
-        "sink_file": "lib/gitblame.js",
-        "sink_lineno": "15"
-    }
+  {
+    "vuln_type": "CWE-78",
+    "sink": "",
+    "sink_lineno": 15,
+    "file": "gitblame.js"
+  }
 ]
