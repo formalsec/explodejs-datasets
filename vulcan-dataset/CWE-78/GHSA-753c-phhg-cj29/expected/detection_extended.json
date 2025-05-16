@@ -2,7 +2,7 @@
   {
     "vuln_type": "CWE-22",
     "sink": ".then((image) => writeFile(imagePath, image))",
-    "sink_lineno": 150,
+    "sink_lineno": 151,
     "file": "graph.js"
   }
 ]

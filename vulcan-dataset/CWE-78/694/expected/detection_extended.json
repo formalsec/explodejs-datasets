@@ -13,7 +13,7 @@
   },
   {
     "vuln_type": "CWE-78",
-    "sink": " const child = this.child = spawn('node', eggArgs, options);",
+    "sink": "const child = this.child = spawn('node', eggArgs, options);",
     "sink_lineno": 150,
     "file": "start.js"
   },
