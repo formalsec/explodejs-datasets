@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "exec('taskkill /F /IM ' + programname + '.exe /T');",
-    "sink_lineno": 9,
+    "sink": "exec('donttaskkill /F /IM ' + programname + '.exe /T');",
+    "sink_lineno": 10,
     "file": "index.js"
   }
 ]

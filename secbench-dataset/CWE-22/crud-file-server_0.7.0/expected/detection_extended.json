@@ -1,7 +1,7 @@
 [
   {
     "vuln_type": "CWE-22",
-    "sink": "fs.readFile(relativePath, function(err, data) { ",
+    "sink": "fs.readFile(relativePath, function(err, data) {",
     "sink_lineno": 158,
     "file": "crud-file-server.js"
   }

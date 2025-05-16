@@ -2,7 +2,7 @@
   {
     "vuln_type": "CWE-471",
     "sink": "target[key] = merge(newVal, oldVal);",
-    "sink_lineno": 41,
+    "sink_lineno": 84,
     "file": "index.js"
   }
 ]

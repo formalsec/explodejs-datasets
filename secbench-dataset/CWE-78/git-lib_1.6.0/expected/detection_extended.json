@@ -2,31 +2,31 @@
   {
     "vuln_type": "CWE-78",
     "sink": "exec('git commit ' + options + ' -m \\\"' + message + '\\\"', function(err){",
-    "sink_lineno": 27,
+    "sink_lineno": 26,
     "file": "git.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "exec('git checkout -- ' + file, function(err){",
-    "sink_lineno": 126,
+    "sink_lineno": 125,
     "file": "git.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "exec('git checkout ' + branch, function(err, result){",
-    "sink_lineno": 223,
+    "sink_lineno": 222,
     "file": "git.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "exec('git checkout -b ' + newBranchName, function(err){",
-    "sink_lineno": 236,
+    "sink_lineno": 235,
     "file": "git.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "exec(\"git branch -d \" + branch, function(err){",
-    "sink_lineno": 249,
+    "sink_lineno": 248,
     "file": "git.js"
   }
 ]

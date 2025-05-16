@@ -8,7 +8,7 @@
   {
     "vuln_type": "CWE-78",
     "sink": "child.exec(cmd, {",
-    "sink_lineno": 108,
+    "sink_lineno": 208,
     "file": "git.js"
   }
 ]

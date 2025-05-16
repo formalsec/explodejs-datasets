@@ -2,13 +2,13 @@
   {
     "vuln_type": "CWE-22",
     "sink": "fs.readFile(p.join('/proc', ''+pid, 'stat'), 'utf8', function(err, infos) {",
-    "sink_lineno": 44,
+    "sink_lineno": 46,
     "file": "stats.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "exec(cmd, function(err, stdout, stderr) {",
-    "sink_lineno": 138,
+    "sink_lineno": 140,
     "file": "stats.js"
   }
 ]

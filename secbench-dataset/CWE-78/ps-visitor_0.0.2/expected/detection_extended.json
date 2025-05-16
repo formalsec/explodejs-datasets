@@ -2,13 +2,13 @@
   {
     "vuln_type": "CWE-78",
     "sink": "return exec(cmd).then((result) => {",
-    "sink_lineno": 56,
+    "sink_lineno": 55,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "return exec(cmd).then((result) => {",
-    "sink_lineno": 444,
+    "sink_lineno": 443,
     "file": "index.js"
   }
 ]

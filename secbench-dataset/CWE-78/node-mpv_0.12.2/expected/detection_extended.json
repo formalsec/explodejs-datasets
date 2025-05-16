@@ -2,25 +2,25 @@
   {
     "vuln_type": "CWE-78",
     "sink": "this.mpvPlayer = spawn(options.binary, defaultArgs);",
-    "sink_lineno": 149,
+    "sink_lineno": 191,
     "file": "mpv.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "this.mpvPlayer = spawn('mpv', defaultArgs);",
-    "sink_lineno": 153,
+    "sink_lineno": 195,
     "file": "mpv.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "this.mpvPlayer = spawn(options.binary, defaultArgs);",
-    "sink_lineno": 199,
+    "sink_lineno": 241,
     "file": "mpv.js"
   },
   {
     "vuln_type": "CWE-78",
     "sink": "this.mpvPlayer = spawn('mpv', defaultArgs);",
-    "sink_lineno": 202,
+    "sink_lineno": 244,
     "file": "mpv.js"
   }
 ]
