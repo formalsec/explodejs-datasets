@@ -1,1 +1,5 @@
 (dirs scripts)
+
+(executable
+ (name canonize)
+ (libraries script_utils yojson))

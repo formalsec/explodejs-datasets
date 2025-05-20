@@ -23,3 +23,5 @@ neo4j_import.txt
 neo4j_start.txt
 neo4j_stop.txt
 time_stats.txt
+
+_build/
