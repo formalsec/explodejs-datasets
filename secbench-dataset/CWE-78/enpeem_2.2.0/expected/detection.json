@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "var stdout$npm_v = exec('npm -v').stdout;",
-    "sink_lineno": 71,
+    "sink": "    var npm = exec(cmd, {cwd: options.dir})",
+    "sink_lineno": 114,
     "file": "index.js"
   }
 ]

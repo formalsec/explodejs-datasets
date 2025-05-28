@@ -1,8 +1,8 @@
 [
   {
     "vuln_type": "CWE-94",
-    "sink": "'(function () {\"use strict\"; ' + src + '})()',",
-    "sink_lineno": 47,
+    "sink": "return vm.runInContext(",
+    "sink_lineno": 46,
     "file": "index.js"
   },
   {

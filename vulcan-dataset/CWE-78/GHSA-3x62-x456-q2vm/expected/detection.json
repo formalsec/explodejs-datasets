@@ -1,8 +1,14 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "const child = crossSpawn(command, args, opts)",
-    "sink_lineno": 60,
+    "sink": "spawn('git', args, {}, function (err) {"
+    "sink_lineno": 41,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "spawn('git', args, { cwd: outPath }, function (err) {"
+    "sink_lineno": 50,
     "file": "index.js"
   }
 ]

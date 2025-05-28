@@ -10,11 +10,5 @@
     "sink": "var cmd = exec(cmdString, {cwd: opts.cwd?opts.cwd:\"/\"},(error, stdout, stderr) => {",
     "sink_lineno": 46,
     "file": "index.js"
-  },
-  {
-    "vuln_type": "CWE-78",
-    "sink": "exec(cmdString, {cwd: path?path:\"/\"},(error, stdout, stderr) => {",
-    "sink_lineno": 70,
-    "file": "index.js"
   }
 ]

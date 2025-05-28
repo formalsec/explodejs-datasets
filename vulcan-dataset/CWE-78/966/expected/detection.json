@@ -1,13 +1,13 @@
 [
   {
     "vuln_type": "CWE-78",
-    "sink": "`Stop-Process -Id (Get-NetTCPConnection -LocalPort ${port}).OwningProcess -Force`",
-    "sink_lineno": 13,
+    "sink": "return sh(",
+    "sink_lineno": 12,
     "file": "index.js"
   },
   {
     "vuln_type": "CWE-78",
-    "sink": "`lsof -i tcp:${port} | grep LISTEN | awk '{print $2}' | xargs kill -9`",
+    "sink": "return sh(",
     "sink_lineno": 18,
     "file": "index.js"
   }
