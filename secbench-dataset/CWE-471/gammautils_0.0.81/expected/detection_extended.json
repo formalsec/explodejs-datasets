@@ -1,12 +1,12 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "currentNode[currentProperty] = messages;",
     "sink_lineno": 110,
     "file": "objectUtils.js"
   },
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "currentNode[currentProperty] = getContainer(property[i + 1]);",
     "sink_lineno": 112,
     "file": "objectUtils.js"

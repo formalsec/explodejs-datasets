@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "target[key] = merge(newVal, oldVal);",
     "sink_lineno": 84,
     "file": "index.js"

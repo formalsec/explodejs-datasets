@@ -6,7 +6,7 @@
     "file": "ini_parser.js"
   },
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "this.configs[section][key] = value",
     "sink_lineno": 108,
     "file": "ini_parser.js"

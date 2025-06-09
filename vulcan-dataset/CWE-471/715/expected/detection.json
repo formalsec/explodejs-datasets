@@ -1,24 +1,24 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "host[key] = donor[key];",
     "sink_lineno": 66,
     "file": "index.js"
   },
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "host[key] = donor[key];",
     "sink_lineno": 7,
     "file": "index.js"
   },
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "host[key] = donor[key];",
     "sink_lineno": 18,
     "file": "index.js"
   },
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "host[key] = donor[key];",
     "sink_lineno": 66,
     "file": "index.js"

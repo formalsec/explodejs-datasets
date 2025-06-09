@@ -1,12 +1,12 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "o[key] = value;",
     "sink_lineno": 79,
     "file": "index.js"
   },
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "o[key] = [ o[key], value ];",
     "sink_lineno": 85,
     "file": "index.js"

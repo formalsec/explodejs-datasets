@@ -12,7 +12,7 @@
     "file": "inireadercore.js"
   },
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "out[key] = sourceObj[key];",
     "sink_lineno": 133,
     "file": "inireadercore.js"

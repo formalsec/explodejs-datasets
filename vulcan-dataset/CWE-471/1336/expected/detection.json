@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "cloneObj[oldShift] = value;",
     "sink_lineno": 14,
     "file": "index.js"

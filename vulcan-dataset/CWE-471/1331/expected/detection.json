@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "return obj && p ? (obj[p] = value) : undefined; // Object",
     "sink_lineno": 22,
     "file": "index.js"

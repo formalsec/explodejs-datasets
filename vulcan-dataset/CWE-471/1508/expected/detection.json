@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "group[match[1]] = match[2];",
     "sink_lineno": 15,
     "file": "index.js"

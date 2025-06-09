@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "target[name] = copy;",
     "sink_lineno": 72,
     "file": "extend.js"

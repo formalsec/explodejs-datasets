@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "a[p] = deepClone(b[p]);",
     "sink_lineno": 78,
     "file": "deap.js"

@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "hash[lastSubKey] = extend(true, {}, value);",
     "sink_lineno": 45,
     "file": "confucious.js"

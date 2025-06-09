@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "subject[key] = value",
     "sink_lineno": 74,
     "file": "index.js"

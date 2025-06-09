@@ -1,18 +1,18 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "target[key] = exports.clone(value);",
     "sink_lineno": 129,
     "file": "index.js"
   },
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "target[key] = value;",
     "sink_lineno": 139,
     "file": "index.js"
   },
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "target[key] = value;",
     "sink_lineno": 142,
     "file": "index.js"

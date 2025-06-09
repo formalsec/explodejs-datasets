@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "to[k] = coerce(k, from[k], schema)",
     "sink_lineno": 366,
     "file": "main.js"

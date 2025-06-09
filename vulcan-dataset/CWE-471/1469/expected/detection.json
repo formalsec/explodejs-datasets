@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-471",
+    "vuln_type": "CWE-1321",
     "sink": "acc[key] = value;",
     "sink_lineno": 55,
     "file": "utils.js"
