@@ -1,6 +1,18 @@
 [
   {
     "vuln_type": "CWE-22",
+    "sink": "fs.readFile(defaultSettings.settingsFile, function (err, data) {",
+    "sink_lineno": 74,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFileSync(defaultSettings.settingsFile, JSON.stringify(defaultSettings, null, 4));",
+    "sink_lineno": 76,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
     "sink": "fs.readFile(packagejson, function (err, data) {",
     "sink_lineno": 151,
     "file": "index.js"

@@ -1,6 +1,6 @@
 [
   {
-    "vuln_type": "CWE-94",
+    "vuln_type": "CWE-78",
     "sink": "childProcess.exec(this.command,  (error, standardOut, standardError) => {",
     "sink_lineno": 12,
     "file": "wifiscanner.js"

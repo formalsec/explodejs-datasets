@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "vuln_type": "CWE-22",
+    "sink": "return fs.readFile(options.error, 'utf8', function(error, data)",
+    "sink_lineno": 169,
+    "file": "index.js"
+  }
+]

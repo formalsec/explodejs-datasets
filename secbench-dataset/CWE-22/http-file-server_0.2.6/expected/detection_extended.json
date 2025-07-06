@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "spawn('xdg-open', [httpAddr], { stdio: 'inherit' });",
+    "sink_lineno": 298,
+    "file": "http-file-server.js"
+  }
+]

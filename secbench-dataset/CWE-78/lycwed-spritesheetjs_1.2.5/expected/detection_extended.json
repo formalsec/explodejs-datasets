@@ -16,5 +16,17 @@
     "sink": "exec(\"magick identify \" + filePath, function (err, stdout) {",
     "sink_lineno": 204,
     "file": "generator.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "var templateContent = fs.readFileSync(path, \"utf-8\");",
+    "sink_lineno": 301,
+    "file": "generator.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFile(findPriority(\"path\") + \"/\" + findPriority(\"name\") + \".\" + findPriority(\"extension\"), result, callback);",
+    "sink_lineno": 377,
+    "file": "generator.js"
   }
 ]

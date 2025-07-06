@@ -16,5 +16,11 @@
     "sink": "_files = execSync('find ' + root + ' ' + patterns + more_patterns)",
     "sink_lineno": 480,
     "file": "codecov.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.readFileSync(file, 'utf8').toString() +",
+    "sink_lineno": 500,
+    "file": "codecov.js"
   }
 ]

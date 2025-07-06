@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "vuln_type": "CWE-22",
+    "sink": "return fs.readFileSync(path$1).toString();",
+    "sink_lineno": 148,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "return parse(fs.readFileSync(path$1).toString(), $ctx);",
+    "sink_lineno": 352,
+    "file": "index.js"
+  }
+]

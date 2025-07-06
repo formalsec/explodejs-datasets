@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "pluginInfo = require(path.join(pluginPath, 'package.json'));",
+    "sink_lineno": 47,
+    "file": "plugin-loader.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "maybePlugin = require(pluginPath);",
+    "sink_lineno": 62,
+    "file": "plugin-loader.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "if (!require(pluginDir).getVersion ||",
+    "sink_lineno": 239,
+    "file": "plugin-loader.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "typeof require(pluginDir).getVersion !== 'function') {",
+    "sink_lineno": 240,
+    "file": "plugin-loader.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "require(path.join(pluginDir, 'package.json'));",
+    "sink_lineno": 242,
+    "file": "plugin-loader.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "var plugin = require(pluginDir);",
+    "sink_lineno": 243,
+    "file": "plugin-loader.js"
+  },
+  {
+    "vuln_type": "CWE-94",
+    "sink": "return require(pluginDir).getVersion();",
+    "sink_lineno": 256,
+    "file": "plugin-loader.js"
+  }
+]

@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "vuln_type": "CWE-22",
+    "sink": "fs.writeFileSync(to, content);]",
+    "sink_lineno": 99,
+    "file": "jscover.js"
+  }
+]

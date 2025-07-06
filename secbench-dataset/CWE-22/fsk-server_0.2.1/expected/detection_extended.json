@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "vuln_type": "CWE-22",
+    "sink": "return fs.existsSync(_path) ? fs.readFileSync(_path,'utf8') : '<!-- 404 Not found -->';",
+    "sink_lineno": 54,
+    "file": "index.js"
+  }
+]

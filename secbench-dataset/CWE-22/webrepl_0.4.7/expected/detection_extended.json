@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "vuln_type": "CWE-94",
+    "sink": "var obj = eval('this.replServer.context.' + match[1]);",
+    "sink_lineno": 99,
+    "file": "webrepl.js"
+  }
+]

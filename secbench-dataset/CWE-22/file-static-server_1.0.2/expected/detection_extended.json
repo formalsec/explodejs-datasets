@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(this.filePath, 'utf8', function (err, result) {",
+        "sink_lineno": 64,
+        "file": "file.js"
+    },
+    {
+        "vuln_type": "CWE-22",
+        "sink": "fs.readFile(this.filePath, 'utf8', function (err, result) {",
+        "sink_lineno": 76,
+        "file": "file.js"
+    }
+]

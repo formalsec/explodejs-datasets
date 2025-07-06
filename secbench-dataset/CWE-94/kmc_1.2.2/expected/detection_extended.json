@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "vuln_type": "CWE-22",
+    "sink": "var fileContent = fs.readFileSync(filePath).toString();",
+    "sink_lineno": 157,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "moduleContent = iconv.decode(fs.readFileSync(module.path), module.charset);",
+    "sink_lineno": 316,
+    "file": "index.js"
+  }
+]

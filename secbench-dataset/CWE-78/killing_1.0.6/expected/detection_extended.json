@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "vuln_type": "CWE-78",
+    "sink": "exec('sudo kill -SIGKILL ' + list.join(' '), function(error) {",
+    "sink_lineno": 62,
+    "file": "killing.js"
+  }
+]

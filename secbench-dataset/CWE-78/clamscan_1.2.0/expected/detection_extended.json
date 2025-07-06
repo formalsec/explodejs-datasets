@@ -1,5 +1,53 @@
 [
   {
+    "vuln_type": "CWE-78",
+    "sink": "const {stdout, stderr} = await cp_execfile(command);",
+    "sink_lineno": 653,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "execFile(self.settings[self.scanner].path, args, (err, stdout, stderr) => {",
+    "sink_lineno": 739,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "const stream = fs.createReadStream(file);",
+    "sink_lineno": 846,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "execFile(command, (err, stdout, stderr) => {",
+    "sink_lineno": 1162,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-22",
+    "sink": "const data = (await fs_readfile(this.settings.file_list)).toString().split(os.EOL);",
+    "sink_lineno": 1397,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "execFile(self.settings[self.scanner].path, self._build_clam_args(path), (err, stdout, stderr) => {",
+    "sink_lineno": 1456,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "const {stdout, stderr} = await cp_execfile('find', [path]);",
+    "sink_lineno": 1483,
+    "file": "index.js"
+  },
+  {
+    "vuln_type": "CWE-78",
+    "sink": "const {stdout, stderr} = await cp_execfile('find', [path]);",
+    "sink_lineno": 1566,
+    "file": "index.js"
+  },
+  {
     "vuln_type": "CWE-22",
     "sink": "results.concat(await Promise.all(chunk.map(file => this.scan_stream(fs.createReadStream(file)))));",
     "sink_lineno": 1587,

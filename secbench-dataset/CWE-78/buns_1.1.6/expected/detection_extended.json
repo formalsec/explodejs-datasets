@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "vuln_type": "CWE-22",
+    "sink": "var conf = JSON.parse(fs.readFileSync(modulesPath + name + DS + 'package.json'));",
+    "sink_lineno": 681,
+    "file": "index.js"
+  }
+]
