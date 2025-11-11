@@ -3,5 +3,6 @@
     "acorn": "latest",
     "escodegen": "latest",
     "estraverse": "latest"
-  }
+  },
+  "main" : "./index.js"
 }

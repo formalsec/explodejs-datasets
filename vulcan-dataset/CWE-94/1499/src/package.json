@@ -1,6 +1,9 @@
-{ "dependencies": {
-  "lodash.isequal" : "latest",
-  "lodash.filter" : "latest",
-  "lodash.clonedeep" : "latest",
-  "lodash.matches" : "latest"
-} }
+{
+  "dependencies": {
+    "lodash.isequal" : "latest",
+    "lodash.filter" : "latest",
+    "lodash.clonedeep" : "latest",
+    "lodash.matches" : "latest"
+  },
+  "main" : "./node-rules.js"
+}

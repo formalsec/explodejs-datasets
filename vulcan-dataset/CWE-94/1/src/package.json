@@ -1,1 +1,1 @@
-{ "dependencies": { "async": "latest", "boom": "latest" } }
+{ "dependencies": { "async": "latest", "boom": "latest" }, "main": "./batch.js" }

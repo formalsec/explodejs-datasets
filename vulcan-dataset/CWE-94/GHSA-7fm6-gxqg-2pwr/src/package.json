@@ -7,5 +7,6 @@
     "querystring": "latest",
     "tls": "latest",
     "zlib": "latest"
-  }
+  },
+  "main" : "./utils.js"
 }

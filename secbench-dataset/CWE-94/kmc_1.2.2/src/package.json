@@ -1,1 +1,1 @@
-{ "dependencies": { "colors": "latest", "iconv-lite": "latest" } }
+{ "dependencies": { "colors": "latest", "iconv-lite": "latest" }, "main" : "./index.js" }

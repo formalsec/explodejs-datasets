@@ -3,5 +3,6 @@
     "cmd-util": "latest",
     "esprima": "latest",
     "underscore": "latest"
-  }
+  },
+  "main" : "./sea.js"
 }

@@ -3,5 +3,6 @@
     "async": "latest",
     "image-size": "latest",
     "mkdirp": "latest"
-  }
+  },
+  "main": "./resize.js"
 }

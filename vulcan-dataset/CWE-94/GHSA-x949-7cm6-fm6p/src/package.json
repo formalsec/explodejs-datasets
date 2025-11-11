@@ -1,1 +1,1 @@
-{ "dependencies": { "gray-matter": "latest" } }
+{ "dependencies": { "gray-matter": "latest" }, "main" : "md-to-pdf.js" }

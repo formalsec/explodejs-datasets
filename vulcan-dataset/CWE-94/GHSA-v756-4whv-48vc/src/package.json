@@ -3,5 +3,6 @@
     "chalk": "latest",
     "chalkline": "latest",
     "cli-table": "latest"
-  }
+  },
+  "main" : "./messenger-node.js"
 }

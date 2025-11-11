@@ -1,1 +1,1 @@
-{ "dependencies": {} }
+{ "dependencies": {}, "main" : "./typed-function.js" }
